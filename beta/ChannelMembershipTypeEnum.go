@@ -12,6 +12,7 @@ const (
 	ChannelMembershipTypeVPrivate ChannelMembershipType = "Private"
 	// ChannelMembershipTypeVUnknownFutureValue undocumented
 	ChannelMembershipTypeVUnknownFutureValue ChannelMembershipType = "UnknownFutureValue"
+
 )
 
 // ChannelMembershipTypePStandard returns a pointer to ChannelMembershipTypeVStandard
