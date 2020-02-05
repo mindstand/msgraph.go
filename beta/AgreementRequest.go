@@ -21,6 +21,12 @@ func (b *AgreementRequestBuilder) Request() *AgreementRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AgreementRequestBuilder) Delta() *AgreementRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AgreementRequest is request for Agreement
 type AgreementRequest struct{ BaseRequest }
 

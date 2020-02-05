@@ -21,6 +21,12 @@ func (b *MailFolderRequestBuilder) Request() *MailFolderRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MailFolderRequestBuilder) Delta() *MailFolderRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MailFolderRequest is request for MailFolder
 type MailFolderRequest struct{ BaseRequest }
 

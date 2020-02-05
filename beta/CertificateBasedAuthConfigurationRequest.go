@@ -14,6 +14,12 @@ func (b *CertificateBasedAuthConfigurationRequestBuilder) Request() *Certificate
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CertificateBasedAuthConfigurationRequestBuilder) Delta() *CertificateBasedAuthConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CertificateBasedAuthConfigurationRequest is request for CertificateBasedAuthConfiguration
 type CertificateBasedAuthConfigurationRequest struct{ BaseRequest }
 

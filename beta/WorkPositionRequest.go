@@ -14,6 +14,12 @@ func (b *WorkPositionRequestBuilder) Request() *WorkPositionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkPositionRequestBuilder) Delta() *WorkPositionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkPositionRequest is request for WorkPosition
 type WorkPositionRequest struct{ BaseRequest }
 

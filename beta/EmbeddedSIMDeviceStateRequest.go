@@ -14,6 +14,12 @@ func (b *EmbeddedSIMDeviceStateRequestBuilder) Request() *EmbeddedSIMDeviceState
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EmbeddedSIMDeviceStateRequestBuilder) Delta() *EmbeddedSIMDeviceStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EmbeddedSIMDeviceStateRequest is request for EmbeddedSIMDeviceState
 type EmbeddedSIMDeviceStateRequest struct{ BaseRequest }
 

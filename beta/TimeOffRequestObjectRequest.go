@@ -14,6 +14,12 @@ func (b *TimeOffRequestObjectRequestBuilder) Request() *TimeOffRequestObjectRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TimeOffRequestObjectRequestBuilder) Delta() *TimeOffRequestObjectRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TimeOffRequestObjectRequest is request for TimeOffRequestObject
 type TimeOffRequestObjectRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *PrivilegedApprovalRequestBuilder) Request() *PrivilegedApprovalRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PrivilegedApprovalRequestBuilder) Delta() *PrivilegedApprovalRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PrivilegedApprovalRequest is request for PrivilegedApproval
 type PrivilegedApprovalRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *SettingStateDeviceSummaryRequestBuilder) Request() *SettingStateDeviceS
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SettingStateDeviceSummaryRequestBuilder) Delta() *SettingStateDeviceSummaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SettingStateDeviceSummaryRequest is request for SettingStateDeviceSummary
 type SettingStateDeviceSummaryRequest struct{ BaseRequest }
 

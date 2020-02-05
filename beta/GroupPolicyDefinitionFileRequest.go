@@ -21,6 +21,12 @@ func (b *GroupPolicyDefinitionFileRequestBuilder) Request() *GroupPolicyDefiniti
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GroupPolicyDefinitionFileRequestBuilder) Delta() *GroupPolicyDefinitionFileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GroupPolicyDefinitionFileRequest is request for GroupPolicyDefinitionFile
 type GroupPolicyDefinitionFileRequest struct{ BaseRequest }
 

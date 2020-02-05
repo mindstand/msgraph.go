@@ -14,6 +14,12 @@ func (b *MdmWindowsInformationProtectionPolicyRequestBuilder) Request() *MdmWind
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MdmWindowsInformationProtectionPolicyRequestBuilder) Delta() *MdmWindowsInformationProtectionPolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MdmWindowsInformationProtectionPolicyRequest is request for MdmWindowsInformationProtectionPolicy
 type MdmWindowsInformationProtectionPolicyRequest struct{ BaseRequest }
 

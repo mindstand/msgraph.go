@@ -21,6 +21,12 @@ func (b *AdministrativeUnitRequestBuilder) Request() *AdministrativeUnitRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AdministrativeUnitRequestBuilder) Delta() *AdministrativeUnitRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AdministrativeUnitRequest is request for AdministrativeUnit
 type AdministrativeUnitRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *ConnectionOperationRequestBuilder) Request() *ConnectionOperationReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ConnectionOperationRequestBuilder) Delta() *ConnectionOperationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ConnectionOperationRequest is request for ConnectionOperation
 type ConnectionOperationRequest struct{ BaseRequest }
 

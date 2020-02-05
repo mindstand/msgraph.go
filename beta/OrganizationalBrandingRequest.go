@@ -14,6 +14,12 @@ func (b *OrganizationalBrandingRequestBuilder) Request() *OrganizationalBranding
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OrganizationalBrandingRequestBuilder) Delta() *OrganizationalBrandingRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OrganizationalBrandingRequest is request for OrganizationalBranding
 type OrganizationalBrandingRequest struct{ BaseRequest }
 

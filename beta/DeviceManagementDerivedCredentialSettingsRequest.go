@@ -14,6 +14,12 @@ func (b *DeviceManagementDerivedCredentialSettingsRequestBuilder) Request() *Dev
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementDerivedCredentialSettingsRequestBuilder) Delta() *DeviceManagementDerivedCredentialSettingsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementDerivedCredentialSettingsRequest is request for DeviceManagementDerivedCredentialSettings
 type DeviceManagementDerivedCredentialSettingsRequest struct{ BaseRequest }
 

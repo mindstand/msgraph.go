@@ -21,6 +21,12 @@ func (b *ExternalRequestBuilder) Request() *ExternalRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ExternalRequestBuilder) Delta() *ExternalRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ExternalRequest is request for External
 type ExternalRequest struct{ BaseRequest }
 

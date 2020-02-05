@@ -14,6 +14,12 @@ func (b *DeviceHealthScriptDeviceStateRequestBuilder) Request() *DeviceHealthScr
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceHealthScriptDeviceStateRequestBuilder) Delta() *DeviceHealthScriptDeviceStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceHealthScriptDeviceStateRequest is request for DeviceHealthScriptDeviceState
 type DeviceHealthScriptDeviceStateRequest struct{ BaseRequest }
 

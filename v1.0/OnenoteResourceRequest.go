@@ -14,6 +14,12 @@ func (b *OnenoteResourceRequestBuilder) Request() *OnenoteResourceRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OnenoteResourceRequestBuilder) Delta() *OnenoteResourceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OnenoteResourceRequest is request for OnenoteResource
 type OnenoteResourceRequest struct{ BaseRequest }
 

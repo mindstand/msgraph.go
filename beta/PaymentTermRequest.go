@@ -14,6 +14,12 @@ func (b *PaymentTermRequestBuilder) Request() *PaymentTermRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PaymentTermRequestBuilder) Delta() *PaymentTermRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PaymentTermRequest is request for PaymentTerm
 type PaymentTermRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *PresenceRequestBuilder) Request() *PresenceRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PresenceRequestBuilder) Delta() *PresenceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PresenceRequest is request for Presence
 type PresenceRequest struct{ BaseRequest }
 

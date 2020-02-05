@@ -14,6 +14,12 @@ func (b *ItemPhoneRequestBuilder) Request() *ItemPhoneRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ItemPhoneRequestBuilder) Delta() *ItemPhoneRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ItemPhoneRequest is request for ItemPhone
 type ItemPhoneRequest struct{ BaseRequest }
 

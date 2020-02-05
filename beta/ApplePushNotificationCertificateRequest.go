@@ -14,6 +14,12 @@ func (b *ApplePushNotificationCertificateRequestBuilder) Request() *ApplePushNot
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ApplePushNotificationCertificateRequestBuilder) Delta() *ApplePushNotificationCertificateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ApplePushNotificationCertificateRequest is request for ApplePushNotificationCertificate
 type ApplePushNotificationCertificateRequest struct{ BaseRequest }
 

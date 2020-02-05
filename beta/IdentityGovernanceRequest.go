@@ -14,6 +14,12 @@ func (b *IdentityGovernanceRequestBuilder) Request() *IdentityGovernanceRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IdentityGovernanceRequestBuilder) Delta() *IdentityGovernanceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IdentityGovernanceRequest is request for IdentityGovernance
 type IdentityGovernanceRequest struct{ BaseRequest }
 

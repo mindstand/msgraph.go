@@ -14,6 +14,12 @@ func (b *WorkbookFilterRequestBuilder) Request() *WorkbookFilterRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookFilterRequestBuilder) Delta() *WorkbookFilterRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookFilterRequest is request for WorkbookFilter
 type WorkbookFilterRequest struct{ BaseRequest }
 

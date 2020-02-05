@@ -21,6 +21,12 @@ func (b *DetectedAppRequestBuilder) Request() *DetectedAppRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DetectedAppRequestBuilder) Delta() *DetectedAppRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DetectedAppRequest is request for DetectedApp
 type DetectedAppRequest struct{ BaseRequest }
 

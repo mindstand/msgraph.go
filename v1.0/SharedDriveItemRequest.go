@@ -21,6 +21,12 @@ func (b *SharedDriveItemRequestBuilder) Request() *SharedDriveItemRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SharedDriveItemRequestBuilder) Delta() *SharedDriveItemRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SharedDriveItemRequest is request for SharedDriveItem
 type SharedDriveItemRequest struct{ BaseRequest }
 

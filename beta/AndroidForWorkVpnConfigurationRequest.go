@@ -14,6 +14,12 @@ func (b *AndroidForWorkVpnConfigurationRequestBuilder) Request() *AndroidForWork
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AndroidForWorkVpnConfigurationRequestBuilder) Delta() *AndroidForWorkVpnConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AndroidForWorkVpnConfigurationRequest is request for AndroidForWorkVpnConfiguration
 type AndroidForWorkVpnConfigurationRequest struct{ BaseRequest }
 

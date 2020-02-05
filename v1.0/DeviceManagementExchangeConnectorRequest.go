@@ -14,6 +14,12 @@ func (b *DeviceManagementExchangeConnectorRequestBuilder) Request() *DeviceManag
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementExchangeConnectorRequestBuilder) Delta() *DeviceManagementExchangeConnectorRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementExchangeConnectorRequest is request for DeviceManagementExchangeConnector
 type DeviceManagementExchangeConnectorRequest struct{ BaseRequest }
 

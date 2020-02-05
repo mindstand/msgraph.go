@@ -21,6 +21,12 @@ func (b *ConversationRequestBuilder) Request() *ConversationRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ConversationRequestBuilder) Delta() *ConversationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ConversationRequest is request for Conversation
 type ConversationRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *WorkbookTableSortRequestBuilder) Request() *WorkbookTableSortRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookTableSortRequestBuilder) Delta() *WorkbookTableSortRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookTableSortRequest is request for WorkbookTableSort
 type WorkbookTableSortRequest struct{ BaseRequest }
 

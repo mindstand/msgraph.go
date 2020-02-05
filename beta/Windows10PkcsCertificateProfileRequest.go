@@ -21,6 +21,12 @@ func (b *Windows10PkcsCertificateProfileRequestBuilder) Request() *Windows10Pkcs
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *Windows10PkcsCertificateProfileRequestBuilder) Delta() *Windows10PkcsCertificateProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // Windows10PkcsCertificateProfileRequest is request for Windows10PkcsCertificateProfile
 type Windows10PkcsCertificateProfileRequest struct{ BaseRequest }
 

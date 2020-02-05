@@ -21,6 +21,12 @@ func (b *DomainRequestBuilder) Request() *DomainRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DomainRequestBuilder) Delta() *DomainRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DomainRequest is request for Domain
 type DomainRequest struct{ BaseRequest }
 

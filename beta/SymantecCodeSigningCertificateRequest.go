@@ -14,6 +14,12 @@ func (b *SymantecCodeSigningCertificateRequestBuilder) Request() *SymantecCodeSi
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SymantecCodeSigningCertificateRequestBuilder) Delta() *SymantecCodeSigningCertificateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SymantecCodeSigningCertificateRequest is request for SymantecCodeSigningCertificate
 type SymantecCodeSigningCertificateRequest struct{ BaseRequest }
 

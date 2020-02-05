@@ -14,6 +14,12 @@ func (b *CountryRegionRequestBuilder) Request() *CountryRegionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CountryRegionRequestBuilder) Delta() *CountryRegionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CountryRegionRequest is request for CountryRegion
 type CountryRegionRequest struct{ BaseRequest }
 

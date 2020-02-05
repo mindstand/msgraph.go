@@ -14,6 +14,12 @@ func (b *UserConfigurationRequestBuilder) Request() *UserConfigurationRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UserConfigurationRequestBuilder) Delta() *UserConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UserConfigurationRequest is request for UserConfiguration
 type UserConfigurationRequest struct{ BaseRequest }
 

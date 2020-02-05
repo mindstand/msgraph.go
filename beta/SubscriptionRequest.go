@@ -14,6 +14,12 @@ func (b *SubscriptionRequestBuilder) Request() *SubscriptionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SubscriptionRequestBuilder) Delta() *SubscriptionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SubscriptionRequest is request for Subscription
 type SubscriptionRequest struct{ BaseRequest }
 

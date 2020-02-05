@@ -14,6 +14,12 @@ func (b *FilterOperatorSchemaRequestBuilder) Request() *FilterOperatorSchemaRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *FilterOperatorSchemaRequestBuilder) Delta() *FilterOperatorSchemaRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // FilterOperatorSchemaRequest is request for FilterOperatorSchema
 type FilterOperatorSchemaRequest struct{ BaseRequest }
 

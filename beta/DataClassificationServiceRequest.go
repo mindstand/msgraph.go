@@ -21,6 +21,12 @@ func (b *DataClassificationServiceRequestBuilder) Request() *DataClassificationS
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DataClassificationServiceRequestBuilder) Delta() *DataClassificationServiceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DataClassificationServiceRequest is request for DataClassificationService
 type DataClassificationServiceRequest struct{ BaseRequest }
 

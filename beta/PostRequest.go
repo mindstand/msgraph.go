@@ -21,6 +21,12 @@ func (b *PostRequestBuilder) Request() *PostRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PostRequestBuilder) Delta() *PostRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PostRequest is request for Post
 type PostRequest struct{ BaseRequest }
 

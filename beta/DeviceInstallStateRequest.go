@@ -14,6 +14,12 @@ func (b *DeviceInstallStateRequestBuilder) Request() *DeviceInstallStateRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceInstallStateRequestBuilder) Delta() *DeviceInstallStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceInstallStateRequest is request for DeviceInstallState
 type DeviceInstallStateRequest struct{ BaseRequest }
 

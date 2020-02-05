@@ -21,6 +21,12 @@ func (b *PlannerPlanRequestBuilder) Request() *PlannerPlanRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PlannerPlanRequestBuilder) Delta() *PlannerPlanRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PlannerPlanRequest is request for PlannerPlan
 type PlannerPlanRequest struct{ BaseRequest }
 

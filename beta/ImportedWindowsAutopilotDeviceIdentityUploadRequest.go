@@ -21,6 +21,12 @@ func (b *ImportedWindowsAutopilotDeviceIdentityUploadRequestBuilder) Request() *
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ImportedWindowsAutopilotDeviceIdentityUploadRequestBuilder) Delta() *ImportedWindowsAutopilotDeviceIdentityUploadRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ImportedWindowsAutopilotDeviceIdentityUploadRequest is request for ImportedWindowsAutopilotDeviceIdentityUpload
 type ImportedWindowsAutopilotDeviceIdentityUploadRequest struct{ BaseRequest }
 

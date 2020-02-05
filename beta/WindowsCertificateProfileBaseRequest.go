@@ -14,6 +14,12 @@ func (b *WindowsCertificateProfileBaseRequestBuilder) Request() *WindowsCertific
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsCertificateProfileBaseRequestBuilder) Delta() *WindowsCertificateProfileBaseRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsCertificateProfileBaseRequest is request for WindowsCertificateProfileBase
 type WindowsCertificateProfileBaseRequest struct{ BaseRequest }
 

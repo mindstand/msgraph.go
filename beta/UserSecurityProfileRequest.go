@@ -14,6 +14,12 @@ func (b *UserSecurityProfileRequestBuilder) Request() *UserSecurityProfileReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UserSecurityProfileRequestBuilder) Delta() *UserSecurityProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UserSecurityProfileRequest is request for UserSecurityProfile
 type UserSecurityProfileRequest struct{ BaseRequest }
 

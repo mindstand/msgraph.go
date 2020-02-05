@@ -14,6 +14,12 @@ func (b *SubscribedSKURequestBuilder) Request() *SubscribedSKURequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SubscribedSKURequestBuilder) Delta() *SubscribedSKURequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SubscribedSKURequest is request for SubscribedSKU
 type SubscribedSKURequest struct{ BaseRequest }
 

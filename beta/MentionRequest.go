@@ -14,6 +14,12 @@ func (b *MentionRequestBuilder) Request() *MentionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MentionRequestBuilder) Delta() *MentionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MentionRequest is request for Mention
 type MentionRequest struct{ BaseRequest }
 

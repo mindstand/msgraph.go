@@ -14,6 +14,12 @@ func (b *RestrictedAppsViolationRequestBuilder) Request() *RestrictedAppsViolati
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *RestrictedAppsViolationRequestBuilder) Delta() *RestrictedAppsViolationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // RestrictedAppsViolationRequest is request for RestrictedAppsViolation
 type RestrictedAppsViolationRequest struct{ BaseRequest }
 

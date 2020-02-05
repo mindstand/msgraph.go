@@ -14,6 +14,12 @@ func (b *DataLossPreventionPolicyRequestBuilder) Request() *DataLossPreventionPo
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DataLossPreventionPolicyRequestBuilder) Delta() *DataLossPreventionPolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DataLossPreventionPolicyRequest is request for DataLossPreventionPolicy
 type DataLossPreventionPolicyRequest struct{ BaseRequest }
 

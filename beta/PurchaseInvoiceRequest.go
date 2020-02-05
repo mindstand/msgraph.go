@@ -21,6 +21,12 @@ func (b *PurchaseInvoiceRequestBuilder) Request() *PurchaseInvoiceRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PurchaseInvoiceRequestBuilder) Delta() *PurchaseInvoiceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PurchaseInvoiceRequest is request for PurchaseInvoice
 type PurchaseInvoiceRequest struct{ BaseRequest }
 

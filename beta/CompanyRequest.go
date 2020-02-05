@@ -21,6 +21,12 @@ func (b *CompanyRequestBuilder) Request() *CompanyRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CompanyRequestBuilder) Delta() *CompanyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CompanyRequest is request for Company
 type CompanyRequest struct{ BaseRequest }
 

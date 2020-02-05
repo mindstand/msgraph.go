@@ -21,6 +21,12 @@ func (b *ManagedDeviceRequestBuilder) Request() *ManagedDeviceRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ManagedDeviceRequestBuilder) Delta() *ManagedDeviceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ManagedDeviceRequest is request for ManagedDevice
 type ManagedDeviceRequest struct{ BaseRequest }
 

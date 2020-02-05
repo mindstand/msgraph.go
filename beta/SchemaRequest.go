@@ -14,6 +14,12 @@ func (b *SchemaRequestBuilder) Request() *SchemaRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SchemaRequestBuilder) Delta() *SchemaRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SchemaRequest is request for Schema
 type SchemaRequest struct{ BaseRequest }
 

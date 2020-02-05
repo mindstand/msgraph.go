@@ -21,6 +21,12 @@ func (b *TargetedManagedAppConfigurationRequestBuilder) Request() *TargetedManag
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TargetedManagedAppConfigurationRequestBuilder) Delta() *TargetedManagedAppConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TargetedManagedAppConfigurationRequest is request for TargetedManagedAppConfiguration
 type TargetedManagedAppConfigurationRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *AllowedDataLocationRequestBuilder) Request() *AllowedDataLocationReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AllowedDataLocationRequestBuilder) Delta() *AllowedDataLocationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AllowedDataLocationRequest is request for AllowedDataLocation
 type AllowedDataLocationRequest struct{ BaseRequest }
 

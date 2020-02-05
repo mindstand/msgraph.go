@@ -14,6 +14,12 @@ func (b *RoomRequestBuilder) Request() *RoomRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *RoomRequestBuilder) Delta() *RoomRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // RoomRequest is request for Room
 type RoomRequest struct{ BaseRequest }
 

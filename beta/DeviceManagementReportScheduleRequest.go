@@ -14,6 +14,12 @@ func (b *DeviceManagementReportScheduleRequestBuilder) Request() *DeviceManageme
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementReportScheduleRequestBuilder) Delta() *DeviceManagementReportScheduleRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementReportScheduleRequest is request for DeviceManagementReportSchedule
 type DeviceManagementReportScheduleRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *MessageRequestBuilder) Request() *MessageRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MessageRequestBuilder) Delta() *MessageRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MessageRequest is request for Message
 type MessageRequest struct{ BaseRequest }
 

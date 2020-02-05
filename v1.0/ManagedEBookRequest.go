@@ -21,6 +21,12 @@ func (b *ManagedEBookRequestBuilder) Request() *ManagedEBookRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ManagedEBookRequestBuilder) Delta() *ManagedEBookRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ManagedEBookRequest is request for ManagedEBook
 type ManagedEBookRequest struct{ BaseRequest }
 

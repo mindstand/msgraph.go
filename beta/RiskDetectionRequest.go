@@ -14,6 +14,12 @@ func (b *RiskDetectionRequestBuilder) Request() *RiskDetectionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *RiskDetectionRequestBuilder) Delta() *RiskDetectionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // RiskDetectionRequest is request for RiskDetection
 type RiskDetectionRequest struct{ BaseRequest }
 

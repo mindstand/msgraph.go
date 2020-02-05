@@ -21,6 +21,12 @@ func (b *ListRequestBuilder) Request() *ListRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ListRequestBuilder) Delta() *ListRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ListRequest is request for List
 type ListRequest struct{ BaseRequest }
 

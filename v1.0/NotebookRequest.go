@@ -21,6 +21,12 @@ func (b *NotebookRequestBuilder) Request() *NotebookRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *NotebookRequestBuilder) Delta() *NotebookRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // NotebookRequest is request for Notebook
 type NotebookRequest struct{ BaseRequest }
 

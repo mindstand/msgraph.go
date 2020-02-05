@@ -14,6 +14,12 @@ func (b *CommandRequestBuilder) Request() *CommandRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CommandRequestBuilder) Delta() *CommandRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CommandRequest is request for Command
 type CommandRequest struct{ BaseRequest }
 

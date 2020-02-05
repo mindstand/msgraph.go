@@ -14,6 +14,12 @@ func (b *ImpossibleTravelRiskEventRequestBuilder) Request() *ImpossibleTravelRis
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ImpossibleTravelRiskEventRequestBuilder) Delta() *ImpossibleTravelRiskEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ImpossibleTravelRiskEventRequest is request for ImpossibleTravelRiskEvent
 type ImpossibleTravelRiskEventRequest struct{ BaseRequest }
 

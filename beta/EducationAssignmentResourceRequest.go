@@ -14,6 +14,12 @@ func (b *EducationAssignmentResourceRequestBuilder) Request() *EducationAssignme
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EducationAssignmentResourceRequestBuilder) Delta() *EducationAssignmentResourceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EducationAssignmentResourceRequest is request for EducationAssignmentResource
 type EducationAssignmentResourceRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *ExactMatchUploadAgentRequestBuilder) Request() *ExactMatchUploadAgentRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ExactMatchUploadAgentRequestBuilder) Delta() *ExactMatchUploadAgentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ExactMatchUploadAgentRequest is request for ExactMatchUploadAgent
 type ExactMatchUploadAgentRequest struct{ BaseRequest }
 

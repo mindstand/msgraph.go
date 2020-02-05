@@ -14,6 +14,12 @@ func (b *EnterpriseCodeSigningCertificateRequestBuilder) Request() *EnterpriseCo
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EnterpriseCodeSigningCertificateRequestBuilder) Delta() *EnterpriseCodeSigningCertificateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EnterpriseCodeSigningCertificateRequest is request for EnterpriseCodeSigningCertificate
 type EnterpriseCodeSigningCertificateRequest struct{ BaseRequest }
 

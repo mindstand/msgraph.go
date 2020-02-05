@@ -14,6 +14,12 @@ func (b *ListItemVersionRequestBuilder) Request() *ListItemVersionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ListItemVersionRequestBuilder) Delta() *ListItemVersionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ListItemVersionRequest is request for ListItemVersion
 type ListItemVersionRequest struct{ BaseRequest }
 

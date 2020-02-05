@@ -14,6 +14,12 @@ func (b *ItemCategoryRequestBuilder) Request() *ItemCategoryRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ItemCategoryRequestBuilder) Delta() *ItemCategoryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ItemCategoryRequest is request for ItemCategory
 type ItemCategoryRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *SecureScoreRequestBuilder) Request() *SecureScoreRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SecureScoreRequestBuilder) Delta() *SecureScoreRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SecureScoreRequest is request for SecureScore
 type SecureScoreRequest struct{ BaseRequest }
 

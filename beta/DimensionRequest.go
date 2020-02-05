@@ -21,6 +21,12 @@ func (b *DimensionRequestBuilder) Request() *DimensionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DimensionRequestBuilder) Delta() *DimensionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DimensionRequest is request for Dimension
 type DimensionRequest struct{ BaseRequest }
 

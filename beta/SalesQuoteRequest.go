@@ -21,6 +21,12 @@ func (b *SalesQuoteRequestBuilder) Request() *SalesQuoteRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SalesQuoteRequestBuilder) Delta() *SalesQuoteRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SalesQuoteRequest is request for SalesQuote
 type SalesQuoteRequest struct{ BaseRequest }
 

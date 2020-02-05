@@ -21,6 +21,12 @@ func (b *AdvancedThreatProtectionOnboardingStateSummaryRequestBuilder) Request()
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AdvancedThreatProtectionOnboardingStateSummaryRequestBuilder) Delta() *AdvancedThreatProtectionOnboardingStateSummaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AdvancedThreatProtectionOnboardingStateSummaryRequest is request for AdvancedThreatProtectionOnboardingStateSummary
 type AdvancedThreatProtectionOnboardingStateSummaryRequest struct{ BaseRequest }
 

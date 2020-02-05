@@ -14,6 +14,12 @@ func (b *EntityRequestBuilder) Request() *EntityRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EntityRequestBuilder) Delta() *EntityRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EntityRequest is request for Entity
 type EntityRequest struct{ BaseRequest }
 

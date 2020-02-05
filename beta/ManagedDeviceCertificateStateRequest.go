@@ -14,6 +14,12 @@ func (b *ManagedDeviceCertificateStateRequestBuilder) Request() *ManagedDeviceCe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ManagedDeviceCertificateStateRequestBuilder) Delta() *ManagedDeviceCertificateStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ManagedDeviceCertificateStateRequest is request for ManagedDeviceCertificateState
 type ManagedDeviceCertificateStateRequest struct{ BaseRequest }
 

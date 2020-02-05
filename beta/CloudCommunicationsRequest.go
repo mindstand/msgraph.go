@@ -21,6 +21,12 @@ func (b *CloudCommunicationsRequestBuilder) Request() *CloudCommunicationsReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CloudCommunicationsRequestBuilder) Delta() *CloudCommunicationsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CloudCommunicationsRequest is request for CloudCommunications
 type CloudCommunicationsRequest struct{ BaseRequest }
 

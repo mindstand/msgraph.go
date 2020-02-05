@@ -14,6 +14,12 @@ func (b *PermissionRequestBuilder) Request() *PermissionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PermissionRequestBuilder) Delta() *PermissionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PermissionRequest is request for Permission
 type PermissionRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *IdentityContainerRequestBuilder) Request() *IdentityContainerRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IdentityContainerRequestBuilder) Delta() *IdentityContainerRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IdentityContainerRequest is request for IdentityContainer
 type IdentityContainerRequest struct{ BaseRequest }
 

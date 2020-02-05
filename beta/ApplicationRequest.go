@@ -21,6 +21,12 @@ func (b *ApplicationRequestBuilder) Request() *ApplicationRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ApplicationRequestBuilder) Delta() *ApplicationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ApplicationRequest is request for Application
 type ApplicationRequest struct{ BaseRequest }
 

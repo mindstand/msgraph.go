@@ -21,6 +21,12 @@ func (b *UserExperienceAnalyticsRegressionSummaryRequestBuilder) Request() *User
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UserExperienceAnalyticsRegressionSummaryRequestBuilder) Delta() *UserExperienceAnalyticsRegressionSummaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UserExperienceAnalyticsRegressionSummaryRequest is request for UserExperienceAnalyticsRegressionSummary
 type UserExperienceAnalyticsRegressionSummaryRequest struct{ BaseRequest }
 

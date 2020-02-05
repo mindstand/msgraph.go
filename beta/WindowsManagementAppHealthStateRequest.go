@@ -14,6 +14,12 @@ func (b *WindowsManagementAppHealthStateRequestBuilder) Request() *WindowsManage
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsManagementAppHealthStateRequestBuilder) Delta() *WindowsManagementAppHealthStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsManagementAppHealthStateRequest is request for WindowsManagementAppHealthState
 type WindowsManagementAppHealthStateRequest struct{ BaseRequest }
 

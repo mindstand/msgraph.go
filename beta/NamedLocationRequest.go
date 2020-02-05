@@ -14,6 +14,12 @@ func (b *NamedLocationRequestBuilder) Request() *NamedLocationRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *NamedLocationRequestBuilder) Delta() *NamedLocationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // NamedLocationRequest is request for NamedLocation
 type NamedLocationRequest struct{ BaseRequest }
 

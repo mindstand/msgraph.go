@@ -21,6 +21,12 @@ func (b *OnPremisesPublishingProfileRequestBuilder) Request() *OnPremisesPublish
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OnPremisesPublishingProfileRequestBuilder) Delta() *OnPremisesPublishingProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OnPremisesPublishingProfileRequest is request for OnPremisesPublishingProfile
 type OnPremisesPublishingProfileRequest struct{ BaseRequest }
 

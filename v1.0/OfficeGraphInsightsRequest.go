@@ -21,6 +21,12 @@ func (b *OfficeGraphInsightsRequestBuilder) Request() *OfficeGraphInsightsReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OfficeGraphInsightsRequestBuilder) Delta() *OfficeGraphInsightsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OfficeGraphInsightsRequest is request for OfficeGraphInsights
 type OfficeGraphInsightsRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *DeviceManagementIntentAssignmentRequestBuilder) Request() *DeviceManage
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementIntentAssignmentRequestBuilder) Delta() *DeviceManagementIntentAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementIntentAssignmentRequest is request for DeviceManagementIntentAssignment
 type DeviceManagementIntentAssignmentRequest struct{ BaseRequest }
 

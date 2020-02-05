@@ -21,6 +21,12 @@ func (b *MobileAppTroubleshootingEventRequestBuilder) Request() *MobileAppTroubl
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MobileAppTroubleshootingEventRequestBuilder) Delta() *MobileAppTroubleshootingEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MobileAppTroubleshootingEventRequest is request for MobileAppTroubleshootingEvent
 type MobileAppTroubleshootingEventRequest struct{ BaseRequest }
 

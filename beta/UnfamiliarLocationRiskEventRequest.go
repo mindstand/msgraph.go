@@ -14,6 +14,12 @@ func (b *UnfamiliarLocationRiskEventRequestBuilder) Request() *UnfamiliarLocatio
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UnfamiliarLocationRiskEventRequestBuilder) Delta() *UnfamiliarLocationRiskEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UnfamiliarLocationRiskEventRequest is request for UnfamiliarLocationRiskEvent
 type UnfamiliarLocationRiskEventRequest struct{ BaseRequest }
 

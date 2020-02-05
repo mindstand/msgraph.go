@@ -14,6 +14,12 @@ func (b *DataPolicyOperationRequestBuilder) Request() *DataPolicyOperationReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DataPolicyOperationRequestBuilder) Delta() *DataPolicyOperationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DataPolicyOperationRequest is request for DataPolicyOperation
 type DataPolicyOperationRequest struct{ BaseRequest }
 

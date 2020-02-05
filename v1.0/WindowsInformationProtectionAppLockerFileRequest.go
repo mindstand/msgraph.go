@@ -14,6 +14,12 @@ func (b *WindowsInformationProtectionAppLockerFileRequestBuilder) Request() *Win
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsInformationProtectionAppLockerFileRequestBuilder) Delta() *WindowsInformationProtectionAppLockerFileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsInformationProtectionAppLockerFileRequest is request for WindowsInformationProtectionAppLockerFile
 type WindowsInformationProtectionAppLockerFileRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *PersonWebsiteRequestBuilder) Request() *PersonWebsiteRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PersonWebsiteRequestBuilder) Delta() *PersonWebsiteRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PersonWebsiteRequest is request for PersonWebsite
 type PersonWebsiteRequest struct{ BaseRequest }
 

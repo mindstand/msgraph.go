@@ -14,6 +14,12 @@ func (b *AttachmentRequestBuilder) Request() *AttachmentRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AttachmentRequestBuilder) Delta() *AttachmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AttachmentRequest is request for Attachment
 type AttachmentRequest struct{ BaseRequest }
 

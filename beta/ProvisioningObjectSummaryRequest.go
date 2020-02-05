@@ -14,6 +14,12 @@ func (b *ProvisioningObjectSummaryRequestBuilder) Request() *ProvisioningObjectS
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ProvisioningObjectSummaryRequestBuilder) Delta() *ProvisioningObjectSummaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ProvisioningObjectSummaryRequest is request for ProvisioningObjectSummary
 type ProvisioningObjectSummaryRequest struct{ BaseRequest }
 

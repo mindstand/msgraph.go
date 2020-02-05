@@ -21,6 +21,12 @@ func (b *GroupPolicyMigrationReportRequestBuilder) Request() *GroupPolicyMigrati
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GroupPolicyMigrationReportRequestBuilder) Delta() *GroupPolicyMigrationReportRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GroupPolicyMigrationReportRequest is request for GroupPolicyMigrationReport
 type GroupPolicyMigrationReportRequest struct{ BaseRequest }
 

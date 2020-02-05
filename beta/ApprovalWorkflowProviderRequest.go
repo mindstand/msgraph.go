@@ -21,6 +21,12 @@ func (b *ApprovalWorkflowProviderRequestBuilder) Request() *ApprovalWorkflowProv
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ApprovalWorkflowProviderRequestBuilder) Delta() *ApprovalWorkflowProviderRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ApprovalWorkflowProviderRequest is request for ApprovalWorkflowProvider
 type ApprovalWorkflowProviderRequest struct{ BaseRequest }
 

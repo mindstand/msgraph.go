@@ -14,6 +14,12 @@ func (b *EducationRubricRequestBuilder) Request() *EducationRubricRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EducationRubricRequestBuilder) Delta() *EducationRubricRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EducationRubricRequest is request for EducationRubric
 type EducationRubricRequest struct{ BaseRequest }
 

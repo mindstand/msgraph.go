@@ -14,6 +14,12 @@ func (b *ExtensionRequestBuilder) Request() *ExtensionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ExtensionRequestBuilder) Delta() *ExtensionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ExtensionRequest is request for Extension
 type ExtensionRequest struct{ BaseRequest }
 

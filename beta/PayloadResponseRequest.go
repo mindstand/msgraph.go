@@ -14,6 +14,12 @@ func (b *PayloadResponseRequestBuilder) Request() *PayloadResponseRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PayloadResponseRequestBuilder) Delta() *PayloadResponseRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PayloadResponseRequest is request for PayloadResponse
 type PayloadResponseRequest struct{ BaseRequest }
 

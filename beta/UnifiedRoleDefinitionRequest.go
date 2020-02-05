@@ -14,6 +14,12 @@ func (b *UnifiedRoleDefinitionRequestBuilder) Request() *UnifiedRoleDefinitionRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UnifiedRoleDefinitionRequestBuilder) Delta() *UnifiedRoleDefinitionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UnifiedRoleDefinitionRequest is request for UnifiedRoleDefinition
 type UnifiedRoleDefinitionRequest struct{ BaseRequest }
 

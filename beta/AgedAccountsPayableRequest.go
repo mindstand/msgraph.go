@@ -14,6 +14,12 @@ func (b *AgedAccountsPayableRequestBuilder) Request() *AgedAccountsPayableReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AgedAccountsPayableRequestBuilder) Delta() *AgedAccountsPayableRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AgedAccountsPayableRequest is request for AgedAccountsPayable
 type AgedAccountsPayableRequest struct{ BaseRequest }
 

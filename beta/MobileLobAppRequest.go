@@ -21,6 +21,12 @@ func (b *MobileLobAppRequestBuilder) Request() *MobileLobAppRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MobileLobAppRequestBuilder) Delta() *MobileLobAppRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MobileLobAppRequest is request for MobileLobApp
 type MobileLobAppRequest struct{ BaseRequest }
 

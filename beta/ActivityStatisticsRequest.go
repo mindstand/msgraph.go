@@ -14,6 +14,12 @@ func (b *ActivityStatisticsRequestBuilder) Request() *ActivityStatisticsRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ActivityStatisticsRequestBuilder) Delta() *ActivityStatisticsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ActivityStatisticsRequest is request for ActivityStatistics
 type ActivityStatisticsRequest struct{ BaseRequest }
 

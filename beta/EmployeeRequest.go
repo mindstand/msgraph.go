@@ -21,6 +21,12 @@ func (b *EmployeeRequestBuilder) Request() *EmployeeRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EmployeeRequestBuilder) Delta() *EmployeeRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EmployeeRequest is request for Employee
 type EmployeeRequest struct{ BaseRequest }
 

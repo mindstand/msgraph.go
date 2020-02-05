@@ -14,6 +14,12 @@ func (b *SuspiciousIPRiskEventRequestBuilder) Request() *SuspiciousIPRiskEventRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SuspiciousIPRiskEventRequestBuilder) Delta() *SuspiciousIPRiskEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SuspiciousIPRiskEventRequest is request for SuspiciousIPRiskEvent
 type SuspiciousIPRiskEventRequest struct{ BaseRequest }
 

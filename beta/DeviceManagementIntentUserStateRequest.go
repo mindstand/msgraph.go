@@ -14,6 +14,12 @@ func (b *DeviceManagementIntentUserStateRequestBuilder) Request() *DeviceManagem
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementIntentUserStateRequestBuilder) Delta() *DeviceManagementIntentUserStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementIntentUserStateRequest is request for DeviceManagementIntentUserState
 type DeviceManagementIntentUserStateRequest struct{ BaseRequest }
 

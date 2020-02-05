@@ -14,6 +14,12 @@ func (b *WorkbookChartDataLabelFormatRequestBuilder) Request() *WorkbookChartDat
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookChartDataLabelFormatRequestBuilder) Delta() *WorkbookChartDataLabelFormatRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookChartDataLabelFormatRequest is request for WorkbookChartDataLabelFormat
 type WorkbookChartDataLabelFormatRequest struct{ BaseRequest }
 

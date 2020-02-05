@@ -21,6 +21,12 @@ func (b *RequestObjectRequestBuilder) Request() *RequestObjectRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *RequestObjectRequestBuilder) Delta() *RequestObjectRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // RequestObjectRequest is request for RequestObject
 type RequestObjectRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *DeviceManagementExportJobRequestBuilder) Request() *DeviceManagementExp
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementExportJobRequestBuilder) Delta() *DeviceManagementExportJobRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementExportJobRequest is request for DeviceManagementExportJob
 type DeviceManagementExportJobRequest struct{ BaseRequest }
 

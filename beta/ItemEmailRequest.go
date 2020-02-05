@@ -14,6 +14,12 @@ func (b *ItemEmailRequestBuilder) Request() *ItemEmailRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ItemEmailRequestBuilder) Delta() *ItemEmailRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ItemEmailRequest is request for ItemEmail
 type ItemEmailRequest struct{ BaseRequest }
 

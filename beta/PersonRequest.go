@@ -14,6 +14,12 @@ func (b *PersonRequestBuilder) Request() *PersonRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PersonRequestBuilder) Delta() *PersonRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PersonRequest is request for Person
 type PersonRequest struct{ BaseRequest }
 

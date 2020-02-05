@@ -21,6 +21,12 @@ func (b *TermsAndConditionsRequestBuilder) Request() *TermsAndConditionsRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TermsAndConditionsRequestBuilder) Delta() *TermsAndConditionsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TermsAndConditionsRequest is request for TermsAndConditions
 type TermsAndConditionsRequest struct{ BaseRequest }
 

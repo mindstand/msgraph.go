@@ -14,6 +14,12 @@ func (b *ReportRootRequestBuilder) Request() *ReportRootRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ReportRootRequestBuilder) Delta() *ReportRootRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ReportRootRequest is request for ReportRoot
 type ReportRootRequest struct{ BaseRequest }
 

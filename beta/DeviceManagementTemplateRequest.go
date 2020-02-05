@@ -21,6 +21,12 @@ func (b *DeviceManagementTemplateRequestBuilder) Request() *DeviceManagementTemp
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementTemplateRequestBuilder) Delta() *DeviceManagementTemplateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementTemplateRequest is request for DeviceManagementTemplate
 type DeviceManagementTemplateRequest struct{ BaseRequest }
 

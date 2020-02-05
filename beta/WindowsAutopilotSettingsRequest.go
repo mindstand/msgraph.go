@@ -14,6 +14,12 @@ func (b *WindowsAutopilotSettingsRequestBuilder) Request() *WindowsAutopilotSett
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsAutopilotSettingsRequestBuilder) Delta() *WindowsAutopilotSettingsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsAutopilotSettingsRequest is request for WindowsAutopilotSettings
 type WindowsAutopilotSettingsRequest struct{ BaseRequest }
 

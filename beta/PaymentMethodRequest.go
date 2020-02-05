@@ -14,6 +14,12 @@ func (b *PaymentMethodRequestBuilder) Request() *PaymentMethodRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PaymentMethodRequestBuilder) Delta() *PaymentMethodRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PaymentMethodRequest is request for PaymentMethod
 type PaymentMethodRequest struct{ BaseRequest }
 

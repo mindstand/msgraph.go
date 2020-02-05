@@ -14,6 +14,12 @@ func (b *MobileThreatDefenseConnectorRequestBuilder) Request() *MobileThreatDefe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MobileThreatDefenseConnectorRequestBuilder) Delta() *MobileThreatDefenseConnectorRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MobileThreatDefenseConnectorRequest is request for MobileThreatDefenseConnector
 type MobileThreatDefenseConnectorRequest struct{ BaseRequest }
 

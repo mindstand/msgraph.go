@@ -14,6 +14,12 @@ func (b *ImportedDeviceIdentityRequestBuilder) Request() *ImportedDeviceIdentity
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ImportedDeviceIdentityRequestBuilder) Delta() *ImportedDeviceIdentityRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ImportedDeviceIdentityRequest is request for ImportedDeviceIdentity
 type ImportedDeviceIdentityRequest struct{ BaseRequest }
 

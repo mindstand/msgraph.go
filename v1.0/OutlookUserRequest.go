@@ -21,6 +21,12 @@ func (b *OutlookUserRequestBuilder) Request() *OutlookUserRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OutlookUserRequestBuilder) Delta() *OutlookUserRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OutlookUserRequest is request for OutlookUser
 type OutlookUserRequest struct{ BaseRequest }
 

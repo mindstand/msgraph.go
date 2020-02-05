@@ -14,6 +14,12 @@ func (b *ProjectParticipationRequestBuilder) Request() *ProjectParticipationRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ProjectParticipationRequestBuilder) Delta() *ProjectParticipationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ProjectParticipationRequest is request for ProjectParticipation
 type ProjectParticipationRequest struct{ BaseRequest }
 

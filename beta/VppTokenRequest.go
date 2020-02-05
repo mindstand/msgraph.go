@@ -14,6 +14,12 @@ func (b *VppTokenRequestBuilder) Request() *VppTokenRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *VppTokenRequestBuilder) Delta() *VppTokenRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // VppTokenRequest is request for VppToken
 type VppTokenRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *TeamsTemplateRequestBuilder) Request() *TeamsTemplateRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TeamsTemplateRequestBuilder) Delta() *TeamsTemplateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TeamsTemplateRequest is request for TeamsTemplate
 type TeamsTemplateRequest struct{ BaseRequest }
 

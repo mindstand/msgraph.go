@@ -14,6 +14,12 @@ func (b *GroupLifecyclePolicyRequestBuilder) Request() *GroupLifecyclePolicyRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GroupLifecyclePolicyRequestBuilder) Delta() *GroupLifecyclePolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GroupLifecyclePolicyRequest is request for GroupLifecyclePolicy
 type GroupLifecyclePolicyRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *SectionGroupRequestBuilder) Request() *SectionGroupRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SectionGroupRequestBuilder) Delta() *SectionGroupRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SectionGroupRequest is request for SectionGroup
 type SectionGroupRequest struct{ BaseRequest }
 

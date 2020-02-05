@@ -21,6 +21,12 @@ func (b *PolicyRequestBuilder) Request() *PolicyRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PolicyRequestBuilder) Delta() *PolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PolicyRequest is request for Policy
 type PolicyRequest struct{ BaseRequest }
 

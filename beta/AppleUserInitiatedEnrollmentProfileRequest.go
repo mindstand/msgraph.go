@@ -21,6 +21,12 @@ func (b *AppleUserInitiatedEnrollmentProfileRequestBuilder) Request() *AppleUser
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AppleUserInitiatedEnrollmentProfileRequestBuilder) Delta() *AppleUserInitiatedEnrollmentProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AppleUserInitiatedEnrollmentProfileRequest is request for AppleUserInitiatedEnrollmentProfile
 type AppleUserInitiatedEnrollmentProfileRequest struct{ BaseRequest }
 

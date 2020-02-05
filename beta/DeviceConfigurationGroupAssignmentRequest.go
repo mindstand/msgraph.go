@@ -14,6 +14,12 @@ func (b *DeviceConfigurationGroupAssignmentRequestBuilder) Request() *DeviceConf
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceConfigurationGroupAssignmentRequestBuilder) Delta() *DeviceConfigurationGroupAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceConfigurationGroupAssignmentRequest is request for DeviceConfigurationGroupAssignment
 type DeviceConfigurationGroupAssignmentRequest struct{ BaseRequest }
 

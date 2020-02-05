@@ -14,6 +14,12 @@ func (b *GeneralLedgerEntryRequestBuilder) Request() *GeneralLedgerEntryRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GeneralLedgerEntryRequestBuilder) Delta() *GeneralLedgerEntryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GeneralLedgerEntryRequest is request for GeneralLedgerEntry
 type GeneralLedgerEntryRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *EmbeddedSIMActivationCodePoolRequestBuilder) Request() *EmbeddedSIMActi
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EmbeddedSIMActivationCodePoolRequestBuilder) Delta() *EmbeddedSIMActivationCodePoolRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EmbeddedSIMActivationCodePoolRequest is request for EmbeddedSIMActivationCodePool
 type EmbeddedSIMActivationCodePoolRequest struct{ BaseRequest }
 

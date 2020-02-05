@@ -14,6 +14,12 @@ func (b *TaxGroupRequestBuilder) Request() *TaxGroupRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TaxGroupRequestBuilder) Delta() *TaxGroupRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TaxGroupRequest is request for TaxGroup
 type TaxGroupRequest struct{ BaseRequest }
 

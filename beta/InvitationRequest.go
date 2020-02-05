@@ -14,6 +14,12 @@ func (b *InvitationRequestBuilder) Request() *InvitationRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *InvitationRequestBuilder) Delta() *InvitationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // InvitationRequest is request for Invitation
 type InvitationRequest struct{ BaseRequest }
 

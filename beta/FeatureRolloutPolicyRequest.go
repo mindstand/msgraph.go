@@ -21,6 +21,12 @@ func (b *FeatureRolloutPolicyRequestBuilder) Request() *FeatureRolloutPolicyRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *FeatureRolloutPolicyRequestBuilder) Delta() *FeatureRolloutPolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // FeatureRolloutPolicyRequest is request for FeatureRolloutPolicy
 type FeatureRolloutPolicyRequest struct{ BaseRequest }
 

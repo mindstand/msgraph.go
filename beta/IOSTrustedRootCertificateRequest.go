@@ -14,6 +14,12 @@ func (b *IOSTrustedRootCertificateRequestBuilder) Request() *IOSTrustedRootCerti
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IOSTrustedRootCertificateRequestBuilder) Delta() *IOSTrustedRootCertificateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IOSTrustedRootCertificateRequest is request for IOSTrustedRootCertificate
 type IOSTrustedRootCertificateRequest struct{ BaseRequest }
 

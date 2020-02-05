@@ -14,6 +14,12 @@ func (b *GroupSettingRequestBuilder) Request() *GroupSettingRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GroupSettingRequestBuilder) Delta() *GroupSettingRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GroupSettingRequest is request for GroupSetting
 type GroupSettingRequest struct{ BaseRequest }
 

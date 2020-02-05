@@ -14,6 +14,12 @@ func (b *UserPFXCertificateRequestBuilder) Request() *UserPFXCertificateRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UserPFXCertificateRequestBuilder) Delta() *UserPFXCertificateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UserPFXCertificateRequest is request for UserPFXCertificate
 type UserPFXCertificateRequest struct{ BaseRequest }
 

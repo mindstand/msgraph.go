@@ -21,6 +21,12 @@ func (b *AndroidManagedAppProtectionRequestBuilder) Request() *AndroidManagedApp
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AndroidManagedAppProtectionRequestBuilder) Delta() *AndroidManagedAppProtectionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AndroidManagedAppProtectionRequest is request for AndroidManagedAppProtection
 type AndroidManagedAppProtectionRequest struct{ BaseRequest }
 

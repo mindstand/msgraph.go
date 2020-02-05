@@ -14,6 +14,12 @@ func (b *SideLoadingKeyRequestBuilder) Request() *SideLoadingKeyRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SideLoadingKeyRequestBuilder) Delta() *SideLoadingKeyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SideLoadingKeyRequest is request for SideLoadingKey
 type SideLoadingKeyRequest struct{ BaseRequest }
 

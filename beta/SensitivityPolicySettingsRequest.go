@@ -14,6 +14,12 @@ func (b *SensitivityPolicySettingsRequestBuilder) Request() *SensitivityPolicySe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SensitivityPolicySettingsRequestBuilder) Delta() *SensitivityPolicySettingsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SensitivityPolicySettingsRequest is request for SensitivityPolicySettings
 type SensitivityPolicySettingsRequest struct{ BaseRequest }
 

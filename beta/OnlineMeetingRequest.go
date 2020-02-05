@@ -14,6 +14,12 @@ func (b *OnlineMeetingRequestBuilder) Request() *OnlineMeetingRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OnlineMeetingRequestBuilder) Delta() *OnlineMeetingRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OnlineMeetingRequest is request for OnlineMeeting
 type OnlineMeetingRequest struct{ BaseRequest }
 

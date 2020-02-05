@@ -14,6 +14,12 @@ func (b *WindowsFeatureUpdateProfileAssignmentRequestBuilder) Request() *Windows
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsFeatureUpdateProfileAssignmentRequestBuilder) Delta() *WindowsFeatureUpdateProfileAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsFeatureUpdateProfileAssignmentRequest is request for WindowsFeatureUpdateProfileAssignment
 type WindowsFeatureUpdateProfileAssignmentRequest struct{ BaseRequest }
 

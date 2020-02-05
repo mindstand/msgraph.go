@@ -14,6 +14,12 @@ func (b *IOSUpdateDeviceStatusRequestBuilder) Request() *IOSUpdateDeviceStatusRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IOSUpdateDeviceStatusRequestBuilder) Delta() *IOSUpdateDeviceStatusRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IOSUpdateDeviceStatusRequest is request for IOSUpdateDeviceStatus
 type IOSUpdateDeviceStatusRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *WindowsInformationProtectionWipeActionRequestBuilder) Request() *Window
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsInformationProtectionWipeActionRequestBuilder) Delta() *WindowsInformationProtectionWipeActionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsInformationProtectionWipeActionRequest is request for WindowsInformationProtectionWipeAction
 type WindowsInformationProtectionWipeActionRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *IOSCertificateProfileBaseRequestBuilder) Request() *IOSCertificateProfi
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IOSCertificateProfileBaseRequestBuilder) Delta() *IOSCertificateProfileBaseRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IOSCertificateProfileBaseRequest is request for IOSCertificateProfileBase
 type IOSCertificateProfileBaseRequest struct{ BaseRequest }
 

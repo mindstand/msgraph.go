@@ -21,6 +21,12 @@ func (b *DepOnboardingSettingRequestBuilder) Request() *DepOnboardingSettingRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DepOnboardingSettingRequestBuilder) Delta() *DepOnboardingSettingRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DepOnboardingSettingRequest is request for DepOnboardingSetting
 type DepOnboardingSettingRequest struct{ BaseRequest }
 

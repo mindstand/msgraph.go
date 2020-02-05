@@ -14,6 +14,12 @@ func (b *AccessReviewDecisionRequestBuilder) Request() *AccessReviewDecisionRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AccessReviewDecisionRequestBuilder) Delta() *AccessReviewDecisionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AccessReviewDecisionRequest is request for AccessReviewDecision
 type AccessReviewDecisionRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *WindowsInformationProtectionNetworkLearningSummaryRequestBuilder) Reque
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsInformationProtectionNetworkLearningSummaryRequestBuilder) Delta() *WindowsInformationProtectionNetworkLearningSummaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsInformationProtectionNetworkLearningSummaryRequest is request for WindowsInformationProtectionNetworkLearningSummary
 type WindowsInformationProtectionNetworkLearningSummaryRequest struct{ BaseRequest }
 

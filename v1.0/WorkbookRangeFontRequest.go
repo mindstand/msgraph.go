@@ -14,6 +14,12 @@ func (b *WorkbookRangeFontRequestBuilder) Request() *WorkbookRangeFontRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookRangeFontRequestBuilder) Delta() *WorkbookRangeFontRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookRangeFontRequest is request for WorkbookRangeFont
 type WorkbookRangeFontRequest struct{ BaseRequest }
 

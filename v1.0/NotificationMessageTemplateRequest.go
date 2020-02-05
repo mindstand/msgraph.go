@@ -21,6 +21,12 @@ func (b *NotificationMessageTemplateRequestBuilder) Request() *NotificationMessa
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *NotificationMessageTemplateRequestBuilder) Delta() *NotificationMessageTemplateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // NotificationMessageTemplateRequest is request for NotificationMessageTemplate
 type NotificationMessageTemplateRequest struct{ BaseRequest }
 

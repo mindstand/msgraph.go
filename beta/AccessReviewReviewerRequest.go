@@ -14,6 +14,12 @@ func (b *AccessReviewReviewerRequestBuilder) Request() *AccessReviewReviewerRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AccessReviewReviewerRequestBuilder) Delta() *AccessReviewReviewerRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AccessReviewReviewerRequest is request for AccessReviewReviewer
 type AccessReviewReviewerRequest struct{ BaseRequest }
 

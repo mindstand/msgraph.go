@@ -21,6 +21,12 @@ func (b *CalendarGroupRequestBuilder) Request() *CalendarGroupRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CalendarGroupRequestBuilder) Delta() *CalendarGroupRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CalendarGroupRequest is request for CalendarGroup
 type CalendarGroupRequest struct{ BaseRequest }
 

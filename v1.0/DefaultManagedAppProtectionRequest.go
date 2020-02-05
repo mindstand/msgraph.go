@@ -21,6 +21,12 @@ func (b *DefaultManagedAppProtectionRequestBuilder) Request() *DefaultManagedApp
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DefaultManagedAppProtectionRequestBuilder) Delta() *DefaultManagedAppProtectionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DefaultManagedAppProtectionRequest is request for DefaultManagedAppProtection
 type DefaultManagedAppProtectionRequest struct{ BaseRequest }
 

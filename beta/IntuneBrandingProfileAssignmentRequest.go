@@ -14,6 +14,12 @@ func (b *IntuneBrandingProfileAssignmentRequestBuilder) Request() *IntuneBrandin
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IntuneBrandingProfileAssignmentRequestBuilder) Delta() *IntuneBrandingProfileAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IntuneBrandingProfileAssignmentRequest is request for IntuneBrandingProfileAssignment
 type IntuneBrandingProfileAssignmentRequest struct{ BaseRequest }
 

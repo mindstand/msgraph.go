@@ -14,6 +14,12 @@ func (b *OutlookItemRequestBuilder) Request() *OutlookItemRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OutlookItemRequestBuilder) Delta() *OutlookItemRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OutlookItemRequest is request for OutlookItem
 type OutlookItemRequest struct{ BaseRequest }
 

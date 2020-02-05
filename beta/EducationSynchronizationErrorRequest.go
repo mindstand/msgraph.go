@@ -14,6 +14,12 @@ func (b *EducationSynchronizationErrorRequestBuilder) Request() *EducationSynchr
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EducationSynchronizationErrorRequestBuilder) Delta() *EducationSynchronizationErrorRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EducationSynchronizationErrorRequest is request for EducationSynchronizationError
 type EducationSynchronizationErrorRequest struct{ BaseRequest }
 

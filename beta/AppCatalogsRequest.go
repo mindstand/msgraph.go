@@ -21,6 +21,12 @@ func (b *AppCatalogsRequestBuilder) Request() *AppCatalogsRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AppCatalogsRequestBuilder) Delta() *AppCatalogsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AppCatalogsRequest is request for AppCatalogs
 type AppCatalogsRequest struct{ BaseRequest }
 

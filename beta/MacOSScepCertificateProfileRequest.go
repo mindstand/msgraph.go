@@ -21,6 +21,12 @@ func (b *MacOSScepCertificateProfileRequestBuilder) Request() *MacOSScepCertific
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MacOSScepCertificateProfileRequestBuilder) Delta() *MacOSScepCertificateProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MacOSScepCertificateProfileRequest is request for MacOSScepCertificateProfile
 type MacOSScepCertificateProfileRequest struct{ BaseRequest }
 

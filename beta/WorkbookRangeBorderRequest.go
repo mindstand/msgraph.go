@@ -14,6 +14,12 @@ func (b *WorkbookRangeBorderRequestBuilder) Request() *WorkbookRangeBorderReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookRangeBorderRequestBuilder) Delta() *WorkbookRangeBorderRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookRangeBorderRequest is request for WorkbookRangeBorder
 type WorkbookRangeBorderRequest struct{ BaseRequest }
 

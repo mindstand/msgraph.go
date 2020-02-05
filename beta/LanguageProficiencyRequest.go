@@ -14,6 +14,12 @@ func (b *LanguageProficiencyRequestBuilder) Request() *LanguageProficiencyReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *LanguageProficiencyRequestBuilder) Delta() *LanguageProficiencyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // LanguageProficiencyRequest is request for LanguageProficiency
 type LanguageProficiencyRequest struct{ BaseRequest }
 

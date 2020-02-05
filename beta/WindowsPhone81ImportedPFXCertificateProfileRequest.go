@@ -21,6 +21,12 @@ func (b *WindowsPhone81ImportedPFXCertificateProfileRequestBuilder) Request() *W
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsPhone81ImportedPFXCertificateProfileRequestBuilder) Delta() *WindowsPhone81ImportedPFXCertificateProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsPhone81ImportedPFXCertificateProfileRequest is request for WindowsPhone81ImportedPFXCertificateProfile
 type WindowsPhone81ImportedPFXCertificateProfileRequest struct{ BaseRequest }
 

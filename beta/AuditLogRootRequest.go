@@ -21,6 +21,12 @@ func (b *AuditLogRootRequestBuilder) Request() *AuditLogRootRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AuditLogRootRequestBuilder) Delta() *AuditLogRootRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AuditLogRootRequest is request for AuditLogRoot
 type AuditLogRootRequest struct{ BaseRequest }
 

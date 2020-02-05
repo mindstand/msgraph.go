@@ -14,6 +14,12 @@ func (b *WorkbookCommentReplyRequestBuilder) Request() *WorkbookCommentReplyRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookCommentReplyRequestBuilder) Delta() *WorkbookCommentReplyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookCommentReplyRequest is request for WorkbookCommentReply
 type WorkbookCommentReplyRequest struct{ BaseRequest }
 

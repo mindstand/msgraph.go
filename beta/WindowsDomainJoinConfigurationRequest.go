@@ -21,6 +21,12 @@ func (b *WindowsDomainJoinConfigurationRequestBuilder) Request() *WindowsDomainJ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsDomainJoinConfigurationRequestBuilder) Delta() *WindowsDomainJoinConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsDomainJoinConfigurationRequest is request for WindowsDomainJoinConfiguration
 type WindowsDomainJoinConfigurationRequest struct{ BaseRequest }
 

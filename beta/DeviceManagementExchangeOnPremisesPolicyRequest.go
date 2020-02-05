@@ -14,6 +14,12 @@ func (b *DeviceManagementExchangeOnPremisesPolicyRequestBuilder) Request() *Devi
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementExchangeOnPremisesPolicyRequestBuilder) Delta() *DeviceManagementExchangeOnPremisesPolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementExchangeOnPremisesPolicyRequest is request for DeviceManagementExchangeOnPremisesPolicy
 type DeviceManagementExchangeOnPremisesPolicyRequest struct{ BaseRequest }
 

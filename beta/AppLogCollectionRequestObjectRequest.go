@@ -14,6 +14,12 @@ func (b *AppLogCollectionRequestObjectRequestBuilder) Request() *AppLogCollectio
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AppLogCollectionRequestObjectRequestBuilder) Delta() *AppLogCollectionRequestObjectRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AppLogCollectionRequestObjectRequest is request for AppLogCollectionRequestObject
 type AppLogCollectionRequestObjectRequest struct{ BaseRequest }
 

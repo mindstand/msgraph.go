@@ -14,6 +14,12 @@ func (b *PolicySetAssignmentRequestBuilder) Request() *PolicySetAssignmentReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PolicySetAssignmentRequestBuilder) Delta() *PolicySetAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PolicySetAssignmentRequest is request for PolicySetAssignment
 type PolicySetAssignmentRequest struct{ BaseRequest }
 

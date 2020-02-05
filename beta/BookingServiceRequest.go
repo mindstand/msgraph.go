@@ -14,6 +14,12 @@ func (b *BookingServiceRequestBuilder) Request() *BookingServiceRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *BookingServiceRequestBuilder) Delta() *BookingServiceRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // BookingServiceRequest is request for BookingService
 type BookingServiceRequest struct{ BaseRequest }
 

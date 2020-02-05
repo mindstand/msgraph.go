@@ -14,6 +14,12 @@ func (b *WorkbookChartDataLabelsRequestBuilder) Request() *WorkbookChartDataLabe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookChartDataLabelsRequestBuilder) Delta() *WorkbookChartDataLabelsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookChartDataLabelsRequest is request for WorkbookChartDataLabels
 type WorkbookChartDataLabelsRequest struct{ BaseRequest }
 

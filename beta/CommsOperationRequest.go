@@ -14,6 +14,12 @@ func (b *CommsOperationRequestBuilder) Request() *CommsOperationRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CommsOperationRequestBuilder) Delta() *CommsOperationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CommsOperationRequest is request for CommsOperation
 type CommsOperationRequest struct{ BaseRequest }
 

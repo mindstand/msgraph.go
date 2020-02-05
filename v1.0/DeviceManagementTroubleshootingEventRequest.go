@@ -14,6 +14,12 @@ func (b *DeviceManagementTroubleshootingEventRequestBuilder) Request() *DeviceMa
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementTroubleshootingEventRequestBuilder) Delta() *DeviceManagementTroubleshootingEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementTroubleshootingEventRequest is request for DeviceManagementTroubleshootingEvent
 type DeviceManagementTroubleshootingEventRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *EnrollmentProfileRequestBuilder) Request() *EnrollmentProfileRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EnrollmentProfileRequestBuilder) Delta() *EnrollmentProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EnrollmentProfileRequest is request for EnrollmentProfile
 type EnrollmentProfileRequest struct{ BaseRequest }
 

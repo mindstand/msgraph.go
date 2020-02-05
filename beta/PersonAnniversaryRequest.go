@@ -14,6 +14,12 @@ func (b *PersonAnniversaryRequestBuilder) Request() *PersonAnniversaryRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PersonAnniversaryRequestBuilder) Delta() *PersonAnniversaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PersonAnniversaryRequest is request for PersonAnniversary
 type PersonAnniversaryRequest struct{ BaseRequest }
 

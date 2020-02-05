@@ -14,6 +14,12 @@ func (b *MessageRuleRequestBuilder) Request() *MessageRuleRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MessageRuleRequestBuilder) Delta() *MessageRuleRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MessageRuleRequest is request for MessageRule
 type MessageRuleRequest struct{ BaseRequest }
 

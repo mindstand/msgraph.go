@@ -14,6 +14,12 @@ func (b *GroupPolicySettingMappingRequestBuilder) Request() *GroupPolicySettingM
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GroupPolicySettingMappingRequestBuilder) Delta() *GroupPolicySettingMappingRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GroupPolicySettingMappingRequest is request for GroupPolicySettingMapping
 type GroupPolicySettingMappingRequest struct{ BaseRequest }
 

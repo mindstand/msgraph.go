@@ -21,6 +21,12 @@ func (b *ConditionalAccessRootRequestBuilder) Request() *ConditionalAccessRootRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ConditionalAccessRootRequestBuilder) Delta() *ConditionalAccessRootRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ConditionalAccessRootRequest is request for ConditionalAccessRoot
 type ConditionalAccessRootRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *EducationSynchronizationProfileStatusRequestBuilder) Request() *Educati
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *EducationSynchronizationProfileStatusRequestBuilder) Delta() *EducationSynchronizationProfileStatusRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // EducationSynchronizationProfileStatusRequest is request for EducationSynchronizationProfileStatus
 type EducationSynchronizationProfileStatusRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *IdentityRiskEventRequestBuilder) Request() *IdentityRiskEventRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IdentityRiskEventRequestBuilder) Delta() *IdentityRiskEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IdentityRiskEventRequest is request for IdentityRiskEvent
 type IdentityRiskEventRequest struct{ BaseRequest }
 

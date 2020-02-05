@@ -14,6 +14,12 @@ func (b *DomainSecurityProfileRequestBuilder) Request() *DomainSecurityProfileRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DomainSecurityProfileRequestBuilder) Delta() *DomainSecurityProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DomainSecurityProfileRequest is request for DomainSecurityProfile
 type DomainSecurityProfileRequest struct{ BaseRequest }
 

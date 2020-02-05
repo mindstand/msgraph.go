@@ -21,6 +21,12 @@ func (b *IOSVppAppRequestBuilder) Request() *IOSVppAppRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IOSVppAppRequestBuilder) Delta() *IOSVppAppRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IOSVppAppRequest is request for IOSVppApp
 type IOSVppAppRequest struct{ BaseRequest }
 

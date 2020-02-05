@@ -21,6 +21,12 @@ func (b *Windows10ImportedPFXCertificateProfileRequestBuilder) Request() *Window
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *Windows10ImportedPFXCertificateProfileRequestBuilder) Delta() *Windows10ImportedPFXCertificateProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // Windows10ImportedPFXCertificateProfileRequest is request for Windows10ImportedPFXCertificateProfile
 type Windows10ImportedPFXCertificateProfileRequest struct{ BaseRequest }
 

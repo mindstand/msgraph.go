@@ -21,6 +21,12 @@ func (b *IOSEnterpriseWiFiConfigurationRequestBuilder) Request() *IOSEnterpriseW
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IOSEnterpriseWiFiConfigurationRequestBuilder) Delta() *IOSEnterpriseWiFiConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IOSEnterpriseWiFiConfigurationRequest is request for IOSEnterpriseWiFiConfiguration
 type IOSEnterpriseWiFiConfigurationRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *ExternalItemRequestBuilder) Request() *ExternalItemRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ExternalItemRequestBuilder) Delta() *ExternalItemRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ExternalItemRequest is request for ExternalItem
 type ExternalItemRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *OfficeClientConfigurationAssignmentRequestBuilder) Request() *OfficeCli
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OfficeClientConfigurationAssignmentRequestBuilder) Delta() *OfficeClientConfigurationAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OfficeClientConfigurationAssignmentRequest is request for OfficeClientConfigurationAssignment
 type OfficeClientConfigurationAssignmentRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *LeakedCredentialsRiskEventRequestBuilder) Request() *LeakedCredentialsR
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *LeakedCredentialsRiskEventRequestBuilder) Delta() *LeakedCredentialsRiskEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // LeakedCredentialsRiskEventRequest is request for LeakedCredentialsRiskEvent
 type LeakedCredentialsRiskEventRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *WindowsUpdateForBusinessConfigurationRequestBuilder) Request() *Windows
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsUpdateForBusinessConfigurationRequestBuilder) Delta() *WindowsUpdateForBusinessConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsUpdateForBusinessConfigurationRequest is request for WindowsUpdateForBusinessConfiguration
 type WindowsUpdateForBusinessConfigurationRequest struct{ BaseRequest }
 

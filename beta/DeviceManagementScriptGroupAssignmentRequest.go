@@ -14,6 +14,12 @@ func (b *DeviceManagementScriptGroupAssignmentRequestBuilder) Request() *DeviceM
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementScriptGroupAssignmentRequestBuilder) Delta() *DeviceManagementScriptGroupAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementScriptGroupAssignmentRequest is request for DeviceManagementScriptGroupAssignment
 type DeviceManagementScriptGroupAssignmentRequest struct{ BaseRequest }
 

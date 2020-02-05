@@ -21,6 +21,12 @@ func (b *Windows10GeneralConfigurationRequestBuilder) Request() *Windows10Genera
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *Windows10GeneralConfigurationRequestBuilder) Delta() *Windows10GeneralConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // Windows10GeneralConfigurationRequest is request for Windows10GeneralConfiguration
 type Windows10GeneralConfigurationRequest struct{ BaseRequest }
 

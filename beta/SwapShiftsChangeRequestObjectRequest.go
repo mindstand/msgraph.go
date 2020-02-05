@@ -14,6 +14,12 @@ func (b *SwapShiftsChangeRequestObjectRequestBuilder) Request() *SwapShiftsChang
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SwapShiftsChangeRequestObjectRequestBuilder) Delta() *SwapShiftsChangeRequestObjectRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SwapShiftsChangeRequestObjectRequest is request for SwapShiftsChangeRequestObject
 type SwapShiftsChangeRequestObjectRequest struct{ BaseRequest }
 

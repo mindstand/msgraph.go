@@ -14,6 +14,12 @@ func (b *ContractRequestBuilder) Request() *ContractRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ContractRequestBuilder) Delta() *ContractRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ContractRequest is request for Contract
 type ContractRequest struct{ BaseRequest }
 

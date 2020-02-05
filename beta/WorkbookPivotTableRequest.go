@@ -14,6 +14,12 @@ func (b *WorkbookPivotTableRequestBuilder) Request() *WorkbookPivotTableRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookPivotTableRequestBuilder) Delta() *WorkbookPivotTableRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookPivotTableRequest is request for WorkbookPivotTable
 type WorkbookPivotTableRequest struct{ BaseRequest }
 

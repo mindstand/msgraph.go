@@ -14,6 +14,12 @@ func (b *DeviceManagementSettingDefinitionRequestBuilder) Request() *DeviceManag
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementSettingDefinitionRequestBuilder) Delta() *DeviceManagementSettingDefinitionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementSettingDefinitionRequest is request for DeviceManagementSettingDefinition
 type DeviceManagementSettingDefinitionRequest struct{ BaseRequest }
 

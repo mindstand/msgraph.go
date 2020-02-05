@@ -14,6 +14,12 @@ func (b *TeamsTabRequestBuilder) Request() *TeamsTabRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TeamsTabRequestBuilder) Delta() *TeamsTabRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TeamsTabRequest is request for TeamsTab
 type TeamsTabRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *GroupRequestBuilder) Request() *GroupRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GroupRequestBuilder) Delta() *GroupRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GroupRequest is request for Group
 type GroupRequest struct{ BaseRequest }
 

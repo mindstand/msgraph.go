@@ -14,6 +14,12 @@ func (b *UnifiedRoleAssignmentRequestBuilder) Request() *UnifiedRoleAssignmentRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *UnifiedRoleAssignmentRequestBuilder) Delta() *UnifiedRoleAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // UnifiedRoleAssignmentRequest is request for UnifiedRoleAssignment
 type UnifiedRoleAssignmentRequest struct{ BaseRequest }
 

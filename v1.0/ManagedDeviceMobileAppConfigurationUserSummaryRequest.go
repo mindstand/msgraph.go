@@ -14,6 +14,12 @@ func (b *ManagedDeviceMobileAppConfigurationUserSummaryRequestBuilder) Request()
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ManagedDeviceMobileAppConfigurationUserSummaryRequestBuilder) Delta() *ManagedDeviceMobileAppConfigurationUserSummaryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ManagedDeviceMobileAppConfigurationUserSummaryRequest is request for ManagedDeviceMobileAppConfigurationUserSummary
 type ManagedDeviceMobileAppConfigurationUserSummaryRequest struct{ BaseRequest }
 

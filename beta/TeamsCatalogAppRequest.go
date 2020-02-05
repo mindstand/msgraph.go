@@ -14,6 +14,12 @@ func (b *TeamsCatalogAppRequestBuilder) Request() *TeamsCatalogAppRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TeamsCatalogAppRequestBuilder) Delta() *TeamsCatalogAppRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TeamsCatalogAppRequest is request for TeamsCatalogApp
 type TeamsCatalogAppRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *SingleValueLegacyExtendedPropertyRequestBuilder) Request() *SingleValue
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SingleValueLegacyExtendedPropertyRequestBuilder) Delta() *SingleValueLegacyExtendedPropertyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SingleValueLegacyExtendedPropertyRequest is request for SingleValueLegacyExtendedProperty
 type SingleValueLegacyExtendedPropertyRequest struct{ BaseRequest }
 

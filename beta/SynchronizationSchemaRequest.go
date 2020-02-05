@@ -21,6 +21,12 @@ func (b *SynchronizationSchemaRequestBuilder) Request() *SynchronizationSchemaRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SynchronizationSchemaRequestBuilder) Delta() *SynchronizationSchemaRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SynchronizationSchemaRequest is request for SynchronizationSchema
 type SynchronizationSchemaRequest struct{ BaseRequest }
 

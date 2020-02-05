@@ -21,6 +21,12 @@ func (b *DriveItemRequestBuilder) Request() *DriveItemRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DriveItemRequestBuilder) Delta() *DriveItemRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DriveItemRequest is request for DriveItem
 type DriveItemRequest struct{ BaseRequest }
 

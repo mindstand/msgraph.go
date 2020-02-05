@@ -14,6 +14,12 @@ func (b *ComplianceManagementPartnerRequestBuilder) Request() *ComplianceManagem
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ComplianceManagementPartnerRequestBuilder) Delta() *ComplianceManagementPartnerRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ComplianceManagementPartnerRequest is request for ComplianceManagementPartner
 type ComplianceManagementPartnerRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *IOSLobAppProvisioningConfigurationRequestBuilder) Request() *IOSLobAppP
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *IOSLobAppProvisioningConfigurationRequestBuilder) Delta() *IOSLobAppProvisioningConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // IOSLobAppProvisioningConfigurationRequest is request for IOSLobAppProvisioningConfiguration
 type IOSLobAppProvisioningConfigurationRequest struct{ BaseRequest }
 

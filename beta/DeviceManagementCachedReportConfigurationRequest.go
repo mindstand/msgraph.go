@@ -14,6 +14,12 @@ func (b *DeviceManagementCachedReportConfigurationRequestBuilder) Request() *Dev
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementCachedReportConfigurationRequestBuilder) Delta() *DeviceManagementCachedReportConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementCachedReportConfigurationRequest is request for DeviceManagementCachedReportConfiguration
 type DeviceManagementCachedReportConfigurationRequest struct{ BaseRequest }
 

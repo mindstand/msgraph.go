@@ -14,6 +14,12 @@ func (b *WindowsUpdateStateRequestBuilder) Request() *WindowsUpdateStateRequest 
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsUpdateStateRequestBuilder) Delta() *WindowsUpdateStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsUpdateStateRequest is request for WindowsUpdateState
 type WindowsUpdateStateRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *TrustFrameworkKeySetRequestBuilder) Request() *TrustFrameworkKeySetRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TrustFrameworkKeySetRequestBuilder) Delta() *TrustFrameworkKeySetRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TrustFrameworkKeySetRequest is request for TrustFrameworkKeySet
 type TrustFrameworkKeySetRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *MobileAppIntentAndStateRequestBuilder) Request() *MobileAppIntentAndSta
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *MobileAppIntentAndStateRequestBuilder) Delta() *MobileAppIntentAndStateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // MobileAppIntentAndStateRequest is request for MobileAppIntentAndState
 type MobileAppIntentAndStateRequest struct{ BaseRequest }
 

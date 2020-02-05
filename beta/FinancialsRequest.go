@@ -21,6 +21,12 @@ func (b *FinancialsRequestBuilder) Request() *FinancialsRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *FinancialsRequestBuilder) Delta() *FinancialsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // FinancialsRequest is request for Financials
 type FinancialsRequest struct{ BaseRequest }
 

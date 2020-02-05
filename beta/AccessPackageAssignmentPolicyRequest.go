@@ -14,6 +14,12 @@ func (b *AccessPackageAssignmentPolicyRequestBuilder) Request() *AccessPackageAs
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AccessPackageAssignmentPolicyRequestBuilder) Delta() *AccessPackageAssignmentPolicyRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AccessPackageAssignmentPolicyRequest is request for AccessPackageAssignmentPolicy
 type AccessPackageAssignmentPolicyRequest struct{ BaseRequest }
 

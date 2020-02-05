@@ -14,6 +14,12 @@ func (b *ApplicationTemplateRequestBuilder) Request() *ApplicationTemplateReques
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ApplicationTemplateRequestBuilder) Delta() *ApplicationTemplateRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ApplicationTemplateRequest is request for ApplicationTemplate
 type ApplicationTemplateRequest struct{ BaseRequest }
 

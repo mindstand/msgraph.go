@@ -14,6 +14,12 @@ func (b *CalendarSharingMessageRequestBuilder) Request() *CalendarSharingMessage
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *CalendarSharingMessageRequestBuilder) Delta() *CalendarSharingMessageRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // CalendarSharingMessageRequest is request for CalendarSharingMessage
 type CalendarSharingMessageRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *SalesInvoiceLineRequestBuilder) Request() *SalesInvoiceLineRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *SalesInvoiceLineRequestBuilder) Delta() *SalesInvoiceLineRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // SalesInvoiceLineRequest is request for SalesInvoiceLine
 type SalesInvoiceLineRequest struct{ BaseRequest }
 

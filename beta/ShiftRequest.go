@@ -14,6 +14,12 @@ func (b *ShiftRequestBuilder) Request() *ShiftRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ShiftRequestBuilder) Delta() *ShiftRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ShiftRequest is request for Shift
 type ShiftRequest struct{ BaseRequest }
 

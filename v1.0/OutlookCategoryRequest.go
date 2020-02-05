@@ -14,6 +14,12 @@ func (b *OutlookCategoryRequestBuilder) Request() *OutlookCategoryRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OutlookCategoryRequestBuilder) Delta() *OutlookCategoryRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OutlookCategoryRequest is request for OutlookCategory
 type OutlookCategoryRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *TeamworkRequestBuilder) Request() *TeamworkRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TeamworkRequestBuilder) Delta() *TeamworkRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TeamworkRequest is request for Teamwork
 type TeamworkRequest struct{ BaseRequest }
 

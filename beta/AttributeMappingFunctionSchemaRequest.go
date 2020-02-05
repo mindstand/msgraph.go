@@ -14,6 +14,12 @@ func (b *AttributeMappingFunctionSchemaRequestBuilder) Request() *AttributeMappi
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AttributeMappingFunctionSchemaRequestBuilder) Delta() *AttributeMappingFunctionSchemaRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AttributeMappingFunctionSchemaRequest is request for AttributeMappingFunctionSchema
 type AttributeMappingFunctionSchemaRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *DepIOSEnrollmentProfileRequestBuilder) Request() *DepIOSEnrollmentProfi
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DepIOSEnrollmentProfileRequestBuilder) Delta() *DepIOSEnrollmentProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DepIOSEnrollmentProfileRequest is request for DepIOSEnrollmentProfile
 type DepIOSEnrollmentProfileRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *GovernanceRoleDefinitionRequestBuilder) Request() *GovernanceRoleDefini
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *GovernanceRoleDefinitionRequestBuilder) Delta() *GovernanceRoleDefinitionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // GovernanceRoleDefinitionRequest is request for GovernanceRoleDefinition
 type GovernanceRoleDefinitionRequest struct{ BaseRequest }
 

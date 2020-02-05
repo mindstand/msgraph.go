@@ -14,6 +14,12 @@ func (b *AppRoleAssignmentRequestBuilder) Request() *AppRoleAssignmentRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AppRoleAssignmentRequestBuilder) Delta() *AppRoleAssignmentRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AppRoleAssignmentRequest is request for AppRoleAssignment
 type AppRoleAssignmentRequest struct{ BaseRequest }
 

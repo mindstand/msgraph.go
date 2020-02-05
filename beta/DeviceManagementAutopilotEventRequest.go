@@ -14,6 +14,12 @@ func (b *DeviceManagementAutopilotEventRequestBuilder) Request() *DeviceManageme
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DeviceManagementAutopilotEventRequestBuilder) Delta() *DeviceManagementAutopilotEventRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DeviceManagementAutopilotEventRequest is request for DeviceManagementAutopilotEvent
 type DeviceManagementAutopilotEventRequest struct{ BaseRequest }
 

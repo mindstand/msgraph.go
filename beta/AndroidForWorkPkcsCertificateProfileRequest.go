@@ -21,6 +21,12 @@ func (b *AndroidForWorkPkcsCertificateProfileRequestBuilder) Request() *AndroidF
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AndroidForWorkPkcsCertificateProfileRequestBuilder) Delta() *AndroidForWorkPkcsCertificateProfileRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AndroidForWorkPkcsCertificateProfileRequest is request for AndroidForWorkPkcsCertificateProfile
 type AndroidForWorkPkcsCertificateProfileRequest struct{ BaseRequest }
 

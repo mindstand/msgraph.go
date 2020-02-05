@@ -14,6 +14,12 @@ func (b *ManagedAppStatusRequestBuilder) Request() *ManagedAppStatusRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ManagedAppStatusRequestBuilder) Delta() *ManagedAppStatusRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ManagedAppStatusRequest is request for ManagedAppStatus
 type ManagedAppStatusRequest struct{ BaseRequest }
 

@@ -21,6 +21,12 @@ func (b *VendorRequestBuilder) Request() *VendorRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *VendorRequestBuilder) Delta() *VendorRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // VendorRequest is request for Vendor
 type VendorRequest struct{ BaseRequest }
 

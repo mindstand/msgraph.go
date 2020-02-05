@@ -14,6 +14,12 @@ func (b *ThreatAssessmentResultRequestBuilder) Request() *ThreatAssessmentResult
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ThreatAssessmentResultRequestBuilder) Delta() *ThreatAssessmentResultRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ThreatAssessmentResultRequest is request for ThreatAssessmentResult
 type ThreatAssessmentResultRequest struct{ BaseRequest }
 

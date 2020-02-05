@@ -14,6 +14,12 @@ func (b *DirectoryObjectRequestBuilder) Request() *DirectoryObjectRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *DirectoryObjectRequestBuilder) Delta() *DirectoryObjectRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // DirectoryObjectRequest is request for DirectoryObject
 type DirectoryObjectRequest struct{ BaseRequest }
 

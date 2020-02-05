@@ -21,6 +21,12 @@ func (b *ChannelRequestBuilder) Request() *ChannelRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *ChannelRequestBuilder) Delta() *ChannelRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // ChannelRequest is request for Channel
 type ChannelRequest struct{ BaseRequest }
 

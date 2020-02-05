@@ -14,6 +14,12 @@ func (b *RiskyUserHistoryItemRequestBuilder) Request() *RiskyUserHistoryItemRequ
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *RiskyUserHistoryItemRequestBuilder) Delta() *RiskyUserHistoryItemRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // RiskyUserHistoryItemRequest is request for RiskyUserHistoryItem
 type RiskyUserHistoryItemRequest struct{ BaseRequest }
 

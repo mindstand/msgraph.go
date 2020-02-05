@@ -14,6 +14,12 @@ func (b *AndroidManagedStoreAccountEnterpriseSettingsRequestBuilder) Request() *
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AndroidManagedStoreAccountEnterpriseSettingsRequestBuilder) Delta() *AndroidManagedStoreAccountEnterpriseSettingsRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AndroidManagedStoreAccountEnterpriseSettingsRequest is request for AndroidManagedStoreAccountEnterpriseSettings
 type AndroidManagedStoreAccountEnterpriseSettingsRequest struct{ BaseRequest }
 

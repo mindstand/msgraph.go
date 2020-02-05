@@ -14,6 +14,12 @@ func (b *WindowsPhone81VpnConfigurationRequestBuilder) Request() *WindowsPhone81
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WindowsPhone81VpnConfigurationRequestBuilder) Delta() *WindowsPhone81VpnConfigurationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WindowsPhone81VpnConfigurationRequest is request for WindowsPhone81VpnConfiguration
 type WindowsPhone81VpnConfigurationRequest struct{ BaseRequest }
 

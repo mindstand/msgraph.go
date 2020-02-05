@@ -14,6 +14,12 @@ func (b *OAuth2PermissionGrantRequestBuilder) Request() *OAuth2PermissionGrantRe
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OAuth2PermissionGrantRequestBuilder) Delta() *OAuth2PermissionGrantRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OAuth2PermissionGrantRequest is request for OAuth2PermissionGrant
 type OAuth2PermissionGrantRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *TelecomExpenseManagementPartnerRequestBuilder) Request() *TelecomExpens
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *TelecomExpenseManagementPartnerRequestBuilder) Delta() *TelecomExpenseManagementPartnerRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // TelecomExpenseManagementPartnerRequest is request for TelecomExpenseManagementPartner
 type TelecomExpenseManagementPartnerRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *PrivilegedSignupStatusRequestBuilder) Request() *PrivilegedSignupStatus
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *PrivilegedSignupStatusRequestBuilder) Delta() *PrivilegedSignupStatusRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // PrivilegedSignupStatusRequest is request for PrivilegedSignupStatus
 type PrivilegedSignupStatusRequest struct{ BaseRequest }
 

@@ -14,6 +14,12 @@ func (b *AadUserConversationMemberRequestBuilder) Request() *AadUserConversation
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *AadUserConversationMemberRequestBuilder) Delta() *AadUserConversationMemberRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // AadUserConversationMemberRequest is request for AadUserConversationMember
 type AadUserConversationMemberRequest struct{ BaseRequest }
 

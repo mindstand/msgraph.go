@@ -14,6 +14,12 @@ func (b *WorkbookChartAxisTitleRequestBuilder) Request() *WorkbookChartAxisTitle
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *WorkbookChartAxisTitleRequestBuilder) Delta() *WorkbookChartAxisTitleRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // WorkbookChartAxisTitleRequest is request for WorkbookChartAxisTitle
 type WorkbookChartAxisTitleRequest struct{ BaseRequest }
 

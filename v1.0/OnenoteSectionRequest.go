@@ -21,6 +21,12 @@ func (b *OnenoteSectionRequestBuilder) Request() *OnenoteSectionRequest {
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *OnenoteSectionRequestBuilder) Delta() *OnenoteSectionRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // OnenoteSectionRequest is request for OnenoteSection
 type OnenoteSectionRequest struct{ BaseRequest }
 

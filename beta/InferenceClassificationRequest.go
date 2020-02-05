@@ -21,6 +21,12 @@ func (b *InferenceClassificationRequestBuilder) Request() *InferenceClassificati
 	}
 }
 
+// Delta appends "/delta" onto the builder
+func (b *InferenceClassificationRequestBuilder) Delta() *InferenceClassificationRequestBuilder {
+	b.baseUrl = b.baseUrl + "/delta"
+	return b
+}
+
 // InferenceClassificationRequest is request for InferenceClassification
 type InferenceClassificationRequest struct{ BaseRequest }
 
