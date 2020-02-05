@@ -3,13 +3,13 @@
 package msgraph
 
 // AgreementAcceptanceState undocumented
-type AgreementAcceptanceState int
+type AgreementAcceptanceState string
 
 const (
 	// AgreementAcceptanceStateVAccepted undocumented
-	AgreementAcceptanceStateVAccepted AgreementAcceptanceState = 2
+	AgreementAcceptanceStateVAccepted AgreementAcceptanceState = "Accepted"
 	// AgreementAcceptanceStateVDeclined undocumented
-	AgreementAcceptanceStateVDeclined AgreementAcceptanceState = 3
+	AgreementAcceptanceStateVDeclined AgreementAcceptanceState = "Declined"
 )
 
 // AgreementAcceptanceStatePAccepted returns a pointer to AgreementAcceptanceStateVAccepted

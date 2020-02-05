@@ -3,27 +3,27 @@
 package msgraph
 
 // SubjectNameFormat undocumented
-type SubjectNameFormat int
+type SubjectNameFormat string
 
 const (
 	// SubjectNameFormatVCommonName undocumented
-	SubjectNameFormatVCommonName SubjectNameFormat = 0
+	SubjectNameFormatVCommonName SubjectNameFormat = "CommonName"
 	// SubjectNameFormatVCommonNameIncludingEmail undocumented
-	SubjectNameFormatVCommonNameIncludingEmail SubjectNameFormat = 1
+	SubjectNameFormatVCommonNameIncludingEmail SubjectNameFormat = "CommonNameIncludingEmail"
 	// SubjectNameFormatVCommonNameAsEmail undocumented
-	SubjectNameFormatVCommonNameAsEmail SubjectNameFormat = 2
+	SubjectNameFormatVCommonNameAsEmail SubjectNameFormat = "CommonNameAsEmail"
 	// SubjectNameFormatVCustom undocumented
-	SubjectNameFormatVCustom SubjectNameFormat = 3
+	SubjectNameFormatVCustom SubjectNameFormat = "Custom"
 	// SubjectNameFormatVCommonNameAsIMEI undocumented
-	SubjectNameFormatVCommonNameAsIMEI SubjectNameFormat = 5
+	SubjectNameFormatVCommonNameAsIMEI SubjectNameFormat = "CommonNameAsIMEI"
 	// SubjectNameFormatVCommonNameAsSerialNumber undocumented
-	SubjectNameFormatVCommonNameAsSerialNumber SubjectNameFormat = 6
+	SubjectNameFormatVCommonNameAsSerialNumber SubjectNameFormat = "CommonNameAsSerialNumber"
 	// SubjectNameFormatVCommonNameAsAadDeviceID undocumented
-	SubjectNameFormatVCommonNameAsAadDeviceID SubjectNameFormat = 7
+	SubjectNameFormatVCommonNameAsAadDeviceID SubjectNameFormat = "CommonNameAsAadDeviceID"
 	// SubjectNameFormatVCommonNameAsIntuneDeviceID undocumented
-	SubjectNameFormatVCommonNameAsIntuneDeviceID SubjectNameFormat = 8
+	SubjectNameFormatVCommonNameAsIntuneDeviceID SubjectNameFormat = "CommonNameAsIntuneDeviceID"
 	// SubjectNameFormatVCommonNameAsDurableDeviceID undocumented
-	SubjectNameFormatVCommonNameAsDurableDeviceID SubjectNameFormat = 9
+	SubjectNameFormatVCommonNameAsDurableDeviceID SubjectNameFormat = "CommonNameAsDurableDeviceID"
 )
 
 // SubjectNameFormatPCommonName returns a pointer to SubjectNameFormatVCommonName

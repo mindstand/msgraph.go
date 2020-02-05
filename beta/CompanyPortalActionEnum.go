@@ -3,15 +3,15 @@
 package msgraph
 
 // CompanyPortalAction undocumented
-type CompanyPortalAction int
+type CompanyPortalAction string
 
 const (
 	// CompanyPortalActionVUnknown undocumented
-	CompanyPortalActionVUnknown CompanyPortalAction = 0
+	CompanyPortalActionVUnknown CompanyPortalAction = "Unknown"
 	// CompanyPortalActionVRemove undocumented
-	CompanyPortalActionVRemove CompanyPortalAction = 1
+	CompanyPortalActionVRemove CompanyPortalAction = "Remove"
 	// CompanyPortalActionVReset undocumented
-	CompanyPortalActionVReset CompanyPortalAction = 2
+	CompanyPortalActionVReset CompanyPortalAction = "Reset"
 )
 
 // CompanyPortalActionPUnknown returns a pointer to CompanyPortalActionVUnknown

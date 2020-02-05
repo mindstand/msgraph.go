@@ -3,15 +3,15 @@
 package msgraph
 
 // Win32LobAppMsiPackageType undocumented
-type Win32LobAppMsiPackageType int
+type Win32LobAppMsiPackageType string
 
 const (
 	// Win32LobAppMsiPackageTypeVPerMachine undocumented
-	Win32LobAppMsiPackageTypeVPerMachine Win32LobAppMsiPackageType = 0
+	Win32LobAppMsiPackageTypeVPerMachine Win32LobAppMsiPackageType = "PerMachine"
 	// Win32LobAppMsiPackageTypeVPerUser undocumented
-	Win32LobAppMsiPackageTypeVPerUser Win32LobAppMsiPackageType = 1
+	Win32LobAppMsiPackageTypeVPerUser Win32LobAppMsiPackageType = "PerUser"
 	// Win32LobAppMsiPackageTypeVDualPurpose undocumented
-	Win32LobAppMsiPackageTypeVDualPurpose Win32LobAppMsiPackageType = 2
+	Win32LobAppMsiPackageTypeVDualPurpose Win32LobAppMsiPackageType = "DualPurpose"
 )
 
 // Win32LobAppMsiPackageTypePPerMachine returns a pointer to Win32LobAppMsiPackageTypeVPerMachine

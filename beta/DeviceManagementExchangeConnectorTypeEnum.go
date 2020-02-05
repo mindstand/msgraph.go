@@ -3,17 +3,17 @@
 package msgraph
 
 // DeviceManagementExchangeConnectorType undocumented
-type DeviceManagementExchangeConnectorType int
+type DeviceManagementExchangeConnectorType string
 
 const (
 	// DeviceManagementExchangeConnectorTypeVOnPremises undocumented
-	DeviceManagementExchangeConnectorTypeVOnPremises DeviceManagementExchangeConnectorType = 0
+	DeviceManagementExchangeConnectorTypeVOnPremises DeviceManagementExchangeConnectorType = "OnPremises"
 	// DeviceManagementExchangeConnectorTypeVHosted undocumented
-	DeviceManagementExchangeConnectorTypeVHosted DeviceManagementExchangeConnectorType = 1
+	DeviceManagementExchangeConnectorTypeVHosted DeviceManagementExchangeConnectorType = "Hosted"
 	// DeviceManagementExchangeConnectorTypeVServiceToService undocumented
-	DeviceManagementExchangeConnectorTypeVServiceToService DeviceManagementExchangeConnectorType = 2
+	DeviceManagementExchangeConnectorTypeVServiceToService DeviceManagementExchangeConnectorType = "ServiceToService"
 	// DeviceManagementExchangeConnectorTypeVDedicated undocumented
-	DeviceManagementExchangeConnectorTypeVDedicated DeviceManagementExchangeConnectorType = 3
+	DeviceManagementExchangeConnectorTypeVDedicated DeviceManagementExchangeConnectorType = "Dedicated"
 )
 
 // DeviceManagementExchangeConnectorTypePOnPremises returns a pointer to DeviceManagementExchangeConnectorTypeVOnPremises

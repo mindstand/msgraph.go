@@ -3,23 +3,23 @@
 package msgraph
 
 // MobileAppIntent undocumented
-type MobileAppIntent int
+type MobileAppIntent string
 
 const (
 	// MobileAppIntentVAvailable undocumented
-	MobileAppIntentVAvailable MobileAppIntent = 0
+	MobileAppIntentVAvailable MobileAppIntent = "Available"
 	// MobileAppIntentVNotAvailable undocumented
-	MobileAppIntentVNotAvailable MobileAppIntent = 1
+	MobileAppIntentVNotAvailable MobileAppIntent = "NotAvailable"
 	// MobileAppIntentVRequiredInstall undocumented
-	MobileAppIntentVRequiredInstall MobileAppIntent = 2
+	MobileAppIntentVRequiredInstall MobileAppIntent = "RequiredInstall"
 	// MobileAppIntentVRequiredUninstall undocumented
-	MobileAppIntentVRequiredUninstall MobileAppIntent = 3
+	MobileAppIntentVRequiredUninstall MobileAppIntent = "RequiredUninstall"
 	// MobileAppIntentVRequiredAndAvailableInstall undocumented
-	MobileAppIntentVRequiredAndAvailableInstall MobileAppIntent = 4
+	MobileAppIntentVRequiredAndAvailableInstall MobileAppIntent = "RequiredAndAvailableInstall"
 	// MobileAppIntentVAvailableInstallWithoutEnrollment undocumented
-	MobileAppIntentVAvailableInstallWithoutEnrollment MobileAppIntent = 5
+	MobileAppIntentVAvailableInstallWithoutEnrollment MobileAppIntent = "AvailableInstallWithoutEnrollment"
 	// MobileAppIntentVExclude undocumented
-	MobileAppIntentVExclude MobileAppIntent = 6
+	MobileAppIntentVExclude MobileAppIntent = "Exclude"
 )
 
 // MobileAppIntentPAvailable returns a pointer to MobileAppIntentVAvailable

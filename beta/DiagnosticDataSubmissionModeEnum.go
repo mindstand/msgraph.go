@@ -3,19 +3,19 @@
 package msgraph
 
 // DiagnosticDataSubmissionMode undocumented
-type DiagnosticDataSubmissionMode int
+type DiagnosticDataSubmissionMode string
 
 const (
 	// DiagnosticDataSubmissionModeVUserDefined undocumented
-	DiagnosticDataSubmissionModeVUserDefined DiagnosticDataSubmissionMode = 0
+	DiagnosticDataSubmissionModeVUserDefined DiagnosticDataSubmissionMode = "UserDefined"
 	// DiagnosticDataSubmissionModeVNone undocumented
-	DiagnosticDataSubmissionModeVNone DiagnosticDataSubmissionMode = 1
+	DiagnosticDataSubmissionModeVNone DiagnosticDataSubmissionMode = "None"
 	// DiagnosticDataSubmissionModeVBasic undocumented
-	DiagnosticDataSubmissionModeVBasic DiagnosticDataSubmissionMode = 2
+	DiagnosticDataSubmissionModeVBasic DiagnosticDataSubmissionMode = "Basic"
 	// DiagnosticDataSubmissionModeVEnhanced undocumented
-	DiagnosticDataSubmissionModeVEnhanced DiagnosticDataSubmissionMode = 3
+	DiagnosticDataSubmissionModeVEnhanced DiagnosticDataSubmissionMode = "Enhanced"
 	// DiagnosticDataSubmissionModeVFull undocumented
-	DiagnosticDataSubmissionModeVFull DiagnosticDataSubmissionMode = 4
+	DiagnosticDataSubmissionModeVFull DiagnosticDataSubmissionMode = "Full"
 )
 
 // DiagnosticDataSubmissionModePUserDefined returns a pointer to DiagnosticDataSubmissionModeVUserDefined

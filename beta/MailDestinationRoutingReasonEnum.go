@@ -3,41 +3,41 @@
 package msgraph
 
 // MailDestinationRoutingReason undocumented
-type MailDestinationRoutingReason int
+type MailDestinationRoutingReason string
 
 const (
 	// MailDestinationRoutingReasonVNone undocumented
-	MailDestinationRoutingReasonVNone MailDestinationRoutingReason = 0
+	MailDestinationRoutingReasonVNone MailDestinationRoutingReason = "None"
 	// MailDestinationRoutingReasonVMailFlowRule undocumented
-	MailDestinationRoutingReasonVMailFlowRule MailDestinationRoutingReason = 1
+	MailDestinationRoutingReasonVMailFlowRule MailDestinationRoutingReason = "MailFlowRule"
 	// MailDestinationRoutingReasonVSafeSender undocumented
-	MailDestinationRoutingReasonVSafeSender MailDestinationRoutingReason = 2
+	MailDestinationRoutingReasonVSafeSender MailDestinationRoutingReason = "SafeSender"
 	// MailDestinationRoutingReasonVBlockedSender undocumented
-	MailDestinationRoutingReasonVBlockedSender MailDestinationRoutingReason = 3
+	MailDestinationRoutingReasonVBlockedSender MailDestinationRoutingReason = "BlockedSender"
 	// MailDestinationRoutingReasonVAdvancedSpamFiltering undocumented
-	MailDestinationRoutingReasonVAdvancedSpamFiltering MailDestinationRoutingReason = 4
+	MailDestinationRoutingReasonVAdvancedSpamFiltering MailDestinationRoutingReason = "AdvancedSpamFiltering"
 	// MailDestinationRoutingReasonVDomainAllowList undocumented
-	MailDestinationRoutingReasonVDomainAllowList MailDestinationRoutingReason = 5
+	MailDestinationRoutingReasonVDomainAllowList MailDestinationRoutingReason = "DomainAllowList"
 	// MailDestinationRoutingReasonVDomainBlockList undocumented
-	MailDestinationRoutingReasonVDomainBlockList MailDestinationRoutingReason = 6
+	MailDestinationRoutingReasonVDomainBlockList MailDestinationRoutingReason = "DomainBlockList"
 	// MailDestinationRoutingReasonVNotInAddressBook undocumented
-	MailDestinationRoutingReasonVNotInAddressBook MailDestinationRoutingReason = 7
+	MailDestinationRoutingReasonVNotInAddressBook MailDestinationRoutingReason = "NotInAddressBook"
 	// MailDestinationRoutingReasonVFirstTimeSender undocumented
-	MailDestinationRoutingReasonVFirstTimeSender MailDestinationRoutingReason = 8
+	MailDestinationRoutingReasonVFirstTimeSender MailDestinationRoutingReason = "FirstTimeSender"
 	// MailDestinationRoutingReasonVAutoPurgeToInbox undocumented
-	MailDestinationRoutingReasonVAutoPurgeToInbox MailDestinationRoutingReason = 9
+	MailDestinationRoutingReasonVAutoPurgeToInbox MailDestinationRoutingReason = "AutoPurgeToInbox"
 	// MailDestinationRoutingReasonVAutoPurgeToJunk undocumented
-	MailDestinationRoutingReasonVAutoPurgeToJunk MailDestinationRoutingReason = 10
+	MailDestinationRoutingReasonVAutoPurgeToJunk MailDestinationRoutingReason = "AutoPurgeToJunk"
 	// MailDestinationRoutingReasonVAutoPurgeToDeleted undocumented
-	MailDestinationRoutingReasonVAutoPurgeToDeleted MailDestinationRoutingReason = 11
+	MailDestinationRoutingReasonVAutoPurgeToDeleted MailDestinationRoutingReason = "AutoPurgeToDeleted"
 	// MailDestinationRoutingReasonVOutbound undocumented
-	MailDestinationRoutingReasonVOutbound MailDestinationRoutingReason = 12
+	MailDestinationRoutingReasonVOutbound MailDestinationRoutingReason = "Outbound"
 	// MailDestinationRoutingReasonVNotJunk undocumented
-	MailDestinationRoutingReasonVNotJunk MailDestinationRoutingReason = 13
+	MailDestinationRoutingReasonVNotJunk MailDestinationRoutingReason = "NotJunk"
 	// MailDestinationRoutingReasonVJunk undocumented
-	MailDestinationRoutingReasonVJunk MailDestinationRoutingReason = 14
+	MailDestinationRoutingReasonVJunk MailDestinationRoutingReason = "Junk"
 	// MailDestinationRoutingReasonVUnknownFutureValue undocumented
-	MailDestinationRoutingReasonVUnknownFutureValue MailDestinationRoutingReason = 15
+	MailDestinationRoutingReasonVUnknownFutureValue MailDestinationRoutingReason = "UnknownFutureValue"
 )
 
 // MailDestinationRoutingReasonPNone returns a pointer to MailDestinationRoutingReasonVNone

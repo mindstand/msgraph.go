@@ -3,17 +3,17 @@
 package msgraph
 
 // UserExperienceAnalyticsHealthState undocumented
-type UserExperienceAnalyticsHealthState int
+type UserExperienceAnalyticsHealthState string
 
 const (
 	// UserExperienceAnalyticsHealthStateVUnknown undocumented
-	UserExperienceAnalyticsHealthStateVUnknown UserExperienceAnalyticsHealthState = 0
+	UserExperienceAnalyticsHealthStateVUnknown UserExperienceAnalyticsHealthState = "Unknown"
 	// UserExperienceAnalyticsHealthStateVInsufficientData undocumented
-	UserExperienceAnalyticsHealthStateVInsufficientData UserExperienceAnalyticsHealthState = 1
+	UserExperienceAnalyticsHealthStateVInsufficientData UserExperienceAnalyticsHealthState = "InsufficientData"
 	// UserExperienceAnalyticsHealthStateVNeedsAttention undocumented
-	UserExperienceAnalyticsHealthStateVNeedsAttention UserExperienceAnalyticsHealthState = 2
+	UserExperienceAnalyticsHealthStateVNeedsAttention UserExperienceAnalyticsHealthState = "NeedsAttention"
 	// UserExperienceAnalyticsHealthStateVMeetingGoals undocumented
-	UserExperienceAnalyticsHealthStateVMeetingGoals UserExperienceAnalyticsHealthState = 3
+	UserExperienceAnalyticsHealthStateVMeetingGoals UserExperienceAnalyticsHealthState = "MeetingGoals"
 )
 
 // UserExperienceAnalyticsHealthStatePUnknown returns a pointer to UserExperienceAnalyticsHealthStateVUnknown

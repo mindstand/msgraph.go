@@ -3,17 +3,17 @@
 package msgraph
 
 // IOSWallpaperDisplayLocation undocumented
-type IOSWallpaperDisplayLocation int
+type IOSWallpaperDisplayLocation string
 
 const (
 	// IOSWallpaperDisplayLocationVNotConfigured undocumented
-	IOSWallpaperDisplayLocationVNotConfigured IOSWallpaperDisplayLocation = 0
+	IOSWallpaperDisplayLocationVNotConfigured IOSWallpaperDisplayLocation = "NotConfigured"
 	// IOSWallpaperDisplayLocationVLockScreen undocumented
-	IOSWallpaperDisplayLocationVLockScreen IOSWallpaperDisplayLocation = 1
+	IOSWallpaperDisplayLocationVLockScreen IOSWallpaperDisplayLocation = "LockScreen"
 	// IOSWallpaperDisplayLocationVHomeScreen undocumented
-	IOSWallpaperDisplayLocationVHomeScreen IOSWallpaperDisplayLocation = 2
+	IOSWallpaperDisplayLocationVHomeScreen IOSWallpaperDisplayLocation = "HomeScreen"
 	// IOSWallpaperDisplayLocationVLockAndHomeScreens undocumented
-	IOSWallpaperDisplayLocationVLockAndHomeScreens IOSWallpaperDisplayLocation = 3
+	IOSWallpaperDisplayLocationVLockAndHomeScreens IOSWallpaperDisplayLocation = "LockAndHomeScreens"
 )
 
 // IOSWallpaperDisplayLocationPNotConfigured returns a pointer to IOSWallpaperDisplayLocationVNotConfigured

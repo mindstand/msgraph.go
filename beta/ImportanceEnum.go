@@ -3,15 +3,15 @@
 package msgraph
 
 // Importance undocumented
-type Importance int
+type Importance string
 
 const (
 	// ImportanceVLow undocumented
-	ImportanceVLow Importance = 0
+	ImportanceVLow Importance = "Low"
 	// ImportanceVNormal undocumented
-	ImportanceVNormal Importance = 1
+	ImportanceVNormal Importance = "Normal"
 	// ImportanceVHigh undocumented
-	ImportanceVHigh Importance = 2
+	ImportanceVHigh Importance = "High"
 )
 
 // ImportancePLow returns a pointer to ImportanceVLow

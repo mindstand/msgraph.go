@@ -3,19 +3,19 @@
 package msgraph
 
 // RiskDetectionTimingType undocumented
-type RiskDetectionTimingType int
+type RiskDetectionTimingType string
 
 const (
 	// RiskDetectionTimingTypeVNotDefined undocumented
-	RiskDetectionTimingTypeVNotDefined RiskDetectionTimingType = 0
+	RiskDetectionTimingTypeVNotDefined RiskDetectionTimingType = "NotDefined"
 	// RiskDetectionTimingTypeVRealtime undocumented
-	RiskDetectionTimingTypeVRealtime RiskDetectionTimingType = 1
+	RiskDetectionTimingTypeVRealtime RiskDetectionTimingType = "Realtime"
 	// RiskDetectionTimingTypeVNearRealtime undocumented
-	RiskDetectionTimingTypeVNearRealtime RiskDetectionTimingType = 2
+	RiskDetectionTimingTypeVNearRealtime RiskDetectionTimingType = "NearRealtime"
 	// RiskDetectionTimingTypeVOffline undocumented
-	RiskDetectionTimingTypeVOffline RiskDetectionTimingType = 3
+	RiskDetectionTimingTypeVOffline RiskDetectionTimingType = "Offline"
 	// RiskDetectionTimingTypeVUnknownFutureValue undocumented
-	RiskDetectionTimingTypeVUnknownFutureValue RiskDetectionTimingType = 4
+	RiskDetectionTimingTypeVUnknownFutureValue RiskDetectionTimingType = "UnknownFutureValue"
 )
 
 // RiskDetectionTimingTypePNotDefined returns a pointer to RiskDetectionTimingTypeVNotDefined

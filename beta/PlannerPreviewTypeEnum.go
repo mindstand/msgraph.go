@@ -3,19 +3,19 @@
 package msgraph
 
 // PlannerPreviewType undocumented
-type PlannerPreviewType int
+type PlannerPreviewType string
 
 const (
 	// PlannerPreviewTypeVAutomatic undocumented
-	PlannerPreviewTypeVAutomatic PlannerPreviewType = 0
+	PlannerPreviewTypeVAutomatic PlannerPreviewType = "Automatic"
 	// PlannerPreviewTypeVNoPreview undocumented
-	PlannerPreviewTypeVNoPreview PlannerPreviewType = 1
+	PlannerPreviewTypeVNoPreview PlannerPreviewType = "NoPreview"
 	// PlannerPreviewTypeVChecklist undocumented
-	PlannerPreviewTypeVChecklist PlannerPreviewType = 2
+	PlannerPreviewTypeVChecklist PlannerPreviewType = "Checklist"
 	// PlannerPreviewTypeVDescription undocumented
-	PlannerPreviewTypeVDescription PlannerPreviewType = 3
+	PlannerPreviewTypeVDescription PlannerPreviewType = "Description"
 	// PlannerPreviewTypeVReference undocumented
-	PlannerPreviewTypeVReference PlannerPreviewType = 4
+	PlannerPreviewTypeVReference PlannerPreviewType = "Reference"
 )
 
 // PlannerPreviewTypePAutomatic returns a pointer to PlannerPreviewTypeVAutomatic

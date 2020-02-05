@@ -3,17 +3,17 @@
 package msgraph
 
 // OfficeProductID undocumented
-type OfficeProductID int
+type OfficeProductID string
 
 const (
 	// OfficeProductIDVO365ProPlusRetail undocumented
-	OfficeProductIDVO365ProPlusRetail OfficeProductID = 0
+	OfficeProductIDVO365ProPlusRetail OfficeProductID = "O365ProPlusRetail"
 	// OfficeProductIDVO365BusinessRetail undocumented
-	OfficeProductIDVO365BusinessRetail OfficeProductID = 1
+	OfficeProductIDVO365BusinessRetail OfficeProductID = "O365BusinessRetail"
 	// OfficeProductIDVVisioProRetail undocumented
-	OfficeProductIDVVisioProRetail OfficeProductID = 2
+	OfficeProductIDVVisioProRetail OfficeProductID = "VisioProRetail"
 	// OfficeProductIDVProjectProRetail undocumented
-	OfficeProductIDVProjectProRetail OfficeProductID = 3
+	OfficeProductIDVProjectProRetail OfficeProductID = "ProjectProRetail"
 )
 
 // OfficeProductIDPO365ProPlusRetail returns a pointer to OfficeProductIDVO365ProPlusRetail

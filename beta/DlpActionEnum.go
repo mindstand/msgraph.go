@@ -3,15 +3,15 @@
 package msgraph
 
 // DlpAction undocumented
-type DlpAction int
+type DlpAction string
 
 const (
 	// DlpActionVNotifyUser undocumented
-	DlpActionVNotifyUser DlpAction = 0
+	DlpActionVNotifyUser DlpAction = "NotifyUser"
 	// DlpActionVBlockAccess undocumented
-	DlpActionVBlockAccess DlpAction = 1
+	DlpActionVBlockAccess DlpAction = "BlockAccess"
 	// DlpActionVDeviceRestriction undocumented
-	DlpActionVDeviceRestriction DlpAction = 2
+	DlpActionVDeviceRestriction DlpAction = "DeviceRestriction"
 )
 
 // DlpActionPNotifyUser returns a pointer to DlpActionVNotifyUser

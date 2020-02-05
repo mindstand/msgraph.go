@@ -3,11 +3,11 @@
 package msgraph
 
 // Component undocumented
-type Component int
+type Component string
 
 const (
 	// ComponentVLabel undocumented
-	ComponentVLabel Component = 0
+	ComponentVLabel Component = "Label"
 )
 
 // ComponentPLabel returns a pointer to ComponentVLabel

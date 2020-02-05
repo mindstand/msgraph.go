@@ -3,15 +3,15 @@
 package msgraph
 
 // ServiceStartType undocumented
-type ServiceStartType int
+type ServiceStartType string
 
 const (
 	// ServiceStartTypeVManual undocumented
-	ServiceStartTypeVManual ServiceStartType = 0
+	ServiceStartTypeVManual ServiceStartType = "Manual"
 	// ServiceStartTypeVAutomatic undocumented
-	ServiceStartTypeVAutomatic ServiceStartType = 1
+	ServiceStartTypeVAutomatic ServiceStartType = "Automatic"
 	// ServiceStartTypeVDisabled undocumented
-	ServiceStartTypeVDisabled ServiceStartType = 2
+	ServiceStartTypeVDisabled ServiceStartType = "Disabled"
 )
 
 // ServiceStartTypePManual returns a pointer to ServiceStartTypeVManual

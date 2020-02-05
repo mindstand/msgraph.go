@@ -3,17 +3,17 @@
 package msgraph
 
 // RejectReason undocumented
-type RejectReason int
+type RejectReason string
 
 const (
 	// RejectReasonVNone undocumented
-	RejectReasonVNone RejectReason = 0
+	RejectReasonVNone RejectReason = "None"
 	// RejectReasonVBusy undocumented
-	RejectReasonVBusy RejectReason = 1
+	RejectReasonVBusy RejectReason = "Busy"
 	// RejectReasonVForbidden undocumented
-	RejectReasonVForbidden RejectReason = 2
+	RejectReasonVForbidden RejectReason = "Forbidden"
 	// RejectReasonVUnknownFutureValue undocumented
-	RejectReasonVUnknownFutureValue RejectReason = 3
+	RejectReasonVUnknownFutureValue RejectReason = "UnknownFutureValue"
 )
 
 // RejectReasonPNone returns a pointer to RejectReasonVNone

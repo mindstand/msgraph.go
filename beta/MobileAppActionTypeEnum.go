@@ -3,19 +3,19 @@
 package msgraph
 
 // MobileAppActionType undocumented
-type MobileAppActionType int
+type MobileAppActionType string
 
 const (
 	// MobileAppActionTypeVUnknown undocumented
-	MobileAppActionTypeVUnknown MobileAppActionType = 0
+	MobileAppActionTypeVUnknown MobileAppActionType = "Unknown"
 	// MobileAppActionTypeVInstallCommandSent undocumented
-	MobileAppActionTypeVInstallCommandSent MobileAppActionType = 1
+	MobileAppActionTypeVInstallCommandSent MobileAppActionType = "InstallCommandSent"
 	// MobileAppActionTypeVInstalled undocumented
-	MobileAppActionTypeVInstalled MobileAppActionType = 3
+	MobileAppActionTypeVInstalled MobileAppActionType = "Installed"
 	// MobileAppActionTypeVUninstalled undocumented
-	MobileAppActionTypeVUninstalled MobileAppActionType = 4
+	MobileAppActionTypeVUninstalled MobileAppActionType = "Uninstalled"
 	// MobileAppActionTypeVUserRequestedInstall undocumented
-	MobileAppActionTypeVUserRequestedInstall MobileAppActionType = 5
+	MobileAppActionTypeVUserRequestedInstall MobileAppActionType = "UserRequestedInstall"
 )
 
 // MobileAppActionTypePUnknown returns a pointer to MobileAppActionTypeVUnknown

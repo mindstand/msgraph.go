@@ -3,17 +3,17 @@
 package msgraph
 
 // OnenoteUserRole undocumented
-type OnenoteUserRole int
+type OnenoteUserRole string
 
 const (
 	// OnenoteUserRoleVOwner undocumented
-	OnenoteUserRoleVOwner OnenoteUserRole = 0
+	OnenoteUserRoleVOwner OnenoteUserRole = "Owner"
 	// OnenoteUserRoleVContributor undocumented
-	OnenoteUserRoleVContributor OnenoteUserRole = 1
+	OnenoteUserRoleVContributor OnenoteUserRole = "Contributor"
 	// OnenoteUserRoleVReader undocumented
-	OnenoteUserRoleVReader OnenoteUserRole = 2
+	OnenoteUserRoleVReader OnenoteUserRole = "Reader"
 	// OnenoteUserRoleVNone undocumented
-	OnenoteUserRoleVNone OnenoteUserRole = -1
+	OnenoteUserRoleVNone OnenoteUserRole = "None"
 )
 
 // OnenoteUserRolePOwner returns a pointer to OnenoteUserRoleVOwner

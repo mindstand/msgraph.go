@@ -3,13 +3,13 @@
 package msgraph
 
 // ManagedAppFlaggedReason undocumented
-type ManagedAppFlaggedReason int
+type ManagedAppFlaggedReason string
 
 const (
 	// ManagedAppFlaggedReasonVNone undocumented
-	ManagedAppFlaggedReasonVNone ManagedAppFlaggedReason = 0
+	ManagedAppFlaggedReasonVNone ManagedAppFlaggedReason = "None"
 	// ManagedAppFlaggedReasonVRootedDevice undocumented
-	ManagedAppFlaggedReasonVRootedDevice ManagedAppFlaggedReason = 1
+	ManagedAppFlaggedReasonVRootedDevice ManagedAppFlaggedReason = "RootedDevice"
 )
 
 // ManagedAppFlaggedReasonPNone returns a pointer to ManagedAppFlaggedReasonVNone

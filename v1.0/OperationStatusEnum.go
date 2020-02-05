@@ -3,17 +3,17 @@
 package msgraph
 
 // OperationStatus undocumented
-type OperationStatus int
+type OperationStatus string
 
 const (
 	// OperationStatusVNotStarted undocumented
-	OperationStatusVNotStarted OperationStatus = 0
+	OperationStatusVNotStarted OperationStatus = "NotStarted"
 	// OperationStatusVRunning undocumented
-	OperationStatusVRunning OperationStatus = 1
+	OperationStatusVRunning OperationStatus = "Running"
 	// OperationStatusVCompleted undocumented
-	OperationStatusVCompleted OperationStatus = 2
+	OperationStatusVCompleted OperationStatus = "Completed"
 	// OperationStatusVFailed undocumented
-	OperationStatusVFailed OperationStatus = 3
+	OperationStatusVFailed OperationStatus = "Failed"
 )
 
 // OperationStatusPNotStarted returns a pointer to OperationStatusVNotStarted

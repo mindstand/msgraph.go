@@ -3,19 +3,19 @@
 package msgraph
 
 // RuleMode undocumented
-type RuleMode int
+type RuleMode string
 
 const (
 	// RuleModeVAudit undocumented
-	RuleModeVAudit RuleMode = 1
+	RuleModeVAudit RuleMode = "Audit"
 	// RuleModeVAuditAndNotify undocumented
-	RuleModeVAuditAndNotify RuleMode = 2
+	RuleModeVAuditAndNotify RuleMode = "AuditAndNotify"
 	// RuleModeVEnforce undocumented
-	RuleModeVEnforce RuleMode = 3
+	RuleModeVEnforce RuleMode = "Enforce"
 	// RuleModeVPendingDeletion undocumented
-	RuleModeVPendingDeletion RuleMode = 4
+	RuleModeVPendingDeletion RuleMode = "PendingDeletion"
 	// RuleModeVTest undocumented
-	RuleModeVTest RuleMode = 5
+	RuleModeVTest RuleMode = "Test"
 )
 
 // RuleModePAudit returns a pointer to RuleModeVAudit

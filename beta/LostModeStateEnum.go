@@ -3,13 +3,13 @@
 package msgraph
 
 // LostModeState undocumented
-type LostModeState int
+type LostModeState string
 
 const (
 	// LostModeStateVDisabled undocumented
-	LostModeStateVDisabled LostModeState = 0
+	LostModeStateVDisabled LostModeState = "Disabled"
 	// LostModeStateVEnabled undocumented
-	LostModeStateVEnabled LostModeState = 1
+	LostModeStateVEnabled LostModeState = "Enabled"
 )
 
 // LostModeStatePDisabled returns a pointer to LostModeStateVDisabled

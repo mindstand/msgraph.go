@@ -3,15 +3,15 @@
 package msgraph
 
 // ImportedDeviceIdentityType undocumented
-type ImportedDeviceIdentityType int
+type ImportedDeviceIdentityType string
 
 const (
 	// ImportedDeviceIdentityTypeVUnknown undocumented
-	ImportedDeviceIdentityTypeVUnknown ImportedDeviceIdentityType = 0
+	ImportedDeviceIdentityTypeVUnknown ImportedDeviceIdentityType = "Unknown"
 	// ImportedDeviceIdentityTypeVImei undocumented
-	ImportedDeviceIdentityTypeVImei ImportedDeviceIdentityType = 1
+	ImportedDeviceIdentityTypeVImei ImportedDeviceIdentityType = "Imei"
 	// ImportedDeviceIdentityTypeVSerialNumber undocumented
-	ImportedDeviceIdentityTypeVSerialNumber ImportedDeviceIdentityType = 2
+	ImportedDeviceIdentityTypeVSerialNumber ImportedDeviceIdentityType = "SerialNumber"
 )
 
 // ImportedDeviceIdentityTypePUnknown returns a pointer to ImportedDeviceIdentityTypeVUnknown

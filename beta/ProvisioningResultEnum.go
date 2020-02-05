@@ -3,17 +3,17 @@
 package msgraph
 
 // ProvisioningResult undocumented
-type ProvisioningResult int
+type ProvisioningResult string
 
 const (
 	// ProvisioningResultVSuccess undocumented
-	ProvisioningResultVSuccess ProvisioningResult = 0
+	ProvisioningResultVSuccess ProvisioningResult = "Success"
 	// ProvisioningResultVFailure undocumented
-	ProvisioningResultVFailure ProvisioningResult = 1
+	ProvisioningResultVFailure ProvisioningResult = "Failure"
 	// ProvisioningResultVSkipped undocumented
-	ProvisioningResultVSkipped ProvisioningResult = 2
+	ProvisioningResultVSkipped ProvisioningResult = "Skipped"
 	// ProvisioningResultVUnknownFutureValue undocumented
-	ProvisioningResultVUnknownFutureValue ProvisioningResult = 3
+	ProvisioningResultVUnknownFutureValue ProvisioningResult = "UnknownFutureValue"
 )
 
 // ProvisioningResultPSuccess returns a pointer to ProvisioningResultVSuccess

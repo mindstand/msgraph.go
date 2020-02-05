@@ -3,31 +3,31 @@
 package msgraph
 
 // MessageActionFlag undocumented
-type MessageActionFlag int
+type MessageActionFlag string
 
 const (
 	// MessageActionFlagVAny undocumented
-	MessageActionFlagVAny MessageActionFlag = 0
+	MessageActionFlagVAny MessageActionFlag = "Any"
 	// MessageActionFlagVCall undocumented
-	MessageActionFlagVCall MessageActionFlag = 1
+	MessageActionFlagVCall MessageActionFlag = "Call"
 	// MessageActionFlagVDoNotForward undocumented
-	MessageActionFlagVDoNotForward MessageActionFlag = 2
+	MessageActionFlagVDoNotForward MessageActionFlag = "DoNotForward"
 	// MessageActionFlagVFollowUp undocumented
-	MessageActionFlagVFollowUp MessageActionFlag = 3
+	MessageActionFlagVFollowUp MessageActionFlag = "FollowUp"
 	// MessageActionFlagVFyi undocumented
-	MessageActionFlagVFyi MessageActionFlag = 4
+	MessageActionFlagVFyi MessageActionFlag = "Fyi"
 	// MessageActionFlagVForward undocumented
-	MessageActionFlagVForward MessageActionFlag = 5
+	MessageActionFlagVForward MessageActionFlag = "Forward"
 	// MessageActionFlagVNoResponseNecessary undocumented
-	MessageActionFlagVNoResponseNecessary MessageActionFlag = 6
+	MessageActionFlagVNoResponseNecessary MessageActionFlag = "NoResponseNecessary"
 	// MessageActionFlagVRead undocumented
-	MessageActionFlagVRead MessageActionFlag = 7
+	MessageActionFlagVRead MessageActionFlag = "Read"
 	// MessageActionFlagVReply undocumented
-	MessageActionFlagVReply MessageActionFlag = 8
+	MessageActionFlagVReply MessageActionFlag = "Reply"
 	// MessageActionFlagVReplyToAll undocumented
-	MessageActionFlagVReplyToAll MessageActionFlag = 9
+	MessageActionFlagVReplyToAll MessageActionFlag = "ReplyToAll"
 	// MessageActionFlagVReview undocumented
-	MessageActionFlagVReview MessageActionFlag = 10
+	MessageActionFlagVReview MessageActionFlag = "Review"
 )
 
 // MessageActionFlagPAny returns a pointer to MessageActionFlagVAny

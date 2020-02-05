@@ -3,19 +3,19 @@
 package msgraph
 
 // VppTokenState undocumented
-type VppTokenState int
+type VppTokenState string
 
 const (
 	// VppTokenStateVUnknown undocumented
-	VppTokenStateVUnknown VppTokenState = 0
+	VppTokenStateVUnknown VppTokenState = "Unknown"
 	// VppTokenStateVValid undocumented
-	VppTokenStateVValid VppTokenState = 1
+	VppTokenStateVValid VppTokenState = "Valid"
 	// VppTokenStateVExpired undocumented
-	VppTokenStateVExpired VppTokenState = 2
+	VppTokenStateVExpired VppTokenState = "Expired"
 	// VppTokenStateVInvalid undocumented
-	VppTokenStateVInvalid VppTokenState = 3
+	VppTokenStateVInvalid VppTokenState = "Invalid"
 	// VppTokenStateVAssignedToExternalMDM undocumented
-	VppTokenStateVAssignedToExternalMDM VppTokenState = 4
+	VppTokenStateVAssignedToExternalMDM VppTokenState = "AssignedToExternalMDM"
 )
 
 // VppTokenStatePUnknown returns a pointer to VppTokenStateVUnknown

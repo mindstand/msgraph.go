@@ -3,25 +3,25 @@
 package msgraph
 
 // ContactRelationship undocumented
-type ContactRelationship int
+type ContactRelationship string
 
 const (
 	// ContactRelationshipVParent undocumented
-	ContactRelationshipVParent ContactRelationship = 0
+	ContactRelationshipVParent ContactRelationship = "Parent"
 	// ContactRelationshipVRelative undocumented
-	ContactRelationshipVRelative ContactRelationship = 1
+	ContactRelationshipVRelative ContactRelationship = "Relative"
 	// ContactRelationshipVAide undocumented
-	ContactRelationshipVAide ContactRelationship = 2
+	ContactRelationshipVAide ContactRelationship = "Aide"
 	// ContactRelationshipVDoctor undocumented
-	ContactRelationshipVDoctor ContactRelationship = 3
+	ContactRelationshipVDoctor ContactRelationship = "Doctor"
 	// ContactRelationshipVGuardian undocumented
-	ContactRelationshipVGuardian ContactRelationship = 4
+	ContactRelationshipVGuardian ContactRelationship = "Guardian"
 	// ContactRelationshipVChild undocumented
-	ContactRelationshipVChild ContactRelationship = 5
+	ContactRelationshipVChild ContactRelationship = "Child"
 	// ContactRelationshipVOther undocumented
-	ContactRelationshipVOther ContactRelationship = 6
+	ContactRelationshipVOther ContactRelationship = "Other"
 	// ContactRelationshipVUnknownFutureValue undocumented
-	ContactRelationshipVUnknownFutureValue ContactRelationship = 7
+	ContactRelationshipVUnknownFutureValue ContactRelationship = "UnknownFutureValue"
 )
 
 // ContactRelationshipPParent returns a pointer to ContactRelationshipVParent

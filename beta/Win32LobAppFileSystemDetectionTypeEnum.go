@@ -3,23 +3,23 @@
 package msgraph
 
 // Win32LobAppFileSystemDetectionType undocumented
-type Win32LobAppFileSystemDetectionType int
+type Win32LobAppFileSystemDetectionType string
 
 const (
 	// Win32LobAppFileSystemDetectionTypeVNotConfigured undocumented
-	Win32LobAppFileSystemDetectionTypeVNotConfigured Win32LobAppFileSystemDetectionType = 0
+	Win32LobAppFileSystemDetectionTypeVNotConfigured Win32LobAppFileSystemDetectionType = "NotConfigured"
 	// Win32LobAppFileSystemDetectionTypeVExists undocumented
-	Win32LobAppFileSystemDetectionTypeVExists Win32LobAppFileSystemDetectionType = 1
+	Win32LobAppFileSystemDetectionTypeVExists Win32LobAppFileSystemDetectionType = "Exists"
 	// Win32LobAppFileSystemDetectionTypeVModifiedDate undocumented
-	Win32LobAppFileSystemDetectionTypeVModifiedDate Win32LobAppFileSystemDetectionType = 2
+	Win32LobAppFileSystemDetectionTypeVModifiedDate Win32LobAppFileSystemDetectionType = "ModifiedDate"
 	// Win32LobAppFileSystemDetectionTypeVCreatedDate undocumented
-	Win32LobAppFileSystemDetectionTypeVCreatedDate Win32LobAppFileSystemDetectionType = 3
+	Win32LobAppFileSystemDetectionTypeVCreatedDate Win32LobAppFileSystemDetectionType = "CreatedDate"
 	// Win32LobAppFileSystemDetectionTypeVVersion undocumented
-	Win32LobAppFileSystemDetectionTypeVVersion Win32LobAppFileSystemDetectionType = 4
+	Win32LobAppFileSystemDetectionTypeVVersion Win32LobAppFileSystemDetectionType = "Version"
 	// Win32LobAppFileSystemDetectionTypeVSizeInMB undocumented
-	Win32LobAppFileSystemDetectionTypeVSizeInMB Win32LobAppFileSystemDetectionType = 5
+	Win32LobAppFileSystemDetectionTypeVSizeInMB Win32LobAppFileSystemDetectionType = "SizeInMB"
 	// Win32LobAppFileSystemDetectionTypeVDoesNotExist undocumented
-	Win32LobAppFileSystemDetectionTypeVDoesNotExist Win32LobAppFileSystemDetectionType = 6
+	Win32LobAppFileSystemDetectionTypeVDoesNotExist Win32LobAppFileSystemDetectionType = "DoesNotExist"
 )
 
 // Win32LobAppFileSystemDetectionTypePNotConfigured returns a pointer to Win32LobAppFileSystemDetectionTypeVNotConfigured

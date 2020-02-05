@@ -3,17 +3,17 @@
 package msgraph
 
 // BitLockerEncryptionMethod undocumented
-type BitLockerEncryptionMethod int
+type BitLockerEncryptionMethod string
 
 const (
 	// BitLockerEncryptionMethodVAesCbc128 undocumented
-	BitLockerEncryptionMethodVAesCbc128 BitLockerEncryptionMethod = 3
+	BitLockerEncryptionMethodVAesCbc128 BitLockerEncryptionMethod = "AesCbc128"
 	// BitLockerEncryptionMethodVAesCbc256 undocumented
-	BitLockerEncryptionMethodVAesCbc256 BitLockerEncryptionMethod = 4
+	BitLockerEncryptionMethodVAesCbc256 BitLockerEncryptionMethod = "AesCbc256"
 	// BitLockerEncryptionMethodVXtsAes128 undocumented
-	BitLockerEncryptionMethodVXtsAes128 BitLockerEncryptionMethod = 6
+	BitLockerEncryptionMethodVXtsAes128 BitLockerEncryptionMethod = "XtsAes128"
 	// BitLockerEncryptionMethodVXtsAes256 undocumented
-	BitLockerEncryptionMethodVXtsAes256 BitLockerEncryptionMethod = 7
+	BitLockerEncryptionMethodVXtsAes256 BitLockerEncryptionMethod = "XtsAes256"
 )
 
 // BitLockerEncryptionMethodPAesCbc128 returns a pointer to BitLockerEncryptionMethodVAesCbc128

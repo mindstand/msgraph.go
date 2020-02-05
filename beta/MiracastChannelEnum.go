@@ -3,51 +3,51 @@
 package msgraph
 
 // MiracastChannel undocumented
-type MiracastChannel int
+type MiracastChannel string
 
 const (
 	// MiracastChannelVUserDefined undocumented
-	MiracastChannelVUserDefined MiracastChannel = 0
+	MiracastChannelVUserDefined MiracastChannel = "UserDefined"
 	// MiracastChannelVOne undocumented
-	MiracastChannelVOne MiracastChannel = 1
+	MiracastChannelVOne MiracastChannel = "One"
 	// MiracastChannelVTwo undocumented
-	MiracastChannelVTwo MiracastChannel = 2
+	MiracastChannelVTwo MiracastChannel = "Two"
 	// MiracastChannelVThree undocumented
-	MiracastChannelVThree MiracastChannel = 3
+	MiracastChannelVThree MiracastChannel = "Three"
 	// MiracastChannelVFour undocumented
-	MiracastChannelVFour MiracastChannel = 4
+	MiracastChannelVFour MiracastChannel = "Four"
 	// MiracastChannelVFive undocumented
-	MiracastChannelVFive MiracastChannel = 5
+	MiracastChannelVFive MiracastChannel = "Five"
 	// MiracastChannelVSix undocumented
-	MiracastChannelVSix MiracastChannel = 6
+	MiracastChannelVSix MiracastChannel = "Six"
 	// MiracastChannelVSeven undocumented
-	MiracastChannelVSeven MiracastChannel = 7
+	MiracastChannelVSeven MiracastChannel = "Seven"
 	// MiracastChannelVEight undocumented
-	MiracastChannelVEight MiracastChannel = 8
+	MiracastChannelVEight MiracastChannel = "Eight"
 	// MiracastChannelVNine undocumented
-	MiracastChannelVNine MiracastChannel = 9
+	MiracastChannelVNine MiracastChannel = "Nine"
 	// MiracastChannelVTen undocumented
-	MiracastChannelVTen MiracastChannel = 10
+	MiracastChannelVTen MiracastChannel = "Ten"
 	// MiracastChannelVEleven undocumented
-	MiracastChannelVEleven MiracastChannel = 11
+	MiracastChannelVEleven MiracastChannel = "Eleven"
 	// MiracastChannelVThirtySix undocumented
-	MiracastChannelVThirtySix MiracastChannel = 36
+	MiracastChannelVThirtySix MiracastChannel = "ThirtySix"
 	// MiracastChannelVForty undocumented
-	MiracastChannelVForty MiracastChannel = 40
+	MiracastChannelVForty MiracastChannel = "Forty"
 	// MiracastChannelVFortyFour undocumented
-	MiracastChannelVFortyFour MiracastChannel = 44
+	MiracastChannelVFortyFour MiracastChannel = "FortyFour"
 	// MiracastChannelVFortyEight undocumented
-	MiracastChannelVFortyEight MiracastChannel = 48
+	MiracastChannelVFortyEight MiracastChannel = "FortyEight"
 	// MiracastChannelVOneHundredFortyNine undocumented
-	MiracastChannelVOneHundredFortyNine MiracastChannel = 149
+	MiracastChannelVOneHundredFortyNine MiracastChannel = "OneHundredFortyNine"
 	// MiracastChannelVOneHundredFiftyThree undocumented
-	MiracastChannelVOneHundredFiftyThree MiracastChannel = 153
+	MiracastChannelVOneHundredFiftyThree MiracastChannel = "OneHundredFiftyThree"
 	// MiracastChannelVOneHundredFiftySeven undocumented
-	MiracastChannelVOneHundredFiftySeven MiracastChannel = 157
+	MiracastChannelVOneHundredFiftySeven MiracastChannel = "OneHundredFiftySeven"
 	// MiracastChannelVOneHundredSixtyOne undocumented
-	MiracastChannelVOneHundredSixtyOne MiracastChannel = 161
+	MiracastChannelVOneHundredSixtyOne MiracastChannel = "OneHundredSixtyOne"
 	// MiracastChannelVOneHundredSixtyFive undocumented
-	MiracastChannelVOneHundredSixtyFive MiracastChannel = 165
+	MiracastChannelVOneHundredSixtyFive MiracastChannel = "OneHundredSixtyFive"
 )
 
 // MiracastChannelPUserDefined returns a pointer to MiracastChannelVUserDefined

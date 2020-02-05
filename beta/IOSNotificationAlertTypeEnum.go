@@ -3,17 +3,17 @@
 package msgraph
 
 // IOSNotificationAlertType undocumented
-type IOSNotificationAlertType int
+type IOSNotificationAlertType string
 
 const (
 	// IOSNotificationAlertTypeVDeviceDefault undocumented
-	IOSNotificationAlertTypeVDeviceDefault IOSNotificationAlertType = 0
+	IOSNotificationAlertTypeVDeviceDefault IOSNotificationAlertType = "DeviceDefault"
 	// IOSNotificationAlertTypeVBanner undocumented
-	IOSNotificationAlertTypeVBanner IOSNotificationAlertType = 1
+	IOSNotificationAlertTypeVBanner IOSNotificationAlertType = "Banner"
 	// IOSNotificationAlertTypeVModal undocumented
-	IOSNotificationAlertTypeVModal IOSNotificationAlertType = 2
+	IOSNotificationAlertTypeVModal IOSNotificationAlertType = "Modal"
 	// IOSNotificationAlertTypeVNone undocumented
-	IOSNotificationAlertTypeVNone IOSNotificationAlertType = 3
+	IOSNotificationAlertTypeVNone IOSNotificationAlertType = "None"
 )
 
 // IOSNotificationAlertTypePDeviceDefault returns a pointer to IOSNotificationAlertTypeVDeviceDefault

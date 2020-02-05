@@ -3,15 +3,15 @@
 package msgraph
 
 // AnniversaryType undocumented
-type AnniversaryType int
+type AnniversaryType string
 
 const (
 	// AnniversaryTypeVBirthday undocumented
-	AnniversaryTypeVBirthday AnniversaryType = 0
+	AnniversaryTypeVBirthday AnniversaryType = "Birthday"
 	// AnniversaryTypeVWedding undocumented
-	AnniversaryTypeVWedding AnniversaryType = 1
+	AnniversaryTypeVWedding AnniversaryType = "Wedding"
 	// AnniversaryTypeVUnknownFutureValue undocumented
-	AnniversaryTypeVUnknownFutureValue AnniversaryType = 3
+	AnniversaryTypeVUnknownFutureValue AnniversaryType = "UnknownFutureValue"
 )
 
 // AnniversaryTypePBirthday returns a pointer to AnniversaryTypeVBirthday

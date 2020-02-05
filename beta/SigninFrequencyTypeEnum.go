@@ -3,13 +3,13 @@
 package msgraph
 
 // SigninFrequencyType undocumented
-type SigninFrequencyType int
+type SigninFrequencyType string
 
 const (
 	// SigninFrequencyTypeVDays undocumented
-	SigninFrequencyTypeVDays SigninFrequencyType = 0
+	SigninFrequencyTypeVDays SigninFrequencyType = "Days"
 	// SigninFrequencyTypeVHours undocumented
-	SigninFrequencyTypeVHours SigninFrequencyType = 1
+	SigninFrequencyTypeVHours SigninFrequencyType = "Hours"
 )
 
 // SigninFrequencyTypePDays returns a pointer to SigninFrequencyTypeVDays

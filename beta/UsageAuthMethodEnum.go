@@ -3,31 +3,31 @@
 package msgraph
 
 // UsageAuthMethod undocumented
-type UsageAuthMethod int
+type UsageAuthMethod string
 
 const (
 	// UsageAuthMethodVEmail undocumented
-	UsageAuthMethodVEmail UsageAuthMethod = 0
+	UsageAuthMethodVEmail UsageAuthMethod = "Email"
 	// UsageAuthMethodVMobileSMS undocumented
-	UsageAuthMethodVMobileSMS UsageAuthMethod = 1
+	UsageAuthMethodVMobileSMS UsageAuthMethod = "MobileSMS"
 	// UsageAuthMethodVMobileCall undocumented
-	UsageAuthMethodVMobileCall UsageAuthMethod = 2
+	UsageAuthMethodVMobileCall UsageAuthMethod = "MobileCall"
 	// UsageAuthMethodVOfficePhone undocumented
-	UsageAuthMethodVOfficePhone UsageAuthMethod = 3
+	UsageAuthMethodVOfficePhone UsageAuthMethod = "OfficePhone"
 	// UsageAuthMethodVSecurityQuestion undocumented
-	UsageAuthMethodVSecurityQuestion UsageAuthMethod = 4
+	UsageAuthMethodVSecurityQuestion UsageAuthMethod = "SecurityQuestion"
 	// UsageAuthMethodVAppNotification undocumented
-	UsageAuthMethodVAppNotification UsageAuthMethod = 5
+	UsageAuthMethodVAppNotification UsageAuthMethod = "AppNotification"
 	// UsageAuthMethodVAppCode undocumented
-	UsageAuthMethodVAppCode UsageAuthMethod = 6
+	UsageAuthMethodVAppCode UsageAuthMethod = "AppCode"
 	// UsageAuthMethodVAlternateMobileCall undocumented
-	UsageAuthMethodVAlternateMobileCall UsageAuthMethod = 7
+	UsageAuthMethodVAlternateMobileCall UsageAuthMethod = "AlternateMobileCall"
 	// UsageAuthMethodVFido undocumented
-	UsageAuthMethodVFido UsageAuthMethod = 8
+	UsageAuthMethodVFido UsageAuthMethod = "Fido"
 	// UsageAuthMethodVAppPassword undocumented
-	UsageAuthMethodVAppPassword UsageAuthMethod = 9
+	UsageAuthMethodVAppPassword UsageAuthMethod = "AppPassword"
 	// UsageAuthMethodVUnknownFutureValue undocumented
-	UsageAuthMethodVUnknownFutureValue UsageAuthMethod = 10
+	UsageAuthMethodVUnknownFutureValue UsageAuthMethod = "UnknownFutureValue"
 )
 
 // UsageAuthMethodPEmail returns a pointer to UsageAuthMethodVEmail

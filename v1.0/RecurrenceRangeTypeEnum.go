@@ -3,15 +3,15 @@
 package msgraph
 
 // RecurrenceRangeType undocumented
-type RecurrenceRangeType int
+type RecurrenceRangeType string
 
 const (
 	// RecurrenceRangeTypeVEndDate undocumented
-	RecurrenceRangeTypeVEndDate RecurrenceRangeType = 0
+	RecurrenceRangeTypeVEndDate RecurrenceRangeType = "EndDate"
 	// RecurrenceRangeTypeVNoEnd undocumented
-	RecurrenceRangeTypeVNoEnd RecurrenceRangeType = 1
+	RecurrenceRangeTypeVNoEnd RecurrenceRangeType = "NoEnd"
 	// RecurrenceRangeTypeVNumbered undocumented
-	RecurrenceRangeTypeVNumbered RecurrenceRangeType = 2
+	RecurrenceRangeTypeVNumbered RecurrenceRangeType = "Numbered"
 )
 
 // RecurrenceRangeTypePEndDate returns a pointer to RecurrenceRangeTypeVEndDate

@@ -3,17 +3,17 @@
 package msgraph
 
 // DefenderCloudBlockLevelType undocumented
-type DefenderCloudBlockLevelType int
+type DefenderCloudBlockLevelType string
 
 const (
 	// DefenderCloudBlockLevelTypeVNotConfigured undocumented
-	DefenderCloudBlockLevelTypeVNotConfigured DefenderCloudBlockLevelType = 0
+	DefenderCloudBlockLevelTypeVNotConfigured DefenderCloudBlockLevelType = "NotConfigured"
 	// DefenderCloudBlockLevelTypeVHigh undocumented
-	DefenderCloudBlockLevelTypeVHigh DefenderCloudBlockLevelType = 1
+	DefenderCloudBlockLevelTypeVHigh DefenderCloudBlockLevelType = "High"
 	// DefenderCloudBlockLevelTypeVHighPlus undocumented
-	DefenderCloudBlockLevelTypeVHighPlus DefenderCloudBlockLevelType = 2
+	DefenderCloudBlockLevelTypeVHighPlus DefenderCloudBlockLevelType = "HighPlus"
 	// DefenderCloudBlockLevelTypeVZeroTolerance undocumented
-	DefenderCloudBlockLevelTypeVZeroTolerance DefenderCloudBlockLevelType = 3
+	DefenderCloudBlockLevelTypeVZeroTolerance DefenderCloudBlockLevelType = "ZeroTolerance"
 )
 
 // DefenderCloudBlockLevelTypePNotConfigured returns a pointer to DefenderCloudBlockLevelTypeVNotConfigured

@@ -3,21 +3,21 @@
 package msgraph
 
 // PolicySetStatus undocumented
-type PolicySetStatus int
+type PolicySetStatus string
 
 const (
 	// PolicySetStatusVUnknown undocumented
-	PolicySetStatusVUnknown PolicySetStatus = 0
+	PolicySetStatusVUnknown PolicySetStatus = "Unknown"
 	// PolicySetStatusVValidating undocumented
-	PolicySetStatusVValidating PolicySetStatus = 1
+	PolicySetStatusVValidating PolicySetStatus = "Validating"
 	// PolicySetStatusVPartialSuccess undocumented
-	PolicySetStatusVPartialSuccess PolicySetStatus = 2
+	PolicySetStatusVPartialSuccess PolicySetStatus = "PartialSuccess"
 	// PolicySetStatusVSuccess undocumented
-	PolicySetStatusVSuccess PolicySetStatus = 3
+	PolicySetStatusVSuccess PolicySetStatus = "Success"
 	// PolicySetStatusVError undocumented
-	PolicySetStatusVError PolicySetStatus = 4
+	PolicySetStatusVError PolicySetStatus = "Error"
 	// PolicySetStatusVNotAssigned undocumented
-	PolicySetStatusVNotAssigned PolicySetStatus = 5
+	PolicySetStatusVNotAssigned PolicySetStatus = "NotAssigned"
 )
 
 // PolicySetStatusPUnknown returns a pointer to PolicySetStatusVUnknown

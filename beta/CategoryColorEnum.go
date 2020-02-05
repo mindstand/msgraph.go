@@ -3,61 +3,61 @@
 package msgraph
 
 // CategoryColor undocumented
-type CategoryColor int
+type CategoryColor string
 
 const (
 	// CategoryColorVPreset0 undocumented
-	CategoryColorVPreset0 CategoryColor = 0
+	CategoryColorVPreset0 CategoryColor = "Preset0"
 	// CategoryColorVPreset1 undocumented
-	CategoryColorVPreset1 CategoryColor = 1
+	CategoryColorVPreset1 CategoryColor = "Preset1"
 	// CategoryColorVPreset2 undocumented
-	CategoryColorVPreset2 CategoryColor = 2
+	CategoryColorVPreset2 CategoryColor = "Preset2"
 	// CategoryColorVPreset3 undocumented
-	CategoryColorVPreset3 CategoryColor = 3
+	CategoryColorVPreset3 CategoryColor = "Preset3"
 	// CategoryColorVPreset4 undocumented
-	CategoryColorVPreset4 CategoryColor = 4
+	CategoryColorVPreset4 CategoryColor = "Preset4"
 	// CategoryColorVPreset5 undocumented
-	CategoryColorVPreset5 CategoryColor = 5
+	CategoryColorVPreset5 CategoryColor = "Preset5"
 	// CategoryColorVPreset6 undocumented
-	CategoryColorVPreset6 CategoryColor = 6
+	CategoryColorVPreset6 CategoryColor = "Preset6"
 	// CategoryColorVPreset7 undocumented
-	CategoryColorVPreset7 CategoryColor = 7
+	CategoryColorVPreset7 CategoryColor = "Preset7"
 	// CategoryColorVPreset8 undocumented
-	CategoryColorVPreset8 CategoryColor = 8
+	CategoryColorVPreset8 CategoryColor = "Preset8"
 	// CategoryColorVPreset9 undocumented
-	CategoryColorVPreset9 CategoryColor = 9
+	CategoryColorVPreset9 CategoryColor = "Preset9"
 	// CategoryColorVPreset10 undocumented
-	CategoryColorVPreset10 CategoryColor = 10
+	CategoryColorVPreset10 CategoryColor = "Preset10"
 	// CategoryColorVPreset11 undocumented
-	CategoryColorVPreset11 CategoryColor = 11
+	CategoryColorVPreset11 CategoryColor = "Preset11"
 	// CategoryColorVPreset12 undocumented
-	CategoryColorVPreset12 CategoryColor = 12
+	CategoryColorVPreset12 CategoryColor = "Preset12"
 	// CategoryColorVPreset13 undocumented
-	CategoryColorVPreset13 CategoryColor = 13
+	CategoryColorVPreset13 CategoryColor = "Preset13"
 	// CategoryColorVPreset14 undocumented
-	CategoryColorVPreset14 CategoryColor = 14
+	CategoryColorVPreset14 CategoryColor = "Preset14"
 	// CategoryColorVPreset15 undocumented
-	CategoryColorVPreset15 CategoryColor = 15
+	CategoryColorVPreset15 CategoryColor = "Preset15"
 	// CategoryColorVPreset16 undocumented
-	CategoryColorVPreset16 CategoryColor = 16
+	CategoryColorVPreset16 CategoryColor = "Preset16"
 	// CategoryColorVPreset17 undocumented
-	CategoryColorVPreset17 CategoryColor = 17
+	CategoryColorVPreset17 CategoryColor = "Preset17"
 	// CategoryColorVPreset18 undocumented
-	CategoryColorVPreset18 CategoryColor = 18
+	CategoryColorVPreset18 CategoryColor = "Preset18"
 	// CategoryColorVPreset19 undocumented
-	CategoryColorVPreset19 CategoryColor = 19
+	CategoryColorVPreset19 CategoryColor = "Preset19"
 	// CategoryColorVPreset20 undocumented
-	CategoryColorVPreset20 CategoryColor = 20
+	CategoryColorVPreset20 CategoryColor = "Preset20"
 	// CategoryColorVPreset21 undocumented
-	CategoryColorVPreset21 CategoryColor = 21
+	CategoryColorVPreset21 CategoryColor = "Preset21"
 	// CategoryColorVPreset22 undocumented
-	CategoryColorVPreset22 CategoryColor = 22
+	CategoryColorVPreset22 CategoryColor = "Preset22"
 	// CategoryColorVPreset23 undocumented
-	CategoryColorVPreset23 CategoryColor = 23
+	CategoryColorVPreset23 CategoryColor = "Preset23"
 	// CategoryColorVPreset24 undocumented
-	CategoryColorVPreset24 CategoryColor = 24
+	CategoryColorVPreset24 CategoryColor = "Preset24"
 	// CategoryColorVNone undocumented
-	CategoryColorVNone CategoryColor = -1
+	CategoryColorVNone CategoryColor = "None"
 )
 
 // CategoryColorPPreset0 returns a pointer to CategoryColorVPreset0

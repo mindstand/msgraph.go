@@ -3,15 +3,15 @@
 package msgraph
 
 // ChangeType undocumented
-type ChangeType int
+type ChangeType string
 
 const (
 	// ChangeTypeVCreated undocumented
-	ChangeTypeVCreated ChangeType = 0
+	ChangeTypeVCreated ChangeType = "Created"
 	// ChangeTypeVUpdated undocumented
-	ChangeTypeVUpdated ChangeType = 1
+	ChangeTypeVUpdated ChangeType = "Updated"
 	// ChangeTypeVDeleted undocumented
-	ChangeTypeVDeleted ChangeType = 2
+	ChangeTypeVDeleted ChangeType = "Deleted"
 )
 
 // ChangeTypePCreated returns a pointer to ChangeTypeVCreated

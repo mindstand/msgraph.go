@@ -3,15 +3,15 @@
 package msgraph
 
 // ChannelMembershipType undocumented
-type ChannelMembershipType int
+type ChannelMembershipType string
 
 const (
 	// ChannelMembershipTypeVStandard undocumented
-	ChannelMembershipTypeVStandard ChannelMembershipType = 0
+	ChannelMembershipTypeVStandard ChannelMembershipType = "Standard"
 	// ChannelMembershipTypeVPrivate undocumented
-	ChannelMembershipTypeVPrivate ChannelMembershipType = 1
+	ChannelMembershipTypeVPrivate ChannelMembershipType = "Private"
 	// ChannelMembershipTypeVUnknownFutureValue undocumented
-	ChannelMembershipTypeVUnknownFutureValue ChannelMembershipType = 2
+	ChannelMembershipTypeVUnknownFutureValue ChannelMembershipType = "UnknownFutureValue"
 )
 
 // ChannelMembershipTypePStandard returns a pointer to ChannelMembershipTypeVStandard

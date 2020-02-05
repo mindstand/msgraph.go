@@ -3,25 +3,25 @@
 package msgraph
 
 // SetupStatus undocumented
-type SetupStatus int
+type SetupStatus string
 
 const (
 	// SetupStatusVUnknown undocumented
-	SetupStatusVUnknown SetupStatus = 0
+	SetupStatusVUnknown SetupStatus = "Unknown"
 	// SetupStatusVNotRegisteredYet undocumented
-	SetupStatusVNotRegisteredYet SetupStatus = 1
+	SetupStatusVNotRegisteredYet SetupStatus = "NotRegisteredYet"
 	// SetupStatusVRegisteredSetupNotStarted undocumented
-	SetupStatusVRegisteredSetupNotStarted SetupStatus = 2
+	SetupStatusVRegisteredSetupNotStarted SetupStatus = "RegisteredSetupNotStarted"
 	// SetupStatusVRegisteredSetupInProgress undocumented
-	SetupStatusVRegisteredSetupInProgress SetupStatus = 3
+	SetupStatusVRegisteredSetupInProgress SetupStatus = "RegisteredSetupInProgress"
 	// SetupStatusVRegistrationAndSetupCompleted undocumented
-	SetupStatusVRegistrationAndSetupCompleted SetupStatus = 4
+	SetupStatusVRegistrationAndSetupCompleted SetupStatus = "RegistrationAndSetupCompleted"
 	// SetupStatusVRegistrationFailed undocumented
-	SetupStatusVRegistrationFailed SetupStatus = 5
+	SetupStatusVRegistrationFailed SetupStatus = "RegistrationFailed"
 	// SetupStatusVRegistrationTimedOut undocumented
-	SetupStatusVRegistrationTimedOut SetupStatus = 6
+	SetupStatusVRegistrationTimedOut SetupStatus = "RegistrationTimedOut"
 	// SetupStatusVDisabled undocumented
-	SetupStatusVDisabled SetupStatus = 7
+	SetupStatusVDisabled SetupStatus = "Disabled"
 )
 
 // SetupStatusPUnknown returns a pointer to SetupStatusVUnknown

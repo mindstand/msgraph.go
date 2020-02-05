@@ -3,17 +3,17 @@
 package msgraph
 
 // ScheduleChangeState undocumented
-type ScheduleChangeState int
+type ScheduleChangeState string
 
 const (
 	// ScheduleChangeStateVPending undocumented
-	ScheduleChangeStateVPending ScheduleChangeState = 0
+	ScheduleChangeStateVPending ScheduleChangeState = "Pending"
 	// ScheduleChangeStateVApproved undocumented
-	ScheduleChangeStateVApproved ScheduleChangeState = 1
+	ScheduleChangeStateVApproved ScheduleChangeState = "Approved"
 	// ScheduleChangeStateVDeclined undocumented
-	ScheduleChangeStateVDeclined ScheduleChangeState = 2
+	ScheduleChangeStateVDeclined ScheduleChangeState = "Declined"
 	// ScheduleChangeStateVUnknownFutureValue undocumented
-	ScheduleChangeStateVUnknownFutureValue ScheduleChangeState = 3
+	ScheduleChangeStateVUnknownFutureValue ScheduleChangeState = "UnknownFutureValue"
 )
 
 // ScheduleChangeStatePPending returns a pointer to ScheduleChangeStateVPending

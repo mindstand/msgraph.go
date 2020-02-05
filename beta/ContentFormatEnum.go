@@ -3,13 +3,13 @@
 package msgraph
 
 // ContentFormat undocumented
-type ContentFormat int
+type ContentFormat string
 
 const (
 	// ContentFormatVDefault undocumented
-	ContentFormatVDefault ContentFormat = 0
+	ContentFormatVDefault ContentFormat = "Default"
 	// ContentFormatVEmail undocumented
-	ContentFormatVEmail ContentFormat = 1
+	ContentFormatVEmail ContentFormat = "Email"
 )
 
 // ContentFormatPDefault returns a pointer to ContentFormatVDefault

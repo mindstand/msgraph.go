@@ -3,43 +3,43 @@
 package msgraph
 
 // Tone undocumented
-type Tone int
+type Tone string
 
 const (
 	// ToneVTone0 undocumented
-	ToneVTone0 Tone = 0
+	ToneVTone0 Tone = "Tone0"
 	// ToneVTone1 undocumented
-	ToneVTone1 Tone = 1
+	ToneVTone1 Tone = "Tone1"
 	// ToneVTone2 undocumented
-	ToneVTone2 Tone = 2
+	ToneVTone2 Tone = "Tone2"
 	// ToneVTone3 undocumented
-	ToneVTone3 Tone = 3
+	ToneVTone3 Tone = "Tone3"
 	// ToneVTone4 undocumented
-	ToneVTone4 Tone = 4
+	ToneVTone4 Tone = "Tone4"
 	// ToneVTone5 undocumented
-	ToneVTone5 Tone = 5
+	ToneVTone5 Tone = "Tone5"
 	// ToneVTone6 undocumented
-	ToneVTone6 Tone = 6
+	ToneVTone6 Tone = "Tone6"
 	// ToneVTone7 undocumented
-	ToneVTone7 Tone = 7
+	ToneVTone7 Tone = "Tone7"
 	// ToneVTone8 undocumented
-	ToneVTone8 Tone = 8
+	ToneVTone8 Tone = "Tone8"
 	// ToneVTone9 undocumented
-	ToneVTone9 Tone = 9
+	ToneVTone9 Tone = "Tone9"
 	// ToneVStar undocumented
-	ToneVStar Tone = 10
+	ToneVStar Tone = "Star"
 	// ToneVPound undocumented
-	ToneVPound Tone = 11
+	ToneVPound Tone = "Pound"
 	// ToneVA undocumented
-	ToneVA Tone = 12
+	ToneVA Tone = "A"
 	// ToneVB undocumented
-	ToneVB Tone = 13
+	ToneVB Tone = "B"
 	// ToneVC undocumented
-	ToneVC Tone = 14
+	ToneVC Tone = "C"
 	// ToneVD undocumented
-	ToneVD Tone = 15
+	ToneVD Tone = "D"
 	// ToneVFlash undocumented
-	ToneVFlash Tone = 16
+	ToneVFlash Tone = "Flash"
 )
 
 // TonePTone0 returns a pointer to ToneVTone0

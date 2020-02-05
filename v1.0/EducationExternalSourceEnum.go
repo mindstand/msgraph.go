@@ -3,15 +3,15 @@
 package msgraph
 
 // EducationExternalSource undocumented
-type EducationExternalSource int
+type EducationExternalSource string
 
 const (
 	// EducationExternalSourceVSis undocumented
-	EducationExternalSourceVSis EducationExternalSource = 0
+	EducationExternalSourceVSis EducationExternalSource = "Sis"
 	// EducationExternalSourceVManual undocumented
-	EducationExternalSourceVManual EducationExternalSource = 1
+	EducationExternalSourceVManual EducationExternalSource = "Manual"
 	// EducationExternalSourceVUnknownFutureValue undocumented
-	EducationExternalSourceVUnknownFutureValue EducationExternalSource = 2
+	EducationExternalSourceVUnknownFutureValue EducationExternalSource = "UnknownFutureValue"
 )
 
 // EducationExternalSourcePSis returns a pointer to EducationExternalSourceVSis

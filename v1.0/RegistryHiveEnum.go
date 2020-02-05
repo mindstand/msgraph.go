@@ -3,27 +3,27 @@
 package msgraph
 
 // RegistryHive undocumented
-type RegistryHive int
+type RegistryHive string
 
 const (
 	// RegistryHiveVUnknown undocumented
-	RegistryHiveVUnknown RegistryHive = 0
+	RegistryHiveVUnknown RegistryHive = "Unknown"
 	// RegistryHiveVCurrentConfig undocumented
-	RegistryHiveVCurrentConfig RegistryHive = 1
+	RegistryHiveVCurrentConfig RegistryHive = "CurrentConfig"
 	// RegistryHiveVCurrentUser undocumented
-	RegistryHiveVCurrentUser RegistryHive = 2
+	RegistryHiveVCurrentUser RegistryHive = "CurrentUser"
 	// RegistryHiveVLocalMachineSam undocumented
-	RegistryHiveVLocalMachineSam RegistryHive = 3
+	RegistryHiveVLocalMachineSam RegistryHive = "LocalMachineSam"
 	// RegistryHiveVLocalMachineSecurity undocumented
-	RegistryHiveVLocalMachineSecurity RegistryHive = 4
+	RegistryHiveVLocalMachineSecurity RegistryHive = "LocalMachineSecurity"
 	// RegistryHiveVLocalMachineSoftware undocumented
-	RegistryHiveVLocalMachineSoftware RegistryHive = 5
+	RegistryHiveVLocalMachineSoftware RegistryHive = "LocalMachineSoftware"
 	// RegistryHiveVLocalMachineSystem undocumented
-	RegistryHiveVLocalMachineSystem RegistryHive = 6
+	RegistryHiveVLocalMachineSystem RegistryHive = "LocalMachineSystem"
 	// RegistryHiveVUsersDefault undocumented
-	RegistryHiveVUsersDefault RegistryHive = 7
+	RegistryHiveVUsersDefault RegistryHive = "UsersDefault"
 	// RegistryHiveVUnknownFutureValue undocumented
-	RegistryHiveVUnknownFutureValue RegistryHive = 127
+	RegistryHiveVUnknownFutureValue RegistryHive = "UnknownFutureValue"
 )
 
 // RegistryHivePUnknown returns a pointer to RegistryHiveVUnknown

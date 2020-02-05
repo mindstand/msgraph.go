@@ -3,13 +3,13 @@
 package msgraph
 
 // WorkforceIntegrationEncryptionProtocol undocumented
-type WorkforceIntegrationEncryptionProtocol int
+type WorkforceIntegrationEncryptionProtocol string
 
 const (
 	// WorkforceIntegrationEncryptionProtocolVSharedSecret undocumented
-	WorkforceIntegrationEncryptionProtocolVSharedSecret WorkforceIntegrationEncryptionProtocol = 0
+	WorkforceIntegrationEncryptionProtocolVSharedSecret WorkforceIntegrationEncryptionProtocol = "SharedSecret"
 	// WorkforceIntegrationEncryptionProtocolVUnknownFutureValue undocumented
-	WorkforceIntegrationEncryptionProtocolVUnknownFutureValue WorkforceIntegrationEncryptionProtocol = 1
+	WorkforceIntegrationEncryptionProtocolVUnknownFutureValue WorkforceIntegrationEncryptionProtocol = "UnknownFutureValue"
 )
 
 // WorkforceIntegrationEncryptionProtocolPSharedSecret returns a pointer to WorkforceIntegrationEncryptionProtocolVSharedSecret

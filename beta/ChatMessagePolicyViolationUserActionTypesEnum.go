@@ -3,15 +3,15 @@
 package msgraph
 
 // ChatMessagePolicyViolationUserActionTypes undocumented
-type ChatMessagePolicyViolationUserActionTypes int
+type ChatMessagePolicyViolationUserActionTypes string
 
 const (
 	// ChatMessagePolicyViolationUserActionTypesVNone undocumented
-	ChatMessagePolicyViolationUserActionTypesVNone ChatMessagePolicyViolationUserActionTypes = 0
+	ChatMessagePolicyViolationUserActionTypesVNone ChatMessagePolicyViolationUserActionTypes = "None"
 	// ChatMessagePolicyViolationUserActionTypesVOverride undocumented
-	ChatMessagePolicyViolationUserActionTypesVOverride ChatMessagePolicyViolationUserActionTypes = 1
+	ChatMessagePolicyViolationUserActionTypesVOverride ChatMessagePolicyViolationUserActionTypes = "Override"
 	// ChatMessagePolicyViolationUserActionTypesVReportFalsePositive undocumented
-	ChatMessagePolicyViolationUserActionTypesVReportFalsePositive ChatMessagePolicyViolationUserActionTypes = 2
+	ChatMessagePolicyViolationUserActionTypesVReportFalsePositive ChatMessagePolicyViolationUserActionTypes = "ReportFalsePositive"
 )
 
 // ChatMessagePolicyViolationUserActionTypesPNone returns a pointer to ChatMessagePolicyViolationUserActionTypesVNone

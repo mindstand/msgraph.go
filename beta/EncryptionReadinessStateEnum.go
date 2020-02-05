@@ -3,13 +3,13 @@
 package msgraph
 
 // EncryptionReadinessState undocumented
-type EncryptionReadinessState int
+type EncryptionReadinessState string
 
 const (
 	// EncryptionReadinessStateVNotReady undocumented
-	EncryptionReadinessStateVNotReady EncryptionReadinessState = 0
+	EncryptionReadinessStateVNotReady EncryptionReadinessState = "NotReady"
 	// EncryptionReadinessStateVReady undocumented
-	EncryptionReadinessStateVReady EncryptionReadinessState = 1
+	EncryptionReadinessStateVReady EncryptionReadinessState = "Ready"
 )
 
 // EncryptionReadinessStatePNotReady returns a pointer to EncryptionReadinessStateVNotReady

@@ -3,15 +3,15 @@
 package msgraph
 
 // FirewallPreSharedKeyEncodingMethodType undocumented
-type FirewallPreSharedKeyEncodingMethodType int
+type FirewallPreSharedKeyEncodingMethodType string
 
 const (
 	// FirewallPreSharedKeyEncodingMethodTypeVDeviceDefault undocumented
-	FirewallPreSharedKeyEncodingMethodTypeVDeviceDefault FirewallPreSharedKeyEncodingMethodType = 0
+	FirewallPreSharedKeyEncodingMethodTypeVDeviceDefault FirewallPreSharedKeyEncodingMethodType = "DeviceDefault"
 	// FirewallPreSharedKeyEncodingMethodTypeVNone undocumented
-	FirewallPreSharedKeyEncodingMethodTypeVNone FirewallPreSharedKeyEncodingMethodType = 1
+	FirewallPreSharedKeyEncodingMethodTypeVNone FirewallPreSharedKeyEncodingMethodType = "None"
 	// FirewallPreSharedKeyEncodingMethodTypeVUtF8 undocumented
-	FirewallPreSharedKeyEncodingMethodTypeVUtF8 FirewallPreSharedKeyEncodingMethodType = 2
+	FirewallPreSharedKeyEncodingMethodTypeVUtF8 FirewallPreSharedKeyEncodingMethodType = "UtF8"
 )
 
 // FirewallPreSharedKeyEncodingMethodTypePDeviceDefault returns a pointer to FirewallPreSharedKeyEncodingMethodTypeVDeviceDefault

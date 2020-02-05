@@ -3,19 +3,19 @@
 package msgraph
 
 // RatingNewZealandTelevisionType undocumented
-type RatingNewZealandTelevisionType int
+type RatingNewZealandTelevisionType string
 
 const (
 	// RatingNewZealandTelevisionTypeVAllAllowed undocumented
-	RatingNewZealandTelevisionTypeVAllAllowed RatingNewZealandTelevisionType = 0
+	RatingNewZealandTelevisionTypeVAllAllowed RatingNewZealandTelevisionType = "AllAllowed"
 	// RatingNewZealandTelevisionTypeVAllBlocked undocumented
-	RatingNewZealandTelevisionTypeVAllBlocked RatingNewZealandTelevisionType = 1
+	RatingNewZealandTelevisionTypeVAllBlocked RatingNewZealandTelevisionType = "AllBlocked"
 	// RatingNewZealandTelevisionTypeVGeneral undocumented
-	RatingNewZealandTelevisionTypeVGeneral RatingNewZealandTelevisionType = 2
+	RatingNewZealandTelevisionTypeVGeneral RatingNewZealandTelevisionType = "General"
 	// RatingNewZealandTelevisionTypeVParentalGuidance undocumented
-	RatingNewZealandTelevisionTypeVParentalGuidance RatingNewZealandTelevisionType = 3
+	RatingNewZealandTelevisionTypeVParentalGuidance RatingNewZealandTelevisionType = "ParentalGuidance"
 	// RatingNewZealandTelevisionTypeVAdults undocumented
-	RatingNewZealandTelevisionTypeVAdults RatingNewZealandTelevisionType = 4
+	RatingNewZealandTelevisionTypeVAdults RatingNewZealandTelevisionType = "Adults"
 )
 
 // RatingNewZealandTelevisionTypePAllAllowed returns a pointer to RatingNewZealandTelevisionTypeVAllAllowed

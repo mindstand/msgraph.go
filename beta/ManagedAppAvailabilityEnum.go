@@ -3,13 +3,13 @@
 package msgraph
 
 // ManagedAppAvailability undocumented
-type ManagedAppAvailability int
+type ManagedAppAvailability string
 
 const (
 	// ManagedAppAvailabilityVGlobal undocumented
-	ManagedAppAvailabilityVGlobal ManagedAppAvailability = 0
+	ManagedAppAvailabilityVGlobal ManagedAppAvailability = "Global"
 	// ManagedAppAvailabilityVLineOfBusiness undocumented
-	ManagedAppAvailabilityVLineOfBusiness ManagedAppAvailability = 1
+	ManagedAppAvailabilityVLineOfBusiness ManagedAppAvailability = "LineOfBusiness"
 )
 
 // ManagedAppAvailabilityPGlobal returns a pointer to ManagedAppAvailabilityVGlobal

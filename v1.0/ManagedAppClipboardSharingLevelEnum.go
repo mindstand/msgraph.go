@@ -3,17 +3,17 @@
 package msgraph
 
 // ManagedAppClipboardSharingLevel undocumented
-type ManagedAppClipboardSharingLevel int
+type ManagedAppClipboardSharingLevel string
 
 const (
 	// ManagedAppClipboardSharingLevelVAllApps undocumented
-	ManagedAppClipboardSharingLevelVAllApps ManagedAppClipboardSharingLevel = 0
+	ManagedAppClipboardSharingLevelVAllApps ManagedAppClipboardSharingLevel = "AllApps"
 	// ManagedAppClipboardSharingLevelVManagedAppsWithPasteIn undocumented
-	ManagedAppClipboardSharingLevelVManagedAppsWithPasteIn ManagedAppClipboardSharingLevel = 1
+	ManagedAppClipboardSharingLevelVManagedAppsWithPasteIn ManagedAppClipboardSharingLevel = "ManagedAppsWithPasteIn"
 	// ManagedAppClipboardSharingLevelVManagedApps undocumented
-	ManagedAppClipboardSharingLevelVManagedApps ManagedAppClipboardSharingLevel = 2
+	ManagedAppClipboardSharingLevelVManagedApps ManagedAppClipboardSharingLevel = "ManagedApps"
 	// ManagedAppClipboardSharingLevelVBlocked undocumented
-	ManagedAppClipboardSharingLevelVBlocked ManagedAppClipboardSharingLevel = 3
+	ManagedAppClipboardSharingLevelVBlocked ManagedAppClipboardSharingLevel = "Blocked"
 )
 
 // ManagedAppClipboardSharingLevelPAllApps returns a pointer to ManagedAppClipboardSharingLevelVAllApps

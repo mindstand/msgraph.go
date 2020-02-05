@@ -3,13 +3,13 @@
 package msgraph
 
 // RunAsAccountType undocumented
-type RunAsAccountType int
+type RunAsAccountType string
 
 const (
 	// RunAsAccountTypeVSystem undocumented
-	RunAsAccountTypeVSystem RunAsAccountType = 0
+	RunAsAccountTypeVSystem RunAsAccountType = "System"
 	// RunAsAccountTypeVUser undocumented
-	RunAsAccountTypeVUser RunAsAccountType = 1
+	RunAsAccountTypeVUser RunAsAccountType = "User"
 )
 
 // RunAsAccountTypePSystem returns a pointer to RunAsAccountTypeVSystem

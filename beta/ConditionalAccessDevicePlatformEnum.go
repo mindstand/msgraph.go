@@ -3,21 +3,21 @@
 package msgraph
 
 // ConditionalAccessDevicePlatform undocumented
-type ConditionalAccessDevicePlatform int
+type ConditionalAccessDevicePlatform string
 
 const (
 	// ConditionalAccessDevicePlatformVAndroid undocumented
-	ConditionalAccessDevicePlatformVAndroid ConditionalAccessDevicePlatform = 0
+	ConditionalAccessDevicePlatformVAndroid ConditionalAccessDevicePlatform = "Android"
 	// ConditionalAccessDevicePlatformVIOS undocumented
-	ConditionalAccessDevicePlatformVIOS ConditionalAccessDevicePlatform = 1
+	ConditionalAccessDevicePlatformVIOS ConditionalAccessDevicePlatform = "IOS"
 	// ConditionalAccessDevicePlatformVWindows undocumented
-	ConditionalAccessDevicePlatformVWindows ConditionalAccessDevicePlatform = 2
+	ConditionalAccessDevicePlatformVWindows ConditionalAccessDevicePlatform = "Windows"
 	// ConditionalAccessDevicePlatformVWindowsPhone undocumented
-	ConditionalAccessDevicePlatformVWindowsPhone ConditionalAccessDevicePlatform = 3
+	ConditionalAccessDevicePlatformVWindowsPhone ConditionalAccessDevicePlatform = "WindowsPhone"
 	// ConditionalAccessDevicePlatformVMacOS undocumented
-	ConditionalAccessDevicePlatformVMacOS ConditionalAccessDevicePlatform = 4
+	ConditionalAccessDevicePlatformVMacOS ConditionalAccessDevicePlatform = "MacOS"
 	// ConditionalAccessDevicePlatformVAll undocumented
-	ConditionalAccessDevicePlatformVAll ConditionalAccessDevicePlatform = 5
+	ConditionalAccessDevicePlatformVAll ConditionalAccessDevicePlatform = "All"
 )
 
 // ConditionalAccessDevicePlatformPAndroid returns a pointer to ConditionalAccessDevicePlatformVAndroid

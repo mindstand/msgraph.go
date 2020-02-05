@@ -3,17 +3,17 @@
 package msgraph
 
 // VpnOnDemandRuleConnectionAction undocumented
-type VpnOnDemandRuleConnectionAction int
+type VpnOnDemandRuleConnectionAction string
 
 const (
 	// VpnOnDemandRuleConnectionActionVConnect undocumented
-	VpnOnDemandRuleConnectionActionVConnect VpnOnDemandRuleConnectionAction = 0
+	VpnOnDemandRuleConnectionActionVConnect VpnOnDemandRuleConnectionAction = "Connect"
 	// VpnOnDemandRuleConnectionActionVEvaluateConnection undocumented
-	VpnOnDemandRuleConnectionActionVEvaluateConnection VpnOnDemandRuleConnectionAction = 1
+	VpnOnDemandRuleConnectionActionVEvaluateConnection VpnOnDemandRuleConnectionAction = "EvaluateConnection"
 	// VpnOnDemandRuleConnectionActionVIgnore undocumented
-	VpnOnDemandRuleConnectionActionVIgnore VpnOnDemandRuleConnectionAction = 2
+	VpnOnDemandRuleConnectionActionVIgnore VpnOnDemandRuleConnectionAction = "Ignore"
 	// VpnOnDemandRuleConnectionActionVDisconnect undocumented
-	VpnOnDemandRuleConnectionActionVDisconnect VpnOnDemandRuleConnectionAction = 3
+	VpnOnDemandRuleConnectionActionVDisconnect VpnOnDemandRuleConnectionAction = "Disconnect"
 )
 
 // VpnOnDemandRuleConnectionActionPConnect returns a pointer to VpnOnDemandRuleConnectionActionVConnect

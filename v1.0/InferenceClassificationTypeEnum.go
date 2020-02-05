@@ -3,13 +3,13 @@
 package msgraph
 
 // InferenceClassificationType undocumented
-type InferenceClassificationType int
+type InferenceClassificationType string
 
 const (
 	// InferenceClassificationTypeVFocused undocumented
-	InferenceClassificationTypeVFocused InferenceClassificationType = 0
+	InferenceClassificationTypeVFocused InferenceClassificationType = "Focused"
 	// InferenceClassificationTypeVOther undocumented
-	InferenceClassificationTypeVOther InferenceClassificationType = 1
+	InferenceClassificationTypeVOther InferenceClassificationType = "Other"
 )
 
 // InferenceClassificationTypePFocused returns a pointer to InferenceClassificationTypeVFocused

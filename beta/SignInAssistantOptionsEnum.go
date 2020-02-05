@@ -3,13 +3,13 @@
 package msgraph
 
 // SignInAssistantOptions undocumented
-type SignInAssistantOptions int
+type SignInAssistantOptions string
 
 const (
 	// SignInAssistantOptionsVNotConfigured undocumented
-	SignInAssistantOptionsVNotConfigured SignInAssistantOptions = 0
+	SignInAssistantOptionsVNotConfigured SignInAssistantOptions = "NotConfigured"
 	// SignInAssistantOptionsVDisabled undocumented
-	SignInAssistantOptionsVDisabled SignInAssistantOptions = 1
+	SignInAssistantOptionsVDisabled SignInAssistantOptions = "Disabled"
 )
 
 // SignInAssistantOptionsPNotConfigured returns a pointer to SignInAssistantOptionsVNotConfigured

@@ -3,17 +3,17 @@
 package msgraph
 
 // Win32LobAppRestartBehavior undocumented
-type Win32LobAppRestartBehavior int
+type Win32LobAppRestartBehavior string
 
 const (
 	// Win32LobAppRestartBehaviorVBasedOnReturnCode undocumented
-	Win32LobAppRestartBehaviorVBasedOnReturnCode Win32LobAppRestartBehavior = 0
+	Win32LobAppRestartBehaviorVBasedOnReturnCode Win32LobAppRestartBehavior = "BasedOnReturnCode"
 	// Win32LobAppRestartBehaviorVAllow undocumented
-	Win32LobAppRestartBehaviorVAllow Win32LobAppRestartBehavior = 1
+	Win32LobAppRestartBehaviorVAllow Win32LobAppRestartBehavior = "Allow"
 	// Win32LobAppRestartBehaviorVSuppress undocumented
-	Win32LobAppRestartBehaviorVSuppress Win32LobAppRestartBehavior = 2
+	Win32LobAppRestartBehaviorVSuppress Win32LobAppRestartBehavior = "Suppress"
 	// Win32LobAppRestartBehaviorVForce undocumented
-	Win32LobAppRestartBehaviorVForce Win32LobAppRestartBehavior = 3
+	Win32LobAppRestartBehaviorVForce Win32LobAppRestartBehavior = "Force"
 )
 
 // Win32LobAppRestartBehaviorPBasedOnReturnCode returns a pointer to Win32LobAppRestartBehaviorVBasedOnReturnCode

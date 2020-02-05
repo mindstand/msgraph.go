@@ -3,17 +3,17 @@
 package msgraph
 
 // DeviceManagementExchangeConnectorStatus undocumented
-type DeviceManagementExchangeConnectorStatus int
+type DeviceManagementExchangeConnectorStatus string
 
 const (
 	// DeviceManagementExchangeConnectorStatusVNone undocumented
-	DeviceManagementExchangeConnectorStatusVNone DeviceManagementExchangeConnectorStatus = 0
+	DeviceManagementExchangeConnectorStatusVNone DeviceManagementExchangeConnectorStatus = "None"
 	// DeviceManagementExchangeConnectorStatusVConnectionPending undocumented
-	DeviceManagementExchangeConnectorStatusVConnectionPending DeviceManagementExchangeConnectorStatus = 1
+	DeviceManagementExchangeConnectorStatusVConnectionPending DeviceManagementExchangeConnectorStatus = "ConnectionPending"
 	// DeviceManagementExchangeConnectorStatusVConnected undocumented
-	DeviceManagementExchangeConnectorStatusVConnected DeviceManagementExchangeConnectorStatus = 2
+	DeviceManagementExchangeConnectorStatusVConnected DeviceManagementExchangeConnectorStatus = "Connected"
 	// DeviceManagementExchangeConnectorStatusVDisconnected undocumented
-	DeviceManagementExchangeConnectorStatusVDisconnected DeviceManagementExchangeConnectorStatus = 3
+	DeviceManagementExchangeConnectorStatusVDisconnected DeviceManagementExchangeConnectorStatus = "Disconnected"
 )
 
 // DeviceManagementExchangeConnectorStatusPNone returns a pointer to DeviceManagementExchangeConnectorStatusVNone

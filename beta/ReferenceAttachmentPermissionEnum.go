@@ -3,23 +3,23 @@
 package msgraph
 
 // ReferenceAttachmentPermission undocumented
-type ReferenceAttachmentPermission int
+type ReferenceAttachmentPermission string
 
 const (
 	// ReferenceAttachmentPermissionVOther undocumented
-	ReferenceAttachmentPermissionVOther ReferenceAttachmentPermission = 0
+	ReferenceAttachmentPermissionVOther ReferenceAttachmentPermission = "Other"
 	// ReferenceAttachmentPermissionVView undocumented
-	ReferenceAttachmentPermissionVView ReferenceAttachmentPermission = 1
+	ReferenceAttachmentPermissionVView ReferenceAttachmentPermission = "View"
 	// ReferenceAttachmentPermissionVEdit undocumented
-	ReferenceAttachmentPermissionVEdit ReferenceAttachmentPermission = 2
+	ReferenceAttachmentPermissionVEdit ReferenceAttachmentPermission = "Edit"
 	// ReferenceAttachmentPermissionVAnonymousView undocumented
-	ReferenceAttachmentPermissionVAnonymousView ReferenceAttachmentPermission = 3
+	ReferenceAttachmentPermissionVAnonymousView ReferenceAttachmentPermission = "AnonymousView"
 	// ReferenceAttachmentPermissionVAnonymousEdit undocumented
-	ReferenceAttachmentPermissionVAnonymousEdit ReferenceAttachmentPermission = 4
+	ReferenceAttachmentPermissionVAnonymousEdit ReferenceAttachmentPermission = "AnonymousEdit"
 	// ReferenceAttachmentPermissionVOrganizationView undocumented
-	ReferenceAttachmentPermissionVOrganizationView ReferenceAttachmentPermission = 5
+	ReferenceAttachmentPermissionVOrganizationView ReferenceAttachmentPermission = "OrganizationView"
 	// ReferenceAttachmentPermissionVOrganizationEdit undocumented
-	ReferenceAttachmentPermissionVOrganizationEdit ReferenceAttachmentPermission = 6
+	ReferenceAttachmentPermissionVOrganizationEdit ReferenceAttachmentPermission = "OrganizationEdit"
 )
 
 // ReferenceAttachmentPermissionPOther returns a pointer to ReferenceAttachmentPermissionVOther

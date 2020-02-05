@@ -3,13 +3,13 @@
 package msgraph
 
 // RoutingMode undocumented
-type RoutingMode int
+type RoutingMode string
 
 const (
 	// RoutingModeVOneToOne undocumented
-	RoutingModeVOneToOne RoutingMode = 0
+	RoutingModeVOneToOne RoutingMode = "OneToOne"
 	// RoutingModeVMulticast undocumented
-	RoutingModeVMulticast RoutingMode = 1
+	RoutingModeVMulticast RoutingMode = "Multicast"
 )
 
 // RoutingModePOneToOne returns a pointer to RoutingModeVOneToOne

@@ -3,33 +3,33 @@
 package msgraph
 
 // ManagementAgentType undocumented
-type ManagementAgentType int
+type ManagementAgentType string
 
 const (
 	// ManagementAgentTypeVEas undocumented
-	ManagementAgentTypeVEas ManagementAgentType = 1
+	ManagementAgentTypeVEas ManagementAgentType = "Eas"
 	// ManagementAgentTypeVMdm undocumented
-	ManagementAgentTypeVMdm ManagementAgentType = 2
+	ManagementAgentTypeVMdm ManagementAgentType = "Mdm"
 	// ManagementAgentTypeVEasMdm undocumented
-	ManagementAgentTypeVEasMdm ManagementAgentType = 3
+	ManagementAgentTypeVEasMdm ManagementAgentType = "EasMdm"
 	// ManagementAgentTypeVIntuneClient undocumented
-	ManagementAgentTypeVIntuneClient ManagementAgentType = 4
+	ManagementAgentTypeVIntuneClient ManagementAgentType = "IntuneClient"
 	// ManagementAgentTypeVEasIntuneClient undocumented
-	ManagementAgentTypeVEasIntuneClient ManagementAgentType = 5
+	ManagementAgentTypeVEasIntuneClient ManagementAgentType = "EasIntuneClient"
 	// ManagementAgentTypeVConfigurationManagerClient undocumented
-	ManagementAgentTypeVConfigurationManagerClient ManagementAgentType = 8
+	ManagementAgentTypeVConfigurationManagerClient ManagementAgentType = "ConfigurationManagerClient"
 	// ManagementAgentTypeVConfigurationManagerClientMdm undocumented
-	ManagementAgentTypeVConfigurationManagerClientMdm ManagementAgentType = 10
+	ManagementAgentTypeVConfigurationManagerClientMdm ManagementAgentType = "ConfigurationManagerClientMdm"
 	// ManagementAgentTypeVConfigurationManagerClientMdmEas undocumented
-	ManagementAgentTypeVConfigurationManagerClientMdmEas ManagementAgentType = 11
+	ManagementAgentTypeVConfigurationManagerClientMdmEas ManagementAgentType = "ConfigurationManagerClientMdmEas"
 	// ManagementAgentTypeVUnknown undocumented
-	ManagementAgentTypeVUnknown ManagementAgentType = 16
+	ManagementAgentTypeVUnknown ManagementAgentType = "Unknown"
 	// ManagementAgentTypeVJamf undocumented
-	ManagementAgentTypeVJamf ManagementAgentType = 32
+	ManagementAgentTypeVJamf ManagementAgentType = "Jamf"
 	// ManagementAgentTypeVGoogleCloudDevicePolicyController undocumented
-	ManagementAgentTypeVGoogleCloudDevicePolicyController ManagementAgentType = 64
+	ManagementAgentTypeVGoogleCloudDevicePolicyController ManagementAgentType = "GoogleCloudDevicePolicyController"
 	// ManagementAgentTypeVMicrosoft365ManagedMdm undocumented
-	ManagementAgentTypeVMicrosoft365ManagedMdm ManagementAgentType = 258
+	ManagementAgentTypeVMicrosoft365ManagedMdm ManagementAgentType = "Microsoft365ManagedMdm"
 )
 
 // ManagementAgentTypePEas returns a pointer to ManagementAgentTypeVEas

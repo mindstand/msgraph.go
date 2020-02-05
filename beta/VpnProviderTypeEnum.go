@@ -3,15 +3,15 @@
 package msgraph
 
 // VpnProviderType undocumented
-type VpnProviderType int
+type VpnProviderType string
 
 const (
 	// VpnProviderTypeVNotConfigured undocumented
-	VpnProviderTypeVNotConfigured VpnProviderType = 0
+	VpnProviderTypeVNotConfigured VpnProviderType = "NotConfigured"
 	// VpnProviderTypeVAppProxy undocumented
-	VpnProviderTypeVAppProxy VpnProviderType = 1
+	VpnProviderTypeVAppProxy VpnProviderType = "AppProxy"
 	// VpnProviderTypeVPacketTunnel undocumented
-	VpnProviderTypeVPacketTunnel VpnProviderType = 2
+	VpnProviderTypeVPacketTunnel VpnProviderType = "PacketTunnel"
 )
 
 // VpnProviderTypePNotConfigured returns a pointer to VpnProviderTypeVNotConfigured

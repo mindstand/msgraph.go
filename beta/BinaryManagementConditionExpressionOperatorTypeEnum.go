@@ -3,13 +3,13 @@
 package msgraph
 
 // BinaryManagementConditionExpressionOperatorType undocumented
-type BinaryManagementConditionExpressionOperatorType int
+type BinaryManagementConditionExpressionOperatorType string
 
 const (
 	// BinaryManagementConditionExpressionOperatorTypeVOr undocumented
-	BinaryManagementConditionExpressionOperatorTypeVOr BinaryManagementConditionExpressionOperatorType = 0
+	BinaryManagementConditionExpressionOperatorTypeVOr BinaryManagementConditionExpressionOperatorType = "Or"
 	// BinaryManagementConditionExpressionOperatorTypeVAnd undocumented
-	BinaryManagementConditionExpressionOperatorTypeVAnd BinaryManagementConditionExpressionOperatorType = 1
+	BinaryManagementConditionExpressionOperatorTypeVAnd BinaryManagementConditionExpressionOperatorType = "And"
 )
 
 // BinaryManagementConditionExpressionOperatorTypePOr returns a pointer to BinaryManagementConditionExpressionOperatorTypeVOr

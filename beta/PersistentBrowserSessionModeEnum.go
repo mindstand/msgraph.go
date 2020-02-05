@@ -3,13 +3,13 @@
 package msgraph
 
 // PersistentBrowserSessionMode undocumented
-type PersistentBrowserSessionMode int
+type PersistentBrowserSessionMode string
 
 const (
 	// PersistentBrowserSessionModeVAlways undocumented
-	PersistentBrowserSessionModeVAlways PersistentBrowserSessionMode = 0
+	PersistentBrowserSessionModeVAlways PersistentBrowserSessionMode = "Always"
 	// PersistentBrowserSessionModeVNever undocumented
-	PersistentBrowserSessionModeVNever PersistentBrowserSessionMode = 1
+	PersistentBrowserSessionModeVNever PersistentBrowserSessionMode = "Never"
 )
 
 // PersistentBrowserSessionModePAlways returns a pointer to PersistentBrowserSessionModeVAlways

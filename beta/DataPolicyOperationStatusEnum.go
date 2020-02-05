@@ -3,19 +3,19 @@
 package msgraph
 
 // DataPolicyOperationStatus undocumented
-type DataPolicyOperationStatus int
+type DataPolicyOperationStatus string
 
 const (
 	// DataPolicyOperationStatusVNotStarted undocumented
-	DataPolicyOperationStatusVNotStarted DataPolicyOperationStatus = 0
+	DataPolicyOperationStatusVNotStarted DataPolicyOperationStatus = "NotStarted"
 	// DataPolicyOperationStatusVRunning undocumented
-	DataPolicyOperationStatusVRunning DataPolicyOperationStatus = 1
+	DataPolicyOperationStatusVRunning DataPolicyOperationStatus = "Running"
 	// DataPolicyOperationStatusVComplete undocumented
-	DataPolicyOperationStatusVComplete DataPolicyOperationStatus = 2
+	DataPolicyOperationStatusVComplete DataPolicyOperationStatus = "Complete"
 	// DataPolicyOperationStatusVFailed undocumented
-	DataPolicyOperationStatusVFailed DataPolicyOperationStatus = 3
+	DataPolicyOperationStatusVFailed DataPolicyOperationStatus = "Failed"
 	// DataPolicyOperationStatusVUnknownFutureValue undocumented
-	DataPolicyOperationStatusVUnknownFutureValue DataPolicyOperationStatus = 4
+	DataPolicyOperationStatusVUnknownFutureValue DataPolicyOperationStatus = "UnknownFutureValue"
 )
 
 // DataPolicyOperationStatusPNotStarted returns a pointer to DataPolicyOperationStatusVNotStarted

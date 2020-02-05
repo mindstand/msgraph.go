@@ -3,19 +3,19 @@
 package msgraph
 
 // AppInstallControlType undocumented
-type AppInstallControlType int
+type AppInstallControlType string
 
 const (
 	// AppInstallControlTypeVNotConfigured undocumented
-	AppInstallControlTypeVNotConfigured AppInstallControlType = 0
+	AppInstallControlTypeVNotConfigured AppInstallControlType = "NotConfigured"
 	// AppInstallControlTypeVAnywhere undocumented
-	AppInstallControlTypeVAnywhere AppInstallControlType = 1
+	AppInstallControlTypeVAnywhere AppInstallControlType = "Anywhere"
 	// AppInstallControlTypeVStoreOnly undocumented
-	AppInstallControlTypeVStoreOnly AppInstallControlType = 2
+	AppInstallControlTypeVStoreOnly AppInstallControlType = "StoreOnly"
 	// AppInstallControlTypeVRecommendations undocumented
-	AppInstallControlTypeVRecommendations AppInstallControlType = 3
+	AppInstallControlTypeVRecommendations AppInstallControlType = "Recommendations"
 	// AppInstallControlTypeVPreferStore undocumented
-	AppInstallControlTypeVPreferStore AppInstallControlType = 4
+	AppInstallControlTypeVPreferStore AppInstallControlType = "PreferStore"
 )
 
 // AppInstallControlTypePNotConfigured returns a pointer to AppInstallControlTypeVNotConfigured

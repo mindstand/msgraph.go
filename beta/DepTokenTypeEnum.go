@@ -3,15 +3,15 @@
 package msgraph
 
 // DepTokenType undocumented
-type DepTokenType int
+type DepTokenType string
 
 const (
 	// DepTokenTypeVNone undocumented
-	DepTokenTypeVNone DepTokenType = 0
+	DepTokenTypeVNone DepTokenType = "None"
 	// DepTokenTypeVDep undocumented
-	DepTokenTypeVDep DepTokenType = 1
+	DepTokenTypeVDep DepTokenType = "Dep"
 	// DepTokenTypeVAppleSchoolManager undocumented
-	DepTokenTypeVAppleSchoolManager DepTokenType = 2
+	DepTokenTypeVAppleSchoolManager DepTokenType = "AppleSchoolManager"
 )
 
 // DepTokenTypePNone returns a pointer to DepTokenTypeVNone

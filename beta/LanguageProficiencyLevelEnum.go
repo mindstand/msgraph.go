@@ -3,23 +3,23 @@
 package msgraph
 
 // LanguageProficiencyLevel undocumented
-type LanguageProficiencyLevel int
+type LanguageProficiencyLevel string
 
 const (
 	// LanguageProficiencyLevelVElementary undocumented
-	LanguageProficiencyLevelVElementary LanguageProficiencyLevel = 0
+	LanguageProficiencyLevelVElementary LanguageProficiencyLevel = "Elementary"
 	// LanguageProficiencyLevelVConversational undocumented
-	LanguageProficiencyLevelVConversational LanguageProficiencyLevel = 1
+	LanguageProficiencyLevelVConversational LanguageProficiencyLevel = "Conversational"
 	// LanguageProficiencyLevelVLimitedWorking undocumented
-	LanguageProficiencyLevelVLimitedWorking LanguageProficiencyLevel = 2
+	LanguageProficiencyLevelVLimitedWorking LanguageProficiencyLevel = "LimitedWorking"
 	// LanguageProficiencyLevelVProfessionalWorking undocumented
-	LanguageProficiencyLevelVProfessionalWorking LanguageProficiencyLevel = 3
+	LanguageProficiencyLevelVProfessionalWorking LanguageProficiencyLevel = "ProfessionalWorking"
 	// LanguageProficiencyLevelVFullProfessional undocumented
-	LanguageProficiencyLevelVFullProfessional LanguageProficiencyLevel = 4
+	LanguageProficiencyLevelVFullProfessional LanguageProficiencyLevel = "FullProfessional"
 	// LanguageProficiencyLevelVNativeOrBilingual undocumented
-	LanguageProficiencyLevelVNativeOrBilingual LanguageProficiencyLevel = 5
+	LanguageProficiencyLevelVNativeOrBilingual LanguageProficiencyLevel = "NativeOrBilingual"
 	// LanguageProficiencyLevelVUnknownFutureValue undocumented
-	LanguageProficiencyLevelVUnknownFutureValue LanguageProficiencyLevel = 6
+	LanguageProficiencyLevelVUnknownFutureValue LanguageProficiencyLevel = "UnknownFutureValue"
 )
 
 // LanguageProficiencyLevelPElementary returns a pointer to LanguageProficiencyLevelVElementary

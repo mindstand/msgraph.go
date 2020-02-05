@@ -3,21 +3,21 @@
 package msgraph
 
 // RatingJapanMoviesType undocumented
-type RatingJapanMoviesType int
+type RatingJapanMoviesType string
 
 const (
 	// RatingJapanMoviesTypeVAllAllowed undocumented
-	RatingJapanMoviesTypeVAllAllowed RatingJapanMoviesType = 0
+	RatingJapanMoviesTypeVAllAllowed RatingJapanMoviesType = "AllAllowed"
 	// RatingJapanMoviesTypeVAllBlocked undocumented
-	RatingJapanMoviesTypeVAllBlocked RatingJapanMoviesType = 1
+	RatingJapanMoviesTypeVAllBlocked RatingJapanMoviesType = "AllBlocked"
 	// RatingJapanMoviesTypeVGeneral undocumented
-	RatingJapanMoviesTypeVGeneral RatingJapanMoviesType = 2
+	RatingJapanMoviesTypeVGeneral RatingJapanMoviesType = "General"
 	// RatingJapanMoviesTypeVParentalGuidance undocumented
-	RatingJapanMoviesTypeVParentalGuidance RatingJapanMoviesType = 3
+	RatingJapanMoviesTypeVParentalGuidance RatingJapanMoviesType = "ParentalGuidance"
 	// RatingJapanMoviesTypeVAgesAbove15 undocumented
-	RatingJapanMoviesTypeVAgesAbove15 RatingJapanMoviesType = 4
+	RatingJapanMoviesTypeVAgesAbove15 RatingJapanMoviesType = "AgesAbove15"
 	// RatingJapanMoviesTypeVAgesAbove18 undocumented
-	RatingJapanMoviesTypeVAgesAbove18 RatingJapanMoviesType = 5
+	RatingJapanMoviesTypeVAgesAbove18 RatingJapanMoviesType = "AgesAbove18"
 )
 
 // RatingJapanMoviesTypePAllAllowed returns a pointer to RatingJapanMoviesTypeVAllAllowed

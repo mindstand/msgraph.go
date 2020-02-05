@@ -3,21 +3,21 @@
 package msgraph
 
 // InstallState undocumented
-type InstallState int
+type InstallState string
 
 const (
 	// InstallStateVNotApplicable undocumented
-	InstallStateVNotApplicable InstallState = 0
+	InstallStateVNotApplicable InstallState = "NotApplicable"
 	// InstallStateVInstalled undocumented
-	InstallStateVInstalled InstallState = 1
+	InstallStateVInstalled InstallState = "Installed"
 	// InstallStateVFailed undocumented
-	InstallStateVFailed InstallState = 2
+	InstallStateVFailed InstallState = "Failed"
 	// InstallStateVNotInstalled undocumented
-	InstallStateVNotInstalled InstallState = 3
+	InstallStateVNotInstalled InstallState = "NotInstalled"
 	// InstallStateVUninstallFailed undocumented
-	InstallStateVUninstallFailed InstallState = 4
+	InstallStateVUninstallFailed InstallState = "UninstallFailed"
 	// InstallStateVUnknown undocumented
-	InstallStateVUnknown InstallState = 5
+	InstallStateVUnknown InstallState = "Unknown"
 )
 
 // InstallStatePNotApplicable returns a pointer to InstallStateVNotApplicable

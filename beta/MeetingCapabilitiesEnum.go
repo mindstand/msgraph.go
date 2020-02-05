@@ -3,13 +3,13 @@
 package msgraph
 
 // MeetingCapabilities undocumented
-type MeetingCapabilities int
+type MeetingCapabilities string
 
 const (
 	// MeetingCapabilitiesVQuestionAndAnswer undocumented
-	MeetingCapabilitiesVQuestionAndAnswer MeetingCapabilities = 0
+	MeetingCapabilitiesVQuestionAndAnswer MeetingCapabilities = "QuestionAndAnswer"
 	// MeetingCapabilitiesVUnknownFutureValue undocumented
-	MeetingCapabilitiesVUnknownFutureValue MeetingCapabilities = 1
+	MeetingCapabilitiesVUnknownFutureValue MeetingCapabilities = "UnknownFutureValue"
 )
 
 // MeetingCapabilitiesPQuestionAndAnswer returns a pointer to MeetingCapabilitiesVQuestionAndAnswer

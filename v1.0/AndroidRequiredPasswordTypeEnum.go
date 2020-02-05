@@ -3,25 +3,25 @@
 package msgraph
 
 // AndroidRequiredPasswordType undocumented
-type AndroidRequiredPasswordType int
+type AndroidRequiredPasswordType string
 
 const (
 	// AndroidRequiredPasswordTypeVDeviceDefault undocumented
-	AndroidRequiredPasswordTypeVDeviceDefault AndroidRequiredPasswordType = 0
+	AndroidRequiredPasswordTypeVDeviceDefault AndroidRequiredPasswordType = "DeviceDefault"
 	// AndroidRequiredPasswordTypeVAlphabetic undocumented
-	AndroidRequiredPasswordTypeVAlphabetic AndroidRequiredPasswordType = 1
+	AndroidRequiredPasswordTypeVAlphabetic AndroidRequiredPasswordType = "Alphabetic"
 	// AndroidRequiredPasswordTypeVAlphanumeric undocumented
-	AndroidRequiredPasswordTypeVAlphanumeric AndroidRequiredPasswordType = 2
+	AndroidRequiredPasswordTypeVAlphanumeric AndroidRequiredPasswordType = "Alphanumeric"
 	// AndroidRequiredPasswordTypeVAlphanumericWithSymbols undocumented
-	AndroidRequiredPasswordTypeVAlphanumericWithSymbols AndroidRequiredPasswordType = 3
+	AndroidRequiredPasswordTypeVAlphanumericWithSymbols AndroidRequiredPasswordType = "AlphanumericWithSymbols"
 	// AndroidRequiredPasswordTypeVLowSecurityBiometric undocumented
-	AndroidRequiredPasswordTypeVLowSecurityBiometric AndroidRequiredPasswordType = 4
+	AndroidRequiredPasswordTypeVLowSecurityBiometric AndroidRequiredPasswordType = "LowSecurityBiometric"
 	// AndroidRequiredPasswordTypeVNumeric undocumented
-	AndroidRequiredPasswordTypeVNumeric AndroidRequiredPasswordType = 5
+	AndroidRequiredPasswordTypeVNumeric AndroidRequiredPasswordType = "Numeric"
 	// AndroidRequiredPasswordTypeVNumericComplex undocumented
-	AndroidRequiredPasswordTypeVNumericComplex AndroidRequiredPasswordType = 6
+	AndroidRequiredPasswordTypeVNumericComplex AndroidRequiredPasswordType = "NumericComplex"
 	// AndroidRequiredPasswordTypeVAny undocumented
-	AndroidRequiredPasswordTypeVAny AndroidRequiredPasswordType = 7
+	AndroidRequiredPasswordTypeVAny AndroidRequiredPasswordType = "Any"
 )
 
 // AndroidRequiredPasswordTypePDeviceDefault returns a pointer to AndroidRequiredPasswordTypeVDeviceDefault

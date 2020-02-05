@@ -3,33 +3,33 @@
 package msgraph
 
 // ManagementState undocumented
-type ManagementState int
+type ManagementState string
 
 const (
 	// ManagementStateVManaged undocumented
-	ManagementStateVManaged ManagementState = 0
+	ManagementStateVManaged ManagementState = "Managed"
 	// ManagementStateVRetirePending undocumented
-	ManagementStateVRetirePending ManagementState = 1
+	ManagementStateVRetirePending ManagementState = "RetirePending"
 	// ManagementStateVRetireFailed undocumented
-	ManagementStateVRetireFailed ManagementState = 2
+	ManagementStateVRetireFailed ManagementState = "RetireFailed"
 	// ManagementStateVWipePending undocumented
-	ManagementStateVWipePending ManagementState = 3
+	ManagementStateVWipePending ManagementState = "WipePending"
 	// ManagementStateVWipeFailed undocumented
-	ManagementStateVWipeFailed ManagementState = 4
+	ManagementStateVWipeFailed ManagementState = "WipeFailed"
 	// ManagementStateVUnhealthy undocumented
-	ManagementStateVUnhealthy ManagementState = 5
+	ManagementStateVUnhealthy ManagementState = "Unhealthy"
 	// ManagementStateVDeletePending undocumented
-	ManagementStateVDeletePending ManagementState = 6
+	ManagementStateVDeletePending ManagementState = "DeletePending"
 	// ManagementStateVRetireIssued undocumented
-	ManagementStateVRetireIssued ManagementState = 7
+	ManagementStateVRetireIssued ManagementState = "RetireIssued"
 	// ManagementStateVWipeIssued undocumented
-	ManagementStateVWipeIssued ManagementState = 8
+	ManagementStateVWipeIssued ManagementState = "WipeIssued"
 	// ManagementStateVWipeCanceled undocumented
-	ManagementStateVWipeCanceled ManagementState = 9
+	ManagementStateVWipeCanceled ManagementState = "WipeCanceled"
 	// ManagementStateVRetireCanceled undocumented
-	ManagementStateVRetireCanceled ManagementState = 10
+	ManagementStateVRetireCanceled ManagementState = "RetireCanceled"
 	// ManagementStateVDiscovered undocumented
-	ManagementStateVDiscovered ManagementState = 11
+	ManagementStateVDiscovered ManagementState = "Discovered"
 )
 
 // ManagementStatePManaged returns a pointer to ManagementStateVManaged

@@ -3,17 +3,17 @@
 package msgraph
 
 // AndroidManagedStoreAccountBindStatus undocumented
-type AndroidManagedStoreAccountBindStatus int
+type AndroidManagedStoreAccountBindStatus string
 
 const (
 	// AndroidManagedStoreAccountBindStatusVNotBound undocumented
-	AndroidManagedStoreAccountBindStatusVNotBound AndroidManagedStoreAccountBindStatus = 0
+	AndroidManagedStoreAccountBindStatusVNotBound AndroidManagedStoreAccountBindStatus = "NotBound"
 	// AndroidManagedStoreAccountBindStatusVBound undocumented
-	AndroidManagedStoreAccountBindStatusVBound AndroidManagedStoreAccountBindStatus = 1
+	AndroidManagedStoreAccountBindStatusVBound AndroidManagedStoreAccountBindStatus = "Bound"
 	// AndroidManagedStoreAccountBindStatusVBoundAndValidated undocumented
-	AndroidManagedStoreAccountBindStatusVBoundAndValidated AndroidManagedStoreAccountBindStatus = 2
+	AndroidManagedStoreAccountBindStatusVBoundAndValidated AndroidManagedStoreAccountBindStatus = "BoundAndValidated"
 	// AndroidManagedStoreAccountBindStatusVUnbinding undocumented
-	AndroidManagedStoreAccountBindStatusVUnbinding AndroidManagedStoreAccountBindStatus = 3
+	AndroidManagedStoreAccountBindStatusVUnbinding AndroidManagedStoreAccountBindStatus = "Unbinding"
 )
 
 // AndroidManagedStoreAccountBindStatusPNotBound returns a pointer to AndroidManagedStoreAccountBindStatusVNotBound

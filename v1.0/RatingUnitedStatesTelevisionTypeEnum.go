@@ -3,25 +3,25 @@
 package msgraph
 
 // RatingUnitedStatesTelevisionType undocumented
-type RatingUnitedStatesTelevisionType int
+type RatingUnitedStatesTelevisionType string
 
 const (
 	// RatingUnitedStatesTelevisionTypeVAllAllowed undocumented
-	RatingUnitedStatesTelevisionTypeVAllAllowed RatingUnitedStatesTelevisionType = 0
+	RatingUnitedStatesTelevisionTypeVAllAllowed RatingUnitedStatesTelevisionType = "AllAllowed"
 	// RatingUnitedStatesTelevisionTypeVAllBlocked undocumented
-	RatingUnitedStatesTelevisionTypeVAllBlocked RatingUnitedStatesTelevisionType = 1
+	RatingUnitedStatesTelevisionTypeVAllBlocked RatingUnitedStatesTelevisionType = "AllBlocked"
 	// RatingUnitedStatesTelevisionTypeVChildrenAll undocumented
-	RatingUnitedStatesTelevisionTypeVChildrenAll RatingUnitedStatesTelevisionType = 2
+	RatingUnitedStatesTelevisionTypeVChildrenAll RatingUnitedStatesTelevisionType = "ChildrenAll"
 	// RatingUnitedStatesTelevisionTypeVChildrenAbove7 undocumented
-	RatingUnitedStatesTelevisionTypeVChildrenAbove7 RatingUnitedStatesTelevisionType = 3
+	RatingUnitedStatesTelevisionTypeVChildrenAbove7 RatingUnitedStatesTelevisionType = "ChildrenAbove7"
 	// RatingUnitedStatesTelevisionTypeVGeneral undocumented
-	RatingUnitedStatesTelevisionTypeVGeneral RatingUnitedStatesTelevisionType = 4
+	RatingUnitedStatesTelevisionTypeVGeneral RatingUnitedStatesTelevisionType = "General"
 	// RatingUnitedStatesTelevisionTypeVParentalGuidance undocumented
-	RatingUnitedStatesTelevisionTypeVParentalGuidance RatingUnitedStatesTelevisionType = 5
+	RatingUnitedStatesTelevisionTypeVParentalGuidance RatingUnitedStatesTelevisionType = "ParentalGuidance"
 	// RatingUnitedStatesTelevisionTypeVChildrenAbove14 undocumented
-	RatingUnitedStatesTelevisionTypeVChildrenAbove14 RatingUnitedStatesTelevisionType = 6
+	RatingUnitedStatesTelevisionTypeVChildrenAbove14 RatingUnitedStatesTelevisionType = "ChildrenAbove14"
 	// RatingUnitedStatesTelevisionTypeVAdults undocumented
-	RatingUnitedStatesTelevisionTypeVAdults RatingUnitedStatesTelevisionType = 7
+	RatingUnitedStatesTelevisionTypeVAdults RatingUnitedStatesTelevisionType = "Adults"
 )
 
 // RatingUnitedStatesTelevisionTypePAllAllowed returns a pointer to RatingUnitedStatesTelevisionTypeVAllAllowed

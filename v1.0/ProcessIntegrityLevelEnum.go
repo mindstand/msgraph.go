@@ -3,23 +3,23 @@
 package msgraph
 
 // ProcessIntegrityLevel undocumented
-type ProcessIntegrityLevel int
+type ProcessIntegrityLevel string
 
 const (
 	// ProcessIntegrityLevelVUnknown undocumented
-	ProcessIntegrityLevelVUnknown ProcessIntegrityLevel = 0
+	ProcessIntegrityLevelVUnknown ProcessIntegrityLevel = "Unknown"
 	// ProcessIntegrityLevelVUntrusted undocumented
-	ProcessIntegrityLevelVUntrusted ProcessIntegrityLevel = 1
+	ProcessIntegrityLevelVUntrusted ProcessIntegrityLevel = "Untrusted"
 	// ProcessIntegrityLevelVLow undocumented
-	ProcessIntegrityLevelVLow ProcessIntegrityLevel = 2
+	ProcessIntegrityLevelVLow ProcessIntegrityLevel = "Low"
 	// ProcessIntegrityLevelVMedium undocumented
-	ProcessIntegrityLevelVMedium ProcessIntegrityLevel = 3
+	ProcessIntegrityLevelVMedium ProcessIntegrityLevel = "Medium"
 	// ProcessIntegrityLevelVHigh undocumented
-	ProcessIntegrityLevelVHigh ProcessIntegrityLevel = 4
+	ProcessIntegrityLevelVHigh ProcessIntegrityLevel = "High"
 	// ProcessIntegrityLevelVSystem undocumented
-	ProcessIntegrityLevelVSystem ProcessIntegrityLevel = 5
+	ProcessIntegrityLevelVSystem ProcessIntegrityLevel = "System"
 	// ProcessIntegrityLevelVUnknownFutureValue undocumented
-	ProcessIntegrityLevelVUnknownFutureValue ProcessIntegrityLevel = 127
+	ProcessIntegrityLevelVUnknownFutureValue ProcessIntegrityLevel = "UnknownFutureValue"
 )
 
 // ProcessIntegrityLevelPUnknown returns a pointer to ProcessIntegrityLevelVUnknown

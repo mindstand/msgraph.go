@@ -3,19 +3,19 @@
 package msgraph
 
 // DeviceManagementReportStatus undocumented
-type DeviceManagementReportStatus int
+type DeviceManagementReportStatus string
 
 const (
 	// DeviceManagementReportStatusVUnknown undocumented
-	DeviceManagementReportStatusVUnknown DeviceManagementReportStatus = 0
+	DeviceManagementReportStatusVUnknown DeviceManagementReportStatus = "Unknown"
 	// DeviceManagementReportStatusVNotStarted undocumented
-	DeviceManagementReportStatusVNotStarted DeviceManagementReportStatus = 1
+	DeviceManagementReportStatusVNotStarted DeviceManagementReportStatus = "NotStarted"
 	// DeviceManagementReportStatusVInProgress undocumented
-	DeviceManagementReportStatusVInProgress DeviceManagementReportStatus = 2
+	DeviceManagementReportStatusVInProgress DeviceManagementReportStatus = "InProgress"
 	// DeviceManagementReportStatusVCompleted undocumented
-	DeviceManagementReportStatusVCompleted DeviceManagementReportStatus = 3
+	DeviceManagementReportStatusVCompleted DeviceManagementReportStatus = "Completed"
 	// DeviceManagementReportStatusVFailed undocumented
-	DeviceManagementReportStatusVFailed DeviceManagementReportStatus = 4
+	DeviceManagementReportStatusVFailed DeviceManagementReportStatus = "Failed"
 )
 
 // DeviceManagementReportStatusPUnknown returns a pointer to DeviceManagementReportStatusVUnknown

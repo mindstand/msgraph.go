@@ -3,15 +3,15 @@
 package msgraph
 
 // OwnerType undocumented
-type OwnerType int
+type OwnerType string
 
 const (
 	// OwnerTypeVUnknown undocumented
-	OwnerTypeVUnknown OwnerType = 0
+	OwnerTypeVUnknown OwnerType = "Unknown"
 	// OwnerTypeVCompany undocumented
-	OwnerTypeVCompany OwnerType = 1
+	OwnerTypeVCompany OwnerType = "Company"
 	// OwnerTypeVPersonal undocumented
-	OwnerTypeVPersonal OwnerType = 2
+	OwnerTypeVPersonal OwnerType = "Personal"
 )
 
 // OwnerTypePUnknown returns a pointer to OwnerTypeVUnknown

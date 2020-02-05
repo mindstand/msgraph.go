@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsPrivacyDataAccessLevel undocumented
-type WindowsPrivacyDataAccessLevel int
+type WindowsPrivacyDataAccessLevel string
 
 const (
 	// WindowsPrivacyDataAccessLevelVNotConfigured undocumented
-	WindowsPrivacyDataAccessLevelVNotConfigured WindowsPrivacyDataAccessLevel = 0
+	WindowsPrivacyDataAccessLevelVNotConfigured WindowsPrivacyDataAccessLevel = "NotConfigured"
 	// WindowsPrivacyDataAccessLevelVForceAllow undocumented
-	WindowsPrivacyDataAccessLevelVForceAllow WindowsPrivacyDataAccessLevel = 1
+	WindowsPrivacyDataAccessLevelVForceAllow WindowsPrivacyDataAccessLevel = "ForceAllow"
 	// WindowsPrivacyDataAccessLevelVForceDeny undocumented
-	WindowsPrivacyDataAccessLevelVForceDeny WindowsPrivacyDataAccessLevel = 2
+	WindowsPrivacyDataAccessLevelVForceDeny WindowsPrivacyDataAccessLevel = "ForceDeny"
 	// WindowsPrivacyDataAccessLevelVUserInControl undocumented
-	WindowsPrivacyDataAccessLevelVUserInControl WindowsPrivacyDataAccessLevel = 3
+	WindowsPrivacyDataAccessLevelVUserInControl WindowsPrivacyDataAccessLevel = "UserInControl"
 )
 
 // WindowsPrivacyDataAccessLevelPNotConfigured returns a pointer to WindowsPrivacyDataAccessLevelVNotConfigured

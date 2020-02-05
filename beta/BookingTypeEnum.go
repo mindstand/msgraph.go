@@ -3,15 +3,15 @@
 package msgraph
 
 // BookingType undocumented
-type BookingType int
+type BookingType string
 
 const (
 	// BookingTypeVUnknown undocumented
-	BookingTypeVUnknown BookingType = 0
+	BookingTypeVUnknown BookingType = "Unknown"
 	// BookingTypeVStandard undocumented
-	BookingTypeVStandard BookingType = 1
+	BookingTypeVStandard BookingType = "Standard"
 	// BookingTypeVReserved undocumented
-	BookingTypeVReserved BookingType = 2
+	BookingTypeVReserved BookingType = "Reserved"
 )
 
 // BookingTypePUnknown returns a pointer to BookingTypeVUnknown

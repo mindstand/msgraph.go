@@ -3,17 +3,17 @@
 package msgraph
 
 // GroupAccessType undocumented
-type GroupAccessType int
+type GroupAccessType string
 
 const (
 	// GroupAccessTypeVNone undocumented
-	GroupAccessTypeVNone GroupAccessType = 0
+	GroupAccessTypeVNone GroupAccessType = "None"
 	// GroupAccessTypeVPrivate undocumented
-	GroupAccessTypeVPrivate GroupAccessType = 1
+	GroupAccessTypeVPrivate GroupAccessType = "Private"
 	// GroupAccessTypeVSecret undocumented
-	GroupAccessTypeVSecret GroupAccessType = 2
+	GroupAccessTypeVSecret GroupAccessType = "Secret"
 	// GroupAccessTypeVPublic undocumented
-	GroupAccessTypeVPublic GroupAccessType = 3
+	GroupAccessTypeVPublic GroupAccessType = "Public"
 )
 
 // GroupAccessTypePNone returns a pointer to GroupAccessTypeVNone

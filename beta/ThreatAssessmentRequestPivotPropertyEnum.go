@@ -3,13 +3,13 @@
 package msgraph
 
 // ThreatAssessmentRequestPivotProperty undocumented
-type ThreatAssessmentRequestPivotProperty int
+type ThreatAssessmentRequestPivotProperty string
 
 const (
 	// ThreatAssessmentRequestPivotPropertyVThreatCategory undocumented
-	ThreatAssessmentRequestPivotPropertyVThreatCategory ThreatAssessmentRequestPivotProperty = 1
+	ThreatAssessmentRequestPivotPropertyVThreatCategory ThreatAssessmentRequestPivotProperty = "ThreatCategory"
 	// ThreatAssessmentRequestPivotPropertyVMailDestinationRoutingReason undocumented
-	ThreatAssessmentRequestPivotPropertyVMailDestinationRoutingReason ThreatAssessmentRequestPivotProperty = 2
+	ThreatAssessmentRequestPivotPropertyVMailDestinationRoutingReason ThreatAssessmentRequestPivotProperty = "MailDestinationRoutingReason"
 )
 
 // ThreatAssessmentRequestPivotPropertyPThreatCategory returns a pointer to ThreatAssessmentRequestPivotPropertyVThreatCategory

@@ -3,29 +3,29 @@
 package msgraph
 
 // MailTipsType undocumented
-type MailTipsType int
+type MailTipsType string
 
 const (
 	// MailTipsTypeVAutomaticReplies undocumented
-	MailTipsTypeVAutomaticReplies MailTipsType = 1
+	MailTipsTypeVAutomaticReplies MailTipsType = "AutomaticReplies"
 	// MailTipsTypeVMailboxFullStatus undocumented
-	MailTipsTypeVMailboxFullStatus MailTipsType = 2
+	MailTipsTypeVMailboxFullStatus MailTipsType = "MailboxFullStatus"
 	// MailTipsTypeVCustomMailTip undocumented
-	MailTipsTypeVCustomMailTip MailTipsType = 4
+	MailTipsTypeVCustomMailTip MailTipsType = "CustomMailTip"
 	// MailTipsTypeVExternalMemberCount undocumented
-	MailTipsTypeVExternalMemberCount MailTipsType = 8
+	MailTipsTypeVExternalMemberCount MailTipsType = "ExternalMemberCount"
 	// MailTipsTypeVTotalMemberCount undocumented
-	MailTipsTypeVTotalMemberCount MailTipsType = 16
+	MailTipsTypeVTotalMemberCount MailTipsType = "TotalMemberCount"
 	// MailTipsTypeVMaxMessageSize undocumented
-	MailTipsTypeVMaxMessageSize MailTipsType = 32
+	MailTipsTypeVMaxMessageSize MailTipsType = "MaxMessageSize"
 	// MailTipsTypeVDeliveryRestriction undocumented
-	MailTipsTypeVDeliveryRestriction MailTipsType = 64
+	MailTipsTypeVDeliveryRestriction MailTipsType = "DeliveryRestriction"
 	// MailTipsTypeVModerationStatus undocumented
-	MailTipsTypeVModerationStatus MailTipsType = 128
+	MailTipsTypeVModerationStatus MailTipsType = "ModerationStatus"
 	// MailTipsTypeVRecipientScope undocumented
-	MailTipsTypeVRecipientScope MailTipsType = 256
+	MailTipsTypeVRecipientScope MailTipsType = "RecipientScope"
 	// MailTipsTypeVRecipientSuggestions undocumented
-	MailTipsTypeVRecipientSuggestions MailTipsType = 512
+	MailTipsTypeVRecipientSuggestions MailTipsType = "RecipientSuggestions"
 )
 
 // MailTipsTypePAutomaticReplies returns a pointer to MailTipsTypeVAutomaticReplies

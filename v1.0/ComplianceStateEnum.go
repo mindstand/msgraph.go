@@ -3,23 +3,23 @@
 package msgraph
 
 // ComplianceState undocumented
-type ComplianceState int
+type ComplianceState string
 
 const (
 	// ComplianceStateVUnknown undocumented
-	ComplianceStateVUnknown ComplianceState = 0
+	ComplianceStateVUnknown ComplianceState = "Unknown"
 	// ComplianceStateVCompliant undocumented
-	ComplianceStateVCompliant ComplianceState = 1
+	ComplianceStateVCompliant ComplianceState = "Compliant"
 	// ComplianceStateVNoncompliant undocumented
-	ComplianceStateVNoncompliant ComplianceState = 2
+	ComplianceStateVNoncompliant ComplianceState = "Noncompliant"
 	// ComplianceStateVConflict undocumented
-	ComplianceStateVConflict ComplianceState = 3
+	ComplianceStateVConflict ComplianceState = "Conflict"
 	// ComplianceStateVError undocumented
-	ComplianceStateVError ComplianceState = 4
+	ComplianceStateVError ComplianceState = "Error"
 	// ComplianceStateVInGracePeriod undocumented
-	ComplianceStateVInGracePeriod ComplianceState = 254
+	ComplianceStateVInGracePeriod ComplianceState = "InGracePeriod"
 	// ComplianceStateVConfigManager undocumented
-	ComplianceStateVConfigManager ComplianceState = 255
+	ComplianceStateVConfigManager ComplianceState = "ConfigManager"
 )
 
 // ComplianceStatePUnknown returns a pointer to ComplianceStateVUnknown

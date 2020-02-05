@@ -3,21 +3,21 @@
 package msgraph
 
 // LanManagerAuthenticationLevel undocumented
-type LanManagerAuthenticationLevel int
+type LanManagerAuthenticationLevel string
 
 const (
 	// LanManagerAuthenticationLevelVLmAndNltm undocumented
-	LanManagerAuthenticationLevelVLmAndNltm LanManagerAuthenticationLevel = 0
+	LanManagerAuthenticationLevelVLmAndNltm LanManagerAuthenticationLevel = "LmAndNltm"
 	// LanManagerAuthenticationLevelVLmNtlmAndNtlmV2 undocumented
-	LanManagerAuthenticationLevelVLmNtlmAndNtlmV2 LanManagerAuthenticationLevel = 1
+	LanManagerAuthenticationLevelVLmNtlmAndNtlmV2 LanManagerAuthenticationLevel = "LmNtlmAndNtlmV2"
 	// LanManagerAuthenticationLevelVLmAndNtlmOnly undocumented
-	LanManagerAuthenticationLevelVLmAndNtlmOnly LanManagerAuthenticationLevel = 2
+	LanManagerAuthenticationLevelVLmAndNtlmOnly LanManagerAuthenticationLevel = "LmAndNtlmOnly"
 	// LanManagerAuthenticationLevelVLmAndNtlmV2 undocumented
-	LanManagerAuthenticationLevelVLmAndNtlmV2 LanManagerAuthenticationLevel = 3
+	LanManagerAuthenticationLevelVLmAndNtlmV2 LanManagerAuthenticationLevel = "LmAndNtlmV2"
 	// LanManagerAuthenticationLevelVLmNtlmV2AndNotLm undocumented
-	LanManagerAuthenticationLevelVLmNtlmV2AndNotLm LanManagerAuthenticationLevel = 4
+	LanManagerAuthenticationLevelVLmNtlmV2AndNotLm LanManagerAuthenticationLevel = "LmNtlmV2AndNotLm"
 	// LanManagerAuthenticationLevelVLmNtlmV2AndNotLmOrNtm undocumented
-	LanManagerAuthenticationLevelVLmNtlmV2AndNotLmOrNtm LanManagerAuthenticationLevel = 5
+	LanManagerAuthenticationLevelVLmNtlmV2AndNotLmOrNtm LanManagerAuthenticationLevel = "LmNtlmV2AndNotLmOrNtm"
 )
 
 // LanManagerAuthenticationLevelPLmAndNltm returns a pointer to LanManagerAuthenticationLevelVLmAndNltm

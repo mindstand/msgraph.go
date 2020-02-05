@@ -3,27 +3,27 @@
 package msgraph
 
 // ManagedDeviceRemoteAction undocumented
-type ManagedDeviceRemoteAction int
+type ManagedDeviceRemoteAction string
 
 const (
 	// ManagedDeviceRemoteActionVRetire undocumented
-	ManagedDeviceRemoteActionVRetire ManagedDeviceRemoteAction = 0
+	ManagedDeviceRemoteActionVRetire ManagedDeviceRemoteAction = "Retire"
 	// ManagedDeviceRemoteActionVDelete undocumented
-	ManagedDeviceRemoteActionVDelete ManagedDeviceRemoteAction = 1
+	ManagedDeviceRemoteActionVDelete ManagedDeviceRemoteAction = "Delete"
 	// ManagedDeviceRemoteActionVFullScan undocumented
-	ManagedDeviceRemoteActionVFullScan ManagedDeviceRemoteAction = 2
+	ManagedDeviceRemoteActionVFullScan ManagedDeviceRemoteAction = "FullScan"
 	// ManagedDeviceRemoteActionVQuickScan undocumented
-	ManagedDeviceRemoteActionVQuickScan ManagedDeviceRemoteAction = 3
+	ManagedDeviceRemoteActionVQuickScan ManagedDeviceRemoteAction = "QuickScan"
 	// ManagedDeviceRemoteActionVSignatureUpdate undocumented
-	ManagedDeviceRemoteActionVSignatureUpdate ManagedDeviceRemoteAction = 4
+	ManagedDeviceRemoteActionVSignatureUpdate ManagedDeviceRemoteAction = "SignatureUpdate"
 	// ManagedDeviceRemoteActionVWipe undocumented
-	ManagedDeviceRemoteActionVWipe ManagedDeviceRemoteAction = 5
+	ManagedDeviceRemoteActionVWipe ManagedDeviceRemoteAction = "Wipe"
 	// ManagedDeviceRemoteActionVCustomTextNotification undocumented
-	ManagedDeviceRemoteActionVCustomTextNotification ManagedDeviceRemoteAction = 6
+	ManagedDeviceRemoteActionVCustomTextNotification ManagedDeviceRemoteAction = "CustomTextNotification"
 	// ManagedDeviceRemoteActionVRebootNow undocumented
-	ManagedDeviceRemoteActionVRebootNow ManagedDeviceRemoteAction = 7
+	ManagedDeviceRemoteActionVRebootNow ManagedDeviceRemoteAction = "RebootNow"
 	// ManagedDeviceRemoteActionVSetDeviceName undocumented
-	ManagedDeviceRemoteActionVSetDeviceName ManagedDeviceRemoteAction = 8
+	ManagedDeviceRemoteActionVSetDeviceName ManagedDeviceRemoteAction = "SetDeviceName"
 )
 
 // ManagedDeviceRemoteActionPRetire returns a pointer to ManagedDeviceRemoteActionVRetire

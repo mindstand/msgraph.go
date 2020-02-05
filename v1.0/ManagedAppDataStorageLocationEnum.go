@@ -3,15 +3,15 @@
 package msgraph
 
 // ManagedAppDataStorageLocation undocumented
-type ManagedAppDataStorageLocation int
+type ManagedAppDataStorageLocation string
 
 const (
 	// ManagedAppDataStorageLocationVOneDriveForBusiness undocumented
-	ManagedAppDataStorageLocationVOneDriveForBusiness ManagedAppDataStorageLocation = 1
+	ManagedAppDataStorageLocationVOneDriveForBusiness ManagedAppDataStorageLocation = "OneDriveForBusiness"
 	// ManagedAppDataStorageLocationVSharePoint undocumented
-	ManagedAppDataStorageLocationVSharePoint ManagedAppDataStorageLocation = 2
+	ManagedAppDataStorageLocationVSharePoint ManagedAppDataStorageLocation = "SharePoint"
 	// ManagedAppDataStorageLocationVLocalStorage undocumented
-	ManagedAppDataStorageLocationVLocalStorage ManagedAppDataStorageLocation = 6
+	ManagedAppDataStorageLocationVLocalStorage ManagedAppDataStorageLocation = "LocalStorage"
 )
 
 // ManagedAppDataStorageLocationPOneDriveForBusiness returns a pointer to ManagedAppDataStorageLocationVOneDriveForBusiness

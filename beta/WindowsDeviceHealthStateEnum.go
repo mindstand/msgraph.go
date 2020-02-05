@@ -3,21 +3,21 @@
 package msgraph
 
 // WindowsDeviceHealthState undocumented
-type WindowsDeviceHealthState int
+type WindowsDeviceHealthState string
 
 const (
 	// WindowsDeviceHealthStateVClean undocumented
-	WindowsDeviceHealthStateVClean WindowsDeviceHealthState = 0
+	WindowsDeviceHealthStateVClean WindowsDeviceHealthState = "Clean"
 	// WindowsDeviceHealthStateVFullScanPending undocumented
-	WindowsDeviceHealthStateVFullScanPending WindowsDeviceHealthState = 1
+	WindowsDeviceHealthStateVFullScanPending WindowsDeviceHealthState = "FullScanPending"
 	// WindowsDeviceHealthStateVRebootPending undocumented
-	WindowsDeviceHealthStateVRebootPending WindowsDeviceHealthState = 2
+	WindowsDeviceHealthStateVRebootPending WindowsDeviceHealthState = "RebootPending"
 	// WindowsDeviceHealthStateVManualStepsPending undocumented
-	WindowsDeviceHealthStateVManualStepsPending WindowsDeviceHealthState = 4
+	WindowsDeviceHealthStateVManualStepsPending WindowsDeviceHealthState = "ManualStepsPending"
 	// WindowsDeviceHealthStateVOfflineScanPending undocumented
-	WindowsDeviceHealthStateVOfflineScanPending WindowsDeviceHealthState = 8
+	WindowsDeviceHealthStateVOfflineScanPending WindowsDeviceHealthState = "OfflineScanPending"
 	// WindowsDeviceHealthStateVCritical undocumented
-	WindowsDeviceHealthStateVCritical WindowsDeviceHealthState = 16
+	WindowsDeviceHealthStateVCritical WindowsDeviceHealthState = "Critical"
 )
 
 // WindowsDeviceHealthStatePClean returns a pointer to WindowsDeviceHealthStateVClean

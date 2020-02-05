@@ -3,19 +3,19 @@
 package msgraph
 
 // EntityType undocumented
-type EntityType int
+type EntityType string
 
 const (
 	// EntityTypeVEvent undocumented
-	EntityTypeVEvent EntityType = 0
+	EntityTypeVEvent EntityType = "Event"
 	// EntityTypeVMessage undocumented
-	EntityTypeVMessage EntityType = 1
+	EntityTypeVMessage EntityType = "Message"
 	// EntityTypeVDriveItem undocumented
-	EntityTypeVDriveItem EntityType = 2
+	EntityTypeVDriveItem EntityType = "DriveItem"
 	// EntityTypeVExternalFile undocumented
-	EntityTypeVExternalFile EntityType = 3
+	EntityTypeVExternalFile EntityType = "ExternalFile"
 	// EntityTypeVExternalItem undocumented
-	EntityTypeVExternalItem EntityType = 4
+	EntityTypeVExternalItem EntityType = "ExternalItem"
 )
 
 // EntityTypePEvent returns a pointer to EntityTypeVEvent

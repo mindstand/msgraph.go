@@ -3,21 +3,21 @@
 package msgraph
 
 // WindowsUpdateForBusinessUpdateWeeks undocumented
-type WindowsUpdateForBusinessUpdateWeeks int
+type WindowsUpdateForBusinessUpdateWeeks string
 
 const (
 	// WindowsUpdateForBusinessUpdateWeeksVUserDefined undocumented
-	WindowsUpdateForBusinessUpdateWeeksVUserDefined WindowsUpdateForBusinessUpdateWeeks = 0
+	WindowsUpdateForBusinessUpdateWeeksVUserDefined WindowsUpdateForBusinessUpdateWeeks = "UserDefined"
 	// WindowsUpdateForBusinessUpdateWeeksVFirstWeek undocumented
-	WindowsUpdateForBusinessUpdateWeeksVFirstWeek WindowsUpdateForBusinessUpdateWeeks = 1
+	WindowsUpdateForBusinessUpdateWeeksVFirstWeek WindowsUpdateForBusinessUpdateWeeks = "FirstWeek"
 	// WindowsUpdateForBusinessUpdateWeeksVSecondWeek undocumented
-	WindowsUpdateForBusinessUpdateWeeksVSecondWeek WindowsUpdateForBusinessUpdateWeeks = 2
+	WindowsUpdateForBusinessUpdateWeeksVSecondWeek WindowsUpdateForBusinessUpdateWeeks = "SecondWeek"
 	// WindowsUpdateForBusinessUpdateWeeksVThirdWeek undocumented
-	WindowsUpdateForBusinessUpdateWeeksVThirdWeek WindowsUpdateForBusinessUpdateWeeks = 4
+	WindowsUpdateForBusinessUpdateWeeksVThirdWeek WindowsUpdateForBusinessUpdateWeeks = "ThirdWeek"
 	// WindowsUpdateForBusinessUpdateWeeksVFourthWeek undocumented
-	WindowsUpdateForBusinessUpdateWeeksVFourthWeek WindowsUpdateForBusinessUpdateWeeks = 8
+	WindowsUpdateForBusinessUpdateWeeksVFourthWeek WindowsUpdateForBusinessUpdateWeeks = "FourthWeek"
 	// WindowsUpdateForBusinessUpdateWeeksVEveryWeek undocumented
-	WindowsUpdateForBusinessUpdateWeeksVEveryWeek WindowsUpdateForBusinessUpdateWeeks = 15
+	WindowsUpdateForBusinessUpdateWeeksVEveryWeek WindowsUpdateForBusinessUpdateWeeks = "EveryWeek"
 )
 
 // WindowsUpdateForBusinessUpdateWeeksPUserDefined returns a pointer to WindowsUpdateForBusinessUpdateWeeksVUserDefined

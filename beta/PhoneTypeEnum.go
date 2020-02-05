@@ -3,29 +3,29 @@
 package msgraph
 
 // PhoneType undocumented
-type PhoneType int
+type PhoneType string
 
 const (
 	// PhoneTypeVHome undocumented
-	PhoneTypeVHome PhoneType = 0
+	PhoneTypeVHome PhoneType = "Home"
 	// PhoneTypeVBusiness undocumented
-	PhoneTypeVBusiness PhoneType = 1
+	PhoneTypeVBusiness PhoneType = "Business"
 	// PhoneTypeVMobile undocumented
-	PhoneTypeVMobile PhoneType = 2
+	PhoneTypeVMobile PhoneType = "Mobile"
 	// PhoneTypeVOther undocumented
-	PhoneTypeVOther PhoneType = 3
+	PhoneTypeVOther PhoneType = "Other"
 	// PhoneTypeVAssistant undocumented
-	PhoneTypeVAssistant PhoneType = 4
+	PhoneTypeVAssistant PhoneType = "Assistant"
 	// PhoneTypeVHomeFax undocumented
-	PhoneTypeVHomeFax PhoneType = 5
+	PhoneTypeVHomeFax PhoneType = "HomeFax"
 	// PhoneTypeVBusinessFax undocumented
-	PhoneTypeVBusinessFax PhoneType = 6
+	PhoneTypeVBusinessFax PhoneType = "BusinessFax"
 	// PhoneTypeVOtherFax undocumented
-	PhoneTypeVOtherFax PhoneType = 7
+	PhoneTypeVOtherFax PhoneType = "OtherFax"
 	// PhoneTypeVPager undocumented
-	PhoneTypeVPager PhoneType = 8
+	PhoneTypeVPager PhoneType = "Pager"
 	// PhoneTypeVRadio undocumented
-	PhoneTypeVRadio PhoneType = 9
+	PhoneTypeVRadio PhoneType = "Radio"
 )
 
 // PhoneTypePHome returns a pointer to PhoneTypeVHome

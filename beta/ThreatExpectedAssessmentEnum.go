@@ -3,13 +3,13 @@
 package msgraph
 
 // ThreatExpectedAssessment undocumented
-type ThreatExpectedAssessment int
+type ThreatExpectedAssessment string
 
 const (
 	// ThreatExpectedAssessmentVBlock undocumented
-	ThreatExpectedAssessmentVBlock ThreatExpectedAssessment = 1
+	ThreatExpectedAssessmentVBlock ThreatExpectedAssessment = "Block"
 	// ThreatExpectedAssessmentVUnblock undocumented
-	ThreatExpectedAssessmentVUnblock ThreatExpectedAssessment = 2
+	ThreatExpectedAssessmentVUnblock ThreatExpectedAssessment = "Unblock"
 )
 
 // ThreatExpectedAssessmentPBlock returns a pointer to ThreatExpectedAssessmentVBlock

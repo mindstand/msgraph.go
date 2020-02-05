@@ -3,15 +3,15 @@
 package msgraph
 
 // NdesConnectorState undocumented
-type NdesConnectorState int
+type NdesConnectorState string
 
 const (
 	// NdesConnectorStateVNone undocumented
-	NdesConnectorStateVNone NdesConnectorState = 0
+	NdesConnectorStateVNone NdesConnectorState = "None"
 	// NdesConnectorStateVActive undocumented
-	NdesConnectorStateVActive NdesConnectorState = 1
+	NdesConnectorStateVActive NdesConnectorState = "Active"
 	// NdesConnectorStateVInactive undocumented
-	NdesConnectorStateVInactive NdesConnectorState = 2
+	NdesConnectorStateVInactive NdesConnectorState = "Inactive"
 )
 
 // NdesConnectorStatePNone returns a pointer to NdesConnectorStateVNone

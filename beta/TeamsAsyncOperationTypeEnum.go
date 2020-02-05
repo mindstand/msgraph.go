@@ -3,21 +3,21 @@
 package msgraph
 
 // TeamsAsyncOperationType undocumented
-type TeamsAsyncOperationType int
+type TeamsAsyncOperationType string
 
 const (
 	// TeamsAsyncOperationTypeVInvalid undocumented
-	TeamsAsyncOperationTypeVInvalid TeamsAsyncOperationType = 0
+	TeamsAsyncOperationTypeVInvalid TeamsAsyncOperationType = "Invalid"
 	// TeamsAsyncOperationTypeVCloneTeam undocumented
-	TeamsAsyncOperationTypeVCloneTeam TeamsAsyncOperationType = 1
+	TeamsAsyncOperationTypeVCloneTeam TeamsAsyncOperationType = "CloneTeam"
 	// TeamsAsyncOperationTypeVArchiveTeam undocumented
-	TeamsAsyncOperationTypeVArchiveTeam TeamsAsyncOperationType = 2
+	TeamsAsyncOperationTypeVArchiveTeam TeamsAsyncOperationType = "ArchiveTeam"
 	// TeamsAsyncOperationTypeVUnarchiveTeam undocumented
-	TeamsAsyncOperationTypeVUnarchiveTeam TeamsAsyncOperationType = 3
+	TeamsAsyncOperationTypeVUnarchiveTeam TeamsAsyncOperationType = "UnarchiveTeam"
 	// TeamsAsyncOperationTypeVCreateTeam undocumented
-	TeamsAsyncOperationTypeVCreateTeam TeamsAsyncOperationType = 4
+	TeamsAsyncOperationTypeVCreateTeam TeamsAsyncOperationType = "CreateTeam"
 	// TeamsAsyncOperationTypeVUnknownFutureValue undocumented
-	TeamsAsyncOperationTypeVUnknownFutureValue TeamsAsyncOperationType = 5
+	TeamsAsyncOperationTypeVUnknownFutureValue TeamsAsyncOperationType = "UnknownFutureValue"
 )
 
 // TeamsAsyncOperationTypePInvalid returns a pointer to TeamsAsyncOperationTypeVInvalid

@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsKioskAppType undocumented
-type WindowsKioskAppType int
+type WindowsKioskAppType string
 
 const (
 	// WindowsKioskAppTypeVUnknown undocumented
-	WindowsKioskAppTypeVUnknown WindowsKioskAppType = 0
+	WindowsKioskAppTypeVUnknown WindowsKioskAppType = "Unknown"
 	// WindowsKioskAppTypeVStore undocumented
-	WindowsKioskAppTypeVStore WindowsKioskAppType = 1
+	WindowsKioskAppTypeVStore WindowsKioskAppType = "Store"
 	// WindowsKioskAppTypeVDesktop undocumented
-	WindowsKioskAppTypeVDesktop WindowsKioskAppType = 2
+	WindowsKioskAppTypeVDesktop WindowsKioskAppType = "Desktop"
 	// WindowsKioskAppTypeVAumID undocumented
-	WindowsKioskAppTypeVAumID WindowsKioskAppType = 3
+	WindowsKioskAppTypeVAumID WindowsKioskAppType = "AumID"
 )
 
 // WindowsKioskAppTypePUnknown returns a pointer to WindowsKioskAppTypeVUnknown

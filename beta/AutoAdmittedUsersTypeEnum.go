@@ -3,13 +3,13 @@
 package msgraph
 
 // AutoAdmittedUsersType undocumented
-type AutoAdmittedUsersType int
+type AutoAdmittedUsersType string
 
 const (
 	// AutoAdmittedUsersTypeVEveryoneInCompany undocumented
-	AutoAdmittedUsersTypeVEveryoneInCompany AutoAdmittedUsersType = 0
+	AutoAdmittedUsersTypeVEveryoneInCompany AutoAdmittedUsersType = "EveryoneInCompany"
 	// AutoAdmittedUsersTypeVEveryone undocumented
-	AutoAdmittedUsersTypeVEveryone AutoAdmittedUsersType = 1
+	AutoAdmittedUsersTypeVEveryone AutoAdmittedUsersType = "Everyone"
 )
 
 // AutoAdmittedUsersTypePEveryoneInCompany returns a pointer to AutoAdmittedUsersTypeVEveryoneInCompany

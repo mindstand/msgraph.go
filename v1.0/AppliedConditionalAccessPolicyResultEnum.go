@@ -3,21 +3,21 @@
 package msgraph
 
 // AppliedConditionalAccessPolicyResult undocumented
-type AppliedConditionalAccessPolicyResult int
+type AppliedConditionalAccessPolicyResult string
 
 const (
 	// AppliedConditionalAccessPolicyResultVSuccess undocumented
-	AppliedConditionalAccessPolicyResultVSuccess AppliedConditionalAccessPolicyResult = 0
+	AppliedConditionalAccessPolicyResultVSuccess AppliedConditionalAccessPolicyResult = "Success"
 	// AppliedConditionalAccessPolicyResultVFailure undocumented
-	AppliedConditionalAccessPolicyResultVFailure AppliedConditionalAccessPolicyResult = 1
+	AppliedConditionalAccessPolicyResultVFailure AppliedConditionalAccessPolicyResult = "Failure"
 	// AppliedConditionalAccessPolicyResultVNotApplied undocumented
-	AppliedConditionalAccessPolicyResultVNotApplied AppliedConditionalAccessPolicyResult = 2
+	AppliedConditionalAccessPolicyResultVNotApplied AppliedConditionalAccessPolicyResult = "NotApplied"
 	// AppliedConditionalAccessPolicyResultVNotEnabled undocumented
-	AppliedConditionalAccessPolicyResultVNotEnabled AppliedConditionalAccessPolicyResult = 3
+	AppliedConditionalAccessPolicyResultVNotEnabled AppliedConditionalAccessPolicyResult = "NotEnabled"
 	// AppliedConditionalAccessPolicyResultVUnknown undocumented
-	AppliedConditionalAccessPolicyResultVUnknown AppliedConditionalAccessPolicyResult = 4
+	AppliedConditionalAccessPolicyResultVUnknown AppliedConditionalAccessPolicyResult = "Unknown"
 	// AppliedConditionalAccessPolicyResultVUnknownFutureValue undocumented
-	AppliedConditionalAccessPolicyResultVUnknownFutureValue AppliedConditionalAccessPolicyResult = 5
+	AppliedConditionalAccessPolicyResultVUnknownFutureValue AppliedConditionalAccessPolicyResult = "UnknownFutureValue"
 )
 
 // AppliedConditionalAccessPolicyResultPSuccess returns a pointer to AppliedConditionalAccessPolicyResultVSuccess

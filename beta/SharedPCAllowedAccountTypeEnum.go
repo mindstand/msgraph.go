@@ -3,15 +3,15 @@
 package msgraph
 
 // SharedPCAllowedAccountType undocumented
-type SharedPCAllowedAccountType int
+type SharedPCAllowedAccountType string
 
 const (
 	// SharedPCAllowedAccountTypeVNotConfigured undocumented
-	SharedPCAllowedAccountTypeVNotConfigured SharedPCAllowedAccountType = 0
+	SharedPCAllowedAccountTypeVNotConfigured SharedPCAllowedAccountType = "NotConfigured"
 	// SharedPCAllowedAccountTypeVGuest undocumented
-	SharedPCAllowedAccountTypeVGuest SharedPCAllowedAccountType = 1
+	SharedPCAllowedAccountTypeVGuest SharedPCAllowedAccountType = "Guest"
 	// SharedPCAllowedAccountTypeVDomain undocumented
-	SharedPCAllowedAccountTypeVDomain SharedPCAllowedAccountType = 2
+	SharedPCAllowedAccountTypeVDomain SharedPCAllowedAccountType = "Domain"
 )
 
 // SharedPCAllowedAccountTypePNotConfigured returns a pointer to SharedPCAllowedAccountTypeVNotConfigured

@@ -3,39 +3,39 @@
 package msgraph
 
 // RiskEventType undocumented
-type RiskEventType int
+type RiskEventType string
 
 const (
 	// RiskEventTypeVUnlikelyTravel undocumented
-	RiskEventTypeVUnlikelyTravel RiskEventType = 0
+	RiskEventTypeVUnlikelyTravel RiskEventType = "UnlikelyTravel"
 	// RiskEventTypeVAnonymizedIPAddress undocumented
-	RiskEventTypeVAnonymizedIPAddress RiskEventType = 1
+	RiskEventTypeVAnonymizedIPAddress RiskEventType = "AnonymizedIPAddress"
 	// RiskEventTypeVMaliciousIPAddress undocumented
-	RiskEventTypeVMaliciousIPAddress RiskEventType = 2
+	RiskEventTypeVMaliciousIPAddress RiskEventType = "MaliciousIPAddress"
 	// RiskEventTypeVUnfamiliarFeatures undocumented
-	RiskEventTypeVUnfamiliarFeatures RiskEventType = 3
+	RiskEventTypeVUnfamiliarFeatures RiskEventType = "UnfamiliarFeatures"
 	// RiskEventTypeVMalwareInfectedIPAddress undocumented
-	RiskEventTypeVMalwareInfectedIPAddress RiskEventType = 4
+	RiskEventTypeVMalwareInfectedIPAddress RiskEventType = "MalwareInfectedIPAddress"
 	// RiskEventTypeVSuspiciousIPAddress undocumented
-	RiskEventTypeVSuspiciousIPAddress RiskEventType = 5
+	RiskEventTypeVSuspiciousIPAddress RiskEventType = "SuspiciousIPAddress"
 	// RiskEventTypeVLeakedCredentials undocumented
-	RiskEventTypeVLeakedCredentials RiskEventType = 6
+	RiskEventTypeVLeakedCredentials RiskEventType = "LeakedCredentials"
 	// RiskEventTypeVInvestigationsThreatIntelligence undocumented
-	RiskEventTypeVInvestigationsThreatIntelligence RiskEventType = 7
+	RiskEventTypeVInvestigationsThreatIntelligence RiskEventType = "InvestigationsThreatIntelligence"
 	// RiskEventTypeVGeneric undocumented
-	RiskEventTypeVGeneric RiskEventType = 8
+	RiskEventTypeVGeneric RiskEventType = "Generic"
 	// RiskEventTypeVAdminConfirmedUserCompromised undocumented
-	RiskEventTypeVAdminConfirmedUserCompromised RiskEventType = 9
+	RiskEventTypeVAdminConfirmedUserCompromised RiskEventType = "AdminConfirmedUserCompromised"
 	// RiskEventTypeVMcasImpossibleTravel undocumented
-	RiskEventTypeVMcasImpossibleTravel RiskEventType = 10
+	RiskEventTypeVMcasImpossibleTravel RiskEventType = "McasImpossibleTravel"
 	// RiskEventTypeVMcasSuspiciousInboxManipulationRules undocumented
-	RiskEventTypeVMcasSuspiciousInboxManipulationRules RiskEventType = 11
+	RiskEventTypeVMcasSuspiciousInboxManipulationRules RiskEventType = "McasSuspiciousInboxManipulationRules"
 	// RiskEventTypeVInvestigationsThreatIntelligenceSigninLinked undocumented
-	RiskEventTypeVInvestigationsThreatIntelligenceSigninLinked RiskEventType = 12
+	RiskEventTypeVInvestigationsThreatIntelligenceSigninLinked RiskEventType = "InvestigationsThreatIntelligenceSigninLinked"
 	// RiskEventTypeVMaliciousIPAddressValidCredentialsBlockedIP undocumented
-	RiskEventTypeVMaliciousIPAddressValidCredentialsBlockedIP RiskEventType = 13
+	RiskEventTypeVMaliciousIPAddressValidCredentialsBlockedIP RiskEventType = "MaliciousIPAddressValidCredentialsBlockedIP"
 	// RiskEventTypeVUnknownFutureValue undocumented
-	RiskEventTypeVUnknownFutureValue RiskEventType = 14
+	RiskEventTypeVUnknownFutureValue RiskEventType = "UnknownFutureValue"
 )
 
 // RiskEventTypePUnlikelyTravel returns a pointer to RiskEventTypeVUnlikelyTravel

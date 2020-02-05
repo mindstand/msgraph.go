@@ -3,15 +3,15 @@
 package msgraph
 
 // InkAccessSetting undocumented
-type InkAccessSetting int
+type InkAccessSetting string
 
 const (
 	// InkAccessSettingVNotConfigured undocumented
-	InkAccessSettingVNotConfigured InkAccessSetting = 0
+	InkAccessSettingVNotConfigured InkAccessSetting = "NotConfigured"
 	// InkAccessSettingVEnabled undocumented
-	InkAccessSettingVEnabled InkAccessSetting = 1
+	InkAccessSettingVEnabled InkAccessSetting = "Enabled"
 	// InkAccessSettingVDisabled undocumented
-	InkAccessSettingVDisabled InkAccessSetting = 2
+	InkAccessSettingVDisabled InkAccessSetting = "Disabled"
 )
 
 // InkAccessSettingPNotConfigured returns a pointer to InkAccessSettingVNotConfigured

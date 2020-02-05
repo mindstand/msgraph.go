@@ -3,25 +3,25 @@
 package msgraph
 
 // PolicyPlatformType undocumented
-type PolicyPlatformType int
+type PolicyPlatformType string
 
 const (
 	// PolicyPlatformTypeVAndroid undocumented
-	PolicyPlatformTypeVAndroid PolicyPlatformType = 0
+	PolicyPlatformTypeVAndroid PolicyPlatformType = "Android"
 	// PolicyPlatformTypeVIOS undocumented
-	PolicyPlatformTypeVIOS PolicyPlatformType = 2
+	PolicyPlatformTypeVIOS PolicyPlatformType = "IOS"
 	// PolicyPlatformTypeVMacOS undocumented
-	PolicyPlatformTypeVMacOS PolicyPlatformType = 3
+	PolicyPlatformTypeVMacOS PolicyPlatformType = "MacOS"
 	// PolicyPlatformTypeVWindowsPhone81 undocumented
-	PolicyPlatformTypeVWindowsPhone81 PolicyPlatformType = 4
+	PolicyPlatformTypeVWindowsPhone81 PolicyPlatformType = "WindowsPhone81"
 	// PolicyPlatformTypeVWindows81AndLater undocumented
-	PolicyPlatformTypeVWindows81AndLater PolicyPlatformType = 5
+	PolicyPlatformTypeVWindows81AndLater PolicyPlatformType = "Windows81AndLater"
 	// PolicyPlatformTypeVWindows10AndLater undocumented
-	PolicyPlatformTypeVWindows10AndLater PolicyPlatformType = 6
+	PolicyPlatformTypeVWindows10AndLater PolicyPlatformType = "Windows10AndLater"
 	// PolicyPlatformTypeVAndroidWorkProfile undocumented
-	PolicyPlatformTypeVAndroidWorkProfile PolicyPlatformType = 7
+	PolicyPlatformTypeVAndroidWorkProfile PolicyPlatformType = "AndroidWorkProfile"
 	// PolicyPlatformTypeVAll undocumented
-	PolicyPlatformTypeVAll PolicyPlatformType = 100
+	PolicyPlatformTypeVAll PolicyPlatformType = "All"
 )
 
 // PolicyPlatformTypePAndroid returns a pointer to PolicyPlatformTypeVAndroid

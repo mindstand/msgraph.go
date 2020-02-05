@@ -3,15 +3,15 @@
 package msgraph
 
 // DefenderProtectionType undocumented
-type DefenderProtectionType int
+type DefenderProtectionType string
 
 const (
 	// DefenderProtectionTypeVUserDefined undocumented
-	DefenderProtectionTypeVUserDefined DefenderProtectionType = 0
+	DefenderProtectionTypeVUserDefined DefenderProtectionType = "UserDefined"
 	// DefenderProtectionTypeVEnable undocumented
-	DefenderProtectionTypeVEnable DefenderProtectionType = 1
+	DefenderProtectionTypeVEnable DefenderProtectionType = "Enable"
 	// DefenderProtectionTypeVAuditMode undocumented
-	DefenderProtectionTypeVAuditMode DefenderProtectionType = 2
+	DefenderProtectionTypeVAuditMode DefenderProtectionType = "AuditMode"
 )
 
 // DefenderProtectionTypePUserDefined returns a pointer to DefenderProtectionTypeVUserDefined

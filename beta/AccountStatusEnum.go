@@ -3,21 +3,21 @@
 package msgraph
 
 // AccountStatus undocumented
-type AccountStatus int
+type AccountStatus string
 
 const (
 	// AccountStatusVUnknown undocumented
-	AccountStatusVUnknown AccountStatus = 0
+	AccountStatusVUnknown AccountStatus = "Unknown"
 	// AccountStatusVStaged undocumented
-	AccountStatusVStaged AccountStatus = 1
+	AccountStatusVStaged AccountStatus = "Staged"
 	// AccountStatusVActive undocumented
-	AccountStatusVActive AccountStatus = 2
+	AccountStatusVActive AccountStatus = "Active"
 	// AccountStatusVSuspended undocumented
-	AccountStatusVSuspended AccountStatus = 3
+	AccountStatusVSuspended AccountStatus = "Suspended"
 	// AccountStatusVDeleted undocumented
-	AccountStatusVDeleted AccountStatus = 4
+	AccountStatusVDeleted AccountStatus = "Deleted"
 	// AccountStatusVUnknownFutureValue undocumented
-	AccountStatusVUnknownFutureValue AccountStatus = 127
+	AccountStatusVUnknownFutureValue AccountStatus = "UnknownFutureValue"
 )
 
 // AccountStatusPUnknown returns a pointer to AccountStatusVUnknown

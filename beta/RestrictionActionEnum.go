@@ -3,15 +3,15 @@
 package msgraph
 
 // RestrictionAction undocumented
-type RestrictionAction int
+type RestrictionAction string
 
 const (
 	// RestrictionActionVWarn undocumented
-	RestrictionActionVWarn RestrictionAction = 0
+	RestrictionActionVWarn RestrictionAction = "Warn"
 	// RestrictionActionVAudit undocumented
-	RestrictionActionVAudit RestrictionAction = 1
+	RestrictionActionVAudit RestrictionAction = "Audit"
 	// RestrictionActionVBlock undocumented
-	RestrictionActionVBlock RestrictionAction = 2
+	RestrictionActionVBlock RestrictionAction = "Block"
 )
 
 // RestrictionActionPWarn returns a pointer to RestrictionActionVWarn

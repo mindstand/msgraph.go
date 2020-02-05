@@ -3,23 +3,23 @@
 package msgraph
 
 // RestrictionTrigger undocumented
-type RestrictionTrigger int
+type RestrictionTrigger string
 
 const (
 	// RestrictionTriggerVCopyPaste undocumented
-	RestrictionTriggerVCopyPaste RestrictionTrigger = 0
+	RestrictionTriggerVCopyPaste RestrictionTrigger = "CopyPaste"
 	// RestrictionTriggerVCopyToNetworkShare undocumented
-	RestrictionTriggerVCopyToNetworkShare RestrictionTrigger = 1
+	RestrictionTriggerVCopyToNetworkShare RestrictionTrigger = "CopyToNetworkShare"
 	// RestrictionTriggerVCopyToRemovableMedia undocumented
-	RestrictionTriggerVCopyToRemovableMedia RestrictionTrigger = 2
+	RestrictionTriggerVCopyToRemovableMedia RestrictionTrigger = "CopyToRemovableMedia"
 	// RestrictionTriggerVScreenCapture undocumented
-	RestrictionTriggerVScreenCapture RestrictionTrigger = 3
+	RestrictionTriggerVScreenCapture RestrictionTrigger = "ScreenCapture"
 	// RestrictionTriggerVPrint undocumented
-	RestrictionTriggerVPrint RestrictionTrigger = 4
+	RestrictionTriggerVPrint RestrictionTrigger = "Print"
 	// RestrictionTriggerVCloudEgress undocumented
-	RestrictionTriggerVCloudEgress RestrictionTrigger = 5
+	RestrictionTriggerVCloudEgress RestrictionTrigger = "CloudEgress"
 	// RestrictionTriggerVUnallowedApps undocumented
-	RestrictionTriggerVUnallowedApps RestrictionTrigger = 6
+	RestrictionTriggerVUnallowedApps RestrictionTrigger = "UnallowedApps"
 )
 
 // RestrictionTriggerPCopyPaste returns a pointer to RestrictionTriggerVCopyPaste

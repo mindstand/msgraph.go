@@ -3,17 +3,17 @@
 package msgraph
 
 // EventType undocumented
-type EventType int
+type EventType string
 
 const (
 	// EventTypeVSingleInstance undocumented
-	EventTypeVSingleInstance EventType = 0
+	EventTypeVSingleInstance EventType = "SingleInstance"
 	// EventTypeVOccurrence undocumented
-	EventTypeVOccurrence EventType = 1
+	EventTypeVOccurrence EventType = "Occurrence"
 	// EventTypeVException undocumented
-	EventTypeVException EventType = 2
+	EventTypeVException EventType = "Exception"
 	// EventTypeVSeriesMaster undocumented
-	EventTypeVSeriesMaster EventType = 3
+	EventTypeVSeriesMaster EventType = "SeriesMaster"
 )
 
 // EventTypePSingleInstance returns a pointer to EventTypeVSingleInstance

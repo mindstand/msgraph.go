@@ -3,21 +3,21 @@
 package msgraph
 
 // Win32LobAppRegistryDetectionType undocumented
-type Win32LobAppRegistryDetectionType int
+type Win32LobAppRegistryDetectionType string
 
 const (
 	// Win32LobAppRegistryDetectionTypeVNotConfigured undocumented
-	Win32LobAppRegistryDetectionTypeVNotConfigured Win32LobAppRegistryDetectionType = 0
+	Win32LobAppRegistryDetectionTypeVNotConfigured Win32LobAppRegistryDetectionType = "NotConfigured"
 	// Win32LobAppRegistryDetectionTypeVExists undocumented
-	Win32LobAppRegistryDetectionTypeVExists Win32LobAppRegistryDetectionType = 1
+	Win32LobAppRegistryDetectionTypeVExists Win32LobAppRegistryDetectionType = "Exists"
 	// Win32LobAppRegistryDetectionTypeVDoesNotExist undocumented
-	Win32LobAppRegistryDetectionTypeVDoesNotExist Win32LobAppRegistryDetectionType = 2
+	Win32LobAppRegistryDetectionTypeVDoesNotExist Win32LobAppRegistryDetectionType = "DoesNotExist"
 	// Win32LobAppRegistryDetectionTypeVString undocumented
-	Win32LobAppRegistryDetectionTypeVString Win32LobAppRegistryDetectionType = 3
+	Win32LobAppRegistryDetectionTypeVString Win32LobAppRegistryDetectionType = "String"
 	// Win32LobAppRegistryDetectionTypeVInteger undocumented
-	Win32LobAppRegistryDetectionTypeVInteger Win32LobAppRegistryDetectionType = 4
+	Win32LobAppRegistryDetectionTypeVInteger Win32LobAppRegistryDetectionType = "Integer"
 	// Win32LobAppRegistryDetectionTypeVVersion undocumented
-	Win32LobAppRegistryDetectionTypeVVersion Win32LobAppRegistryDetectionType = 5
+	Win32LobAppRegistryDetectionTypeVVersion Win32LobAppRegistryDetectionType = "Version"
 )
 
 // Win32LobAppRegistryDetectionTypePNotConfigured returns a pointer to Win32LobAppRegistryDetectionTypeVNotConfigured

@@ -3,15 +3,15 @@
 package msgraph
 
 // DeviceManagementDerivedCredentialIssuer undocumented
-type DeviceManagementDerivedCredentialIssuer int
+type DeviceManagementDerivedCredentialIssuer string
 
 const (
 	// DeviceManagementDerivedCredentialIssuerVIntercede undocumented
-	DeviceManagementDerivedCredentialIssuerVIntercede DeviceManagementDerivedCredentialIssuer = 0
+	DeviceManagementDerivedCredentialIssuerVIntercede DeviceManagementDerivedCredentialIssuer = "Intercede"
 	// DeviceManagementDerivedCredentialIssuerVEntrustDatacard undocumented
-	DeviceManagementDerivedCredentialIssuerVEntrustDatacard DeviceManagementDerivedCredentialIssuer = 1
+	DeviceManagementDerivedCredentialIssuerVEntrustDatacard DeviceManagementDerivedCredentialIssuer = "EntrustDatacard"
 	// DeviceManagementDerivedCredentialIssuerVPurebred undocumented
-	DeviceManagementDerivedCredentialIssuerVPurebred DeviceManagementDerivedCredentialIssuer = 2
+	DeviceManagementDerivedCredentialIssuerVPurebred DeviceManagementDerivedCredentialIssuer = "Purebred"
 )
 
 // DeviceManagementDerivedCredentialIssuerPIntercede returns a pointer to DeviceManagementDerivedCredentialIssuerVIntercede

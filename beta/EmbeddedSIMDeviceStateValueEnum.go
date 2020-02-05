@@ -3,25 +3,25 @@
 package msgraph
 
 // EmbeddedSIMDeviceStateValue undocumented
-type EmbeddedSIMDeviceStateValue int
+type EmbeddedSIMDeviceStateValue string
 
 const (
 	// EmbeddedSIMDeviceStateValueVNotEvaluated undocumented
-	EmbeddedSIMDeviceStateValueVNotEvaluated EmbeddedSIMDeviceStateValue = 0
+	EmbeddedSIMDeviceStateValueVNotEvaluated EmbeddedSIMDeviceStateValue = "NotEvaluated"
 	// EmbeddedSIMDeviceStateValueVFailed undocumented
-	EmbeddedSIMDeviceStateValueVFailed EmbeddedSIMDeviceStateValue = 1
+	EmbeddedSIMDeviceStateValueVFailed EmbeddedSIMDeviceStateValue = "Failed"
 	// EmbeddedSIMDeviceStateValueVInstalling undocumented
-	EmbeddedSIMDeviceStateValueVInstalling EmbeddedSIMDeviceStateValue = 2
+	EmbeddedSIMDeviceStateValueVInstalling EmbeddedSIMDeviceStateValue = "Installing"
 	// EmbeddedSIMDeviceStateValueVInstalled undocumented
-	EmbeddedSIMDeviceStateValueVInstalled EmbeddedSIMDeviceStateValue = 3
+	EmbeddedSIMDeviceStateValueVInstalled EmbeddedSIMDeviceStateValue = "Installed"
 	// EmbeddedSIMDeviceStateValueVDeleting undocumented
-	EmbeddedSIMDeviceStateValueVDeleting EmbeddedSIMDeviceStateValue = 4
+	EmbeddedSIMDeviceStateValueVDeleting EmbeddedSIMDeviceStateValue = "Deleting"
 	// EmbeddedSIMDeviceStateValueVError undocumented
-	EmbeddedSIMDeviceStateValueVError EmbeddedSIMDeviceStateValue = 5
+	EmbeddedSIMDeviceStateValueVError EmbeddedSIMDeviceStateValue = "Error"
 	// EmbeddedSIMDeviceStateValueVDeleted undocumented
-	EmbeddedSIMDeviceStateValueVDeleted EmbeddedSIMDeviceStateValue = 6
+	EmbeddedSIMDeviceStateValueVDeleted EmbeddedSIMDeviceStateValue = "Deleted"
 	// EmbeddedSIMDeviceStateValueVRemovedByUser undocumented
-	EmbeddedSIMDeviceStateValueVRemovedByUser EmbeddedSIMDeviceStateValue = 7
+	EmbeddedSIMDeviceStateValueVRemovedByUser EmbeddedSIMDeviceStateValue = "RemovedByUser"
 )
 
 // EmbeddedSIMDeviceStateValuePNotEvaluated returns a pointer to EmbeddedSIMDeviceStateValueVNotEvaluated

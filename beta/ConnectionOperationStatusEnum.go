@@ -3,17 +3,17 @@
 package msgraph
 
 // ConnectionOperationStatus undocumented
-type ConnectionOperationStatus int
+type ConnectionOperationStatus string
 
 const (
 	// ConnectionOperationStatusVUnspecified undocumented
-	ConnectionOperationStatusVUnspecified ConnectionOperationStatus = 0
+	ConnectionOperationStatusVUnspecified ConnectionOperationStatus = "Unspecified"
 	// ConnectionOperationStatusVInprogress undocumented
-	ConnectionOperationStatusVInprogress ConnectionOperationStatus = 1
+	ConnectionOperationStatusVInprogress ConnectionOperationStatus = "Inprogress"
 	// ConnectionOperationStatusVCompleted undocumented
-	ConnectionOperationStatusVCompleted ConnectionOperationStatus = 2
+	ConnectionOperationStatusVCompleted ConnectionOperationStatus = "Completed"
 	// ConnectionOperationStatusVFailed undocumented
-	ConnectionOperationStatusVFailed ConnectionOperationStatus = 3
+	ConnectionOperationStatusVFailed ConnectionOperationStatus = "Failed"
 )
 
 // ConnectionOperationStatusPUnspecified returns a pointer to ConnectionOperationStatusVUnspecified

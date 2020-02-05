@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsStartMenuAppListVisibilityType undocumented
-type WindowsStartMenuAppListVisibilityType int
+type WindowsStartMenuAppListVisibilityType string
 
 const (
 	// WindowsStartMenuAppListVisibilityTypeVUserDefined undocumented
-	WindowsStartMenuAppListVisibilityTypeVUserDefined WindowsStartMenuAppListVisibilityType = 0
+	WindowsStartMenuAppListVisibilityTypeVUserDefined WindowsStartMenuAppListVisibilityType = "UserDefined"
 	// WindowsStartMenuAppListVisibilityTypeVCollapse undocumented
-	WindowsStartMenuAppListVisibilityTypeVCollapse WindowsStartMenuAppListVisibilityType = 1
+	WindowsStartMenuAppListVisibilityTypeVCollapse WindowsStartMenuAppListVisibilityType = "Collapse"
 	// WindowsStartMenuAppListVisibilityTypeVRemove undocumented
-	WindowsStartMenuAppListVisibilityTypeVRemove WindowsStartMenuAppListVisibilityType = 2
+	WindowsStartMenuAppListVisibilityTypeVRemove WindowsStartMenuAppListVisibilityType = "Remove"
 	// WindowsStartMenuAppListVisibilityTypeVDisableSettingsApp undocumented
-	WindowsStartMenuAppListVisibilityTypeVDisableSettingsApp WindowsStartMenuAppListVisibilityType = 4
+	WindowsStartMenuAppListVisibilityTypeVDisableSettingsApp WindowsStartMenuAppListVisibilityType = "DisableSettingsApp"
 )
 
 // WindowsStartMenuAppListVisibilityTypePUserDefined returns a pointer to WindowsStartMenuAppListVisibilityTypeVUserDefined

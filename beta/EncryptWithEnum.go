@@ -3,13 +3,13 @@
 package msgraph
 
 // EncryptWith undocumented
-type EncryptWith int
+type EncryptWith string
 
 const (
 	// EncryptWithVTemplate undocumented
-	EncryptWithVTemplate EncryptWith = 0
+	EncryptWithVTemplate EncryptWith = "Template"
 	// EncryptWithVUserDefinedRights undocumented
-	EncryptWithVUserDefinedRights EncryptWith = 1
+	EncryptWithVUserDefinedRights EncryptWith = "UserDefinedRights"
 )
 
 // EncryptWithPTemplate returns a pointer to EncryptWithVTemplate

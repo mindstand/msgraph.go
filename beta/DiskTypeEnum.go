@@ -3,15 +3,15 @@
 package msgraph
 
 // DiskType undocumented
-type DiskType int
+type DiskType string
 
 const (
 	// DiskTypeVUnkown undocumented
-	DiskTypeVUnkown DiskType = 0
+	DiskTypeVUnkown DiskType = "Unkown"
 	// DiskTypeVHdd undocumented
-	DiskTypeVHdd DiskType = 1
+	DiskTypeVHdd DiskType = "Hdd"
 	// DiskTypeVSsd undocumented
-	DiskTypeVSsd DiskType = 2
+	DiskTypeVSsd DiskType = "Ssd"
 )
 
 // DiskTypePUnkown returns a pointer to DiskTypeVUnkown

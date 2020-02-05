@@ -3,15 +3,15 @@
 package msgraph
 
 // GroupType undocumented
-type GroupType int
+type GroupType string
 
 const (
 	// GroupTypeVUnifiedGroups undocumented
-	GroupTypeVUnifiedGroups GroupType = 0
+	GroupTypeVUnifiedGroups GroupType = "UnifiedGroups"
 	// GroupTypeVAzureAD undocumented
-	GroupTypeVAzureAD GroupType = 1
+	GroupTypeVAzureAD GroupType = "AzureAD"
 	// GroupTypeVUnknownFutureValue undocumented
-	GroupTypeVUnknownFutureValue GroupType = 2
+	GroupTypeVUnknownFutureValue GroupType = "UnknownFutureValue"
 )
 
 // GroupTypePUnifiedGroups returns a pointer to GroupTypeVUnifiedGroups

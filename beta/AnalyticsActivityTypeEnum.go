@@ -3,19 +3,19 @@
 package msgraph
 
 // AnalyticsActivityType undocumented
-type AnalyticsActivityType int
+type AnalyticsActivityType string
 
 const (
 	// AnalyticsActivityTypeVEmail undocumented
-	AnalyticsActivityTypeVEmail AnalyticsActivityType = 0
+	AnalyticsActivityTypeVEmail AnalyticsActivityType = "Email"
 	// AnalyticsActivityTypeVMeeting undocumented
-	AnalyticsActivityTypeVMeeting AnalyticsActivityType = 1
+	AnalyticsActivityTypeVMeeting AnalyticsActivityType = "Meeting"
 	// AnalyticsActivityTypeVFocus undocumented
-	AnalyticsActivityTypeVFocus AnalyticsActivityType = 2
+	AnalyticsActivityTypeVFocus AnalyticsActivityType = "Focus"
 	// AnalyticsActivityTypeVChat undocumented
-	AnalyticsActivityTypeVChat AnalyticsActivityType = 3
+	AnalyticsActivityTypeVChat AnalyticsActivityType = "Chat"
 	// AnalyticsActivityTypeVCall undocumented
-	AnalyticsActivityTypeVCall AnalyticsActivityType = 4
+	AnalyticsActivityTypeVCall AnalyticsActivityType = "Call"
 )
 
 // AnalyticsActivityTypePEmail returns a pointer to AnalyticsActivityTypeVEmail

@@ -3,19 +3,19 @@
 package msgraph
 
 // WindowsAppStartLayoutTileSize undocumented
-type WindowsAppStartLayoutTileSize int
+type WindowsAppStartLayoutTileSize string
 
 const (
 	// WindowsAppStartLayoutTileSizeVHidden undocumented
-	WindowsAppStartLayoutTileSizeVHidden WindowsAppStartLayoutTileSize = 0
+	WindowsAppStartLayoutTileSizeVHidden WindowsAppStartLayoutTileSize = "Hidden"
 	// WindowsAppStartLayoutTileSizeVSmall undocumented
-	WindowsAppStartLayoutTileSizeVSmall WindowsAppStartLayoutTileSize = 1
+	WindowsAppStartLayoutTileSizeVSmall WindowsAppStartLayoutTileSize = "Small"
 	// WindowsAppStartLayoutTileSizeVMedium undocumented
-	WindowsAppStartLayoutTileSizeVMedium WindowsAppStartLayoutTileSize = 2
+	WindowsAppStartLayoutTileSizeVMedium WindowsAppStartLayoutTileSize = "Medium"
 	// WindowsAppStartLayoutTileSizeVWide undocumented
-	WindowsAppStartLayoutTileSizeVWide WindowsAppStartLayoutTileSize = 3
+	WindowsAppStartLayoutTileSizeVWide WindowsAppStartLayoutTileSize = "Wide"
 	// WindowsAppStartLayoutTileSizeVLarge undocumented
-	WindowsAppStartLayoutTileSizeVLarge WindowsAppStartLayoutTileSize = 4
+	WindowsAppStartLayoutTileSizeVLarge WindowsAppStartLayoutTileSize = "Large"
 )
 
 // WindowsAppStartLayoutTileSizePHidden returns a pointer to WindowsAppStartLayoutTileSizeVHidden

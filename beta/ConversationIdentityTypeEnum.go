@@ -3,13 +3,13 @@
 package msgraph
 
 // ConversationIdentityType undocumented
-type ConversationIdentityType int
+type ConversationIdentityType string
 
 const (
 	// ConversationIdentityTypeVTeam undocumented
-	ConversationIdentityTypeVTeam ConversationIdentityType = 0
+	ConversationIdentityTypeVTeam ConversationIdentityType = "Team"
 	// ConversationIdentityTypeVChannel undocumented
-	ConversationIdentityTypeVChannel ConversationIdentityType = 1
+	ConversationIdentityTypeVChannel ConversationIdentityType = "Channel"
 )
 
 // ConversationIdentityTypePTeam returns a pointer to ConversationIdentityTypeVTeam

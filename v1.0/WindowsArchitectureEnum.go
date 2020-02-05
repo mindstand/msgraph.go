@@ -3,19 +3,19 @@
 package msgraph
 
 // WindowsArchitecture undocumented
-type WindowsArchitecture int
+type WindowsArchitecture string
 
 const (
 	// WindowsArchitectureVNone undocumented
-	WindowsArchitectureVNone WindowsArchitecture = 0
+	WindowsArchitectureVNone WindowsArchitecture = "None"
 	// WindowsArchitectureVX86 undocumented
-	WindowsArchitectureVX86 WindowsArchitecture = 1
+	WindowsArchitectureVX86 WindowsArchitecture = "X86"
 	// WindowsArchitectureVX64 undocumented
-	WindowsArchitectureVX64 WindowsArchitecture = 2
+	WindowsArchitectureVX64 WindowsArchitecture = "X64"
 	// WindowsArchitectureVArm undocumented
-	WindowsArchitectureVArm WindowsArchitecture = 4
+	WindowsArchitectureVArm WindowsArchitecture = "Arm"
 	// WindowsArchitectureVNeutral undocumented
-	WindowsArchitectureVNeutral WindowsArchitecture = 8
+	WindowsArchitectureVNeutral WindowsArchitecture = "Neutral"
 )
 
 // WindowsArchitecturePNone returns a pointer to WindowsArchitectureVNone

@@ -3,15 +3,15 @@
 package msgraph
 
 // AssignmentMethod undocumented
-type AssignmentMethod int
+type AssignmentMethod string
 
 const (
 	// AssignmentMethodVStandard undocumented
-	AssignmentMethodVStandard AssignmentMethod = 0
+	AssignmentMethodVStandard AssignmentMethod = "Standard"
 	// AssignmentMethodVPrivileged undocumented
-	AssignmentMethodVPrivileged AssignmentMethod = 1
+	AssignmentMethodVPrivileged AssignmentMethod = "Privileged"
 	// AssignmentMethodVAuto undocumented
-	AssignmentMethodVAuto AssignmentMethod = 2
+	AssignmentMethodVAuto AssignmentMethod = "Auto"
 )
 
 // AssignmentMethodPStandard returns a pointer to AssignmentMethodVStandard

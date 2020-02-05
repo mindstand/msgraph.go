@@ -3,15 +3,15 @@
 package msgraph
 
 // VpnTrafficRuleRoutingPolicyType undocumented
-type VpnTrafficRuleRoutingPolicyType int
+type VpnTrafficRuleRoutingPolicyType string
 
 const (
 	// VpnTrafficRuleRoutingPolicyTypeVNone undocumented
-	VpnTrafficRuleRoutingPolicyTypeVNone VpnTrafficRuleRoutingPolicyType = 0
+	VpnTrafficRuleRoutingPolicyTypeVNone VpnTrafficRuleRoutingPolicyType = "None"
 	// VpnTrafficRuleRoutingPolicyTypeVSplitTunnel undocumented
-	VpnTrafficRuleRoutingPolicyTypeVSplitTunnel VpnTrafficRuleRoutingPolicyType = 1
+	VpnTrafficRuleRoutingPolicyTypeVSplitTunnel VpnTrafficRuleRoutingPolicyType = "SplitTunnel"
 	// VpnTrafficRuleRoutingPolicyTypeVForceTunnel undocumented
-	VpnTrafficRuleRoutingPolicyTypeVForceTunnel VpnTrafficRuleRoutingPolicyType = 2
+	VpnTrafficRuleRoutingPolicyTypeVForceTunnel VpnTrafficRuleRoutingPolicyType = "ForceTunnel"
 )
 
 // VpnTrafficRuleRoutingPolicyTypePNone returns a pointer to VpnTrafficRuleRoutingPolicyTypeVNone

@@ -3,17 +3,17 @@
 package msgraph
 
 // AndroidDeviceOwnerBatteryPluggedMode undocumented
-type AndroidDeviceOwnerBatteryPluggedMode int
+type AndroidDeviceOwnerBatteryPluggedMode string
 
 const (
 	// AndroidDeviceOwnerBatteryPluggedModeVNotConfigured undocumented
-	AndroidDeviceOwnerBatteryPluggedModeVNotConfigured AndroidDeviceOwnerBatteryPluggedMode = 0
+	AndroidDeviceOwnerBatteryPluggedModeVNotConfigured AndroidDeviceOwnerBatteryPluggedMode = "NotConfigured"
 	// AndroidDeviceOwnerBatteryPluggedModeVAc undocumented
-	AndroidDeviceOwnerBatteryPluggedModeVAc AndroidDeviceOwnerBatteryPluggedMode = 1
+	AndroidDeviceOwnerBatteryPluggedModeVAc AndroidDeviceOwnerBatteryPluggedMode = "Ac"
 	// AndroidDeviceOwnerBatteryPluggedModeVUsb undocumented
-	AndroidDeviceOwnerBatteryPluggedModeVUsb AndroidDeviceOwnerBatteryPluggedMode = 2
+	AndroidDeviceOwnerBatteryPluggedModeVUsb AndroidDeviceOwnerBatteryPluggedMode = "Usb"
 	// AndroidDeviceOwnerBatteryPluggedModeVWireless undocumented
-	AndroidDeviceOwnerBatteryPluggedModeVWireless AndroidDeviceOwnerBatteryPluggedMode = 3
+	AndroidDeviceOwnerBatteryPluggedModeVWireless AndroidDeviceOwnerBatteryPluggedMode = "Wireless"
 )
 
 // AndroidDeviceOwnerBatteryPluggedModePNotConfigured returns a pointer to AndroidDeviceOwnerBatteryPluggedModeVNotConfigured

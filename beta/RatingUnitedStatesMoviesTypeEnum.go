@@ -3,23 +3,23 @@
 package msgraph
 
 // RatingUnitedStatesMoviesType undocumented
-type RatingUnitedStatesMoviesType int
+type RatingUnitedStatesMoviesType string
 
 const (
 	// RatingUnitedStatesMoviesTypeVAllAllowed undocumented
-	RatingUnitedStatesMoviesTypeVAllAllowed RatingUnitedStatesMoviesType = 0
+	RatingUnitedStatesMoviesTypeVAllAllowed RatingUnitedStatesMoviesType = "AllAllowed"
 	// RatingUnitedStatesMoviesTypeVAllBlocked undocumented
-	RatingUnitedStatesMoviesTypeVAllBlocked RatingUnitedStatesMoviesType = 1
+	RatingUnitedStatesMoviesTypeVAllBlocked RatingUnitedStatesMoviesType = "AllBlocked"
 	// RatingUnitedStatesMoviesTypeVGeneral undocumented
-	RatingUnitedStatesMoviesTypeVGeneral RatingUnitedStatesMoviesType = 2
+	RatingUnitedStatesMoviesTypeVGeneral RatingUnitedStatesMoviesType = "General"
 	// RatingUnitedStatesMoviesTypeVParentalGuidance undocumented
-	RatingUnitedStatesMoviesTypeVParentalGuidance RatingUnitedStatesMoviesType = 3
+	RatingUnitedStatesMoviesTypeVParentalGuidance RatingUnitedStatesMoviesType = "ParentalGuidance"
 	// RatingUnitedStatesMoviesTypeVParentalGuidance13 undocumented
-	RatingUnitedStatesMoviesTypeVParentalGuidance13 RatingUnitedStatesMoviesType = 4
+	RatingUnitedStatesMoviesTypeVParentalGuidance13 RatingUnitedStatesMoviesType = "ParentalGuidance13"
 	// RatingUnitedStatesMoviesTypeVRestricted undocumented
-	RatingUnitedStatesMoviesTypeVRestricted RatingUnitedStatesMoviesType = 5
+	RatingUnitedStatesMoviesTypeVRestricted RatingUnitedStatesMoviesType = "Restricted"
 	// RatingUnitedStatesMoviesTypeVAdults undocumented
-	RatingUnitedStatesMoviesTypeVAdults RatingUnitedStatesMoviesType = 6
+	RatingUnitedStatesMoviesTypeVAdults RatingUnitedStatesMoviesType = "Adults"
 )
 
 // RatingUnitedStatesMoviesTypePAllAllowed returns a pointer to RatingUnitedStatesMoviesTypeVAllAllowed

@@ -3,19 +3,19 @@
 package msgraph
 
 // ManagedAppDeviceThreatLevel undocumented
-type ManagedAppDeviceThreatLevel int
+type ManagedAppDeviceThreatLevel string
 
 const (
 	// ManagedAppDeviceThreatLevelVNotConfigured undocumented
-	ManagedAppDeviceThreatLevelVNotConfigured ManagedAppDeviceThreatLevel = 0
+	ManagedAppDeviceThreatLevelVNotConfigured ManagedAppDeviceThreatLevel = "NotConfigured"
 	// ManagedAppDeviceThreatLevelVSecured undocumented
-	ManagedAppDeviceThreatLevelVSecured ManagedAppDeviceThreatLevel = 1
+	ManagedAppDeviceThreatLevelVSecured ManagedAppDeviceThreatLevel = "Secured"
 	// ManagedAppDeviceThreatLevelVLow undocumented
-	ManagedAppDeviceThreatLevelVLow ManagedAppDeviceThreatLevel = 2
+	ManagedAppDeviceThreatLevelVLow ManagedAppDeviceThreatLevel = "Low"
 	// ManagedAppDeviceThreatLevelVMedium undocumented
-	ManagedAppDeviceThreatLevelVMedium ManagedAppDeviceThreatLevel = 3
+	ManagedAppDeviceThreatLevelVMedium ManagedAppDeviceThreatLevel = "Medium"
 	// ManagedAppDeviceThreatLevelVHigh undocumented
-	ManagedAppDeviceThreatLevelVHigh ManagedAppDeviceThreatLevel = 4
+	ManagedAppDeviceThreatLevelVHigh ManagedAppDeviceThreatLevel = "High"
 )
 
 // ManagedAppDeviceThreatLevelPNotConfigured returns a pointer to ManagedAppDeviceThreatLevelVNotConfigured

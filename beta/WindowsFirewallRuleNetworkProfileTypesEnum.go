@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsFirewallRuleNetworkProfileTypes undocumented
-type WindowsFirewallRuleNetworkProfileTypes int
+type WindowsFirewallRuleNetworkProfileTypes string
 
 const (
 	// WindowsFirewallRuleNetworkProfileTypesVNotConfigured undocumented
-	WindowsFirewallRuleNetworkProfileTypesVNotConfigured WindowsFirewallRuleNetworkProfileTypes = 0
+	WindowsFirewallRuleNetworkProfileTypesVNotConfigured WindowsFirewallRuleNetworkProfileTypes = "NotConfigured"
 	// WindowsFirewallRuleNetworkProfileTypesVDomain undocumented
-	WindowsFirewallRuleNetworkProfileTypesVDomain WindowsFirewallRuleNetworkProfileTypes = 1
+	WindowsFirewallRuleNetworkProfileTypesVDomain WindowsFirewallRuleNetworkProfileTypes = "Domain"
 	// WindowsFirewallRuleNetworkProfileTypesVPrivate undocumented
-	WindowsFirewallRuleNetworkProfileTypesVPrivate WindowsFirewallRuleNetworkProfileTypes = 2
+	WindowsFirewallRuleNetworkProfileTypesVPrivate WindowsFirewallRuleNetworkProfileTypes = "Private"
 	// WindowsFirewallRuleNetworkProfileTypesVPublic undocumented
-	WindowsFirewallRuleNetworkProfileTypesVPublic WindowsFirewallRuleNetworkProfileTypes = 4
+	WindowsFirewallRuleNetworkProfileTypesVPublic WindowsFirewallRuleNetworkProfileTypes = "Public"
 )
 
 // WindowsFirewallRuleNetworkProfileTypesPNotConfigured returns a pointer to WindowsFirewallRuleNetworkProfileTypesVNotConfigured

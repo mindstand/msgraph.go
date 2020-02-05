@@ -3,15 +3,15 @@
 package msgraph
 
 // SynchronizationTaskExecutionResult undocumented
-type SynchronizationTaskExecutionResult int
+type SynchronizationTaskExecutionResult string
 
 const (
 	// SynchronizationTaskExecutionResultVSucceeded undocumented
-	SynchronizationTaskExecutionResultVSucceeded SynchronizationTaskExecutionResult = 0
+	SynchronizationTaskExecutionResultVSucceeded SynchronizationTaskExecutionResult = "Succeeded"
 	// SynchronizationTaskExecutionResultVFailed undocumented
-	SynchronizationTaskExecutionResultVFailed SynchronizationTaskExecutionResult = 1
+	SynchronizationTaskExecutionResultVFailed SynchronizationTaskExecutionResult = "Failed"
 	// SynchronizationTaskExecutionResultVEntryLevelErrors undocumented
-	SynchronizationTaskExecutionResultVEntryLevelErrors SynchronizationTaskExecutionResult = 2
+	SynchronizationTaskExecutionResultVEntryLevelErrors SynchronizationTaskExecutionResult = "EntryLevelErrors"
 )
 
 // SynchronizationTaskExecutionResultPSucceeded returns a pointer to SynchronizationTaskExecutionResultVSucceeded

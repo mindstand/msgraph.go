@@ -3,17 +3,17 @@
 package msgraph
 
 // ActivityDomain undocumented
-type ActivityDomain int
+type ActivityDomain string
 
 const (
 	// ActivityDomainVUnknown undocumented
-	ActivityDomainVUnknown ActivityDomain = 0
+	ActivityDomainVUnknown ActivityDomain = "Unknown"
 	// ActivityDomainVWork undocumented
-	ActivityDomainVWork ActivityDomain = 1
+	ActivityDomainVWork ActivityDomain = "Work"
 	// ActivityDomainVPersonal undocumented
-	ActivityDomainVPersonal ActivityDomain = 2
+	ActivityDomainVPersonal ActivityDomain = "Personal"
 	// ActivityDomainVUnrestricted undocumented
-	ActivityDomainVUnrestricted ActivityDomain = 3
+	ActivityDomainVUnrestricted ActivityDomain = "Unrestricted"
 )
 
 // ActivityDomainPUnknown returns a pointer to ActivityDomainVUnknown

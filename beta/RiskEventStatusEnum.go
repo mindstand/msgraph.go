@@ -3,25 +3,25 @@
 package msgraph
 
 // RiskEventStatus undocumented
-type RiskEventStatus int
+type RiskEventStatus string
 
 const (
 	// RiskEventStatusVActive undocumented
-	RiskEventStatusVActive RiskEventStatus = 0
+	RiskEventStatusVActive RiskEventStatus = "Active"
 	// RiskEventStatusVRemediated undocumented
-	RiskEventStatusVRemediated RiskEventStatus = 1
+	RiskEventStatusVRemediated RiskEventStatus = "Remediated"
 	// RiskEventStatusVDismissedAsFixed undocumented
-	RiskEventStatusVDismissedAsFixed RiskEventStatus = 2
+	RiskEventStatusVDismissedAsFixed RiskEventStatus = "DismissedAsFixed"
 	// RiskEventStatusVDismissedAsFalsePositive undocumented
-	RiskEventStatusVDismissedAsFalsePositive RiskEventStatus = 3
+	RiskEventStatusVDismissedAsFalsePositive RiskEventStatus = "DismissedAsFalsePositive"
 	// RiskEventStatusVDismissedAsIgnore undocumented
-	RiskEventStatusVDismissedAsIgnore RiskEventStatus = 4
+	RiskEventStatusVDismissedAsIgnore RiskEventStatus = "DismissedAsIgnore"
 	// RiskEventStatusVLoginBlocked undocumented
-	RiskEventStatusVLoginBlocked RiskEventStatus = 5
+	RiskEventStatusVLoginBlocked RiskEventStatus = "LoginBlocked"
 	// RiskEventStatusVClosedMFAAuto undocumented
-	RiskEventStatusVClosedMFAAuto RiskEventStatus = 6
+	RiskEventStatusVClosedMFAAuto RiskEventStatus = "ClosedMFAAuto"
 	// RiskEventStatusVClosedMultipleReasons undocumented
-	RiskEventStatusVClosedMultipleReasons RiskEventStatus = 7
+	RiskEventStatusVClosedMultipleReasons RiskEventStatus = "ClosedMultipleReasons"
 )
 
 // RiskEventStatusPActive returns a pointer to RiskEventStatusVActive

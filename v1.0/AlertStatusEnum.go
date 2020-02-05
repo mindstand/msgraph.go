@@ -3,21 +3,21 @@
 package msgraph
 
 // AlertStatus undocumented
-type AlertStatus int
+type AlertStatus string
 
 const (
 	// AlertStatusVUnknown undocumented
-	AlertStatusVUnknown AlertStatus = 0
+	AlertStatusVUnknown AlertStatus = "Unknown"
 	// AlertStatusVNewAlert undocumented
-	AlertStatusVNewAlert AlertStatus = 1
+	AlertStatusVNewAlert AlertStatus = "NewAlert"
 	// AlertStatusVInProgress undocumented
-	AlertStatusVInProgress AlertStatus = 2
+	AlertStatusVInProgress AlertStatus = "InProgress"
 	// AlertStatusVResolved undocumented
-	AlertStatusVResolved AlertStatus = 3
+	AlertStatusVResolved AlertStatus = "Resolved"
 	// AlertStatusVDismissed undocumented
-	AlertStatusVDismissed AlertStatus = 4
+	AlertStatusVDismissed AlertStatus = "Dismissed"
 	// AlertStatusVUnknownFutureValue undocumented
-	AlertStatusVUnknownFutureValue AlertStatus = 127
+	AlertStatusVUnknownFutureValue AlertStatus = "UnknownFutureValue"
 )
 
 // AlertStatusPUnknown returns a pointer to AlertStatusVUnknown

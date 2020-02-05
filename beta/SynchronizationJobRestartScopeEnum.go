@@ -3,23 +3,23 @@
 package msgraph
 
 // SynchronizationJobRestartScope undocumented
-type SynchronizationJobRestartScope int
+type SynchronizationJobRestartScope string
 
 const (
 	// SynchronizationJobRestartScopeVForceDeletes undocumented
-	SynchronizationJobRestartScopeVForceDeletes SynchronizationJobRestartScope = 32
+	SynchronizationJobRestartScopeVForceDeletes SynchronizationJobRestartScope = "ForceDeletes"
 	// SynchronizationJobRestartScopeVFull undocumented
-	SynchronizationJobRestartScopeVFull SynchronizationJobRestartScope = 15
+	SynchronizationJobRestartScopeVFull SynchronizationJobRestartScope = "Full"
 	// SynchronizationJobRestartScopeVQuarantineState undocumented
-	SynchronizationJobRestartScopeVQuarantineState SynchronizationJobRestartScope = 8
+	SynchronizationJobRestartScopeVQuarantineState SynchronizationJobRestartScope = "QuarantineState"
 	// SynchronizationJobRestartScopeVWatermark undocumented
-	SynchronizationJobRestartScopeVWatermark SynchronizationJobRestartScope = 4
+	SynchronizationJobRestartScopeVWatermark SynchronizationJobRestartScope = "Watermark"
 	// SynchronizationJobRestartScopeVEscrows undocumented
-	SynchronizationJobRestartScopeVEscrows SynchronizationJobRestartScope = 2
+	SynchronizationJobRestartScopeVEscrows SynchronizationJobRestartScope = "Escrows"
 	// SynchronizationJobRestartScopeVConnectorDataStore undocumented
-	SynchronizationJobRestartScopeVConnectorDataStore SynchronizationJobRestartScope = 1
+	SynchronizationJobRestartScopeVConnectorDataStore SynchronizationJobRestartScope = "ConnectorDataStore"
 	// SynchronizationJobRestartScopeVNone undocumented
-	SynchronizationJobRestartScopeVNone SynchronizationJobRestartScope = 0
+	SynchronizationJobRestartScopeVNone SynchronizationJobRestartScope = "None"
 )
 
 // SynchronizationJobRestartScopePForceDeletes returns a pointer to SynchronizationJobRestartScopeVForceDeletes

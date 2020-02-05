@@ -3,17 +3,17 @@
 package msgraph
 
 // ErrorCode undocumented
-type ErrorCode int
+type ErrorCode string
 
 const (
 	// ErrorCodeVNoError undocumented
-	ErrorCodeVNoError ErrorCode = 0
+	ErrorCodeVNoError ErrorCode = "NoError"
 	// ErrorCodeVUnauthorized undocumented
-	ErrorCodeVUnauthorized ErrorCode = 1
+	ErrorCodeVUnauthorized ErrorCode = "Unauthorized"
 	// ErrorCodeVNotFound undocumented
-	ErrorCodeVNotFound ErrorCode = 2
+	ErrorCodeVNotFound ErrorCode = "NotFound"
 	// ErrorCodeVDeleted undocumented
-	ErrorCodeVDeleted ErrorCode = 3
+	ErrorCodeVDeleted ErrorCode = "Deleted"
 )
 
 // ErrorCodePNoError returns a pointer to ErrorCodeVNoError

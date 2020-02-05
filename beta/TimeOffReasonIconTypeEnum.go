@@ -3,53 +3,53 @@
 package msgraph
 
 // TimeOffReasonIconType undocumented
-type TimeOffReasonIconType int
+type TimeOffReasonIconType string
 
 const (
 	// TimeOffReasonIconTypeVNone undocumented
-	TimeOffReasonIconTypeVNone TimeOffReasonIconType = 0
+	TimeOffReasonIconTypeVNone TimeOffReasonIconType = "None"
 	// TimeOffReasonIconTypeVCar undocumented
-	TimeOffReasonIconTypeVCar TimeOffReasonIconType = 1
+	TimeOffReasonIconTypeVCar TimeOffReasonIconType = "Car"
 	// TimeOffReasonIconTypeVCalendar undocumented
-	TimeOffReasonIconTypeVCalendar TimeOffReasonIconType = 2
+	TimeOffReasonIconTypeVCalendar TimeOffReasonIconType = "Calendar"
 	// TimeOffReasonIconTypeVRunning undocumented
-	TimeOffReasonIconTypeVRunning TimeOffReasonIconType = 3
+	TimeOffReasonIconTypeVRunning TimeOffReasonIconType = "Running"
 	// TimeOffReasonIconTypeVPlane undocumented
-	TimeOffReasonIconTypeVPlane TimeOffReasonIconType = 4
+	TimeOffReasonIconTypeVPlane TimeOffReasonIconType = "Plane"
 	// TimeOffReasonIconTypeVFirstAid undocumented
-	TimeOffReasonIconTypeVFirstAid TimeOffReasonIconType = 5
+	TimeOffReasonIconTypeVFirstAid TimeOffReasonIconType = "FirstAid"
 	// TimeOffReasonIconTypeVDoctor undocumented
-	TimeOffReasonIconTypeVDoctor TimeOffReasonIconType = 6
+	TimeOffReasonIconTypeVDoctor TimeOffReasonIconType = "Doctor"
 	// TimeOffReasonIconTypeVNotWorking undocumented
-	TimeOffReasonIconTypeVNotWorking TimeOffReasonIconType = 7
+	TimeOffReasonIconTypeVNotWorking TimeOffReasonIconType = "NotWorking"
 	// TimeOffReasonIconTypeVClock undocumented
-	TimeOffReasonIconTypeVClock TimeOffReasonIconType = 8
+	TimeOffReasonIconTypeVClock TimeOffReasonIconType = "Clock"
 	// TimeOffReasonIconTypeVJuryDuty undocumented
-	TimeOffReasonIconTypeVJuryDuty TimeOffReasonIconType = 9
+	TimeOffReasonIconTypeVJuryDuty TimeOffReasonIconType = "JuryDuty"
 	// TimeOffReasonIconTypeVGlobe undocumented
-	TimeOffReasonIconTypeVGlobe TimeOffReasonIconType = 10
+	TimeOffReasonIconTypeVGlobe TimeOffReasonIconType = "Globe"
 	// TimeOffReasonIconTypeVCup undocumented
-	TimeOffReasonIconTypeVCup TimeOffReasonIconType = 11
+	TimeOffReasonIconTypeVCup TimeOffReasonIconType = "Cup"
 	// TimeOffReasonIconTypeVPhone undocumented
-	TimeOffReasonIconTypeVPhone TimeOffReasonIconType = 12
+	TimeOffReasonIconTypeVPhone TimeOffReasonIconType = "Phone"
 	// TimeOffReasonIconTypeVWeather undocumented
-	TimeOffReasonIconTypeVWeather TimeOffReasonIconType = 13
+	TimeOffReasonIconTypeVWeather TimeOffReasonIconType = "Weather"
 	// TimeOffReasonIconTypeVUmbrella undocumented
-	TimeOffReasonIconTypeVUmbrella TimeOffReasonIconType = 14
+	TimeOffReasonIconTypeVUmbrella TimeOffReasonIconType = "Umbrella"
 	// TimeOffReasonIconTypeVPiggyBank undocumented
-	TimeOffReasonIconTypeVPiggyBank TimeOffReasonIconType = 15
+	TimeOffReasonIconTypeVPiggyBank TimeOffReasonIconType = "PiggyBank"
 	// TimeOffReasonIconTypeVDog undocumented
-	TimeOffReasonIconTypeVDog TimeOffReasonIconType = 16
+	TimeOffReasonIconTypeVDog TimeOffReasonIconType = "Dog"
 	// TimeOffReasonIconTypeVCake undocumented
-	TimeOffReasonIconTypeVCake TimeOffReasonIconType = 17
+	TimeOffReasonIconTypeVCake TimeOffReasonIconType = "Cake"
 	// TimeOffReasonIconTypeVTrafficCone undocumented
-	TimeOffReasonIconTypeVTrafficCone TimeOffReasonIconType = 18
+	TimeOffReasonIconTypeVTrafficCone TimeOffReasonIconType = "TrafficCone"
 	// TimeOffReasonIconTypeVPin undocumented
-	TimeOffReasonIconTypeVPin TimeOffReasonIconType = 19
+	TimeOffReasonIconTypeVPin TimeOffReasonIconType = "Pin"
 	// TimeOffReasonIconTypeVSunny undocumented
-	TimeOffReasonIconTypeVSunny TimeOffReasonIconType = 20
+	TimeOffReasonIconTypeVSunny TimeOffReasonIconType = "Sunny"
 	// TimeOffReasonIconTypeVUnknownFutureValue undocumented
-	TimeOffReasonIconTypeVUnknownFutureValue TimeOffReasonIconType = 21
+	TimeOffReasonIconTypeVUnknownFutureValue TimeOffReasonIconType = "UnknownFutureValue"
 )
 
 // TimeOffReasonIconTypePNone returns a pointer to TimeOffReasonIconTypeVNone

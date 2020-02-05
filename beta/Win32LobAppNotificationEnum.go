@@ -3,15 +3,15 @@
 package msgraph
 
 // Win32LobAppNotification undocumented
-type Win32LobAppNotification int
+type Win32LobAppNotification string
 
 const (
 	// Win32LobAppNotificationVShowAll undocumented
-	Win32LobAppNotificationVShowAll Win32LobAppNotification = 0
+	Win32LobAppNotificationVShowAll Win32LobAppNotification = "ShowAll"
 	// Win32LobAppNotificationVShowReboot undocumented
-	Win32LobAppNotificationVShowReboot Win32LobAppNotification = 1
+	Win32LobAppNotificationVShowReboot Win32LobAppNotification = "ShowReboot"
 	// Win32LobAppNotificationVHideAll undocumented
-	Win32LobAppNotificationVHideAll Win32LobAppNotification = 2
+	Win32LobAppNotificationVHideAll Win32LobAppNotification = "HideAll"
 )
 
 // Win32LobAppNotificationPShowAll returns a pointer to Win32LobAppNotificationVShowAll

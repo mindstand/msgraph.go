@@ -3,13 +3,13 @@
 package msgraph
 
 // DeviceAppManagementTaskCategory undocumented
-type DeviceAppManagementTaskCategory int
+type DeviceAppManagementTaskCategory string
 
 const (
 	// DeviceAppManagementTaskCategoryVUnknown undocumented
-	DeviceAppManagementTaskCategoryVUnknown DeviceAppManagementTaskCategory = 0
+	DeviceAppManagementTaskCategoryVUnknown DeviceAppManagementTaskCategory = "Unknown"
 	// DeviceAppManagementTaskCategoryVAdvancedThreatProtection undocumented
-	DeviceAppManagementTaskCategoryVAdvancedThreatProtection DeviceAppManagementTaskCategory = 1
+	DeviceAppManagementTaskCategoryVAdvancedThreatProtection DeviceAppManagementTaskCategory = "AdvancedThreatProtection"
 )
 
 // DeviceAppManagementTaskCategoryPUnknown returns a pointer to DeviceAppManagementTaskCategoryVUnknown

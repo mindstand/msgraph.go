@@ -3,19 +3,19 @@
 package msgraph
 
 // UserPfxIntendedPurpose undocumented
-type UserPfxIntendedPurpose int
+type UserPfxIntendedPurpose string
 
 const (
 	// UserPfxIntendedPurposeVUnassigned undocumented
-	UserPfxIntendedPurposeVUnassigned UserPfxIntendedPurpose = 0
+	UserPfxIntendedPurposeVUnassigned UserPfxIntendedPurpose = "Unassigned"
 	// UserPfxIntendedPurposeVSmimeEncryption undocumented
-	UserPfxIntendedPurposeVSmimeEncryption UserPfxIntendedPurpose = 1
+	UserPfxIntendedPurposeVSmimeEncryption UserPfxIntendedPurpose = "SmimeEncryption"
 	// UserPfxIntendedPurposeVSmimeSigning undocumented
-	UserPfxIntendedPurposeVSmimeSigning UserPfxIntendedPurpose = 2
+	UserPfxIntendedPurposeVSmimeSigning UserPfxIntendedPurpose = "SmimeSigning"
 	// UserPfxIntendedPurposeVVpn undocumented
-	UserPfxIntendedPurposeVVpn UserPfxIntendedPurpose = 4
+	UserPfxIntendedPurposeVVpn UserPfxIntendedPurpose = "Vpn"
 	// UserPfxIntendedPurposeVWifi undocumented
-	UserPfxIntendedPurposeVWifi UserPfxIntendedPurpose = 8
+	UserPfxIntendedPurposeVWifi UserPfxIntendedPurpose = "Wifi"
 )
 
 // UserPfxIntendedPurposePUnassigned returns a pointer to UserPfxIntendedPurposeVUnassigned

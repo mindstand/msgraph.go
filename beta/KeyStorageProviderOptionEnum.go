@@ -3,17 +3,17 @@
 package msgraph
 
 // KeyStorageProviderOption undocumented
-type KeyStorageProviderOption int
+type KeyStorageProviderOption string
 
 const (
 	// KeyStorageProviderOptionVUseTpmKspOtherwiseUseSoftwareKsp undocumented
-	KeyStorageProviderOptionVUseTpmKspOtherwiseUseSoftwareKsp KeyStorageProviderOption = 0
+	KeyStorageProviderOptionVUseTpmKspOtherwiseUseSoftwareKsp KeyStorageProviderOption = "UseTpmKspOtherwiseUseSoftwareKsp"
 	// KeyStorageProviderOptionVUseTpmKspOtherwiseFail undocumented
-	KeyStorageProviderOptionVUseTpmKspOtherwiseFail KeyStorageProviderOption = 1
+	KeyStorageProviderOptionVUseTpmKspOtherwiseFail KeyStorageProviderOption = "UseTpmKspOtherwiseFail"
 	// KeyStorageProviderOptionVUsePassportForWorkKspOtherwiseFail undocumented
-	KeyStorageProviderOptionVUsePassportForWorkKspOtherwiseFail KeyStorageProviderOption = 2
+	KeyStorageProviderOptionVUsePassportForWorkKspOtherwiseFail KeyStorageProviderOption = "UsePassportForWorkKspOtherwiseFail"
 	// KeyStorageProviderOptionVUseSoftwareKsp undocumented
-	KeyStorageProviderOptionVUseSoftwareKsp KeyStorageProviderOption = 3
+	KeyStorageProviderOptionVUseSoftwareKsp KeyStorageProviderOption = "UseSoftwareKsp"
 )
 
 // KeyStorageProviderOptionPUseTpmKspOtherwiseUseSoftwareKsp returns a pointer to KeyStorageProviderOptionVUseTpmKspOtherwiseUseSoftwareKsp

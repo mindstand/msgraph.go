@@ -3,13 +3,13 @@
 package msgraph
 
 // ChangeUefiSettingsPermission undocumented
-type ChangeUefiSettingsPermission int
+type ChangeUefiSettingsPermission string
 
 const (
 	// ChangeUefiSettingsPermissionVNotConfiguredOnly undocumented
-	ChangeUefiSettingsPermissionVNotConfiguredOnly ChangeUefiSettingsPermission = 0
+	ChangeUefiSettingsPermissionVNotConfiguredOnly ChangeUefiSettingsPermission = "NotConfiguredOnly"
 	// ChangeUefiSettingsPermissionVNone undocumented
-	ChangeUefiSettingsPermissionVNone ChangeUefiSettingsPermission = 1
+	ChangeUefiSettingsPermissionVNone ChangeUefiSettingsPermission = "None"
 )
 
 // ChangeUefiSettingsPermissionPNotConfiguredOnly returns a pointer to ChangeUefiSettingsPermissionVNotConfiguredOnly

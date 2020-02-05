@@ -3,15 +3,15 @@
 package msgraph
 
 // AndroidDeviceOwnerVirtualHomeButtonType undocumented
-type AndroidDeviceOwnerVirtualHomeButtonType int
+type AndroidDeviceOwnerVirtualHomeButtonType string
 
 const (
 	// AndroidDeviceOwnerVirtualHomeButtonTypeVNotConfigured undocumented
-	AndroidDeviceOwnerVirtualHomeButtonTypeVNotConfigured AndroidDeviceOwnerVirtualHomeButtonType = 0
+	AndroidDeviceOwnerVirtualHomeButtonTypeVNotConfigured AndroidDeviceOwnerVirtualHomeButtonType = "NotConfigured"
 	// AndroidDeviceOwnerVirtualHomeButtonTypeVSwipeUp undocumented
-	AndroidDeviceOwnerVirtualHomeButtonTypeVSwipeUp AndroidDeviceOwnerVirtualHomeButtonType = 1
+	AndroidDeviceOwnerVirtualHomeButtonTypeVSwipeUp AndroidDeviceOwnerVirtualHomeButtonType = "SwipeUp"
 	// AndroidDeviceOwnerVirtualHomeButtonTypeVFloating undocumented
-	AndroidDeviceOwnerVirtualHomeButtonTypeVFloating AndroidDeviceOwnerVirtualHomeButtonType = 2
+	AndroidDeviceOwnerVirtualHomeButtonTypeVFloating AndroidDeviceOwnerVirtualHomeButtonType = "Floating"
 )
 
 // AndroidDeviceOwnerVirtualHomeButtonTypePNotConfigured returns a pointer to AndroidDeviceOwnerVirtualHomeButtonTypeVNotConfigured

@@ -3,15 +3,15 @@
 package msgraph
 
 // AutomaticRepliesStatus undocumented
-type AutomaticRepliesStatus int
+type AutomaticRepliesStatus string
 
 const (
 	// AutomaticRepliesStatusVDisabled undocumented
-	AutomaticRepliesStatusVDisabled AutomaticRepliesStatus = 0
+	AutomaticRepliesStatusVDisabled AutomaticRepliesStatus = "Disabled"
 	// AutomaticRepliesStatusVAlwaysEnabled undocumented
-	AutomaticRepliesStatusVAlwaysEnabled AutomaticRepliesStatus = 1
+	AutomaticRepliesStatusVAlwaysEnabled AutomaticRepliesStatus = "AlwaysEnabled"
 	// AutomaticRepliesStatusVScheduled undocumented
-	AutomaticRepliesStatusVScheduled AutomaticRepliesStatus = 2
+	AutomaticRepliesStatusVScheduled AutomaticRepliesStatus = "Scheduled"
 )
 
 // AutomaticRepliesStatusPDisabled returns a pointer to AutomaticRepliesStatusVDisabled

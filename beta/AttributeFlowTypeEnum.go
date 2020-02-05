@@ -3,15 +3,15 @@
 package msgraph
 
 // AttributeFlowType undocumented
-type AttributeFlowType int
+type AttributeFlowType string
 
 const (
 	// AttributeFlowTypeVAlways undocumented
-	AttributeFlowTypeVAlways AttributeFlowType = 0
+	AttributeFlowTypeVAlways AttributeFlowType = "Always"
 	// AttributeFlowTypeVObjectAddOnly undocumented
-	AttributeFlowTypeVObjectAddOnly AttributeFlowType = 1
+	AttributeFlowTypeVObjectAddOnly AttributeFlowType = "ObjectAddOnly"
 	// AttributeFlowTypeVMultiValueAddOnly undocumented
-	AttributeFlowTypeVMultiValueAddOnly AttributeFlowType = 2
+	AttributeFlowTypeVMultiValueAddOnly AttributeFlowType = "MultiValueAddOnly"
 )
 
 // AttributeFlowTypePAlways returns a pointer to AttributeFlowTypeVAlways

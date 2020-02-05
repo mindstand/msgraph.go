@@ -3,21 +3,21 @@
 package msgraph
 
 // DiamondModel undocumented
-type DiamondModel int
+type DiamondModel string
 
 const (
 	// DiamondModelVUnknown undocumented
-	DiamondModelVUnknown DiamondModel = 0
+	DiamondModelVUnknown DiamondModel = "Unknown"
 	// DiamondModelVAdversary undocumented
-	DiamondModelVAdversary DiamondModel = 1
+	DiamondModelVAdversary DiamondModel = "Adversary"
 	// DiamondModelVCapability undocumented
-	DiamondModelVCapability DiamondModel = 2
+	DiamondModelVCapability DiamondModel = "Capability"
 	// DiamondModelVInfrastructure undocumented
-	DiamondModelVInfrastructure DiamondModel = 3
+	DiamondModelVInfrastructure DiamondModel = "Infrastructure"
 	// DiamondModelVVictim undocumented
-	DiamondModelVVictim DiamondModel = 4
+	DiamondModelVVictim DiamondModel = "Victim"
 	// DiamondModelVUnknownFutureValue undocumented
-	DiamondModelVUnknownFutureValue DiamondModel = 127
+	DiamondModelVUnknownFutureValue DiamondModel = "UnknownFutureValue"
 )
 
 // DiamondModelPUnknown returns a pointer to DiamondModelVUnknown

@@ -3,19 +3,19 @@
 package msgraph
 
 // ApplicationIdentityType undocumented
-type ApplicationIdentityType int
+type ApplicationIdentityType string
 
 const (
 	// ApplicationIdentityTypeVAadApplication undocumented
-	ApplicationIdentityTypeVAadApplication ApplicationIdentityType = 0
+	ApplicationIdentityTypeVAadApplication ApplicationIdentityType = "AadApplication"
 	// ApplicationIdentityTypeVBot undocumented
-	ApplicationIdentityTypeVBot ApplicationIdentityType = 1
+	ApplicationIdentityTypeVBot ApplicationIdentityType = "Bot"
 	// ApplicationIdentityTypeVTenantBot undocumented
-	ApplicationIdentityTypeVTenantBot ApplicationIdentityType = 2
+	ApplicationIdentityTypeVTenantBot ApplicationIdentityType = "TenantBot"
 	// ApplicationIdentityTypeVOffice365Connector undocumented
-	ApplicationIdentityTypeVOffice365Connector ApplicationIdentityType = 3
+	ApplicationIdentityTypeVOffice365Connector ApplicationIdentityType = "Office365Connector"
 	// ApplicationIdentityTypeVOutgoingWebhook undocumented
-	ApplicationIdentityTypeVOutgoingWebhook ApplicationIdentityType = 4
+	ApplicationIdentityTypeVOutgoingWebhook ApplicationIdentityType = "OutgoingWebhook"
 )
 
 // ApplicationIdentityTypePAadApplication returns a pointer to ApplicationIdentityTypeVAadApplication

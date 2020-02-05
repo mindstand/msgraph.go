@@ -3,19 +3,19 @@
 package msgraph
 
 // PowerActionType undocumented
-type PowerActionType int
+type PowerActionType string
 
 const (
 	// PowerActionTypeVNotConfigured undocumented
-	PowerActionTypeVNotConfigured PowerActionType = 0
+	PowerActionTypeVNotConfigured PowerActionType = "NotConfigured"
 	// PowerActionTypeVNoAction undocumented
-	PowerActionTypeVNoAction PowerActionType = 1
+	PowerActionTypeVNoAction PowerActionType = "NoAction"
 	// PowerActionTypeVSleep undocumented
-	PowerActionTypeVSleep PowerActionType = 2
+	PowerActionTypeVSleep PowerActionType = "Sleep"
 	// PowerActionTypeVHibernate undocumented
-	PowerActionTypeVHibernate PowerActionType = 3
+	PowerActionTypeVHibernate PowerActionType = "Hibernate"
 	// PowerActionTypeVShutdown undocumented
-	PowerActionTypeVShutdown PowerActionType = 4
+	PowerActionTypeVShutdown PowerActionType = "Shutdown"
 )
 
 // PowerActionTypePNotConfigured returns a pointer to PowerActionTypeVNotConfigured

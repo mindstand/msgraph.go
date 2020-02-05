@@ -3,19 +3,19 @@
 package msgraph
 
 // OfficeUpdateChannel undocumented
-type OfficeUpdateChannel int
+type OfficeUpdateChannel string
 
 const (
 	// OfficeUpdateChannelVNone undocumented
-	OfficeUpdateChannelVNone OfficeUpdateChannel = 0
+	OfficeUpdateChannelVNone OfficeUpdateChannel = "None"
 	// OfficeUpdateChannelVCurrent undocumented
-	OfficeUpdateChannelVCurrent OfficeUpdateChannel = 1
+	OfficeUpdateChannelVCurrent OfficeUpdateChannel = "Current"
 	// OfficeUpdateChannelVDeferred undocumented
-	OfficeUpdateChannelVDeferred OfficeUpdateChannel = 2
+	OfficeUpdateChannelVDeferred OfficeUpdateChannel = "Deferred"
 	// OfficeUpdateChannelVFirstReleaseCurrent undocumented
-	OfficeUpdateChannelVFirstReleaseCurrent OfficeUpdateChannel = 3
+	OfficeUpdateChannelVFirstReleaseCurrent OfficeUpdateChannel = "FirstReleaseCurrent"
 	// OfficeUpdateChannelVFirstReleaseDeferred undocumented
-	OfficeUpdateChannelVFirstReleaseDeferred OfficeUpdateChannel = 4
+	OfficeUpdateChannelVFirstReleaseDeferred OfficeUpdateChannel = "FirstReleaseDeferred"
 )
 
 // OfficeUpdateChannelPNone returns a pointer to OfficeUpdateChannelVNone

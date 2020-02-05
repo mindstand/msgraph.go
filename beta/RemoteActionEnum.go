@@ -3,55 +3,55 @@
 package msgraph
 
 // RemoteAction undocumented
-type RemoteAction int
+type RemoteAction string
 
 const (
 	// RemoteActionVUnknown undocumented
-	RemoteActionVUnknown RemoteAction = 0
+	RemoteActionVUnknown RemoteAction = "Unknown"
 	// RemoteActionVFactoryReset undocumented
-	RemoteActionVFactoryReset RemoteAction = 1
+	RemoteActionVFactoryReset RemoteAction = "FactoryReset"
 	// RemoteActionVRemoveCompanyData undocumented
-	RemoteActionVRemoveCompanyData RemoteAction = 2
+	RemoteActionVRemoveCompanyData RemoteAction = "RemoveCompanyData"
 	// RemoteActionVResetPasscode undocumented
-	RemoteActionVResetPasscode RemoteAction = 3
+	RemoteActionVResetPasscode RemoteAction = "ResetPasscode"
 	// RemoteActionVRemoteLock undocumented
-	RemoteActionVRemoteLock RemoteAction = 4
+	RemoteActionVRemoteLock RemoteAction = "RemoteLock"
 	// RemoteActionVEnableLostMode undocumented
-	RemoteActionVEnableLostMode RemoteAction = 5
+	RemoteActionVEnableLostMode RemoteAction = "EnableLostMode"
 	// RemoteActionVDisableLostMode undocumented
-	RemoteActionVDisableLostMode RemoteAction = 6
+	RemoteActionVDisableLostMode RemoteAction = "DisableLostMode"
 	// RemoteActionVLocateDevice undocumented
-	RemoteActionVLocateDevice RemoteAction = 7
+	RemoteActionVLocateDevice RemoteAction = "LocateDevice"
 	// RemoteActionVRebootNow undocumented
-	RemoteActionVRebootNow RemoteAction = 8
+	RemoteActionVRebootNow RemoteAction = "RebootNow"
 	// RemoteActionVRecoverPasscode undocumented
-	RemoteActionVRecoverPasscode RemoteAction = 9
+	RemoteActionVRecoverPasscode RemoteAction = "RecoverPasscode"
 	// RemoteActionVCleanWindowsDevice undocumented
-	RemoteActionVCleanWindowsDevice RemoteAction = 10
+	RemoteActionVCleanWindowsDevice RemoteAction = "CleanWindowsDevice"
 	// RemoteActionVLogoutSharedAppleDeviceActiveUser undocumented
-	RemoteActionVLogoutSharedAppleDeviceActiveUser RemoteAction = 11
+	RemoteActionVLogoutSharedAppleDeviceActiveUser RemoteAction = "LogoutSharedAppleDeviceActiveUser"
 	// RemoteActionVQuickScan undocumented
-	RemoteActionVQuickScan RemoteAction = 12
+	RemoteActionVQuickScan RemoteAction = "QuickScan"
 	// RemoteActionVFullScan undocumented
-	RemoteActionVFullScan RemoteAction = 13
+	RemoteActionVFullScan RemoteAction = "FullScan"
 	// RemoteActionVWindowsDefenderUpdateSignatures undocumented
-	RemoteActionVWindowsDefenderUpdateSignatures RemoteAction = 14
+	RemoteActionVWindowsDefenderUpdateSignatures RemoteAction = "WindowsDefenderUpdateSignatures"
 	// RemoteActionVFactoryResetKeepEnrollmentData undocumented
-	RemoteActionVFactoryResetKeepEnrollmentData RemoteAction = 15
+	RemoteActionVFactoryResetKeepEnrollmentData RemoteAction = "FactoryResetKeepEnrollmentData"
 	// RemoteActionVUpdateDeviceAccount undocumented
-	RemoteActionVUpdateDeviceAccount RemoteAction = 16
+	RemoteActionVUpdateDeviceAccount RemoteAction = "UpdateDeviceAccount"
 	// RemoteActionVAutomaticRedeployment undocumented
-	RemoteActionVAutomaticRedeployment RemoteAction = 17
+	RemoteActionVAutomaticRedeployment RemoteAction = "AutomaticRedeployment"
 	// RemoteActionVShutDown undocumented
-	RemoteActionVShutDown RemoteAction = 18
+	RemoteActionVShutDown RemoteAction = "ShutDown"
 	// RemoteActionVRotateBitLockerKeys undocumented
-	RemoteActionVRotateBitLockerKeys RemoteAction = 19
+	RemoteActionVRotateBitLockerKeys RemoteAction = "RotateBitLockerKeys"
 	// RemoteActionVRotateFileVaultKey undocumented
-	RemoteActionVRotateFileVaultKey RemoteAction = 20
+	RemoteActionVRotateFileVaultKey RemoteAction = "RotateFileVaultKey"
 	// RemoteActionVGetFileVaultKey undocumented
-	RemoteActionVGetFileVaultKey RemoteAction = 21
+	RemoteActionVGetFileVaultKey RemoteAction = "GetFileVaultKey"
 	// RemoteActionVSetDeviceName undocumented
-	RemoteActionVSetDeviceName RemoteAction = 22
+	RemoteActionVSetDeviceName RemoteAction = "SetDeviceName"
 )
 
 // RemoteActionPUnknown returns a pointer to RemoteActionVUnknown

@@ -3,19 +3,19 @@
 package msgraph
 
 // TaskStatus undocumented
-type TaskStatus int
+type TaskStatus string
 
 const (
 	// TaskStatusVNotStarted undocumented
-	TaskStatusVNotStarted TaskStatus = 0
+	TaskStatusVNotStarted TaskStatus = "NotStarted"
 	// TaskStatusVInProgress undocumented
-	TaskStatusVInProgress TaskStatus = 1
+	TaskStatusVInProgress TaskStatus = "InProgress"
 	// TaskStatusVCompleted undocumented
-	TaskStatusVCompleted TaskStatus = 2
+	TaskStatusVCompleted TaskStatus = "Completed"
 	// TaskStatusVWaitingOnOthers undocumented
-	TaskStatusVWaitingOnOthers TaskStatus = 3
+	TaskStatusVWaitingOnOthers TaskStatus = "WaitingOnOthers"
 	// TaskStatusVDeferred undocumented
-	TaskStatusVDeferred TaskStatus = 4
+	TaskStatusVDeferred TaskStatus = "Deferred"
 )
 
 // TaskStatusPNotStarted returns a pointer to TaskStatusVNotStarted

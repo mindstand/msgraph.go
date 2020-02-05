@@ -3,15 +3,15 @@
 package msgraph
 
 // RequiredPasswordType undocumented
-type RequiredPasswordType int
+type RequiredPasswordType string
 
 const (
 	// RequiredPasswordTypeVDeviceDefault undocumented
-	RequiredPasswordTypeVDeviceDefault RequiredPasswordType = 0
+	RequiredPasswordTypeVDeviceDefault RequiredPasswordType = "DeviceDefault"
 	// RequiredPasswordTypeVAlphanumeric undocumented
-	RequiredPasswordTypeVAlphanumeric RequiredPasswordType = 1
+	RequiredPasswordTypeVAlphanumeric RequiredPasswordType = "Alphanumeric"
 	// RequiredPasswordTypeVNumeric undocumented
-	RequiredPasswordTypeVNumeric RequiredPasswordType = 2
+	RequiredPasswordTypeVNumeric RequiredPasswordType = "Numeric"
 )
 
 // RequiredPasswordTypePDeviceDefault returns a pointer to RequiredPasswordTypeVDeviceDefault

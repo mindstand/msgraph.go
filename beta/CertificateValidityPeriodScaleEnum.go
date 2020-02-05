@@ -3,15 +3,15 @@
 package msgraph
 
 // CertificateValidityPeriodScale undocumented
-type CertificateValidityPeriodScale int
+type CertificateValidityPeriodScale string
 
 const (
 	// CertificateValidityPeriodScaleVDays undocumented
-	CertificateValidityPeriodScaleVDays CertificateValidityPeriodScale = 0
+	CertificateValidityPeriodScaleVDays CertificateValidityPeriodScale = "Days"
 	// CertificateValidityPeriodScaleVMonths undocumented
-	CertificateValidityPeriodScaleVMonths CertificateValidityPeriodScale = 1
+	CertificateValidityPeriodScaleVMonths CertificateValidityPeriodScale = "Months"
 	// CertificateValidityPeriodScaleVYears undocumented
-	CertificateValidityPeriodScaleVYears CertificateValidityPeriodScale = 2
+	CertificateValidityPeriodScaleVYears CertificateValidityPeriodScale = "Years"
 )
 
 // CertificateValidityPeriodScalePDays returns a pointer to CertificateValidityPeriodScaleVDays

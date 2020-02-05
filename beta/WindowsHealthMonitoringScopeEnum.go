@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsHealthMonitoringScope undocumented
-type WindowsHealthMonitoringScope int
+type WindowsHealthMonitoringScope string
 
 const (
 	// WindowsHealthMonitoringScopeVUndefined undocumented
-	WindowsHealthMonitoringScopeVUndefined WindowsHealthMonitoringScope = 0
+	WindowsHealthMonitoringScopeVUndefined WindowsHealthMonitoringScope = "Undefined"
 	// WindowsHealthMonitoringScopeVHealthMonitoring undocumented
-	WindowsHealthMonitoringScopeVHealthMonitoring WindowsHealthMonitoringScope = 1
+	WindowsHealthMonitoringScopeVHealthMonitoring WindowsHealthMonitoringScope = "HealthMonitoring"
 	// WindowsHealthMonitoringScopeVBootPerformance undocumented
-	WindowsHealthMonitoringScopeVBootPerformance WindowsHealthMonitoringScope = 2
+	WindowsHealthMonitoringScopeVBootPerformance WindowsHealthMonitoringScope = "BootPerformance"
 	// WindowsHealthMonitoringScopeVUserExperienceAnalytics undocumented
-	WindowsHealthMonitoringScopeVUserExperienceAnalytics WindowsHealthMonitoringScope = 4
+	WindowsHealthMonitoringScopeVUserExperienceAnalytics WindowsHealthMonitoringScope = "UserExperienceAnalytics"
 )
 
 // WindowsHealthMonitoringScopePUndefined returns a pointer to WindowsHealthMonitoringScopeVUndefined

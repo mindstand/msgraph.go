@@ -3,13 +3,13 @@
 package msgraph
 
 // SynchronizationScheduleState undocumented
-type SynchronizationScheduleState int
+type SynchronizationScheduleState string
 
 const (
 	// SynchronizationScheduleStateVActive undocumented
-	SynchronizationScheduleStateVActive SynchronizationScheduleState = 0
+	SynchronizationScheduleStateVActive SynchronizationScheduleState = "Active"
 	// SynchronizationScheduleStateVDisabled undocumented
-	SynchronizationScheduleStateVDisabled SynchronizationScheduleState = 1
+	SynchronizationScheduleStateVDisabled SynchronizationScheduleState = "Disabled"
 )
 
 // SynchronizationScheduleStatePActive returns a pointer to SynchronizationScheduleStateVActive

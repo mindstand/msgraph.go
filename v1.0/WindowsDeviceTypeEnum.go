@@ -3,19 +3,19 @@
 package msgraph
 
 // WindowsDeviceType undocumented
-type WindowsDeviceType int
+type WindowsDeviceType string
 
 const (
 	// WindowsDeviceTypeVNone undocumented
-	WindowsDeviceTypeVNone WindowsDeviceType = 0
+	WindowsDeviceTypeVNone WindowsDeviceType = "None"
 	// WindowsDeviceTypeVDesktop undocumented
-	WindowsDeviceTypeVDesktop WindowsDeviceType = 1
+	WindowsDeviceTypeVDesktop WindowsDeviceType = "Desktop"
 	// WindowsDeviceTypeVMobile undocumented
-	WindowsDeviceTypeVMobile WindowsDeviceType = 2
+	WindowsDeviceTypeVMobile WindowsDeviceType = "Mobile"
 	// WindowsDeviceTypeVHolographic undocumented
-	WindowsDeviceTypeVHolographic WindowsDeviceType = 4
+	WindowsDeviceTypeVHolographic WindowsDeviceType = "Holographic"
 	// WindowsDeviceTypeVTeam undocumented
-	WindowsDeviceTypeVTeam WindowsDeviceType = 8
+	WindowsDeviceTypeVTeam WindowsDeviceType = "Team"
 )
 
 // WindowsDeviceTypePNone returns a pointer to WindowsDeviceTypeVNone

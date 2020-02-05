@@ -3,15 +3,15 @@
 package msgraph
 
 // WindowsStartMenuModeType undocumented
-type WindowsStartMenuModeType int
+type WindowsStartMenuModeType string
 
 const (
 	// WindowsStartMenuModeTypeVUserDefined undocumented
-	WindowsStartMenuModeTypeVUserDefined WindowsStartMenuModeType = 0
+	WindowsStartMenuModeTypeVUserDefined WindowsStartMenuModeType = "UserDefined"
 	// WindowsStartMenuModeTypeVFullScreen undocumented
-	WindowsStartMenuModeTypeVFullScreen WindowsStartMenuModeType = 1
+	WindowsStartMenuModeTypeVFullScreen WindowsStartMenuModeType = "FullScreen"
 	// WindowsStartMenuModeTypeVNonFullScreen undocumented
-	WindowsStartMenuModeTypeVNonFullScreen WindowsStartMenuModeType = 2
+	WindowsStartMenuModeTypeVNonFullScreen WindowsStartMenuModeType = "NonFullScreen"
 )
 
 // WindowsStartMenuModeTypePUserDefined returns a pointer to WindowsStartMenuModeTypeVUserDefined

@@ -3,17 +3,17 @@
 package msgraph
 
 // EntrySyncOperation undocumented
-type EntrySyncOperation int
+type EntrySyncOperation string
 
 const (
 	// EntrySyncOperationVNone undocumented
-	EntrySyncOperationVNone EntrySyncOperation = 0
+	EntrySyncOperationVNone EntrySyncOperation = "None"
 	// EntrySyncOperationVAdd undocumented
-	EntrySyncOperationVAdd EntrySyncOperation = 1
+	EntrySyncOperationVAdd EntrySyncOperation = "Add"
 	// EntrySyncOperationVDelete undocumented
-	EntrySyncOperationVDelete EntrySyncOperation = 2
+	EntrySyncOperationVDelete EntrySyncOperation = "Delete"
 	// EntrySyncOperationVUpdate undocumented
-	EntrySyncOperationVUpdate EntrySyncOperation = 3
+	EntrySyncOperationVUpdate EntrySyncOperation = "Update"
 )
 
 // EntrySyncOperationPNone returns a pointer to EntrySyncOperationVNone

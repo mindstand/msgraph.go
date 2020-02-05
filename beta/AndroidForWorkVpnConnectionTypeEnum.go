@@ -3,21 +3,21 @@
 package msgraph
 
 // AndroidForWorkVpnConnectionType undocumented
-type AndroidForWorkVpnConnectionType int
+type AndroidForWorkVpnConnectionType string
 
 const (
 	// AndroidForWorkVpnConnectionTypeVCiscoAnyConnect undocumented
-	AndroidForWorkVpnConnectionTypeVCiscoAnyConnect AndroidForWorkVpnConnectionType = 0
+	AndroidForWorkVpnConnectionTypeVCiscoAnyConnect AndroidForWorkVpnConnectionType = "CiscoAnyConnect"
 	// AndroidForWorkVpnConnectionTypeVPulseSecure undocumented
-	AndroidForWorkVpnConnectionTypeVPulseSecure AndroidForWorkVpnConnectionType = 1
+	AndroidForWorkVpnConnectionTypeVPulseSecure AndroidForWorkVpnConnectionType = "PulseSecure"
 	// AndroidForWorkVpnConnectionTypeVF5EdgeClient undocumented
-	AndroidForWorkVpnConnectionTypeVF5EdgeClient AndroidForWorkVpnConnectionType = 2
+	AndroidForWorkVpnConnectionTypeVF5EdgeClient AndroidForWorkVpnConnectionType = "F5EdgeClient"
 	// AndroidForWorkVpnConnectionTypeVDellSonicWallMobileConnect undocumented
-	AndroidForWorkVpnConnectionTypeVDellSonicWallMobileConnect AndroidForWorkVpnConnectionType = 3
+	AndroidForWorkVpnConnectionTypeVDellSonicWallMobileConnect AndroidForWorkVpnConnectionType = "DellSonicWallMobileConnect"
 	// AndroidForWorkVpnConnectionTypeVCheckPointCapsuleVpn undocumented
-	AndroidForWorkVpnConnectionTypeVCheckPointCapsuleVpn AndroidForWorkVpnConnectionType = 4
+	AndroidForWorkVpnConnectionTypeVCheckPointCapsuleVpn AndroidForWorkVpnConnectionType = "CheckPointCapsuleVpn"
 	// AndroidForWorkVpnConnectionTypeVCitrix undocumented
-	AndroidForWorkVpnConnectionTypeVCitrix AndroidForWorkVpnConnectionType = 5
+	AndroidForWorkVpnConnectionTypeVCitrix AndroidForWorkVpnConnectionType = "Citrix"
 )
 
 // AndroidForWorkVpnConnectionTypePCiscoAnyConnect returns a pointer to AndroidForWorkVpnConnectionTypeVCiscoAnyConnect

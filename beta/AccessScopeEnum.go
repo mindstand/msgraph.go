@@ -3,13 +3,13 @@
 package msgraph
 
 // AccessScope undocumented
-type AccessScope int
+type AccessScope string
 
 const (
 	// AccessScopeVInOrganization undocumented
-	AccessScopeVInOrganization AccessScope = 0
+	AccessScopeVInOrganization AccessScope = "InOrganization"
 	// AccessScopeVNotInOrganization undocumented
-	AccessScopeVNotInOrganization AccessScope = 1
+	AccessScopeVNotInOrganization AccessScope = "NotInOrganization"
 )
 
 // AccessScopePInOrganization returns a pointer to AccessScopeVInOrganization

@@ -3,21 +3,21 @@
 package msgraph
 
 // RatingAppsType undocumented
-type RatingAppsType int
+type RatingAppsType string
 
 const (
 	// RatingAppsTypeVAllAllowed undocumented
-	RatingAppsTypeVAllAllowed RatingAppsType = 0
+	RatingAppsTypeVAllAllowed RatingAppsType = "AllAllowed"
 	// RatingAppsTypeVAllBlocked undocumented
-	RatingAppsTypeVAllBlocked RatingAppsType = 1
+	RatingAppsTypeVAllBlocked RatingAppsType = "AllBlocked"
 	// RatingAppsTypeVAgesAbove4 undocumented
-	RatingAppsTypeVAgesAbove4 RatingAppsType = 2
+	RatingAppsTypeVAgesAbove4 RatingAppsType = "AgesAbove4"
 	// RatingAppsTypeVAgesAbove9 undocumented
-	RatingAppsTypeVAgesAbove9 RatingAppsType = 3
+	RatingAppsTypeVAgesAbove9 RatingAppsType = "AgesAbove9"
 	// RatingAppsTypeVAgesAbove12 undocumented
-	RatingAppsTypeVAgesAbove12 RatingAppsType = 4
+	RatingAppsTypeVAgesAbove12 RatingAppsType = "AgesAbove12"
 	// RatingAppsTypeVAgesAbove17 undocumented
-	RatingAppsTypeVAgesAbove17 RatingAppsType = 5
+	RatingAppsTypeVAgesAbove17 RatingAppsType = "AgesAbove17"
 )
 
 // RatingAppsTypePAllAllowed returns a pointer to RatingAppsTypeVAllAllowed

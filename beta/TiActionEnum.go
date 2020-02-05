@@ -3,19 +3,19 @@
 package msgraph
 
 // TiAction undocumented
-type TiAction int
+type TiAction string
 
 const (
 	// TiActionVUnknown undocumented
-	TiActionVUnknown TiAction = 0
+	TiActionVUnknown TiAction = "Unknown"
 	// TiActionVAllow undocumented
-	TiActionVAllow TiAction = 1
+	TiActionVAllow TiAction = "Allow"
 	// TiActionVBlock undocumented
-	TiActionVBlock TiAction = 2
+	TiActionVBlock TiAction = "Block"
 	// TiActionVAlert undocumented
-	TiActionVAlert TiAction = 3
+	TiActionVAlert TiAction = "Alert"
 	// TiActionVUnknownFutureValue undocumented
-	TiActionVUnknownFutureValue TiAction = 127
+	TiActionVUnknownFutureValue TiAction = "UnknownFutureValue"
 )
 
 // TiActionPUnknown returns a pointer to TiActionVUnknown

@@ -3,19 +3,19 @@
 package msgraph
 
 // RecipientScopeType undocumented
-type RecipientScopeType int
+type RecipientScopeType string
 
 const (
 	// RecipientScopeTypeVNone undocumented
-	RecipientScopeTypeVNone RecipientScopeType = 0
+	RecipientScopeTypeVNone RecipientScopeType = "None"
 	// RecipientScopeTypeVInternal undocumented
-	RecipientScopeTypeVInternal RecipientScopeType = 1
+	RecipientScopeTypeVInternal RecipientScopeType = "Internal"
 	// RecipientScopeTypeVExternal undocumented
-	RecipientScopeTypeVExternal RecipientScopeType = 2
+	RecipientScopeTypeVExternal RecipientScopeType = "External"
 	// RecipientScopeTypeVExternalPartner undocumented
-	RecipientScopeTypeVExternalPartner RecipientScopeType = 4
+	RecipientScopeTypeVExternalPartner RecipientScopeType = "ExternalPartner"
 	// RecipientScopeTypeVExternalNonPartner undocumented
-	RecipientScopeTypeVExternalNonPartner RecipientScopeType = 8
+	RecipientScopeTypeVExternalNonPartner RecipientScopeType = "ExternalNonPartner"
 )
 
 // RecipientScopeTypePNone returns a pointer to RecipientScopeTypeVNone

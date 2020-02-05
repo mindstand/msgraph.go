@@ -3,19 +3,19 @@
 package msgraph
 
 // VpnIntegrityAlgorithmType undocumented
-type VpnIntegrityAlgorithmType int
+type VpnIntegrityAlgorithmType string
 
 const (
 	// VpnIntegrityAlgorithmTypeVSha2_256 undocumented
-	VpnIntegrityAlgorithmTypeVSha2_256 VpnIntegrityAlgorithmType = 0
+	VpnIntegrityAlgorithmTypeVSha2_256 VpnIntegrityAlgorithmType = "Sha2_256"
 	// VpnIntegrityAlgorithmTypeVSha1_96 undocumented
-	VpnIntegrityAlgorithmTypeVSha1_96 VpnIntegrityAlgorithmType = 1
+	VpnIntegrityAlgorithmTypeVSha1_96 VpnIntegrityAlgorithmType = "Sha1_96"
 	// VpnIntegrityAlgorithmTypeVSha1_160 undocumented
-	VpnIntegrityAlgorithmTypeVSha1_160 VpnIntegrityAlgorithmType = 2
+	VpnIntegrityAlgorithmTypeVSha1_160 VpnIntegrityAlgorithmType = "Sha1_160"
 	// VpnIntegrityAlgorithmTypeVSha2_384 undocumented
-	VpnIntegrityAlgorithmTypeVSha2_384 VpnIntegrityAlgorithmType = 3
+	VpnIntegrityAlgorithmTypeVSha2_384 VpnIntegrityAlgorithmType = "Sha2_384"
 	// VpnIntegrityAlgorithmTypeVSha2_512 undocumented
-	VpnIntegrityAlgorithmTypeVSha2_512 VpnIntegrityAlgorithmType = 4
+	VpnIntegrityAlgorithmTypeVSha2_512 VpnIntegrityAlgorithmType = "Sha2_512"
 )
 
 // VpnIntegrityAlgorithmTypePSha2_256 returns a pointer to VpnIntegrityAlgorithmTypeVSha2_256

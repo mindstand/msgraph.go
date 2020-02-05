@@ -3,17 +3,17 @@
 package msgraph
 
 // MacOSGatekeeperAppSources undocumented
-type MacOSGatekeeperAppSources int
+type MacOSGatekeeperAppSources string
 
 const (
 	// MacOSGatekeeperAppSourcesVNotConfigured undocumented
-	MacOSGatekeeperAppSourcesVNotConfigured MacOSGatekeeperAppSources = 0
+	MacOSGatekeeperAppSourcesVNotConfigured MacOSGatekeeperAppSources = "NotConfigured"
 	// MacOSGatekeeperAppSourcesVMacAppStore undocumented
-	MacOSGatekeeperAppSourcesVMacAppStore MacOSGatekeeperAppSources = 1
+	MacOSGatekeeperAppSourcesVMacAppStore MacOSGatekeeperAppSources = "MacAppStore"
 	// MacOSGatekeeperAppSourcesVMacAppStoreAndIdentifiedDevelopers undocumented
-	MacOSGatekeeperAppSourcesVMacAppStoreAndIdentifiedDevelopers MacOSGatekeeperAppSources = 2
+	MacOSGatekeeperAppSourcesVMacAppStoreAndIdentifiedDevelopers MacOSGatekeeperAppSources = "MacAppStoreAndIdentifiedDevelopers"
 	// MacOSGatekeeperAppSourcesVAnywhere undocumented
-	MacOSGatekeeperAppSourcesVAnywhere MacOSGatekeeperAppSources = 3
+	MacOSGatekeeperAppSourcesVAnywhere MacOSGatekeeperAppSources = "Anywhere"
 )
 
 // MacOSGatekeeperAppSourcesPNotConfigured returns a pointer to MacOSGatekeeperAppSourcesVNotConfigured

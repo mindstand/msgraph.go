@@ -3,23 +3,23 @@
 package msgraph
 
 // UserFlowType undocumented
-type UserFlowType int
+type UserFlowType string
 
 const (
 	// UserFlowTypeVSignUp undocumented
-	UserFlowTypeVSignUp UserFlowType = 1
+	UserFlowTypeVSignUp UserFlowType = "SignUp"
 	// UserFlowTypeVSignIn undocumented
-	UserFlowTypeVSignIn UserFlowType = 2
+	UserFlowTypeVSignIn UserFlowType = "SignIn"
 	// UserFlowTypeVSignUpOrSignIn undocumented
-	UserFlowTypeVSignUpOrSignIn UserFlowType = 3
+	UserFlowTypeVSignUpOrSignIn UserFlowType = "SignUpOrSignIn"
 	// UserFlowTypeVPasswordReset undocumented
-	UserFlowTypeVPasswordReset UserFlowType = 4
+	UserFlowTypeVPasswordReset UserFlowType = "PasswordReset"
 	// UserFlowTypeVProfileUpdate undocumented
-	UserFlowTypeVProfileUpdate UserFlowType = 5
+	UserFlowTypeVProfileUpdate UserFlowType = "ProfileUpdate"
 	// UserFlowTypeVResourceOwner undocumented
-	UserFlowTypeVResourceOwner UserFlowType = 6
+	UserFlowTypeVResourceOwner UserFlowType = "ResourceOwner"
 	// UserFlowTypeVUnknownFutureValue undocumented
-	UserFlowTypeVUnknownFutureValue UserFlowType = 7
+	UserFlowTypeVUnknownFutureValue UserFlowType = "UnknownFutureValue"
 )
 
 // UserFlowTypePSignUp returns a pointer to UserFlowTypeVSignUp

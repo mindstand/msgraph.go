@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsUpdateStatus undocumented
-type WindowsUpdateStatus int
+type WindowsUpdateStatus string
 
 const (
 	// WindowsUpdateStatusVUpToDate undocumented
-	WindowsUpdateStatusVUpToDate WindowsUpdateStatus = 0
+	WindowsUpdateStatusVUpToDate WindowsUpdateStatus = "UpToDate"
 	// WindowsUpdateStatusVPendingInstallation undocumented
-	WindowsUpdateStatusVPendingInstallation WindowsUpdateStatus = 1
+	WindowsUpdateStatusVPendingInstallation WindowsUpdateStatus = "PendingInstallation"
 	// WindowsUpdateStatusVPendingReboot undocumented
-	WindowsUpdateStatusVPendingReboot WindowsUpdateStatus = 2
+	WindowsUpdateStatusVPendingReboot WindowsUpdateStatus = "PendingReboot"
 	// WindowsUpdateStatusVFailed undocumented
-	WindowsUpdateStatusVFailed WindowsUpdateStatus = 3
+	WindowsUpdateStatusVFailed WindowsUpdateStatus = "Failed"
 )
 
 // WindowsUpdateStatusPUpToDate returns a pointer to WindowsUpdateStatusVUpToDate

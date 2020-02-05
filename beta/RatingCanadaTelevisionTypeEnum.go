@@ -3,25 +3,25 @@
 package msgraph
 
 // RatingCanadaTelevisionType undocumented
-type RatingCanadaTelevisionType int
+type RatingCanadaTelevisionType string
 
 const (
 	// RatingCanadaTelevisionTypeVAllAllowed undocumented
-	RatingCanadaTelevisionTypeVAllAllowed RatingCanadaTelevisionType = 0
+	RatingCanadaTelevisionTypeVAllAllowed RatingCanadaTelevisionType = "AllAllowed"
 	// RatingCanadaTelevisionTypeVAllBlocked undocumented
-	RatingCanadaTelevisionTypeVAllBlocked RatingCanadaTelevisionType = 1
+	RatingCanadaTelevisionTypeVAllBlocked RatingCanadaTelevisionType = "AllBlocked"
 	// RatingCanadaTelevisionTypeVChildren undocumented
-	RatingCanadaTelevisionTypeVChildren RatingCanadaTelevisionType = 2
+	RatingCanadaTelevisionTypeVChildren RatingCanadaTelevisionType = "Children"
 	// RatingCanadaTelevisionTypeVChildrenAbove8 undocumented
-	RatingCanadaTelevisionTypeVChildrenAbove8 RatingCanadaTelevisionType = 3
+	RatingCanadaTelevisionTypeVChildrenAbove8 RatingCanadaTelevisionType = "ChildrenAbove8"
 	// RatingCanadaTelevisionTypeVGeneral undocumented
-	RatingCanadaTelevisionTypeVGeneral RatingCanadaTelevisionType = 4
+	RatingCanadaTelevisionTypeVGeneral RatingCanadaTelevisionType = "General"
 	// RatingCanadaTelevisionTypeVParentalGuidance undocumented
-	RatingCanadaTelevisionTypeVParentalGuidance RatingCanadaTelevisionType = 5
+	RatingCanadaTelevisionTypeVParentalGuidance RatingCanadaTelevisionType = "ParentalGuidance"
 	// RatingCanadaTelevisionTypeVAgesAbove14 undocumented
-	RatingCanadaTelevisionTypeVAgesAbove14 RatingCanadaTelevisionType = 6
+	RatingCanadaTelevisionTypeVAgesAbove14 RatingCanadaTelevisionType = "AgesAbove14"
 	// RatingCanadaTelevisionTypeVAgesAbove18 undocumented
-	RatingCanadaTelevisionTypeVAgesAbove18 RatingCanadaTelevisionType = 7
+	RatingCanadaTelevisionTypeVAgesAbove18 RatingCanadaTelevisionType = "AgesAbove18"
 )
 
 // RatingCanadaTelevisionTypePAllAllowed returns a pointer to RatingCanadaTelevisionTypeVAllAllowed

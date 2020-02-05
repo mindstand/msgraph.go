@@ -3,17 +3,17 @@
 package msgraph
 
 // InternetExplorerMessageSetting undocumented
-type InternetExplorerMessageSetting int
+type InternetExplorerMessageSetting string
 
 const (
 	// InternetExplorerMessageSettingVNotConfigured undocumented
-	InternetExplorerMessageSettingVNotConfigured InternetExplorerMessageSetting = 0
+	InternetExplorerMessageSettingVNotConfigured InternetExplorerMessageSetting = "NotConfigured"
 	// InternetExplorerMessageSettingVDisabled undocumented
-	InternetExplorerMessageSettingVDisabled InternetExplorerMessageSetting = 1
+	InternetExplorerMessageSettingVDisabled InternetExplorerMessageSetting = "Disabled"
 	// InternetExplorerMessageSettingVEnabled undocumented
-	InternetExplorerMessageSettingVEnabled InternetExplorerMessageSetting = 2
+	InternetExplorerMessageSettingVEnabled InternetExplorerMessageSetting = "Enabled"
 	// InternetExplorerMessageSettingVKeepGoing undocumented
-	InternetExplorerMessageSettingVKeepGoing InternetExplorerMessageSetting = 3
+	InternetExplorerMessageSettingVKeepGoing InternetExplorerMessageSetting = "KeepGoing"
 )
 
 // InternetExplorerMessageSettingPNotConfigured returns a pointer to InternetExplorerMessageSettingVNotConfigured

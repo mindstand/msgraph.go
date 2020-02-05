@@ -3,15 +3,15 @@
 package msgraph
 
 // AndroidEapType undocumented
-type AndroidEapType int
+type AndroidEapType string
 
 const (
 	// AndroidEapTypeVEapTLS undocumented
-	AndroidEapTypeVEapTLS AndroidEapType = 13
+	AndroidEapTypeVEapTLS AndroidEapType = "EapTLS"
 	// AndroidEapTypeVEapTtls undocumented
-	AndroidEapTypeVEapTtls AndroidEapType = 21
+	AndroidEapTypeVEapTtls AndroidEapType = "EapTtls"
 	// AndroidEapTypeVPeap undocumented
-	AndroidEapTypeVPeap AndroidEapType = 25
+	AndroidEapTypeVPeap AndroidEapType = "Peap"
 )
 
 // AndroidEapTypePEapTLS returns a pointer to AndroidEapTypeVEapTLS

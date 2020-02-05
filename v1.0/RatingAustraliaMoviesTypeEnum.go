@@ -3,23 +3,23 @@
 package msgraph
 
 // RatingAustraliaMoviesType undocumented
-type RatingAustraliaMoviesType int
+type RatingAustraliaMoviesType string
 
 const (
 	// RatingAustraliaMoviesTypeVAllAllowed undocumented
-	RatingAustraliaMoviesTypeVAllAllowed RatingAustraliaMoviesType = 0
+	RatingAustraliaMoviesTypeVAllAllowed RatingAustraliaMoviesType = "AllAllowed"
 	// RatingAustraliaMoviesTypeVAllBlocked undocumented
-	RatingAustraliaMoviesTypeVAllBlocked RatingAustraliaMoviesType = 1
+	RatingAustraliaMoviesTypeVAllBlocked RatingAustraliaMoviesType = "AllBlocked"
 	// RatingAustraliaMoviesTypeVGeneral undocumented
-	RatingAustraliaMoviesTypeVGeneral RatingAustraliaMoviesType = 2
+	RatingAustraliaMoviesTypeVGeneral RatingAustraliaMoviesType = "General"
 	// RatingAustraliaMoviesTypeVParentalGuidance undocumented
-	RatingAustraliaMoviesTypeVParentalGuidance RatingAustraliaMoviesType = 3
+	RatingAustraliaMoviesTypeVParentalGuidance RatingAustraliaMoviesType = "ParentalGuidance"
 	// RatingAustraliaMoviesTypeVMature undocumented
-	RatingAustraliaMoviesTypeVMature RatingAustraliaMoviesType = 4
+	RatingAustraliaMoviesTypeVMature RatingAustraliaMoviesType = "Mature"
 	// RatingAustraliaMoviesTypeVAgesAbove15 undocumented
-	RatingAustraliaMoviesTypeVAgesAbove15 RatingAustraliaMoviesType = 5
+	RatingAustraliaMoviesTypeVAgesAbove15 RatingAustraliaMoviesType = "AgesAbove15"
 	// RatingAustraliaMoviesTypeVAgesAbove18 undocumented
-	RatingAustraliaMoviesTypeVAgesAbove18 RatingAustraliaMoviesType = 6
+	RatingAustraliaMoviesTypeVAgesAbove18 RatingAustraliaMoviesType = "AgesAbove18"
 )
 
 // RatingAustraliaMoviesTypePAllAllowed returns a pointer to RatingAustraliaMoviesTypeVAllAllowed

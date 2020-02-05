@@ -3,15 +3,15 @@
 package msgraph
 
 // AndroidPermissionActionType undocumented
-type AndroidPermissionActionType int
+type AndroidPermissionActionType string
 
 const (
 	// AndroidPermissionActionTypeVPrompt undocumented
-	AndroidPermissionActionTypeVPrompt AndroidPermissionActionType = 0
+	AndroidPermissionActionTypeVPrompt AndroidPermissionActionType = "Prompt"
 	// AndroidPermissionActionTypeVAutoGrant undocumented
-	AndroidPermissionActionTypeVAutoGrant AndroidPermissionActionType = 1
+	AndroidPermissionActionTypeVAutoGrant AndroidPermissionActionType = "AutoGrant"
 	// AndroidPermissionActionTypeVAutoDeny undocumented
-	AndroidPermissionActionTypeVAutoDeny AndroidPermissionActionType = 2
+	AndroidPermissionActionTypeVAutoDeny AndroidPermissionActionType = "AutoDeny"
 )
 
 // AndroidPermissionActionTypePPrompt returns a pointer to AndroidPermissionActionTypeVPrompt

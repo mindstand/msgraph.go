@@ -3,15 +3,15 @@
 package msgraph
 
 // MobileAppPublishingState undocumented
-type MobileAppPublishingState int
+type MobileAppPublishingState string
 
 const (
 	// MobileAppPublishingStateVNotPublished undocumented
-	MobileAppPublishingStateVNotPublished MobileAppPublishingState = 0
+	MobileAppPublishingStateVNotPublished MobileAppPublishingState = "NotPublished"
 	// MobileAppPublishingStateVProcessing undocumented
-	MobileAppPublishingStateVProcessing MobileAppPublishingState = 1
+	MobileAppPublishingStateVProcessing MobileAppPublishingState = "Processing"
 	// MobileAppPublishingStateVPublished undocumented
-	MobileAppPublishingStateVPublished MobileAppPublishingState = 2
+	MobileAppPublishingStateVPublished MobileAppPublishingState = "Published"
 )
 
 // MobileAppPublishingStatePNotPublished returns a pointer to MobileAppPublishingStateVNotPublished

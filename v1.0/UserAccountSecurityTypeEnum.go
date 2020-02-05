@@ -3,19 +3,19 @@
 package msgraph
 
 // UserAccountSecurityType undocumented
-type UserAccountSecurityType int
+type UserAccountSecurityType string
 
 const (
 	// UserAccountSecurityTypeVUnknown undocumented
-	UserAccountSecurityTypeVUnknown UserAccountSecurityType = 0
+	UserAccountSecurityTypeVUnknown UserAccountSecurityType = "Unknown"
 	// UserAccountSecurityTypeVStandard undocumented
-	UserAccountSecurityTypeVStandard UserAccountSecurityType = 1
+	UserAccountSecurityTypeVStandard UserAccountSecurityType = "Standard"
 	// UserAccountSecurityTypeVPower undocumented
-	UserAccountSecurityTypeVPower UserAccountSecurityType = 2
+	UserAccountSecurityTypeVPower UserAccountSecurityType = "Power"
 	// UserAccountSecurityTypeVAdministrator undocumented
-	UserAccountSecurityTypeVAdministrator UserAccountSecurityType = 3
+	UserAccountSecurityTypeVAdministrator UserAccountSecurityType = "Administrator"
 	// UserAccountSecurityTypeVUnknownFutureValue undocumented
-	UserAccountSecurityTypeVUnknownFutureValue UserAccountSecurityType = 127
+	UserAccountSecurityTypeVUnknownFutureValue UserAccountSecurityType = "UnknownFutureValue"
 )
 
 // UserAccountSecurityTypePUnknown returns a pointer to UserAccountSecurityTypeVUnknown

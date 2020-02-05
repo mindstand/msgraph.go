@@ -3,31 +3,31 @@
 package msgraph
 
 // ConditionalAccessConditions undocumented
-type ConditionalAccessConditions int
+type ConditionalAccessConditions string
 
 const (
 	// ConditionalAccessConditionsVNone undocumented
-	ConditionalAccessConditionsVNone ConditionalAccessConditions = 0
+	ConditionalAccessConditionsVNone ConditionalAccessConditions = "None"
 	// ConditionalAccessConditionsVApplication undocumented
-	ConditionalAccessConditionsVApplication ConditionalAccessConditions = 1
+	ConditionalAccessConditionsVApplication ConditionalAccessConditions = "Application"
 	// ConditionalAccessConditionsVUsers undocumented
-	ConditionalAccessConditionsVUsers ConditionalAccessConditions = 2
+	ConditionalAccessConditionsVUsers ConditionalAccessConditions = "Users"
 	// ConditionalAccessConditionsVDevicePlatform undocumented
-	ConditionalAccessConditionsVDevicePlatform ConditionalAccessConditions = 4
+	ConditionalAccessConditionsVDevicePlatform ConditionalAccessConditions = "DevicePlatform"
 	// ConditionalAccessConditionsVLocation undocumented
-	ConditionalAccessConditionsVLocation ConditionalAccessConditions = 8
+	ConditionalAccessConditionsVLocation ConditionalAccessConditions = "Location"
 	// ConditionalAccessConditionsVClientType undocumented
-	ConditionalAccessConditionsVClientType ConditionalAccessConditions = 16
+	ConditionalAccessConditionsVClientType ConditionalAccessConditions = "ClientType"
 	// ConditionalAccessConditionsVSignInRisk undocumented
-	ConditionalAccessConditionsVSignInRisk ConditionalAccessConditions = 32
+	ConditionalAccessConditionsVSignInRisk ConditionalAccessConditions = "SignInRisk"
 	// ConditionalAccessConditionsVUserRisk undocumented
-	ConditionalAccessConditionsVUserRisk ConditionalAccessConditions = 64
+	ConditionalAccessConditionsVUserRisk ConditionalAccessConditions = "UserRisk"
 	// ConditionalAccessConditionsVTime undocumented
-	ConditionalAccessConditionsVTime ConditionalAccessConditions = 128
+	ConditionalAccessConditionsVTime ConditionalAccessConditions = "Time"
 	// ConditionalAccessConditionsVDeviceState undocumented
-	ConditionalAccessConditionsVDeviceState ConditionalAccessConditions = 256
+	ConditionalAccessConditionsVDeviceState ConditionalAccessConditions = "DeviceState"
 	// ConditionalAccessConditionsVClient undocumented
-	ConditionalAccessConditionsVClient ConditionalAccessConditions = 512
+	ConditionalAccessConditionsVClient ConditionalAccessConditions = "Client"
 )
 
 // ConditionalAccessConditionsPNone returns a pointer to ConditionalAccessConditionsVNone

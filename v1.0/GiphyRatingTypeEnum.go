@@ -3,15 +3,15 @@
 package msgraph
 
 // GiphyRatingType undocumented
-type GiphyRatingType int
+type GiphyRatingType string
 
 const (
 	// GiphyRatingTypeVModerate undocumented
-	GiphyRatingTypeVModerate GiphyRatingType = 0
+	GiphyRatingTypeVModerate GiphyRatingType = "Moderate"
 	// GiphyRatingTypeVStrict undocumented
-	GiphyRatingTypeVStrict GiphyRatingType = 1
+	GiphyRatingTypeVStrict GiphyRatingType = "Strict"
 	// GiphyRatingTypeVUnknownFutureValue undocumented
-	GiphyRatingTypeVUnknownFutureValue GiphyRatingType = 2
+	GiphyRatingTypeVUnknownFutureValue GiphyRatingType = "UnknownFutureValue"
 )
 
 // GiphyRatingTypePModerate returns a pointer to GiphyRatingTypeVModerate

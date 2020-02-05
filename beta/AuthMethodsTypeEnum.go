@@ -3,35 +3,35 @@
 package msgraph
 
 // AuthMethodsType undocumented
-type AuthMethodsType int
+type AuthMethodsType string
 
 const (
 	// AuthMethodsTypeVEmail undocumented
-	AuthMethodsTypeVEmail AuthMethodsType = 0
+	AuthMethodsTypeVEmail AuthMethodsType = "Email"
 	// AuthMethodsTypeVMobileSMS undocumented
-	AuthMethodsTypeVMobileSMS AuthMethodsType = 1
+	AuthMethodsTypeVMobileSMS AuthMethodsType = "MobileSMS"
 	// AuthMethodsTypeVMobilePhone undocumented
-	AuthMethodsTypeVMobilePhone AuthMethodsType = 2
+	AuthMethodsTypeVMobilePhone AuthMethodsType = "MobilePhone"
 	// AuthMethodsTypeVOfficePhone undocumented
-	AuthMethodsTypeVOfficePhone AuthMethodsType = 3
+	AuthMethodsTypeVOfficePhone AuthMethodsType = "OfficePhone"
 	// AuthMethodsTypeVSecurityQuestion undocumented
-	AuthMethodsTypeVSecurityQuestion AuthMethodsType = 4
+	AuthMethodsTypeVSecurityQuestion AuthMethodsType = "SecurityQuestion"
 	// AuthMethodsTypeVAppNotification undocumented
-	AuthMethodsTypeVAppNotification AuthMethodsType = 5
+	AuthMethodsTypeVAppNotification AuthMethodsType = "AppNotification"
 	// AuthMethodsTypeVAppNotificationCode undocumented
-	AuthMethodsTypeVAppNotificationCode AuthMethodsType = 6
+	AuthMethodsTypeVAppNotificationCode AuthMethodsType = "AppNotificationCode"
 	// AuthMethodsTypeVAppNotificationAndCode undocumented
-	AuthMethodsTypeVAppNotificationAndCode AuthMethodsType = 7
+	AuthMethodsTypeVAppNotificationAndCode AuthMethodsType = "AppNotificationAndCode"
 	// AuthMethodsTypeVAppPassword undocumented
-	AuthMethodsTypeVAppPassword AuthMethodsType = 8
+	AuthMethodsTypeVAppPassword AuthMethodsType = "AppPassword"
 	// AuthMethodsTypeVFido undocumented
-	AuthMethodsTypeVFido AuthMethodsType = 9
+	AuthMethodsTypeVFido AuthMethodsType = "Fido"
 	// AuthMethodsTypeVAlternateMobilePhone undocumented
-	AuthMethodsTypeVAlternateMobilePhone AuthMethodsType = 10
+	AuthMethodsTypeVAlternateMobilePhone AuthMethodsType = "AlternateMobilePhone"
 	// AuthMethodsTypeVMobilePhoneAndSMS undocumented
-	AuthMethodsTypeVMobilePhoneAndSMS AuthMethodsType = 11
+	AuthMethodsTypeVMobilePhoneAndSMS AuthMethodsType = "MobilePhoneAndSMS"
 	// AuthMethodsTypeVUnknownFutureValue undocumented
-	AuthMethodsTypeVUnknownFutureValue AuthMethodsType = 12
+	AuthMethodsTypeVUnknownFutureValue AuthMethodsType = "UnknownFutureValue"
 )
 
 // AuthMethodsTypePEmail returns a pointer to AuthMethodsTypeVEmail

@@ -3,11 +3,11 @@
 package msgraph
 
 // UnaryManagementConditionExpressionOperatorType undocumented
-type UnaryManagementConditionExpressionOperatorType int
+type UnaryManagementConditionExpressionOperatorType string
 
 const (
 	// UnaryManagementConditionExpressionOperatorTypeVNot undocumented
-	UnaryManagementConditionExpressionOperatorTypeVNot UnaryManagementConditionExpressionOperatorType = 0
+	UnaryManagementConditionExpressionOperatorTypeVNot UnaryManagementConditionExpressionOperatorType = "Not"
 )
 
 // UnaryManagementConditionExpressionOperatorTypePNot returns a pointer to UnaryManagementConditionExpressionOperatorTypeVNot

@@ -3,25 +3,25 @@
 package msgraph
 
 // BookingPriceType undocumented
-type BookingPriceType int
+type BookingPriceType string
 
 const (
 	// BookingPriceTypeVUndefined undocumented
-	BookingPriceTypeVUndefined BookingPriceType = 0
+	BookingPriceTypeVUndefined BookingPriceType = "Undefined"
 	// BookingPriceTypeVFixedPrice undocumented
-	BookingPriceTypeVFixedPrice BookingPriceType = 1
+	BookingPriceTypeVFixedPrice BookingPriceType = "FixedPrice"
 	// BookingPriceTypeVStartingAt undocumented
-	BookingPriceTypeVStartingAt BookingPriceType = 2
+	BookingPriceTypeVStartingAt BookingPriceType = "StartingAt"
 	// BookingPriceTypeVHourly undocumented
-	BookingPriceTypeVHourly BookingPriceType = 3
+	BookingPriceTypeVHourly BookingPriceType = "Hourly"
 	// BookingPriceTypeVFree undocumented
-	BookingPriceTypeVFree BookingPriceType = 4
+	BookingPriceTypeVFree BookingPriceType = "Free"
 	// BookingPriceTypeVPriceVaries undocumented
-	BookingPriceTypeVPriceVaries BookingPriceType = 5
+	BookingPriceTypeVPriceVaries BookingPriceType = "PriceVaries"
 	// BookingPriceTypeVCallUs undocumented
-	BookingPriceTypeVCallUs BookingPriceType = 6
+	BookingPriceTypeVCallUs BookingPriceType = "CallUs"
 	// BookingPriceTypeVNotSet undocumented
-	BookingPriceTypeVNotSet BookingPriceType = 7
+	BookingPriceTypeVNotSet BookingPriceType = "NotSet"
 )
 
 // BookingPriceTypePUndefined returns a pointer to BookingPriceTypeVUndefined

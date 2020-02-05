@@ -3,19 +3,19 @@
 package msgraph
 
 // DeviceManagementComparisonResult undocumented
-type DeviceManagementComparisonResult int
+type DeviceManagementComparisonResult string
 
 const (
 	// DeviceManagementComparisonResultVUnknown undocumented
-	DeviceManagementComparisonResultVUnknown DeviceManagementComparisonResult = 0
+	DeviceManagementComparisonResultVUnknown DeviceManagementComparisonResult = "Unknown"
 	// DeviceManagementComparisonResultVEqual undocumented
-	DeviceManagementComparisonResultVEqual DeviceManagementComparisonResult = 1
+	DeviceManagementComparisonResultVEqual DeviceManagementComparisonResult = "Equal"
 	// DeviceManagementComparisonResultVNotEqual undocumented
-	DeviceManagementComparisonResultVNotEqual DeviceManagementComparisonResult = 2
+	DeviceManagementComparisonResultVNotEqual DeviceManagementComparisonResult = "NotEqual"
 	// DeviceManagementComparisonResultVAdded undocumented
-	DeviceManagementComparisonResultVAdded DeviceManagementComparisonResult = 3
+	DeviceManagementComparisonResultVAdded DeviceManagementComparisonResult = "Added"
 	// DeviceManagementComparisonResultVRemoved undocumented
-	DeviceManagementComparisonResultVRemoved DeviceManagementComparisonResult = 4
+	DeviceManagementComparisonResultVRemoved DeviceManagementComparisonResult = "Removed"
 )
 
 // DeviceManagementComparisonResultPUnknown returns a pointer to DeviceManagementComparisonResultVUnknown

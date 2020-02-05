@@ -3,15 +3,15 @@
 package msgraph
 
 // ChatMessageImportance undocumented
-type ChatMessageImportance int
+type ChatMessageImportance string
 
 const (
 	// ChatMessageImportanceVNormal undocumented
-	ChatMessageImportanceVNormal ChatMessageImportance = 0
+	ChatMessageImportanceVNormal ChatMessageImportance = "Normal"
 	// ChatMessageImportanceVHigh undocumented
-	ChatMessageImportanceVHigh ChatMessageImportance = 1
+	ChatMessageImportanceVHigh ChatMessageImportance = "High"
 	// ChatMessageImportanceVUrgent undocumented
-	ChatMessageImportanceVUrgent ChatMessageImportance = 2
+	ChatMessageImportanceVUrgent ChatMessageImportance = "Urgent"
 )
 
 // ChatMessageImportancePNormal returns a pointer to ChatMessageImportanceVNormal

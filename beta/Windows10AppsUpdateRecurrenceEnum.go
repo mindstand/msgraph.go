@@ -3,17 +3,17 @@
 package msgraph
 
 // Windows10AppsUpdateRecurrence undocumented
-type Windows10AppsUpdateRecurrence int
+type Windows10AppsUpdateRecurrence string
 
 const (
 	// Windows10AppsUpdateRecurrenceVNone undocumented
-	Windows10AppsUpdateRecurrenceVNone Windows10AppsUpdateRecurrence = 0
+	Windows10AppsUpdateRecurrenceVNone Windows10AppsUpdateRecurrence = "None"
 	// Windows10AppsUpdateRecurrenceVDaily undocumented
-	Windows10AppsUpdateRecurrenceVDaily Windows10AppsUpdateRecurrence = 1
+	Windows10AppsUpdateRecurrenceVDaily Windows10AppsUpdateRecurrence = "Daily"
 	// Windows10AppsUpdateRecurrenceVWeekly undocumented
-	Windows10AppsUpdateRecurrenceVWeekly Windows10AppsUpdateRecurrence = 2
+	Windows10AppsUpdateRecurrenceVWeekly Windows10AppsUpdateRecurrence = "Weekly"
 	// Windows10AppsUpdateRecurrenceVMonthly undocumented
-	Windows10AppsUpdateRecurrenceVMonthly Windows10AppsUpdateRecurrence = 3
+	Windows10AppsUpdateRecurrenceVMonthly Windows10AppsUpdateRecurrence = "Monthly"
 )
 
 // Windows10AppsUpdateRecurrencePNone returns a pointer to Windows10AppsUpdateRecurrenceVNone

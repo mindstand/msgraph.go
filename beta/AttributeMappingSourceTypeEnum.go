@@ -3,15 +3,15 @@
 package msgraph
 
 // AttributeMappingSourceType undocumented
-type AttributeMappingSourceType int
+type AttributeMappingSourceType string
 
 const (
 	// AttributeMappingSourceTypeVAttribute undocumented
-	AttributeMappingSourceTypeVAttribute AttributeMappingSourceType = 0
+	AttributeMappingSourceTypeVAttribute AttributeMappingSourceType = "Attribute"
 	// AttributeMappingSourceTypeVConstant undocumented
-	AttributeMappingSourceTypeVConstant AttributeMappingSourceType = 1
+	AttributeMappingSourceTypeVConstant AttributeMappingSourceType = "Constant"
 	// AttributeMappingSourceTypeVFunction undocumented
-	AttributeMappingSourceTypeVFunction AttributeMappingSourceType = 2
+	AttributeMappingSourceTypeVFunction AttributeMappingSourceType = "Function"
 )
 
 // AttributeMappingSourceTypePAttribute returns a pointer to AttributeMappingSourceTypeVAttribute

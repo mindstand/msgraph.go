@@ -3,15 +3,15 @@
 package msgraph
 
 // ManagedDeviceOwnerType undocumented
-type ManagedDeviceOwnerType int
+type ManagedDeviceOwnerType string
 
 const (
 	// ManagedDeviceOwnerTypeVUnknown undocumented
-	ManagedDeviceOwnerTypeVUnknown ManagedDeviceOwnerType = 0
+	ManagedDeviceOwnerTypeVUnknown ManagedDeviceOwnerType = "Unknown"
 	// ManagedDeviceOwnerTypeVCompany undocumented
-	ManagedDeviceOwnerTypeVCompany ManagedDeviceOwnerType = 1
+	ManagedDeviceOwnerTypeVCompany ManagedDeviceOwnerType = "Company"
 	// ManagedDeviceOwnerTypeVPersonal undocumented
-	ManagedDeviceOwnerTypeVPersonal ManagedDeviceOwnerType = 2
+	ManagedDeviceOwnerTypeVPersonal ManagedDeviceOwnerType = "Personal"
 )
 
 // ManagedDeviceOwnerTypePUnknown returns a pointer to ManagedDeviceOwnerTypeVUnknown

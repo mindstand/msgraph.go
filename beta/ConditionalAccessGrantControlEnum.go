@@ -3,21 +3,21 @@
 package msgraph
 
 // ConditionalAccessGrantControl undocumented
-type ConditionalAccessGrantControl int
+type ConditionalAccessGrantControl string
 
 const (
 	// ConditionalAccessGrantControlVBlock undocumented
-	ConditionalAccessGrantControlVBlock ConditionalAccessGrantControl = 0
+	ConditionalAccessGrantControlVBlock ConditionalAccessGrantControl = "Block"
 	// ConditionalAccessGrantControlVMFA undocumented
-	ConditionalAccessGrantControlVMFA ConditionalAccessGrantControl = 1
+	ConditionalAccessGrantControlVMFA ConditionalAccessGrantControl = "MFA"
 	// ConditionalAccessGrantControlVCompliantDevice undocumented
-	ConditionalAccessGrantControlVCompliantDevice ConditionalAccessGrantControl = 2
+	ConditionalAccessGrantControlVCompliantDevice ConditionalAccessGrantControl = "CompliantDevice"
 	// ConditionalAccessGrantControlVDomainJoinedDevice undocumented
-	ConditionalAccessGrantControlVDomainJoinedDevice ConditionalAccessGrantControl = 3
+	ConditionalAccessGrantControlVDomainJoinedDevice ConditionalAccessGrantControl = "DomainJoinedDevice"
 	// ConditionalAccessGrantControlVApprovedApplication undocumented
-	ConditionalAccessGrantControlVApprovedApplication ConditionalAccessGrantControl = 4
+	ConditionalAccessGrantControlVApprovedApplication ConditionalAccessGrantControl = "ApprovedApplication"
 	// ConditionalAccessGrantControlVCompliantApplication undocumented
-	ConditionalAccessGrantControlVCompliantApplication ConditionalAccessGrantControl = 5
+	ConditionalAccessGrantControlVCompliantApplication ConditionalAccessGrantControl = "CompliantApplication"
 )
 
 // ConditionalAccessGrantControlPBlock returns a pointer to ConditionalAccessGrantControlVBlock

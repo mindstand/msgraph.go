@@ -3,19 +3,19 @@
 package msgraph
 
 // SynchronizationStatusCode undocumented
-type SynchronizationStatusCode int
+type SynchronizationStatusCode string
 
 const (
 	// SynchronizationStatusCodeVNotConfigured undocumented
-	SynchronizationStatusCodeVNotConfigured SynchronizationStatusCode = 0
+	SynchronizationStatusCodeVNotConfigured SynchronizationStatusCode = "NotConfigured"
 	// SynchronizationStatusCodeVNotRun undocumented
-	SynchronizationStatusCodeVNotRun SynchronizationStatusCode = 1
+	SynchronizationStatusCodeVNotRun SynchronizationStatusCode = "NotRun"
 	// SynchronizationStatusCodeVActive undocumented
-	SynchronizationStatusCodeVActive SynchronizationStatusCode = 2
+	SynchronizationStatusCodeVActive SynchronizationStatusCode = "Active"
 	// SynchronizationStatusCodeVPaused undocumented
-	SynchronizationStatusCodeVPaused SynchronizationStatusCode = 3
+	SynchronizationStatusCodeVPaused SynchronizationStatusCode = "Paused"
 	// SynchronizationStatusCodeVQuarantine undocumented
-	SynchronizationStatusCodeVQuarantine SynchronizationStatusCode = 4
+	SynchronizationStatusCodeVQuarantine SynchronizationStatusCode = "Quarantine"
 )
 
 // SynchronizationStatusCodePNotConfigured returns a pointer to SynchronizationStatusCodeVNotConfigured

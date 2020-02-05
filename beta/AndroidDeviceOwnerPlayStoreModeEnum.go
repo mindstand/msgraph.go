@@ -3,15 +3,15 @@
 package msgraph
 
 // AndroidDeviceOwnerPlayStoreMode undocumented
-type AndroidDeviceOwnerPlayStoreMode int
+type AndroidDeviceOwnerPlayStoreMode string
 
 const (
 	// AndroidDeviceOwnerPlayStoreModeVNotConfigured undocumented
-	AndroidDeviceOwnerPlayStoreModeVNotConfigured AndroidDeviceOwnerPlayStoreMode = 0
+	AndroidDeviceOwnerPlayStoreModeVNotConfigured AndroidDeviceOwnerPlayStoreMode = "NotConfigured"
 	// AndroidDeviceOwnerPlayStoreModeVAllowList undocumented
-	AndroidDeviceOwnerPlayStoreModeVAllowList AndroidDeviceOwnerPlayStoreMode = 1
+	AndroidDeviceOwnerPlayStoreModeVAllowList AndroidDeviceOwnerPlayStoreMode = "AllowList"
 	// AndroidDeviceOwnerPlayStoreModeVBlockList undocumented
-	AndroidDeviceOwnerPlayStoreModeVBlockList AndroidDeviceOwnerPlayStoreMode = 2
+	AndroidDeviceOwnerPlayStoreModeVBlockList AndroidDeviceOwnerPlayStoreMode = "BlockList"
 )
 
 // AndroidDeviceOwnerPlayStoreModePNotConfigured returns a pointer to AndroidDeviceOwnerPlayStoreModeVNotConfigured

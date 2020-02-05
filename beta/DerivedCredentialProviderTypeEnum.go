@@ -3,19 +3,19 @@
 package msgraph
 
 // DerivedCredentialProviderType undocumented
-type DerivedCredentialProviderType int
+type DerivedCredentialProviderType string
 
 const (
 	// DerivedCredentialProviderTypeVNotConfigured undocumented
-	DerivedCredentialProviderTypeVNotConfigured DerivedCredentialProviderType = 0
+	DerivedCredentialProviderTypeVNotConfigured DerivedCredentialProviderType = "NotConfigured"
 	// DerivedCredentialProviderTypeVEntrustDataCard undocumented
-	DerivedCredentialProviderTypeVEntrustDataCard DerivedCredentialProviderType = 1
+	DerivedCredentialProviderTypeVEntrustDataCard DerivedCredentialProviderType = "EntrustDataCard"
 	// DerivedCredentialProviderTypeVPurebred undocumented
-	DerivedCredentialProviderTypeVPurebred DerivedCredentialProviderType = 2
+	DerivedCredentialProviderTypeVPurebred DerivedCredentialProviderType = "Purebred"
 	// DerivedCredentialProviderTypeVXTec undocumented
-	DerivedCredentialProviderTypeVXTec DerivedCredentialProviderType = 3
+	DerivedCredentialProviderTypeVXTec DerivedCredentialProviderType = "XTec"
 	// DerivedCredentialProviderTypeVIntercede undocumented
-	DerivedCredentialProviderTypeVIntercede DerivedCredentialProviderType = 4
+	DerivedCredentialProviderTypeVIntercede DerivedCredentialProviderType = "Intercede"
 )
 
 // DerivedCredentialProviderTypePNotConfigured returns a pointer to DerivedCredentialProviderTypeVNotConfigured

@@ -3,17 +3,17 @@
 package msgraph
 
 // InitiatorType undocumented
-type InitiatorType int
+type InitiatorType string
 
 const (
 	// InitiatorTypeVUser undocumented
-	InitiatorTypeVUser InitiatorType = 0
+	InitiatorTypeVUser InitiatorType = "User"
 	// InitiatorTypeVApp undocumented
-	InitiatorTypeVApp InitiatorType = 1
+	InitiatorTypeVApp InitiatorType = "App"
 	// InitiatorTypeVSystem undocumented
-	InitiatorTypeVSystem InitiatorType = 2
+	InitiatorTypeVSystem InitiatorType = "System"
 	// InitiatorTypeVUnknownFutureValue undocumented
-	InitiatorTypeVUnknownFutureValue InitiatorType = 3
+	InitiatorTypeVUnknownFutureValue InitiatorType = "UnknownFutureValue"
 )
 
 // InitiatorTypePUser returns a pointer to InitiatorTypeVUser

@@ -3,13 +3,13 @@
 package msgraph
 
 // CertificateStatus undocumented
-type CertificateStatus int
+type CertificateStatus string
 
 const (
 	// CertificateStatusVNotProvisioned undocumented
-	CertificateStatusVNotProvisioned CertificateStatus = 0
+	CertificateStatusVNotProvisioned CertificateStatus = "NotProvisioned"
 	// CertificateStatusVProvisioned undocumented
-	CertificateStatusVProvisioned CertificateStatus = 1
+	CertificateStatusVProvisioned CertificateStatus = "Provisioned"
 )
 
 // CertificateStatusPNotProvisioned returns a pointer to CertificateStatusVNotProvisioned

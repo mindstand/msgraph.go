@@ -3,17 +3,17 @@
 package msgraph
 
 // ManagedAppFlaggedReason undocumented
-type ManagedAppFlaggedReason int
+type ManagedAppFlaggedReason string
 
 const (
 	// ManagedAppFlaggedReasonVNone undocumented
-	ManagedAppFlaggedReasonVNone ManagedAppFlaggedReason = 0
+	ManagedAppFlaggedReasonVNone ManagedAppFlaggedReason = "None"
 	// ManagedAppFlaggedReasonVRootedDevice undocumented
-	ManagedAppFlaggedReasonVRootedDevice ManagedAppFlaggedReason = 1
+	ManagedAppFlaggedReasonVRootedDevice ManagedAppFlaggedReason = "RootedDevice"
 	// ManagedAppFlaggedReasonVAndroidBootloaderUnlocked undocumented
-	ManagedAppFlaggedReasonVAndroidBootloaderUnlocked ManagedAppFlaggedReason = 2
+	ManagedAppFlaggedReasonVAndroidBootloaderUnlocked ManagedAppFlaggedReason = "AndroidBootloaderUnlocked"
 	// ManagedAppFlaggedReasonVAndroidFactoryRomModified undocumented
-	ManagedAppFlaggedReasonVAndroidFactoryRomModified ManagedAppFlaggedReason = 3
+	ManagedAppFlaggedReasonVAndroidFactoryRomModified ManagedAppFlaggedReason = "AndroidFactoryRomModified"
 )
 
 // ManagedAppFlaggedReasonPNone returns a pointer to ManagedAppFlaggedReasonVNone

@@ -3,35 +3,35 @@
 package msgraph
 
 // RegistryValueType undocumented
-type RegistryValueType int
+type RegistryValueType string
 
 const (
 	// RegistryValueTypeVUnknown undocumented
-	RegistryValueTypeVUnknown RegistryValueType = 0
+	RegistryValueTypeVUnknown RegistryValueType = "Unknown"
 	// RegistryValueTypeVBinary undocumented
-	RegistryValueTypeVBinary RegistryValueType = 1
+	RegistryValueTypeVBinary RegistryValueType = "Binary"
 	// RegistryValueTypeVDword undocumented
-	RegistryValueTypeVDword RegistryValueType = 2
+	RegistryValueTypeVDword RegistryValueType = "Dword"
 	// RegistryValueTypeVDwordLittleEndian undocumented
-	RegistryValueTypeVDwordLittleEndian RegistryValueType = 3
+	RegistryValueTypeVDwordLittleEndian RegistryValueType = "DwordLittleEndian"
 	// RegistryValueTypeVDwordBigEndian undocumented
-	RegistryValueTypeVDwordBigEndian RegistryValueType = 4
+	RegistryValueTypeVDwordBigEndian RegistryValueType = "DwordBigEndian"
 	// RegistryValueTypeVExpandSz undocumented
-	RegistryValueTypeVExpandSz RegistryValueType = 5
+	RegistryValueTypeVExpandSz RegistryValueType = "ExpandSz"
 	// RegistryValueTypeVLink undocumented
-	RegistryValueTypeVLink RegistryValueType = 6
+	RegistryValueTypeVLink RegistryValueType = "Link"
 	// RegistryValueTypeVMultiSz undocumented
-	RegistryValueTypeVMultiSz RegistryValueType = 7
+	RegistryValueTypeVMultiSz RegistryValueType = "MultiSz"
 	// RegistryValueTypeVNone undocumented
-	RegistryValueTypeVNone RegistryValueType = 8
+	RegistryValueTypeVNone RegistryValueType = "None"
 	// RegistryValueTypeVQword undocumented
-	RegistryValueTypeVQword RegistryValueType = 9
+	RegistryValueTypeVQword RegistryValueType = "Qword"
 	// RegistryValueTypeVQwordlittleEndian undocumented
-	RegistryValueTypeVQwordlittleEndian RegistryValueType = 10
+	RegistryValueTypeVQwordlittleEndian RegistryValueType = "QwordlittleEndian"
 	// RegistryValueTypeVSz undocumented
-	RegistryValueTypeVSz RegistryValueType = 11
+	RegistryValueTypeVSz RegistryValueType = "Sz"
 	// RegistryValueTypeVUnknownFutureValue undocumented
-	RegistryValueTypeVUnknownFutureValue RegistryValueType = 127
+	RegistryValueTypeVUnknownFutureValue RegistryValueType = "UnknownFutureValue"
 )
 
 // RegistryValueTypePUnknown returns a pointer to RegistryValueTypeVUnknown

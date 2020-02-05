@@ -3,19 +3,19 @@
 package msgraph
 
 // ApprovalState undocumented
-type ApprovalState int
+type ApprovalState string
 
 const (
 	// ApprovalStateVPending undocumented
-	ApprovalStateVPending ApprovalState = 0
+	ApprovalStateVPending ApprovalState = "Pending"
 	// ApprovalStateVApproved undocumented
-	ApprovalStateVApproved ApprovalState = 1
+	ApprovalStateVApproved ApprovalState = "Approved"
 	// ApprovalStateVDenied undocumented
-	ApprovalStateVDenied ApprovalState = 2
+	ApprovalStateVDenied ApprovalState = "Denied"
 	// ApprovalStateVAborted undocumented
-	ApprovalStateVAborted ApprovalState = 3
+	ApprovalStateVAborted ApprovalState = "Aborted"
 	// ApprovalStateVCanceled undocumented
-	ApprovalStateVCanceled ApprovalState = 4
+	ApprovalStateVCanceled ApprovalState = "Canceled"
 )
 
 // ApprovalStatePPending returns a pointer to ApprovalStateVPending

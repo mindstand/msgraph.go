@@ -3,15 +3,15 @@
 package msgraph
 
 // GroupPolicySettingType undocumented
-type GroupPolicySettingType int
+type GroupPolicySettingType string
 
 const (
 	// GroupPolicySettingTypeVUnknown undocumented
-	GroupPolicySettingTypeVUnknown GroupPolicySettingType = 0
+	GroupPolicySettingTypeVUnknown GroupPolicySettingType = "Unknown"
 	// GroupPolicySettingTypeVPolicy undocumented
-	GroupPolicySettingTypeVPolicy GroupPolicySettingType = 1
+	GroupPolicySettingTypeVPolicy GroupPolicySettingType = "Policy"
 	// GroupPolicySettingTypeVAccount undocumented
-	GroupPolicySettingTypeVAccount GroupPolicySettingType = 2
+	GroupPolicySettingTypeVAccount GroupPolicySettingType = "Account"
 )
 
 // GroupPolicySettingTypePUnknown returns a pointer to GroupPolicySettingTypeVUnknown

@@ -3,15 +3,15 @@
 package msgraph
 
 // Windows10VpnProfileTarget undocumented
-type Windows10VpnProfileTarget int
+type Windows10VpnProfileTarget string
 
 const (
 	// Windows10VpnProfileTargetVUser undocumented
-	Windows10VpnProfileTargetVUser Windows10VpnProfileTarget = 0
+	Windows10VpnProfileTargetVUser Windows10VpnProfileTarget = "User"
 	// Windows10VpnProfileTargetVDevice undocumented
-	Windows10VpnProfileTargetVDevice Windows10VpnProfileTarget = 1
+	Windows10VpnProfileTargetVDevice Windows10VpnProfileTarget = "Device"
 	// Windows10VpnProfileTargetVAutoPilotDevice undocumented
-	Windows10VpnProfileTargetVAutoPilotDevice Windows10VpnProfileTarget = 2
+	Windows10VpnProfileTargetVAutoPilotDevice Windows10VpnProfileTarget = "AutoPilotDevice"
 )
 
 // Windows10VpnProfileTargetPUser returns a pointer to Windows10VpnProfileTargetVUser

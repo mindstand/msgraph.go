@@ -3,25 +3,25 @@
 package msgraph
 
 // DeviceComplianceActionType undocumented
-type DeviceComplianceActionType int
+type DeviceComplianceActionType string
 
 const (
 	// DeviceComplianceActionTypeVNoAction undocumented
-	DeviceComplianceActionTypeVNoAction DeviceComplianceActionType = 0
+	DeviceComplianceActionTypeVNoAction DeviceComplianceActionType = "NoAction"
 	// DeviceComplianceActionTypeVNotification undocumented
-	DeviceComplianceActionTypeVNotification DeviceComplianceActionType = 1
+	DeviceComplianceActionTypeVNotification DeviceComplianceActionType = "Notification"
 	// DeviceComplianceActionTypeVBlock undocumented
-	DeviceComplianceActionTypeVBlock DeviceComplianceActionType = 2
+	DeviceComplianceActionTypeVBlock DeviceComplianceActionType = "Block"
 	// DeviceComplianceActionTypeVRetire undocumented
-	DeviceComplianceActionTypeVRetire DeviceComplianceActionType = 3
+	DeviceComplianceActionTypeVRetire DeviceComplianceActionType = "Retire"
 	// DeviceComplianceActionTypeVWipe undocumented
-	DeviceComplianceActionTypeVWipe DeviceComplianceActionType = 4
+	DeviceComplianceActionTypeVWipe DeviceComplianceActionType = "Wipe"
 	// DeviceComplianceActionTypeVRemoveResourceAccessProfiles undocumented
-	DeviceComplianceActionTypeVRemoveResourceAccessProfiles DeviceComplianceActionType = 5
+	DeviceComplianceActionTypeVRemoveResourceAccessProfiles DeviceComplianceActionType = "RemoveResourceAccessProfiles"
 	// DeviceComplianceActionTypeVPushNotification undocumented
-	DeviceComplianceActionTypeVPushNotification DeviceComplianceActionType = 9
+	DeviceComplianceActionTypeVPushNotification DeviceComplianceActionType = "PushNotification"
 	// DeviceComplianceActionTypeVRemoteLock undocumented
-	DeviceComplianceActionTypeVRemoteLock DeviceComplianceActionType = 10
+	DeviceComplianceActionTypeVRemoteLock DeviceComplianceActionType = "RemoteLock"
 )
 
 // DeviceComplianceActionTypePNoAction returns a pointer to DeviceComplianceActionTypeVNoAction

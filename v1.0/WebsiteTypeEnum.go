@@ -3,19 +3,19 @@
 package msgraph
 
 // WebsiteType undocumented
-type WebsiteType int
+type WebsiteType string
 
 const (
 	// WebsiteTypeVOther undocumented
-	WebsiteTypeVOther WebsiteType = 0
+	WebsiteTypeVOther WebsiteType = "Other"
 	// WebsiteTypeVHome undocumented
-	WebsiteTypeVHome WebsiteType = 1
+	WebsiteTypeVHome WebsiteType = "Home"
 	// WebsiteTypeVWork undocumented
-	WebsiteTypeVWork WebsiteType = 2
+	WebsiteTypeVWork WebsiteType = "Work"
 	// WebsiteTypeVBlog undocumented
-	WebsiteTypeVBlog WebsiteType = 3
+	WebsiteTypeVBlog WebsiteType = "Blog"
 	// WebsiteTypeVProfile undocumented
-	WebsiteTypeVProfile WebsiteType = 4
+	WebsiteTypeVProfile WebsiteType = "Profile"
 )
 
 // WebsiteTypePOther returns a pointer to WebsiteTypeVOther

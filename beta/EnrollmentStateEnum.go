@@ -3,21 +3,21 @@
 package msgraph
 
 // EnrollmentState undocumented
-type EnrollmentState int
+type EnrollmentState string
 
 const (
 	// EnrollmentStateVUnknown undocumented
-	EnrollmentStateVUnknown EnrollmentState = 0
+	EnrollmentStateVUnknown EnrollmentState = "Unknown"
 	// EnrollmentStateVEnrolled undocumented
-	EnrollmentStateVEnrolled EnrollmentState = 1
+	EnrollmentStateVEnrolled EnrollmentState = "Enrolled"
 	// EnrollmentStateVPendingReset undocumented
-	EnrollmentStateVPendingReset EnrollmentState = 2
+	EnrollmentStateVPendingReset EnrollmentState = "PendingReset"
 	// EnrollmentStateVFailed undocumented
-	EnrollmentStateVFailed EnrollmentState = 3
+	EnrollmentStateVFailed EnrollmentState = "Failed"
 	// EnrollmentStateVNotContacted undocumented
-	EnrollmentStateVNotContacted EnrollmentState = 4
+	EnrollmentStateVNotContacted EnrollmentState = "NotContacted"
 	// EnrollmentStateVBlocked undocumented
-	EnrollmentStateVBlocked EnrollmentState = 5
+	EnrollmentStateVBlocked EnrollmentState = "Blocked"
 )
 
 // EnrollmentStatePUnknown returns a pointer to EnrollmentStateVUnknown

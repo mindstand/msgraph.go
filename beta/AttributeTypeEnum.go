@@ -3,21 +3,21 @@
 package msgraph
 
 // AttributeType undocumented
-type AttributeType int
+type AttributeType string
 
 const (
 	// AttributeTypeVDateTime undocumented
-	AttributeTypeVDateTime AttributeType = 5
+	AttributeTypeVDateTime AttributeType = "DateTime"
 	// AttributeTypeVBoolean undocumented
-	AttributeTypeVBoolean AttributeType = 4
+	AttributeTypeVBoolean AttributeType = "Boolean"
 	// AttributeTypeVBinary undocumented
-	AttributeTypeVBinary AttributeType = 3
+	AttributeTypeVBinary AttributeType = "Binary"
 	// AttributeTypeVReference undocumented
-	AttributeTypeVReference AttributeType = 2
+	AttributeTypeVReference AttributeType = "Reference"
 	// AttributeTypeVInteger undocumented
-	AttributeTypeVInteger AttributeType = 1
+	AttributeTypeVInteger AttributeType = "Integer"
 	// AttributeTypeVString undocumented
-	AttributeTypeVString AttributeType = 0
+	AttributeTypeVString AttributeType = "String"
 )
 
 // AttributeTypePDateTime returns a pointer to AttributeTypeVDateTime

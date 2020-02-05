@@ -3,15 +3,15 @@
 package msgraph
 
 // EasAuthenticationMethod undocumented
-type EasAuthenticationMethod int
+type EasAuthenticationMethod string
 
 const (
 	// EasAuthenticationMethodVUsernameAndPassword undocumented
-	EasAuthenticationMethodVUsernameAndPassword EasAuthenticationMethod = 0
+	EasAuthenticationMethodVUsernameAndPassword EasAuthenticationMethod = "UsernameAndPassword"
 	// EasAuthenticationMethodVCertificate undocumented
-	EasAuthenticationMethodVCertificate EasAuthenticationMethod = 1
+	EasAuthenticationMethodVCertificate EasAuthenticationMethod = "Certificate"
 	// EasAuthenticationMethodVDerivedCredential undocumented
-	EasAuthenticationMethodVDerivedCredential EasAuthenticationMethod = 2
+	EasAuthenticationMethodVDerivedCredential EasAuthenticationMethod = "DerivedCredential"
 )
 
 // EasAuthenticationMethodPUsernameAndPassword returns a pointer to EasAuthenticationMethodVUsernameAndPassword

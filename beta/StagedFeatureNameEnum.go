@@ -3,17 +3,17 @@
 package msgraph
 
 // StagedFeatureName undocumented
-type StagedFeatureName int
+type StagedFeatureName string
 
 const (
 	// StagedFeatureNameVPassthroughAuthentication undocumented
-	StagedFeatureNameVPassthroughAuthentication StagedFeatureName = 0
+	StagedFeatureNameVPassthroughAuthentication StagedFeatureName = "PassthroughAuthentication"
 	// StagedFeatureNameVSeamlessSso undocumented
-	StagedFeatureNameVSeamlessSso StagedFeatureName = 1
+	StagedFeatureNameVSeamlessSso StagedFeatureName = "SeamlessSso"
 	// StagedFeatureNameVPasswordHashSync undocumented
-	StagedFeatureNameVPasswordHashSync StagedFeatureName = 2
+	StagedFeatureNameVPasswordHashSync StagedFeatureName = "PasswordHashSync"
 	// StagedFeatureNameVUnknownFutureValue undocumented
-	StagedFeatureNameVUnknownFutureValue StagedFeatureName = 3
+	StagedFeatureNameVUnknownFutureValue StagedFeatureName = "UnknownFutureValue"
 )
 
 // StagedFeatureNamePPassthroughAuthentication returns a pointer to StagedFeatureNameVPassthroughAuthentication

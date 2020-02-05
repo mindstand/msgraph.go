@@ -3,13 +3,13 @@
 package msgraph
 
 // BodyType undocumented
-type BodyType int
+type BodyType string
 
 const (
 	// BodyTypeVText undocumented
-	BodyTypeVText BodyType = 0
+	BodyTypeVText BodyType = "Text"
 	// BodyTypeVHTML undocumented
-	BodyTypeVHTML BodyType = 1
+	BodyTypeVHTML BodyType = "HTML"
 )
 
 // BodyTypePText returns a pointer to BodyTypeVText

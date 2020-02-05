@@ -3,15 +3,15 @@
 package msgraph
 
 // CertificateDestinationStore undocumented
-type CertificateDestinationStore int
+type CertificateDestinationStore string
 
 const (
 	// CertificateDestinationStoreVComputerCertStoreRoot undocumented
-	CertificateDestinationStoreVComputerCertStoreRoot CertificateDestinationStore = 0
+	CertificateDestinationStoreVComputerCertStoreRoot CertificateDestinationStore = "ComputerCertStoreRoot"
 	// CertificateDestinationStoreVComputerCertStoreIntermediate undocumented
-	CertificateDestinationStoreVComputerCertStoreIntermediate CertificateDestinationStore = 1
+	CertificateDestinationStoreVComputerCertStoreIntermediate CertificateDestinationStore = "ComputerCertStoreIntermediate"
 	// CertificateDestinationStoreVUserCertStoreIntermediate undocumented
-	CertificateDestinationStoreVUserCertStoreIntermediate CertificateDestinationStore = 2
+	CertificateDestinationStoreVUserCertStoreIntermediate CertificateDestinationStore = "UserCertStoreIntermediate"
 )
 
 // CertificateDestinationStorePComputerCertStoreRoot returns a pointer to CertificateDestinationStoreVComputerCertStoreRoot

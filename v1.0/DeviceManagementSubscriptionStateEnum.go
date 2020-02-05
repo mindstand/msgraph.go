@@ -3,23 +3,23 @@
 package msgraph
 
 // DeviceManagementSubscriptionState undocumented
-type DeviceManagementSubscriptionState int
+type DeviceManagementSubscriptionState string
 
 const (
 	// DeviceManagementSubscriptionStateVPending undocumented
-	DeviceManagementSubscriptionStateVPending DeviceManagementSubscriptionState = 0
+	DeviceManagementSubscriptionStateVPending DeviceManagementSubscriptionState = "Pending"
 	// DeviceManagementSubscriptionStateVActive undocumented
-	DeviceManagementSubscriptionStateVActive DeviceManagementSubscriptionState = 1
+	DeviceManagementSubscriptionStateVActive DeviceManagementSubscriptionState = "Active"
 	// DeviceManagementSubscriptionStateVWarning undocumented
-	DeviceManagementSubscriptionStateVWarning DeviceManagementSubscriptionState = 2
+	DeviceManagementSubscriptionStateVWarning DeviceManagementSubscriptionState = "Warning"
 	// DeviceManagementSubscriptionStateVDisabled undocumented
-	DeviceManagementSubscriptionStateVDisabled DeviceManagementSubscriptionState = 3
+	DeviceManagementSubscriptionStateVDisabled DeviceManagementSubscriptionState = "Disabled"
 	// DeviceManagementSubscriptionStateVDeleted undocumented
-	DeviceManagementSubscriptionStateVDeleted DeviceManagementSubscriptionState = 4
+	DeviceManagementSubscriptionStateVDeleted DeviceManagementSubscriptionState = "Deleted"
 	// DeviceManagementSubscriptionStateVBlocked undocumented
-	DeviceManagementSubscriptionStateVBlocked DeviceManagementSubscriptionState = 5
+	DeviceManagementSubscriptionStateVBlocked DeviceManagementSubscriptionState = "Blocked"
 	// DeviceManagementSubscriptionStateVLockedOut undocumented
-	DeviceManagementSubscriptionStateVLockedOut DeviceManagementSubscriptionState = 8
+	DeviceManagementSubscriptionStateVLockedOut DeviceManagementSubscriptionState = "LockedOut"
 )
 
 // DeviceManagementSubscriptionStatePPending returns a pointer to DeviceManagementSubscriptionStateVPending

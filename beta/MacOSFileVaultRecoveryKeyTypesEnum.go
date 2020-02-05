@@ -3,15 +3,15 @@
 package msgraph
 
 // MacOSFileVaultRecoveryKeyTypes undocumented
-type MacOSFileVaultRecoveryKeyTypes int
+type MacOSFileVaultRecoveryKeyTypes string
 
 const (
 	// MacOSFileVaultRecoveryKeyTypesVNotConfigured undocumented
-	MacOSFileVaultRecoveryKeyTypesVNotConfigured MacOSFileVaultRecoveryKeyTypes = 0
+	MacOSFileVaultRecoveryKeyTypesVNotConfigured MacOSFileVaultRecoveryKeyTypes = "NotConfigured"
 	// MacOSFileVaultRecoveryKeyTypesVInstitutionalRecoveryKey undocumented
-	MacOSFileVaultRecoveryKeyTypesVInstitutionalRecoveryKey MacOSFileVaultRecoveryKeyTypes = 1
+	MacOSFileVaultRecoveryKeyTypesVInstitutionalRecoveryKey MacOSFileVaultRecoveryKeyTypes = "InstitutionalRecoveryKey"
 	// MacOSFileVaultRecoveryKeyTypesVPersonalRecoveryKey undocumented
-	MacOSFileVaultRecoveryKeyTypesVPersonalRecoveryKey MacOSFileVaultRecoveryKeyTypes = 2
+	MacOSFileVaultRecoveryKeyTypesVPersonalRecoveryKey MacOSFileVaultRecoveryKeyTypes = "PersonalRecoveryKey"
 )
 
 // MacOSFileVaultRecoveryKeyTypesPNotConfigured returns a pointer to MacOSFileVaultRecoveryKeyTypesVNotConfigured

@@ -3,19 +3,19 @@
 package msgraph
 
 // ConditionalAccessClientApp undocumented
-type ConditionalAccessClientApp int
+type ConditionalAccessClientApp string
 
 const (
 	// ConditionalAccessClientAppVBrowser undocumented
-	ConditionalAccessClientAppVBrowser ConditionalAccessClientApp = 0
+	ConditionalAccessClientAppVBrowser ConditionalAccessClientApp = "Browser"
 	// ConditionalAccessClientAppVModern undocumented
-	ConditionalAccessClientAppVModern ConditionalAccessClientApp = 1
+	ConditionalAccessClientAppVModern ConditionalAccessClientApp = "Modern"
 	// ConditionalAccessClientAppVEasSupported undocumented
-	ConditionalAccessClientAppVEasSupported ConditionalAccessClientApp = 2
+	ConditionalAccessClientAppVEasSupported ConditionalAccessClientApp = "EasSupported"
 	// ConditionalAccessClientAppVEasUnsupported undocumented
-	ConditionalAccessClientAppVEasUnsupported ConditionalAccessClientApp = 3
+	ConditionalAccessClientAppVEasUnsupported ConditionalAccessClientApp = "EasUnsupported"
 	// ConditionalAccessClientAppVOther undocumented
-	ConditionalAccessClientAppVOther ConditionalAccessClientApp = 4
+	ConditionalAccessClientAppVOther ConditionalAccessClientApp = "Other"
 )
 
 // ConditionalAccessClientAppPBrowser returns a pointer to ConditionalAccessClientAppVBrowser

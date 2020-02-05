@@ -3,15 +3,15 @@
 package msgraph
 
 // DiscoverySource undocumented
-type DiscoverySource int
+type DiscoverySource string
 
 const (
 	// DiscoverySourceVUnknown undocumented
-	DiscoverySourceVUnknown DiscoverySource = 0
+	DiscoverySourceVUnknown DiscoverySource = "Unknown"
 	// DiscoverySourceVAdminImport undocumented
-	DiscoverySourceVAdminImport DiscoverySource = 2
+	DiscoverySourceVAdminImport DiscoverySource = "AdminImport"
 	// DiscoverySourceVDeviceEnrollmentProgram undocumented
-	DiscoverySourceVDeviceEnrollmentProgram DiscoverySource = 4
+	DiscoverySourceVDeviceEnrollmentProgram DiscoverySource = "DeviceEnrollmentProgram"
 )
 
 // DiscoverySourcePUnknown returns a pointer to DiscoverySourceVUnknown

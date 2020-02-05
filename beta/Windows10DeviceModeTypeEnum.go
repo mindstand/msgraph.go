@@ -3,13 +3,13 @@
 package msgraph
 
 // Windows10DeviceModeType undocumented
-type Windows10DeviceModeType int
+type Windows10DeviceModeType string
 
 const (
 	// Windows10DeviceModeTypeVStandardConfiguration undocumented
-	Windows10DeviceModeTypeVStandardConfiguration Windows10DeviceModeType = 0
+	Windows10DeviceModeTypeVStandardConfiguration Windows10DeviceModeType = "StandardConfiguration"
 	// Windows10DeviceModeTypeVSModeConfiguration undocumented
-	Windows10DeviceModeTypeVSModeConfiguration Windows10DeviceModeType = 1
+	Windows10DeviceModeTypeVSModeConfiguration Windows10DeviceModeType = "SModeConfiguration"
 )
 
 // Windows10DeviceModeTypePStandardConfiguration returns a pointer to Windows10DeviceModeTypeVStandardConfiguration

@@ -3,19 +3,19 @@
 package msgraph
 
 // IntendedPurpose undocumented
-type IntendedPurpose int
+type IntendedPurpose string
 
 const (
 	// IntendedPurposeVUnassigned undocumented
-	IntendedPurposeVUnassigned IntendedPurpose = 1
+	IntendedPurposeVUnassigned IntendedPurpose = "Unassigned"
 	// IntendedPurposeVSmimeEncryption undocumented
-	IntendedPurposeVSmimeEncryption IntendedPurpose = 2
+	IntendedPurposeVSmimeEncryption IntendedPurpose = "SmimeEncryption"
 	// IntendedPurposeVSmimeSigning undocumented
-	IntendedPurposeVSmimeSigning IntendedPurpose = 3
+	IntendedPurposeVSmimeSigning IntendedPurpose = "SmimeSigning"
 	// IntendedPurposeVVpn undocumented
-	IntendedPurposeVVpn IntendedPurpose = 4
+	IntendedPurposeVVpn IntendedPurpose = "Vpn"
 	// IntendedPurposeVWifi undocumented
-	IntendedPurposeVWifi IntendedPurpose = 5
+	IntendedPurposeVWifi IntendedPurpose = "Wifi"
 )
 
 // IntendedPurposePUnassigned returns a pointer to IntendedPurposeVUnassigned

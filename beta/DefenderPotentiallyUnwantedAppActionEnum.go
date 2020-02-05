@@ -3,15 +3,15 @@
 package msgraph
 
 // DefenderPotentiallyUnwantedAppAction undocumented
-type DefenderPotentiallyUnwantedAppAction int
+type DefenderPotentiallyUnwantedAppAction string
 
 const (
 	// DefenderPotentiallyUnwantedAppActionVDeviceDefault undocumented
-	DefenderPotentiallyUnwantedAppActionVDeviceDefault DefenderPotentiallyUnwantedAppAction = 0
+	DefenderPotentiallyUnwantedAppActionVDeviceDefault DefenderPotentiallyUnwantedAppAction = "DeviceDefault"
 	// DefenderPotentiallyUnwantedAppActionVBlock undocumented
-	DefenderPotentiallyUnwantedAppActionVBlock DefenderPotentiallyUnwantedAppAction = 1
+	DefenderPotentiallyUnwantedAppActionVBlock DefenderPotentiallyUnwantedAppAction = "Block"
 	// DefenderPotentiallyUnwantedAppActionVAudit undocumented
-	DefenderPotentiallyUnwantedAppActionVAudit DefenderPotentiallyUnwantedAppAction = 2
+	DefenderPotentiallyUnwantedAppActionVAudit DefenderPotentiallyUnwantedAppAction = "Audit"
 )
 
 // DefenderPotentiallyUnwantedAppActionPDeviceDefault returns a pointer to DefenderPotentiallyUnwantedAppActionVDeviceDefault

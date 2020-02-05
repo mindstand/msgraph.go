@@ -3,15 +3,15 @@
 package msgraph
 
 // AutoRestartNotificationDismissalMethod undocumented
-type AutoRestartNotificationDismissalMethod int
+type AutoRestartNotificationDismissalMethod string
 
 const (
 	// AutoRestartNotificationDismissalMethodVNotConfigured undocumented
-	AutoRestartNotificationDismissalMethodVNotConfigured AutoRestartNotificationDismissalMethod = 0
+	AutoRestartNotificationDismissalMethodVNotConfigured AutoRestartNotificationDismissalMethod = "NotConfigured"
 	// AutoRestartNotificationDismissalMethodVAutomatic undocumented
-	AutoRestartNotificationDismissalMethodVAutomatic AutoRestartNotificationDismissalMethod = 1
+	AutoRestartNotificationDismissalMethodVAutomatic AutoRestartNotificationDismissalMethod = "Automatic"
 	// AutoRestartNotificationDismissalMethodVUser undocumented
-	AutoRestartNotificationDismissalMethodVUser AutoRestartNotificationDismissalMethod = 2
+	AutoRestartNotificationDismissalMethodVUser AutoRestartNotificationDismissalMethod = "User"
 )
 
 // AutoRestartNotificationDismissalMethodPNotConfigured returns a pointer to AutoRestartNotificationDismissalMethodVNotConfigured

@@ -3,25 +3,25 @@
 package msgraph
 
 // RatingIrelandMoviesType undocumented
-type RatingIrelandMoviesType int
+type RatingIrelandMoviesType string
 
 const (
 	// RatingIrelandMoviesTypeVAllAllowed undocumented
-	RatingIrelandMoviesTypeVAllAllowed RatingIrelandMoviesType = 0
+	RatingIrelandMoviesTypeVAllAllowed RatingIrelandMoviesType = "AllAllowed"
 	// RatingIrelandMoviesTypeVAllBlocked undocumented
-	RatingIrelandMoviesTypeVAllBlocked RatingIrelandMoviesType = 1
+	RatingIrelandMoviesTypeVAllBlocked RatingIrelandMoviesType = "AllBlocked"
 	// RatingIrelandMoviesTypeVGeneral undocumented
-	RatingIrelandMoviesTypeVGeneral RatingIrelandMoviesType = 2
+	RatingIrelandMoviesTypeVGeneral RatingIrelandMoviesType = "General"
 	// RatingIrelandMoviesTypeVParentalGuidance undocumented
-	RatingIrelandMoviesTypeVParentalGuidance RatingIrelandMoviesType = 3
+	RatingIrelandMoviesTypeVParentalGuidance RatingIrelandMoviesType = "ParentalGuidance"
 	// RatingIrelandMoviesTypeVAgesAbove12 undocumented
-	RatingIrelandMoviesTypeVAgesAbove12 RatingIrelandMoviesType = 4
+	RatingIrelandMoviesTypeVAgesAbove12 RatingIrelandMoviesType = "AgesAbove12"
 	// RatingIrelandMoviesTypeVAgesAbove15 undocumented
-	RatingIrelandMoviesTypeVAgesAbove15 RatingIrelandMoviesType = 5
+	RatingIrelandMoviesTypeVAgesAbove15 RatingIrelandMoviesType = "AgesAbove15"
 	// RatingIrelandMoviesTypeVAgesAbove16 undocumented
-	RatingIrelandMoviesTypeVAgesAbove16 RatingIrelandMoviesType = 6
+	RatingIrelandMoviesTypeVAgesAbove16 RatingIrelandMoviesType = "AgesAbove16"
 	// RatingIrelandMoviesTypeVAdults undocumented
-	RatingIrelandMoviesTypeVAdults RatingIrelandMoviesType = 7
+	RatingIrelandMoviesTypeVAdults RatingIrelandMoviesType = "Adults"
 )
 
 // RatingIrelandMoviesTypePAllAllowed returns a pointer to RatingIrelandMoviesTypeVAllAllowed

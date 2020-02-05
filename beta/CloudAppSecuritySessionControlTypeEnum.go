@@ -3,15 +3,15 @@
 package msgraph
 
 // CloudAppSecuritySessionControlType undocumented
-type CloudAppSecuritySessionControlType int
+type CloudAppSecuritySessionControlType string
 
 const (
 	// CloudAppSecuritySessionControlTypeVMcasConfigured undocumented
-	CloudAppSecuritySessionControlTypeVMcasConfigured CloudAppSecuritySessionControlType = 0
+	CloudAppSecuritySessionControlTypeVMcasConfigured CloudAppSecuritySessionControlType = "McasConfigured"
 	// CloudAppSecuritySessionControlTypeVMonitorOnly undocumented
-	CloudAppSecuritySessionControlTypeVMonitorOnly CloudAppSecuritySessionControlType = 1
+	CloudAppSecuritySessionControlTypeVMonitorOnly CloudAppSecuritySessionControlType = "MonitorOnly"
 	// CloudAppSecuritySessionControlTypeVBlockDownloads undocumented
-	CloudAppSecuritySessionControlTypeVBlockDownloads CloudAppSecuritySessionControlType = 2
+	CloudAppSecuritySessionControlTypeVBlockDownloads CloudAppSecuritySessionControlType = "BlockDownloads"
 )
 
 // CloudAppSecuritySessionControlTypePMcasConfigured returns a pointer to CloudAppSecuritySessionControlTypeVMcasConfigured

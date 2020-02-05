@@ -3,15 +3,15 @@
 package msgraph
 
 // BrowserSyncSetting undocumented
-type BrowserSyncSetting int
+type BrowserSyncSetting string
 
 const (
 	// BrowserSyncSettingVNotConfigured undocumented
-	BrowserSyncSettingVNotConfigured BrowserSyncSetting = 0
+	BrowserSyncSettingVNotConfigured BrowserSyncSetting = "NotConfigured"
 	// BrowserSyncSettingVBlockedWithUserOverride undocumented
-	BrowserSyncSettingVBlockedWithUserOverride BrowserSyncSetting = 1
+	BrowserSyncSettingVBlockedWithUserOverride BrowserSyncSetting = "BlockedWithUserOverride"
 	// BrowserSyncSettingVBlocked undocumented
-	BrowserSyncSettingVBlocked BrowserSyncSetting = 2
+	BrowserSyncSettingVBlocked BrowserSyncSetting = "Blocked"
 )
 
 // BrowserSyncSettingPNotConfigured returns a pointer to BrowserSyncSettingVNotConfigured

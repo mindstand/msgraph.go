@@ -3,13 +3,13 @@
 package msgraph
 
 // OnenotePatchInsertPosition undocumented
-type OnenotePatchInsertPosition int
+type OnenotePatchInsertPosition string
 
 const (
 	// OnenotePatchInsertPositionVAfter undocumented
-	OnenotePatchInsertPositionVAfter OnenotePatchInsertPosition = 0
+	OnenotePatchInsertPositionVAfter OnenotePatchInsertPosition = "After"
 	// OnenotePatchInsertPositionVBefore undocumented
-	OnenotePatchInsertPositionVBefore OnenotePatchInsertPosition = 1
+	OnenotePatchInsertPositionVBefore OnenotePatchInsertPosition = "Before"
 )
 
 // OnenotePatchInsertPositionPAfter returns a pointer to OnenotePatchInsertPositionVAfter

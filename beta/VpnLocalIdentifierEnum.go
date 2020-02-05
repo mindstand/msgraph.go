@@ -3,15 +3,15 @@
 package msgraph
 
 // VpnLocalIdentifier undocumented
-type VpnLocalIdentifier int
+type VpnLocalIdentifier string
 
 const (
 	// VpnLocalIdentifierVDeviceFQDN undocumented
-	VpnLocalIdentifierVDeviceFQDN VpnLocalIdentifier = 0
+	VpnLocalIdentifierVDeviceFQDN VpnLocalIdentifier = "DeviceFQDN"
 	// VpnLocalIdentifierVEmpty undocumented
-	VpnLocalIdentifierVEmpty VpnLocalIdentifier = 1
+	VpnLocalIdentifierVEmpty VpnLocalIdentifier = "Empty"
 	// VpnLocalIdentifierVClientCertificateSubjectName undocumented
-	VpnLocalIdentifierVClientCertificateSubjectName VpnLocalIdentifier = 2
+	VpnLocalIdentifierVClientCertificateSubjectName VpnLocalIdentifier = "ClientCertificateSubjectName"
 )
 
 // VpnLocalIdentifierPDeviceFQDN returns a pointer to VpnLocalIdentifierVDeviceFQDN

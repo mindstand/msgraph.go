@@ -3,17 +3,17 @@
 package msgraph
 
 // PhysicalAddressType undocumented
-type PhysicalAddressType int
+type PhysicalAddressType string
 
 const (
 	// PhysicalAddressTypeVUnknown undocumented
-	PhysicalAddressTypeVUnknown PhysicalAddressType = 0
+	PhysicalAddressTypeVUnknown PhysicalAddressType = "Unknown"
 	// PhysicalAddressTypeVHome undocumented
-	PhysicalAddressTypeVHome PhysicalAddressType = 1
+	PhysicalAddressTypeVHome PhysicalAddressType = "Home"
 	// PhysicalAddressTypeVBusiness undocumented
-	PhysicalAddressTypeVBusiness PhysicalAddressType = 2
+	PhysicalAddressTypeVBusiness PhysicalAddressType = "Business"
 	// PhysicalAddressTypeVOther undocumented
-	PhysicalAddressTypeVOther PhysicalAddressType = 3
+	PhysicalAddressTypeVOther PhysicalAddressType = "Other"
 )
 
 // PhysicalAddressTypePUnknown returns a pointer to PhysicalAddressTypeVUnknown

@@ -3,29 +3,29 @@
 package msgraph
 
 // CallState undocumented
-type CallState int
+type CallState string
 
 const (
 	// CallStateVIncoming undocumented
-	CallStateVIncoming CallState = 0
+	CallStateVIncoming CallState = "Incoming"
 	// CallStateVEstablishing undocumented
-	CallStateVEstablishing CallState = 1
+	CallStateVEstablishing CallState = "Establishing"
 	// CallStateVEstablished undocumented
-	CallStateVEstablished CallState = 3
+	CallStateVEstablished CallState = "Established"
 	// CallStateVHold undocumented
-	CallStateVHold CallState = 4
+	CallStateVHold CallState = "Hold"
 	// CallStateVTransferring undocumented
-	CallStateVTransferring CallState = 5
+	CallStateVTransferring CallState = "Transferring"
 	// CallStateVTransferAccepted undocumented
-	CallStateVTransferAccepted CallState = 6
+	CallStateVTransferAccepted CallState = "TransferAccepted"
 	// CallStateVRedirecting undocumented
-	CallStateVRedirecting CallState = 7
+	CallStateVRedirecting CallState = "Redirecting"
 	// CallStateVTerminating undocumented
-	CallStateVTerminating CallState = 8
+	CallStateVTerminating CallState = "Terminating"
 	// CallStateVTerminated undocumented
-	CallStateVTerminated CallState = 9
+	CallStateVTerminated CallState = "Terminated"
 	// CallStateVUnknownFutureValue undocumented
-	CallStateVUnknownFutureValue CallState = 10
+	CallStateVUnknownFutureValue CallState = "UnknownFutureValue"
 )
 
 // CallStatePIncoming returns a pointer to CallStateVIncoming

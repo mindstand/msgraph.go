@@ -3,21 +3,21 @@
 package msgraph
 
 // TeamsAsyncOperationStatus undocumented
-type TeamsAsyncOperationStatus int
+type TeamsAsyncOperationStatus string
 
 const (
 	// TeamsAsyncOperationStatusVInvalid undocumented
-	TeamsAsyncOperationStatusVInvalid TeamsAsyncOperationStatus = 0
+	TeamsAsyncOperationStatusVInvalid TeamsAsyncOperationStatus = "Invalid"
 	// TeamsAsyncOperationStatusVNotStarted undocumented
-	TeamsAsyncOperationStatusVNotStarted TeamsAsyncOperationStatus = 1
+	TeamsAsyncOperationStatusVNotStarted TeamsAsyncOperationStatus = "NotStarted"
 	// TeamsAsyncOperationStatusVInProgress undocumented
-	TeamsAsyncOperationStatusVInProgress TeamsAsyncOperationStatus = 2
+	TeamsAsyncOperationStatusVInProgress TeamsAsyncOperationStatus = "InProgress"
 	// TeamsAsyncOperationStatusVSucceeded undocumented
-	TeamsAsyncOperationStatusVSucceeded TeamsAsyncOperationStatus = 3
+	TeamsAsyncOperationStatusVSucceeded TeamsAsyncOperationStatus = "Succeeded"
 	// TeamsAsyncOperationStatusVFailed undocumented
-	TeamsAsyncOperationStatusVFailed TeamsAsyncOperationStatus = 4
+	TeamsAsyncOperationStatusVFailed TeamsAsyncOperationStatus = "Failed"
 	// TeamsAsyncOperationStatusVUnknownFutureValue undocumented
-	TeamsAsyncOperationStatusVUnknownFutureValue TeamsAsyncOperationStatus = 5
+	TeamsAsyncOperationStatusVUnknownFutureValue TeamsAsyncOperationStatus = "UnknownFutureValue"
 )
 
 // TeamsAsyncOperationStatusPInvalid returns a pointer to TeamsAsyncOperationStatusVInvalid

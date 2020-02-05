@@ -3,21 +3,21 @@
 package msgraph
 
 // EapType undocumented
-type EapType int
+type EapType string
 
 const (
 	// EapTypeVEapTLS undocumented
-	EapTypeVEapTLS EapType = 13
+	EapTypeVEapTLS EapType = "EapTLS"
 	// EapTypeVLeap undocumented
-	EapTypeVLeap EapType = 17
+	EapTypeVLeap EapType = "Leap"
 	// EapTypeVEapSim undocumented
-	EapTypeVEapSim EapType = 18
+	EapTypeVEapSim EapType = "EapSim"
 	// EapTypeVEapTtls undocumented
-	EapTypeVEapTtls EapType = 21
+	EapTypeVEapTtls EapType = "EapTtls"
 	// EapTypeVPeap undocumented
-	EapTypeVPeap EapType = 25
+	EapTypeVPeap EapType = "Peap"
 	// EapTypeVEapFast undocumented
-	EapTypeVEapFast EapType = 43
+	EapTypeVEapFast EapType = "EapFast"
 )
 
 // EapTypePEapTLS returns a pointer to EapTypeVEapTLS

@@ -3,15 +3,15 @@
 package msgraph
 
 // GroupPolicySettingScope undocumented
-type GroupPolicySettingScope int
+type GroupPolicySettingScope string
 
 const (
 	// GroupPolicySettingScopeVUnknown undocumented
-	GroupPolicySettingScopeVUnknown GroupPolicySettingScope = 0
+	GroupPolicySettingScopeVUnknown GroupPolicySettingScope = "Unknown"
 	// GroupPolicySettingScopeVDevice undocumented
-	GroupPolicySettingScopeVDevice GroupPolicySettingScope = 1
+	GroupPolicySettingScopeVDevice GroupPolicySettingScope = "Device"
 	// GroupPolicySettingScopeVUser undocumented
-	GroupPolicySettingScopeVUser GroupPolicySettingScope = 2
+	GroupPolicySettingScopeVUser GroupPolicySettingScope = "User"
 )
 
 // GroupPolicySettingScopePUnknown returns a pointer to GroupPolicySettingScopeVUnknown

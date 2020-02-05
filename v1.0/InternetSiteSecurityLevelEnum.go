@@ -3,17 +3,17 @@
 package msgraph
 
 // InternetSiteSecurityLevel undocumented
-type InternetSiteSecurityLevel int
+type InternetSiteSecurityLevel string
 
 const (
 	// InternetSiteSecurityLevelVUserDefined undocumented
-	InternetSiteSecurityLevelVUserDefined InternetSiteSecurityLevel = 0
+	InternetSiteSecurityLevelVUserDefined InternetSiteSecurityLevel = "UserDefined"
 	// InternetSiteSecurityLevelVMedium undocumented
-	InternetSiteSecurityLevelVMedium InternetSiteSecurityLevel = 1
+	InternetSiteSecurityLevelVMedium InternetSiteSecurityLevel = "Medium"
 	// InternetSiteSecurityLevelVMediumHigh undocumented
-	InternetSiteSecurityLevelVMediumHigh InternetSiteSecurityLevel = 2
+	InternetSiteSecurityLevelVMediumHigh InternetSiteSecurityLevel = "MediumHigh"
 	// InternetSiteSecurityLevelVHigh undocumented
-	InternetSiteSecurityLevelVHigh InternetSiteSecurityLevel = 3
+	InternetSiteSecurityLevelVHigh InternetSiteSecurityLevel = "High"
 )
 
 // InternetSiteSecurityLevelPUserDefined returns a pointer to InternetSiteSecurityLevelVUserDefined

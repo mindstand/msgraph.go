@@ -3,21 +3,21 @@
 package msgraph
 
 // SkillProficiencyLevel undocumented
-type SkillProficiencyLevel int
+type SkillProficiencyLevel string
 
 const (
 	// SkillProficiencyLevelVElementary undocumented
-	SkillProficiencyLevelVElementary SkillProficiencyLevel = 0
+	SkillProficiencyLevelVElementary SkillProficiencyLevel = "Elementary"
 	// SkillProficiencyLevelVLimitedWorking undocumented
-	SkillProficiencyLevelVLimitedWorking SkillProficiencyLevel = 1
+	SkillProficiencyLevelVLimitedWorking SkillProficiencyLevel = "LimitedWorking"
 	// SkillProficiencyLevelVGeneralProfessional undocumented
-	SkillProficiencyLevelVGeneralProfessional SkillProficiencyLevel = 2
+	SkillProficiencyLevelVGeneralProfessional SkillProficiencyLevel = "GeneralProfessional"
 	// SkillProficiencyLevelVAdvancedProfessional undocumented
-	SkillProficiencyLevelVAdvancedProfessional SkillProficiencyLevel = 3
+	SkillProficiencyLevelVAdvancedProfessional SkillProficiencyLevel = "AdvancedProfessional"
 	// SkillProficiencyLevelVExpert undocumented
-	SkillProficiencyLevelVExpert SkillProficiencyLevel = 4
+	SkillProficiencyLevelVExpert SkillProficiencyLevel = "Expert"
 	// SkillProficiencyLevelVUnknownFutureValue undocumented
-	SkillProficiencyLevelVUnknownFutureValue SkillProficiencyLevel = 5
+	SkillProficiencyLevelVUnknownFutureValue SkillProficiencyLevel = "UnknownFutureValue"
 )
 
 // SkillProficiencyLevelPElementary returns a pointer to SkillProficiencyLevelVElementary

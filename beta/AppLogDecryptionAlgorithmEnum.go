@@ -3,11 +3,11 @@
 package msgraph
 
 // AppLogDecryptionAlgorithm undocumented
-type AppLogDecryptionAlgorithm int
+type AppLogDecryptionAlgorithm string
 
 const (
 	// AppLogDecryptionAlgorithmVAes256 undocumented
-	AppLogDecryptionAlgorithmVAes256 AppLogDecryptionAlgorithm = 0
+	AppLogDecryptionAlgorithmVAes256 AppLogDecryptionAlgorithm = "Aes256"
 )
 
 // AppLogDecryptionAlgorithmPAes256 returns a pointer to AppLogDecryptionAlgorithmVAes256

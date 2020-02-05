@@ -3,31 +3,31 @@
 package msgraph
 
 // RatingNewZealandMoviesType undocumented
-type RatingNewZealandMoviesType int
+type RatingNewZealandMoviesType string
 
 const (
 	// RatingNewZealandMoviesTypeVAllAllowed undocumented
-	RatingNewZealandMoviesTypeVAllAllowed RatingNewZealandMoviesType = 0
+	RatingNewZealandMoviesTypeVAllAllowed RatingNewZealandMoviesType = "AllAllowed"
 	// RatingNewZealandMoviesTypeVAllBlocked undocumented
-	RatingNewZealandMoviesTypeVAllBlocked RatingNewZealandMoviesType = 1
+	RatingNewZealandMoviesTypeVAllBlocked RatingNewZealandMoviesType = "AllBlocked"
 	// RatingNewZealandMoviesTypeVGeneral undocumented
-	RatingNewZealandMoviesTypeVGeneral RatingNewZealandMoviesType = 2
+	RatingNewZealandMoviesTypeVGeneral RatingNewZealandMoviesType = "General"
 	// RatingNewZealandMoviesTypeVParentalGuidance undocumented
-	RatingNewZealandMoviesTypeVParentalGuidance RatingNewZealandMoviesType = 3
+	RatingNewZealandMoviesTypeVParentalGuidance RatingNewZealandMoviesType = "ParentalGuidance"
 	// RatingNewZealandMoviesTypeVMature undocumented
-	RatingNewZealandMoviesTypeVMature RatingNewZealandMoviesType = 4
+	RatingNewZealandMoviesTypeVMature RatingNewZealandMoviesType = "Mature"
 	// RatingNewZealandMoviesTypeVAgesAbove13 undocumented
-	RatingNewZealandMoviesTypeVAgesAbove13 RatingNewZealandMoviesType = 5
+	RatingNewZealandMoviesTypeVAgesAbove13 RatingNewZealandMoviesType = "AgesAbove13"
 	// RatingNewZealandMoviesTypeVAgesAbove15 undocumented
-	RatingNewZealandMoviesTypeVAgesAbove15 RatingNewZealandMoviesType = 6
+	RatingNewZealandMoviesTypeVAgesAbove15 RatingNewZealandMoviesType = "AgesAbove15"
 	// RatingNewZealandMoviesTypeVAgesAbove16 undocumented
-	RatingNewZealandMoviesTypeVAgesAbove16 RatingNewZealandMoviesType = 7
+	RatingNewZealandMoviesTypeVAgesAbove16 RatingNewZealandMoviesType = "AgesAbove16"
 	// RatingNewZealandMoviesTypeVAgesAbove18 undocumented
-	RatingNewZealandMoviesTypeVAgesAbove18 RatingNewZealandMoviesType = 8
+	RatingNewZealandMoviesTypeVAgesAbove18 RatingNewZealandMoviesType = "AgesAbove18"
 	// RatingNewZealandMoviesTypeVRestricted undocumented
-	RatingNewZealandMoviesTypeVRestricted RatingNewZealandMoviesType = 9
+	RatingNewZealandMoviesTypeVRestricted RatingNewZealandMoviesType = "Restricted"
 	// RatingNewZealandMoviesTypeVAgesAbove16Restricted undocumented
-	RatingNewZealandMoviesTypeVAgesAbove16Restricted RatingNewZealandMoviesType = 10
+	RatingNewZealandMoviesTypeVAgesAbove16Restricted RatingNewZealandMoviesType = "AgesAbove16Restricted"
 )
 
 // RatingNewZealandMoviesTypePAllAllowed returns a pointer to RatingNewZealandMoviesTypeVAllAllowed

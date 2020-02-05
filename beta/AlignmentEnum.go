@@ -3,15 +3,15 @@
 package msgraph
 
 // Alignment undocumented
-type Alignment int
+type Alignment string
 
 const (
 	// AlignmentVLeft undocumented
-	AlignmentVLeft Alignment = 0
+	AlignmentVLeft Alignment = "Left"
 	// AlignmentVRight undocumented
-	AlignmentVRight Alignment = 1
+	AlignmentVRight Alignment = "Right"
 	// AlignmentVCenter undocumented
-	AlignmentVCenter Alignment = 2
+	AlignmentVCenter Alignment = "Center"
 )
 
 // AlignmentPLeft returns a pointer to AlignmentVLeft

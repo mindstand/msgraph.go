@@ -3,19 +3,19 @@
 package msgraph
 
 // RecordingStatus undocumented
-type RecordingStatus int
+type RecordingStatus string
 
 const (
 	// RecordingStatusVUnknown undocumented
-	RecordingStatusVUnknown RecordingStatus = 0
+	RecordingStatusVUnknown RecordingStatus = "Unknown"
 	// RecordingStatusVNotRecording undocumented
-	RecordingStatusVNotRecording RecordingStatus = 1
+	RecordingStatusVNotRecording RecordingStatus = "NotRecording"
 	// RecordingStatusVRecording undocumented
-	RecordingStatusVRecording RecordingStatus = 2
+	RecordingStatusVRecording RecordingStatus = "Recording"
 	// RecordingStatusVFailed undocumented
-	RecordingStatusVFailed RecordingStatus = 3
+	RecordingStatusVFailed RecordingStatus = "Failed"
 	// RecordingStatusVUnknownFutureValue undocumented
-	RecordingStatusVUnknownFutureValue RecordingStatus = 4
+	RecordingStatusVUnknownFutureValue RecordingStatus = "UnknownFutureValue"
 )
 
 // RecordingStatusPUnknown returns a pointer to RecordingStatusVUnknown

@@ -3,23 +3,23 @@
 package msgraph
 
 // WindowsDeliveryOptimizationMode undocumented
-type WindowsDeliveryOptimizationMode int
+type WindowsDeliveryOptimizationMode string
 
 const (
 	// WindowsDeliveryOptimizationModeVUserDefined undocumented
-	WindowsDeliveryOptimizationModeVUserDefined WindowsDeliveryOptimizationMode = 0
+	WindowsDeliveryOptimizationModeVUserDefined WindowsDeliveryOptimizationMode = "UserDefined"
 	// WindowsDeliveryOptimizationModeVHTTPOnly undocumented
-	WindowsDeliveryOptimizationModeVHTTPOnly WindowsDeliveryOptimizationMode = 1
+	WindowsDeliveryOptimizationModeVHTTPOnly WindowsDeliveryOptimizationMode = "HTTPOnly"
 	// WindowsDeliveryOptimizationModeVHTTPWithPeeringNat undocumented
-	WindowsDeliveryOptimizationModeVHTTPWithPeeringNat WindowsDeliveryOptimizationMode = 2
+	WindowsDeliveryOptimizationModeVHTTPWithPeeringNat WindowsDeliveryOptimizationMode = "HTTPWithPeeringNat"
 	// WindowsDeliveryOptimizationModeVHTTPWithPeeringPrivateGroup undocumented
-	WindowsDeliveryOptimizationModeVHTTPWithPeeringPrivateGroup WindowsDeliveryOptimizationMode = 3
+	WindowsDeliveryOptimizationModeVHTTPWithPeeringPrivateGroup WindowsDeliveryOptimizationMode = "HTTPWithPeeringPrivateGroup"
 	// WindowsDeliveryOptimizationModeVHTTPWithInternetPeering undocumented
-	WindowsDeliveryOptimizationModeVHTTPWithInternetPeering WindowsDeliveryOptimizationMode = 4
+	WindowsDeliveryOptimizationModeVHTTPWithInternetPeering WindowsDeliveryOptimizationMode = "HTTPWithInternetPeering"
 	// WindowsDeliveryOptimizationModeVSimpleDownload undocumented
-	WindowsDeliveryOptimizationModeVSimpleDownload WindowsDeliveryOptimizationMode = 99
+	WindowsDeliveryOptimizationModeVSimpleDownload WindowsDeliveryOptimizationMode = "SimpleDownload"
 	// WindowsDeliveryOptimizationModeVBypassMode undocumented
-	WindowsDeliveryOptimizationModeVBypassMode WindowsDeliveryOptimizationMode = 100
+	WindowsDeliveryOptimizationModeVBypassMode WindowsDeliveryOptimizationMode = "BypassMode"
 )
 
 // WindowsDeliveryOptimizationModePUserDefined returns a pointer to WindowsDeliveryOptimizationModeVUserDefined

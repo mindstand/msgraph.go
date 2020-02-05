@@ -3,15 +3,15 @@
 package msgraph
 
 // ContentState undocumented
-type ContentState int
+type ContentState string
 
 const (
 	// ContentStateVRest undocumented
-	ContentStateVRest ContentState = 0
+	ContentStateVRest ContentState = "Rest"
 	// ContentStateVMotion undocumented
-	ContentStateVMotion ContentState = 1
+	ContentStateVMotion ContentState = "Motion"
 	// ContentStateVUse undocumented
-	ContentStateVUse ContentState = 2
+	ContentStateVUse ContentState = "Use"
 )
 
 // ContentStatePRest returns a pointer to ContentStateVRest

@@ -3,15 +3,15 @@
 package msgraph
 
 // AttachmentType undocumented
-type AttachmentType int
+type AttachmentType string
 
 const (
 	// AttachmentTypeVFile undocumented
-	AttachmentTypeVFile AttachmentType = 0
+	AttachmentTypeVFile AttachmentType = "File"
 	// AttachmentTypeVItem undocumented
-	AttachmentTypeVItem AttachmentType = 1
+	AttachmentTypeVItem AttachmentType = "Item"
 	// AttachmentTypeVReference undocumented
-	AttachmentTypeVReference AttachmentType = 2
+	AttachmentTypeVReference AttachmentType = "Reference"
 )
 
 // AttachmentTypePFile returns a pointer to AttachmentTypeVFile

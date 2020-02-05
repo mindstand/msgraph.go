@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsAutopilotSyncStatus undocumented
-type WindowsAutopilotSyncStatus int
+type WindowsAutopilotSyncStatus string
 
 const (
 	// WindowsAutopilotSyncStatusVUnknown undocumented
-	WindowsAutopilotSyncStatusVUnknown WindowsAutopilotSyncStatus = 0
+	WindowsAutopilotSyncStatusVUnknown WindowsAutopilotSyncStatus = "Unknown"
 	// WindowsAutopilotSyncStatusVInProgress undocumented
-	WindowsAutopilotSyncStatusVInProgress WindowsAutopilotSyncStatus = 1
+	WindowsAutopilotSyncStatusVInProgress WindowsAutopilotSyncStatus = "InProgress"
 	// WindowsAutopilotSyncStatusVCompleted undocumented
-	WindowsAutopilotSyncStatusVCompleted WindowsAutopilotSyncStatus = 2
+	WindowsAutopilotSyncStatusVCompleted WindowsAutopilotSyncStatus = "Completed"
 	// WindowsAutopilotSyncStatusVFailed undocumented
-	WindowsAutopilotSyncStatusVFailed WindowsAutopilotSyncStatus = 3
+	WindowsAutopilotSyncStatusVFailed WindowsAutopilotSyncStatus = "Failed"
 )
 
 // WindowsAutopilotSyncStatusPUnknown returns a pointer to WindowsAutopilotSyncStatusVUnknown

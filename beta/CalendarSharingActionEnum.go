@@ -3,17 +3,17 @@
 package msgraph
 
 // CalendarSharingAction undocumented
-type CalendarSharingAction int
+type CalendarSharingAction string
 
 const (
 	// CalendarSharingActionVAccept undocumented
-	CalendarSharingActionVAccept CalendarSharingAction = 0
+	CalendarSharingActionVAccept CalendarSharingAction = "Accept"
 	// CalendarSharingActionVAcceptAndViewCalendar undocumented
-	CalendarSharingActionVAcceptAndViewCalendar CalendarSharingAction = 1
+	CalendarSharingActionVAcceptAndViewCalendar CalendarSharingAction = "AcceptAndViewCalendar"
 	// CalendarSharingActionVViewCalendar undocumented
-	CalendarSharingActionVViewCalendar CalendarSharingAction = 2
+	CalendarSharingActionVViewCalendar CalendarSharingAction = "ViewCalendar"
 	// CalendarSharingActionVAddThisCalendar undocumented
-	CalendarSharingActionVAddThisCalendar CalendarSharingAction = 3
+	CalendarSharingActionVAddThisCalendar CalendarSharingAction = "AddThisCalendar"
 )
 
 // CalendarSharingActionPAccept returns a pointer to CalendarSharingActionVAccept

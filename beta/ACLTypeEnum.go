@@ -3,17 +3,17 @@
 package msgraph
 
 // ACLType undocumented
-type ACLType int
+type ACLType string
 
 const (
 	// ACLTypeVUser undocumented
-	ACLTypeVUser ACLType = 1
+	ACLTypeVUser ACLType = "User"
 	// ACLTypeVGroup undocumented
-	ACLTypeVGroup ACLType = 2
+	ACLTypeVGroup ACLType = "Group"
 	// ACLTypeVEveryone undocumented
-	ACLTypeVEveryone ACLType = 3
+	ACLTypeVEveryone ACLType = "Everyone"
 	// ACLTypeVEveryoneExceptGuests undocumented
-	ACLTypeVEveryoneExceptGuests ACLType = 4
+	ACLTypeVEveryoneExceptGuests ACLType = "EveryoneExceptGuests"
 )
 
 // ACLTypePUser returns a pointer to ACLTypeVUser

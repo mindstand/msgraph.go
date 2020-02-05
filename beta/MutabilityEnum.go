@@ -3,17 +3,17 @@
 package msgraph
 
 // Mutability undocumented
-type Mutability int
+type Mutability string
 
 const (
 	// MutabilityVReadWrite undocumented
-	MutabilityVReadWrite Mutability = 0
+	MutabilityVReadWrite Mutability = "ReadWrite"
 	// MutabilityVReadOnly undocumented
-	MutabilityVReadOnly Mutability = 1
+	MutabilityVReadOnly Mutability = "ReadOnly"
 	// MutabilityVImmutable undocumented
-	MutabilityVImmutable Mutability = 2
+	MutabilityVImmutable Mutability = "Immutable"
 	// MutabilityVWriteOnly undocumented
-	MutabilityVWriteOnly Mutability = 3
+	MutabilityVWriteOnly Mutability = "WriteOnly"
 )
 
 // MutabilityPReadWrite returns a pointer to MutabilityVReadWrite

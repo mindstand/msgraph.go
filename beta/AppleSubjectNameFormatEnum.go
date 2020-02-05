@@ -3,21 +3,21 @@
 package msgraph
 
 // AppleSubjectNameFormat undocumented
-type AppleSubjectNameFormat int
+type AppleSubjectNameFormat string
 
 const (
 	// AppleSubjectNameFormatVCommonName undocumented
-	AppleSubjectNameFormatVCommonName AppleSubjectNameFormat = 0
+	AppleSubjectNameFormatVCommonName AppleSubjectNameFormat = "CommonName"
 	// AppleSubjectNameFormatVCommonNameAsEmail undocumented
-	AppleSubjectNameFormatVCommonNameAsEmail AppleSubjectNameFormat = 1
+	AppleSubjectNameFormatVCommonNameAsEmail AppleSubjectNameFormat = "CommonNameAsEmail"
 	// AppleSubjectNameFormatVCustom undocumented
-	AppleSubjectNameFormatVCustom AppleSubjectNameFormat = 2
+	AppleSubjectNameFormatVCustom AppleSubjectNameFormat = "Custom"
 	// AppleSubjectNameFormatVCommonNameIncludingEmail undocumented
-	AppleSubjectNameFormatVCommonNameIncludingEmail AppleSubjectNameFormat = 3
+	AppleSubjectNameFormatVCommonNameIncludingEmail AppleSubjectNameFormat = "CommonNameIncludingEmail"
 	// AppleSubjectNameFormatVCommonNameAsIMEI undocumented
-	AppleSubjectNameFormatVCommonNameAsIMEI AppleSubjectNameFormat = 5
+	AppleSubjectNameFormatVCommonNameAsIMEI AppleSubjectNameFormat = "CommonNameAsIMEI"
 	// AppleSubjectNameFormatVCommonNameAsSerialNumber undocumented
-	AppleSubjectNameFormatVCommonNameAsSerialNumber AppleSubjectNameFormat = 6
+	AppleSubjectNameFormatVCommonNameAsSerialNumber AppleSubjectNameFormat = "CommonNameAsSerialNumber"
 )
 
 // AppleSubjectNameFormatPCommonName returns a pointer to AppleSubjectNameFormatVCommonName

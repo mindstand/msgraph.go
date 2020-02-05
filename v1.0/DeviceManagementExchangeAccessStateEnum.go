@@ -3,19 +3,19 @@
 package msgraph
 
 // DeviceManagementExchangeAccessState undocumented
-type DeviceManagementExchangeAccessState int
+type DeviceManagementExchangeAccessState string
 
 const (
 	// DeviceManagementExchangeAccessStateVNone undocumented
-	DeviceManagementExchangeAccessStateVNone DeviceManagementExchangeAccessState = 0
+	DeviceManagementExchangeAccessStateVNone DeviceManagementExchangeAccessState = "None"
 	// DeviceManagementExchangeAccessStateVUnknown undocumented
-	DeviceManagementExchangeAccessStateVUnknown DeviceManagementExchangeAccessState = 1
+	DeviceManagementExchangeAccessStateVUnknown DeviceManagementExchangeAccessState = "Unknown"
 	// DeviceManagementExchangeAccessStateVAllowed undocumented
-	DeviceManagementExchangeAccessStateVAllowed DeviceManagementExchangeAccessState = 2
+	DeviceManagementExchangeAccessStateVAllowed DeviceManagementExchangeAccessState = "Allowed"
 	// DeviceManagementExchangeAccessStateVBlocked undocumented
-	DeviceManagementExchangeAccessStateVBlocked DeviceManagementExchangeAccessState = 3
+	DeviceManagementExchangeAccessStateVBlocked DeviceManagementExchangeAccessState = "Blocked"
 	// DeviceManagementExchangeAccessStateVQuarantined undocumented
-	DeviceManagementExchangeAccessStateVQuarantined DeviceManagementExchangeAccessState = 4
+	DeviceManagementExchangeAccessStateVQuarantined DeviceManagementExchangeAccessState = "Quarantined"
 )
 
 // DeviceManagementExchangeAccessStatePNone returns a pointer to DeviceManagementExchangeAccessStateVNone

@@ -3,13 +3,13 @@
 package msgraph
 
 // AccessType undocumented
-type AccessType int
+type AccessType string
 
 const (
 	// AccessTypeVGrant undocumented
-	AccessTypeVGrant AccessType = 1
+	AccessTypeVGrant AccessType = "Grant"
 	// AccessTypeVDeny undocumented
-	AccessTypeVDeny AccessType = 2
+	AccessTypeVDeny AccessType = "Deny"
 )
 
 // AccessTypePGrant returns a pointer to AccessTypeVGrant

@@ -3,17 +3,17 @@
 package msgraph
 
 // MdmAuthority undocumented
-type MdmAuthority int
+type MdmAuthority string
 
 const (
 	// MdmAuthorityVUnknown undocumented
-	MdmAuthorityVUnknown MdmAuthority = 0
+	MdmAuthorityVUnknown MdmAuthority = "Unknown"
 	// MdmAuthorityVIntune undocumented
-	MdmAuthorityVIntune MdmAuthority = 1
+	MdmAuthorityVIntune MdmAuthority = "Intune"
 	// MdmAuthorityVSccm undocumented
-	MdmAuthorityVSccm MdmAuthority = 2
+	MdmAuthorityVSccm MdmAuthority = "Sccm"
 	// MdmAuthorityVOffice365 undocumented
-	MdmAuthorityVOffice365 MdmAuthority = 3
+	MdmAuthorityVOffice365 MdmAuthority = "Office365"
 )
 
 // MdmAuthorityPUnknown returns a pointer to MdmAuthorityVUnknown

@@ -3,17 +3,17 @@
 package msgraph
 
 // VpnDeadPeerDetectionRate undocumented
-type VpnDeadPeerDetectionRate int
+type VpnDeadPeerDetectionRate string
 
 const (
 	// VpnDeadPeerDetectionRateVMedium undocumented
-	VpnDeadPeerDetectionRateVMedium VpnDeadPeerDetectionRate = 0
+	VpnDeadPeerDetectionRateVMedium VpnDeadPeerDetectionRate = "Medium"
 	// VpnDeadPeerDetectionRateVNone undocumented
-	VpnDeadPeerDetectionRateVNone VpnDeadPeerDetectionRate = 1
+	VpnDeadPeerDetectionRateVNone VpnDeadPeerDetectionRate = "None"
 	// VpnDeadPeerDetectionRateVLow undocumented
-	VpnDeadPeerDetectionRateVLow VpnDeadPeerDetectionRate = 2
+	VpnDeadPeerDetectionRateVLow VpnDeadPeerDetectionRate = "Low"
 	// VpnDeadPeerDetectionRateVHigh undocumented
-	VpnDeadPeerDetectionRateVHigh VpnDeadPeerDetectionRate = 3
+	VpnDeadPeerDetectionRateVHigh VpnDeadPeerDetectionRate = "High"
 )
 
 // VpnDeadPeerDetectionRatePMedium returns a pointer to VpnDeadPeerDetectionRateVMedium

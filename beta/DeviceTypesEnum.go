@@ -3,53 +3,53 @@
 package msgraph
 
 // DeviceTypes undocumented
-type DeviceTypes int
+type DeviceTypes string
 
 const (
 	// DeviceTypesVDesktop undocumented
-	DeviceTypesVDesktop DeviceTypes = 0
+	DeviceTypesVDesktop DeviceTypes = "Desktop"
 	// DeviceTypesVWindowsRT undocumented
-	DeviceTypesVWindowsRT DeviceTypes = 1
+	DeviceTypesVWindowsRT DeviceTypes = "WindowsRT"
 	// DeviceTypesVWinMO6 undocumented
-	DeviceTypesVWinMO6 DeviceTypes = 2
+	DeviceTypesVWinMO6 DeviceTypes = "WinMO6"
 	// DeviceTypesVNokia undocumented
-	DeviceTypesVNokia DeviceTypes = 3
+	DeviceTypesVNokia DeviceTypes = "Nokia"
 	// DeviceTypesVWindowsPhone undocumented
-	DeviceTypesVWindowsPhone DeviceTypes = 4
+	DeviceTypesVWindowsPhone DeviceTypes = "WindowsPhone"
 	// DeviceTypesVMac undocumented
-	DeviceTypesVMac DeviceTypes = 5
+	DeviceTypesVMac DeviceTypes = "Mac"
 	// DeviceTypesVWinCE undocumented
-	DeviceTypesVWinCE DeviceTypes = 6
+	DeviceTypesVWinCE DeviceTypes = "WinCE"
 	// DeviceTypesVWinEmbedded undocumented
-	DeviceTypesVWinEmbedded DeviceTypes = 7
+	DeviceTypesVWinEmbedded DeviceTypes = "WinEmbedded"
 	// DeviceTypesVIPhone undocumented
-	DeviceTypesVIPhone DeviceTypes = 8
+	DeviceTypesVIPhone DeviceTypes = "IPhone"
 	// DeviceTypesVIPad undocumented
-	DeviceTypesVIPad DeviceTypes = 9
+	DeviceTypesVIPad DeviceTypes = "IPad"
 	// DeviceTypesVIPod undocumented
-	DeviceTypesVIPod DeviceTypes = 10
+	DeviceTypesVIPod DeviceTypes = "IPod"
 	// DeviceTypesVAndroid undocumented
-	DeviceTypesVAndroid DeviceTypes = 11
+	DeviceTypesVAndroid DeviceTypes = "Android"
 	// DeviceTypesVISocConsumer undocumented
-	DeviceTypesVISocConsumer DeviceTypes = 12
+	DeviceTypesVISocConsumer DeviceTypes = "ISocConsumer"
 	// DeviceTypesVUnix undocumented
-	DeviceTypesVUnix DeviceTypes = 13
+	DeviceTypesVUnix DeviceTypes = "Unix"
 	// DeviceTypesVMacMDM undocumented
-	DeviceTypesVMacMDM DeviceTypes = 14
+	DeviceTypesVMacMDM DeviceTypes = "MacMDM"
 	// DeviceTypesVHoloLens undocumented
-	DeviceTypesVHoloLens DeviceTypes = 15
+	DeviceTypesVHoloLens DeviceTypes = "HoloLens"
 	// DeviceTypesVSurfaceHub undocumented
-	DeviceTypesVSurfaceHub DeviceTypes = 16
+	DeviceTypesVSurfaceHub DeviceTypes = "SurfaceHub"
 	// DeviceTypesVAndroidForWork undocumented
-	DeviceTypesVAndroidForWork DeviceTypes = 17
+	DeviceTypesVAndroidForWork DeviceTypes = "AndroidForWork"
 	// DeviceTypesVAndroidEnterprise undocumented
-	DeviceTypesVAndroidEnterprise DeviceTypes = 18
+	DeviceTypesVAndroidEnterprise DeviceTypes = "AndroidEnterprise"
 	// DeviceTypesVBlackberry undocumented
-	DeviceTypesVBlackberry DeviceTypes = 100
+	DeviceTypesVBlackberry DeviceTypes = "Blackberry"
 	// DeviceTypesVPalm undocumented
-	DeviceTypesVPalm DeviceTypes = 101
+	DeviceTypesVPalm DeviceTypes = "Palm"
 	// DeviceTypesVUnknown undocumented
-	DeviceTypesVUnknown DeviceTypes = 255
+	DeviceTypesVUnknown DeviceTypes = "Unknown"
 )
 
 // DeviceTypesPDesktop returns a pointer to DeviceTypesVDesktop

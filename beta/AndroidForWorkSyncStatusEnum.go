@@ -3,21 +3,21 @@
 package msgraph
 
 // AndroidForWorkSyncStatus undocumented
-type AndroidForWorkSyncStatus int
+type AndroidForWorkSyncStatus string
 
 const (
 	// AndroidForWorkSyncStatusVSuccess undocumented
-	AndroidForWorkSyncStatusVSuccess AndroidForWorkSyncStatus = 0
+	AndroidForWorkSyncStatusVSuccess AndroidForWorkSyncStatus = "Success"
 	// AndroidForWorkSyncStatusVCredentialsNotValid undocumented
-	AndroidForWorkSyncStatusVCredentialsNotValid AndroidForWorkSyncStatus = 1
+	AndroidForWorkSyncStatusVCredentialsNotValid AndroidForWorkSyncStatus = "CredentialsNotValid"
 	// AndroidForWorkSyncStatusVAndroidForWorkAPIError undocumented
-	AndroidForWorkSyncStatusVAndroidForWorkAPIError AndroidForWorkSyncStatus = 2
+	AndroidForWorkSyncStatusVAndroidForWorkAPIError AndroidForWorkSyncStatus = "AndroidForWorkAPIError"
 	// AndroidForWorkSyncStatusVManagementServiceError undocumented
-	AndroidForWorkSyncStatusVManagementServiceError AndroidForWorkSyncStatus = 3
+	AndroidForWorkSyncStatusVManagementServiceError AndroidForWorkSyncStatus = "ManagementServiceError"
 	// AndroidForWorkSyncStatusVUnknownError undocumented
-	AndroidForWorkSyncStatusVUnknownError AndroidForWorkSyncStatus = 4
+	AndroidForWorkSyncStatusVUnknownError AndroidForWorkSyncStatus = "UnknownError"
 	// AndroidForWorkSyncStatusVNone undocumented
-	AndroidForWorkSyncStatusVNone AndroidForWorkSyncStatus = 5
+	AndroidForWorkSyncStatusVNone AndroidForWorkSyncStatus = "None"
 )
 
 // AndroidForWorkSyncStatusPSuccess returns a pointer to AndroidForWorkSyncStatusVSuccess

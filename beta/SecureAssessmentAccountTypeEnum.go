@@ -3,17 +3,17 @@
 package msgraph
 
 // SecureAssessmentAccountType undocumented
-type SecureAssessmentAccountType int
+type SecureAssessmentAccountType string
 
 const (
 	// SecureAssessmentAccountTypeVAzureADAccount undocumented
-	SecureAssessmentAccountTypeVAzureADAccount SecureAssessmentAccountType = 0
+	SecureAssessmentAccountTypeVAzureADAccount SecureAssessmentAccountType = "AzureADAccount"
 	// SecureAssessmentAccountTypeVDomainAccount undocumented
-	SecureAssessmentAccountTypeVDomainAccount SecureAssessmentAccountType = 1
+	SecureAssessmentAccountTypeVDomainAccount SecureAssessmentAccountType = "DomainAccount"
 	// SecureAssessmentAccountTypeVLocalAccount undocumented
-	SecureAssessmentAccountTypeVLocalAccount SecureAssessmentAccountType = 2
+	SecureAssessmentAccountTypeVLocalAccount SecureAssessmentAccountType = "LocalAccount"
 	// SecureAssessmentAccountTypeVLocalGuestAccount undocumented
-	SecureAssessmentAccountTypeVLocalGuestAccount SecureAssessmentAccountType = 3
+	SecureAssessmentAccountTypeVLocalGuestAccount SecureAssessmentAccountType = "LocalGuestAccount"
 )
 
 // SecureAssessmentAccountTypePAzureADAccount returns a pointer to SecureAssessmentAccountTypeVAzureADAccount

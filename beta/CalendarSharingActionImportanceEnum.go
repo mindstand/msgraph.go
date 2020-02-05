@@ -3,13 +3,13 @@
 package msgraph
 
 // CalendarSharingActionImportance undocumented
-type CalendarSharingActionImportance int
+type CalendarSharingActionImportance string
 
 const (
 	// CalendarSharingActionImportanceVPrimary undocumented
-	CalendarSharingActionImportanceVPrimary CalendarSharingActionImportance = 0
+	CalendarSharingActionImportanceVPrimary CalendarSharingActionImportance = "Primary"
 	// CalendarSharingActionImportanceVSecondary undocumented
-	CalendarSharingActionImportanceVSecondary CalendarSharingActionImportance = 1
+	CalendarSharingActionImportanceVSecondary CalendarSharingActionImportance = "Secondary"
 )
 
 // CalendarSharingActionImportancePPrimary returns a pointer to CalendarSharingActionImportanceVPrimary

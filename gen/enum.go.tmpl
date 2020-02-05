@@ -1,12 +1,12 @@
 {{- $ := . }}
 {{- $x := .X }}
 // {{$x.Sym}} {{$x.Description}}
-type {{$x.Sym}} int
+type {{$x.Sym}} string
 
 const (
 {{- range $y := .X.Members }}
     // {{$x.Sym}}V{{$y.Sym}} {{$y.Description}}
-    {{$x.Sym}}V{{$y.Sym}} {{$x.Sym}} = {{$y.Value}}
+    {{$x.Sym}}V{{$y.Sym}} {{$x.Sym}} = "{{$y.Sym}}"
 {{- end }}
 )
 

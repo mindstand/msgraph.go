@@ -3,23 +3,23 @@
 package msgraph
 
 // QuarantineReason undocumented
-type QuarantineReason int
+type QuarantineReason string
 
 const (
 	// QuarantineReasonVEncounteredBaseEscrowThreshold undocumented
-	QuarantineReasonVEncounteredBaseEscrowThreshold QuarantineReason = 0
+	QuarantineReasonVEncounteredBaseEscrowThreshold QuarantineReason = "EncounteredBaseEscrowThreshold"
 	// QuarantineReasonVEncounteredTotalEscrowThreshold undocumented
-	QuarantineReasonVEncounteredTotalEscrowThreshold QuarantineReason = 1
+	QuarantineReasonVEncounteredTotalEscrowThreshold QuarantineReason = "EncounteredTotalEscrowThreshold"
 	// QuarantineReasonVEncounteredEscrowProportionThreshold undocumented
-	QuarantineReasonVEncounteredEscrowProportionThreshold QuarantineReason = 2
+	QuarantineReasonVEncounteredEscrowProportionThreshold QuarantineReason = "EncounteredEscrowProportionThreshold"
 	// QuarantineReasonVEncounteredQuarantineException undocumented
-	QuarantineReasonVEncounteredQuarantineException QuarantineReason = 4
+	QuarantineReasonVEncounteredQuarantineException QuarantineReason = "EncounteredQuarantineException"
 	// QuarantineReasonVUnknown undocumented
-	QuarantineReasonVUnknown QuarantineReason = 8
+	QuarantineReasonVUnknown QuarantineReason = "Unknown"
 	// QuarantineReasonVQuarantinedOnDemand undocumented
-	QuarantineReasonVQuarantinedOnDemand QuarantineReason = 16
+	QuarantineReasonVQuarantinedOnDemand QuarantineReason = "QuarantinedOnDemand"
 	// QuarantineReasonVTooManyDeletes undocumented
-	QuarantineReasonVTooManyDeletes QuarantineReason = 32
+	QuarantineReasonVTooManyDeletes QuarantineReason = "TooManyDeletes"
 )
 
 // QuarantineReasonPEncounteredBaseEscrowThreshold returns a pointer to QuarantineReasonVEncounteredBaseEscrowThreshold

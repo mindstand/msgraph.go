@@ -3,17 +3,17 @@
 package msgraph
 
 // ReferenceAttachmentProvider undocumented
-type ReferenceAttachmentProvider int
+type ReferenceAttachmentProvider string
 
 const (
 	// ReferenceAttachmentProviderVOther undocumented
-	ReferenceAttachmentProviderVOther ReferenceAttachmentProvider = 0
+	ReferenceAttachmentProviderVOther ReferenceAttachmentProvider = "Other"
 	// ReferenceAttachmentProviderVOneDriveBusiness undocumented
-	ReferenceAttachmentProviderVOneDriveBusiness ReferenceAttachmentProvider = 1
+	ReferenceAttachmentProviderVOneDriveBusiness ReferenceAttachmentProvider = "OneDriveBusiness"
 	// ReferenceAttachmentProviderVOneDriveConsumer undocumented
-	ReferenceAttachmentProviderVOneDriveConsumer ReferenceAttachmentProvider = 2
+	ReferenceAttachmentProviderVOneDriveConsumer ReferenceAttachmentProvider = "OneDriveConsumer"
 	// ReferenceAttachmentProviderVDropbox undocumented
-	ReferenceAttachmentProviderVDropbox ReferenceAttachmentProvider = 3
+	ReferenceAttachmentProviderVDropbox ReferenceAttachmentProvider = "Dropbox"
 )
 
 // ReferenceAttachmentProviderPOther returns a pointer to ReferenceAttachmentProviderVOther

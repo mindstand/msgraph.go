@@ -3,15 +3,15 @@
 package msgraph
 
 // AppLogUploadState undocumented
-type AppLogUploadState int
+type AppLogUploadState string
 
 const (
 	// AppLogUploadStateVPending undocumented
-	AppLogUploadStateVPending AppLogUploadState = 0
+	AppLogUploadStateVPending AppLogUploadState = "Pending"
 	// AppLogUploadStateVCompleted undocumented
-	AppLogUploadStateVCompleted AppLogUploadState = 1
+	AppLogUploadStateVCompleted AppLogUploadState = "Completed"
 	// AppLogUploadStateVFailed undocumented
-	AppLogUploadStateVFailed AppLogUploadState = 2
+	AppLogUploadStateVFailed AppLogUploadState = "Failed"
 )
 
 // AppLogUploadStatePPending returns a pointer to AppLogUploadStateVPending

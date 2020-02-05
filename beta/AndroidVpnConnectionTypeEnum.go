@@ -3,21 +3,21 @@
 package msgraph
 
 // AndroidVpnConnectionType undocumented
-type AndroidVpnConnectionType int
+type AndroidVpnConnectionType string
 
 const (
 	// AndroidVpnConnectionTypeVCiscoAnyConnect undocumented
-	AndroidVpnConnectionTypeVCiscoAnyConnect AndroidVpnConnectionType = 0
+	AndroidVpnConnectionTypeVCiscoAnyConnect AndroidVpnConnectionType = "CiscoAnyConnect"
 	// AndroidVpnConnectionTypeVPulseSecure undocumented
-	AndroidVpnConnectionTypeVPulseSecure AndroidVpnConnectionType = 1
+	AndroidVpnConnectionTypeVPulseSecure AndroidVpnConnectionType = "PulseSecure"
 	// AndroidVpnConnectionTypeVF5EdgeClient undocumented
-	AndroidVpnConnectionTypeVF5EdgeClient AndroidVpnConnectionType = 2
+	AndroidVpnConnectionTypeVF5EdgeClient AndroidVpnConnectionType = "F5EdgeClient"
 	// AndroidVpnConnectionTypeVDellSonicWallMobileConnect undocumented
-	AndroidVpnConnectionTypeVDellSonicWallMobileConnect AndroidVpnConnectionType = 3
+	AndroidVpnConnectionTypeVDellSonicWallMobileConnect AndroidVpnConnectionType = "DellSonicWallMobileConnect"
 	// AndroidVpnConnectionTypeVCheckPointCapsuleVpn undocumented
-	AndroidVpnConnectionTypeVCheckPointCapsuleVpn AndroidVpnConnectionType = 4
+	AndroidVpnConnectionTypeVCheckPointCapsuleVpn AndroidVpnConnectionType = "CheckPointCapsuleVpn"
 	// AndroidVpnConnectionTypeVCitrix undocumented
-	AndroidVpnConnectionTypeVCitrix AndroidVpnConnectionType = 5
+	AndroidVpnConnectionTypeVCitrix AndroidVpnConnectionType = "Citrix"
 )
 
 // AndroidVpnConnectionTypePCiscoAnyConnect returns a pointer to AndroidVpnConnectionTypeVCiscoAnyConnect

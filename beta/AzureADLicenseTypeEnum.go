@@ -3,21 +3,21 @@
 package msgraph
 
 // AzureADLicenseType undocumented
-type AzureADLicenseType int
+type AzureADLicenseType string
 
 const (
 	// AzureADLicenseTypeVNone undocumented
-	AzureADLicenseTypeVNone AzureADLicenseType = 0
+	AzureADLicenseTypeVNone AzureADLicenseType = "None"
 	// AzureADLicenseTypeVFree undocumented
-	AzureADLicenseTypeVFree AzureADLicenseType = 1
+	AzureADLicenseTypeVFree AzureADLicenseType = "Free"
 	// AzureADLicenseTypeVBasic undocumented
-	AzureADLicenseTypeVBasic AzureADLicenseType = 2
+	AzureADLicenseTypeVBasic AzureADLicenseType = "Basic"
 	// AzureADLicenseTypeVPremiumP1 undocumented
-	AzureADLicenseTypeVPremiumP1 AzureADLicenseType = 3
+	AzureADLicenseTypeVPremiumP1 AzureADLicenseType = "PremiumP1"
 	// AzureADLicenseTypeVPremiumP2 undocumented
-	AzureADLicenseTypeVPremiumP2 AzureADLicenseType = 4
+	AzureADLicenseTypeVPremiumP2 AzureADLicenseType = "PremiumP2"
 	// AzureADLicenseTypeVUnknownFutureValue undocumented
-	AzureADLicenseTypeVUnknownFutureValue AzureADLicenseType = 5
+	AzureADLicenseTypeVUnknownFutureValue AzureADLicenseType = "UnknownFutureValue"
 )
 
 // AzureADLicenseTypePNone returns a pointer to AzureADLicenseTypeVNone

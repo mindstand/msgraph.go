@@ -3,47 +3,47 @@
 package msgraph
 
 // WindowsPrivacyDataCategory undocumented
-type WindowsPrivacyDataCategory int
+type WindowsPrivacyDataCategory string
 
 const (
 	// WindowsPrivacyDataCategoryVNotConfigured undocumented
-	WindowsPrivacyDataCategoryVNotConfigured WindowsPrivacyDataCategory = 0
+	WindowsPrivacyDataCategoryVNotConfigured WindowsPrivacyDataCategory = "NotConfigured"
 	// WindowsPrivacyDataCategoryVAccountInfo undocumented
-	WindowsPrivacyDataCategoryVAccountInfo WindowsPrivacyDataCategory = 1
+	WindowsPrivacyDataCategoryVAccountInfo WindowsPrivacyDataCategory = "AccountInfo"
 	// WindowsPrivacyDataCategoryVAppsRunInBackground undocumented
-	WindowsPrivacyDataCategoryVAppsRunInBackground WindowsPrivacyDataCategory = 2
+	WindowsPrivacyDataCategoryVAppsRunInBackground WindowsPrivacyDataCategory = "AppsRunInBackground"
 	// WindowsPrivacyDataCategoryVCalendar undocumented
-	WindowsPrivacyDataCategoryVCalendar WindowsPrivacyDataCategory = 3
+	WindowsPrivacyDataCategoryVCalendar WindowsPrivacyDataCategory = "Calendar"
 	// WindowsPrivacyDataCategoryVCallHistory undocumented
-	WindowsPrivacyDataCategoryVCallHistory WindowsPrivacyDataCategory = 4
+	WindowsPrivacyDataCategoryVCallHistory WindowsPrivacyDataCategory = "CallHistory"
 	// WindowsPrivacyDataCategoryVCamera undocumented
-	WindowsPrivacyDataCategoryVCamera WindowsPrivacyDataCategory = 5
+	WindowsPrivacyDataCategoryVCamera WindowsPrivacyDataCategory = "Camera"
 	// WindowsPrivacyDataCategoryVContacts undocumented
-	WindowsPrivacyDataCategoryVContacts WindowsPrivacyDataCategory = 6
+	WindowsPrivacyDataCategoryVContacts WindowsPrivacyDataCategory = "Contacts"
 	// WindowsPrivacyDataCategoryVDiagnosticsInfo undocumented
-	WindowsPrivacyDataCategoryVDiagnosticsInfo WindowsPrivacyDataCategory = 7
+	WindowsPrivacyDataCategoryVDiagnosticsInfo WindowsPrivacyDataCategory = "DiagnosticsInfo"
 	// WindowsPrivacyDataCategoryVEmail undocumented
-	WindowsPrivacyDataCategoryVEmail WindowsPrivacyDataCategory = 8
+	WindowsPrivacyDataCategoryVEmail WindowsPrivacyDataCategory = "Email"
 	// WindowsPrivacyDataCategoryVLocation undocumented
-	WindowsPrivacyDataCategoryVLocation WindowsPrivacyDataCategory = 9
+	WindowsPrivacyDataCategoryVLocation WindowsPrivacyDataCategory = "Location"
 	// WindowsPrivacyDataCategoryVMessaging undocumented
-	WindowsPrivacyDataCategoryVMessaging WindowsPrivacyDataCategory = 10
+	WindowsPrivacyDataCategoryVMessaging WindowsPrivacyDataCategory = "Messaging"
 	// WindowsPrivacyDataCategoryVMicrophone undocumented
-	WindowsPrivacyDataCategoryVMicrophone WindowsPrivacyDataCategory = 11
+	WindowsPrivacyDataCategoryVMicrophone WindowsPrivacyDataCategory = "Microphone"
 	// WindowsPrivacyDataCategoryVMotion undocumented
-	WindowsPrivacyDataCategoryVMotion WindowsPrivacyDataCategory = 12
+	WindowsPrivacyDataCategoryVMotion WindowsPrivacyDataCategory = "Motion"
 	// WindowsPrivacyDataCategoryVNotifications undocumented
-	WindowsPrivacyDataCategoryVNotifications WindowsPrivacyDataCategory = 13
+	WindowsPrivacyDataCategoryVNotifications WindowsPrivacyDataCategory = "Notifications"
 	// WindowsPrivacyDataCategoryVPhone undocumented
-	WindowsPrivacyDataCategoryVPhone WindowsPrivacyDataCategory = 14
+	WindowsPrivacyDataCategoryVPhone WindowsPrivacyDataCategory = "Phone"
 	// WindowsPrivacyDataCategoryVRadios undocumented
-	WindowsPrivacyDataCategoryVRadios WindowsPrivacyDataCategory = 15
+	WindowsPrivacyDataCategoryVRadios WindowsPrivacyDataCategory = "Radios"
 	// WindowsPrivacyDataCategoryVTasks undocumented
-	WindowsPrivacyDataCategoryVTasks WindowsPrivacyDataCategory = 16
+	WindowsPrivacyDataCategoryVTasks WindowsPrivacyDataCategory = "Tasks"
 	// WindowsPrivacyDataCategoryVSyncWithDevices undocumented
-	WindowsPrivacyDataCategoryVSyncWithDevices WindowsPrivacyDataCategory = 17
+	WindowsPrivacyDataCategoryVSyncWithDevices WindowsPrivacyDataCategory = "SyncWithDevices"
 	// WindowsPrivacyDataCategoryVTrustedDevices undocumented
-	WindowsPrivacyDataCategoryVTrustedDevices WindowsPrivacyDataCategory = 18
+	WindowsPrivacyDataCategoryVTrustedDevices WindowsPrivacyDataCategory = "TrustedDevices"
 )
 
 // WindowsPrivacyDataCategoryPNotConfigured returns a pointer to WindowsPrivacyDataCategoryVNotConfigured

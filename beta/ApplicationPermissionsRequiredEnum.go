@@ -3,23 +3,23 @@
 package msgraph
 
 // ApplicationPermissionsRequired undocumented
-type ApplicationPermissionsRequired int
+type ApplicationPermissionsRequired string
 
 const (
 	// ApplicationPermissionsRequiredVUnknown undocumented
-	ApplicationPermissionsRequiredVUnknown ApplicationPermissionsRequired = 0
+	ApplicationPermissionsRequiredVUnknown ApplicationPermissionsRequired = "Unknown"
 	// ApplicationPermissionsRequiredVAnonymous undocumented
-	ApplicationPermissionsRequiredVAnonymous ApplicationPermissionsRequired = 1
+	ApplicationPermissionsRequiredVAnonymous ApplicationPermissionsRequired = "Anonymous"
 	// ApplicationPermissionsRequiredVGuest undocumented
-	ApplicationPermissionsRequiredVGuest ApplicationPermissionsRequired = 2
+	ApplicationPermissionsRequiredVGuest ApplicationPermissionsRequired = "Guest"
 	// ApplicationPermissionsRequiredVUser undocumented
-	ApplicationPermissionsRequiredVUser ApplicationPermissionsRequired = 3
+	ApplicationPermissionsRequiredVUser ApplicationPermissionsRequired = "User"
 	// ApplicationPermissionsRequiredVAdministrator undocumented
-	ApplicationPermissionsRequiredVAdministrator ApplicationPermissionsRequired = 4
+	ApplicationPermissionsRequiredVAdministrator ApplicationPermissionsRequired = "Administrator"
 	// ApplicationPermissionsRequiredVSystem undocumented
-	ApplicationPermissionsRequiredVSystem ApplicationPermissionsRequired = 5
+	ApplicationPermissionsRequiredVSystem ApplicationPermissionsRequired = "System"
 	// ApplicationPermissionsRequiredVUnknownFutureValue undocumented
-	ApplicationPermissionsRequiredVUnknownFutureValue ApplicationPermissionsRequired = 127
+	ApplicationPermissionsRequiredVUnknownFutureValue ApplicationPermissionsRequired = "UnknownFutureValue"
 )
 
 // ApplicationPermissionsRequiredPUnknown returns a pointer to ApplicationPermissionsRequiredVUnknown

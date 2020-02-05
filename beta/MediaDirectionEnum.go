@@ -3,17 +3,17 @@
 package msgraph
 
 // MediaDirection undocumented
-type MediaDirection int
+type MediaDirection string
 
 const (
 	// MediaDirectionVInactive undocumented
-	MediaDirectionVInactive MediaDirection = 0
+	MediaDirectionVInactive MediaDirection = "Inactive"
 	// MediaDirectionVSendOnly undocumented
-	MediaDirectionVSendOnly MediaDirection = 1
+	MediaDirectionVSendOnly MediaDirection = "SendOnly"
 	// MediaDirectionVReceiveOnly undocumented
-	MediaDirectionVReceiveOnly MediaDirection = 2
+	MediaDirectionVReceiveOnly MediaDirection = "ReceiveOnly"
 	// MediaDirectionVSendReceive undocumented
-	MediaDirectionVSendReceive MediaDirection = 3
+	MediaDirectionVSendReceive MediaDirection = "SendReceive"
 )
 
 // MediaDirectionPInactive returns a pointer to MediaDirectionVInactive

@@ -3,13 +3,13 @@
 package msgraph
 
 // GroupPolicyDefinitionClassType undocumented
-type GroupPolicyDefinitionClassType int
+type GroupPolicyDefinitionClassType string
 
 const (
 	// GroupPolicyDefinitionClassTypeVUser undocumented
-	GroupPolicyDefinitionClassTypeVUser GroupPolicyDefinitionClassType = 0
+	GroupPolicyDefinitionClassTypeVUser GroupPolicyDefinitionClassType = "User"
 	// GroupPolicyDefinitionClassTypeVMachine undocumented
-	GroupPolicyDefinitionClassTypeVMachine GroupPolicyDefinitionClassType = 1
+	GroupPolicyDefinitionClassTypeVMachine GroupPolicyDefinitionClassType = "Machine"
 )
 
 // GroupPolicyDefinitionClassTypePUser returns a pointer to GroupPolicyDefinitionClassTypeVUser

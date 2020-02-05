@@ -3,17 +3,17 @@
 package msgraph
 
 // AndroidForWorkEnrollmentTarget undocumented
-type AndroidForWorkEnrollmentTarget int
+type AndroidForWorkEnrollmentTarget string
 
 const (
 	// AndroidForWorkEnrollmentTargetVNone undocumented
-	AndroidForWorkEnrollmentTargetVNone AndroidForWorkEnrollmentTarget = 0
+	AndroidForWorkEnrollmentTargetVNone AndroidForWorkEnrollmentTarget = "None"
 	// AndroidForWorkEnrollmentTargetVAll undocumented
-	AndroidForWorkEnrollmentTargetVAll AndroidForWorkEnrollmentTarget = 1
+	AndroidForWorkEnrollmentTargetVAll AndroidForWorkEnrollmentTarget = "All"
 	// AndroidForWorkEnrollmentTargetVTargeted undocumented
-	AndroidForWorkEnrollmentTargetVTargeted AndroidForWorkEnrollmentTarget = 2
+	AndroidForWorkEnrollmentTargetVTargeted AndroidForWorkEnrollmentTarget = "Targeted"
 	// AndroidForWorkEnrollmentTargetVTargetedAsEnrollmentRestrictions undocumented
-	AndroidForWorkEnrollmentTargetVTargetedAsEnrollmentRestrictions AndroidForWorkEnrollmentTarget = 3
+	AndroidForWorkEnrollmentTargetVTargetedAsEnrollmentRestrictions AndroidForWorkEnrollmentTarget = "TargetedAsEnrollmentRestrictions"
 )
 
 // AndroidForWorkEnrollmentTargetPNone returns a pointer to AndroidForWorkEnrollmentTargetVNone

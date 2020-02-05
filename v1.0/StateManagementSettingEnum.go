@@ -3,15 +3,15 @@
 package msgraph
 
 // StateManagementSetting undocumented
-type StateManagementSetting int
+type StateManagementSetting string
 
 const (
 	// StateManagementSettingVNotConfigured undocumented
-	StateManagementSettingVNotConfigured StateManagementSetting = 0
+	StateManagementSettingVNotConfigured StateManagementSetting = "NotConfigured"
 	// StateManagementSettingVBlocked undocumented
-	StateManagementSettingVBlocked StateManagementSetting = 1
+	StateManagementSettingVBlocked StateManagementSetting = "Blocked"
 	// StateManagementSettingVAllowed undocumented
-	StateManagementSettingVAllowed StateManagementSetting = 2
+	StateManagementSettingVAllowed StateManagementSetting = "Allowed"
 )
 
 // StateManagementSettingPNotConfigured returns a pointer to StateManagementSettingVNotConfigured

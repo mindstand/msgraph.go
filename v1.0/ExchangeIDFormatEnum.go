@@ -3,19 +3,19 @@
 package msgraph
 
 // ExchangeIDFormat undocumented
-type ExchangeIDFormat int
+type ExchangeIDFormat string
 
 const (
 	// ExchangeIDFormatVEntryID undocumented
-	ExchangeIDFormatVEntryID ExchangeIDFormat = 0
+	ExchangeIDFormatVEntryID ExchangeIDFormat = "EntryID"
 	// ExchangeIDFormatVEwsID undocumented
-	ExchangeIDFormatVEwsID ExchangeIDFormat = 1
+	ExchangeIDFormatVEwsID ExchangeIDFormat = "EwsID"
 	// ExchangeIDFormatVImmutableEntryID undocumented
-	ExchangeIDFormatVImmutableEntryID ExchangeIDFormat = 2
+	ExchangeIDFormatVImmutableEntryID ExchangeIDFormat = "ImmutableEntryID"
 	// ExchangeIDFormatVRestID undocumented
-	ExchangeIDFormatVRestID ExchangeIDFormat = 3
+	ExchangeIDFormatVRestID ExchangeIDFormat = "RestID"
 	// ExchangeIDFormatVRestImmutableEntryID undocumented
-	ExchangeIDFormatVRestImmutableEntryID ExchangeIDFormat = 4
+	ExchangeIDFormatVRestImmutableEntryID ExchangeIDFormat = "RestImmutableEntryID"
 )
 
 // ExchangeIDFormatPEntryID returns a pointer to ExchangeIDFormatVEntryID

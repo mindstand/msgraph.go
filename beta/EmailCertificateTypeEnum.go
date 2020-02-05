@@ -3,15 +3,15 @@
 package msgraph
 
 // EmailCertificateType undocumented
-type EmailCertificateType int
+type EmailCertificateType string
 
 const (
 	// EmailCertificateTypeVNone undocumented
-	EmailCertificateTypeVNone EmailCertificateType = 0
+	EmailCertificateTypeVNone EmailCertificateType = "None"
 	// EmailCertificateTypeVCertificate undocumented
-	EmailCertificateTypeVCertificate EmailCertificateType = 1
+	EmailCertificateTypeVCertificate EmailCertificateType = "Certificate"
 	// EmailCertificateTypeVDerivedCredential undocumented
-	EmailCertificateTypeVDerivedCredential EmailCertificateType = 2
+	EmailCertificateTypeVDerivedCredential EmailCertificateType = "DerivedCredential"
 )
 
 // EmailCertificateTypePNone returns a pointer to EmailCertificateTypeVNone

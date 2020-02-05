@@ -3,15 +3,15 @@
 package msgraph
 
 // WelcomeScreenMeetingInformation undocumented
-type WelcomeScreenMeetingInformation int
+type WelcomeScreenMeetingInformation string
 
 const (
 	// WelcomeScreenMeetingInformationVUserDefined undocumented
-	WelcomeScreenMeetingInformationVUserDefined WelcomeScreenMeetingInformation = 0
+	WelcomeScreenMeetingInformationVUserDefined WelcomeScreenMeetingInformation = "UserDefined"
 	// WelcomeScreenMeetingInformationVShowOrganizerAndTimeOnly undocumented
-	WelcomeScreenMeetingInformationVShowOrganizerAndTimeOnly WelcomeScreenMeetingInformation = 1
+	WelcomeScreenMeetingInformationVShowOrganizerAndTimeOnly WelcomeScreenMeetingInformation = "ShowOrganizerAndTimeOnly"
 	// WelcomeScreenMeetingInformationVShowOrganizerAndTimeAndSubject undocumented
-	WelcomeScreenMeetingInformationVShowOrganizerAndTimeAndSubject WelcomeScreenMeetingInformation = 2
+	WelcomeScreenMeetingInformationVShowOrganizerAndTimeAndSubject WelcomeScreenMeetingInformation = "ShowOrganizerAndTimeAndSubject"
 )
 
 // WelcomeScreenMeetingInformationPUserDefined returns a pointer to WelcomeScreenMeetingInformationVUserDefined

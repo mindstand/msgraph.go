@@ -3,21 +3,21 @@
 package msgraph
 
 // WindowsUpdateType undocumented
-type WindowsUpdateType int
+type WindowsUpdateType string
 
 const (
 	// WindowsUpdateTypeVUserDefined undocumented
-	WindowsUpdateTypeVUserDefined WindowsUpdateType = 0
+	WindowsUpdateTypeVUserDefined WindowsUpdateType = "UserDefined"
 	// WindowsUpdateTypeVAll undocumented
-	WindowsUpdateTypeVAll WindowsUpdateType = 1
+	WindowsUpdateTypeVAll WindowsUpdateType = "All"
 	// WindowsUpdateTypeVBusinessReadyOnly undocumented
-	WindowsUpdateTypeVBusinessReadyOnly WindowsUpdateType = 2
+	WindowsUpdateTypeVBusinessReadyOnly WindowsUpdateType = "BusinessReadyOnly"
 	// WindowsUpdateTypeVWindowsInsiderBuildFast undocumented
-	WindowsUpdateTypeVWindowsInsiderBuildFast WindowsUpdateType = 3
+	WindowsUpdateTypeVWindowsInsiderBuildFast WindowsUpdateType = "WindowsInsiderBuildFast"
 	// WindowsUpdateTypeVWindowsInsiderBuildSlow undocumented
-	WindowsUpdateTypeVWindowsInsiderBuildSlow WindowsUpdateType = 4
+	WindowsUpdateTypeVWindowsInsiderBuildSlow WindowsUpdateType = "WindowsInsiderBuildSlow"
 	// WindowsUpdateTypeVWindowsInsiderBuildRelease undocumented
-	WindowsUpdateTypeVWindowsInsiderBuildRelease WindowsUpdateType = 5
+	WindowsUpdateTypeVWindowsInsiderBuildRelease WindowsUpdateType = "WindowsInsiderBuildRelease"
 )
 
 // WindowsUpdateTypePUserDefined returns a pointer to WindowsUpdateTypeVUserDefined

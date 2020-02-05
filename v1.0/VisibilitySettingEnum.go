@@ -3,15 +3,15 @@
 package msgraph
 
 // VisibilitySetting undocumented
-type VisibilitySetting int
+type VisibilitySetting string
 
 const (
 	// VisibilitySettingVNotConfigured undocumented
-	VisibilitySettingVNotConfigured VisibilitySetting = 0
+	VisibilitySettingVNotConfigured VisibilitySetting = "NotConfigured"
 	// VisibilitySettingVHide undocumented
-	VisibilitySettingVHide VisibilitySetting = 1
+	VisibilitySettingVHide VisibilitySetting = "Hide"
 	// VisibilitySettingVShow undocumented
-	VisibilitySettingVShow VisibilitySetting = 2
+	VisibilitySettingVShow VisibilitySetting = "Show"
 )
 
 // VisibilitySettingPNotConfigured returns a pointer to VisibilitySettingVNotConfigured

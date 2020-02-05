@@ -3,21 +3,21 @@
 package msgraph
 
 // RatingFranceTelevisionType undocumented
-type RatingFranceTelevisionType int
+type RatingFranceTelevisionType string
 
 const (
 	// RatingFranceTelevisionTypeVAllAllowed undocumented
-	RatingFranceTelevisionTypeVAllAllowed RatingFranceTelevisionType = 0
+	RatingFranceTelevisionTypeVAllAllowed RatingFranceTelevisionType = "AllAllowed"
 	// RatingFranceTelevisionTypeVAllBlocked undocumented
-	RatingFranceTelevisionTypeVAllBlocked RatingFranceTelevisionType = 1
+	RatingFranceTelevisionTypeVAllBlocked RatingFranceTelevisionType = "AllBlocked"
 	// RatingFranceTelevisionTypeVAgesAbove10 undocumented
-	RatingFranceTelevisionTypeVAgesAbove10 RatingFranceTelevisionType = 2
+	RatingFranceTelevisionTypeVAgesAbove10 RatingFranceTelevisionType = "AgesAbove10"
 	// RatingFranceTelevisionTypeVAgesAbove12 undocumented
-	RatingFranceTelevisionTypeVAgesAbove12 RatingFranceTelevisionType = 3
+	RatingFranceTelevisionTypeVAgesAbove12 RatingFranceTelevisionType = "AgesAbove12"
 	// RatingFranceTelevisionTypeVAgesAbove16 undocumented
-	RatingFranceTelevisionTypeVAgesAbove16 RatingFranceTelevisionType = 4
+	RatingFranceTelevisionTypeVAgesAbove16 RatingFranceTelevisionType = "AgesAbove16"
 	// RatingFranceTelevisionTypeVAgesAbove18 undocumented
-	RatingFranceTelevisionTypeVAgesAbove18 RatingFranceTelevisionType = 5
+	RatingFranceTelevisionTypeVAgesAbove18 RatingFranceTelevisionType = "AgesAbove18"
 )
 
 // RatingFranceTelevisionTypePAllAllowed returns a pointer to RatingFranceTelevisionTypeVAllAllowed

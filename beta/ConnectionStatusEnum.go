@@ -3,21 +3,21 @@
 package msgraph
 
 // ConnectionStatus undocumented
-type ConnectionStatus int
+type ConnectionStatus string
 
 const (
 	// ConnectionStatusVUnknown undocumented
-	ConnectionStatusVUnknown ConnectionStatus = 0
+	ConnectionStatusVUnknown ConnectionStatus = "Unknown"
 	// ConnectionStatusVAttempted undocumented
-	ConnectionStatusVAttempted ConnectionStatus = 1
+	ConnectionStatusVAttempted ConnectionStatus = "Attempted"
 	// ConnectionStatusVSucceeded undocumented
-	ConnectionStatusVSucceeded ConnectionStatus = 2
+	ConnectionStatusVSucceeded ConnectionStatus = "Succeeded"
 	// ConnectionStatusVBlocked undocumented
-	ConnectionStatusVBlocked ConnectionStatus = 3
+	ConnectionStatusVBlocked ConnectionStatus = "Blocked"
 	// ConnectionStatusVFailed undocumented
-	ConnectionStatusVFailed ConnectionStatus = 4
+	ConnectionStatusVFailed ConnectionStatus = "Failed"
 	// ConnectionStatusVUnknownFutureValue undocumented
-	ConnectionStatusVUnknownFutureValue ConnectionStatus = 127
+	ConnectionStatusVUnknownFutureValue ConnectionStatus = "UnknownFutureValue"
 )
 
 // ConnectionStatusPUnknown returns a pointer to ConnectionStatusVUnknown

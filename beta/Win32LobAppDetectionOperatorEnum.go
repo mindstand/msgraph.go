@@ -3,23 +3,23 @@
 package msgraph
 
 // Win32LobAppDetectionOperator undocumented
-type Win32LobAppDetectionOperator int
+type Win32LobAppDetectionOperator string
 
 const (
 	// Win32LobAppDetectionOperatorVNotConfigured undocumented
-	Win32LobAppDetectionOperatorVNotConfigured Win32LobAppDetectionOperator = 0
+	Win32LobAppDetectionOperatorVNotConfigured Win32LobAppDetectionOperator = "NotConfigured"
 	// Win32LobAppDetectionOperatorVEqual undocumented
-	Win32LobAppDetectionOperatorVEqual Win32LobAppDetectionOperator = 1
+	Win32LobAppDetectionOperatorVEqual Win32LobAppDetectionOperator = "Equal"
 	// Win32LobAppDetectionOperatorVNotEqual undocumented
-	Win32LobAppDetectionOperatorVNotEqual Win32LobAppDetectionOperator = 2
+	Win32LobAppDetectionOperatorVNotEqual Win32LobAppDetectionOperator = "NotEqual"
 	// Win32LobAppDetectionOperatorVGreaterThan undocumented
-	Win32LobAppDetectionOperatorVGreaterThan Win32LobAppDetectionOperator = 4
+	Win32LobAppDetectionOperatorVGreaterThan Win32LobAppDetectionOperator = "GreaterThan"
 	// Win32LobAppDetectionOperatorVGreaterThanOrEqual undocumented
-	Win32LobAppDetectionOperatorVGreaterThanOrEqual Win32LobAppDetectionOperator = 5
+	Win32LobAppDetectionOperatorVGreaterThanOrEqual Win32LobAppDetectionOperator = "GreaterThanOrEqual"
 	// Win32LobAppDetectionOperatorVLessThan undocumented
-	Win32LobAppDetectionOperatorVLessThan Win32LobAppDetectionOperator = 8
+	Win32LobAppDetectionOperatorVLessThan Win32LobAppDetectionOperator = "LessThan"
 	// Win32LobAppDetectionOperatorVLessThanOrEqual undocumented
-	Win32LobAppDetectionOperatorVLessThanOrEqual Win32LobAppDetectionOperator = 9
+	Win32LobAppDetectionOperatorVLessThanOrEqual Win32LobAppDetectionOperator = "LessThanOrEqual"
 )
 
 // Win32LobAppDetectionOperatorPNotConfigured returns a pointer to Win32LobAppDetectionOperatorVNotConfigured

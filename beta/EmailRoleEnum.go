@@ -3,17 +3,17 @@
 package msgraph
 
 // EmailRole undocumented
-type EmailRole int
+type EmailRole string
 
 const (
 	// EmailRoleVUnknown undocumented
-	EmailRoleVUnknown EmailRole = 0
+	EmailRoleVUnknown EmailRole = "Unknown"
 	// EmailRoleVSender undocumented
-	EmailRoleVSender EmailRole = 1
+	EmailRoleVSender EmailRole = "Sender"
 	// EmailRoleVRecipient undocumented
-	EmailRoleVRecipient EmailRole = 2
+	EmailRoleVRecipient EmailRole = "Recipient"
 	// EmailRoleVUnknownFutureValue undocumented
-	EmailRoleVUnknownFutureValue EmailRole = 127
+	EmailRoleVUnknownFutureValue EmailRole = "UnknownFutureValue"
 )
 
 // EmailRolePUnknown returns a pointer to EmailRoleVUnknown

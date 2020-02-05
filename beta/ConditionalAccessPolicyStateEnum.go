@@ -3,15 +3,15 @@
 package msgraph
 
 // ConditionalAccessPolicyState undocumented
-type ConditionalAccessPolicyState int
+type ConditionalAccessPolicyState string
 
 const (
 	// ConditionalAccessPolicyStateVEnabled undocumented
-	ConditionalAccessPolicyStateVEnabled ConditionalAccessPolicyState = 0
+	ConditionalAccessPolicyStateVEnabled ConditionalAccessPolicyState = "Enabled"
 	// ConditionalAccessPolicyStateVDisabled undocumented
-	ConditionalAccessPolicyStateVDisabled ConditionalAccessPolicyState = 1
+	ConditionalAccessPolicyStateVDisabled ConditionalAccessPolicyState = "Disabled"
 	// ConditionalAccessPolicyStateVEnabledForReportingButNotEnforced undocumented
-	ConditionalAccessPolicyStateVEnabledForReportingButNotEnforced ConditionalAccessPolicyState = 2
+	ConditionalAccessPolicyStateVEnabledForReportingButNotEnforced ConditionalAccessPolicyState = "EnabledForReportingButNotEnforced"
 )
 
 // ConditionalAccessPolicyStatePEnabled returns a pointer to ConditionalAccessPolicyStateVEnabled

@@ -3,21 +3,21 @@
 package msgraph
 
 // DeviceManagementPartnerTenantState undocumented
-type DeviceManagementPartnerTenantState int
+type DeviceManagementPartnerTenantState string
 
 const (
 	// DeviceManagementPartnerTenantStateVUnknown undocumented
-	DeviceManagementPartnerTenantStateVUnknown DeviceManagementPartnerTenantState = 0
+	DeviceManagementPartnerTenantStateVUnknown DeviceManagementPartnerTenantState = "Unknown"
 	// DeviceManagementPartnerTenantStateVUnavailable undocumented
-	DeviceManagementPartnerTenantStateVUnavailable DeviceManagementPartnerTenantState = 1
+	DeviceManagementPartnerTenantStateVUnavailable DeviceManagementPartnerTenantState = "Unavailable"
 	// DeviceManagementPartnerTenantStateVEnabled undocumented
-	DeviceManagementPartnerTenantStateVEnabled DeviceManagementPartnerTenantState = 2
+	DeviceManagementPartnerTenantStateVEnabled DeviceManagementPartnerTenantState = "Enabled"
 	// DeviceManagementPartnerTenantStateVTerminated undocumented
-	DeviceManagementPartnerTenantStateVTerminated DeviceManagementPartnerTenantState = 3
+	DeviceManagementPartnerTenantStateVTerminated DeviceManagementPartnerTenantState = "Terminated"
 	// DeviceManagementPartnerTenantStateVRejected undocumented
-	DeviceManagementPartnerTenantStateVRejected DeviceManagementPartnerTenantState = 4
+	DeviceManagementPartnerTenantStateVRejected DeviceManagementPartnerTenantState = "Rejected"
 	// DeviceManagementPartnerTenantStateVUnresponsive undocumented
-	DeviceManagementPartnerTenantStateVUnresponsive DeviceManagementPartnerTenantState = 5
+	DeviceManagementPartnerTenantStateVUnresponsive DeviceManagementPartnerTenantState = "Unresponsive"
 )
 
 // DeviceManagementPartnerTenantStatePUnknown returns a pointer to DeviceManagementPartnerTenantStateVUnknown

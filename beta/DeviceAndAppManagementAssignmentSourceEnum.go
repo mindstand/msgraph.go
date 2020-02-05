@@ -3,13 +3,13 @@
 package msgraph
 
 // DeviceAndAppManagementAssignmentSource undocumented
-type DeviceAndAppManagementAssignmentSource int
+type DeviceAndAppManagementAssignmentSource string
 
 const (
 	// DeviceAndAppManagementAssignmentSourceVDirect undocumented
-	DeviceAndAppManagementAssignmentSourceVDirect DeviceAndAppManagementAssignmentSource = 0
+	DeviceAndAppManagementAssignmentSourceVDirect DeviceAndAppManagementAssignmentSource = "Direct"
 	// DeviceAndAppManagementAssignmentSourceVPolicySets undocumented
-	DeviceAndAppManagementAssignmentSourceVPolicySets DeviceAndAppManagementAssignmentSource = 1
+	DeviceAndAppManagementAssignmentSourceVPolicySets DeviceAndAppManagementAssignmentSource = "PolicySets"
 )
 
 // DeviceAndAppManagementAssignmentSourcePDirect returns a pointer to DeviceAndAppManagementAssignmentSourceVDirect

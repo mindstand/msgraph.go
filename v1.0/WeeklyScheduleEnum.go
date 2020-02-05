@@ -3,27 +3,27 @@
 package msgraph
 
 // WeeklySchedule undocumented
-type WeeklySchedule int
+type WeeklySchedule string
 
 const (
 	// WeeklyScheduleVUserDefined undocumented
-	WeeklyScheduleVUserDefined WeeklySchedule = 0
+	WeeklyScheduleVUserDefined WeeklySchedule = "UserDefined"
 	// WeeklyScheduleVEveryday undocumented
-	WeeklyScheduleVEveryday WeeklySchedule = 1
+	WeeklyScheduleVEveryday WeeklySchedule = "Everyday"
 	// WeeklyScheduleVSunday undocumented
-	WeeklyScheduleVSunday WeeklySchedule = 2
+	WeeklyScheduleVSunday WeeklySchedule = "Sunday"
 	// WeeklyScheduleVMonday undocumented
-	WeeklyScheduleVMonday WeeklySchedule = 3
+	WeeklyScheduleVMonday WeeklySchedule = "Monday"
 	// WeeklyScheduleVTuesday undocumented
-	WeeklyScheduleVTuesday WeeklySchedule = 4
+	WeeklyScheduleVTuesday WeeklySchedule = "Tuesday"
 	// WeeklyScheduleVWednesday undocumented
-	WeeklyScheduleVWednesday WeeklySchedule = 5
+	WeeklyScheduleVWednesday WeeklySchedule = "Wednesday"
 	// WeeklyScheduleVThursday undocumented
-	WeeklyScheduleVThursday WeeklySchedule = 6
+	WeeklyScheduleVThursday WeeklySchedule = "Thursday"
 	// WeeklyScheduleVFriday undocumented
-	WeeklyScheduleVFriday WeeklySchedule = 7
+	WeeklyScheduleVFriday WeeklySchedule = "Friday"
 	// WeeklyScheduleVSaturday undocumented
-	WeeklyScheduleVSaturday WeeklySchedule = 8
+	WeeklyScheduleVSaturday WeeklySchedule = "Saturday"
 )
 
 // WeeklySchedulePUserDefined returns a pointer to WeeklyScheduleVUserDefined

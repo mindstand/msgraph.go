@@ -3,13 +3,13 @@
 package msgraph
 
 // EncryptionState undocumented
-type EncryptionState int
+type EncryptionState string
 
 const (
 	// EncryptionStateVNotEncrypted undocumented
-	EncryptionStateVNotEncrypted EncryptionState = 0
+	EncryptionStateVNotEncrypted EncryptionState = "NotEncrypted"
 	// EncryptionStateVEncrypted undocumented
-	EncryptionStateVEncrypted EncryptionState = 1
+	EncryptionStateVEncrypted EncryptionState = "Encrypted"
 )
 
 // EncryptionStatePNotEncrypted returns a pointer to EncryptionStateVNotEncrypted

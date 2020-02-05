@@ -3,13 +3,13 @@
 package msgraph
 
 // DeviceManagementExchangeAccessRuleType undocumented
-type DeviceManagementExchangeAccessRuleType int
+type DeviceManagementExchangeAccessRuleType string
 
 const (
 	// DeviceManagementExchangeAccessRuleTypeVFamily undocumented
-	DeviceManagementExchangeAccessRuleTypeVFamily DeviceManagementExchangeAccessRuleType = 0
+	DeviceManagementExchangeAccessRuleTypeVFamily DeviceManagementExchangeAccessRuleType = "Family"
 	// DeviceManagementExchangeAccessRuleTypeVModel undocumented
-	DeviceManagementExchangeAccessRuleTypeVModel DeviceManagementExchangeAccessRuleType = 1
+	DeviceManagementExchangeAccessRuleTypeVModel DeviceManagementExchangeAccessRuleType = "Model"
 )
 
 // DeviceManagementExchangeAccessRuleTypePFamily returns a pointer to DeviceManagementExchangeAccessRuleTypeVFamily

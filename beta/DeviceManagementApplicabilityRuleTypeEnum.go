@@ -3,13 +3,13 @@
 package msgraph
 
 // DeviceManagementApplicabilityRuleType undocumented
-type DeviceManagementApplicabilityRuleType int
+type DeviceManagementApplicabilityRuleType string
 
 const (
 	// DeviceManagementApplicabilityRuleTypeVInclude undocumented
-	DeviceManagementApplicabilityRuleTypeVInclude DeviceManagementApplicabilityRuleType = 0
+	DeviceManagementApplicabilityRuleTypeVInclude DeviceManagementApplicabilityRuleType = "Include"
 	// DeviceManagementApplicabilityRuleTypeVExclude undocumented
-	DeviceManagementApplicabilityRuleTypeVExclude DeviceManagementApplicabilityRuleType = 1
+	DeviceManagementApplicabilityRuleTypeVExclude DeviceManagementApplicabilityRuleType = "Exclude"
 )
 
 // DeviceManagementApplicabilityRuleTypePInclude returns a pointer to DeviceManagementApplicabilityRuleTypeVInclude

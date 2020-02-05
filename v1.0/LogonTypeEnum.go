@@ -3,23 +3,23 @@
 package msgraph
 
 // LogonType undocumented
-type LogonType int
+type LogonType string
 
 const (
 	// LogonTypeVUnknown undocumented
-	LogonTypeVUnknown LogonType = 0
+	LogonTypeVUnknown LogonType = "Unknown"
 	// LogonTypeVInteractive undocumented
-	LogonTypeVInteractive LogonType = 1
+	LogonTypeVInteractive LogonType = "Interactive"
 	// LogonTypeVRemoteInteractive undocumented
-	LogonTypeVRemoteInteractive LogonType = 2
+	LogonTypeVRemoteInteractive LogonType = "RemoteInteractive"
 	// LogonTypeVNetwork undocumented
-	LogonTypeVNetwork LogonType = 3
+	LogonTypeVNetwork LogonType = "Network"
 	// LogonTypeVBatch undocumented
-	LogonTypeVBatch LogonType = 4
+	LogonTypeVBatch LogonType = "Batch"
 	// LogonTypeVService undocumented
-	LogonTypeVService LogonType = 5
+	LogonTypeVService LogonType = "Service"
 	// LogonTypeVUnknownFutureValue undocumented
-	LogonTypeVUnknownFutureValue LogonType = 127
+	LogonTypeVUnknownFutureValue LogonType = "UnknownFutureValue"
 )
 
 // LogonTypePUnknown returns a pointer to LogonTypeVUnknown

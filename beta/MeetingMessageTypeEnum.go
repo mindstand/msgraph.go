@@ -3,21 +3,21 @@
 package msgraph
 
 // MeetingMessageType undocumented
-type MeetingMessageType int
+type MeetingMessageType string
 
 const (
 	// MeetingMessageTypeVNone undocumented
-	MeetingMessageTypeVNone MeetingMessageType = 0
+	MeetingMessageTypeVNone MeetingMessageType = "None"
 	// MeetingMessageTypeVMeetingRequest undocumented
-	MeetingMessageTypeVMeetingRequest MeetingMessageType = 1
+	MeetingMessageTypeVMeetingRequest MeetingMessageType = "MeetingRequest"
 	// MeetingMessageTypeVMeetingCancelled undocumented
-	MeetingMessageTypeVMeetingCancelled MeetingMessageType = 2
+	MeetingMessageTypeVMeetingCancelled MeetingMessageType = "MeetingCancelled"
 	// MeetingMessageTypeVMeetingAccepted undocumented
-	MeetingMessageTypeVMeetingAccepted MeetingMessageType = 3
+	MeetingMessageTypeVMeetingAccepted MeetingMessageType = "MeetingAccepted"
 	// MeetingMessageTypeVMeetingTentativelyAccepted undocumented
-	MeetingMessageTypeVMeetingTentativelyAccepted MeetingMessageType = 4
+	MeetingMessageTypeVMeetingTentativelyAccepted MeetingMessageType = "MeetingTentativelyAccepted"
 	// MeetingMessageTypeVMeetingDeclined undocumented
-	MeetingMessageTypeVMeetingDeclined MeetingMessageType = 5
+	MeetingMessageTypeVMeetingDeclined MeetingMessageType = "MeetingDeclined"
 )
 
 // MeetingMessageTypePNone returns a pointer to MeetingMessageTypeVNone

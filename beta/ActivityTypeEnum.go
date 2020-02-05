@@ -3,15 +3,15 @@
 package msgraph
 
 // ActivityType undocumented
-type ActivityType int
+type ActivityType string
 
 const (
 	// ActivityTypeVSignin undocumented
-	ActivityTypeVSignin ActivityType = 0
+	ActivityTypeVSignin ActivityType = "Signin"
 	// ActivityTypeVUser undocumented
-	ActivityTypeVUser ActivityType = 1
+	ActivityTypeVUser ActivityType = "User"
 	// ActivityTypeVUnknownFutureValue undocumented
-	ActivityTypeVUnknownFutureValue ActivityType = 2
+	ActivityTypeVUnknownFutureValue ActivityType = "UnknownFutureValue"
 )
 
 // ActivityTypePSignin returns a pointer to ActivityTypeVSignin

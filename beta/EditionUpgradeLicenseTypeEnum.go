@@ -3,15 +3,15 @@
 package msgraph
 
 // EditionUpgradeLicenseType undocumented
-type EditionUpgradeLicenseType int
+type EditionUpgradeLicenseType string
 
 const (
 	// EditionUpgradeLicenseTypeVProductKey undocumented
-	EditionUpgradeLicenseTypeVProductKey EditionUpgradeLicenseType = 0
+	EditionUpgradeLicenseTypeVProductKey EditionUpgradeLicenseType = "ProductKey"
 	// EditionUpgradeLicenseTypeVLicenseFile undocumented
-	EditionUpgradeLicenseTypeVLicenseFile EditionUpgradeLicenseType = 1
+	EditionUpgradeLicenseTypeVLicenseFile EditionUpgradeLicenseType = "LicenseFile"
 	// EditionUpgradeLicenseTypeVNotConfigured undocumented
-	EditionUpgradeLicenseTypeVNotConfigured EditionUpgradeLicenseType = 2
+	EditionUpgradeLicenseTypeVNotConfigured EditionUpgradeLicenseType = "NotConfigured"
 )
 
 // EditionUpgradeLicenseTypePProductKey returns a pointer to EditionUpgradeLicenseTypeVProductKey

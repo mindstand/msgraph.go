@@ -3,17 +3,17 @@
 package msgraph
 
 // TeamsAppDistributionMethod undocumented
-type TeamsAppDistributionMethod int
+type TeamsAppDistributionMethod string
 
 const (
 	// TeamsAppDistributionMethodVStore undocumented
-	TeamsAppDistributionMethodVStore TeamsAppDistributionMethod = 0
+	TeamsAppDistributionMethodVStore TeamsAppDistributionMethod = "Store"
 	// TeamsAppDistributionMethodVOrganization undocumented
-	TeamsAppDistributionMethodVOrganization TeamsAppDistributionMethod = 1
+	TeamsAppDistributionMethodVOrganization TeamsAppDistributionMethod = "Organization"
 	// TeamsAppDistributionMethodVSideloaded undocumented
-	TeamsAppDistributionMethodVSideloaded TeamsAppDistributionMethod = 2
+	TeamsAppDistributionMethodVSideloaded TeamsAppDistributionMethod = "Sideloaded"
 	// TeamsAppDistributionMethodVUnknownFutureValue undocumented
-	TeamsAppDistributionMethodVUnknownFutureValue TeamsAppDistributionMethod = 3
+	TeamsAppDistributionMethodVUnknownFutureValue TeamsAppDistributionMethod = "UnknownFutureValue"
 )
 
 // TeamsAppDistributionMethodPStore returns a pointer to TeamsAppDistributionMethodVStore

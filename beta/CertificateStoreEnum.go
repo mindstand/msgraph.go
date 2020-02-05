@@ -3,13 +3,13 @@
 package msgraph
 
 // CertificateStore undocumented
-type CertificateStore int
+type CertificateStore string
 
 const (
 	// CertificateStoreVUser undocumented
-	CertificateStoreVUser CertificateStore = 1
+	CertificateStoreVUser CertificateStore = "User"
 	// CertificateStoreVMachine undocumented
-	CertificateStoreVMachine CertificateStore = 2
+	CertificateStoreVMachine CertificateStore = "Machine"
 )
 
 // CertificateStorePUser returns a pointer to CertificateStoreVUser

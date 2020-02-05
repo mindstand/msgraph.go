@@ -3,19 +3,19 @@
 package msgraph
 
 // EdgeOpenOptions undocumented
-type EdgeOpenOptions int
+type EdgeOpenOptions string
 
 const (
 	// EdgeOpenOptionsVNotConfigured undocumented
-	EdgeOpenOptionsVNotConfigured EdgeOpenOptions = 0
+	EdgeOpenOptionsVNotConfigured EdgeOpenOptions = "NotConfigured"
 	// EdgeOpenOptionsVStartPage undocumented
-	EdgeOpenOptionsVStartPage EdgeOpenOptions = 1
+	EdgeOpenOptionsVStartPage EdgeOpenOptions = "StartPage"
 	// EdgeOpenOptionsVNewTabPage undocumented
-	EdgeOpenOptionsVNewTabPage EdgeOpenOptions = 2
+	EdgeOpenOptionsVNewTabPage EdgeOpenOptions = "NewTabPage"
 	// EdgeOpenOptionsVPreviousPages undocumented
-	EdgeOpenOptionsVPreviousPages EdgeOpenOptions = 3
+	EdgeOpenOptionsVPreviousPages EdgeOpenOptions = "PreviousPages"
 	// EdgeOpenOptionsVSpecificPages undocumented
-	EdgeOpenOptionsVSpecificPages EdgeOpenOptions = 4
+	EdgeOpenOptionsVSpecificPages EdgeOpenOptions = "SpecificPages"
 )
 
 // EdgeOpenOptionsPNotConfigured returns a pointer to EdgeOpenOptionsVNotConfigured

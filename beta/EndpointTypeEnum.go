@@ -3,19 +3,19 @@
 package msgraph
 
 // EndpointType undocumented
-type EndpointType int
+type EndpointType string
 
 const (
 	// EndpointTypeVDefault undocumented
-	EndpointTypeVDefault EndpointType = 0
+	EndpointTypeVDefault EndpointType = "Default"
 	// EndpointTypeVVoicemail undocumented
-	EndpointTypeVVoicemail EndpointType = 1
+	EndpointTypeVVoicemail EndpointType = "Voicemail"
 	// EndpointTypeVSkypeForBusiness undocumented
-	EndpointTypeVSkypeForBusiness EndpointType = 2
+	EndpointTypeVSkypeForBusiness EndpointType = "SkypeForBusiness"
 	// EndpointTypeVSkypeForBusinessVoipPhone undocumented
-	EndpointTypeVSkypeForBusinessVoipPhone EndpointType = 3
+	EndpointTypeVSkypeForBusinessVoipPhone EndpointType = "SkypeForBusinessVoipPhone"
 	// EndpointTypeVUnknownFutureValue undocumented
-	EndpointTypeVUnknownFutureValue EndpointType = 4
+	EndpointTypeVUnknownFutureValue EndpointType = "UnknownFutureValue"
 )
 
 // EndpointTypePDefault returns a pointer to EndpointTypeVDefault

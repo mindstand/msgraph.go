@@ -3,15 +3,15 @@
 package msgraph
 
 // AdminConsentState undocumented
-type AdminConsentState int
+type AdminConsentState string
 
 const (
 	// AdminConsentStateVNotConfigured undocumented
-	AdminConsentStateVNotConfigured AdminConsentState = 0
+	AdminConsentStateVNotConfigured AdminConsentState = "NotConfigured"
 	// AdminConsentStateVGranted undocumented
-	AdminConsentStateVGranted AdminConsentState = 1
+	AdminConsentStateVGranted AdminConsentState = "Granted"
 	// AdminConsentStateVNotGranted undocumented
-	AdminConsentStateVNotGranted AdminConsentState = 2
+	AdminConsentStateVNotGranted AdminConsentState = "NotGranted"
 )
 
 // AdminConsentStatePNotConfigured returns a pointer to AdminConsentStateVNotConfigured

@@ -3,21 +3,21 @@
 package msgraph
 
 // RiskLevel undocumented
-type RiskLevel int
+type RiskLevel string
 
 const (
 	// RiskLevelVLow undocumented
-	RiskLevelVLow RiskLevel = 0
+	RiskLevelVLow RiskLevel = "Low"
 	// RiskLevelVMedium undocumented
-	RiskLevelVMedium RiskLevel = 1
+	RiskLevelVMedium RiskLevel = "Medium"
 	// RiskLevelVHigh undocumented
-	RiskLevelVHigh RiskLevel = 2
+	RiskLevelVHigh RiskLevel = "High"
 	// RiskLevelVHidden undocumented
-	RiskLevelVHidden RiskLevel = 3
+	RiskLevelVHidden RiskLevel = "Hidden"
 	// RiskLevelVNone undocumented
-	RiskLevelVNone RiskLevel = 4
+	RiskLevelVNone RiskLevel = "None"
 	// RiskLevelVUnknownFutureValue undocumented
-	RiskLevelVUnknownFutureValue RiskLevel = 5
+	RiskLevelVUnknownFutureValue RiskLevel = "UnknownFutureValue"
 )
 
 // RiskLevelPLow returns a pointer to RiskLevelVLow

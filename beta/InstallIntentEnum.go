@@ -3,17 +3,17 @@
 package msgraph
 
 // InstallIntent undocumented
-type InstallIntent int
+type InstallIntent string
 
 const (
 	// InstallIntentVAvailable undocumented
-	InstallIntentVAvailable InstallIntent = 0
+	InstallIntentVAvailable InstallIntent = "Available"
 	// InstallIntentVRequired undocumented
-	InstallIntentVRequired InstallIntent = 1
+	InstallIntentVRequired InstallIntent = "Required"
 	// InstallIntentVUninstall undocumented
-	InstallIntentVUninstall InstallIntent = 2
+	InstallIntentVUninstall InstallIntent = "Uninstall"
 	// InstallIntentVAvailableWithoutEnrollment undocumented
-	InstallIntentVAvailableWithoutEnrollment InstallIntent = 3
+	InstallIntentVAvailableWithoutEnrollment InstallIntent = "AvailableWithoutEnrollment"
 )
 
 // InstallIntentPAvailable returns a pointer to InstallIntentVAvailable

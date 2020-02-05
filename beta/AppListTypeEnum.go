@@ -3,15 +3,15 @@
 package msgraph
 
 // AppListType undocumented
-type AppListType int
+type AppListType string
 
 const (
 	// AppListTypeVNone undocumented
-	AppListTypeVNone AppListType = 0
+	AppListTypeVNone AppListType = "None"
 	// AppListTypeVAppsInListCompliant undocumented
-	AppListTypeVAppsInListCompliant AppListType = 1
+	AppListTypeVAppsInListCompliant AppListType = "AppsInListCompliant"
 	// AppListTypeVAppsNotInListCompliant undocumented
-	AppListTypeVAppsNotInListCompliant AppListType = 2
+	AppListTypeVAppsNotInListCompliant AppListType = "AppsNotInListCompliant"
 )
 
 // AppListTypePNone returns a pointer to AppListTypeVNone

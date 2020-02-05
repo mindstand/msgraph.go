@@ -3,13 +3,13 @@
 package msgraph
 
 // ScopeOperatorMultiValuedComparisonType undocumented
-type ScopeOperatorMultiValuedComparisonType int
+type ScopeOperatorMultiValuedComparisonType string
 
 const (
 	// ScopeOperatorMultiValuedComparisonTypeVAll undocumented
-	ScopeOperatorMultiValuedComparisonTypeVAll ScopeOperatorMultiValuedComparisonType = 0
+	ScopeOperatorMultiValuedComparisonTypeVAll ScopeOperatorMultiValuedComparisonType = "All"
 	// ScopeOperatorMultiValuedComparisonTypeVAny undocumented
-	ScopeOperatorMultiValuedComparisonTypeVAny ScopeOperatorMultiValuedComparisonType = 1
+	ScopeOperatorMultiValuedComparisonTypeVAny ScopeOperatorMultiValuedComparisonType = "Any"
 )
 
 // ScopeOperatorMultiValuedComparisonTypePAll returns a pointer to ScopeOperatorMultiValuedComparisonTypeVAll

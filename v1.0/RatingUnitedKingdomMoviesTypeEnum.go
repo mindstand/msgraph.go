@@ -3,27 +3,27 @@
 package msgraph
 
 // RatingUnitedKingdomMoviesType undocumented
-type RatingUnitedKingdomMoviesType int
+type RatingUnitedKingdomMoviesType string
 
 const (
 	// RatingUnitedKingdomMoviesTypeVAllAllowed undocumented
-	RatingUnitedKingdomMoviesTypeVAllAllowed RatingUnitedKingdomMoviesType = 0
+	RatingUnitedKingdomMoviesTypeVAllAllowed RatingUnitedKingdomMoviesType = "AllAllowed"
 	// RatingUnitedKingdomMoviesTypeVAllBlocked undocumented
-	RatingUnitedKingdomMoviesTypeVAllBlocked RatingUnitedKingdomMoviesType = 1
+	RatingUnitedKingdomMoviesTypeVAllBlocked RatingUnitedKingdomMoviesType = "AllBlocked"
 	// RatingUnitedKingdomMoviesTypeVGeneral undocumented
-	RatingUnitedKingdomMoviesTypeVGeneral RatingUnitedKingdomMoviesType = 2
+	RatingUnitedKingdomMoviesTypeVGeneral RatingUnitedKingdomMoviesType = "General"
 	// RatingUnitedKingdomMoviesTypeVUniversalChildren undocumented
-	RatingUnitedKingdomMoviesTypeVUniversalChildren RatingUnitedKingdomMoviesType = 3
+	RatingUnitedKingdomMoviesTypeVUniversalChildren RatingUnitedKingdomMoviesType = "UniversalChildren"
 	// RatingUnitedKingdomMoviesTypeVParentalGuidance undocumented
-	RatingUnitedKingdomMoviesTypeVParentalGuidance RatingUnitedKingdomMoviesType = 4
+	RatingUnitedKingdomMoviesTypeVParentalGuidance RatingUnitedKingdomMoviesType = "ParentalGuidance"
 	// RatingUnitedKingdomMoviesTypeVAgesAbove12Video undocumented
-	RatingUnitedKingdomMoviesTypeVAgesAbove12Video RatingUnitedKingdomMoviesType = 5
+	RatingUnitedKingdomMoviesTypeVAgesAbove12Video RatingUnitedKingdomMoviesType = "AgesAbove12Video"
 	// RatingUnitedKingdomMoviesTypeVAgesAbove12Cinema undocumented
-	RatingUnitedKingdomMoviesTypeVAgesAbove12Cinema RatingUnitedKingdomMoviesType = 6
+	RatingUnitedKingdomMoviesTypeVAgesAbove12Cinema RatingUnitedKingdomMoviesType = "AgesAbove12Cinema"
 	// RatingUnitedKingdomMoviesTypeVAgesAbove15 undocumented
-	RatingUnitedKingdomMoviesTypeVAgesAbove15 RatingUnitedKingdomMoviesType = 7
+	RatingUnitedKingdomMoviesTypeVAgesAbove15 RatingUnitedKingdomMoviesType = "AgesAbove15"
 	// RatingUnitedKingdomMoviesTypeVAdults undocumented
-	RatingUnitedKingdomMoviesTypeVAdults RatingUnitedKingdomMoviesType = 8
+	RatingUnitedKingdomMoviesTypeVAdults RatingUnitedKingdomMoviesType = "Adults"
 )
 
 // RatingUnitedKingdomMoviesTypePAllAllowed returns a pointer to RatingUnitedKingdomMoviesTypeVAllAllowed

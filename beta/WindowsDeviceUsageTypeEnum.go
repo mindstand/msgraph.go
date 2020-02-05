@@ -3,13 +3,13 @@
 package msgraph
 
 // WindowsDeviceUsageType undocumented
-type WindowsDeviceUsageType int
+type WindowsDeviceUsageType string
 
 const (
 	// WindowsDeviceUsageTypeVSingleUser undocumented
-	WindowsDeviceUsageTypeVSingleUser WindowsDeviceUsageType = 0
+	WindowsDeviceUsageTypeVSingleUser WindowsDeviceUsageType = "SingleUser"
 	// WindowsDeviceUsageTypeVShared undocumented
-	WindowsDeviceUsageTypeVShared WindowsDeviceUsageType = 1
+	WindowsDeviceUsageTypeVShared WindowsDeviceUsageType = "Shared"
 )
 
 // WindowsDeviceUsageTypePSingleUser returns a pointer to WindowsDeviceUsageTypeVSingleUser

@@ -3,23 +3,23 @@
 package msgraph
 
 // EmailSyncDuration undocumented
-type EmailSyncDuration int
+type EmailSyncDuration string
 
 const (
 	// EmailSyncDurationVUserDefined undocumented
-	EmailSyncDurationVUserDefined EmailSyncDuration = 0
+	EmailSyncDurationVUserDefined EmailSyncDuration = "UserDefined"
 	// EmailSyncDurationVOneDay undocumented
-	EmailSyncDurationVOneDay EmailSyncDuration = 1
+	EmailSyncDurationVOneDay EmailSyncDuration = "OneDay"
 	// EmailSyncDurationVThreeDays undocumented
-	EmailSyncDurationVThreeDays EmailSyncDuration = 2
+	EmailSyncDurationVThreeDays EmailSyncDuration = "ThreeDays"
 	// EmailSyncDurationVOneWeek undocumented
-	EmailSyncDurationVOneWeek EmailSyncDuration = 3
+	EmailSyncDurationVOneWeek EmailSyncDuration = "OneWeek"
 	// EmailSyncDurationVTwoWeeks undocumented
-	EmailSyncDurationVTwoWeeks EmailSyncDuration = 4
+	EmailSyncDurationVTwoWeeks EmailSyncDuration = "TwoWeeks"
 	// EmailSyncDurationVOneMonth undocumented
-	EmailSyncDurationVOneMonth EmailSyncDuration = 5
+	EmailSyncDurationVOneMonth EmailSyncDuration = "OneMonth"
 	// EmailSyncDurationVUnlimited undocumented
-	EmailSyncDurationVUnlimited EmailSyncDuration = 6
+	EmailSyncDurationVUnlimited EmailSyncDuration = "Unlimited"
 )
 
 // EmailSyncDurationPUserDefined returns a pointer to EmailSyncDurationVUserDefined

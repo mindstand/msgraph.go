@@ -3,17 +3,17 @@
 package msgraph
 
 // VppTokenSyncStatus undocumented
-type VppTokenSyncStatus int
+type VppTokenSyncStatus string
 
 const (
 	// VppTokenSyncStatusVNone undocumented
-	VppTokenSyncStatusVNone VppTokenSyncStatus = 0
+	VppTokenSyncStatusVNone VppTokenSyncStatus = "None"
 	// VppTokenSyncStatusVInProgress undocumented
-	VppTokenSyncStatusVInProgress VppTokenSyncStatus = 1
+	VppTokenSyncStatusVInProgress VppTokenSyncStatus = "InProgress"
 	// VppTokenSyncStatusVCompleted undocumented
-	VppTokenSyncStatusVCompleted VppTokenSyncStatus = 2
+	VppTokenSyncStatusVCompleted VppTokenSyncStatus = "Completed"
 	// VppTokenSyncStatusVFailed undocumented
-	VppTokenSyncStatusVFailed VppTokenSyncStatus = 3
+	VppTokenSyncStatusVFailed VppTokenSyncStatus = "Failed"
 )
 
 // VppTokenSyncStatusPNone returns a pointer to VppTokenSyncStatusVNone

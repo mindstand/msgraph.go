@@ -3,15 +3,15 @@
 package msgraph
 
 // RemoteAssistanceOnboardingStatus undocumented
-type RemoteAssistanceOnboardingStatus int
+type RemoteAssistanceOnboardingStatus string
 
 const (
 	// RemoteAssistanceOnboardingStatusVNotOnboarded undocumented
-	RemoteAssistanceOnboardingStatusVNotOnboarded RemoteAssistanceOnboardingStatus = 0
+	RemoteAssistanceOnboardingStatusVNotOnboarded RemoteAssistanceOnboardingStatus = "NotOnboarded"
 	// RemoteAssistanceOnboardingStatusVOnboarding undocumented
-	RemoteAssistanceOnboardingStatusVOnboarding RemoteAssistanceOnboardingStatus = 1
+	RemoteAssistanceOnboardingStatusVOnboarding RemoteAssistanceOnboardingStatus = "Onboarding"
 	// RemoteAssistanceOnboardingStatusVOnboarded undocumented
-	RemoteAssistanceOnboardingStatusVOnboarded RemoteAssistanceOnboardingStatus = 2
+	RemoteAssistanceOnboardingStatusVOnboarded RemoteAssistanceOnboardingStatus = "Onboarded"
 )
 
 // RemoteAssistanceOnboardingStatusPNotOnboarded returns a pointer to RemoteAssistanceOnboardingStatusVNotOnboarded

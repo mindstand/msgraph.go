@@ -3,15 +3,15 @@
 package msgraph
 
 // DmaGuardDeviceEnumerationPolicyType undocumented
-type DmaGuardDeviceEnumerationPolicyType int
+type DmaGuardDeviceEnumerationPolicyType string
 
 const (
 	// DmaGuardDeviceEnumerationPolicyTypeVDeviceDefault undocumented
-	DmaGuardDeviceEnumerationPolicyTypeVDeviceDefault DmaGuardDeviceEnumerationPolicyType = 0
+	DmaGuardDeviceEnumerationPolicyTypeVDeviceDefault DmaGuardDeviceEnumerationPolicyType = "DeviceDefault"
 	// DmaGuardDeviceEnumerationPolicyTypeVBlockAll undocumented
-	DmaGuardDeviceEnumerationPolicyTypeVBlockAll DmaGuardDeviceEnumerationPolicyType = 1
+	DmaGuardDeviceEnumerationPolicyTypeVBlockAll DmaGuardDeviceEnumerationPolicyType = "BlockAll"
 	// DmaGuardDeviceEnumerationPolicyTypeVAllowAll undocumented
-	DmaGuardDeviceEnumerationPolicyTypeVAllowAll DmaGuardDeviceEnumerationPolicyType = 2
+	DmaGuardDeviceEnumerationPolicyTypeVAllowAll DmaGuardDeviceEnumerationPolicyType = "AllowAll"
 )
 
 // DmaGuardDeviceEnumerationPolicyTypePDeviceDefault returns a pointer to DmaGuardDeviceEnumerationPolicyTypeVDeviceDefault

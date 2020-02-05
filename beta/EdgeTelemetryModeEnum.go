@@ -3,17 +3,17 @@
 package msgraph
 
 // EdgeTelemetryMode undocumented
-type EdgeTelemetryMode int
+type EdgeTelemetryMode string
 
 const (
 	// EdgeTelemetryModeVNotConfigured undocumented
-	EdgeTelemetryModeVNotConfigured EdgeTelemetryMode = 0
+	EdgeTelemetryModeVNotConfigured EdgeTelemetryMode = "NotConfigured"
 	// EdgeTelemetryModeVIntranet undocumented
-	EdgeTelemetryModeVIntranet EdgeTelemetryMode = 1
+	EdgeTelemetryModeVIntranet EdgeTelemetryMode = "Intranet"
 	// EdgeTelemetryModeVInternet undocumented
-	EdgeTelemetryModeVInternet EdgeTelemetryMode = 2
+	EdgeTelemetryModeVInternet EdgeTelemetryMode = "Internet"
 	// EdgeTelemetryModeVIntranetAndInternet undocumented
-	EdgeTelemetryModeVIntranetAndInternet EdgeTelemetryMode = 3
+	EdgeTelemetryModeVIntranetAndInternet EdgeTelemetryMode = "IntranetAndInternet"
 )
 
 // EdgeTelemetryModePNotConfigured returns a pointer to EdgeTelemetryModeVNotConfigured

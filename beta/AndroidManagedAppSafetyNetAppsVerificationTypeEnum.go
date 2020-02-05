@@ -3,13 +3,13 @@
 package msgraph
 
 // AndroidManagedAppSafetyNetAppsVerificationType undocumented
-type AndroidManagedAppSafetyNetAppsVerificationType int
+type AndroidManagedAppSafetyNetAppsVerificationType string
 
 const (
 	// AndroidManagedAppSafetyNetAppsVerificationTypeVNone undocumented
-	AndroidManagedAppSafetyNetAppsVerificationTypeVNone AndroidManagedAppSafetyNetAppsVerificationType = 0
+	AndroidManagedAppSafetyNetAppsVerificationTypeVNone AndroidManagedAppSafetyNetAppsVerificationType = "None"
 	// AndroidManagedAppSafetyNetAppsVerificationTypeVEnabled undocumented
-	AndroidManagedAppSafetyNetAppsVerificationTypeVEnabled AndroidManagedAppSafetyNetAppsVerificationType = 1
+	AndroidManagedAppSafetyNetAppsVerificationTypeVEnabled AndroidManagedAppSafetyNetAppsVerificationType = "Enabled"
 )
 
 // AndroidManagedAppSafetyNetAppsVerificationTypePNone returns a pointer to AndroidManagedAppSafetyNetAppsVerificationTypeVNone

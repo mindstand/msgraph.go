@@ -3,19 +3,19 @@
 package msgraph
 
 // RemediationState undocumented
-type RemediationState int
+type RemediationState string
 
 const (
 	// RemediationStateVUnknown undocumented
-	RemediationStateVUnknown RemediationState = 0
+	RemediationStateVUnknown RemediationState = "Unknown"
 	// RemediationStateVSkipped undocumented
-	RemediationStateVSkipped RemediationState = 1
+	RemediationStateVSkipped RemediationState = "Skipped"
 	// RemediationStateVSuccess undocumented
-	RemediationStateVSuccess RemediationState = 2
+	RemediationStateVSuccess RemediationState = "Success"
 	// RemediationStateVRemediationFailed undocumented
-	RemediationStateVRemediationFailed RemediationState = 3
+	RemediationStateVRemediationFailed RemediationState = "RemediationFailed"
 	// RemediationStateVScriptError undocumented
-	RemediationStateVScriptError RemediationState = 4
+	RemediationStateVScriptError RemediationState = "ScriptError"
 )
 
 // RemediationStatePUnknown returns a pointer to RemediationStateVUnknown

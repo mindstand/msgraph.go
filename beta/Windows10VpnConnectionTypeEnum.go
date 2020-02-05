@@ -3,29 +3,29 @@
 package msgraph
 
 // Windows10VpnConnectionType undocumented
-type Windows10VpnConnectionType int
+type Windows10VpnConnectionType string
 
 const (
 	// Windows10VpnConnectionTypeVPulseSecure undocumented
-	Windows10VpnConnectionTypeVPulseSecure Windows10VpnConnectionType = 0
+	Windows10VpnConnectionTypeVPulseSecure Windows10VpnConnectionType = "PulseSecure"
 	// Windows10VpnConnectionTypeVF5EdgeClient undocumented
-	Windows10VpnConnectionTypeVF5EdgeClient Windows10VpnConnectionType = 1
+	Windows10VpnConnectionTypeVF5EdgeClient Windows10VpnConnectionType = "F5EdgeClient"
 	// Windows10VpnConnectionTypeVDellSonicWallMobileConnect undocumented
-	Windows10VpnConnectionTypeVDellSonicWallMobileConnect Windows10VpnConnectionType = 2
+	Windows10VpnConnectionTypeVDellSonicWallMobileConnect Windows10VpnConnectionType = "DellSonicWallMobileConnect"
 	// Windows10VpnConnectionTypeVCheckPointCapsuleVpn undocumented
-	Windows10VpnConnectionTypeVCheckPointCapsuleVpn Windows10VpnConnectionType = 3
+	Windows10VpnConnectionTypeVCheckPointCapsuleVpn Windows10VpnConnectionType = "CheckPointCapsuleVpn"
 	// Windows10VpnConnectionTypeVAutomatic undocumented
-	Windows10VpnConnectionTypeVAutomatic Windows10VpnConnectionType = 4
+	Windows10VpnConnectionTypeVAutomatic Windows10VpnConnectionType = "Automatic"
 	// Windows10VpnConnectionTypeVIkEv2 undocumented
-	Windows10VpnConnectionTypeVIkEv2 Windows10VpnConnectionType = 5
+	Windows10VpnConnectionTypeVIkEv2 Windows10VpnConnectionType = "IkEv2"
 	// Windows10VpnConnectionTypeVL2tp undocumented
-	Windows10VpnConnectionTypeVL2tp Windows10VpnConnectionType = 6
+	Windows10VpnConnectionTypeVL2tp Windows10VpnConnectionType = "L2tp"
 	// Windows10VpnConnectionTypeVPptp undocumented
-	Windows10VpnConnectionTypeVPptp Windows10VpnConnectionType = 7
+	Windows10VpnConnectionTypeVPptp Windows10VpnConnectionType = "Pptp"
 	// Windows10VpnConnectionTypeVCitrix undocumented
-	Windows10VpnConnectionTypeVCitrix Windows10VpnConnectionType = 8
+	Windows10VpnConnectionTypeVCitrix Windows10VpnConnectionType = "Citrix"
 	// Windows10VpnConnectionTypeVPaloAltoGlobalProtect undocumented
-	Windows10VpnConnectionTypeVPaloAltoGlobalProtect Windows10VpnConnectionType = 9
+	Windows10VpnConnectionTypeVPaloAltoGlobalProtect Windows10VpnConnectionType = "PaloAltoGlobalProtect"
 )
 
 // Windows10VpnConnectionTypePPulseSecure returns a pointer to Windows10VpnConnectionTypeVPulseSecure

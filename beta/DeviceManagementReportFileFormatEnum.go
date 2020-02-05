@@ -3,13 +3,13 @@
 package msgraph
 
 // DeviceManagementReportFileFormat undocumented
-type DeviceManagementReportFileFormat int
+type DeviceManagementReportFileFormat string
 
 const (
 	// DeviceManagementReportFileFormatVCsv undocumented
-	DeviceManagementReportFileFormatVCsv DeviceManagementReportFileFormat = 0
+	DeviceManagementReportFileFormatVCsv DeviceManagementReportFileFormat = "Csv"
 	// DeviceManagementReportFileFormatVPdf undocumented
-	DeviceManagementReportFileFormatVPdf DeviceManagementReportFileFormat = 1
+	DeviceManagementReportFileFormatVPdf DeviceManagementReportFileFormat = "Pdf"
 )
 
 // DeviceManagementReportFileFormatPCsv returns a pointer to DeviceManagementReportFileFormatVCsv

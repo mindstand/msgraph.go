@@ -3,19 +3,19 @@
 package msgraph
 
 // ClonableTeamParts undocumented
-type ClonableTeamParts int
+type ClonableTeamParts string
 
 const (
 	// ClonableTeamPartsVApps undocumented
-	ClonableTeamPartsVApps ClonableTeamParts = 1
+	ClonableTeamPartsVApps ClonableTeamParts = "Apps"
 	// ClonableTeamPartsVTabs undocumented
-	ClonableTeamPartsVTabs ClonableTeamParts = 2
+	ClonableTeamPartsVTabs ClonableTeamParts = "Tabs"
 	// ClonableTeamPartsVSettings undocumented
-	ClonableTeamPartsVSettings ClonableTeamParts = 4
+	ClonableTeamPartsVSettings ClonableTeamParts = "Settings"
 	// ClonableTeamPartsVChannels undocumented
-	ClonableTeamPartsVChannels ClonableTeamParts = 8
+	ClonableTeamPartsVChannels ClonableTeamParts = "Channels"
 	// ClonableTeamPartsVMembers undocumented
-	ClonableTeamPartsVMembers ClonableTeamParts = 16
+	ClonableTeamPartsVMembers ClonableTeamParts = "Members"
 )
 
 // ClonableTeamPartsPApps returns a pointer to ClonableTeamPartsVApps

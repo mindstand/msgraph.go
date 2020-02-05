@@ -3,15 +3,15 @@
 package msgraph
 
 // Priority undocumented
-type Priority int
+type Priority string
 
 const (
 	// PriorityVNone undocumented
-	PriorityVNone Priority = 0
+	PriorityVNone Priority = "None"
 	// PriorityVHigh undocumented
-	PriorityVHigh Priority = 1
+	PriorityVHigh Priority = "High"
 	// PriorityVLow undocumented
-	PriorityVLow Priority = 2
+	PriorityVLow Priority = "Low"
 )
 
 // PriorityPNone returns a pointer to PriorityVNone

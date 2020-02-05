@@ -3,17 +3,17 @@
 package msgraph
 
 // BookingStaffRole undocumented
-type BookingStaffRole int
+type BookingStaffRole string
 
 const (
 	// BookingStaffRoleVGuest undocumented
-	BookingStaffRoleVGuest BookingStaffRole = 0
+	BookingStaffRoleVGuest BookingStaffRole = "Guest"
 	// BookingStaffRoleVAdministrator undocumented
-	BookingStaffRoleVAdministrator BookingStaffRole = 1
+	BookingStaffRoleVAdministrator BookingStaffRole = "Administrator"
 	// BookingStaffRoleVViewer undocumented
-	BookingStaffRoleVViewer BookingStaffRole = 2
+	BookingStaffRoleVViewer BookingStaffRole = "Viewer"
 	// BookingStaffRoleVExternalGuest undocumented
-	BookingStaffRoleVExternalGuest BookingStaffRole = 3
+	BookingStaffRoleVExternalGuest BookingStaffRole = "ExternalGuest"
 )
 
 // BookingStaffRolePGuest returns a pointer to BookingStaffRoleVGuest

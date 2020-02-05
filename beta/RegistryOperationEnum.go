@@ -3,19 +3,19 @@
 package msgraph
 
 // RegistryOperation undocumented
-type RegistryOperation int
+type RegistryOperation string
 
 const (
 	// RegistryOperationVUnknown undocumented
-	RegistryOperationVUnknown RegistryOperation = 0
+	RegistryOperationVUnknown RegistryOperation = "Unknown"
 	// RegistryOperationVCreate undocumented
-	RegistryOperationVCreate RegistryOperation = 1
+	RegistryOperationVCreate RegistryOperation = "Create"
 	// RegistryOperationVModify undocumented
-	RegistryOperationVModify RegistryOperation = 2
+	RegistryOperationVModify RegistryOperation = "Modify"
 	// RegistryOperationVDelete undocumented
-	RegistryOperationVDelete RegistryOperation = 3
+	RegistryOperationVDelete RegistryOperation = "Delete"
 	// RegistryOperationVUnknownFutureValue undocumented
-	RegistryOperationVUnknownFutureValue RegistryOperation = 127
+	RegistryOperationVUnknownFutureValue RegistryOperation = "UnknownFutureValue"
 )
 
 // RegistryOperationPUnknown returns a pointer to RegistryOperationVUnknown

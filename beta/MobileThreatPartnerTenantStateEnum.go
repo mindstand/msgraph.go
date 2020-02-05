@@ -3,17 +3,17 @@
 package msgraph
 
 // MobileThreatPartnerTenantState undocumented
-type MobileThreatPartnerTenantState int
+type MobileThreatPartnerTenantState string
 
 const (
 	// MobileThreatPartnerTenantStateVUnavailable undocumented
-	MobileThreatPartnerTenantStateVUnavailable MobileThreatPartnerTenantState = 0
+	MobileThreatPartnerTenantStateVUnavailable MobileThreatPartnerTenantState = "Unavailable"
 	// MobileThreatPartnerTenantStateVAvailable undocumented
-	MobileThreatPartnerTenantStateVAvailable MobileThreatPartnerTenantState = 1
+	MobileThreatPartnerTenantStateVAvailable MobileThreatPartnerTenantState = "Available"
 	// MobileThreatPartnerTenantStateVEnabled undocumented
-	MobileThreatPartnerTenantStateVEnabled MobileThreatPartnerTenantState = 2
+	MobileThreatPartnerTenantStateVEnabled MobileThreatPartnerTenantState = "Enabled"
 	// MobileThreatPartnerTenantStateVUnresponsive undocumented
-	MobileThreatPartnerTenantStateVUnresponsive MobileThreatPartnerTenantState = 3
+	MobileThreatPartnerTenantStateVUnresponsive MobileThreatPartnerTenantState = "Unresponsive"
 )
 
 // MobileThreatPartnerTenantStatePUnavailable returns a pointer to MobileThreatPartnerTenantStateVUnavailable

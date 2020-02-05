@@ -3,17 +3,17 @@
 package msgraph
 
 // PrereleaseFeatures undocumented
-type PrereleaseFeatures int
+type PrereleaseFeatures string
 
 const (
 	// PrereleaseFeaturesVUserDefined undocumented
-	PrereleaseFeaturesVUserDefined PrereleaseFeatures = 0
+	PrereleaseFeaturesVUserDefined PrereleaseFeatures = "UserDefined"
 	// PrereleaseFeaturesVSettingsOnly undocumented
-	PrereleaseFeaturesVSettingsOnly PrereleaseFeatures = 1
+	PrereleaseFeaturesVSettingsOnly PrereleaseFeatures = "SettingsOnly"
 	// PrereleaseFeaturesVSettingsAndExperimentations undocumented
-	PrereleaseFeaturesVSettingsAndExperimentations PrereleaseFeatures = 2
+	PrereleaseFeaturesVSettingsAndExperimentations PrereleaseFeatures = "SettingsAndExperimentations"
 	// PrereleaseFeaturesVNotAllowed undocumented
-	PrereleaseFeaturesVNotAllowed PrereleaseFeatures = 3
+	PrereleaseFeaturesVNotAllowed PrereleaseFeatures = "NotAllowed"
 )
 
 // PrereleaseFeaturesPUserDefined returns a pointer to PrereleaseFeaturesVUserDefined

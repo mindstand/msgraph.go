@@ -3,21 +3,21 @@
 package msgraph
 
 // DeviceThreatProtectionLevel undocumented
-type DeviceThreatProtectionLevel int
+type DeviceThreatProtectionLevel string
 
 const (
 	// DeviceThreatProtectionLevelVUnavailable undocumented
-	DeviceThreatProtectionLevelVUnavailable DeviceThreatProtectionLevel = 0
+	DeviceThreatProtectionLevelVUnavailable DeviceThreatProtectionLevel = "Unavailable"
 	// DeviceThreatProtectionLevelVSecured undocumented
-	DeviceThreatProtectionLevelVSecured DeviceThreatProtectionLevel = 1
+	DeviceThreatProtectionLevelVSecured DeviceThreatProtectionLevel = "Secured"
 	// DeviceThreatProtectionLevelVLow undocumented
-	DeviceThreatProtectionLevelVLow DeviceThreatProtectionLevel = 2
+	DeviceThreatProtectionLevelVLow DeviceThreatProtectionLevel = "Low"
 	// DeviceThreatProtectionLevelVMedium undocumented
-	DeviceThreatProtectionLevelVMedium DeviceThreatProtectionLevel = 3
+	DeviceThreatProtectionLevelVMedium DeviceThreatProtectionLevel = "Medium"
 	// DeviceThreatProtectionLevelVHigh undocumented
-	DeviceThreatProtectionLevelVHigh DeviceThreatProtectionLevel = 4
+	DeviceThreatProtectionLevelVHigh DeviceThreatProtectionLevel = "High"
 	// DeviceThreatProtectionLevelVNotSet undocumented
-	DeviceThreatProtectionLevelVNotSet DeviceThreatProtectionLevel = 10
+	DeviceThreatProtectionLevelVNotSet DeviceThreatProtectionLevel = "NotSet"
 )
 
 // DeviceThreatProtectionLevelPUnavailable returns a pointer to DeviceThreatProtectionLevelVUnavailable

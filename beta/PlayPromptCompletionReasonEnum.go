@@ -3,17 +3,17 @@
 package msgraph
 
 // PlayPromptCompletionReason undocumented
-type PlayPromptCompletionReason int
+type PlayPromptCompletionReason string
 
 const (
 	// PlayPromptCompletionReasonVUnknown undocumented
-	PlayPromptCompletionReasonVUnknown PlayPromptCompletionReason = 0
+	PlayPromptCompletionReasonVUnknown PlayPromptCompletionReason = "Unknown"
 	// PlayPromptCompletionReasonVCompletedSuccessfully undocumented
-	PlayPromptCompletionReasonVCompletedSuccessfully PlayPromptCompletionReason = 1
+	PlayPromptCompletionReasonVCompletedSuccessfully PlayPromptCompletionReason = "CompletedSuccessfully"
 	// PlayPromptCompletionReasonVMediaOperationCanceled undocumented
-	PlayPromptCompletionReasonVMediaOperationCanceled PlayPromptCompletionReason = 2
+	PlayPromptCompletionReasonVMediaOperationCanceled PlayPromptCompletionReason = "MediaOperationCanceled"
 	// PlayPromptCompletionReasonVUnknownFutureValue undocumented
-	PlayPromptCompletionReasonVUnknownFutureValue PlayPromptCompletionReason = 3
+	PlayPromptCompletionReasonVUnknownFutureValue PlayPromptCompletionReason = "UnknownFutureValue"
 )
 
 // PlayPromptCompletionReasonPUnknown returns a pointer to PlayPromptCompletionReasonVUnknown

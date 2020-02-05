@@ -3,21 +3,21 @@
 package msgraph
 
 // LogLevel undocumented
-type LogLevel int
+type LogLevel string
 
 const (
 	// LogLevelVLogAlways undocumented
-	LogLevelVLogAlways LogLevel = 0
+	LogLevelVLogAlways LogLevel = "LogAlways"
 	// LogLevelVCritical undocumented
-	LogLevelVCritical LogLevel = 1
+	LogLevelVCritical LogLevel = "Critical"
 	// LogLevelVError undocumented
-	LogLevelVError LogLevel = 2
+	LogLevelVError LogLevel = "Error"
 	// LogLevelVWarning undocumented
-	LogLevelVWarning LogLevel = 3
+	LogLevelVWarning LogLevel = "Warning"
 	// LogLevelVInformation undocumented
-	LogLevelVInformation LogLevel = 4
+	LogLevelVInformation LogLevel = "Information"
 	// LogLevelVVerbose undocumented
-	LogLevelVVerbose LogLevel = 5
+	LogLevelVVerbose LogLevel = "Verbose"
 )
 
 // LogLevelPLogAlways returns a pointer to LogLevelVLogAlways

@@ -3,21 +3,21 @@
 package msgraph
 
 // WiFiSecurityType undocumented
-type WiFiSecurityType int
+type WiFiSecurityType string
 
 const (
 	// WiFiSecurityTypeVOpen undocumented
-	WiFiSecurityTypeVOpen WiFiSecurityType = 0
+	WiFiSecurityTypeVOpen WiFiSecurityType = "Open"
 	// WiFiSecurityTypeVWpaPersonal undocumented
-	WiFiSecurityTypeVWpaPersonal WiFiSecurityType = 1
+	WiFiSecurityTypeVWpaPersonal WiFiSecurityType = "WpaPersonal"
 	// WiFiSecurityTypeVWpaEnterprise undocumented
-	WiFiSecurityTypeVWpaEnterprise WiFiSecurityType = 2
+	WiFiSecurityTypeVWpaEnterprise WiFiSecurityType = "WpaEnterprise"
 	// WiFiSecurityTypeVWep undocumented
-	WiFiSecurityTypeVWep WiFiSecurityType = 3
+	WiFiSecurityTypeVWep WiFiSecurityType = "Wep"
 	// WiFiSecurityTypeVWpa2Personal undocumented
-	WiFiSecurityTypeVWpa2Personal WiFiSecurityType = 4
+	WiFiSecurityTypeVWpa2Personal WiFiSecurityType = "Wpa2Personal"
 	// WiFiSecurityTypeVWpa2Enterprise undocumented
-	WiFiSecurityTypeVWpa2Enterprise WiFiSecurityType = 5
+	WiFiSecurityTypeVWpa2Enterprise WiFiSecurityType = "Wpa2Enterprise"
 )
 
 // WiFiSecurityTypePOpen returns a pointer to WiFiSecurityTypeVOpen

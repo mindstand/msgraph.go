@@ -3,19 +3,19 @@
 package msgraph
 
 // AccessLevel undocumented
-type AccessLevel int
+type AccessLevel string
 
 const (
 	// AccessLevelVEveryone undocumented
-	AccessLevelVEveryone AccessLevel = 0
+	AccessLevelVEveryone AccessLevel = "Everyone"
 	// AccessLevelVInvited undocumented
-	AccessLevelVInvited AccessLevel = 1
+	AccessLevelVInvited AccessLevel = "Invited"
 	// AccessLevelVLocked undocumented
-	AccessLevelVLocked AccessLevel = 2
+	AccessLevelVLocked AccessLevel = "Locked"
 	// AccessLevelVSameEnterprise undocumented
-	AccessLevelVSameEnterprise AccessLevel = 3
+	AccessLevelVSameEnterprise AccessLevel = "SameEnterprise"
 	// AccessLevelVSameEnterpriseAndFederated undocumented
-	AccessLevelVSameEnterpriseAndFederated AccessLevel = 4
+	AccessLevelVSameEnterpriseAndFederated AccessLevel = "SameEnterpriseAndFederated"
 )
 
 // AccessLevelPEveryone returns a pointer to AccessLevelVEveryone

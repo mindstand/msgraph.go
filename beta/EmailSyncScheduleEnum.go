@@ -3,23 +3,23 @@
 package msgraph
 
 // EmailSyncSchedule undocumented
-type EmailSyncSchedule int
+type EmailSyncSchedule string
 
 const (
 	// EmailSyncScheduleVUserDefined undocumented
-	EmailSyncScheduleVUserDefined EmailSyncSchedule = 0
+	EmailSyncScheduleVUserDefined EmailSyncSchedule = "UserDefined"
 	// EmailSyncScheduleVAsMessagesArrive undocumented
-	EmailSyncScheduleVAsMessagesArrive EmailSyncSchedule = 1
+	EmailSyncScheduleVAsMessagesArrive EmailSyncSchedule = "AsMessagesArrive"
 	// EmailSyncScheduleVManual undocumented
-	EmailSyncScheduleVManual EmailSyncSchedule = 2
+	EmailSyncScheduleVManual EmailSyncSchedule = "Manual"
 	// EmailSyncScheduleVFifteenMinutes undocumented
-	EmailSyncScheduleVFifteenMinutes EmailSyncSchedule = 3
+	EmailSyncScheduleVFifteenMinutes EmailSyncSchedule = "FifteenMinutes"
 	// EmailSyncScheduleVThirtyMinutes undocumented
-	EmailSyncScheduleVThirtyMinutes EmailSyncSchedule = 4
+	EmailSyncScheduleVThirtyMinutes EmailSyncSchedule = "ThirtyMinutes"
 	// EmailSyncScheduleVSixtyMinutes undocumented
-	EmailSyncScheduleVSixtyMinutes EmailSyncSchedule = 5
+	EmailSyncScheduleVSixtyMinutes EmailSyncSchedule = "SixtyMinutes"
 	// EmailSyncScheduleVBasedOnMyUsage undocumented
-	EmailSyncScheduleVBasedOnMyUsage EmailSyncSchedule = 6
+	EmailSyncScheduleVBasedOnMyUsage EmailSyncSchedule = "BasedOnMyUsage"
 )
 
 // EmailSyncSchedulePUserDefined returns a pointer to EmailSyncScheduleVUserDefined

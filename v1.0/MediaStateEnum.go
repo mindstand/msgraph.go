@@ -3,15 +3,15 @@
 package msgraph
 
 // MediaState undocumented
-type MediaState int
+type MediaState string
 
 const (
 	// MediaStateVActive undocumented
-	MediaStateVActive MediaState = 0
+	MediaStateVActive MediaState = "Active"
 	// MediaStateVInactive undocumented
-	MediaStateVInactive MediaState = 1
+	MediaStateVInactive MediaState = "Inactive"
 	// MediaStateVUnknownFutureValue undocumented
-	MediaStateVUnknownFutureValue MediaState = 2
+	MediaStateVUnknownFutureValue MediaState = "UnknownFutureValue"
 )
 
 // MediaStatePActive returns a pointer to MediaStateVActive

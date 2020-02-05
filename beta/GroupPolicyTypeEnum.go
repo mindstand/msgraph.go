@@ -3,13 +3,13 @@
 package msgraph
 
 // GroupPolicyType undocumented
-type GroupPolicyType int
+type GroupPolicyType string
 
 const (
 	// GroupPolicyTypeVAdmxBacked undocumented
-	GroupPolicyTypeVAdmxBacked GroupPolicyType = 0
+	GroupPolicyTypeVAdmxBacked GroupPolicyType = "AdmxBacked"
 	// GroupPolicyTypeVAdmxIngested undocumented
-	GroupPolicyTypeVAdmxIngested GroupPolicyType = 1
+	GroupPolicyTypeVAdmxIngested GroupPolicyType = "AdmxIngested"
 )
 
 // GroupPolicyTypePAdmxBacked returns a pointer to GroupPolicyTypeVAdmxBacked

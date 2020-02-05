@@ -3,17 +3,17 @@
 package msgraph
 
 // OnlineMeetingProviderType undocumented
-type OnlineMeetingProviderType int
+type OnlineMeetingProviderType string
 
 const (
 	// OnlineMeetingProviderTypeVUnknown undocumented
-	OnlineMeetingProviderTypeVUnknown OnlineMeetingProviderType = 0
+	OnlineMeetingProviderTypeVUnknown OnlineMeetingProviderType = "Unknown"
 	// OnlineMeetingProviderTypeVSkypeForBusiness undocumented
-	OnlineMeetingProviderTypeVSkypeForBusiness OnlineMeetingProviderType = 1
+	OnlineMeetingProviderTypeVSkypeForBusiness OnlineMeetingProviderType = "SkypeForBusiness"
 	// OnlineMeetingProviderTypeVSkypeForConsumer undocumented
-	OnlineMeetingProviderTypeVSkypeForConsumer OnlineMeetingProviderType = 2
+	OnlineMeetingProviderTypeVSkypeForConsumer OnlineMeetingProviderType = "SkypeForConsumer"
 	// OnlineMeetingProviderTypeVTeamsForBusiness undocumented
-	OnlineMeetingProviderTypeVTeamsForBusiness OnlineMeetingProviderType = 3
+	OnlineMeetingProviderTypeVTeamsForBusiness OnlineMeetingProviderType = "TeamsForBusiness"
 )
 
 // OnlineMeetingProviderTypePUnknown returns a pointer to OnlineMeetingProviderTypeVUnknown

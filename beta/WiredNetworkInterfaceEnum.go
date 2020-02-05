@@ -3,23 +3,23 @@
 package msgraph
 
 // WiredNetworkInterface undocumented
-type WiredNetworkInterface int
+type WiredNetworkInterface string
 
 const (
 	// WiredNetworkInterfaceVAnyEthernet undocumented
-	WiredNetworkInterfaceVAnyEthernet WiredNetworkInterface = 0
+	WiredNetworkInterfaceVAnyEthernet WiredNetworkInterface = "AnyEthernet"
 	// WiredNetworkInterfaceVFirstActiveEthernet undocumented
-	WiredNetworkInterfaceVFirstActiveEthernet WiredNetworkInterface = 1
+	WiredNetworkInterfaceVFirstActiveEthernet WiredNetworkInterface = "FirstActiveEthernet"
 	// WiredNetworkInterfaceVSecondActiveEthernet undocumented
-	WiredNetworkInterfaceVSecondActiveEthernet WiredNetworkInterface = 2
+	WiredNetworkInterfaceVSecondActiveEthernet WiredNetworkInterface = "SecondActiveEthernet"
 	// WiredNetworkInterfaceVThirdActiveEthernet undocumented
-	WiredNetworkInterfaceVThirdActiveEthernet WiredNetworkInterface = 3
+	WiredNetworkInterfaceVThirdActiveEthernet WiredNetworkInterface = "ThirdActiveEthernet"
 	// WiredNetworkInterfaceVFirstEthernet undocumented
-	WiredNetworkInterfaceVFirstEthernet WiredNetworkInterface = 4
+	WiredNetworkInterfaceVFirstEthernet WiredNetworkInterface = "FirstEthernet"
 	// WiredNetworkInterfaceVSecondEthernet undocumented
-	WiredNetworkInterfaceVSecondEthernet WiredNetworkInterface = 5
+	WiredNetworkInterfaceVSecondEthernet WiredNetworkInterface = "SecondEthernet"
 	// WiredNetworkInterfaceVThirdEthernet undocumented
-	WiredNetworkInterfaceVThirdEthernet WiredNetworkInterface = 6
+	WiredNetworkInterfaceVThirdEthernet WiredNetworkInterface = "ThirdEthernet"
 )
 
 // WiredNetworkInterfacePAnyEthernet returns a pointer to WiredNetworkInterfaceVAnyEthernet

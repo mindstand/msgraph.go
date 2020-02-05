@@ -3,19 +3,19 @@
 package msgraph
 
 // WebBrowserCookieSettings undocumented
-type WebBrowserCookieSettings int
+type WebBrowserCookieSettings string
 
 const (
 	// WebBrowserCookieSettingsVBrowserDefault undocumented
-	WebBrowserCookieSettingsVBrowserDefault WebBrowserCookieSettings = 0
+	WebBrowserCookieSettingsVBrowserDefault WebBrowserCookieSettings = "BrowserDefault"
 	// WebBrowserCookieSettingsVBlockAlways undocumented
-	WebBrowserCookieSettingsVBlockAlways WebBrowserCookieSettings = 1
+	WebBrowserCookieSettingsVBlockAlways WebBrowserCookieSettings = "BlockAlways"
 	// WebBrowserCookieSettingsVAllowCurrentWebSite undocumented
-	WebBrowserCookieSettingsVAllowCurrentWebSite WebBrowserCookieSettings = 2
+	WebBrowserCookieSettingsVAllowCurrentWebSite WebBrowserCookieSettings = "AllowCurrentWebSite"
 	// WebBrowserCookieSettingsVAllowFromWebsitesVisited undocumented
-	WebBrowserCookieSettingsVAllowFromWebsitesVisited WebBrowserCookieSettings = 3
+	WebBrowserCookieSettingsVAllowFromWebsitesVisited WebBrowserCookieSettings = "AllowFromWebsitesVisited"
 	// WebBrowserCookieSettingsVAllowAlways undocumented
-	WebBrowserCookieSettingsVAllowAlways WebBrowserCookieSettings = 4
+	WebBrowserCookieSettingsVAllowAlways WebBrowserCookieSettings = "AllowAlways"
 )
 
 // WebBrowserCookieSettingsPBrowserDefault returns a pointer to WebBrowserCookieSettingsVBrowserDefault

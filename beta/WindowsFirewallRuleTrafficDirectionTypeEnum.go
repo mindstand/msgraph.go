@@ -3,15 +3,15 @@
 package msgraph
 
 // WindowsFirewallRuleTrafficDirectionType undocumented
-type WindowsFirewallRuleTrafficDirectionType int
+type WindowsFirewallRuleTrafficDirectionType string
 
 const (
 	// WindowsFirewallRuleTrafficDirectionTypeVNotConfigured undocumented
-	WindowsFirewallRuleTrafficDirectionTypeVNotConfigured WindowsFirewallRuleTrafficDirectionType = 0
+	WindowsFirewallRuleTrafficDirectionTypeVNotConfigured WindowsFirewallRuleTrafficDirectionType = "NotConfigured"
 	// WindowsFirewallRuleTrafficDirectionTypeVOut undocumented
-	WindowsFirewallRuleTrafficDirectionTypeVOut WindowsFirewallRuleTrafficDirectionType = 1
+	WindowsFirewallRuleTrafficDirectionTypeVOut WindowsFirewallRuleTrafficDirectionType = "Out"
 	// WindowsFirewallRuleTrafficDirectionTypeVIn undocumented
-	WindowsFirewallRuleTrafficDirectionTypeVIn WindowsFirewallRuleTrafficDirectionType = 2
+	WindowsFirewallRuleTrafficDirectionTypeVIn WindowsFirewallRuleTrafficDirectionType = "In"
 )
 
 // WindowsFirewallRuleTrafficDirectionTypePNotConfigured returns a pointer to WindowsFirewallRuleTrafficDirectionTypeVNotConfigured

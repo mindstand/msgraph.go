@@ -3,27 +3,27 @@
 package msgraph
 
 // ChassisType undocumented
-type ChassisType int
+type ChassisType string
 
 const (
 	// ChassisTypeVUnknown undocumented
-	ChassisTypeVUnknown ChassisType = 0
+	ChassisTypeVUnknown ChassisType = "Unknown"
 	// ChassisTypeVDesktop undocumented
-	ChassisTypeVDesktop ChassisType = 1
+	ChassisTypeVDesktop ChassisType = "Desktop"
 	// ChassisTypeVLaptop undocumented
-	ChassisTypeVLaptop ChassisType = 2
+	ChassisTypeVLaptop ChassisType = "Laptop"
 	// ChassisTypeVWorksWorkstation undocumented
-	ChassisTypeVWorksWorkstation ChassisType = 3
+	ChassisTypeVWorksWorkstation ChassisType = "WorksWorkstation"
 	// ChassisTypeVEnterpriseServer undocumented
-	ChassisTypeVEnterpriseServer ChassisType = 4
+	ChassisTypeVEnterpriseServer ChassisType = "EnterpriseServer"
 	// ChassisTypeVPhone undocumented
-	ChassisTypeVPhone ChassisType = 100
+	ChassisTypeVPhone ChassisType = "Phone"
 	// ChassisTypeVTablet undocumented
-	ChassisTypeVTablet ChassisType = 101
+	ChassisTypeVTablet ChassisType = "Tablet"
 	// ChassisTypeVMobileOther undocumented
-	ChassisTypeVMobileOther ChassisType = 102
+	ChassisTypeVMobileOther ChassisType = "MobileOther"
 	// ChassisTypeVMobileUnknown undocumented
-	ChassisTypeVMobileUnknown ChassisType = 103
+	ChassisTypeVMobileUnknown ChassisType = "MobileUnknown"
 )
 
 // ChassisTypePUnknown returns a pointer to ChassisTypeVUnknown

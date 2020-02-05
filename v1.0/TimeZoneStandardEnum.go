@@ -3,13 +3,13 @@
 package msgraph
 
 // TimeZoneStandard undocumented
-type TimeZoneStandard int
+type TimeZoneStandard string
 
 const (
 	// TimeZoneStandardVWindows undocumented
-	TimeZoneStandardVWindows TimeZoneStandard = 0
+	TimeZoneStandardVWindows TimeZoneStandard = "Windows"
 	// TimeZoneStandardVIana undocumented
-	TimeZoneStandardVIana TimeZoneStandard = 1
+	TimeZoneStandardVIana TimeZoneStandard = "Iana"
 )
 
 // TimeZoneStandardPWindows returns a pointer to TimeZoneStandardVWindows

@@ -3,19 +3,19 @@
 package msgraph
 
 // FirewallPacketQueueingMethodType undocumented
-type FirewallPacketQueueingMethodType int
+type FirewallPacketQueueingMethodType string
 
 const (
 	// FirewallPacketQueueingMethodTypeVDeviceDefault undocumented
-	FirewallPacketQueueingMethodTypeVDeviceDefault FirewallPacketQueueingMethodType = 0
+	FirewallPacketQueueingMethodTypeVDeviceDefault FirewallPacketQueueingMethodType = "DeviceDefault"
 	// FirewallPacketQueueingMethodTypeVDisabled undocumented
-	FirewallPacketQueueingMethodTypeVDisabled FirewallPacketQueueingMethodType = 1
+	FirewallPacketQueueingMethodTypeVDisabled FirewallPacketQueueingMethodType = "Disabled"
 	// FirewallPacketQueueingMethodTypeVQueueInbound undocumented
-	FirewallPacketQueueingMethodTypeVQueueInbound FirewallPacketQueueingMethodType = 2
+	FirewallPacketQueueingMethodTypeVQueueInbound FirewallPacketQueueingMethodType = "QueueInbound"
 	// FirewallPacketQueueingMethodTypeVQueueOutbound undocumented
-	FirewallPacketQueueingMethodTypeVQueueOutbound FirewallPacketQueueingMethodType = 3
+	FirewallPacketQueueingMethodTypeVQueueOutbound FirewallPacketQueueingMethodType = "QueueOutbound"
 	// FirewallPacketQueueingMethodTypeVQueueBoth undocumented
-	FirewallPacketQueueingMethodTypeVQueueBoth FirewallPacketQueueingMethodType = 4
+	FirewallPacketQueueingMethodTypeVQueueBoth FirewallPacketQueueingMethodType = "QueueBoth"
 )
 
 // FirewallPacketQueueingMethodTypePDeviceDefault returns a pointer to FirewallPacketQueueingMethodTypeVDeviceDefault

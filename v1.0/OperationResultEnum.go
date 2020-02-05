@@ -3,17 +3,17 @@
 package msgraph
 
 // OperationResult undocumented
-type OperationResult int
+type OperationResult string
 
 const (
 	// OperationResultVSuccess undocumented
-	OperationResultVSuccess OperationResult = 0
+	OperationResultVSuccess OperationResult = "Success"
 	// OperationResultVFailure undocumented
-	OperationResultVFailure OperationResult = 1
+	OperationResultVFailure OperationResult = "Failure"
 	// OperationResultVTimeout undocumented
-	OperationResultVTimeout OperationResult = 2
+	OperationResultVTimeout OperationResult = "Timeout"
 	// OperationResultVUnknownFutureValue undocumented
-	OperationResultVUnknownFutureValue OperationResult = 3
+	OperationResultVUnknownFutureValue OperationResult = "UnknownFutureValue"
 )
 
 // OperationResultPSuccess returns a pointer to OperationResultVSuccess

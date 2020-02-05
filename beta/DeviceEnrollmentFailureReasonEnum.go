@@ -3,33 +3,33 @@
 package msgraph
 
 // DeviceEnrollmentFailureReason undocumented
-type DeviceEnrollmentFailureReason int
+type DeviceEnrollmentFailureReason string
 
 const (
 	// DeviceEnrollmentFailureReasonVUnknown undocumented
-	DeviceEnrollmentFailureReasonVUnknown DeviceEnrollmentFailureReason = 0
+	DeviceEnrollmentFailureReasonVUnknown DeviceEnrollmentFailureReason = "Unknown"
 	// DeviceEnrollmentFailureReasonVAuthentication undocumented
-	DeviceEnrollmentFailureReasonVAuthentication DeviceEnrollmentFailureReason = 1
+	DeviceEnrollmentFailureReasonVAuthentication DeviceEnrollmentFailureReason = "Authentication"
 	// DeviceEnrollmentFailureReasonVAuthorization undocumented
-	DeviceEnrollmentFailureReasonVAuthorization DeviceEnrollmentFailureReason = 2
+	DeviceEnrollmentFailureReasonVAuthorization DeviceEnrollmentFailureReason = "Authorization"
 	// DeviceEnrollmentFailureReasonVAccountValidation undocumented
-	DeviceEnrollmentFailureReasonVAccountValidation DeviceEnrollmentFailureReason = 3
+	DeviceEnrollmentFailureReasonVAccountValidation DeviceEnrollmentFailureReason = "AccountValidation"
 	// DeviceEnrollmentFailureReasonVUserValidation undocumented
-	DeviceEnrollmentFailureReasonVUserValidation DeviceEnrollmentFailureReason = 4
+	DeviceEnrollmentFailureReasonVUserValidation DeviceEnrollmentFailureReason = "UserValidation"
 	// DeviceEnrollmentFailureReasonVDeviceNotSupported undocumented
-	DeviceEnrollmentFailureReasonVDeviceNotSupported DeviceEnrollmentFailureReason = 5
+	DeviceEnrollmentFailureReasonVDeviceNotSupported DeviceEnrollmentFailureReason = "DeviceNotSupported"
 	// DeviceEnrollmentFailureReasonVInMaintenance undocumented
-	DeviceEnrollmentFailureReasonVInMaintenance DeviceEnrollmentFailureReason = 6
+	DeviceEnrollmentFailureReasonVInMaintenance DeviceEnrollmentFailureReason = "InMaintenance"
 	// DeviceEnrollmentFailureReasonVBadRequest undocumented
-	DeviceEnrollmentFailureReasonVBadRequest DeviceEnrollmentFailureReason = 7
+	DeviceEnrollmentFailureReasonVBadRequest DeviceEnrollmentFailureReason = "BadRequest"
 	// DeviceEnrollmentFailureReasonVFeatureNotSupported undocumented
-	DeviceEnrollmentFailureReasonVFeatureNotSupported DeviceEnrollmentFailureReason = 8
+	DeviceEnrollmentFailureReasonVFeatureNotSupported DeviceEnrollmentFailureReason = "FeatureNotSupported"
 	// DeviceEnrollmentFailureReasonVEnrollmentRestrictionsEnforced undocumented
-	DeviceEnrollmentFailureReasonVEnrollmentRestrictionsEnforced DeviceEnrollmentFailureReason = 9
+	DeviceEnrollmentFailureReasonVEnrollmentRestrictionsEnforced DeviceEnrollmentFailureReason = "EnrollmentRestrictionsEnforced"
 	// DeviceEnrollmentFailureReasonVClientDisconnected undocumented
-	DeviceEnrollmentFailureReasonVClientDisconnected DeviceEnrollmentFailureReason = 10
+	DeviceEnrollmentFailureReasonVClientDisconnected DeviceEnrollmentFailureReason = "ClientDisconnected"
 	// DeviceEnrollmentFailureReasonVUserAbandonment undocumented
-	DeviceEnrollmentFailureReasonVUserAbandonment DeviceEnrollmentFailureReason = 11
+	DeviceEnrollmentFailureReasonVUserAbandonment DeviceEnrollmentFailureReason = "UserAbandonment"
 )
 
 // DeviceEnrollmentFailureReasonPUnknown returns a pointer to DeviceEnrollmentFailureReasonVUnknown

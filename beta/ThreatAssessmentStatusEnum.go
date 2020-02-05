@@ -3,13 +3,13 @@
 package msgraph
 
 // ThreatAssessmentStatus undocumented
-type ThreatAssessmentStatus int
+type ThreatAssessmentStatus string
 
 const (
 	// ThreatAssessmentStatusVPending undocumented
-	ThreatAssessmentStatusVPending ThreatAssessmentStatus = 1
+	ThreatAssessmentStatusVPending ThreatAssessmentStatus = "Pending"
 	// ThreatAssessmentStatusVCompleted undocumented
-	ThreatAssessmentStatusVCompleted ThreatAssessmentStatus = 2
+	ThreatAssessmentStatusVCompleted ThreatAssessmentStatus = "Completed"
 )
 
 // ThreatAssessmentStatusPPending returns a pointer to ThreatAssessmentStatusVPending

@@ -3,29 +3,29 @@
 package msgraph
 
 // DeviceEnrollmentType undocumented
-type DeviceEnrollmentType int
+type DeviceEnrollmentType string
 
 const (
 	// DeviceEnrollmentTypeVUnknown undocumented
-	DeviceEnrollmentTypeVUnknown DeviceEnrollmentType = 0
+	DeviceEnrollmentTypeVUnknown DeviceEnrollmentType = "Unknown"
 	// DeviceEnrollmentTypeVUserEnrollment undocumented
-	DeviceEnrollmentTypeVUserEnrollment DeviceEnrollmentType = 1
+	DeviceEnrollmentTypeVUserEnrollment DeviceEnrollmentType = "UserEnrollment"
 	// DeviceEnrollmentTypeVDeviceEnrollmentManager undocumented
-	DeviceEnrollmentTypeVDeviceEnrollmentManager DeviceEnrollmentType = 2
+	DeviceEnrollmentTypeVDeviceEnrollmentManager DeviceEnrollmentType = "DeviceEnrollmentManager"
 	// DeviceEnrollmentTypeVAppleBulkWithUser undocumented
-	DeviceEnrollmentTypeVAppleBulkWithUser DeviceEnrollmentType = 3
+	DeviceEnrollmentTypeVAppleBulkWithUser DeviceEnrollmentType = "AppleBulkWithUser"
 	// DeviceEnrollmentTypeVAppleBulkWithoutUser undocumented
-	DeviceEnrollmentTypeVAppleBulkWithoutUser DeviceEnrollmentType = 4
+	DeviceEnrollmentTypeVAppleBulkWithoutUser DeviceEnrollmentType = "AppleBulkWithoutUser"
 	// DeviceEnrollmentTypeVWindowsAzureADJoin undocumented
-	DeviceEnrollmentTypeVWindowsAzureADJoin DeviceEnrollmentType = 5
+	DeviceEnrollmentTypeVWindowsAzureADJoin DeviceEnrollmentType = "WindowsAzureADJoin"
 	// DeviceEnrollmentTypeVWindowsBulkUserless undocumented
-	DeviceEnrollmentTypeVWindowsBulkUserless DeviceEnrollmentType = 6
+	DeviceEnrollmentTypeVWindowsBulkUserless DeviceEnrollmentType = "WindowsBulkUserless"
 	// DeviceEnrollmentTypeVWindowsAutoEnrollment undocumented
-	DeviceEnrollmentTypeVWindowsAutoEnrollment DeviceEnrollmentType = 7
+	DeviceEnrollmentTypeVWindowsAutoEnrollment DeviceEnrollmentType = "WindowsAutoEnrollment"
 	// DeviceEnrollmentTypeVWindowsBulkAzureDomainJoin undocumented
-	DeviceEnrollmentTypeVWindowsBulkAzureDomainJoin DeviceEnrollmentType = 8
+	DeviceEnrollmentTypeVWindowsBulkAzureDomainJoin DeviceEnrollmentType = "WindowsBulkAzureDomainJoin"
 	// DeviceEnrollmentTypeVWindowsCoManagement undocumented
-	DeviceEnrollmentTypeVWindowsCoManagement DeviceEnrollmentType = 9
+	DeviceEnrollmentTypeVWindowsCoManagement DeviceEnrollmentType = "WindowsCoManagement"
 )
 
 // DeviceEnrollmentTypePUnknown returns a pointer to DeviceEnrollmentTypeVUnknown

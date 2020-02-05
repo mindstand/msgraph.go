@@ -3,13 +3,13 @@
 package msgraph
 
 // MobileAppDependencyType undocumented
-type MobileAppDependencyType int
+type MobileAppDependencyType string
 
 const (
 	// MobileAppDependencyTypeVDetect undocumented
-	MobileAppDependencyTypeVDetect MobileAppDependencyType = 0
+	MobileAppDependencyTypeVDetect MobileAppDependencyType = "Detect"
 	// MobileAppDependencyTypeVAutoInstall undocumented
-	MobileAppDependencyTypeVAutoInstall MobileAppDependencyType = 1
+	MobileAppDependencyTypeVAutoInstall MobileAppDependencyType = "AutoInstall"
 )
 
 // MobileAppDependencyTypePDetect returns a pointer to MobileAppDependencyTypeVDetect

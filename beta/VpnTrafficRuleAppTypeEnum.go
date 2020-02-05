@@ -3,15 +3,15 @@
 package msgraph
 
 // VpnTrafficRuleAppType undocumented
-type VpnTrafficRuleAppType int
+type VpnTrafficRuleAppType string
 
 const (
 	// VpnTrafficRuleAppTypeVNone undocumented
-	VpnTrafficRuleAppTypeVNone VpnTrafficRuleAppType = 0
+	VpnTrafficRuleAppTypeVNone VpnTrafficRuleAppType = "None"
 	// VpnTrafficRuleAppTypeVDesktop undocumented
-	VpnTrafficRuleAppTypeVDesktop VpnTrafficRuleAppType = 1
+	VpnTrafficRuleAppTypeVDesktop VpnTrafficRuleAppType = "Desktop"
 	// VpnTrafficRuleAppTypeVUniversal undocumented
-	VpnTrafficRuleAppTypeVUniversal VpnTrafficRuleAppType = 2
+	VpnTrafficRuleAppTypeVUniversal VpnTrafficRuleAppType = "Universal"
 )
 
 // VpnTrafficRuleAppTypePNone returns a pointer to VpnTrafficRuleAppTypeVNone

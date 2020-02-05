@@ -3,13 +3,13 @@
 package msgraph
 
 // PageOrientation undocumented
-type PageOrientation int
+type PageOrientation string
 
 const (
 	// PageOrientationVHorizontal undocumented
-	PageOrientationVHorizontal PageOrientation = 0
+	PageOrientationVHorizontal PageOrientation = "Horizontal"
 	// PageOrientationVDiagonal undocumented
-	PageOrientationVDiagonal PageOrientation = 1
+	PageOrientationVDiagonal PageOrientation = "Diagonal"
 )
 
 // PageOrientationPHorizontal returns a pointer to PageOrientationVHorizontal

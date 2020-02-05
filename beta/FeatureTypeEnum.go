@@ -3,15 +3,15 @@
 package msgraph
 
 // FeatureType undocumented
-type FeatureType int
+type FeatureType string
 
 const (
 	// FeatureTypeVRegistration undocumented
-	FeatureTypeVRegistration FeatureType = 0
+	FeatureTypeVRegistration FeatureType = "Registration"
 	// FeatureTypeVReset undocumented
-	FeatureTypeVReset FeatureType = 1
+	FeatureTypeVReset FeatureType = "Reset"
 	// FeatureTypeVUnknownFutureValue undocumented
-	FeatureTypeVUnknownFutureValue FeatureType = 2
+	FeatureTypeVUnknownFutureValue FeatureType = "UnknownFutureValue"
 )
 
 // FeatureTypePRegistration returns a pointer to FeatureTypeVRegistration

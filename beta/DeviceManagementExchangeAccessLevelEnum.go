@@ -3,17 +3,17 @@
 package msgraph
 
 // DeviceManagementExchangeAccessLevel undocumented
-type DeviceManagementExchangeAccessLevel int
+type DeviceManagementExchangeAccessLevel string
 
 const (
 	// DeviceManagementExchangeAccessLevelVNone undocumented
-	DeviceManagementExchangeAccessLevelVNone DeviceManagementExchangeAccessLevel = 0
+	DeviceManagementExchangeAccessLevelVNone DeviceManagementExchangeAccessLevel = "None"
 	// DeviceManagementExchangeAccessLevelVAllow undocumented
-	DeviceManagementExchangeAccessLevelVAllow DeviceManagementExchangeAccessLevel = 1
+	DeviceManagementExchangeAccessLevelVAllow DeviceManagementExchangeAccessLevel = "Allow"
 	// DeviceManagementExchangeAccessLevelVBlock undocumented
-	DeviceManagementExchangeAccessLevelVBlock DeviceManagementExchangeAccessLevel = 2
+	DeviceManagementExchangeAccessLevelVBlock DeviceManagementExchangeAccessLevel = "Block"
 	// DeviceManagementExchangeAccessLevelVQuarantine undocumented
-	DeviceManagementExchangeAccessLevelVQuarantine DeviceManagementExchangeAccessLevel = 3
+	DeviceManagementExchangeAccessLevelVQuarantine DeviceManagementExchangeAccessLevel = "Quarantine"
 )
 
 // DeviceManagementExchangeAccessLevelPNone returns a pointer to DeviceManagementExchangeAccessLevelVNone

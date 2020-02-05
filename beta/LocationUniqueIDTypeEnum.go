@@ -3,19 +3,19 @@
 package msgraph
 
 // LocationUniqueIDType undocumented
-type LocationUniqueIDType int
+type LocationUniqueIDType string
 
 const (
 	// LocationUniqueIDTypeVUnknown undocumented
-	LocationUniqueIDTypeVUnknown LocationUniqueIDType = 0
+	LocationUniqueIDTypeVUnknown LocationUniqueIDType = "Unknown"
 	// LocationUniqueIDTypeVLocationStore undocumented
-	LocationUniqueIDTypeVLocationStore LocationUniqueIDType = 1
+	LocationUniqueIDTypeVLocationStore LocationUniqueIDType = "LocationStore"
 	// LocationUniqueIDTypeVDirectory undocumented
-	LocationUniqueIDTypeVDirectory LocationUniqueIDType = 2
+	LocationUniqueIDTypeVDirectory LocationUniqueIDType = "Directory"
 	// LocationUniqueIDTypeVPrivate undocumented
-	LocationUniqueIDTypeVPrivate LocationUniqueIDType = 3
+	LocationUniqueIDTypeVPrivate LocationUniqueIDType = "Private"
 	// LocationUniqueIDTypeVBing undocumented
-	LocationUniqueIDTypeVBing LocationUniqueIDType = 4
+	LocationUniqueIDTypeVBing LocationUniqueIDType = "Bing"
 )
 
 // LocationUniqueIDTypePUnknown returns a pointer to LocationUniqueIDTypeVUnknown

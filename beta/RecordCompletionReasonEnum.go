@@ -3,27 +3,27 @@
 package msgraph
 
 // RecordCompletionReason undocumented
-type RecordCompletionReason int
+type RecordCompletionReason string
 
 const (
 	// RecordCompletionReasonVOperationCanceled undocumented
-	RecordCompletionReasonVOperationCanceled RecordCompletionReason = 0
+	RecordCompletionReasonVOperationCanceled RecordCompletionReason = "OperationCanceled"
 	// RecordCompletionReasonVStopToneDetected undocumented
-	RecordCompletionReasonVStopToneDetected RecordCompletionReason = 1
+	RecordCompletionReasonVStopToneDetected RecordCompletionReason = "StopToneDetected"
 	// RecordCompletionReasonVMaxRecordDurationReached undocumented
-	RecordCompletionReasonVMaxRecordDurationReached RecordCompletionReason = 2
+	RecordCompletionReasonVMaxRecordDurationReached RecordCompletionReason = "MaxRecordDurationReached"
 	// RecordCompletionReasonVInitialSilenceTimeout undocumented
-	RecordCompletionReasonVInitialSilenceTimeout RecordCompletionReason = 3
+	RecordCompletionReasonVInitialSilenceTimeout RecordCompletionReason = "InitialSilenceTimeout"
 	// RecordCompletionReasonVMaxSilenceTimeout undocumented
-	RecordCompletionReasonVMaxSilenceTimeout RecordCompletionReason = 4
+	RecordCompletionReasonVMaxSilenceTimeout RecordCompletionReason = "MaxSilenceTimeout"
 	// RecordCompletionReasonVPlayPromptFailed undocumented
-	RecordCompletionReasonVPlayPromptFailed RecordCompletionReason = 5
+	RecordCompletionReasonVPlayPromptFailed RecordCompletionReason = "PlayPromptFailed"
 	// RecordCompletionReasonVPlayBeepFailed undocumented
-	RecordCompletionReasonVPlayBeepFailed RecordCompletionReason = 6
+	RecordCompletionReasonVPlayBeepFailed RecordCompletionReason = "PlayBeepFailed"
 	// RecordCompletionReasonVMediaReceiveTimeout undocumented
-	RecordCompletionReasonVMediaReceiveTimeout RecordCompletionReason = 7
+	RecordCompletionReasonVMediaReceiveTimeout RecordCompletionReason = "MediaReceiveTimeout"
 	// RecordCompletionReasonVUnspecifiedError undocumented
-	RecordCompletionReasonVUnspecifiedError RecordCompletionReason = 8
+	RecordCompletionReasonVUnspecifiedError RecordCompletionReason = "UnspecifiedError"
 )
 
 // RecordCompletionReasonPOperationCanceled returns a pointer to RecordCompletionReasonVOperationCanceled

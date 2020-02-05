@@ -3,25 +3,25 @@
 package msgraph
 
 // TeamSpecialization undocumented
-type TeamSpecialization int
+type TeamSpecialization string
 
 const (
 	// TeamSpecializationVNone undocumented
-	TeamSpecializationVNone TeamSpecialization = 0
+	TeamSpecializationVNone TeamSpecialization = "None"
 	// TeamSpecializationVEducationStandard undocumented
-	TeamSpecializationVEducationStandard TeamSpecialization = 1
+	TeamSpecializationVEducationStandard TeamSpecialization = "EducationStandard"
 	// TeamSpecializationVEducationClass undocumented
-	TeamSpecializationVEducationClass TeamSpecialization = 2
+	TeamSpecializationVEducationClass TeamSpecialization = "EducationClass"
 	// TeamSpecializationVEducationProfessionalLearningCommunity undocumented
-	TeamSpecializationVEducationProfessionalLearningCommunity TeamSpecialization = 3
+	TeamSpecializationVEducationProfessionalLearningCommunity TeamSpecialization = "EducationProfessionalLearningCommunity"
 	// TeamSpecializationVEducationStaff undocumented
-	TeamSpecializationVEducationStaff TeamSpecialization = 4
+	TeamSpecializationVEducationStaff TeamSpecialization = "EducationStaff"
 	// TeamSpecializationVHealthcareStandard undocumented
-	TeamSpecializationVHealthcareStandard TeamSpecialization = 5
+	TeamSpecializationVHealthcareStandard TeamSpecialization = "HealthcareStandard"
 	// TeamSpecializationVHealthcareCareCoordination undocumented
-	TeamSpecializationVHealthcareCareCoordination TeamSpecialization = 6
+	TeamSpecializationVHealthcareCareCoordination TeamSpecialization = "HealthcareCareCoordination"
 	// TeamSpecializationVUnknownFutureValue undocumented
-	TeamSpecializationVUnknownFutureValue TeamSpecialization = 7
+	TeamSpecializationVUnknownFutureValue TeamSpecialization = "UnknownFutureValue"
 )
 
 // TeamSpecializationPNone returns a pointer to TeamSpecializationVNone

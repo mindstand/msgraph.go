@@ -3,15 +3,15 @@
 package msgraph
 
 // ThreatAssessmentResultType undocumented
-type ThreatAssessmentResultType int
+type ThreatAssessmentResultType string
 
 const (
 	// ThreatAssessmentResultTypeVCheckPolicy undocumented
-	ThreatAssessmentResultTypeVCheckPolicy ThreatAssessmentResultType = 1
+	ThreatAssessmentResultTypeVCheckPolicy ThreatAssessmentResultType = "CheckPolicy"
 	// ThreatAssessmentResultTypeVRescan undocumented
-	ThreatAssessmentResultTypeVRescan ThreatAssessmentResultType = 2
+	ThreatAssessmentResultTypeVRescan ThreatAssessmentResultType = "Rescan"
 	// ThreatAssessmentResultTypeVUnknownFutureValue undocumented
-	ThreatAssessmentResultTypeVUnknownFutureValue ThreatAssessmentResultType = 3
+	ThreatAssessmentResultTypeVUnknownFutureValue ThreatAssessmentResultType = "UnknownFutureValue"
 )
 
 // ThreatAssessmentResultTypePCheckPolicy returns a pointer to ThreatAssessmentResultTypeVCheckPolicy

@@ -3,33 +3,33 @@
 package msgraph
 
 // RiskDetail undocumented
-type RiskDetail int
+type RiskDetail string
 
 const (
 	// RiskDetailVNone undocumented
-	RiskDetailVNone RiskDetail = 0
+	RiskDetailVNone RiskDetail = "None"
 	// RiskDetailVAdminGeneratedTemporaryPassword undocumented
-	RiskDetailVAdminGeneratedTemporaryPassword RiskDetail = 1
+	RiskDetailVAdminGeneratedTemporaryPassword RiskDetail = "AdminGeneratedTemporaryPassword"
 	// RiskDetailVUserPerformedSecuredPasswordChange undocumented
-	RiskDetailVUserPerformedSecuredPasswordChange RiskDetail = 2
+	RiskDetailVUserPerformedSecuredPasswordChange RiskDetail = "UserPerformedSecuredPasswordChange"
 	// RiskDetailVUserPerformedSecuredPasswordReset undocumented
-	RiskDetailVUserPerformedSecuredPasswordReset RiskDetail = 3
+	RiskDetailVUserPerformedSecuredPasswordReset RiskDetail = "UserPerformedSecuredPasswordReset"
 	// RiskDetailVAdminConfirmedSigninSafe undocumented
-	RiskDetailVAdminConfirmedSigninSafe RiskDetail = 4
+	RiskDetailVAdminConfirmedSigninSafe RiskDetail = "AdminConfirmedSigninSafe"
 	// RiskDetailVAiConfirmedSigninSafe undocumented
-	RiskDetailVAiConfirmedSigninSafe RiskDetail = 5
+	RiskDetailVAiConfirmedSigninSafe RiskDetail = "AiConfirmedSigninSafe"
 	// RiskDetailVUserPassedMFADrivenByRiskBasedPolicy undocumented
-	RiskDetailVUserPassedMFADrivenByRiskBasedPolicy RiskDetail = 6
+	RiskDetailVUserPassedMFADrivenByRiskBasedPolicy RiskDetail = "UserPassedMFADrivenByRiskBasedPolicy"
 	// RiskDetailVAdminDismissedAllRiskForUser undocumented
-	RiskDetailVAdminDismissedAllRiskForUser RiskDetail = 7
+	RiskDetailVAdminDismissedAllRiskForUser RiskDetail = "AdminDismissedAllRiskForUser"
 	// RiskDetailVAdminConfirmedSigninCompromised undocumented
-	RiskDetailVAdminConfirmedSigninCompromised RiskDetail = 8
+	RiskDetailVAdminConfirmedSigninCompromised RiskDetail = "AdminConfirmedSigninCompromised"
 	// RiskDetailVHidden undocumented
-	RiskDetailVHidden RiskDetail = 9
+	RiskDetailVHidden RiskDetail = "Hidden"
 	// RiskDetailVAdminConfirmedUserCompromised undocumented
-	RiskDetailVAdminConfirmedUserCompromised RiskDetail = 10
+	RiskDetailVAdminConfirmedUserCompromised RiskDetail = "AdminConfirmedUserCompromised"
 	// RiskDetailVUnknownFutureValue undocumented
-	RiskDetailVUnknownFutureValue RiskDetail = 11
+	RiskDetailVUnknownFutureValue RiskDetail = "UnknownFutureValue"
 )
 
 // RiskDetailPNone returns a pointer to RiskDetailVNone

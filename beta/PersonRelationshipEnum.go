@@ -3,41 +3,41 @@
 package msgraph
 
 // PersonRelationship undocumented
-type PersonRelationship int
+type PersonRelationship string
 
 const (
 	// PersonRelationshipVManager undocumented
-	PersonRelationshipVManager PersonRelationship = 0
+	PersonRelationshipVManager PersonRelationship = "Manager"
 	// PersonRelationshipVColleague undocumented
-	PersonRelationshipVColleague PersonRelationship = 1
+	PersonRelationshipVColleague PersonRelationship = "Colleague"
 	// PersonRelationshipVDirectReport undocumented
-	PersonRelationshipVDirectReport PersonRelationship = 2
+	PersonRelationshipVDirectReport PersonRelationship = "DirectReport"
 	// PersonRelationshipVDotLineReport undocumented
-	PersonRelationshipVDotLineReport PersonRelationship = 3
+	PersonRelationshipVDotLineReport PersonRelationship = "DotLineReport"
 	// PersonRelationshipVAssistant undocumented
-	PersonRelationshipVAssistant PersonRelationship = 4
+	PersonRelationshipVAssistant PersonRelationship = "Assistant"
 	// PersonRelationshipVDotLineManager undocumented
-	PersonRelationshipVDotLineManager PersonRelationship = 5
+	PersonRelationshipVDotLineManager PersonRelationship = "DotLineManager"
 	// PersonRelationshipVAlternateContact undocumented
-	PersonRelationshipVAlternateContact PersonRelationship = 6
+	PersonRelationshipVAlternateContact PersonRelationship = "AlternateContact"
 	// PersonRelationshipVFriend undocumented
-	PersonRelationshipVFriend PersonRelationship = 7
+	PersonRelationshipVFriend PersonRelationship = "Friend"
 	// PersonRelationshipVSpouse undocumented
-	PersonRelationshipVSpouse PersonRelationship = 8
+	PersonRelationshipVSpouse PersonRelationship = "Spouse"
 	// PersonRelationshipVSibling undocumented
-	PersonRelationshipVSibling PersonRelationship = 9
+	PersonRelationshipVSibling PersonRelationship = "Sibling"
 	// PersonRelationshipVChild undocumented
-	PersonRelationshipVChild PersonRelationship = 10
+	PersonRelationshipVChild PersonRelationship = "Child"
 	// PersonRelationshipVParent undocumented
-	PersonRelationshipVParent PersonRelationship = 11
+	PersonRelationshipVParent PersonRelationship = "Parent"
 	// PersonRelationshipVSponsor undocumented
-	PersonRelationshipVSponsor PersonRelationship = 12
+	PersonRelationshipVSponsor PersonRelationship = "Sponsor"
 	// PersonRelationshipVEmergencyContact undocumented
-	PersonRelationshipVEmergencyContact PersonRelationship = 13
+	PersonRelationshipVEmergencyContact PersonRelationship = "EmergencyContact"
 	// PersonRelationshipVOther undocumented
-	PersonRelationshipVOther PersonRelationship = 14
+	PersonRelationshipVOther PersonRelationship = "Other"
 	// PersonRelationshipVUnknownFutureValue undocumented
-	PersonRelationshipVUnknownFutureValue PersonRelationship = 15
+	PersonRelationshipVUnknownFutureValue PersonRelationship = "UnknownFutureValue"
 )
 
 // PersonRelationshipPManager returns a pointer to PersonRelationshipVManager

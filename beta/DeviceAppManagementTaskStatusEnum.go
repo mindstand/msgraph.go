@@ -3,19 +3,19 @@
 package msgraph
 
 // DeviceAppManagementTaskStatus undocumented
-type DeviceAppManagementTaskStatus int
+type DeviceAppManagementTaskStatus string
 
 const (
 	// DeviceAppManagementTaskStatusVUnknown undocumented
-	DeviceAppManagementTaskStatusVUnknown DeviceAppManagementTaskStatus = 0
+	DeviceAppManagementTaskStatusVUnknown DeviceAppManagementTaskStatus = "Unknown"
 	// DeviceAppManagementTaskStatusVPending undocumented
-	DeviceAppManagementTaskStatusVPending DeviceAppManagementTaskStatus = 1
+	DeviceAppManagementTaskStatusVPending DeviceAppManagementTaskStatus = "Pending"
 	// DeviceAppManagementTaskStatusVActive undocumented
-	DeviceAppManagementTaskStatusVActive DeviceAppManagementTaskStatus = 2
+	DeviceAppManagementTaskStatusVActive DeviceAppManagementTaskStatus = "Active"
 	// DeviceAppManagementTaskStatusVCompleted undocumented
-	DeviceAppManagementTaskStatusVCompleted DeviceAppManagementTaskStatus = 3
+	DeviceAppManagementTaskStatusVCompleted DeviceAppManagementTaskStatus = "Completed"
 	// DeviceAppManagementTaskStatusVRejected undocumented
-	DeviceAppManagementTaskStatusVRejected DeviceAppManagementTaskStatus = 4
+	DeviceAppManagementTaskStatusVRejected DeviceAppManagementTaskStatus = "Rejected"
 )
 
 // DeviceAppManagementTaskStatusPUnknown returns a pointer to DeviceAppManagementTaskStatusVUnknown

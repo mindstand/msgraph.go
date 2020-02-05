@@ -3,13 +3,13 @@
 package msgraph
 
 // ApplicationType undocumented
-type ApplicationType int
+type ApplicationType string
 
 const (
 	// ApplicationTypeVUniversal undocumented
-	ApplicationTypeVUniversal ApplicationType = 1
+	ApplicationTypeVUniversal ApplicationType = "Universal"
 	// ApplicationTypeVDesktop undocumented
-	ApplicationTypeVDesktop ApplicationType = 2
+	ApplicationTypeVDesktop ApplicationType = "Desktop"
 )
 
 // ApplicationTypePUniversal returns a pointer to ApplicationTypeVUniversal

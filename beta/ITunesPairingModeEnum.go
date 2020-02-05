@@ -3,15 +3,15 @@
 package msgraph
 
 // ITunesPairingMode undocumented
-type ITunesPairingMode int
+type ITunesPairingMode string
 
 const (
 	// ITunesPairingModeVDisallow undocumented
-	ITunesPairingModeVDisallow ITunesPairingMode = 0
+	ITunesPairingModeVDisallow ITunesPairingMode = "Disallow"
 	// ITunesPairingModeVAllow undocumented
-	ITunesPairingModeVAllow ITunesPairingMode = 1
+	ITunesPairingModeVAllow ITunesPairingMode = "Allow"
 	// ITunesPairingModeVRequiresCertificate undocumented
-	ITunesPairingModeVRequiresCertificate ITunesPairingMode = 2
+	ITunesPairingModeVRequiresCertificate ITunesPairingMode = "RequiresCertificate"
 )
 
 // ITunesPairingModePDisallow returns a pointer to ITunesPairingModeVDisallow

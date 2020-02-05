@@ -3,17 +3,17 @@
 package msgraph
 
 // UserIdentityType undocumented
-type UserIdentityType int
+type UserIdentityType string
 
 const (
 	// UserIdentityTypeVAadUser undocumented
-	UserIdentityTypeVAadUser UserIdentityType = 0
+	UserIdentityTypeVAadUser UserIdentityType = "AadUser"
 	// UserIdentityTypeVOnPremiseAadUser undocumented
-	UserIdentityTypeVOnPremiseAadUser UserIdentityType = 1
+	UserIdentityTypeVOnPremiseAadUser UserIdentityType = "OnPremiseAadUser"
 	// UserIdentityTypeVAnonymousGuest undocumented
-	UserIdentityTypeVAnonymousGuest UserIdentityType = 2
+	UserIdentityTypeVAnonymousGuest UserIdentityType = "AnonymousGuest"
 	// UserIdentityTypeVFederatedUser undocumented
-	UserIdentityTypeVFederatedUser UserIdentityType = 3
+	UserIdentityTypeVFederatedUser UserIdentityType = "FederatedUser"
 )
 
 // UserIdentityTypePAadUser returns a pointer to UserIdentityTypeVAadUser

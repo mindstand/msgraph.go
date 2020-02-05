@@ -3,19 +3,19 @@
 package msgraph
 
 // RegistrationStatusType undocumented
-type RegistrationStatusType int
+type RegistrationStatusType string
 
 const (
 	// RegistrationStatusTypeVRegistered undocumented
-	RegistrationStatusTypeVRegistered RegistrationStatusType = 0
+	RegistrationStatusTypeVRegistered RegistrationStatusType = "Registered"
 	// RegistrationStatusTypeVEnabled undocumented
-	RegistrationStatusTypeVEnabled RegistrationStatusType = 1
+	RegistrationStatusTypeVEnabled RegistrationStatusType = "Enabled"
 	// RegistrationStatusTypeVCapable undocumented
-	RegistrationStatusTypeVCapable RegistrationStatusType = 2
+	RegistrationStatusTypeVCapable RegistrationStatusType = "Capable"
 	// RegistrationStatusTypeVMFARegistered undocumented
-	RegistrationStatusTypeVMFARegistered RegistrationStatusType = 3
+	RegistrationStatusTypeVMFARegistered RegistrationStatusType = "MFARegistered"
 	// RegistrationStatusTypeVUnknownFutureValue undocumented
-	RegistrationStatusTypeVUnknownFutureValue RegistrationStatusType = 4
+	RegistrationStatusTypeVUnknownFutureValue RegistrationStatusType = "UnknownFutureValue"
 )
 
 // RegistrationStatusTypePRegistered returns a pointer to RegistrationStatusTypeVRegistered

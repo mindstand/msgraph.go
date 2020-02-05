@@ -3,25 +3,25 @@
 package msgraph
 
 // AndroidKeyguardFeature undocumented
-type AndroidKeyguardFeature int
+type AndroidKeyguardFeature string
 
 const (
 	// AndroidKeyguardFeatureVNotConfigured undocumented
-	AndroidKeyguardFeatureVNotConfigured AndroidKeyguardFeature = 0
+	AndroidKeyguardFeatureVNotConfigured AndroidKeyguardFeature = "NotConfigured"
 	// AndroidKeyguardFeatureVCamera undocumented
-	AndroidKeyguardFeatureVCamera AndroidKeyguardFeature = 1
+	AndroidKeyguardFeatureVCamera AndroidKeyguardFeature = "Camera"
 	// AndroidKeyguardFeatureVNotifications undocumented
-	AndroidKeyguardFeatureVNotifications AndroidKeyguardFeature = 2
+	AndroidKeyguardFeatureVNotifications AndroidKeyguardFeature = "Notifications"
 	// AndroidKeyguardFeatureVUnredactedNotifications undocumented
-	AndroidKeyguardFeatureVUnredactedNotifications AndroidKeyguardFeature = 3
+	AndroidKeyguardFeatureVUnredactedNotifications AndroidKeyguardFeature = "UnredactedNotifications"
 	// AndroidKeyguardFeatureVTrustAgents undocumented
-	AndroidKeyguardFeatureVTrustAgents AndroidKeyguardFeature = 4
+	AndroidKeyguardFeatureVTrustAgents AndroidKeyguardFeature = "TrustAgents"
 	// AndroidKeyguardFeatureVFingerprint undocumented
-	AndroidKeyguardFeatureVFingerprint AndroidKeyguardFeature = 5
+	AndroidKeyguardFeatureVFingerprint AndroidKeyguardFeature = "Fingerprint"
 	// AndroidKeyguardFeatureVRemoteInput undocumented
-	AndroidKeyguardFeatureVRemoteInput AndroidKeyguardFeature = 6
+	AndroidKeyguardFeatureVRemoteInput AndroidKeyguardFeature = "RemoteInput"
 	// AndroidKeyguardFeatureVAllFeatures undocumented
-	AndroidKeyguardFeatureVAllFeatures AndroidKeyguardFeature = 7
+	AndroidKeyguardFeatureVAllFeatures AndroidKeyguardFeature = "AllFeatures"
 )
 
 // AndroidKeyguardFeaturePNotConfigured returns a pointer to AndroidKeyguardFeatureVNotConfigured

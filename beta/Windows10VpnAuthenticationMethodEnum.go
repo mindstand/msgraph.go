@@ -3,15 +3,15 @@
 package msgraph
 
 // Windows10VpnAuthenticationMethod undocumented
-type Windows10VpnAuthenticationMethod int
+type Windows10VpnAuthenticationMethod string
 
 const (
 	// Windows10VpnAuthenticationMethodVCertificate undocumented
-	Windows10VpnAuthenticationMethodVCertificate Windows10VpnAuthenticationMethod = 0
+	Windows10VpnAuthenticationMethodVCertificate Windows10VpnAuthenticationMethod = "Certificate"
 	// Windows10VpnAuthenticationMethodVUsernameAndPassword undocumented
-	Windows10VpnAuthenticationMethodVUsernameAndPassword Windows10VpnAuthenticationMethod = 1
+	Windows10VpnAuthenticationMethodVUsernameAndPassword Windows10VpnAuthenticationMethod = "UsernameAndPassword"
 	// Windows10VpnAuthenticationMethodVCustomEapXML undocumented
-	Windows10VpnAuthenticationMethodVCustomEapXML Windows10VpnAuthenticationMethod = 2
+	Windows10VpnAuthenticationMethodVCustomEapXML Windows10VpnAuthenticationMethod = "CustomEapXML"
 )
 
 // Windows10VpnAuthenticationMethodPCertificate returns a pointer to Windows10VpnAuthenticationMethodVCertificate

@@ -3,17 +3,17 @@
 package msgraph
 
 // MigrationStatus undocumented
-type MigrationStatus int
+type MigrationStatus string
 
 const (
 	// MigrationStatusVReady undocumented
-	MigrationStatusVReady MigrationStatus = 0
+	MigrationStatusVReady MigrationStatus = "Ready"
 	// MigrationStatusVNeedsReview undocumented
-	MigrationStatusVNeedsReview MigrationStatus = 1
+	MigrationStatusVNeedsReview MigrationStatus = "NeedsReview"
 	// MigrationStatusVAdditionalStepsRequired undocumented
-	MigrationStatusVAdditionalStepsRequired MigrationStatus = 2
+	MigrationStatusVAdditionalStepsRequired MigrationStatus = "AdditionalStepsRequired"
 	// MigrationStatusVUnknownFutureValue undocumented
-	MigrationStatusVUnknownFutureValue MigrationStatus = 3
+	MigrationStatusVUnknownFutureValue MigrationStatus = "UnknownFutureValue"
 )
 
 // MigrationStatusPReady returns a pointer to MigrationStatusVReady

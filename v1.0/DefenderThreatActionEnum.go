@@ -3,23 +3,23 @@
 package msgraph
 
 // DefenderThreatAction undocumented
-type DefenderThreatAction int
+type DefenderThreatAction string
 
 const (
 	// DefenderThreatActionVDeviceDefault undocumented
-	DefenderThreatActionVDeviceDefault DefenderThreatAction = 0
+	DefenderThreatActionVDeviceDefault DefenderThreatAction = "DeviceDefault"
 	// DefenderThreatActionVClean undocumented
-	DefenderThreatActionVClean DefenderThreatAction = 1
+	DefenderThreatActionVClean DefenderThreatAction = "Clean"
 	// DefenderThreatActionVQuarantine undocumented
-	DefenderThreatActionVQuarantine DefenderThreatAction = 2
+	DefenderThreatActionVQuarantine DefenderThreatAction = "Quarantine"
 	// DefenderThreatActionVRemove undocumented
-	DefenderThreatActionVRemove DefenderThreatAction = 3
+	DefenderThreatActionVRemove DefenderThreatAction = "Remove"
 	// DefenderThreatActionVAllow undocumented
-	DefenderThreatActionVAllow DefenderThreatAction = 4
+	DefenderThreatActionVAllow DefenderThreatAction = "Allow"
 	// DefenderThreatActionVUserDefined undocumented
-	DefenderThreatActionVUserDefined DefenderThreatAction = 5
+	DefenderThreatActionVUserDefined DefenderThreatAction = "UserDefined"
 	// DefenderThreatActionVBlock undocumented
-	DefenderThreatActionVBlock DefenderThreatAction = 6
+	DefenderThreatActionVBlock DefenderThreatAction = "Block"
 )
 
 // DefenderThreatActionPDeviceDefault returns a pointer to DefenderThreatActionVDeviceDefault

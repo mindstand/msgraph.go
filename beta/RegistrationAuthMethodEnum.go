@@ -3,29 +3,29 @@
 package msgraph
 
 // RegistrationAuthMethod undocumented
-type RegistrationAuthMethod int
+type RegistrationAuthMethod string
 
 const (
 	// RegistrationAuthMethodVEmail undocumented
-	RegistrationAuthMethodVEmail RegistrationAuthMethod = 0
+	RegistrationAuthMethodVEmail RegistrationAuthMethod = "Email"
 	// RegistrationAuthMethodVMobilePhone undocumented
-	RegistrationAuthMethodVMobilePhone RegistrationAuthMethod = 1
+	RegistrationAuthMethodVMobilePhone RegistrationAuthMethod = "MobilePhone"
 	// RegistrationAuthMethodVOfficePhone undocumented
-	RegistrationAuthMethodVOfficePhone RegistrationAuthMethod = 2
+	RegistrationAuthMethodVOfficePhone RegistrationAuthMethod = "OfficePhone"
 	// RegistrationAuthMethodVSecurityQuestion undocumented
-	RegistrationAuthMethodVSecurityQuestion RegistrationAuthMethod = 3
+	RegistrationAuthMethodVSecurityQuestion RegistrationAuthMethod = "SecurityQuestion"
 	// RegistrationAuthMethodVAppNotification undocumented
-	RegistrationAuthMethodVAppNotification RegistrationAuthMethod = 4
+	RegistrationAuthMethodVAppNotification RegistrationAuthMethod = "AppNotification"
 	// RegistrationAuthMethodVAppCode undocumented
-	RegistrationAuthMethodVAppCode RegistrationAuthMethod = 5
+	RegistrationAuthMethodVAppCode RegistrationAuthMethod = "AppCode"
 	// RegistrationAuthMethodVAlternateMobilePhone undocumented
-	RegistrationAuthMethodVAlternateMobilePhone RegistrationAuthMethod = 6
+	RegistrationAuthMethodVAlternateMobilePhone RegistrationAuthMethod = "AlternateMobilePhone"
 	// RegistrationAuthMethodVFido undocumented
-	RegistrationAuthMethodVFido RegistrationAuthMethod = 7
+	RegistrationAuthMethodVFido RegistrationAuthMethod = "Fido"
 	// RegistrationAuthMethodVAppPassword undocumented
-	RegistrationAuthMethodVAppPassword RegistrationAuthMethod = 8
+	RegistrationAuthMethodVAppPassword RegistrationAuthMethod = "AppPassword"
 	// RegistrationAuthMethodVUnknownFutureValue undocumented
-	RegistrationAuthMethodVUnknownFutureValue RegistrationAuthMethod = 9
+	RegistrationAuthMethodVUnknownFutureValue RegistrationAuthMethod = "UnknownFutureValue"
 )
 
 // RegistrationAuthMethodPEmail returns a pointer to RegistrationAuthMethodVEmail

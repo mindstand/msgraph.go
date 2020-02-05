@@ -3,31 +3,31 @@
 package msgraph
 
 // CalendarColor undocumented
-type CalendarColor int
+type CalendarColor string
 
 const (
 	// CalendarColorVLightBlue undocumented
-	CalendarColorVLightBlue CalendarColor = 0
+	CalendarColorVLightBlue CalendarColor = "LightBlue"
 	// CalendarColorVLightGreen undocumented
-	CalendarColorVLightGreen CalendarColor = 1
+	CalendarColorVLightGreen CalendarColor = "LightGreen"
 	// CalendarColorVLightOrange undocumented
-	CalendarColorVLightOrange CalendarColor = 2
+	CalendarColorVLightOrange CalendarColor = "LightOrange"
 	// CalendarColorVLightGray undocumented
-	CalendarColorVLightGray CalendarColor = 3
+	CalendarColorVLightGray CalendarColor = "LightGray"
 	// CalendarColorVLightYellow undocumented
-	CalendarColorVLightYellow CalendarColor = 4
+	CalendarColorVLightYellow CalendarColor = "LightYellow"
 	// CalendarColorVLightTeal undocumented
-	CalendarColorVLightTeal CalendarColor = 5
+	CalendarColorVLightTeal CalendarColor = "LightTeal"
 	// CalendarColorVLightPink undocumented
-	CalendarColorVLightPink CalendarColor = 6
+	CalendarColorVLightPink CalendarColor = "LightPink"
 	// CalendarColorVLightBrown undocumented
-	CalendarColorVLightBrown CalendarColor = 7
+	CalendarColorVLightBrown CalendarColor = "LightBrown"
 	// CalendarColorVLightRed undocumented
-	CalendarColorVLightRed CalendarColor = 8
+	CalendarColorVLightRed CalendarColor = "LightRed"
 	// CalendarColorVMaxColor undocumented
-	CalendarColorVMaxColor CalendarColor = 9
+	CalendarColorVMaxColor CalendarColor = "MaxColor"
 	// CalendarColorVAuto undocumented
-	CalendarColorVAuto CalendarColor = -1
+	CalendarColorVAuto CalendarColor = "Auto"
 )
 
 // CalendarColorPLightBlue returns a pointer to CalendarColorVLightBlue

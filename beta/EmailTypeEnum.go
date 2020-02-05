@@ -3,19 +3,19 @@
 package msgraph
 
 // EmailType undocumented
-type EmailType int
+type EmailType string
 
 const (
 	// EmailTypeVUnknown undocumented
-	EmailTypeVUnknown EmailType = 0
+	EmailTypeVUnknown EmailType = "Unknown"
 	// EmailTypeVWork undocumented
-	EmailTypeVWork EmailType = 1
+	EmailTypeVWork EmailType = "Work"
 	// EmailTypeVPersonal undocumented
-	EmailTypeVPersonal EmailType = 2
+	EmailTypeVPersonal EmailType = "Personal"
 	// EmailTypeVMain undocumented
-	EmailTypeVMain EmailType = 3
+	EmailTypeVMain EmailType = "Main"
 	// EmailTypeVOther undocumented
-	EmailTypeVOther EmailType = 4
+	EmailTypeVOther EmailType = "Other"
 )
 
 // EmailTypePUnknown returns a pointer to EmailTypeVUnknown

@@ -3,23 +3,23 @@
 package msgraph
 
 // OnPremisesPublishingType undocumented
-type OnPremisesPublishingType int
+type OnPremisesPublishingType string
 
 const (
 	// OnPremisesPublishingTypeVAppProxy undocumented
-	OnPremisesPublishingTypeVAppProxy OnPremisesPublishingType = 0
+	OnPremisesPublishingTypeVAppProxy OnPremisesPublishingType = "AppProxy"
 	// OnPremisesPublishingTypeVExchangeOnline undocumented
-	OnPremisesPublishingTypeVExchangeOnline OnPremisesPublishingType = 1
+	OnPremisesPublishingTypeVExchangeOnline OnPremisesPublishingType = "ExchangeOnline"
 	// OnPremisesPublishingTypeVAuthentication undocumented
-	OnPremisesPublishingTypeVAuthentication OnPremisesPublishingType = 2
+	OnPremisesPublishingTypeVAuthentication OnPremisesPublishingType = "Authentication"
 	// OnPremisesPublishingTypeVProvisioning undocumented
-	OnPremisesPublishingTypeVProvisioning OnPremisesPublishingType = 3
+	OnPremisesPublishingTypeVProvisioning OnPremisesPublishingType = "Provisioning"
 	// OnPremisesPublishingTypeVIntunePfx undocumented
-	OnPremisesPublishingTypeVIntunePfx OnPremisesPublishingType = 4
+	OnPremisesPublishingTypeVIntunePfx OnPremisesPublishingType = "IntunePfx"
 	// OnPremisesPublishingTypeVOflineDomainJoin undocumented
-	OnPremisesPublishingTypeVOflineDomainJoin OnPremisesPublishingType = 5
+	OnPremisesPublishingTypeVOflineDomainJoin OnPremisesPublishingType = "OflineDomainJoin"
 	// OnPremisesPublishingTypeVUnknownFutureValue undocumented
-	OnPremisesPublishingTypeVUnknownFutureValue OnPremisesPublishingType = 6
+	OnPremisesPublishingTypeVUnknownFutureValue OnPremisesPublishingType = "UnknownFutureValue"
 )
 
 // OnPremisesPublishingTypePAppProxy returns a pointer to OnPremisesPublishingTypeVAppProxy

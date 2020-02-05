@@ -3,23 +3,23 @@
 package msgraph
 
 // ActionState undocumented
-type ActionState int
+type ActionState string
 
 const (
 	// ActionStateVNone undocumented
-	ActionStateVNone ActionState = 0
+	ActionStateVNone ActionState = "None"
 	// ActionStateVPending undocumented
-	ActionStateVPending ActionState = 1
+	ActionStateVPending ActionState = "Pending"
 	// ActionStateVCanceled undocumented
-	ActionStateVCanceled ActionState = 2
+	ActionStateVCanceled ActionState = "Canceled"
 	// ActionStateVActive undocumented
-	ActionStateVActive ActionState = 3
+	ActionStateVActive ActionState = "Active"
 	// ActionStateVDone undocumented
-	ActionStateVDone ActionState = 4
+	ActionStateVDone ActionState = "Done"
 	// ActionStateVFailed undocumented
-	ActionStateVFailed ActionState = 5
+	ActionStateVFailed ActionState = "Failed"
 	// ActionStateVNotSupported undocumented
-	ActionStateVNotSupported ActionState = 6
+	ActionStateVNotSupported ActionState = "NotSupported"
 )
 
 // ActionStatePNone returns a pointer to ActionStateVNone

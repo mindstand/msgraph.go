@@ -3,19 +3,19 @@
 package msgraph
 
 // NetworkType undocumented
-type NetworkType int
+type NetworkType string
 
 const (
 	// NetworkTypeVIntranet undocumented
-	NetworkTypeVIntranet NetworkType = 0
+	NetworkTypeVIntranet NetworkType = "Intranet"
 	// NetworkTypeVExtranet undocumented
-	NetworkTypeVExtranet NetworkType = 1
+	NetworkTypeVExtranet NetworkType = "Extranet"
 	// NetworkTypeVNamedNetwork undocumented
-	NetworkTypeVNamedNetwork NetworkType = 2
+	NetworkTypeVNamedNetwork NetworkType = "NamedNetwork"
 	// NetworkTypeVTrusted undocumented
-	NetworkTypeVTrusted NetworkType = 3
+	NetworkTypeVTrusted NetworkType = "Trusted"
 	// NetworkTypeVUnknownFutureValue undocumented
-	NetworkTypeVUnknownFutureValue NetworkType = 4
+	NetworkTypeVUnknownFutureValue NetworkType = "UnknownFutureValue"
 )
 
 // NetworkTypePIntranet returns a pointer to NetworkTypeVIntranet

@@ -3,13 +3,13 @@
 package msgraph
 
 // WatermarkLayout undocumented
-type WatermarkLayout int
+type WatermarkLayout string
 
 const (
 	// WatermarkLayoutVHorizontal undocumented
-	WatermarkLayoutVHorizontal WatermarkLayout = 0
+	WatermarkLayoutVHorizontal WatermarkLayout = "Horizontal"
 	// WatermarkLayoutVDiagonal undocumented
-	WatermarkLayoutVDiagonal WatermarkLayout = 1
+	WatermarkLayoutVDiagonal WatermarkLayout = "Diagonal"
 )
 
 // WatermarkLayoutPHorizontal returns a pointer to WatermarkLayoutVHorizontal

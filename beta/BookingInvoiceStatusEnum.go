@@ -3,21 +3,21 @@
 package msgraph
 
 // BookingInvoiceStatus undocumented
-type BookingInvoiceStatus int
+type BookingInvoiceStatus string
 
 const (
 	// BookingInvoiceStatusVDraft undocumented
-	BookingInvoiceStatusVDraft BookingInvoiceStatus = 0
+	BookingInvoiceStatusVDraft BookingInvoiceStatus = "Draft"
 	// BookingInvoiceStatusVReviewing undocumented
-	BookingInvoiceStatusVReviewing BookingInvoiceStatus = 1
+	BookingInvoiceStatusVReviewing BookingInvoiceStatus = "Reviewing"
 	// BookingInvoiceStatusVOpen undocumented
-	BookingInvoiceStatusVOpen BookingInvoiceStatus = 2
+	BookingInvoiceStatusVOpen BookingInvoiceStatus = "Open"
 	// BookingInvoiceStatusVCanceled undocumented
-	BookingInvoiceStatusVCanceled BookingInvoiceStatus = 3
+	BookingInvoiceStatusVCanceled BookingInvoiceStatus = "Canceled"
 	// BookingInvoiceStatusVPaid undocumented
-	BookingInvoiceStatusVPaid BookingInvoiceStatus = 4
+	BookingInvoiceStatusVPaid BookingInvoiceStatus = "Paid"
 	// BookingInvoiceStatusVCorrective undocumented
-	BookingInvoiceStatusVCorrective BookingInvoiceStatus = 5
+	BookingInvoiceStatusVCorrective BookingInvoiceStatus = "Corrective"
 )
 
 // BookingInvoiceStatusPDraft returns a pointer to BookingInvoiceStatusVDraft

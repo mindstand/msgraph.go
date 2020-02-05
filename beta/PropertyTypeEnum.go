@@ -3,27 +3,27 @@
 package msgraph
 
 // PropertyType undocumented
-type PropertyType int
+type PropertyType string
 
 const (
 	// PropertyTypeVString undocumented
-	PropertyTypeVString PropertyType = 0
+	PropertyTypeVString PropertyType = "String"
 	// PropertyTypeVInt64 undocumented
-	PropertyTypeVInt64 PropertyType = 1
+	PropertyTypeVInt64 PropertyType = "Int64"
 	// PropertyTypeVDouble undocumented
-	PropertyTypeVDouble PropertyType = 2
+	PropertyTypeVDouble PropertyType = "Double"
 	// PropertyTypeVDateTime undocumented
-	PropertyTypeVDateTime PropertyType = 3
+	PropertyTypeVDateTime PropertyType = "DateTime"
 	// PropertyTypeVBoolean undocumented
-	PropertyTypeVBoolean PropertyType = 4
+	PropertyTypeVBoolean PropertyType = "Boolean"
 	// PropertyTypeVStringCollection undocumented
-	PropertyTypeVStringCollection PropertyType = 5
+	PropertyTypeVStringCollection PropertyType = "StringCollection"
 	// PropertyTypeVInt64Collection undocumented
-	PropertyTypeVInt64Collection PropertyType = 6
+	PropertyTypeVInt64Collection PropertyType = "Int64Collection"
 	// PropertyTypeVDoubleCollection undocumented
-	PropertyTypeVDoubleCollection PropertyType = 7
+	PropertyTypeVDoubleCollection PropertyType = "DoubleCollection"
 	// PropertyTypeVDateTimeCollection undocumented
-	PropertyTypeVDateTimeCollection PropertyType = 8
+	PropertyTypeVDateTimeCollection PropertyType = "DateTimeCollection"
 )
 
 // PropertyTypePString returns a pointer to PropertyTypeVString

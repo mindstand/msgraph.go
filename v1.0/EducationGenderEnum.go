@@ -3,17 +3,17 @@
 package msgraph
 
 // EducationGender undocumented
-type EducationGender int
+type EducationGender string
 
 const (
 	// EducationGenderVFemale undocumented
-	EducationGenderVFemale EducationGender = 0
+	EducationGenderVFemale EducationGender = "Female"
 	// EducationGenderVMale undocumented
-	EducationGenderVMale EducationGender = 1
+	EducationGenderVMale EducationGender = "Male"
 	// EducationGenderVOther undocumented
-	EducationGenderVOther EducationGender = 2
+	EducationGenderVOther EducationGender = "Other"
 	// EducationGenderVUnknownFutureValue undocumented
-	EducationGenderVUnknownFutureValue EducationGender = 3
+	EducationGenderVUnknownFutureValue EducationGender = "UnknownFutureValue"
 )
 
 // EducationGenderPFemale returns a pointer to EducationGenderVFemale

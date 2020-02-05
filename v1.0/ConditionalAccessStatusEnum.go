@@ -3,17 +3,17 @@
 package msgraph
 
 // ConditionalAccessStatus undocumented
-type ConditionalAccessStatus int
+type ConditionalAccessStatus string
 
 const (
 	// ConditionalAccessStatusVSuccess undocumented
-	ConditionalAccessStatusVSuccess ConditionalAccessStatus = 0
+	ConditionalAccessStatusVSuccess ConditionalAccessStatus = "Success"
 	// ConditionalAccessStatusVFailure undocumented
-	ConditionalAccessStatusVFailure ConditionalAccessStatus = 1
+	ConditionalAccessStatusVFailure ConditionalAccessStatus = "Failure"
 	// ConditionalAccessStatusVNotApplied undocumented
-	ConditionalAccessStatusVNotApplied ConditionalAccessStatus = 2
+	ConditionalAccessStatusVNotApplied ConditionalAccessStatus = "NotApplied"
 	// ConditionalAccessStatusVUnknownFutureValue undocumented
-	ConditionalAccessStatusVUnknownFutureValue ConditionalAccessStatus = 3
+	ConditionalAccessStatusVUnknownFutureValue ConditionalAccessStatus = "UnknownFutureValue"
 )
 
 // ConditionalAccessStatusPSuccess returns a pointer to ConditionalAccessStatusVSuccess

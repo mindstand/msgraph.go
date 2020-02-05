@@ -3,17 +3,17 @@
 package msgraph
 
 // ObjectFlowTypes undocumented
-type ObjectFlowTypes int
+type ObjectFlowTypes string
 
 const (
 	// ObjectFlowTypesVNone undocumented
-	ObjectFlowTypesVNone ObjectFlowTypes = 0
+	ObjectFlowTypesVNone ObjectFlowTypes = "None"
 	// ObjectFlowTypesVAdd undocumented
-	ObjectFlowTypesVAdd ObjectFlowTypes = 1
+	ObjectFlowTypesVAdd ObjectFlowTypes = "Add"
 	// ObjectFlowTypesVUpdate undocumented
-	ObjectFlowTypesVUpdate ObjectFlowTypes = 2
+	ObjectFlowTypesVUpdate ObjectFlowTypes = "Update"
 	// ObjectFlowTypesVDelete undocumented
-	ObjectFlowTypesVDelete ObjectFlowTypes = 4
+	ObjectFlowTypesVDelete ObjectFlowTypes = "Delete"
 )
 
 // ObjectFlowTypesPNone returns a pointer to ObjectFlowTypesVNone

@@ -3,15 +3,15 @@
 package msgraph
 
 // AttendeeType undocumented
-type AttendeeType int
+type AttendeeType string
 
 const (
 	// AttendeeTypeVRequired undocumented
-	AttendeeTypeVRequired AttendeeType = 0
+	AttendeeTypeVRequired AttendeeType = "Required"
 	// AttendeeTypeVOptional undocumented
-	AttendeeTypeVOptional AttendeeType = 1
+	AttendeeTypeVOptional AttendeeType = "Optional"
 	// AttendeeTypeVResource undocumented
-	AttendeeTypeVResource AttendeeType = 2
+	AttendeeTypeVResource AttendeeType = "Resource"
 )
 
 // AttendeeTypePRequired returns a pointer to AttendeeTypeVRequired

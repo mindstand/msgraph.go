@@ -3,23 +3,23 @@
 package msgraph
 
 // EducationSynchronizationStatus undocumented
-type EducationSynchronizationStatus int
+type EducationSynchronizationStatus string
 
 const (
 	// EducationSynchronizationStatusVPaused undocumented
-	EducationSynchronizationStatusVPaused EducationSynchronizationStatus = 0
+	EducationSynchronizationStatusVPaused EducationSynchronizationStatus = "Paused"
 	// EducationSynchronizationStatusVInProgress undocumented
-	EducationSynchronizationStatusVInProgress EducationSynchronizationStatus = 1
+	EducationSynchronizationStatusVInProgress EducationSynchronizationStatus = "InProgress"
 	// EducationSynchronizationStatusVSuccess undocumented
-	EducationSynchronizationStatusVSuccess EducationSynchronizationStatus = 2
+	EducationSynchronizationStatusVSuccess EducationSynchronizationStatus = "Success"
 	// EducationSynchronizationStatusVError undocumented
-	EducationSynchronizationStatusVError EducationSynchronizationStatus = 3
+	EducationSynchronizationStatusVError EducationSynchronizationStatus = "Error"
 	// EducationSynchronizationStatusVValidationError undocumented
-	EducationSynchronizationStatusVValidationError EducationSynchronizationStatus = 4
+	EducationSynchronizationStatusVValidationError EducationSynchronizationStatus = "ValidationError"
 	// EducationSynchronizationStatusVQuarantined undocumented
-	EducationSynchronizationStatusVQuarantined EducationSynchronizationStatus = 5
+	EducationSynchronizationStatusVQuarantined EducationSynchronizationStatus = "Quarantined"
 	// EducationSynchronizationStatusVUnknownFutureValue undocumented
-	EducationSynchronizationStatusVUnknownFutureValue EducationSynchronizationStatus = 6
+	EducationSynchronizationStatusVUnknownFutureValue EducationSynchronizationStatus = "UnknownFutureValue"
 )
 
 // EducationSynchronizationStatusPPaused returns a pointer to EducationSynchronizationStatusVPaused

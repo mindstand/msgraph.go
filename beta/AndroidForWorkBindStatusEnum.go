@@ -3,17 +3,17 @@
 package msgraph
 
 // AndroidForWorkBindStatus undocumented
-type AndroidForWorkBindStatus int
+type AndroidForWorkBindStatus string
 
 const (
 	// AndroidForWorkBindStatusVNotBound undocumented
-	AndroidForWorkBindStatusVNotBound AndroidForWorkBindStatus = 0
+	AndroidForWorkBindStatusVNotBound AndroidForWorkBindStatus = "NotBound"
 	// AndroidForWorkBindStatusVBound undocumented
-	AndroidForWorkBindStatusVBound AndroidForWorkBindStatus = 1
+	AndroidForWorkBindStatusVBound AndroidForWorkBindStatus = "Bound"
 	// AndroidForWorkBindStatusVBoundAndValidated undocumented
-	AndroidForWorkBindStatusVBoundAndValidated AndroidForWorkBindStatus = 2
+	AndroidForWorkBindStatusVBoundAndValidated AndroidForWorkBindStatus = "BoundAndValidated"
 	// AndroidForWorkBindStatusVUnbinding undocumented
-	AndroidForWorkBindStatusVUnbinding AndroidForWorkBindStatus = 3
+	AndroidForWorkBindStatusVUnbinding AndroidForWorkBindStatus = "Unbinding"
 )
 
 // AndroidForWorkBindStatusPNotBound returns a pointer to AndroidForWorkBindStatusVNotBound

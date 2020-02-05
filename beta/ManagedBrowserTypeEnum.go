@@ -3,13 +3,13 @@
 package msgraph
 
 // ManagedBrowserType undocumented
-type ManagedBrowserType int
+type ManagedBrowserType string
 
 const (
 	// ManagedBrowserTypeVNotConfigured undocumented
-	ManagedBrowserTypeVNotConfigured ManagedBrowserType = 0
+	ManagedBrowserTypeVNotConfigured ManagedBrowserType = "NotConfigured"
 	// ManagedBrowserTypeVMicrosoftEdge undocumented
-	ManagedBrowserTypeVMicrosoftEdge ManagedBrowserType = 1
+	ManagedBrowserTypeVMicrosoftEdge ManagedBrowserType = "MicrosoftEdge"
 )
 
 // ManagedBrowserTypePNotConfigured returns a pointer to ManagedBrowserTypeVNotConfigured

@@ -3,17 +3,17 @@
 package msgraph
 
 // AppManagementLevel undocumented
-type AppManagementLevel int
+type AppManagementLevel string
 
 const (
 	// AppManagementLevelVUnspecified undocumented
-	AppManagementLevelVUnspecified AppManagementLevel = 0
+	AppManagementLevelVUnspecified AppManagementLevel = "Unspecified"
 	// AppManagementLevelVUnmanaged undocumented
-	AppManagementLevelVUnmanaged AppManagementLevel = 1
+	AppManagementLevelVUnmanaged AppManagementLevel = "Unmanaged"
 	// AppManagementLevelVMdm undocumented
-	AppManagementLevelVMdm AppManagementLevel = 2
+	AppManagementLevelVMdm AppManagementLevel = "Mdm"
 	// AppManagementLevelVAndroidEnterprise undocumented
-	AppManagementLevelVAndroidEnterprise AppManagementLevel = 4
+	AppManagementLevelVAndroidEnterprise AppManagementLevel = "AndroidEnterprise"
 )
 
 // AppManagementLevelPUnspecified returns a pointer to AppManagementLevelVUnspecified

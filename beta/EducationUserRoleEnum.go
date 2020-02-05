@@ -3,19 +3,19 @@
 package msgraph
 
 // EducationUserRole undocumented
-type EducationUserRole int
+type EducationUserRole string
 
 const (
 	// EducationUserRoleVStudent undocumented
-	EducationUserRoleVStudent EducationUserRole = 0
+	EducationUserRoleVStudent EducationUserRole = "Student"
 	// EducationUserRoleVTeacher undocumented
-	EducationUserRoleVTeacher EducationUserRole = 1
+	EducationUserRoleVTeacher EducationUserRole = "Teacher"
 	// EducationUserRoleVNone undocumented
-	EducationUserRoleVNone EducationUserRole = 2
+	EducationUserRoleVNone EducationUserRole = "None"
 	// EducationUserRoleVUnknownFutureValue undocumented
-	EducationUserRoleVUnknownFutureValue EducationUserRole = 3
+	EducationUserRoleVUnknownFutureValue EducationUserRole = "UnknownFutureValue"
 	// EducationUserRoleVFaculty undocumented
-	EducationUserRoleVFaculty EducationUserRole = 4
+	EducationUserRoleVFaculty EducationUserRole = "Faculty"
 )
 
 // EducationUserRolePStudent returns a pointer to EducationUserRoleVStudent

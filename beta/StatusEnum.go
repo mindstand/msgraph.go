@@ -3,19 +3,19 @@
 package msgraph
 
 // Status undocumented
-type Status int
+type Status string
 
 const (
 	// StatusVActive undocumented
-	StatusVActive Status = 0
+	StatusVActive Status = "Active"
 	// StatusVUpdated undocumented
-	StatusVUpdated Status = 1
+	StatusVUpdated Status = "Updated"
 	// StatusVDeleted undocumented
-	StatusVDeleted Status = 2
+	StatusVDeleted Status = "Deleted"
 	// StatusVIgnored undocumented
-	StatusVIgnored Status = 3
+	StatusVIgnored Status = "Ignored"
 	// StatusVUnknownFutureValue undocumented
-	StatusVUnknownFutureValue Status = 4
+	StatusVUnknownFutureValue Status = "UnknownFutureValue"
 )
 
 // StatusPActive returns a pointer to StatusVActive

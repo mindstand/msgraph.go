@@ -3,17 +3,17 @@
 package msgraph
 
 // TeamVisibilityType undocumented
-type TeamVisibilityType int
+type TeamVisibilityType string
 
 const (
 	// TeamVisibilityTypeVPrivate undocumented
-	TeamVisibilityTypeVPrivate TeamVisibilityType = 0
+	TeamVisibilityTypeVPrivate TeamVisibilityType = "Private"
 	// TeamVisibilityTypeVPublic undocumented
-	TeamVisibilityTypeVPublic TeamVisibilityType = 1
+	TeamVisibilityTypeVPublic TeamVisibilityType = "Public"
 	// TeamVisibilityTypeVHiddenMembership undocumented
-	TeamVisibilityTypeVHiddenMembership TeamVisibilityType = 2
+	TeamVisibilityTypeVHiddenMembership TeamVisibilityType = "HiddenMembership"
 	// TeamVisibilityTypeVUnknownFutureValue undocumented
-	TeamVisibilityTypeVUnknownFutureValue TeamVisibilityType = 3
+	TeamVisibilityTypeVUnknownFutureValue TeamVisibilityType = "UnknownFutureValue"
 )
 
 // TeamVisibilityTypePPrivate returns a pointer to TeamVisibilityTypeVPrivate

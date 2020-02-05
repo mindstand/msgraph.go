@@ -3,19 +3,19 @@
 package msgraph
 
 // FolderProtectionType undocumented
-type FolderProtectionType int
+type FolderProtectionType string
 
 const (
 	// FolderProtectionTypeVUserDefined undocumented
-	FolderProtectionTypeVUserDefined FolderProtectionType = 0
+	FolderProtectionTypeVUserDefined FolderProtectionType = "UserDefined"
 	// FolderProtectionTypeVEnable undocumented
-	FolderProtectionTypeVEnable FolderProtectionType = 1
+	FolderProtectionTypeVEnable FolderProtectionType = "Enable"
 	// FolderProtectionTypeVAuditMode undocumented
-	FolderProtectionTypeVAuditMode FolderProtectionType = 2
+	FolderProtectionTypeVAuditMode FolderProtectionType = "AuditMode"
 	// FolderProtectionTypeVBlockDiskModification undocumented
-	FolderProtectionTypeVBlockDiskModification FolderProtectionType = 3
+	FolderProtectionTypeVBlockDiskModification FolderProtectionType = "BlockDiskModification"
 	// FolderProtectionTypeVAuditDiskModification undocumented
-	FolderProtectionTypeVAuditDiskModification FolderProtectionType = 4
+	FolderProtectionTypeVAuditDiskModification FolderProtectionType = "AuditDiskModification"
 )
 
 // FolderProtectionTypePUserDefined returns a pointer to FolderProtectionTypeVUserDefined

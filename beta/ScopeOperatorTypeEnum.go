@@ -3,13 +3,13 @@
 package msgraph
 
 // ScopeOperatorType undocumented
-type ScopeOperatorType int
+type ScopeOperatorType string
 
 const (
 	// ScopeOperatorTypeVBinary undocumented
-	ScopeOperatorTypeVBinary ScopeOperatorType = 0
+	ScopeOperatorTypeVBinary ScopeOperatorType = "Binary"
 	// ScopeOperatorTypeVUnary undocumented
-	ScopeOperatorTypeVUnary ScopeOperatorType = 1
+	ScopeOperatorTypeVUnary ScopeOperatorType = "Unary"
 )
 
 // ScopeOperatorTypePBinary returns a pointer to ScopeOperatorTypeVBinary

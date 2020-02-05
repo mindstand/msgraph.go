@@ -3,15 +3,15 @@
 package msgraph
 
 // UsernameSource undocumented
-type UsernameSource int
+type UsernameSource string
 
 const (
 	// UsernameSourceVUserPrincipalName undocumented
-	UsernameSourceVUserPrincipalName UsernameSource = 0
+	UsernameSourceVUserPrincipalName UsernameSource = "UserPrincipalName"
 	// UsernameSourceVPrimarySMTPAddress undocumented
-	UsernameSourceVPrimarySMTPAddress UsernameSource = 1
+	UsernameSourceVPrimarySMTPAddress UsernameSource = "PrimarySMTPAddress"
 	// UsernameSourceVSamAccountName undocumented
-	UsernameSourceVSamAccountName UsernameSource = 2
+	UsernameSourceVSamAccountName UsernameSource = "SamAccountName"
 )
 
 // UsernameSourcePUserPrincipalName returns a pointer to UsernameSourceVUserPrincipalName

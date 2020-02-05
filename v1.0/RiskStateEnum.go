@@ -3,23 +3,23 @@
 package msgraph
 
 // RiskState undocumented
-type RiskState int
+type RiskState string
 
 const (
 	// RiskStateVNone undocumented
-	RiskStateVNone RiskState = 0
+	RiskStateVNone RiskState = "None"
 	// RiskStateVConfirmedSafe undocumented
-	RiskStateVConfirmedSafe RiskState = 1
+	RiskStateVConfirmedSafe RiskState = "ConfirmedSafe"
 	// RiskStateVRemediated undocumented
-	RiskStateVRemediated RiskState = 2
+	RiskStateVRemediated RiskState = "Remediated"
 	// RiskStateVDismissed undocumented
-	RiskStateVDismissed RiskState = 3
+	RiskStateVDismissed RiskState = "Dismissed"
 	// RiskStateVAtRisk undocumented
-	RiskStateVAtRisk RiskState = 4
+	RiskStateVAtRisk RiskState = "AtRisk"
 	// RiskStateVConfirmedCompromised undocumented
-	RiskStateVConfirmedCompromised RiskState = 5
+	RiskStateVConfirmedCompromised RiskState = "ConfirmedCompromised"
 	// RiskStateVUnknownFutureValue undocumented
-	RiskStateVUnknownFutureValue RiskState = 6
+	RiskStateVUnknownFutureValue RiskState = "UnknownFutureValue"
 )
 
 // RiskStatePNone returns a pointer to RiskStateVNone

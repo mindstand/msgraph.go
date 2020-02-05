@@ -3,21 +3,21 @@
 package msgraph
 
 // RoutingPolicy undocumented
-type RoutingPolicy int
+type RoutingPolicy string
 
 const (
 	// RoutingPolicyVNone undocumented
-	RoutingPolicyVNone RoutingPolicy = 0
+	RoutingPolicyVNone RoutingPolicy = "None"
 	// RoutingPolicyVNoMissedCall undocumented
-	RoutingPolicyVNoMissedCall RoutingPolicy = 1
+	RoutingPolicyVNoMissedCall RoutingPolicy = "NoMissedCall"
 	// RoutingPolicyVDisableForwardingExceptPhone undocumented
-	RoutingPolicyVDisableForwardingExceptPhone RoutingPolicy = 2
+	RoutingPolicyVDisableForwardingExceptPhone RoutingPolicy = "DisableForwardingExceptPhone"
 	// RoutingPolicyVDisableForwarding undocumented
-	RoutingPolicyVDisableForwarding RoutingPolicy = 3
+	RoutingPolicyVDisableForwarding RoutingPolicy = "DisableForwarding"
 	// RoutingPolicyVPreferSkypeForBusiness undocumented
-	RoutingPolicyVPreferSkypeForBusiness RoutingPolicy = 5
+	RoutingPolicyVPreferSkypeForBusiness RoutingPolicy = "PreferSkypeForBusiness"
 	// RoutingPolicyVUnknownFutureValue undocumented
-	RoutingPolicyVUnknownFutureValue RoutingPolicy = 6
+	RoutingPolicyVUnknownFutureValue RoutingPolicy = "UnknownFutureValue"
 )
 
 // RoutingPolicyPNone returns a pointer to RoutingPolicyVNone

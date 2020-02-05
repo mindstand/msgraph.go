@@ -3,15 +3,15 @@
 package msgraph
 
 // ThreatAssessmentRequestSource undocumented
-type ThreatAssessmentRequestSource int
+type ThreatAssessmentRequestSource string
 
 const (
 	// ThreatAssessmentRequestSourceVUndefined undocumented
-	ThreatAssessmentRequestSourceVUndefined ThreatAssessmentRequestSource = 0
+	ThreatAssessmentRequestSourceVUndefined ThreatAssessmentRequestSource = "Undefined"
 	// ThreatAssessmentRequestSourceVUser undocumented
-	ThreatAssessmentRequestSourceVUser ThreatAssessmentRequestSource = 1
+	ThreatAssessmentRequestSourceVUser ThreatAssessmentRequestSource = "User"
 	// ThreatAssessmentRequestSourceVAdministrator undocumented
-	ThreatAssessmentRequestSourceVAdministrator ThreatAssessmentRequestSource = 2
+	ThreatAssessmentRequestSourceVAdministrator ThreatAssessmentRequestSource = "Administrator"
 )
 
 // ThreatAssessmentRequestSourcePUndefined returns a pointer to ThreatAssessmentRequestSourceVUndefined

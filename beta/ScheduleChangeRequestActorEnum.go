@@ -3,19 +3,19 @@
 package msgraph
 
 // ScheduleChangeRequestActor undocumented
-type ScheduleChangeRequestActor int
+type ScheduleChangeRequestActor string
 
 const (
 	// ScheduleChangeRequestActorVSender undocumented
-	ScheduleChangeRequestActorVSender ScheduleChangeRequestActor = 0
+	ScheduleChangeRequestActorVSender ScheduleChangeRequestActor = "Sender"
 	// ScheduleChangeRequestActorVRecipient undocumented
-	ScheduleChangeRequestActorVRecipient ScheduleChangeRequestActor = 1
+	ScheduleChangeRequestActorVRecipient ScheduleChangeRequestActor = "Recipient"
 	// ScheduleChangeRequestActorVManager undocumented
-	ScheduleChangeRequestActorVManager ScheduleChangeRequestActor = 2
+	ScheduleChangeRequestActorVManager ScheduleChangeRequestActor = "Manager"
 	// ScheduleChangeRequestActorVSystem undocumented
-	ScheduleChangeRequestActorVSystem ScheduleChangeRequestActor = 3
+	ScheduleChangeRequestActorVSystem ScheduleChangeRequestActor = "System"
 	// ScheduleChangeRequestActorVUnknownFutureValue undocumented
-	ScheduleChangeRequestActorVUnknownFutureValue ScheduleChangeRequestActor = 4
+	ScheduleChangeRequestActorVUnknownFutureValue ScheduleChangeRequestActor = "UnknownFutureValue"
 )
 
 // ScheduleChangeRequestActorPSender returns a pointer to ScheduleChangeRequestActorVSender

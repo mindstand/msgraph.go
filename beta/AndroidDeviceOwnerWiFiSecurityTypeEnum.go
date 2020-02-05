@@ -3,17 +3,17 @@
 package msgraph
 
 // AndroidDeviceOwnerWiFiSecurityType undocumented
-type AndroidDeviceOwnerWiFiSecurityType int
+type AndroidDeviceOwnerWiFiSecurityType string
 
 const (
 	// AndroidDeviceOwnerWiFiSecurityTypeVOpen undocumented
-	AndroidDeviceOwnerWiFiSecurityTypeVOpen AndroidDeviceOwnerWiFiSecurityType = 0
+	AndroidDeviceOwnerWiFiSecurityTypeVOpen AndroidDeviceOwnerWiFiSecurityType = "Open"
 	// AndroidDeviceOwnerWiFiSecurityTypeVWep undocumented
-	AndroidDeviceOwnerWiFiSecurityTypeVWep AndroidDeviceOwnerWiFiSecurityType = 1
+	AndroidDeviceOwnerWiFiSecurityTypeVWep AndroidDeviceOwnerWiFiSecurityType = "Wep"
 	// AndroidDeviceOwnerWiFiSecurityTypeVWpaPersonal undocumented
-	AndroidDeviceOwnerWiFiSecurityTypeVWpaPersonal AndroidDeviceOwnerWiFiSecurityType = 2
+	AndroidDeviceOwnerWiFiSecurityTypeVWpaPersonal AndroidDeviceOwnerWiFiSecurityType = "WpaPersonal"
 	// AndroidDeviceOwnerWiFiSecurityTypeVWpaEnterprise undocumented
-	AndroidDeviceOwnerWiFiSecurityTypeVWpaEnterprise AndroidDeviceOwnerWiFiSecurityType = 4
+	AndroidDeviceOwnerWiFiSecurityTypeVWpaEnterprise AndroidDeviceOwnerWiFiSecurityType = "WpaEnterprise"
 )
 
 // AndroidDeviceOwnerWiFiSecurityTypePOpen returns a pointer to AndroidDeviceOwnerWiFiSecurityTypeVOpen

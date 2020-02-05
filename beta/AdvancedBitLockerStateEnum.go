@@ -3,43 +3,43 @@
 package msgraph
 
 // AdvancedBitLockerState undocumented
-type AdvancedBitLockerState int
+type AdvancedBitLockerState string
 
 const (
 	// AdvancedBitLockerStateVSuccess undocumented
-	AdvancedBitLockerStateVSuccess AdvancedBitLockerState = 0
+	AdvancedBitLockerStateVSuccess AdvancedBitLockerState = "Success"
 	// AdvancedBitLockerStateVNoUserConsent undocumented
-	AdvancedBitLockerStateVNoUserConsent AdvancedBitLockerState = 1
+	AdvancedBitLockerStateVNoUserConsent AdvancedBitLockerState = "NoUserConsent"
 	// AdvancedBitLockerStateVOsVolumeEncryptionMethodMismatch undocumented
-	AdvancedBitLockerStateVOsVolumeEncryptionMethodMismatch AdvancedBitLockerState = 2
+	AdvancedBitLockerStateVOsVolumeEncryptionMethodMismatch AdvancedBitLockerState = "OsVolumeEncryptionMethodMismatch"
 	// AdvancedBitLockerStateVOsVolumeTpmRequired undocumented
-	AdvancedBitLockerStateVOsVolumeTpmRequired AdvancedBitLockerState = 4
+	AdvancedBitLockerStateVOsVolumeTpmRequired AdvancedBitLockerState = "OsVolumeTpmRequired"
 	// AdvancedBitLockerStateVOsVolumeTpmOnlyRequired undocumented
-	AdvancedBitLockerStateVOsVolumeTpmOnlyRequired AdvancedBitLockerState = 8
+	AdvancedBitLockerStateVOsVolumeTpmOnlyRequired AdvancedBitLockerState = "OsVolumeTpmOnlyRequired"
 	// AdvancedBitLockerStateVOsVolumeTpmPinRequired undocumented
-	AdvancedBitLockerStateVOsVolumeTpmPinRequired AdvancedBitLockerState = 16
+	AdvancedBitLockerStateVOsVolumeTpmPinRequired AdvancedBitLockerState = "OsVolumeTpmPinRequired"
 	// AdvancedBitLockerStateVOsVolumeTpmStartupKeyRequired undocumented
-	AdvancedBitLockerStateVOsVolumeTpmStartupKeyRequired AdvancedBitLockerState = 32
+	AdvancedBitLockerStateVOsVolumeTpmStartupKeyRequired AdvancedBitLockerState = "OsVolumeTpmStartupKeyRequired"
 	// AdvancedBitLockerStateVOsVolumeTpmPinStartupKeyRequired undocumented
-	AdvancedBitLockerStateVOsVolumeTpmPinStartupKeyRequired AdvancedBitLockerState = 64
+	AdvancedBitLockerStateVOsVolumeTpmPinStartupKeyRequired AdvancedBitLockerState = "OsVolumeTpmPinStartupKeyRequired"
 	// AdvancedBitLockerStateVOsVolumeUnprotected undocumented
-	AdvancedBitLockerStateVOsVolumeUnprotected AdvancedBitLockerState = 128
+	AdvancedBitLockerStateVOsVolumeUnprotected AdvancedBitLockerState = "OsVolumeUnprotected"
 	// AdvancedBitLockerStateVRecoveryKeyBackupFailed undocumented
-	AdvancedBitLockerStateVRecoveryKeyBackupFailed AdvancedBitLockerState = 256
+	AdvancedBitLockerStateVRecoveryKeyBackupFailed AdvancedBitLockerState = "RecoveryKeyBackupFailed"
 	// AdvancedBitLockerStateVFixedDriveNotEncrypted undocumented
-	AdvancedBitLockerStateVFixedDriveNotEncrypted AdvancedBitLockerState = 512
+	AdvancedBitLockerStateVFixedDriveNotEncrypted AdvancedBitLockerState = "FixedDriveNotEncrypted"
 	// AdvancedBitLockerStateVFixedDriveEncryptionMethodMismatch undocumented
-	AdvancedBitLockerStateVFixedDriveEncryptionMethodMismatch AdvancedBitLockerState = 1024
+	AdvancedBitLockerStateVFixedDriveEncryptionMethodMismatch AdvancedBitLockerState = "FixedDriveEncryptionMethodMismatch"
 	// AdvancedBitLockerStateVLoggedOnUserNonAdmin undocumented
-	AdvancedBitLockerStateVLoggedOnUserNonAdmin AdvancedBitLockerState = 2048
+	AdvancedBitLockerStateVLoggedOnUserNonAdmin AdvancedBitLockerState = "LoggedOnUserNonAdmin"
 	// AdvancedBitLockerStateVWindowsRecoveryEnvironmentNotConfigured undocumented
-	AdvancedBitLockerStateVWindowsRecoveryEnvironmentNotConfigured AdvancedBitLockerState = 4096
+	AdvancedBitLockerStateVWindowsRecoveryEnvironmentNotConfigured AdvancedBitLockerState = "WindowsRecoveryEnvironmentNotConfigured"
 	// AdvancedBitLockerStateVTpmNotAvailable undocumented
-	AdvancedBitLockerStateVTpmNotAvailable AdvancedBitLockerState = 8192
+	AdvancedBitLockerStateVTpmNotAvailable AdvancedBitLockerState = "TpmNotAvailable"
 	// AdvancedBitLockerStateVTpmNotReady undocumented
-	AdvancedBitLockerStateVTpmNotReady AdvancedBitLockerState = 16384
+	AdvancedBitLockerStateVTpmNotReady AdvancedBitLockerState = "TpmNotReady"
 	// AdvancedBitLockerStateVNetworkError undocumented
-	AdvancedBitLockerStateVNetworkError AdvancedBitLockerState = 32768
+	AdvancedBitLockerStateVNetworkError AdvancedBitLockerState = "NetworkError"
 )
 
 // AdvancedBitLockerStatePSuccess returns a pointer to AdvancedBitLockerStateVSuccess

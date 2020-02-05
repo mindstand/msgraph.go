@@ -3,15 +3,15 @@
 package msgraph
 
 // RoutingType undocumented
-type RoutingType int
+type RoutingType string
 
 const (
 	// RoutingTypeVForwarded undocumented
-	RoutingTypeVForwarded RoutingType = 0
+	RoutingTypeVForwarded RoutingType = "Forwarded"
 	// RoutingTypeVLookup undocumented
-	RoutingTypeVLookup RoutingType = 1
+	RoutingTypeVLookup RoutingType = "Lookup"
 	// RoutingTypeVSelfFork undocumented
-	RoutingTypeVSelfFork RoutingType = 2
+	RoutingTypeVSelfFork RoutingType = "SelfFork"
 )
 
 // RoutingTypePForwarded returns a pointer to RoutingTypeVForwarded

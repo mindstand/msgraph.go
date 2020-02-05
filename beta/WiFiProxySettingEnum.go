@@ -3,15 +3,15 @@
 package msgraph
 
 // WiFiProxySetting undocumented
-type WiFiProxySetting int
+type WiFiProxySetting string
 
 const (
 	// WiFiProxySettingVNone undocumented
-	WiFiProxySettingVNone WiFiProxySetting = 0
+	WiFiProxySettingVNone WiFiProxySetting = "None"
 	// WiFiProxySettingVManual undocumented
-	WiFiProxySettingVManual WiFiProxySetting = 1
+	WiFiProxySettingVManual WiFiProxySetting = "Manual"
 	// WiFiProxySettingVAutomatic undocumented
-	WiFiProxySettingVAutomatic WiFiProxySetting = 2
+	WiFiProxySettingVAutomatic WiFiProxySetting = "Automatic"
 )
 
 // WiFiProxySettingPNone returns a pointer to WiFiProxySettingVNone

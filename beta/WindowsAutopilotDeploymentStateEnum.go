@@ -3,19 +3,19 @@
 package msgraph
 
 // WindowsAutopilotDeploymentState undocumented
-type WindowsAutopilotDeploymentState int
+type WindowsAutopilotDeploymentState string
 
 const (
 	// WindowsAutopilotDeploymentStateVUnknown undocumented
-	WindowsAutopilotDeploymentStateVUnknown WindowsAutopilotDeploymentState = 0
+	WindowsAutopilotDeploymentStateVUnknown WindowsAutopilotDeploymentState = "Unknown"
 	// WindowsAutopilotDeploymentStateVSuccess undocumented
-	WindowsAutopilotDeploymentStateVSuccess WindowsAutopilotDeploymentState = 1
+	WindowsAutopilotDeploymentStateVSuccess WindowsAutopilotDeploymentState = "Success"
 	// WindowsAutopilotDeploymentStateVInProgress undocumented
-	WindowsAutopilotDeploymentStateVInProgress WindowsAutopilotDeploymentState = 2
+	WindowsAutopilotDeploymentStateVInProgress WindowsAutopilotDeploymentState = "InProgress"
 	// WindowsAutopilotDeploymentStateVFailure undocumented
-	WindowsAutopilotDeploymentStateVFailure WindowsAutopilotDeploymentState = 3
+	WindowsAutopilotDeploymentStateVFailure WindowsAutopilotDeploymentState = "Failure"
 	// WindowsAutopilotDeploymentStateVSuccessWithTimeout undocumented
-	WindowsAutopilotDeploymentStateVSuccessWithTimeout WindowsAutopilotDeploymentState = 4
+	WindowsAutopilotDeploymentStateVSuccessWithTimeout WindowsAutopilotDeploymentState = "SuccessWithTimeout"
 )
 
 // WindowsAutopilotDeploymentStatePUnknown returns a pointer to WindowsAutopilotDeploymentStateVUnknown

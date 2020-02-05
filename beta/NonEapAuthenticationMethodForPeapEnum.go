@@ -3,13 +3,13 @@
 package msgraph
 
 // NonEapAuthenticationMethodForPeap undocumented
-type NonEapAuthenticationMethodForPeap int
+type NonEapAuthenticationMethodForPeap string
 
 const (
 	// NonEapAuthenticationMethodForPeapVNone undocumented
-	NonEapAuthenticationMethodForPeapVNone NonEapAuthenticationMethodForPeap = 0
+	NonEapAuthenticationMethodForPeapVNone NonEapAuthenticationMethodForPeap = "None"
 	// NonEapAuthenticationMethodForPeapVMicrosoftChapVersionTwo undocumented
-	NonEapAuthenticationMethodForPeapVMicrosoftChapVersionTwo NonEapAuthenticationMethodForPeap = 1
+	NonEapAuthenticationMethodForPeapVMicrosoftChapVersionTwo NonEapAuthenticationMethodForPeap = "MicrosoftChapVersionTwo"
 )
 
 // NonEapAuthenticationMethodForPeapPNone returns a pointer to NonEapAuthenticationMethodForPeapVNone

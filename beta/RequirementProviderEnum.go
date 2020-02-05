@@ -3,15 +3,15 @@
 package msgraph
 
 // RequirementProvider undocumented
-type RequirementProvider int
+type RequirementProvider string
 
 const (
 	// RequirementProviderVMFA undocumented
-	RequirementProviderVMFA RequirementProvider = 0
+	RequirementProviderVMFA RequirementProvider = "MFA"
 	// RequirementProviderVCA undocumented
-	RequirementProviderVCA RequirementProvider = 1
+	RequirementProviderVCA RequirementProvider = "CA"
 	// RequirementProviderVUnknownFutureValue undocumented
-	RequirementProviderVUnknownFutureValue RequirementProvider = 2
+	RequirementProviderVUnknownFutureValue RequirementProvider = "UnknownFutureValue"
 )
 
 // RequirementProviderPMFA returns a pointer to RequirementProviderVMFA

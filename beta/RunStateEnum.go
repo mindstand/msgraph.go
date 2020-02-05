@@ -3,21 +3,21 @@
 package msgraph
 
 // RunState undocumented
-type RunState int
+type RunState string
 
 const (
 	// RunStateVUnknown undocumented
-	RunStateVUnknown RunState = 0
+	RunStateVUnknown RunState = "Unknown"
 	// RunStateVSuccess undocumented
-	RunStateVSuccess RunState = 1
+	RunStateVSuccess RunState = "Success"
 	// RunStateVFail undocumented
-	RunStateVFail RunState = 2
+	RunStateVFail RunState = "Fail"
 	// RunStateVScriptError undocumented
-	RunStateVScriptError RunState = 3
+	RunStateVScriptError RunState = "ScriptError"
 	// RunStateVPending undocumented
-	RunStateVPending RunState = 4
+	RunStateVPending RunState = "Pending"
 	// RunStateVNotApplicable undocumented
-	RunStateVNotApplicable RunState = 5
+	RunStateVNotApplicable RunState = "NotApplicable"
 )
 
 // RunStatePUnknown returns a pointer to RunStateVUnknown

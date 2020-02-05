@@ -3,57 +3,57 @@
 package msgraph
 
 // SecurityNetworkProtocol undocumented
-type SecurityNetworkProtocol int
+type SecurityNetworkProtocol string
 
 const (
 	// SecurityNetworkProtocolVIP undocumented
-	SecurityNetworkProtocolVIP SecurityNetworkProtocol = 0
+	SecurityNetworkProtocolVIP SecurityNetworkProtocol = "IP"
 	// SecurityNetworkProtocolVICMP undocumented
-	SecurityNetworkProtocolVICMP SecurityNetworkProtocol = 1
+	SecurityNetworkProtocolVICMP SecurityNetworkProtocol = "ICMP"
 	// SecurityNetworkProtocolVIGMP undocumented
-	SecurityNetworkProtocolVIGMP SecurityNetworkProtocol = 2
+	SecurityNetworkProtocolVIGMP SecurityNetworkProtocol = "IGMP"
 	// SecurityNetworkProtocolVGgp undocumented
-	SecurityNetworkProtocolVGgp SecurityNetworkProtocol = 3
+	SecurityNetworkProtocolVGgp SecurityNetworkProtocol = "Ggp"
 	// SecurityNetworkProtocolVIpv4 undocumented
-	SecurityNetworkProtocolVIpv4 SecurityNetworkProtocol = 4
+	SecurityNetworkProtocolVIpv4 SecurityNetworkProtocol = "Ipv4"
 	// SecurityNetworkProtocolVTCP undocumented
-	SecurityNetworkProtocolVTCP SecurityNetworkProtocol = 6
+	SecurityNetworkProtocolVTCP SecurityNetworkProtocol = "TCP"
 	// SecurityNetworkProtocolVPup undocumented
-	SecurityNetworkProtocolVPup SecurityNetworkProtocol = 12
+	SecurityNetworkProtocolVPup SecurityNetworkProtocol = "Pup"
 	// SecurityNetworkProtocolVUDP undocumented
-	SecurityNetworkProtocolVUDP SecurityNetworkProtocol = 17
+	SecurityNetworkProtocolVUDP SecurityNetworkProtocol = "UDP"
 	// SecurityNetworkProtocolVIdp undocumented
-	SecurityNetworkProtocolVIdp SecurityNetworkProtocol = 22
+	SecurityNetworkProtocolVIdp SecurityNetworkProtocol = "Idp"
 	// SecurityNetworkProtocolVIpv6 undocumented
-	SecurityNetworkProtocolVIpv6 SecurityNetworkProtocol = 41
+	SecurityNetworkProtocolVIpv6 SecurityNetworkProtocol = "Ipv6"
 	// SecurityNetworkProtocolVIpv6RoutingHeader undocumented
-	SecurityNetworkProtocolVIpv6RoutingHeader SecurityNetworkProtocol = 43
+	SecurityNetworkProtocolVIpv6RoutingHeader SecurityNetworkProtocol = "Ipv6RoutingHeader"
 	// SecurityNetworkProtocolVIpv6FragmentHeader undocumented
-	SecurityNetworkProtocolVIpv6FragmentHeader SecurityNetworkProtocol = 44
+	SecurityNetworkProtocolVIpv6FragmentHeader SecurityNetworkProtocol = "Ipv6FragmentHeader"
 	// SecurityNetworkProtocolVIPSecEncapsulatingSecurityPayload undocumented
-	SecurityNetworkProtocolVIPSecEncapsulatingSecurityPayload SecurityNetworkProtocol = 50
+	SecurityNetworkProtocolVIPSecEncapsulatingSecurityPayload SecurityNetworkProtocol = "IPSecEncapsulatingSecurityPayload"
 	// SecurityNetworkProtocolVIPSecAuthenticationHeader undocumented
-	SecurityNetworkProtocolVIPSecAuthenticationHeader SecurityNetworkProtocol = 51
+	SecurityNetworkProtocolVIPSecAuthenticationHeader SecurityNetworkProtocol = "IPSecAuthenticationHeader"
 	// SecurityNetworkProtocolVICMPV6 undocumented
-	SecurityNetworkProtocolVICMPV6 SecurityNetworkProtocol = 58
+	SecurityNetworkProtocolVICMPV6 SecurityNetworkProtocol = "ICMPV6"
 	// SecurityNetworkProtocolVIpv6NoNextHeader undocumented
-	SecurityNetworkProtocolVIpv6NoNextHeader SecurityNetworkProtocol = 59
+	SecurityNetworkProtocolVIpv6NoNextHeader SecurityNetworkProtocol = "Ipv6NoNextHeader"
 	// SecurityNetworkProtocolVIpv6DestinationOptions undocumented
-	SecurityNetworkProtocolVIpv6DestinationOptions SecurityNetworkProtocol = 60
+	SecurityNetworkProtocolVIpv6DestinationOptions SecurityNetworkProtocol = "Ipv6DestinationOptions"
 	// SecurityNetworkProtocolVNd undocumented
-	SecurityNetworkProtocolVNd SecurityNetworkProtocol = 77
+	SecurityNetworkProtocolVNd SecurityNetworkProtocol = "Nd"
 	// SecurityNetworkProtocolVRaw undocumented
-	SecurityNetworkProtocolVRaw SecurityNetworkProtocol = 255
+	SecurityNetworkProtocolVRaw SecurityNetworkProtocol = "Raw"
 	// SecurityNetworkProtocolVIpx undocumented
-	SecurityNetworkProtocolVIpx SecurityNetworkProtocol = 1000
+	SecurityNetworkProtocolVIpx SecurityNetworkProtocol = "Ipx"
 	// SecurityNetworkProtocolVSpx undocumented
-	SecurityNetworkProtocolVSpx SecurityNetworkProtocol = 1256
+	SecurityNetworkProtocolVSpx SecurityNetworkProtocol = "Spx"
 	// SecurityNetworkProtocolVSpxII undocumented
-	SecurityNetworkProtocolVSpxII SecurityNetworkProtocol = 1257
+	SecurityNetworkProtocolVSpxII SecurityNetworkProtocol = "SpxII"
 	// SecurityNetworkProtocolVUnknownFutureValue undocumented
-	SecurityNetworkProtocolVUnknownFutureValue SecurityNetworkProtocol = 32767
+	SecurityNetworkProtocolVUnknownFutureValue SecurityNetworkProtocol = "UnknownFutureValue"
 	// SecurityNetworkProtocolVUnknown undocumented
-	SecurityNetworkProtocolVUnknown SecurityNetworkProtocol = -1
+	SecurityNetworkProtocolVUnknown SecurityNetworkProtocol = "Unknown"
 )
 
 // SecurityNetworkProtocolPIP returns a pointer to SecurityNetworkProtocolVIP

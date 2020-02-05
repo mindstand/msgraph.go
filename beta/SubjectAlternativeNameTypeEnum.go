@@ -3,19 +3,19 @@
 package msgraph
 
 // SubjectAlternativeNameType undocumented
-type SubjectAlternativeNameType int
+type SubjectAlternativeNameType string
 
 const (
 	// SubjectAlternativeNameTypeVNone undocumented
-	SubjectAlternativeNameTypeVNone SubjectAlternativeNameType = 0
+	SubjectAlternativeNameTypeVNone SubjectAlternativeNameType = "None"
 	// SubjectAlternativeNameTypeVEmailAddress undocumented
-	SubjectAlternativeNameTypeVEmailAddress SubjectAlternativeNameType = 1
+	SubjectAlternativeNameTypeVEmailAddress SubjectAlternativeNameType = "EmailAddress"
 	// SubjectAlternativeNameTypeVUserPrincipalName undocumented
-	SubjectAlternativeNameTypeVUserPrincipalName SubjectAlternativeNameType = 2
+	SubjectAlternativeNameTypeVUserPrincipalName SubjectAlternativeNameType = "UserPrincipalName"
 	// SubjectAlternativeNameTypeVCustomAzureADAttribute undocumented
-	SubjectAlternativeNameTypeVCustomAzureADAttribute SubjectAlternativeNameType = 4
+	SubjectAlternativeNameTypeVCustomAzureADAttribute SubjectAlternativeNameType = "CustomAzureADAttribute"
 	// SubjectAlternativeNameTypeVDomainNameService undocumented
-	SubjectAlternativeNameTypeVDomainNameService SubjectAlternativeNameType = 8
+	SubjectAlternativeNameTypeVDomainNameService SubjectAlternativeNameType = "DomainNameService"
 )
 
 // SubjectAlternativeNameTypePNone returns a pointer to SubjectAlternativeNameTypeVNone

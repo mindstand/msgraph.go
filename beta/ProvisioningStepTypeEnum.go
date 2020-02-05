@@ -3,23 +3,23 @@
 package msgraph
 
 // ProvisioningStepType undocumented
-type ProvisioningStepType int
+type ProvisioningStepType string
 
 const (
 	// ProvisioningStepTypeVImport undocumented
-	ProvisioningStepTypeVImport ProvisioningStepType = 0
+	ProvisioningStepTypeVImport ProvisioningStepType = "Import"
 	// ProvisioningStepTypeVScoping undocumented
-	ProvisioningStepTypeVScoping ProvisioningStepType = 1
+	ProvisioningStepTypeVScoping ProvisioningStepType = "Scoping"
 	// ProvisioningStepTypeVMatching undocumented
-	ProvisioningStepTypeVMatching ProvisioningStepType = 2
+	ProvisioningStepTypeVMatching ProvisioningStepType = "Matching"
 	// ProvisioningStepTypeVProcessing undocumented
-	ProvisioningStepTypeVProcessing ProvisioningStepType = 3
+	ProvisioningStepTypeVProcessing ProvisioningStepType = "Processing"
 	// ProvisioningStepTypeVReferenceResolution undocumented
-	ProvisioningStepTypeVReferenceResolution ProvisioningStepType = 4
+	ProvisioningStepTypeVReferenceResolution ProvisioningStepType = "ReferenceResolution"
 	// ProvisioningStepTypeVExport undocumented
-	ProvisioningStepTypeVExport ProvisioningStepType = 5
+	ProvisioningStepTypeVExport ProvisioningStepType = "Export"
 	// ProvisioningStepTypeVUnknownFutureValue undocumented
-	ProvisioningStepTypeVUnknownFutureValue ProvisioningStepType = 6
+	ProvisioningStepTypeVUnknownFutureValue ProvisioningStepType = "UnknownFutureValue"
 )
 
 // ProvisioningStepTypePImport returns a pointer to ProvisioningStepTypeVImport

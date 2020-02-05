@@ -3,15 +3,15 @@
 package msgraph
 
 // DeviceAppManagementTaskPriority undocumented
-type DeviceAppManagementTaskPriority int
+type DeviceAppManagementTaskPriority string
 
 const (
 	// DeviceAppManagementTaskPriorityVNone undocumented
-	DeviceAppManagementTaskPriorityVNone DeviceAppManagementTaskPriority = 0
+	DeviceAppManagementTaskPriorityVNone DeviceAppManagementTaskPriority = "None"
 	// DeviceAppManagementTaskPriorityVHigh undocumented
-	DeviceAppManagementTaskPriorityVHigh DeviceAppManagementTaskPriority = 1
+	DeviceAppManagementTaskPriorityVHigh DeviceAppManagementTaskPriority = "High"
 	// DeviceAppManagementTaskPriorityVLow undocumented
-	DeviceAppManagementTaskPriorityVLow DeviceAppManagementTaskPriority = 2
+	DeviceAppManagementTaskPriorityVLow DeviceAppManagementTaskPriority = "Low"
 )
 
 // DeviceAppManagementTaskPriorityPNone returns a pointer to DeviceAppManagementTaskPriorityVNone

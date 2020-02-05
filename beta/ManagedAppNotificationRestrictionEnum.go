@@ -3,15 +3,15 @@
 package msgraph
 
 // ManagedAppNotificationRestriction undocumented
-type ManagedAppNotificationRestriction int
+type ManagedAppNotificationRestriction string
 
 const (
 	// ManagedAppNotificationRestrictionVAllow undocumented
-	ManagedAppNotificationRestrictionVAllow ManagedAppNotificationRestriction = 0
+	ManagedAppNotificationRestrictionVAllow ManagedAppNotificationRestriction = "Allow"
 	// ManagedAppNotificationRestrictionVBlockOrganizationalData undocumented
-	ManagedAppNotificationRestrictionVBlockOrganizationalData ManagedAppNotificationRestriction = 1
+	ManagedAppNotificationRestrictionVBlockOrganizationalData ManagedAppNotificationRestriction = "BlockOrganizationalData"
 	// ManagedAppNotificationRestrictionVBlock undocumented
-	ManagedAppNotificationRestrictionVBlock ManagedAppNotificationRestriction = 2
+	ManagedAppNotificationRestrictionVBlock ManagedAppNotificationRestriction = "Block"
 )
 
 // ManagedAppNotificationRestrictionPAllow returns a pointer to ManagedAppNotificationRestrictionVAllow

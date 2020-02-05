@@ -3,19 +3,19 @@
 package msgraph
 
 // WeekIndex undocumented
-type WeekIndex int
+type WeekIndex string
 
 const (
 	// WeekIndexVFirst undocumented
-	WeekIndexVFirst WeekIndex = 0
+	WeekIndexVFirst WeekIndex = "First"
 	// WeekIndexVSecond undocumented
-	WeekIndexVSecond WeekIndex = 1
+	WeekIndexVSecond WeekIndex = "Second"
 	// WeekIndexVThird undocumented
-	WeekIndexVThird WeekIndex = 2
+	WeekIndexVThird WeekIndex = "Third"
 	// WeekIndexVFourth undocumented
-	WeekIndexVFourth WeekIndex = 3
+	WeekIndexVFourth WeekIndex = "Fourth"
 	// WeekIndexVLast undocumented
-	WeekIndexVLast WeekIndex = 4
+	WeekIndexVLast WeekIndex = "Last"
 )
 
 // WeekIndexPFirst returns a pointer to WeekIndexVFirst

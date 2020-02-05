@@ -3,13 +3,13 @@
 package msgraph
 
 // VpnClientAuthenticationType undocumented
-type VpnClientAuthenticationType int
+type VpnClientAuthenticationType string
 
 const (
 	// VpnClientAuthenticationTypeVUserAuthentication undocumented
-	VpnClientAuthenticationTypeVUserAuthentication VpnClientAuthenticationType = 0
+	VpnClientAuthenticationTypeVUserAuthentication VpnClientAuthenticationType = "UserAuthentication"
 	// VpnClientAuthenticationTypeVDeviceAuthentication undocumented
-	VpnClientAuthenticationTypeVDeviceAuthentication VpnClientAuthenticationType = 1
+	VpnClientAuthenticationTypeVDeviceAuthentication VpnClientAuthenticationType = "DeviceAuthentication"
 )
 
 // VpnClientAuthenticationTypePUserAuthentication returns a pointer to VpnClientAuthenticationTypeVUserAuthentication

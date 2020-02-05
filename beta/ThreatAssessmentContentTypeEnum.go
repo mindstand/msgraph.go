@@ -3,15 +3,15 @@
 package msgraph
 
 // ThreatAssessmentContentType undocumented
-type ThreatAssessmentContentType int
+type ThreatAssessmentContentType string
 
 const (
 	// ThreatAssessmentContentTypeVMail undocumented
-	ThreatAssessmentContentTypeVMail ThreatAssessmentContentType = 1
+	ThreatAssessmentContentTypeVMail ThreatAssessmentContentType = "Mail"
 	// ThreatAssessmentContentTypeVURL undocumented
-	ThreatAssessmentContentTypeVURL ThreatAssessmentContentType = 2
+	ThreatAssessmentContentTypeVURL ThreatAssessmentContentType = "URL"
 	// ThreatAssessmentContentTypeVFile undocumented
-	ThreatAssessmentContentTypeVFile ThreatAssessmentContentType = 3
+	ThreatAssessmentContentTypeVFile ThreatAssessmentContentType = "File"
 )
 
 // ThreatAssessmentContentTypePMail returns a pointer to ThreatAssessmentContentTypeVMail

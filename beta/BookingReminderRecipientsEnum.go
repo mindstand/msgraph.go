@@ -3,15 +3,15 @@
 package msgraph
 
 // BookingReminderRecipients undocumented
-type BookingReminderRecipients int
+type BookingReminderRecipients string
 
 const (
 	// BookingReminderRecipientsVAllAttendees undocumented
-	BookingReminderRecipientsVAllAttendees BookingReminderRecipients = 0
+	BookingReminderRecipientsVAllAttendees BookingReminderRecipients = "AllAttendees"
 	// BookingReminderRecipientsVStaff undocumented
-	BookingReminderRecipientsVStaff BookingReminderRecipients = 1
+	BookingReminderRecipientsVStaff BookingReminderRecipients = "Staff"
 	// BookingReminderRecipientsVCustomer undocumented
-	BookingReminderRecipientsVCustomer BookingReminderRecipients = 2
+	BookingReminderRecipientsVCustomer BookingReminderRecipients = "Customer"
 )
 
 // BookingReminderRecipientsPAllAttendees returns a pointer to BookingReminderRecipientsVAllAttendees

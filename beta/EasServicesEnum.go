@@ -3,21 +3,21 @@
 package msgraph
 
 // EasServices undocumented
-type EasServices int
+type EasServices string
 
 const (
 	// EasServicesVNone undocumented
-	EasServicesVNone EasServices = 0
+	EasServicesVNone EasServices = "None"
 	// EasServicesVCalendars undocumented
-	EasServicesVCalendars EasServices = 1
+	EasServicesVCalendars EasServices = "Calendars"
 	// EasServicesVContacts undocumented
-	EasServicesVContacts EasServices = 2
+	EasServicesVContacts EasServices = "Contacts"
 	// EasServicesVEmail undocumented
-	EasServicesVEmail EasServices = 4
+	EasServicesVEmail EasServices = "Email"
 	// EasServicesVNotes undocumented
-	EasServicesVNotes EasServices = 8
+	EasServicesVNotes EasServices = "Notes"
 	// EasServicesVReminders undocumented
-	EasServicesVReminders EasServices = 16
+	EasServicesVReminders EasServices = "Reminders"
 )
 
 // EasServicesPNone returns a pointer to EasServicesVNone

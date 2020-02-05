@@ -3,17 +3,17 @@
 package msgraph
 
 // ConnectionDirection undocumented
-type ConnectionDirection int
+type ConnectionDirection string
 
 const (
 	// ConnectionDirectionVUnknown undocumented
-	ConnectionDirectionVUnknown ConnectionDirection = 0
+	ConnectionDirectionVUnknown ConnectionDirection = "Unknown"
 	// ConnectionDirectionVInbound undocumented
-	ConnectionDirectionVInbound ConnectionDirection = 1
+	ConnectionDirectionVInbound ConnectionDirection = "Inbound"
 	// ConnectionDirectionVOutbound undocumented
-	ConnectionDirectionVOutbound ConnectionDirection = 2
+	ConnectionDirectionVOutbound ConnectionDirection = "Outbound"
 	// ConnectionDirectionVUnknownFutureValue undocumented
-	ConnectionDirectionVUnknownFutureValue ConnectionDirection = 127
+	ConnectionDirectionVUnknownFutureValue ConnectionDirection = "UnknownFutureValue"
 )
 
 // ConnectionDirectionPUnknown returns a pointer to ConnectionDirectionVUnknown

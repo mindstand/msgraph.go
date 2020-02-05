@@ -3,15 +3,15 @@
 package msgraph
 
 // WiFiAuthenticationMethod undocumented
-type WiFiAuthenticationMethod int
+type WiFiAuthenticationMethod string
 
 const (
 	// WiFiAuthenticationMethodVCertificate undocumented
-	WiFiAuthenticationMethodVCertificate WiFiAuthenticationMethod = 0
+	WiFiAuthenticationMethodVCertificate WiFiAuthenticationMethod = "Certificate"
 	// WiFiAuthenticationMethodVUsernameAndPassword undocumented
-	WiFiAuthenticationMethodVUsernameAndPassword WiFiAuthenticationMethod = 1
+	WiFiAuthenticationMethodVUsernameAndPassword WiFiAuthenticationMethod = "UsernameAndPassword"
 	// WiFiAuthenticationMethodVDerivedCredential undocumented
-	WiFiAuthenticationMethodVDerivedCredential WiFiAuthenticationMethod = 2
+	WiFiAuthenticationMethodVDerivedCredential WiFiAuthenticationMethod = "DerivedCredential"
 )
 
 // WiFiAuthenticationMethodPCertificate returns a pointer to WiFiAuthenticationMethodVCertificate

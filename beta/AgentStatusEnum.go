@@ -3,13 +3,13 @@
 package msgraph
 
 // AgentStatus undocumented
-type AgentStatus int
+type AgentStatus string
 
 const (
 	// AgentStatusVActive undocumented
-	AgentStatusVActive AgentStatus = 0
+	AgentStatusVActive AgentStatus = "Active"
 	// AgentStatusVInactive undocumented
-	AgentStatusVInactive AgentStatus = 1
+	AgentStatusVInactive AgentStatus = "Inactive"
 )
 
 // AgentStatusPActive returns a pointer to AgentStatusVActive

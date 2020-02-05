@@ -3,43 +3,43 @@
 package msgraph
 
 // IOSUpdatesInstallStatus undocumented
-type IOSUpdatesInstallStatus int
+type IOSUpdatesInstallStatus string
 
 const (
 	// IOSUpdatesInstallStatusVSuccess undocumented
-	IOSUpdatesInstallStatusVSuccess IOSUpdatesInstallStatus = 0
+	IOSUpdatesInstallStatusVSuccess IOSUpdatesInstallStatus = "Success"
 	// IOSUpdatesInstallStatusVAvailable undocumented
-	IOSUpdatesInstallStatusVAvailable IOSUpdatesInstallStatus = 1
+	IOSUpdatesInstallStatusVAvailable IOSUpdatesInstallStatus = "Available"
 	// IOSUpdatesInstallStatusVIdle undocumented
-	IOSUpdatesInstallStatusVIdle IOSUpdatesInstallStatus = 2
+	IOSUpdatesInstallStatusVIdle IOSUpdatesInstallStatus = "Idle"
 	// IOSUpdatesInstallStatusVUnknown undocumented
-	IOSUpdatesInstallStatusVUnknown IOSUpdatesInstallStatus = 3
+	IOSUpdatesInstallStatusVUnknown IOSUpdatesInstallStatus = "Unknown"
 	// IOSUpdatesInstallStatusVDownloading undocumented
-	IOSUpdatesInstallStatusVDownloading IOSUpdatesInstallStatus = -2016330712
+	IOSUpdatesInstallStatusVDownloading IOSUpdatesInstallStatus = "Downloading"
 	// IOSUpdatesInstallStatusVDownloadFailed undocumented
-	IOSUpdatesInstallStatusVDownloadFailed IOSUpdatesInstallStatus = -2016330711
+	IOSUpdatesInstallStatusVDownloadFailed IOSUpdatesInstallStatus = "DownloadFailed"
 	// IOSUpdatesInstallStatusVDownloadRequiresComputer undocumented
-	IOSUpdatesInstallStatusVDownloadRequiresComputer IOSUpdatesInstallStatus = -2016330710
+	IOSUpdatesInstallStatusVDownloadRequiresComputer IOSUpdatesInstallStatus = "DownloadRequiresComputer"
 	// IOSUpdatesInstallStatusVDownloadInsufficientSpace undocumented
-	IOSUpdatesInstallStatusVDownloadInsufficientSpace IOSUpdatesInstallStatus = -2016330709
+	IOSUpdatesInstallStatusVDownloadInsufficientSpace IOSUpdatesInstallStatus = "DownloadInsufficientSpace"
 	// IOSUpdatesInstallStatusVDownloadInsufficientPower undocumented
-	IOSUpdatesInstallStatusVDownloadInsufficientPower IOSUpdatesInstallStatus = -2016330708
+	IOSUpdatesInstallStatusVDownloadInsufficientPower IOSUpdatesInstallStatus = "DownloadInsufficientPower"
 	// IOSUpdatesInstallStatusVDownloadInsufficientNetwork undocumented
-	IOSUpdatesInstallStatusVDownloadInsufficientNetwork IOSUpdatesInstallStatus = -2016330707
+	IOSUpdatesInstallStatusVDownloadInsufficientNetwork IOSUpdatesInstallStatus = "DownloadInsufficientNetwork"
 	// IOSUpdatesInstallStatusVInstalling undocumented
-	IOSUpdatesInstallStatusVInstalling IOSUpdatesInstallStatus = -2016330706
+	IOSUpdatesInstallStatusVInstalling IOSUpdatesInstallStatus = "Installing"
 	// IOSUpdatesInstallStatusVInstallInsufficientSpace undocumented
-	IOSUpdatesInstallStatusVInstallInsufficientSpace IOSUpdatesInstallStatus = -2016330705
+	IOSUpdatesInstallStatusVInstallInsufficientSpace IOSUpdatesInstallStatus = "InstallInsufficientSpace"
 	// IOSUpdatesInstallStatusVInstallInsufficientPower undocumented
-	IOSUpdatesInstallStatusVInstallInsufficientPower IOSUpdatesInstallStatus = -2016330704
+	IOSUpdatesInstallStatusVInstallInsufficientPower IOSUpdatesInstallStatus = "InstallInsufficientPower"
 	// IOSUpdatesInstallStatusVInstallPhoneCallInProgress undocumented
-	IOSUpdatesInstallStatusVInstallPhoneCallInProgress IOSUpdatesInstallStatus = -2016330703
+	IOSUpdatesInstallStatusVInstallPhoneCallInProgress IOSUpdatesInstallStatus = "InstallPhoneCallInProgress"
 	// IOSUpdatesInstallStatusVInstallFailed undocumented
-	IOSUpdatesInstallStatusVInstallFailed IOSUpdatesInstallStatus = -2016330702
+	IOSUpdatesInstallStatusVInstallFailed IOSUpdatesInstallStatus = "InstallFailed"
 	// IOSUpdatesInstallStatusVNotSupportedOperation undocumented
-	IOSUpdatesInstallStatusVNotSupportedOperation IOSUpdatesInstallStatus = -2016330701
+	IOSUpdatesInstallStatusVNotSupportedOperation IOSUpdatesInstallStatus = "NotSupportedOperation"
 	// IOSUpdatesInstallStatusVSharedDeviceUserLoggedInError undocumented
-	IOSUpdatesInstallStatusVSharedDeviceUserLoggedInError IOSUpdatesInstallStatus = -2016330699
+	IOSUpdatesInstallStatusVSharedDeviceUserLoggedInError IOSUpdatesInstallStatus = "SharedDeviceUserLoggedInError"
 )
 
 // IOSUpdatesInstallStatusPSuccess returns a pointer to IOSUpdatesInstallStatusVSuccess

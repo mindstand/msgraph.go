@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsVpnConnectionType undocumented
-type WindowsVpnConnectionType int
+type WindowsVpnConnectionType string
 
 const (
 	// WindowsVpnConnectionTypeVPulseSecure undocumented
-	WindowsVpnConnectionTypeVPulseSecure WindowsVpnConnectionType = 0
+	WindowsVpnConnectionTypeVPulseSecure WindowsVpnConnectionType = "PulseSecure"
 	// WindowsVpnConnectionTypeVF5EdgeClient undocumented
-	WindowsVpnConnectionTypeVF5EdgeClient WindowsVpnConnectionType = 1
+	WindowsVpnConnectionTypeVF5EdgeClient WindowsVpnConnectionType = "F5EdgeClient"
 	// WindowsVpnConnectionTypeVDellSonicWallMobileConnect undocumented
-	WindowsVpnConnectionTypeVDellSonicWallMobileConnect WindowsVpnConnectionType = 2
+	WindowsVpnConnectionTypeVDellSonicWallMobileConnect WindowsVpnConnectionType = "DellSonicWallMobileConnect"
 	// WindowsVpnConnectionTypeVCheckPointCapsuleVpn undocumented
-	WindowsVpnConnectionTypeVCheckPointCapsuleVpn WindowsVpnConnectionType = 3
+	WindowsVpnConnectionTypeVCheckPointCapsuleVpn WindowsVpnConnectionType = "CheckPointCapsuleVpn"
 )
 
 // WindowsVpnConnectionTypePPulseSecure returns a pointer to WindowsVpnConnectionTypeVPulseSecure

@@ -3,15 +3,15 @@
 package msgraph
 
 // TokenIssuerType undocumented
-type TokenIssuerType int
+type TokenIssuerType string
 
 const (
 	// TokenIssuerTypeVAzureAD undocumented
-	TokenIssuerTypeVAzureAD TokenIssuerType = 0
+	TokenIssuerTypeVAzureAD TokenIssuerType = "AzureAD"
 	// TokenIssuerTypeVADFederationServices undocumented
-	TokenIssuerTypeVADFederationServices TokenIssuerType = 1
+	TokenIssuerTypeVADFederationServices TokenIssuerType = "ADFederationServices"
 	// TokenIssuerTypeVUnknownFutureValue undocumented
-	TokenIssuerTypeVUnknownFutureValue TokenIssuerType = 2
+	TokenIssuerTypeVUnknownFutureValue TokenIssuerType = "UnknownFutureValue"
 )
 
 // TokenIssuerTypePAzureAD returns a pointer to TokenIssuerTypeVAzureAD

@@ -3,83 +3,83 @@
 package msgraph
 
 // SynchronizationSecret undocumented
-type SynchronizationSecret int
+type SynchronizationSecret string
 
 const (
 	// SynchronizationSecretVNone undocumented
-	SynchronizationSecretVNone SynchronizationSecret = 0
+	SynchronizationSecretVNone SynchronizationSecret = "None"
 	// SynchronizationSecretVUserName undocumented
-	SynchronizationSecretVUserName SynchronizationSecret = 1
+	SynchronizationSecretVUserName SynchronizationSecret = "UserName"
 	// SynchronizationSecretVPassword undocumented
-	SynchronizationSecretVPassword SynchronizationSecret = 2
+	SynchronizationSecretVPassword SynchronizationSecret = "Password"
 	// SynchronizationSecretVSecretToken undocumented
-	SynchronizationSecretVSecretToken SynchronizationSecret = 3
+	SynchronizationSecretVSecretToken SynchronizationSecret = "SecretToken"
 	// SynchronizationSecretVAppKey undocumented
-	SynchronizationSecretVAppKey SynchronizationSecret = 4
+	SynchronizationSecretVAppKey SynchronizationSecret = "AppKey"
 	// SynchronizationSecretVBaseAddress undocumented
-	SynchronizationSecretVBaseAddress SynchronizationSecret = 5
+	SynchronizationSecretVBaseAddress SynchronizationSecret = "BaseAddress"
 	// SynchronizationSecretVClientIdentifier undocumented
-	SynchronizationSecretVClientIdentifier SynchronizationSecret = 6
+	SynchronizationSecretVClientIdentifier SynchronizationSecret = "ClientIdentifier"
 	// SynchronizationSecretVClientSecret undocumented
-	SynchronizationSecretVClientSecret SynchronizationSecret = 7
+	SynchronizationSecretVClientSecret SynchronizationSecret = "ClientSecret"
 	// SynchronizationSecretVSingleSignOnType undocumented
-	SynchronizationSecretVSingleSignOnType SynchronizationSecret = 11
+	SynchronizationSecretVSingleSignOnType SynchronizationSecret = "SingleSignOnType"
 	// SynchronizationSecretVSandbox undocumented
-	SynchronizationSecretVSandbox SynchronizationSecret = 12
+	SynchronizationSecretVSandbox SynchronizationSecret = "Sandbox"
 	// SynchronizationSecretVURL undocumented
-	SynchronizationSecretVURL SynchronizationSecret = 13
+	SynchronizationSecretVURL SynchronizationSecret = "URL"
 	// SynchronizationSecretVDomain undocumented
-	SynchronizationSecretVDomain SynchronizationSecret = 14
+	SynchronizationSecretVDomain SynchronizationSecret = "Domain"
 	// SynchronizationSecretVConsumerKey undocumented
-	SynchronizationSecretVConsumerKey SynchronizationSecret = 15
+	SynchronizationSecretVConsumerKey SynchronizationSecret = "ConsumerKey"
 	// SynchronizationSecretVConsumerSecret undocumented
-	SynchronizationSecretVConsumerSecret SynchronizationSecret = 16
+	SynchronizationSecretVConsumerSecret SynchronizationSecret = "ConsumerSecret"
 	// SynchronizationSecretVTokenKey undocumented
-	SynchronizationSecretVTokenKey SynchronizationSecret = 17
+	SynchronizationSecretVTokenKey SynchronizationSecret = "TokenKey"
 	// SynchronizationSecretVTokenExpiration undocumented
-	SynchronizationSecretVTokenExpiration SynchronizationSecret = 18
+	SynchronizationSecretVTokenExpiration SynchronizationSecret = "TokenExpiration"
 	// SynchronizationSecretVOauth2AccessToken undocumented
-	SynchronizationSecretVOauth2AccessToken SynchronizationSecret = 19
+	SynchronizationSecretVOauth2AccessToken SynchronizationSecret = "Oauth2AccessToken"
 	// SynchronizationSecretVOauth2AccessTokenCreationTime undocumented
-	SynchronizationSecretVOauth2AccessTokenCreationTime SynchronizationSecret = 20
+	SynchronizationSecretVOauth2AccessTokenCreationTime SynchronizationSecret = "Oauth2AccessTokenCreationTime"
 	// SynchronizationSecretVOauth2RefreshToken undocumented
-	SynchronizationSecretVOauth2RefreshToken SynchronizationSecret = 21
+	SynchronizationSecretVOauth2RefreshToken SynchronizationSecret = "Oauth2RefreshToken"
 	// SynchronizationSecretVSyncAll undocumented
-	SynchronizationSecretVSyncAll SynchronizationSecret = 22
+	SynchronizationSecretVSyncAll SynchronizationSecret = "SyncAll"
 	// SynchronizationSecretVInstanceName undocumented
-	SynchronizationSecretVInstanceName SynchronizationSecret = 24
+	SynchronizationSecretVInstanceName SynchronizationSecret = "InstanceName"
 	// SynchronizationSecretVOauth2ClientID undocumented
-	SynchronizationSecretVOauth2ClientID SynchronizationSecret = 27
+	SynchronizationSecretVOauth2ClientID SynchronizationSecret = "Oauth2ClientID"
 	// SynchronizationSecretVOauth2ClientSecret undocumented
-	SynchronizationSecretVOauth2ClientSecret SynchronizationSecret = 28
+	SynchronizationSecretVOauth2ClientSecret SynchronizationSecret = "Oauth2ClientSecret"
 	// SynchronizationSecretVCompanyID undocumented
-	SynchronizationSecretVCompanyID SynchronizationSecret = 29
+	SynchronizationSecretVCompanyID SynchronizationSecret = "CompanyID"
 	// SynchronizationSecretVUpdateKeyOnSoftDelete undocumented
-	SynchronizationSecretVUpdateKeyOnSoftDelete SynchronizationSecret = 30
+	SynchronizationSecretVUpdateKeyOnSoftDelete SynchronizationSecret = "UpdateKeyOnSoftDelete"
 	// SynchronizationSecretVSynchronizationSchedule undocumented
-	SynchronizationSecretVSynchronizationSchedule SynchronizationSecret = 33
+	SynchronizationSecretVSynchronizationSchedule SynchronizationSecret = "SynchronizationSchedule"
 	// SynchronizationSecretVSystemOfRecord undocumented
-	SynchronizationSecretVSystemOfRecord SynchronizationSecret = 34
+	SynchronizationSecretVSystemOfRecord SynchronizationSecret = "SystemOfRecord"
 	// SynchronizationSecretVSandboxName undocumented
-	SynchronizationSecretVSandboxName SynchronizationSecret = 35
+	SynchronizationSecretVSandboxName SynchronizationSecret = "SandboxName"
 	// SynchronizationSecretVEnforceDomain undocumented
-	SynchronizationSecretVEnforceDomain SynchronizationSecret = 36
+	SynchronizationSecretVEnforceDomain SynchronizationSecret = "EnforceDomain"
 	// SynchronizationSecretVSyncNotificationSettings undocumented
-	SynchronizationSecretVSyncNotificationSettings SynchronizationSecret = 37
+	SynchronizationSecretVSyncNotificationSettings SynchronizationSecret = "SyncNotificationSettings"
 	// SynchronizationSecretVServer undocumented
-	SynchronizationSecretVServer SynchronizationSecret = 70
+	SynchronizationSecretVServer SynchronizationSecret = "Server"
 	// SynchronizationSecretVPerformInboundEntitlementGrants undocumented
-	SynchronizationSecretVPerformInboundEntitlementGrants SynchronizationSecret = 100
+	SynchronizationSecretVPerformInboundEntitlementGrants SynchronizationSecret = "PerformInboundEntitlementGrants"
 	// SynchronizationSecretVHardDeletesEnabled undocumented
-	SynchronizationSecretVHardDeletesEnabled SynchronizationSecret = 101
+	SynchronizationSecretVHardDeletesEnabled SynchronizationSecret = "HardDeletesEnabled"
 	// SynchronizationSecretVSyncAgentCompatibilityKey undocumented
-	SynchronizationSecretVSyncAgentCompatibilityKey SynchronizationSecret = 102
+	SynchronizationSecretVSyncAgentCompatibilityKey SynchronizationSecret = "SyncAgentCompatibilityKey"
 	// SynchronizationSecretVSyncAgentADContainer undocumented
-	SynchronizationSecretVSyncAgentADContainer SynchronizationSecret = 103
+	SynchronizationSecretVSyncAgentADContainer SynchronizationSecret = "SyncAgentADContainer"
 	// SynchronizationSecretVValidateDomain undocumented
-	SynchronizationSecretVValidateDomain SynchronizationSecret = 206
+	SynchronizationSecretVValidateDomain SynchronizationSecret = "ValidateDomain"
 	// SynchronizationSecretVTestReferences undocumented
-	SynchronizationSecretVTestReferences SynchronizationSecret = 207
+	SynchronizationSecretVTestReferences SynchronizationSecret = "TestReferences"
 )
 
 // SynchronizationSecretPNone returns a pointer to SynchronizationSecretVNone

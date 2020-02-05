@@ -3,19 +3,19 @@
 package msgraph
 
 // EntryExportStatus undocumented
-type EntryExportStatus int
+type EntryExportStatus string
 
 const (
 	// EntryExportStatusVNoop undocumented
-	EntryExportStatusVNoop EntryExportStatus = 0
+	EntryExportStatusVNoop EntryExportStatus = "Noop"
 	// EntryExportStatusVSuccess undocumented
-	EntryExportStatusVSuccess EntryExportStatus = 1
+	EntryExportStatusVSuccess EntryExportStatus = "Success"
 	// EntryExportStatusVRetryableError undocumented
-	EntryExportStatusVRetryableError EntryExportStatus = 2
+	EntryExportStatusVRetryableError EntryExportStatus = "RetryableError"
 	// EntryExportStatusVPermanentError undocumented
-	EntryExportStatusVPermanentError EntryExportStatus = 3
+	EntryExportStatusVPermanentError EntryExportStatus = "PermanentError"
 	// EntryExportStatusVError undocumented
-	EntryExportStatusVError EntryExportStatus = 4
+	EntryExportStatusVError EntryExportStatus = "Error"
 )
 
 // EntryExportStatusPNoop returns a pointer to EntryExportStatusVNoop

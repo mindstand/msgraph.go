@@ -3,19 +3,19 @@
 package msgraph
 
 // AlertFeedback undocumented
-type AlertFeedback int
+type AlertFeedback string
 
 const (
 	// AlertFeedbackVUnknown undocumented
-	AlertFeedbackVUnknown AlertFeedback = 0
+	AlertFeedbackVUnknown AlertFeedback = "Unknown"
 	// AlertFeedbackVTruePositive undocumented
-	AlertFeedbackVTruePositive AlertFeedback = 1
+	AlertFeedbackVTruePositive AlertFeedback = "TruePositive"
 	// AlertFeedbackVFalsePositive undocumented
-	AlertFeedbackVFalsePositive AlertFeedback = 2
+	AlertFeedbackVFalsePositive AlertFeedback = "FalsePositive"
 	// AlertFeedbackVBenignPositive undocumented
-	AlertFeedbackVBenignPositive AlertFeedback = 3
+	AlertFeedbackVBenignPositive AlertFeedback = "BenignPositive"
 	// AlertFeedbackVUnknownFutureValue undocumented
-	AlertFeedbackVUnknownFutureValue AlertFeedback = 127
+	AlertFeedbackVUnknownFutureValue AlertFeedback = "UnknownFutureValue"
 )
 
 // AlertFeedbackPUnknown returns a pointer to AlertFeedbackVUnknown

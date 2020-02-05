@@ -3,23 +3,23 @@
 package msgraph
 
 // RatingCanadaMoviesType undocumented
-type RatingCanadaMoviesType int
+type RatingCanadaMoviesType string
 
 const (
 	// RatingCanadaMoviesTypeVAllAllowed undocumented
-	RatingCanadaMoviesTypeVAllAllowed RatingCanadaMoviesType = 0
+	RatingCanadaMoviesTypeVAllAllowed RatingCanadaMoviesType = "AllAllowed"
 	// RatingCanadaMoviesTypeVAllBlocked undocumented
-	RatingCanadaMoviesTypeVAllBlocked RatingCanadaMoviesType = 1
+	RatingCanadaMoviesTypeVAllBlocked RatingCanadaMoviesType = "AllBlocked"
 	// RatingCanadaMoviesTypeVGeneral undocumented
-	RatingCanadaMoviesTypeVGeneral RatingCanadaMoviesType = 2
+	RatingCanadaMoviesTypeVGeneral RatingCanadaMoviesType = "General"
 	// RatingCanadaMoviesTypeVParentalGuidance undocumented
-	RatingCanadaMoviesTypeVParentalGuidance RatingCanadaMoviesType = 3
+	RatingCanadaMoviesTypeVParentalGuidance RatingCanadaMoviesType = "ParentalGuidance"
 	// RatingCanadaMoviesTypeVAgesAbove14 undocumented
-	RatingCanadaMoviesTypeVAgesAbove14 RatingCanadaMoviesType = 4
+	RatingCanadaMoviesTypeVAgesAbove14 RatingCanadaMoviesType = "AgesAbove14"
 	// RatingCanadaMoviesTypeVAgesAbove18 undocumented
-	RatingCanadaMoviesTypeVAgesAbove18 RatingCanadaMoviesType = 5
+	RatingCanadaMoviesTypeVAgesAbove18 RatingCanadaMoviesType = "AgesAbove18"
 	// RatingCanadaMoviesTypeVRestricted undocumented
-	RatingCanadaMoviesTypeVRestricted RatingCanadaMoviesType = 6
+	RatingCanadaMoviesTypeVRestricted RatingCanadaMoviesType = "Restricted"
 )
 
 // RatingCanadaMoviesTypePAllAllowed returns a pointer to RatingCanadaMoviesTypeVAllAllowed

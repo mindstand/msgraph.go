@@ -3,13 +3,13 @@
 package msgraph
 
 // DeviceManagementExchangeConnectorSyncType undocumented
-type DeviceManagementExchangeConnectorSyncType int
+type DeviceManagementExchangeConnectorSyncType string
 
 const (
 	// DeviceManagementExchangeConnectorSyncTypeVFullSync undocumented
-	DeviceManagementExchangeConnectorSyncTypeVFullSync DeviceManagementExchangeConnectorSyncType = 0
+	DeviceManagementExchangeConnectorSyncTypeVFullSync DeviceManagementExchangeConnectorSyncType = "FullSync"
 	// DeviceManagementExchangeConnectorSyncTypeVDeltaSync undocumented
-	DeviceManagementExchangeConnectorSyncTypeVDeltaSync DeviceManagementExchangeConnectorSyncType = 1
+	DeviceManagementExchangeConnectorSyncTypeVDeltaSync DeviceManagementExchangeConnectorSyncType = "DeltaSync"
 )
 
 // DeviceManagementExchangeConnectorSyncTypePFullSync returns a pointer to DeviceManagementExchangeConnectorSyncTypeVFullSync

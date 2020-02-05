@@ -3,17 +3,17 @@
 package msgraph
 
 // EducationAssignmentStatus undocumented
-type EducationAssignmentStatus int
+type EducationAssignmentStatus string
 
 const (
 	// EducationAssignmentStatusVDraft undocumented
-	EducationAssignmentStatusVDraft EducationAssignmentStatus = 0
+	EducationAssignmentStatusVDraft EducationAssignmentStatus = "Draft"
 	// EducationAssignmentStatusVPublished undocumented
-	EducationAssignmentStatusVPublished EducationAssignmentStatus = 1
+	EducationAssignmentStatusVPublished EducationAssignmentStatus = "Published"
 	// EducationAssignmentStatusVAssigned undocumented
-	EducationAssignmentStatusVAssigned EducationAssignmentStatus = 2
+	EducationAssignmentStatusVAssigned EducationAssignmentStatus = "Assigned"
 	// EducationAssignmentStatusVUnknownFutureValue undocumented
-	EducationAssignmentStatusVUnknownFutureValue EducationAssignmentStatus = 3
+	EducationAssignmentStatusVUnknownFutureValue EducationAssignmentStatus = "UnknownFutureValue"
 )
 
 // EducationAssignmentStatusPDraft returns a pointer to EducationAssignmentStatusVDraft

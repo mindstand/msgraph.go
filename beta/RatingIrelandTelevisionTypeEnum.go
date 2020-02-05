@@ -3,23 +3,23 @@
 package msgraph
 
 // RatingIrelandTelevisionType undocumented
-type RatingIrelandTelevisionType int
+type RatingIrelandTelevisionType string
 
 const (
 	// RatingIrelandTelevisionTypeVAllAllowed undocumented
-	RatingIrelandTelevisionTypeVAllAllowed RatingIrelandTelevisionType = 0
+	RatingIrelandTelevisionTypeVAllAllowed RatingIrelandTelevisionType = "AllAllowed"
 	// RatingIrelandTelevisionTypeVAllBlocked undocumented
-	RatingIrelandTelevisionTypeVAllBlocked RatingIrelandTelevisionType = 1
+	RatingIrelandTelevisionTypeVAllBlocked RatingIrelandTelevisionType = "AllBlocked"
 	// RatingIrelandTelevisionTypeVGeneral undocumented
-	RatingIrelandTelevisionTypeVGeneral RatingIrelandTelevisionType = 2
+	RatingIrelandTelevisionTypeVGeneral RatingIrelandTelevisionType = "General"
 	// RatingIrelandTelevisionTypeVChildren undocumented
-	RatingIrelandTelevisionTypeVChildren RatingIrelandTelevisionType = 3
+	RatingIrelandTelevisionTypeVChildren RatingIrelandTelevisionType = "Children"
 	// RatingIrelandTelevisionTypeVYoungAdults undocumented
-	RatingIrelandTelevisionTypeVYoungAdults RatingIrelandTelevisionType = 4
+	RatingIrelandTelevisionTypeVYoungAdults RatingIrelandTelevisionType = "YoungAdults"
 	// RatingIrelandTelevisionTypeVParentalSupervision undocumented
-	RatingIrelandTelevisionTypeVParentalSupervision RatingIrelandTelevisionType = 5
+	RatingIrelandTelevisionTypeVParentalSupervision RatingIrelandTelevisionType = "ParentalSupervision"
 	// RatingIrelandTelevisionTypeVMature undocumented
-	RatingIrelandTelevisionTypeVMature RatingIrelandTelevisionType = 6
+	RatingIrelandTelevisionTypeVMature RatingIrelandTelevisionType = "Mature"
 )
 
 // RatingIrelandTelevisionTypePAllAllowed returns a pointer to RatingIrelandTelevisionTypeVAllAllowed

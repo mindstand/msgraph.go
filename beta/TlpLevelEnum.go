@@ -3,21 +3,21 @@
 package msgraph
 
 // TlpLevel undocumented
-type TlpLevel int
+type TlpLevel string
 
 const (
 	// TlpLevelVUnknown undocumented
-	TlpLevelVUnknown TlpLevel = 0
+	TlpLevelVUnknown TlpLevel = "Unknown"
 	// TlpLevelVWhite undocumented
-	TlpLevelVWhite TlpLevel = 1
+	TlpLevelVWhite TlpLevel = "White"
 	// TlpLevelVGreen undocumented
-	TlpLevelVGreen TlpLevel = 2
+	TlpLevelVGreen TlpLevel = "Green"
 	// TlpLevelVAmber undocumented
-	TlpLevelVAmber TlpLevel = 3
+	TlpLevelVAmber TlpLevel = "Amber"
 	// TlpLevelVRed undocumented
-	TlpLevelVRed TlpLevel = 4
+	TlpLevelVRed TlpLevel = "Red"
 	// TlpLevelVUnknownFutureValue undocumented
-	TlpLevelVUnknownFutureValue TlpLevel = 127
+	TlpLevelVUnknownFutureValue TlpLevel = "UnknownFutureValue"
 )
 
 // TlpLevelPUnknown returns a pointer to TlpLevelVUnknown

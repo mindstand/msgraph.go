@@ -3,21 +3,21 @@
 package msgraph
 
 // SiteSecurityLevel undocumented
-type SiteSecurityLevel int
+type SiteSecurityLevel string
 
 const (
 	// SiteSecurityLevelVUserDefined undocumented
-	SiteSecurityLevelVUserDefined SiteSecurityLevel = 0
+	SiteSecurityLevelVUserDefined SiteSecurityLevel = "UserDefined"
 	// SiteSecurityLevelVLow undocumented
-	SiteSecurityLevelVLow SiteSecurityLevel = 1
+	SiteSecurityLevelVLow SiteSecurityLevel = "Low"
 	// SiteSecurityLevelVMediumLow undocumented
-	SiteSecurityLevelVMediumLow SiteSecurityLevel = 2
+	SiteSecurityLevelVMediumLow SiteSecurityLevel = "MediumLow"
 	// SiteSecurityLevelVMedium undocumented
-	SiteSecurityLevelVMedium SiteSecurityLevel = 3
+	SiteSecurityLevelVMedium SiteSecurityLevel = "Medium"
 	// SiteSecurityLevelVMediumHigh undocumented
-	SiteSecurityLevelVMediumHigh SiteSecurityLevel = 4
+	SiteSecurityLevelVMediumHigh SiteSecurityLevel = "MediumHigh"
 	// SiteSecurityLevelVHigh undocumented
-	SiteSecurityLevelVHigh SiteSecurityLevel = 5
+	SiteSecurityLevelVHigh SiteSecurityLevel = "High"
 )
 
 // SiteSecurityLevelPUserDefined returns a pointer to SiteSecurityLevelVUserDefined

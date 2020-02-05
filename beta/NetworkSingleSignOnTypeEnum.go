@@ -3,15 +3,15 @@
 package msgraph
 
 // NetworkSingleSignOnType undocumented
-type NetworkSingleSignOnType int
+type NetworkSingleSignOnType string
 
 const (
 	// NetworkSingleSignOnTypeVDisabled undocumented
-	NetworkSingleSignOnTypeVDisabled NetworkSingleSignOnType = 0
+	NetworkSingleSignOnTypeVDisabled NetworkSingleSignOnType = "Disabled"
 	// NetworkSingleSignOnTypeVPrelogon undocumented
-	NetworkSingleSignOnTypeVPrelogon NetworkSingleSignOnType = 1
+	NetworkSingleSignOnTypeVPrelogon NetworkSingleSignOnType = "Prelogon"
 	// NetworkSingleSignOnTypeVPostlogon undocumented
-	NetworkSingleSignOnTypeVPostlogon NetworkSingleSignOnType = 2
+	NetworkSingleSignOnTypeVPostlogon NetworkSingleSignOnType = "Postlogon"
 )
 
 // NetworkSingleSignOnTypePDisabled returns a pointer to NetworkSingleSignOnTypeVDisabled

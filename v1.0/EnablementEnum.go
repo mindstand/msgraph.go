@@ -3,15 +3,15 @@
 package msgraph
 
 // Enablement undocumented
-type Enablement int
+type Enablement string
 
 const (
 	// EnablementVNotConfigured undocumented
-	EnablementVNotConfigured Enablement = 0
+	EnablementVNotConfigured Enablement = "NotConfigured"
 	// EnablementVEnabled undocumented
-	EnablementVEnabled Enablement = 1
+	EnablementVEnabled Enablement = "Enabled"
 	// EnablementVDisabled undocumented
-	EnablementVDisabled Enablement = 2
+	EnablementVDisabled Enablement = "Disabled"
 )
 
 // EnablementPNotConfigured returns a pointer to EnablementVNotConfigured

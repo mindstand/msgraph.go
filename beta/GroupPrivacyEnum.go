@@ -3,13 +3,13 @@
 package msgraph
 
 // GroupPrivacy undocumented
-type GroupPrivacy int
+type GroupPrivacy string
 
 const (
 	// GroupPrivacyVPublic undocumented
-	GroupPrivacyVPublic GroupPrivacy = 0
+	GroupPrivacyVPublic GroupPrivacy = "Public"
 	// GroupPrivacyVPrivate undocumented
-	GroupPrivacyVPrivate GroupPrivacy = 1
+	GroupPrivacyVPrivate GroupPrivacy = "Private"
 )
 
 // GroupPrivacyPPublic returns a pointer to GroupPrivacyVPublic

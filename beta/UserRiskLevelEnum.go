@@ -3,19 +3,19 @@
 package msgraph
 
 // UserRiskLevel undocumented
-type UserRiskLevel int
+type UserRiskLevel string
 
 const (
 	// UserRiskLevelVUnknown undocumented
-	UserRiskLevelVUnknown UserRiskLevel = 0
+	UserRiskLevelVUnknown UserRiskLevel = "Unknown"
 	// UserRiskLevelVNone undocumented
-	UserRiskLevelVNone UserRiskLevel = 1
+	UserRiskLevelVNone UserRiskLevel = "None"
 	// UserRiskLevelVLow undocumented
-	UserRiskLevelVLow UserRiskLevel = 2
+	UserRiskLevelVLow UserRiskLevel = "Low"
 	// UserRiskLevelVMedium undocumented
-	UserRiskLevelVMedium UserRiskLevel = 3
+	UserRiskLevelVMedium UserRiskLevel = "Medium"
 	// UserRiskLevelVHigh undocumented
-	UserRiskLevelVHigh UserRiskLevel = 4
+	UserRiskLevelVHigh UserRiskLevel = "High"
 )
 
 // UserRiskLevelPUnknown returns a pointer to UserRiskLevelVUnknown

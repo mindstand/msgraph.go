@@ -3,15 +3,15 @@
 package msgraph
 
 // WindowsHelloForBusinessPinUsage undocumented
-type WindowsHelloForBusinessPinUsage int
+type WindowsHelloForBusinessPinUsage string
 
 const (
 	// WindowsHelloForBusinessPinUsageVAllowed undocumented
-	WindowsHelloForBusinessPinUsageVAllowed WindowsHelloForBusinessPinUsage = 0
+	WindowsHelloForBusinessPinUsageVAllowed WindowsHelloForBusinessPinUsage = "Allowed"
 	// WindowsHelloForBusinessPinUsageVRequired undocumented
-	WindowsHelloForBusinessPinUsageVRequired WindowsHelloForBusinessPinUsage = 1
+	WindowsHelloForBusinessPinUsageVRequired WindowsHelloForBusinessPinUsage = "Required"
 	// WindowsHelloForBusinessPinUsageVDisallowed undocumented
-	WindowsHelloForBusinessPinUsageVDisallowed WindowsHelloForBusinessPinUsage = 2
+	WindowsHelloForBusinessPinUsageVDisallowed WindowsHelloForBusinessPinUsage = "Disallowed"
 )
 
 // WindowsHelloForBusinessPinUsagePAllowed returns a pointer to WindowsHelloForBusinessPinUsageVAllowed

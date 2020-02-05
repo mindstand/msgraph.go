@@ -3,15 +3,15 @@
 package msgraph
 
 // SharedPCAccountDeletionPolicyType undocumented
-type SharedPCAccountDeletionPolicyType int
+type SharedPCAccountDeletionPolicyType string
 
 const (
 	// SharedPCAccountDeletionPolicyTypeVImmediate undocumented
-	SharedPCAccountDeletionPolicyTypeVImmediate SharedPCAccountDeletionPolicyType = 0
+	SharedPCAccountDeletionPolicyTypeVImmediate SharedPCAccountDeletionPolicyType = "Immediate"
 	// SharedPCAccountDeletionPolicyTypeVDiskSpaceThreshold undocumented
-	SharedPCAccountDeletionPolicyTypeVDiskSpaceThreshold SharedPCAccountDeletionPolicyType = 1
+	SharedPCAccountDeletionPolicyTypeVDiskSpaceThreshold SharedPCAccountDeletionPolicyType = "DiskSpaceThreshold"
 	// SharedPCAccountDeletionPolicyTypeVDiskSpaceThresholdOrInactiveThreshold undocumented
-	SharedPCAccountDeletionPolicyTypeVDiskSpaceThresholdOrInactiveThreshold SharedPCAccountDeletionPolicyType = 2
+	SharedPCAccountDeletionPolicyTypeVDiskSpaceThresholdOrInactiveThreshold SharedPCAccountDeletionPolicyType = "DiskSpaceThresholdOrInactiveThreshold"
 )
 
 // SharedPCAccountDeletionPolicyTypePImmediate returns a pointer to SharedPCAccountDeletionPolicyTypeVImmediate

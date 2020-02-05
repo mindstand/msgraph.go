@@ -3,17 +3,17 @@
 package msgraph
 
 // WindowsFirewallRuleInterfaceTypes undocumented
-type WindowsFirewallRuleInterfaceTypes int
+type WindowsFirewallRuleInterfaceTypes string
 
 const (
 	// WindowsFirewallRuleInterfaceTypesVNotConfigured undocumented
-	WindowsFirewallRuleInterfaceTypesVNotConfigured WindowsFirewallRuleInterfaceTypes = 0
+	WindowsFirewallRuleInterfaceTypesVNotConfigured WindowsFirewallRuleInterfaceTypes = "NotConfigured"
 	// WindowsFirewallRuleInterfaceTypesVRemoteAccess undocumented
-	WindowsFirewallRuleInterfaceTypesVRemoteAccess WindowsFirewallRuleInterfaceTypes = 1
+	WindowsFirewallRuleInterfaceTypesVRemoteAccess WindowsFirewallRuleInterfaceTypes = "RemoteAccess"
 	// WindowsFirewallRuleInterfaceTypesVWireless undocumented
-	WindowsFirewallRuleInterfaceTypesVWireless WindowsFirewallRuleInterfaceTypes = 2
+	WindowsFirewallRuleInterfaceTypesVWireless WindowsFirewallRuleInterfaceTypes = "Wireless"
 	// WindowsFirewallRuleInterfaceTypesVLan undocumented
-	WindowsFirewallRuleInterfaceTypesVLan WindowsFirewallRuleInterfaceTypes = 4
+	WindowsFirewallRuleInterfaceTypesVLan WindowsFirewallRuleInterfaceTypes = "Lan"
 )
 
 // WindowsFirewallRuleInterfaceTypesPNotConfigured returns a pointer to WindowsFirewallRuleInterfaceTypesVNotConfigured

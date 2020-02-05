@@ -3,15 +3,15 @@
 package msgraph
 
 // WindowsSModeConfiguration undocumented
-type WindowsSModeConfiguration int
+type WindowsSModeConfiguration string
 
 const (
 	// WindowsSModeConfigurationVNoRestriction undocumented
-	WindowsSModeConfigurationVNoRestriction WindowsSModeConfiguration = 0
+	WindowsSModeConfigurationVNoRestriction WindowsSModeConfiguration = "NoRestriction"
 	// WindowsSModeConfigurationVBlock undocumented
-	WindowsSModeConfigurationVBlock WindowsSModeConfiguration = 1
+	WindowsSModeConfigurationVBlock WindowsSModeConfiguration = "Block"
 	// WindowsSModeConfigurationVUnlock undocumented
-	WindowsSModeConfigurationVUnlock WindowsSModeConfiguration = 2
+	WindowsSModeConfigurationVUnlock WindowsSModeConfiguration = "Unlock"
 )
 
 // WindowsSModeConfigurationPNoRestriction returns a pointer to WindowsSModeConfigurationVNoRestriction

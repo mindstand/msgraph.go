@@ -3,17 +3,17 @@
 package msgraph
 
 // FileVaultState undocumented
-type FileVaultState int
+type FileVaultState string
 
 const (
 	// FileVaultStateVSuccess undocumented
-	FileVaultStateVSuccess FileVaultState = 0
+	FileVaultStateVSuccess FileVaultState = "Success"
 	// FileVaultStateVDriveEncryptedByUser undocumented
-	FileVaultStateVDriveEncryptedByUser FileVaultState = 1
+	FileVaultStateVDriveEncryptedByUser FileVaultState = "DriveEncryptedByUser"
 	// FileVaultStateVUserDeferredEncryption undocumented
-	FileVaultStateVUserDeferredEncryption FileVaultState = 2
+	FileVaultStateVUserDeferredEncryption FileVaultState = "UserDeferredEncryption"
 	// FileVaultStateVEscrowNotEnabled undocumented
-	FileVaultStateVEscrowNotEnabled FileVaultState = 4
+	FileVaultStateVEscrowNotEnabled FileVaultState = "EscrowNotEnabled"
 )
 
 // FileVaultStatePSuccess returns a pointer to FileVaultStateVSuccess

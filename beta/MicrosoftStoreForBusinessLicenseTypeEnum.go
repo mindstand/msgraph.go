@@ -3,13 +3,13 @@
 package msgraph
 
 // MicrosoftStoreForBusinessLicenseType undocumented
-type MicrosoftStoreForBusinessLicenseType int
+type MicrosoftStoreForBusinessLicenseType string
 
 const (
 	// MicrosoftStoreForBusinessLicenseTypeVOffline undocumented
-	MicrosoftStoreForBusinessLicenseTypeVOffline MicrosoftStoreForBusinessLicenseType = 0
+	MicrosoftStoreForBusinessLicenseTypeVOffline MicrosoftStoreForBusinessLicenseType = "Offline"
 	// MicrosoftStoreForBusinessLicenseTypeVOnline undocumented
-	MicrosoftStoreForBusinessLicenseTypeVOnline MicrosoftStoreForBusinessLicenseType = 1
+	MicrosoftStoreForBusinessLicenseTypeVOnline MicrosoftStoreForBusinessLicenseType = "Online"
 )
 
 // MicrosoftStoreForBusinessLicenseTypePOffline returns a pointer to MicrosoftStoreForBusinessLicenseTypeVOffline

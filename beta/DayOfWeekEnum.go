@@ -3,23 +3,23 @@
 package msgraph
 
 // DayOfWeek undocumented
-type DayOfWeek int
+type DayOfWeek string
 
 const (
 	// DayOfWeekVSunday undocumented
-	DayOfWeekVSunday DayOfWeek = 0
+	DayOfWeekVSunday DayOfWeek = "Sunday"
 	// DayOfWeekVMonday undocumented
-	DayOfWeekVMonday DayOfWeek = 1
+	DayOfWeekVMonday DayOfWeek = "Monday"
 	// DayOfWeekVTuesday undocumented
-	DayOfWeekVTuesday DayOfWeek = 2
+	DayOfWeekVTuesday DayOfWeek = "Tuesday"
 	// DayOfWeekVWednesday undocumented
-	DayOfWeekVWednesday DayOfWeek = 3
+	DayOfWeekVWednesday DayOfWeek = "Wednesday"
 	// DayOfWeekVThursday undocumented
-	DayOfWeekVThursday DayOfWeek = 4
+	DayOfWeekVThursday DayOfWeek = "Thursday"
 	// DayOfWeekVFriday undocumented
-	DayOfWeekVFriday DayOfWeek = 5
+	DayOfWeekVFriday DayOfWeek = "Friday"
 	// DayOfWeekVSaturday undocumented
-	DayOfWeekVSaturday DayOfWeek = 6
+	DayOfWeekVSaturday DayOfWeek = "Saturday"
 )
 
 // DayOfWeekPSunday returns a pointer to DayOfWeekVSunday

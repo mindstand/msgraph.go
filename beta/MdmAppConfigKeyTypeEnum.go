@@ -3,19 +3,19 @@
 package msgraph
 
 // MdmAppConfigKeyType undocumented
-type MdmAppConfigKeyType int
+type MdmAppConfigKeyType string
 
 const (
 	// MdmAppConfigKeyTypeVStringType undocumented
-	MdmAppConfigKeyTypeVStringType MdmAppConfigKeyType = 0
+	MdmAppConfigKeyTypeVStringType MdmAppConfigKeyType = "StringType"
 	// MdmAppConfigKeyTypeVIntegerType undocumented
-	MdmAppConfigKeyTypeVIntegerType MdmAppConfigKeyType = 1
+	MdmAppConfigKeyTypeVIntegerType MdmAppConfigKeyType = "IntegerType"
 	// MdmAppConfigKeyTypeVRealType undocumented
-	MdmAppConfigKeyTypeVRealType MdmAppConfigKeyType = 2
+	MdmAppConfigKeyTypeVRealType MdmAppConfigKeyType = "RealType"
 	// MdmAppConfigKeyTypeVBooleanType undocumented
-	MdmAppConfigKeyTypeVBooleanType MdmAppConfigKeyType = 3
+	MdmAppConfigKeyTypeVBooleanType MdmAppConfigKeyType = "BooleanType"
 	// MdmAppConfigKeyTypeVTokenType undocumented
-	MdmAppConfigKeyTypeVTokenType MdmAppConfigKeyType = 4
+	MdmAppConfigKeyTypeVTokenType MdmAppConfigKeyType = "TokenType"
 )
 
 // MdmAppConfigKeyTypePStringType returns a pointer to MdmAppConfigKeyTypeVStringType

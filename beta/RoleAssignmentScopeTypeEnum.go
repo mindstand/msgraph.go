@@ -3,17 +3,17 @@
 package msgraph
 
 // RoleAssignmentScopeType undocumented
-type RoleAssignmentScopeType int
+type RoleAssignmentScopeType string
 
 const (
 	// RoleAssignmentScopeTypeVResourceScope undocumented
-	RoleAssignmentScopeTypeVResourceScope RoleAssignmentScopeType = 0
+	RoleAssignmentScopeTypeVResourceScope RoleAssignmentScopeType = "ResourceScope"
 	// RoleAssignmentScopeTypeVAllDevices undocumented
-	RoleAssignmentScopeTypeVAllDevices RoleAssignmentScopeType = 1
+	RoleAssignmentScopeTypeVAllDevices RoleAssignmentScopeType = "AllDevices"
 	// RoleAssignmentScopeTypeVAllLicensedUsers undocumented
-	RoleAssignmentScopeTypeVAllLicensedUsers RoleAssignmentScopeType = 2
+	RoleAssignmentScopeTypeVAllLicensedUsers RoleAssignmentScopeType = "AllLicensedUsers"
 	// RoleAssignmentScopeTypeVAllDevicesAndLicensedUsers undocumented
-	RoleAssignmentScopeTypeVAllDevicesAndLicensedUsers RoleAssignmentScopeType = 3
+	RoleAssignmentScopeTypeVAllDevicesAndLicensedUsers RoleAssignmentScopeType = "AllDevicesAndLicensedUsers"
 )
 
 // RoleAssignmentScopeTypePResourceScope returns a pointer to RoleAssignmentScopeTypeVResourceScope

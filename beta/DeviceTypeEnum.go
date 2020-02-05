@@ -3,53 +3,53 @@
 package msgraph
 
 // DeviceType undocumented
-type DeviceType int
+type DeviceType string
 
 const (
 	// DeviceTypeVDesktop undocumented
-	DeviceTypeVDesktop DeviceType = 0
+	DeviceTypeVDesktop DeviceType = "Desktop"
 	// DeviceTypeVWindowsRT undocumented
-	DeviceTypeVWindowsRT DeviceType = 1
+	DeviceTypeVWindowsRT DeviceType = "WindowsRT"
 	// DeviceTypeVWinMO6 undocumented
-	DeviceTypeVWinMO6 DeviceType = 2
+	DeviceTypeVWinMO6 DeviceType = "WinMO6"
 	// DeviceTypeVNokia undocumented
-	DeviceTypeVNokia DeviceType = 3
+	DeviceTypeVNokia DeviceType = "Nokia"
 	// DeviceTypeVWindowsPhone undocumented
-	DeviceTypeVWindowsPhone DeviceType = 4
+	DeviceTypeVWindowsPhone DeviceType = "WindowsPhone"
 	// DeviceTypeVMac undocumented
-	DeviceTypeVMac DeviceType = 5
+	DeviceTypeVMac DeviceType = "Mac"
 	// DeviceTypeVWinCE undocumented
-	DeviceTypeVWinCE DeviceType = 6
+	DeviceTypeVWinCE DeviceType = "WinCE"
 	// DeviceTypeVWinEmbedded undocumented
-	DeviceTypeVWinEmbedded DeviceType = 7
+	DeviceTypeVWinEmbedded DeviceType = "WinEmbedded"
 	// DeviceTypeVIPhone undocumented
-	DeviceTypeVIPhone DeviceType = 8
+	DeviceTypeVIPhone DeviceType = "IPhone"
 	// DeviceTypeVIPad undocumented
-	DeviceTypeVIPad DeviceType = 9
+	DeviceTypeVIPad DeviceType = "IPad"
 	// DeviceTypeVIPod undocumented
-	DeviceTypeVIPod DeviceType = 10
+	DeviceTypeVIPod DeviceType = "IPod"
 	// DeviceTypeVAndroid undocumented
-	DeviceTypeVAndroid DeviceType = 11
+	DeviceTypeVAndroid DeviceType = "Android"
 	// DeviceTypeVISocConsumer undocumented
-	DeviceTypeVISocConsumer DeviceType = 12
+	DeviceTypeVISocConsumer DeviceType = "ISocConsumer"
 	// DeviceTypeVUnix undocumented
-	DeviceTypeVUnix DeviceType = 13
+	DeviceTypeVUnix DeviceType = "Unix"
 	// DeviceTypeVMacMDM undocumented
-	DeviceTypeVMacMDM DeviceType = 14
+	DeviceTypeVMacMDM DeviceType = "MacMDM"
 	// DeviceTypeVHoloLens undocumented
-	DeviceTypeVHoloLens DeviceType = 15
+	DeviceTypeVHoloLens DeviceType = "HoloLens"
 	// DeviceTypeVSurfaceHub undocumented
-	DeviceTypeVSurfaceHub DeviceType = 16
+	DeviceTypeVSurfaceHub DeviceType = "SurfaceHub"
 	// DeviceTypeVAndroidForWork undocumented
-	DeviceTypeVAndroidForWork DeviceType = 17
+	DeviceTypeVAndroidForWork DeviceType = "AndroidForWork"
 	// DeviceTypeVAndroidEnterprise undocumented
-	DeviceTypeVAndroidEnterprise DeviceType = 18
+	DeviceTypeVAndroidEnterprise DeviceType = "AndroidEnterprise"
 	// DeviceTypeVBlackberry undocumented
-	DeviceTypeVBlackberry DeviceType = 100
+	DeviceTypeVBlackberry DeviceType = "Blackberry"
 	// DeviceTypeVPalm undocumented
-	DeviceTypeVPalm DeviceType = 101
+	DeviceTypeVPalm DeviceType = "Palm"
 	// DeviceTypeVUnknown undocumented
-	DeviceTypeVUnknown DeviceType = 255
+	DeviceTypeVUnknown DeviceType = "Unknown"
 )
 
 // DeviceTypePDesktop returns a pointer to DeviceTypeVDesktop

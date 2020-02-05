@@ -3,35 +3,35 @@
 package msgraph
 
 // ScheduleEntityTheme undocumented
-type ScheduleEntityTheme int
+type ScheduleEntityTheme string
 
 const (
 	// ScheduleEntityThemeVWhite undocumented
-	ScheduleEntityThemeVWhite ScheduleEntityTheme = 0
+	ScheduleEntityThemeVWhite ScheduleEntityTheme = "White"
 	// ScheduleEntityThemeVBlue undocumented
-	ScheduleEntityThemeVBlue ScheduleEntityTheme = 1
+	ScheduleEntityThemeVBlue ScheduleEntityTheme = "Blue"
 	// ScheduleEntityThemeVGreen undocumented
-	ScheduleEntityThemeVGreen ScheduleEntityTheme = 2
+	ScheduleEntityThemeVGreen ScheduleEntityTheme = "Green"
 	// ScheduleEntityThemeVPurple undocumented
-	ScheduleEntityThemeVPurple ScheduleEntityTheme = 3
+	ScheduleEntityThemeVPurple ScheduleEntityTheme = "Purple"
 	// ScheduleEntityThemeVPink undocumented
-	ScheduleEntityThemeVPink ScheduleEntityTheme = 4
+	ScheduleEntityThemeVPink ScheduleEntityTheme = "Pink"
 	// ScheduleEntityThemeVYellow undocumented
-	ScheduleEntityThemeVYellow ScheduleEntityTheme = 5
+	ScheduleEntityThemeVYellow ScheduleEntityTheme = "Yellow"
 	// ScheduleEntityThemeVGray undocumented
-	ScheduleEntityThemeVGray ScheduleEntityTheme = 6
+	ScheduleEntityThemeVGray ScheduleEntityTheme = "Gray"
 	// ScheduleEntityThemeVDarkBlue undocumented
-	ScheduleEntityThemeVDarkBlue ScheduleEntityTheme = 7
+	ScheduleEntityThemeVDarkBlue ScheduleEntityTheme = "DarkBlue"
 	// ScheduleEntityThemeVDarkGreen undocumented
-	ScheduleEntityThemeVDarkGreen ScheduleEntityTheme = 8
+	ScheduleEntityThemeVDarkGreen ScheduleEntityTheme = "DarkGreen"
 	// ScheduleEntityThemeVDarkPurple undocumented
-	ScheduleEntityThemeVDarkPurple ScheduleEntityTheme = 9
+	ScheduleEntityThemeVDarkPurple ScheduleEntityTheme = "DarkPurple"
 	// ScheduleEntityThemeVDarkPink undocumented
-	ScheduleEntityThemeVDarkPink ScheduleEntityTheme = 10
+	ScheduleEntityThemeVDarkPink ScheduleEntityTheme = "DarkPink"
 	// ScheduleEntityThemeVDarkYellow undocumented
-	ScheduleEntityThemeVDarkYellow ScheduleEntityTheme = 11
+	ScheduleEntityThemeVDarkYellow ScheduleEntityTheme = "DarkYellow"
 	// ScheduleEntityThemeVUnknownFutureValue undocumented
-	ScheduleEntityThemeVUnknownFutureValue ScheduleEntityTheme = 12
+	ScheduleEntityThemeVUnknownFutureValue ScheduleEntityTheme = "UnknownFutureValue"
 )
 
 // ScheduleEntityThemePWhite returns a pointer to ScheduleEntityThemeVWhite

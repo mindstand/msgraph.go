@@ -3,17 +3,17 @@
 package msgraph
 
 // DeviceManagementScheduledReportRecurrence undocumented
-type DeviceManagementScheduledReportRecurrence int
+type DeviceManagementScheduledReportRecurrence string
 
 const (
 	// DeviceManagementScheduledReportRecurrenceVNone undocumented
-	DeviceManagementScheduledReportRecurrenceVNone DeviceManagementScheduledReportRecurrence = 0
+	DeviceManagementScheduledReportRecurrenceVNone DeviceManagementScheduledReportRecurrence = "None"
 	// DeviceManagementScheduledReportRecurrenceVDaily undocumented
-	DeviceManagementScheduledReportRecurrenceVDaily DeviceManagementScheduledReportRecurrence = 1
+	DeviceManagementScheduledReportRecurrenceVDaily DeviceManagementScheduledReportRecurrence = "Daily"
 	// DeviceManagementScheduledReportRecurrenceVWeekly undocumented
-	DeviceManagementScheduledReportRecurrenceVWeekly DeviceManagementScheduledReportRecurrence = 2
+	DeviceManagementScheduledReportRecurrenceVWeekly DeviceManagementScheduledReportRecurrence = "Weekly"
 	// DeviceManagementScheduledReportRecurrenceVMonthly undocumented
-	DeviceManagementScheduledReportRecurrenceVMonthly DeviceManagementScheduledReportRecurrence = 3
+	DeviceManagementScheduledReportRecurrenceVMonthly DeviceManagementScheduledReportRecurrence = "Monthly"
 )
 
 // DeviceManagementScheduledReportRecurrencePNone returns a pointer to DeviceManagementScheduledReportRecurrenceVNone

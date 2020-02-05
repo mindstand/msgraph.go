@@ -3,13 +3,13 @@
 package msgraph
 
 // VppTokenAccountType undocumented
-type VppTokenAccountType int
+type VppTokenAccountType string
 
 const (
 	// VppTokenAccountTypeVBusiness undocumented
-	VppTokenAccountTypeVBusiness VppTokenAccountType = 0
+	VppTokenAccountTypeVBusiness VppTokenAccountType = "Business"
 	// VppTokenAccountTypeVEducation undocumented
-	VppTokenAccountTypeVEducation VppTokenAccountType = 1
+	VppTokenAccountTypeVEducation VppTokenAccountType = "Education"
 )
 
 // VppTokenAccountTypePBusiness returns a pointer to VppTokenAccountTypeVBusiness

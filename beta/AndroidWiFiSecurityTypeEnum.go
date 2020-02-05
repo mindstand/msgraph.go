@@ -3,15 +3,15 @@
 package msgraph
 
 // AndroidWiFiSecurityType undocumented
-type AndroidWiFiSecurityType int
+type AndroidWiFiSecurityType string
 
 const (
 	// AndroidWiFiSecurityTypeVOpen undocumented
-	AndroidWiFiSecurityTypeVOpen AndroidWiFiSecurityType = 0
+	AndroidWiFiSecurityTypeVOpen AndroidWiFiSecurityType = "Open"
 	// AndroidWiFiSecurityTypeVWpaEnterprise undocumented
-	AndroidWiFiSecurityTypeVWpaEnterprise AndroidWiFiSecurityType = 1
+	AndroidWiFiSecurityTypeVWpaEnterprise AndroidWiFiSecurityType = "WpaEnterprise"
 	// AndroidWiFiSecurityTypeVWpa2Enterprise undocumented
-	AndroidWiFiSecurityTypeVWpa2Enterprise AndroidWiFiSecurityType = 2
+	AndroidWiFiSecurityTypeVWpa2Enterprise AndroidWiFiSecurityType = "Wpa2Enterprise"
 )
 
 // AndroidWiFiSecurityTypePOpen returns a pointer to AndroidWiFiSecurityTypeVOpen

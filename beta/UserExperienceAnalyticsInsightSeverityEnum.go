@@ -3,17 +3,17 @@
 package msgraph
 
 // UserExperienceAnalyticsInsightSeverity undocumented
-type UserExperienceAnalyticsInsightSeverity int
+type UserExperienceAnalyticsInsightSeverity string
 
 const (
 	// UserExperienceAnalyticsInsightSeverityVNone undocumented
-	UserExperienceAnalyticsInsightSeverityVNone UserExperienceAnalyticsInsightSeverity = 0
+	UserExperienceAnalyticsInsightSeverityVNone UserExperienceAnalyticsInsightSeverity = "None"
 	// UserExperienceAnalyticsInsightSeverityVInformational undocumented
-	UserExperienceAnalyticsInsightSeverityVInformational UserExperienceAnalyticsInsightSeverity = 1
+	UserExperienceAnalyticsInsightSeverityVInformational UserExperienceAnalyticsInsightSeverity = "Informational"
 	// UserExperienceAnalyticsInsightSeverityVWarning undocumented
-	UserExperienceAnalyticsInsightSeverityVWarning UserExperienceAnalyticsInsightSeverity = 2
+	UserExperienceAnalyticsInsightSeverityVWarning UserExperienceAnalyticsInsightSeverity = "Warning"
 	// UserExperienceAnalyticsInsightSeverityVError undocumented
-	UserExperienceAnalyticsInsightSeverityVError UserExperienceAnalyticsInsightSeverity = 3
+	UserExperienceAnalyticsInsightSeverityVError UserExperienceAnalyticsInsightSeverity = "Error"
 )
 
 // UserExperienceAnalyticsInsightSeverityPNone returns a pointer to UserExperienceAnalyticsInsightSeverityVNone

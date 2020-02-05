@@ -3,19 +3,19 @@
 package msgraph
 
 // PlaceType undocumented
-type PlaceType int
+type PlaceType string
 
 const (
 	// PlaceTypeVUnknown undocumented
-	PlaceTypeVUnknown PlaceType = 0
+	PlaceTypeVUnknown PlaceType = "Unknown"
 	// PlaceTypeVRoom undocumented
-	PlaceTypeVRoom PlaceType = 1
+	PlaceTypeVRoom PlaceType = "Room"
 	// PlaceTypeVRoomList undocumented
-	PlaceTypeVRoomList PlaceType = 2
+	PlaceTypeVRoomList PlaceType = "RoomList"
 	// PlaceTypeVPublicPlace undocumented
-	PlaceTypeVPublicPlace PlaceType = 3
+	PlaceTypeVPublicPlace PlaceType = "PublicPlace"
 	// PlaceTypeVPersonalPlace undocumented
-	PlaceTypeVPersonalPlace PlaceType = 4
+	PlaceTypeVPersonalPlace PlaceType = "PersonalPlace"
 )
 
 // PlaceTypePUnknown returns a pointer to PlaceTypeVUnknown

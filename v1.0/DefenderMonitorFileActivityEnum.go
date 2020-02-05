@@ -3,19 +3,19 @@
 package msgraph
 
 // DefenderMonitorFileActivity undocumented
-type DefenderMonitorFileActivity int
+type DefenderMonitorFileActivity string
 
 const (
 	// DefenderMonitorFileActivityVUserDefined undocumented
-	DefenderMonitorFileActivityVUserDefined DefenderMonitorFileActivity = 0
+	DefenderMonitorFileActivityVUserDefined DefenderMonitorFileActivity = "UserDefined"
 	// DefenderMonitorFileActivityVDisable undocumented
-	DefenderMonitorFileActivityVDisable DefenderMonitorFileActivity = 1
+	DefenderMonitorFileActivityVDisable DefenderMonitorFileActivity = "Disable"
 	// DefenderMonitorFileActivityVMonitorAllFiles undocumented
-	DefenderMonitorFileActivityVMonitorAllFiles DefenderMonitorFileActivity = 2
+	DefenderMonitorFileActivityVMonitorAllFiles DefenderMonitorFileActivity = "MonitorAllFiles"
 	// DefenderMonitorFileActivityVMonitorIncomingFilesOnly undocumented
-	DefenderMonitorFileActivityVMonitorIncomingFilesOnly DefenderMonitorFileActivity = 3
+	DefenderMonitorFileActivityVMonitorIncomingFilesOnly DefenderMonitorFileActivity = "MonitorIncomingFilesOnly"
 	// DefenderMonitorFileActivityVMonitorOutgoingFilesOnly undocumented
-	DefenderMonitorFileActivityVMonitorOutgoingFilesOnly DefenderMonitorFileActivity = 4
+	DefenderMonitorFileActivityVMonitorOutgoingFilesOnly DefenderMonitorFileActivity = "MonitorOutgoingFilesOnly"
 )
 
 // DefenderMonitorFileActivityPUserDefined returns a pointer to DefenderMonitorFileActivityVUserDefined

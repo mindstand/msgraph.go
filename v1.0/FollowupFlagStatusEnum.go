@@ -3,15 +3,15 @@
 package msgraph
 
 // FollowupFlagStatus undocumented
-type FollowupFlagStatus int
+type FollowupFlagStatus string
 
 const (
 	// FollowupFlagStatusVNotFlagged undocumented
-	FollowupFlagStatusVNotFlagged FollowupFlagStatus = 0
+	FollowupFlagStatusVNotFlagged FollowupFlagStatus = "NotFlagged"
 	// FollowupFlagStatusVComplete undocumented
-	FollowupFlagStatusVComplete FollowupFlagStatus = 1
+	FollowupFlagStatusVComplete FollowupFlagStatus = "Complete"
 	// FollowupFlagStatusVFlagged undocumented
-	FollowupFlagStatusVFlagged FollowupFlagStatus = 2
+	FollowupFlagStatusVFlagged FollowupFlagStatus = "Flagged"
 )
 
 // FollowupFlagStatusPNotFlagged returns a pointer to FollowupFlagStatusVNotFlagged

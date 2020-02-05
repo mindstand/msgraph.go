@@ -3,21 +3,21 @@
 package msgraph
 
 // AutomaticUpdateMode undocumented
-type AutomaticUpdateMode int
+type AutomaticUpdateMode string
 
 const (
 	// AutomaticUpdateModeVUserDefined undocumented
-	AutomaticUpdateModeVUserDefined AutomaticUpdateMode = 0
+	AutomaticUpdateModeVUserDefined AutomaticUpdateMode = "UserDefined"
 	// AutomaticUpdateModeVNotifyDownload undocumented
-	AutomaticUpdateModeVNotifyDownload AutomaticUpdateMode = 1
+	AutomaticUpdateModeVNotifyDownload AutomaticUpdateMode = "NotifyDownload"
 	// AutomaticUpdateModeVAutoInstallAtMaintenanceTime undocumented
-	AutomaticUpdateModeVAutoInstallAtMaintenanceTime AutomaticUpdateMode = 2
+	AutomaticUpdateModeVAutoInstallAtMaintenanceTime AutomaticUpdateMode = "AutoInstallAtMaintenanceTime"
 	// AutomaticUpdateModeVAutoInstallAndRebootAtMaintenanceTime undocumented
-	AutomaticUpdateModeVAutoInstallAndRebootAtMaintenanceTime AutomaticUpdateMode = 3
+	AutomaticUpdateModeVAutoInstallAndRebootAtMaintenanceTime AutomaticUpdateMode = "AutoInstallAndRebootAtMaintenanceTime"
 	// AutomaticUpdateModeVAutoInstallAndRebootAtScheduledTime undocumented
-	AutomaticUpdateModeVAutoInstallAndRebootAtScheduledTime AutomaticUpdateMode = 4
+	AutomaticUpdateModeVAutoInstallAndRebootAtScheduledTime AutomaticUpdateMode = "AutoInstallAndRebootAtScheduledTime"
 	// AutomaticUpdateModeVAutoInstallAndRebootWithoutEndUserControl undocumented
-	AutomaticUpdateModeVAutoInstallAndRebootWithoutEndUserControl AutomaticUpdateMode = 5
+	AutomaticUpdateModeVAutoInstallAndRebootWithoutEndUserControl AutomaticUpdateMode = "AutoInstallAndRebootWithoutEndUserControl"
 )
 
 // AutomaticUpdateModePUserDefined returns a pointer to AutomaticUpdateModeVUserDefined

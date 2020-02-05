@@ -3,15 +3,15 @@
 package msgraph
 
 // AppleUserInitiatedEnrollmentType undocumented
-type AppleUserInitiatedEnrollmentType int
+type AppleUserInitiatedEnrollmentType string
 
 const (
 	// AppleUserInitiatedEnrollmentTypeVUnknown undocumented
-	AppleUserInitiatedEnrollmentTypeVUnknown AppleUserInitiatedEnrollmentType = 0
+	AppleUserInitiatedEnrollmentTypeVUnknown AppleUserInitiatedEnrollmentType = "Unknown"
 	// AppleUserInitiatedEnrollmentTypeVDevice undocumented
-	AppleUserInitiatedEnrollmentTypeVDevice AppleUserInitiatedEnrollmentType = 1
+	AppleUserInitiatedEnrollmentTypeVDevice AppleUserInitiatedEnrollmentType = "Device"
 	// AppleUserInitiatedEnrollmentTypeVUser undocumented
-	AppleUserInitiatedEnrollmentTypeVUser AppleUserInitiatedEnrollmentType = 2
+	AppleUserInitiatedEnrollmentTypeVUser AppleUserInitiatedEnrollmentType = "User"
 )
 
 // AppleUserInitiatedEnrollmentTypePUnknown returns a pointer to AppleUserInitiatedEnrollmentTypeVUnknown

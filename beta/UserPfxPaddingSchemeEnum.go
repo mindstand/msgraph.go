@@ -3,21 +3,21 @@
 package msgraph
 
 // UserPfxPaddingScheme undocumented
-type UserPfxPaddingScheme int
+type UserPfxPaddingScheme string
 
 const (
 	// UserPfxPaddingSchemeVNone undocumented
-	UserPfxPaddingSchemeVNone UserPfxPaddingScheme = 0
+	UserPfxPaddingSchemeVNone UserPfxPaddingScheme = "None"
 	// UserPfxPaddingSchemeVPkcs1 undocumented
-	UserPfxPaddingSchemeVPkcs1 UserPfxPaddingScheme = 1
+	UserPfxPaddingSchemeVPkcs1 UserPfxPaddingScheme = "Pkcs1"
 	// UserPfxPaddingSchemeVOaepSha1 undocumented
-	UserPfxPaddingSchemeVOaepSha1 UserPfxPaddingScheme = 2
+	UserPfxPaddingSchemeVOaepSha1 UserPfxPaddingScheme = "OaepSha1"
 	// UserPfxPaddingSchemeVOaepSha256 undocumented
-	UserPfxPaddingSchemeVOaepSha256 UserPfxPaddingScheme = 3
+	UserPfxPaddingSchemeVOaepSha256 UserPfxPaddingScheme = "OaepSha256"
 	// UserPfxPaddingSchemeVOaepSha384 undocumented
-	UserPfxPaddingSchemeVOaepSha384 UserPfxPaddingScheme = 4
+	UserPfxPaddingSchemeVOaepSha384 UserPfxPaddingScheme = "OaepSha384"
 	// UserPfxPaddingSchemeVOaepSha512 undocumented
-	UserPfxPaddingSchemeVOaepSha512 UserPfxPaddingScheme = 5
+	UserPfxPaddingSchemeVOaepSha512 UserPfxPaddingScheme = "OaepSha512"
 )
 
 // UserPfxPaddingSchemePNone returns a pointer to UserPfxPaddingSchemeVNone

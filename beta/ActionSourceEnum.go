@@ -3,17 +3,17 @@
 package msgraph
 
 // ActionSource undocumented
-type ActionSource int
+type ActionSource string
 
 const (
 	// ActionSourceVManual undocumented
-	ActionSourceVManual ActionSource = 0
+	ActionSourceVManual ActionSource = "Manual"
 	// ActionSourceVAutomatic undocumented
-	ActionSourceVAutomatic ActionSource = 1
+	ActionSourceVAutomatic ActionSource = "Automatic"
 	// ActionSourceVRecommended undocumented
-	ActionSourceVRecommended ActionSource = 2
+	ActionSourceVRecommended ActionSource = "Recommended"
 	// ActionSourceVDefault undocumented
-	ActionSourceVDefault ActionSource = 3
+	ActionSourceVDefault ActionSource = "Default"
 )
 
 // ActionSourcePManual returns a pointer to ActionSourceVManual

@@ -3,17 +3,17 @@
 package msgraph
 
 // ApplicationGuardEnabledOptions undocumented
-type ApplicationGuardEnabledOptions int
+type ApplicationGuardEnabledOptions string
 
 const (
 	// ApplicationGuardEnabledOptionsVNotConfigured undocumented
-	ApplicationGuardEnabledOptionsVNotConfigured ApplicationGuardEnabledOptions = 0
+	ApplicationGuardEnabledOptionsVNotConfigured ApplicationGuardEnabledOptions = "NotConfigured"
 	// ApplicationGuardEnabledOptionsVEnabledForEdge undocumented
-	ApplicationGuardEnabledOptionsVEnabledForEdge ApplicationGuardEnabledOptions = 1
+	ApplicationGuardEnabledOptionsVEnabledForEdge ApplicationGuardEnabledOptions = "EnabledForEdge"
 	// ApplicationGuardEnabledOptionsVEnabledForOffice undocumented
-	ApplicationGuardEnabledOptionsVEnabledForOffice ApplicationGuardEnabledOptions = 2
+	ApplicationGuardEnabledOptionsVEnabledForOffice ApplicationGuardEnabledOptions = "EnabledForOffice"
 	// ApplicationGuardEnabledOptionsVEnabledForEdgeAndOffice undocumented
-	ApplicationGuardEnabledOptionsVEnabledForEdgeAndOffice ApplicationGuardEnabledOptions = 3
+	ApplicationGuardEnabledOptionsVEnabledForEdgeAndOffice ApplicationGuardEnabledOptions = "EnabledForEdgeAndOffice"
 )
 
 // ApplicationGuardEnabledOptionsPNotConfigured returns a pointer to ApplicationGuardEnabledOptionsVNotConfigured

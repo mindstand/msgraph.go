@@ -3,17 +3,17 @@
 package msgraph
 
 // ConfigurationManagerActionType undocumented
-type ConfigurationManagerActionType int
+type ConfigurationManagerActionType string
 
 const (
 	// ConfigurationManagerActionTypeVRefreshMachinePolicy undocumented
-	ConfigurationManagerActionTypeVRefreshMachinePolicy ConfigurationManagerActionType = 0
+	ConfigurationManagerActionTypeVRefreshMachinePolicy ConfigurationManagerActionType = "RefreshMachinePolicy"
 	// ConfigurationManagerActionTypeVRefreshUserPolicy undocumented
-	ConfigurationManagerActionTypeVRefreshUserPolicy ConfigurationManagerActionType = 1
+	ConfigurationManagerActionTypeVRefreshUserPolicy ConfigurationManagerActionType = "RefreshUserPolicy"
 	// ConfigurationManagerActionTypeVWakeUpClient undocumented
-	ConfigurationManagerActionTypeVWakeUpClient ConfigurationManagerActionType = 2
+	ConfigurationManagerActionTypeVWakeUpClient ConfigurationManagerActionType = "WakeUpClient"
 	// ConfigurationManagerActionTypeVAppEvaluation undocumented
-	ConfigurationManagerActionTypeVAppEvaluation ConfigurationManagerActionType = 3
+	ConfigurationManagerActionTypeVAppEvaluation ConfigurationManagerActionType = "AppEvaluation"
 )
 
 // ConfigurationManagerActionTypePRefreshMachinePolicy returns a pointer to ConfigurationManagerActionTypeVRefreshMachinePolicy

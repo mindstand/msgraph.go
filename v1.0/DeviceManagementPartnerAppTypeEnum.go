@@ -3,15 +3,15 @@
 package msgraph
 
 // DeviceManagementPartnerAppType undocumented
-type DeviceManagementPartnerAppType int
+type DeviceManagementPartnerAppType string
 
 const (
 	// DeviceManagementPartnerAppTypeVUnknown undocumented
-	DeviceManagementPartnerAppTypeVUnknown DeviceManagementPartnerAppType = 0
+	DeviceManagementPartnerAppTypeVUnknown DeviceManagementPartnerAppType = "Unknown"
 	// DeviceManagementPartnerAppTypeVSingleTenantApp undocumented
-	DeviceManagementPartnerAppTypeVSingleTenantApp DeviceManagementPartnerAppType = 1
+	DeviceManagementPartnerAppTypeVSingleTenantApp DeviceManagementPartnerAppType = "SingleTenantApp"
 	// DeviceManagementPartnerAppTypeVMultiTenantApp undocumented
-	DeviceManagementPartnerAppTypeVMultiTenantApp DeviceManagementPartnerAppType = 2
+	DeviceManagementPartnerAppTypeVMultiTenantApp DeviceManagementPartnerAppType = "MultiTenantApp"
 )
 
 // DeviceManagementPartnerAppTypePUnknown returns a pointer to DeviceManagementPartnerAppTypeVUnknown

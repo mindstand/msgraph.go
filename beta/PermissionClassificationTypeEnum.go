@@ -3,17 +3,17 @@
 package msgraph
 
 // PermissionClassificationType undocumented
-type PermissionClassificationType int
+type PermissionClassificationType string
 
 const (
 	// PermissionClassificationTypeVLow undocumented
-	PermissionClassificationTypeVLow PermissionClassificationType = 1
+	PermissionClassificationTypeVLow PermissionClassificationType = "Low"
 	// PermissionClassificationTypeVMedium undocumented
-	PermissionClassificationTypeVMedium PermissionClassificationType = 2
+	PermissionClassificationTypeVMedium PermissionClassificationType = "Medium"
 	// PermissionClassificationTypeVHigh undocumented
-	PermissionClassificationTypeVHigh PermissionClassificationType = 3
+	PermissionClassificationTypeVHigh PermissionClassificationType = "High"
 	// PermissionClassificationTypeVUnknownFutureValue undocumented
-	PermissionClassificationTypeVUnknownFutureValue PermissionClassificationType = 4
+	PermissionClassificationTypeVUnknownFutureValue PermissionClassificationType = "UnknownFutureValue"
 )
 
 // PermissionClassificationTypePLow returns a pointer to PermissionClassificationTypeVLow

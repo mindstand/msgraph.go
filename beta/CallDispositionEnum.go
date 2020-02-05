@@ -3,15 +3,15 @@
 package msgraph
 
 // CallDisposition undocumented
-type CallDisposition int
+type CallDisposition string
 
 const (
 	// CallDispositionVDefault undocumented
-	CallDispositionVDefault CallDisposition = 0
+	CallDispositionVDefault CallDisposition = "Default"
 	// CallDispositionVSimultaneousRing undocumented
-	CallDispositionVSimultaneousRing CallDisposition = 1
+	CallDispositionVSimultaneousRing CallDisposition = "SimultaneousRing"
 	// CallDispositionVForward undocumented
-	CallDispositionVForward CallDisposition = 2
+	CallDispositionVForward CallDisposition = "Forward"
 )
 
 // CallDispositionPDefault returns a pointer to CallDispositionVDefault

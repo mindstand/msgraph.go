@@ -3,13 +3,13 @@
 package msgraph
 
 // UserEmailSource undocumented
-type UserEmailSource int
+type UserEmailSource string
 
 const (
 	// UserEmailSourceVUserPrincipalName undocumented
-	UserEmailSourceVUserPrincipalName UserEmailSource = 0
+	UserEmailSourceVUserPrincipalName UserEmailSource = "UserPrincipalName"
 	// UserEmailSourceVPrimarySMTPAddress undocumented
-	UserEmailSourceVPrimarySMTPAddress UserEmailSource = 1
+	UserEmailSourceVPrimarySMTPAddress UserEmailSource = "PrimarySMTPAddress"
 )
 
 // UserEmailSourcePUserPrincipalName returns a pointer to UserEmailSourceVUserPrincipalName

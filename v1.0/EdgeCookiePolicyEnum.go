@@ -3,17 +3,17 @@
 package msgraph
 
 // EdgeCookiePolicy undocumented
-type EdgeCookiePolicy int
+type EdgeCookiePolicy string
 
 const (
 	// EdgeCookiePolicyVUserDefined undocumented
-	EdgeCookiePolicyVUserDefined EdgeCookiePolicy = 0
+	EdgeCookiePolicyVUserDefined EdgeCookiePolicy = "UserDefined"
 	// EdgeCookiePolicyVAllow undocumented
-	EdgeCookiePolicyVAllow EdgeCookiePolicy = 1
+	EdgeCookiePolicyVAllow EdgeCookiePolicy = "Allow"
 	// EdgeCookiePolicyVBlockThirdParty undocumented
-	EdgeCookiePolicyVBlockThirdParty EdgeCookiePolicy = 2
+	EdgeCookiePolicyVBlockThirdParty EdgeCookiePolicy = "BlockThirdParty"
 	// EdgeCookiePolicyVBlockAll undocumented
-	EdgeCookiePolicyVBlockAll EdgeCookiePolicy = 3
+	EdgeCookiePolicyVBlockAll EdgeCookiePolicy = "BlockAll"
 )
 
 // EdgeCookiePolicyPUserDefined returns a pointer to EdgeCookiePolicyVUserDefined

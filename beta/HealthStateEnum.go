@@ -3,15 +3,15 @@
 package msgraph
 
 // HealthState undocumented
-type HealthState int
+type HealthState string
 
 const (
 	// HealthStateVUnknown undocumented
-	HealthStateVUnknown HealthState = 0
+	HealthStateVUnknown HealthState = "Unknown"
 	// HealthStateVHealthy undocumented
-	HealthStateVHealthy HealthState = 1
+	HealthStateVHealthy HealthState = "Healthy"
 	// HealthStateVUnhealthy undocumented
-	HealthStateVUnhealthy HealthState = 2
+	HealthStateVUnhealthy HealthState = "Unhealthy"
 )
 
 // HealthStatePUnknown returns a pointer to HealthStateVUnknown

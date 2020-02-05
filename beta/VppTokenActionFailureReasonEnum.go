@@ -3,19 +3,19 @@
 package msgraph
 
 // VppTokenActionFailureReason undocumented
-type VppTokenActionFailureReason int
+type VppTokenActionFailureReason string
 
 const (
 	// VppTokenActionFailureReasonVNone undocumented
-	VppTokenActionFailureReasonVNone VppTokenActionFailureReason = 0
+	VppTokenActionFailureReasonVNone VppTokenActionFailureReason = "None"
 	// VppTokenActionFailureReasonVAppleFailure undocumented
-	VppTokenActionFailureReasonVAppleFailure VppTokenActionFailureReason = 1
+	VppTokenActionFailureReasonVAppleFailure VppTokenActionFailureReason = "AppleFailure"
 	// VppTokenActionFailureReasonVInternalError undocumented
-	VppTokenActionFailureReasonVInternalError VppTokenActionFailureReason = 2
+	VppTokenActionFailureReasonVInternalError VppTokenActionFailureReason = "InternalError"
 	// VppTokenActionFailureReasonVExpiredVppToken undocumented
-	VppTokenActionFailureReasonVExpiredVppToken VppTokenActionFailureReason = 3
+	VppTokenActionFailureReasonVExpiredVppToken VppTokenActionFailureReason = "ExpiredVppToken"
 	// VppTokenActionFailureReasonVExpiredApplePushNotificationCertificate undocumented
-	VppTokenActionFailureReasonVExpiredApplePushNotificationCertificate VppTokenActionFailureReason = 4
+	VppTokenActionFailureReasonVExpiredApplePushNotificationCertificate VppTokenActionFailureReason = "ExpiredApplePushNotificationCertificate"
 )
 
 // VppTokenActionFailureReasonPNone returns a pointer to VppTokenActionFailureReasonVNone

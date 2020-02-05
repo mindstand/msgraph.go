@@ -3,13 +3,13 @@
 package msgraph
 
 // BitLockerRecoveryInformationType undocumented
-type BitLockerRecoveryInformationType int
+type BitLockerRecoveryInformationType string
 
 const (
 	// BitLockerRecoveryInformationTypeVPasswordAndKey undocumented
-	BitLockerRecoveryInformationTypeVPasswordAndKey BitLockerRecoveryInformationType = 1
+	BitLockerRecoveryInformationTypeVPasswordAndKey BitLockerRecoveryInformationType = "PasswordAndKey"
 	// BitLockerRecoveryInformationTypeVPasswordOnly undocumented
-	BitLockerRecoveryInformationTypeVPasswordOnly BitLockerRecoveryInformationType = 2
+	BitLockerRecoveryInformationTypeVPasswordOnly BitLockerRecoveryInformationType = "PasswordOnly"
 )
 
 // BitLockerRecoveryInformationTypePPasswordAndKey returns a pointer to BitLockerRecoveryInformationTypeVPasswordAndKey

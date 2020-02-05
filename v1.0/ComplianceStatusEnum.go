@@ -3,25 +3,25 @@
 package msgraph
 
 // ComplianceStatus undocumented
-type ComplianceStatus int
+type ComplianceStatus string
 
 const (
 	// ComplianceStatusVUnknown undocumented
-	ComplianceStatusVUnknown ComplianceStatus = 0
+	ComplianceStatusVUnknown ComplianceStatus = "Unknown"
 	// ComplianceStatusVNotApplicable undocumented
-	ComplianceStatusVNotApplicable ComplianceStatus = 1
+	ComplianceStatusVNotApplicable ComplianceStatus = "NotApplicable"
 	// ComplianceStatusVCompliant undocumented
-	ComplianceStatusVCompliant ComplianceStatus = 2
+	ComplianceStatusVCompliant ComplianceStatus = "Compliant"
 	// ComplianceStatusVRemediated undocumented
-	ComplianceStatusVRemediated ComplianceStatus = 3
+	ComplianceStatusVRemediated ComplianceStatus = "Remediated"
 	// ComplianceStatusVNonCompliant undocumented
-	ComplianceStatusVNonCompliant ComplianceStatus = 4
+	ComplianceStatusVNonCompliant ComplianceStatus = "NonCompliant"
 	// ComplianceStatusVError undocumented
-	ComplianceStatusVError ComplianceStatus = 5
+	ComplianceStatusVError ComplianceStatus = "Error"
 	// ComplianceStatusVConflict undocumented
-	ComplianceStatusVConflict ComplianceStatus = 6
+	ComplianceStatusVConflict ComplianceStatus = "Conflict"
 	// ComplianceStatusVNotAssigned undocumented
-	ComplianceStatusVNotAssigned ComplianceStatus = 7
+	ComplianceStatusVNotAssigned ComplianceStatus = "NotAssigned"
 )
 
 // ComplianceStatusPUnknown returns a pointer to ComplianceStatusVUnknown

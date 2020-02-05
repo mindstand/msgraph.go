@@ -3,25 +3,25 @@
 package msgraph
 
 // DeviceRegistrationState undocumented
-type DeviceRegistrationState int
+type DeviceRegistrationState string
 
 const (
 	// DeviceRegistrationStateVNotRegistered undocumented
-	DeviceRegistrationStateVNotRegistered DeviceRegistrationState = 0
+	DeviceRegistrationStateVNotRegistered DeviceRegistrationState = "NotRegistered"
 	// DeviceRegistrationStateVRegistered undocumented
-	DeviceRegistrationStateVRegistered DeviceRegistrationState = 2
+	DeviceRegistrationStateVRegistered DeviceRegistrationState = "Registered"
 	// DeviceRegistrationStateVRevoked undocumented
-	DeviceRegistrationStateVRevoked DeviceRegistrationState = 3
+	DeviceRegistrationStateVRevoked DeviceRegistrationState = "Revoked"
 	// DeviceRegistrationStateVKeyConflict undocumented
-	DeviceRegistrationStateVKeyConflict DeviceRegistrationState = 4
+	DeviceRegistrationStateVKeyConflict DeviceRegistrationState = "KeyConflict"
 	// DeviceRegistrationStateVApprovalPending undocumented
-	DeviceRegistrationStateVApprovalPending DeviceRegistrationState = 5
+	DeviceRegistrationStateVApprovalPending DeviceRegistrationState = "ApprovalPending"
 	// DeviceRegistrationStateVCertificateReset undocumented
-	DeviceRegistrationStateVCertificateReset DeviceRegistrationState = 6
+	DeviceRegistrationStateVCertificateReset DeviceRegistrationState = "CertificateReset"
 	// DeviceRegistrationStateVNotRegisteredPendingEnrollment undocumented
-	DeviceRegistrationStateVNotRegisteredPendingEnrollment DeviceRegistrationState = 7
+	DeviceRegistrationStateVNotRegisteredPendingEnrollment DeviceRegistrationState = "NotRegisteredPendingEnrollment"
 	// DeviceRegistrationStateVUnknown undocumented
-	DeviceRegistrationStateVUnknown DeviceRegistrationState = 8
+	DeviceRegistrationStateVUnknown DeviceRegistrationState = "Unknown"
 )
 
 // DeviceRegistrationStatePNotRegistered returns a pointer to DeviceRegistrationStateVNotRegistered

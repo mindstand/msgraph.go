@@ -3,15 +3,15 @@
 package msgraph
 
 // ApplicationMode undocumented
-type ApplicationMode int
+type ApplicationMode string
 
 const (
 	// ApplicationModeVManual undocumented
-	ApplicationModeVManual ApplicationMode = 0
+	ApplicationModeVManual ApplicationMode = "Manual"
 	// ApplicationModeVAutomatic undocumented
-	ApplicationModeVAutomatic ApplicationMode = 1
+	ApplicationModeVAutomatic ApplicationMode = "Automatic"
 	// ApplicationModeVRecommended undocumented
-	ApplicationModeVRecommended ApplicationMode = 2
+	ApplicationModeVRecommended ApplicationMode = "Recommended"
 )
 
 // ApplicationModePManual returns a pointer to ApplicationModeVManual

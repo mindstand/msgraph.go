@@ -3,15 +3,15 @@
 package msgraph
 
 // DefenderAttackSurfaceType undocumented
-type DefenderAttackSurfaceType int
+type DefenderAttackSurfaceType string
 
 const (
 	// DefenderAttackSurfaceTypeVUserDefined undocumented
-	DefenderAttackSurfaceTypeVUserDefined DefenderAttackSurfaceType = 0
+	DefenderAttackSurfaceTypeVUserDefined DefenderAttackSurfaceType = "UserDefined"
 	// DefenderAttackSurfaceTypeVBlock undocumented
-	DefenderAttackSurfaceTypeVBlock DefenderAttackSurfaceType = 1
+	DefenderAttackSurfaceTypeVBlock DefenderAttackSurfaceType = "Block"
 	// DefenderAttackSurfaceTypeVAuditMode undocumented
-	DefenderAttackSurfaceTypeVAuditMode DefenderAttackSurfaceType = 2
+	DefenderAttackSurfaceTypeVAuditMode DefenderAttackSurfaceType = "AuditMode"
 )
 
 // DefenderAttackSurfaceTypePUserDefined returns a pointer to DefenderAttackSurfaceTypeVUserDefined

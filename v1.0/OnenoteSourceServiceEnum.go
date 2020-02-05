@@ -3,17 +3,17 @@
 package msgraph
 
 // OnenoteSourceService undocumented
-type OnenoteSourceService int
+type OnenoteSourceService string
 
 const (
 	// OnenoteSourceServiceVUnknown undocumented
-	OnenoteSourceServiceVUnknown OnenoteSourceService = 0
+	OnenoteSourceServiceVUnknown OnenoteSourceService = "Unknown"
 	// OnenoteSourceServiceVOneDrive undocumented
-	OnenoteSourceServiceVOneDrive OnenoteSourceService = 1
+	OnenoteSourceServiceVOneDrive OnenoteSourceService = "OneDrive"
 	// OnenoteSourceServiceVOneDriveForBusiness undocumented
-	OnenoteSourceServiceVOneDriveForBusiness OnenoteSourceService = 2
+	OnenoteSourceServiceVOneDriveForBusiness OnenoteSourceService = "OneDriveForBusiness"
 	// OnenoteSourceServiceVOnPremOneDriveForBusiness undocumented
-	OnenoteSourceServiceVOnPremOneDriveForBusiness OnenoteSourceService = 3
+	OnenoteSourceServiceVOnPremOneDriveForBusiness OnenoteSourceService = "OnPremOneDriveForBusiness"
 )
 
 // OnenoteSourceServicePUnknown returns a pointer to OnenoteSourceServiceVUnknown

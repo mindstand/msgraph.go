@@ -3,21 +3,21 @@
 package msgraph
 
 // FreeBusyStatus undocumented
-type FreeBusyStatus int
+type FreeBusyStatus string
 
 const (
 	// FreeBusyStatusVFree undocumented
-	FreeBusyStatusVFree FreeBusyStatus = 0
+	FreeBusyStatusVFree FreeBusyStatus = "Free"
 	// FreeBusyStatusVTentative undocumented
-	FreeBusyStatusVTentative FreeBusyStatus = 1
+	FreeBusyStatusVTentative FreeBusyStatus = "Tentative"
 	// FreeBusyStatusVBusy undocumented
-	FreeBusyStatusVBusy FreeBusyStatus = 2
+	FreeBusyStatusVBusy FreeBusyStatus = "Busy"
 	// FreeBusyStatusVOof undocumented
-	FreeBusyStatusVOof FreeBusyStatus = 3
+	FreeBusyStatusVOof FreeBusyStatus = "Oof"
 	// FreeBusyStatusVWorkingElsewhere undocumented
-	FreeBusyStatusVWorkingElsewhere FreeBusyStatus = 4
+	FreeBusyStatusVWorkingElsewhere FreeBusyStatus = "WorkingElsewhere"
 	// FreeBusyStatusVUnknown undocumented
-	FreeBusyStatusVUnknown FreeBusyStatus = -1
+	FreeBusyStatusVUnknown FreeBusyStatus = "Unknown"
 )
 
 // FreeBusyStatusPFree returns a pointer to FreeBusyStatusVFree

@@ -3,13 +3,13 @@
 package msgraph
 
 // DomainNameSource undocumented
-type DomainNameSource int
+type DomainNameSource string
 
 const (
 	// DomainNameSourceVFullDomainName undocumented
-	DomainNameSourceVFullDomainName DomainNameSource = 0
+	DomainNameSourceVFullDomainName DomainNameSource = "FullDomainName"
 	// DomainNameSourceVNetBiosDomainName undocumented
-	DomainNameSourceVNetBiosDomainName DomainNameSource = 1
+	DomainNameSourceVNetBiosDomainName DomainNameSource = "NetBiosDomainName"
 )
 
 // DomainNameSourcePFullDomainName returns a pointer to DomainNameSourceVFullDomainName

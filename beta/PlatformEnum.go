@@ -3,21 +3,21 @@
 package msgraph
 
 // Platform undocumented
-type Platform int
+type Platform string
 
 const (
 	// PlatformVUnknown undocumented
-	PlatformVUnknown Platform = 0
+	PlatformVUnknown Platform = "Unknown"
 	// PlatformVIOS undocumented
-	PlatformVIOS Platform = 1
+	PlatformVIOS Platform = "IOS"
 	// PlatformVAndroid undocumented
-	PlatformVAndroid Platform = 2
+	PlatformVAndroid Platform = "Android"
 	// PlatformVWindows undocumented
-	PlatformVWindows Platform = 3
+	PlatformVWindows Platform = "Windows"
 	// PlatformVWindowsMobile undocumented
-	PlatformVWindowsMobile Platform = 4
+	PlatformVWindowsMobile Platform = "WindowsMobile"
 	// PlatformVMacOS undocumented
-	PlatformVMacOS Platform = 5
+	PlatformVMacOS Platform = "MacOS"
 )
 
 // PlatformPUnknown returns a pointer to PlatformVUnknown

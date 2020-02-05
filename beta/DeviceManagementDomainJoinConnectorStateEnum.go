@@ -3,15 +3,15 @@
 package msgraph
 
 // DeviceManagementDomainJoinConnectorState undocumented
-type DeviceManagementDomainJoinConnectorState int
+type DeviceManagementDomainJoinConnectorState string
 
 const (
 	// DeviceManagementDomainJoinConnectorStateVActive undocumented
-	DeviceManagementDomainJoinConnectorStateVActive DeviceManagementDomainJoinConnectorState = 0
+	DeviceManagementDomainJoinConnectorStateVActive DeviceManagementDomainJoinConnectorState = "Active"
 	// DeviceManagementDomainJoinConnectorStateVError undocumented
-	DeviceManagementDomainJoinConnectorStateVError DeviceManagementDomainJoinConnectorState = 1
+	DeviceManagementDomainJoinConnectorStateVError DeviceManagementDomainJoinConnectorState = "Error"
 	// DeviceManagementDomainJoinConnectorStateVInactive undocumented
-	DeviceManagementDomainJoinConnectorStateVInactive DeviceManagementDomainJoinConnectorState = 2
+	DeviceManagementDomainJoinConnectorStateVInactive DeviceManagementDomainJoinConnectorState = "Inactive"
 )
 
 // DeviceManagementDomainJoinConnectorStatePActive returns a pointer to DeviceManagementDomainJoinConnectorStateVActive

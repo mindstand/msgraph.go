@@ -3,13 +3,13 @@
 package msgraph
 
 // OfficeSuiteInstallProgressDisplayLevel undocumented
-type OfficeSuiteInstallProgressDisplayLevel int
+type OfficeSuiteInstallProgressDisplayLevel string
 
 const (
 	// OfficeSuiteInstallProgressDisplayLevelVNone undocumented
-	OfficeSuiteInstallProgressDisplayLevelVNone OfficeSuiteInstallProgressDisplayLevel = 0
+	OfficeSuiteInstallProgressDisplayLevelVNone OfficeSuiteInstallProgressDisplayLevel = "None"
 	// OfficeSuiteInstallProgressDisplayLevelVFull undocumented
-	OfficeSuiteInstallProgressDisplayLevelVFull OfficeSuiteInstallProgressDisplayLevel = 1
+	OfficeSuiteInstallProgressDisplayLevelVFull OfficeSuiteInstallProgressDisplayLevel = "Full"
 )
 
 // OfficeSuiteInstallProgressDisplayLevelPNone returns a pointer to OfficeSuiteInstallProgressDisplayLevelVNone

@@ -3,13 +3,13 @@
 package msgraph
 
 // RestrictedAppsState undocumented
-type RestrictedAppsState int
+type RestrictedAppsState string
 
 const (
 	// RestrictedAppsStateVProhibitedApps undocumented
-	RestrictedAppsStateVProhibitedApps RestrictedAppsState = 0
+	RestrictedAppsStateVProhibitedApps RestrictedAppsState = "ProhibitedApps"
 	// RestrictedAppsStateVNotApprovedApps undocumented
-	RestrictedAppsStateVNotApprovedApps RestrictedAppsState = 1
+	RestrictedAppsStateVNotApprovedApps RestrictedAppsState = "NotApprovedApps"
 )
 
 // RestrictedAppsStatePProhibitedApps returns a pointer to RestrictedAppsStateVProhibitedApps

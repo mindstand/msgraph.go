@@ -3,19 +3,19 @@
 package msgraph
 
 // EducationSubmissionStatus undocumented
-type EducationSubmissionStatus int
+type EducationSubmissionStatus string
 
 const (
 	// EducationSubmissionStatusVWorking undocumented
-	EducationSubmissionStatusVWorking EducationSubmissionStatus = 0
+	EducationSubmissionStatusVWorking EducationSubmissionStatus = "Working"
 	// EducationSubmissionStatusVSubmitted undocumented
-	EducationSubmissionStatusVSubmitted EducationSubmissionStatus = 1
+	EducationSubmissionStatusVSubmitted EducationSubmissionStatus = "Submitted"
 	// EducationSubmissionStatusVReleased undocumented
-	EducationSubmissionStatusVReleased EducationSubmissionStatus = 2
+	EducationSubmissionStatusVReleased EducationSubmissionStatus = "Released"
 	// EducationSubmissionStatusVReturned undocumented
-	EducationSubmissionStatusVReturned EducationSubmissionStatus = 3
+	EducationSubmissionStatusVReturned EducationSubmissionStatus = "Returned"
 	// EducationSubmissionStatusVUnknownFutureValue undocumented
-	EducationSubmissionStatusVUnknownFutureValue EducationSubmissionStatus = 4
+	EducationSubmissionStatusVUnknownFutureValue EducationSubmissionStatus = "UnknownFutureValue"
 )
 
 // EducationSubmissionStatusPWorking returns a pointer to EducationSubmissionStatusVWorking

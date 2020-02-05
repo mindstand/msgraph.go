@@ -3,21 +3,21 @@
 package msgraph
 
 // Modality undocumented
-type Modality int
+type Modality string
 
 const (
 	// ModalityVUnknown undocumented
-	ModalityVUnknown Modality = 0
+	ModalityVUnknown Modality = "Unknown"
 	// ModalityVAudio undocumented
-	ModalityVAudio Modality = 1
+	ModalityVAudio Modality = "Audio"
 	// ModalityVVideo undocumented
-	ModalityVVideo Modality = 2
+	ModalityVVideo Modality = "Video"
 	// ModalityVVideoBasedScreenSharing undocumented
-	ModalityVVideoBasedScreenSharing Modality = 3
+	ModalityVVideoBasedScreenSharing Modality = "VideoBasedScreenSharing"
 	// ModalityVData undocumented
-	ModalityVData Modality = 4
+	ModalityVData Modality = "Data"
 	// ModalityVUnknownFutureValue undocumented
-	ModalityVUnknownFutureValue Modality = 5
+	ModalityVUnknownFutureValue Modality = "UnknownFutureValue"
 )
 
 // ModalityPUnknown returns a pointer to ModalityVUnknown

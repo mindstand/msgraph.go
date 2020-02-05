@@ -3,29 +3,29 @@
 package msgraph
 
 // LocationType undocumented
-type LocationType int
+type LocationType string
 
 const (
 	// LocationTypeVDefault undocumented
-	LocationTypeVDefault LocationType = 0
+	LocationTypeVDefault LocationType = "Default"
 	// LocationTypeVConferenceRoom undocumented
-	LocationTypeVConferenceRoom LocationType = 1
+	LocationTypeVConferenceRoom LocationType = "ConferenceRoom"
 	// LocationTypeVHomeAddress undocumented
-	LocationTypeVHomeAddress LocationType = 2
+	LocationTypeVHomeAddress LocationType = "HomeAddress"
 	// LocationTypeVBusinessAddress undocumented
-	LocationTypeVBusinessAddress LocationType = 3
+	LocationTypeVBusinessAddress LocationType = "BusinessAddress"
 	// LocationTypeVGeoCoordinates undocumented
-	LocationTypeVGeoCoordinates LocationType = 4
+	LocationTypeVGeoCoordinates LocationType = "GeoCoordinates"
 	// LocationTypeVStreetAddress undocumented
-	LocationTypeVStreetAddress LocationType = 5
+	LocationTypeVStreetAddress LocationType = "StreetAddress"
 	// LocationTypeVHotel undocumented
-	LocationTypeVHotel LocationType = 6
+	LocationTypeVHotel LocationType = "Hotel"
 	// LocationTypeVRestaurant undocumented
-	LocationTypeVRestaurant LocationType = 7
+	LocationTypeVRestaurant LocationType = "Restaurant"
 	// LocationTypeVLocalBusiness undocumented
-	LocationTypeVLocalBusiness LocationType = 8
+	LocationTypeVLocalBusiness LocationType = "LocalBusiness"
 	// LocationTypeVPostalAddress undocumented
-	LocationTypeVPostalAddress LocationType = 9
+	LocationTypeVPostalAddress LocationType = "PostalAddress"
 )
 
 // LocationTypePDefault returns a pointer to LocationTypeVDefault

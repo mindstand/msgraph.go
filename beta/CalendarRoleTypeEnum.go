@@ -3,25 +3,25 @@
 package msgraph
 
 // CalendarRoleType undocumented
-type CalendarRoleType int
+type CalendarRoleType string
 
 const (
 	// CalendarRoleTypeVNone undocumented
-	CalendarRoleTypeVNone CalendarRoleType = 0
+	CalendarRoleTypeVNone CalendarRoleType = "None"
 	// CalendarRoleTypeVFreeBusyRead undocumented
-	CalendarRoleTypeVFreeBusyRead CalendarRoleType = 1
+	CalendarRoleTypeVFreeBusyRead CalendarRoleType = "FreeBusyRead"
 	// CalendarRoleTypeVLimitedRead undocumented
-	CalendarRoleTypeVLimitedRead CalendarRoleType = 2
+	CalendarRoleTypeVLimitedRead CalendarRoleType = "LimitedRead"
 	// CalendarRoleTypeVRead undocumented
-	CalendarRoleTypeVRead CalendarRoleType = 3
+	CalendarRoleTypeVRead CalendarRoleType = "Read"
 	// CalendarRoleTypeVWrite undocumented
-	CalendarRoleTypeVWrite CalendarRoleType = 4
+	CalendarRoleTypeVWrite CalendarRoleType = "Write"
 	// CalendarRoleTypeVDelegateWithoutPrivateEventAccess undocumented
-	CalendarRoleTypeVDelegateWithoutPrivateEventAccess CalendarRoleType = 5
+	CalendarRoleTypeVDelegateWithoutPrivateEventAccess CalendarRoleType = "DelegateWithoutPrivateEventAccess"
 	// CalendarRoleTypeVDelegateWithPrivateEventAccess undocumented
-	CalendarRoleTypeVDelegateWithPrivateEventAccess CalendarRoleType = 6
+	CalendarRoleTypeVDelegateWithPrivateEventAccess CalendarRoleType = "DelegateWithPrivateEventAccess"
 	// CalendarRoleTypeVCustom undocumented
-	CalendarRoleTypeVCustom CalendarRoleType = 7
+	CalendarRoleTypeVCustom CalendarRoleType = "Custom"
 )
 
 // CalendarRoleTypePNone returns a pointer to CalendarRoleTypeVNone

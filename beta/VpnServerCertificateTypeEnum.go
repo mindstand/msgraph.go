@@ -3,17 +3,17 @@
 package msgraph
 
 // VpnServerCertificateType undocumented
-type VpnServerCertificateType int
+type VpnServerCertificateType string
 
 const (
 	// VpnServerCertificateTypeVRsa undocumented
-	VpnServerCertificateTypeVRsa VpnServerCertificateType = 0
+	VpnServerCertificateTypeVRsa VpnServerCertificateType = "Rsa"
 	// VpnServerCertificateTypeVEcdsa256 undocumented
-	VpnServerCertificateTypeVEcdsa256 VpnServerCertificateType = 1
+	VpnServerCertificateTypeVEcdsa256 VpnServerCertificateType = "Ecdsa256"
 	// VpnServerCertificateTypeVEcdsa384 undocumented
-	VpnServerCertificateTypeVEcdsa384 VpnServerCertificateType = 2
+	VpnServerCertificateTypeVEcdsa384 VpnServerCertificateType = "Ecdsa384"
 	// VpnServerCertificateTypeVEcdsa521 undocumented
-	VpnServerCertificateTypeVEcdsa521 VpnServerCertificateType = 3
+	VpnServerCertificateTypeVEcdsa521 VpnServerCertificateType = "Ecdsa521"
 )
 
 // VpnServerCertificateTypePRsa returns a pointer to VpnServerCertificateTypeVRsa

@@ -3,13 +3,13 @@
 package msgraph
 
 // KeyUsages undocumented
-type KeyUsages int
+type KeyUsages string
 
 const (
 	// KeyUsagesVKeyEncipherment undocumented
-	KeyUsagesVKeyEncipherment KeyUsages = 1
+	KeyUsagesVKeyEncipherment KeyUsages = "KeyEncipherment"
 	// KeyUsagesVDigitalSignature undocumented
-	KeyUsagesVDigitalSignature KeyUsages = 2
+	KeyUsagesVDigitalSignature KeyUsages = "DigitalSignature"
 )
 
 // KeyUsagesPKeyEncipherment returns a pointer to KeyUsagesVKeyEncipherment

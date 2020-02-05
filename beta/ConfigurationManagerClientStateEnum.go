@@ -3,21 +3,21 @@
 package msgraph
 
 // ConfigurationManagerClientState undocumented
-type ConfigurationManagerClientState int
+type ConfigurationManagerClientState string
 
 const (
 	// ConfigurationManagerClientStateVUnknown undocumented
-	ConfigurationManagerClientStateVUnknown ConfigurationManagerClientState = 0
+	ConfigurationManagerClientStateVUnknown ConfigurationManagerClientState = "Unknown"
 	// ConfigurationManagerClientStateVInstalled undocumented
-	ConfigurationManagerClientStateVInstalled ConfigurationManagerClientState = 1
+	ConfigurationManagerClientStateVInstalled ConfigurationManagerClientState = "Installed"
 	// ConfigurationManagerClientStateVHealthy undocumented
-	ConfigurationManagerClientStateVHealthy ConfigurationManagerClientState = 7
+	ConfigurationManagerClientStateVHealthy ConfigurationManagerClientState = "Healthy"
 	// ConfigurationManagerClientStateVInstallFailed undocumented
-	ConfigurationManagerClientStateVInstallFailed ConfigurationManagerClientState = 8
+	ConfigurationManagerClientStateVInstallFailed ConfigurationManagerClientState = "InstallFailed"
 	// ConfigurationManagerClientStateVUpdateFailed undocumented
-	ConfigurationManagerClientStateVUpdateFailed ConfigurationManagerClientState = 11
+	ConfigurationManagerClientStateVUpdateFailed ConfigurationManagerClientState = "UpdateFailed"
 	// ConfigurationManagerClientStateVCommunicationError undocumented
-	ConfigurationManagerClientStateVCommunicationError ConfigurationManagerClientState = 19
+	ConfigurationManagerClientStateVCommunicationError ConfigurationManagerClientState = "CommunicationError"
 )
 
 // ConfigurationManagerClientStatePUnknown returns a pointer to ConfigurationManagerClientStateVUnknown

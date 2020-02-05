@@ -3,15 +3,15 @@
 package msgraph
 
 // ManagedAppDataTransferLevel undocumented
-type ManagedAppDataTransferLevel int
+type ManagedAppDataTransferLevel string
 
 const (
 	// ManagedAppDataTransferLevelVAllApps undocumented
-	ManagedAppDataTransferLevelVAllApps ManagedAppDataTransferLevel = 0
+	ManagedAppDataTransferLevelVAllApps ManagedAppDataTransferLevel = "AllApps"
 	// ManagedAppDataTransferLevelVManagedApps undocumented
-	ManagedAppDataTransferLevelVManagedApps ManagedAppDataTransferLevel = 1
+	ManagedAppDataTransferLevelVManagedApps ManagedAppDataTransferLevel = "ManagedApps"
 	// ManagedAppDataTransferLevelVNone undocumented
-	ManagedAppDataTransferLevelVNone ManagedAppDataTransferLevel = 2
+	ManagedAppDataTransferLevelVNone ManagedAppDataTransferLevel = "None"
 )
 
 // ManagedAppDataTransferLevelPAllApps returns a pointer to ManagedAppDataTransferLevelVAllApps

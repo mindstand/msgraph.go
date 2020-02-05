@@ -3,19 +3,19 @@
 package msgraph
 
 // OnenotePatchActionType undocumented
-type OnenotePatchActionType int
+type OnenotePatchActionType string
 
 const (
 	// OnenotePatchActionTypeVReplace undocumented
-	OnenotePatchActionTypeVReplace OnenotePatchActionType = 0
+	OnenotePatchActionTypeVReplace OnenotePatchActionType = "Replace"
 	// OnenotePatchActionTypeVAppend undocumented
-	OnenotePatchActionTypeVAppend OnenotePatchActionType = 1
+	OnenotePatchActionTypeVAppend OnenotePatchActionType = "Append"
 	// OnenotePatchActionTypeVDelete undocumented
-	OnenotePatchActionTypeVDelete OnenotePatchActionType = 2
+	OnenotePatchActionTypeVDelete OnenotePatchActionType = "Delete"
 	// OnenotePatchActionTypeVInsert undocumented
-	OnenotePatchActionTypeVInsert OnenotePatchActionType = 3
+	OnenotePatchActionTypeVInsert OnenotePatchActionType = "Insert"
 	// OnenotePatchActionTypeVPrepend undocumented
-	OnenotePatchActionTypeVPrepend OnenotePatchActionType = 4
+	OnenotePatchActionTypeVPrepend OnenotePatchActionType = "Prepend"
 )
 
 // OnenotePatchActionTypePReplace returns a pointer to OnenotePatchActionTypeVReplace

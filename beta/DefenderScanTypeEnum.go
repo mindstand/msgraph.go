@@ -3,17 +3,17 @@
 package msgraph
 
 // DefenderScanType undocumented
-type DefenderScanType int
+type DefenderScanType string
 
 const (
 	// DefenderScanTypeVUserDefined undocumented
-	DefenderScanTypeVUserDefined DefenderScanType = 0
+	DefenderScanTypeVUserDefined DefenderScanType = "UserDefined"
 	// DefenderScanTypeVDisabled undocumented
-	DefenderScanTypeVDisabled DefenderScanType = 1
+	DefenderScanTypeVDisabled DefenderScanType = "Disabled"
 	// DefenderScanTypeVQuick undocumented
-	DefenderScanTypeVQuick DefenderScanType = 2
+	DefenderScanTypeVQuick DefenderScanType = "Quick"
 	// DefenderScanTypeVFull undocumented
-	DefenderScanTypeVFull DefenderScanType = 3
+	DefenderScanTypeVFull DefenderScanType = "Full"
 )
 
 // DefenderScanTypePUserDefined returns a pointer to DefenderScanTypeVUserDefined

@@ -3,15 +3,15 @@
 package msgraph
 
 // ChatMessageType undocumented
-type ChatMessageType int
+type ChatMessageType string
 
 const (
 	// ChatMessageTypeVMessage undocumented
-	ChatMessageTypeVMessage ChatMessageType = 0
+	ChatMessageTypeVMessage ChatMessageType = "Message"
 	// ChatMessageTypeVChatEvent undocumented
-	ChatMessageTypeVChatEvent ChatMessageType = 1
+	ChatMessageTypeVChatEvent ChatMessageType = "ChatEvent"
 	// ChatMessageTypeVTyping undocumented
-	ChatMessageTypeVTyping ChatMessageType = 2
+	ChatMessageTypeVTyping ChatMessageType = "Typing"
 )
 
 // ChatMessageTypePMessage returns a pointer to ChatMessageTypeVMessage

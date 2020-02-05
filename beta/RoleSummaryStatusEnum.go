@@ -3,13 +3,13 @@
 package msgraph
 
 // RoleSummaryStatus undocumented
-type RoleSummaryStatus int
+type RoleSummaryStatus string
 
 const (
 	// RoleSummaryStatusVOk undocumented
-	RoleSummaryStatusVOk RoleSummaryStatus = 0
+	RoleSummaryStatusVOk RoleSummaryStatus = "Ok"
 	// RoleSummaryStatusVBad undocumented
-	RoleSummaryStatusVBad RoleSummaryStatus = 1
+	RoleSummaryStatusVBad RoleSummaryStatus = "Bad"
 )
 
 // RoleSummaryStatusPOk returns a pointer to RoleSummaryStatusVOk

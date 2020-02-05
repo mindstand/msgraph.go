@@ -3,13 +3,13 @@
 package msgraph
 
 // AttributeFlowBehavior undocumented
-type AttributeFlowBehavior int
+type AttributeFlowBehavior string
 
 const (
 	// AttributeFlowBehaviorVFlowWhenChanged undocumented
-	AttributeFlowBehaviorVFlowWhenChanged AttributeFlowBehavior = 0
+	AttributeFlowBehaviorVFlowWhenChanged AttributeFlowBehavior = "FlowWhenChanged"
 	// AttributeFlowBehaviorVFlowAlways undocumented
-	AttributeFlowBehaviorVFlowAlways AttributeFlowBehavior = 1
+	AttributeFlowBehaviorVFlowAlways AttributeFlowBehavior = "FlowAlways"
 )
 
 // AttributeFlowBehaviorPFlowWhenChanged returns a pointer to AttributeFlowBehaviorVFlowWhenChanged

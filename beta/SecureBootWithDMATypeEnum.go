@@ -3,15 +3,15 @@
 package msgraph
 
 // SecureBootWithDMAType undocumented
-type SecureBootWithDMAType int
+type SecureBootWithDMAType string
 
 const (
 	// SecureBootWithDMATypeVNotConfigured undocumented
-	SecureBootWithDMATypeVNotConfigured SecureBootWithDMAType = 0
+	SecureBootWithDMATypeVNotConfigured SecureBootWithDMAType = "NotConfigured"
 	// SecureBootWithDMATypeVWithoutDMA undocumented
-	SecureBootWithDMATypeVWithoutDMA SecureBootWithDMAType = 1
+	SecureBootWithDMATypeVWithoutDMA SecureBootWithDMAType = "WithoutDMA"
 	// SecureBootWithDMATypeVWithDMA undocumented
-	SecureBootWithDMATypeVWithDMA SecureBootWithDMAType = 3
+	SecureBootWithDMATypeVWithDMA SecureBootWithDMAType = "WithDMA"
 )
 
 // SecureBootWithDMATypePNotConfigured returns a pointer to SecureBootWithDMATypeVNotConfigured

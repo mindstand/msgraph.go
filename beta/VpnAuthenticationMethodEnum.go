@@ -3,17 +3,17 @@
 package msgraph
 
 // VpnAuthenticationMethod undocumented
-type VpnAuthenticationMethod int
+type VpnAuthenticationMethod string
 
 const (
 	// VpnAuthenticationMethodVCertificate undocumented
-	VpnAuthenticationMethodVCertificate VpnAuthenticationMethod = 0
+	VpnAuthenticationMethodVCertificate VpnAuthenticationMethod = "Certificate"
 	// VpnAuthenticationMethodVUsernameAndPassword undocumented
-	VpnAuthenticationMethodVUsernameAndPassword VpnAuthenticationMethod = 1
+	VpnAuthenticationMethodVUsernameAndPassword VpnAuthenticationMethod = "UsernameAndPassword"
 	// VpnAuthenticationMethodVSharedSecret undocumented
-	VpnAuthenticationMethodVSharedSecret VpnAuthenticationMethod = 2
+	VpnAuthenticationMethodVSharedSecret VpnAuthenticationMethod = "SharedSecret"
 	// VpnAuthenticationMethodVDerivedCredential undocumented
-	VpnAuthenticationMethodVDerivedCredential VpnAuthenticationMethod = 3
+	VpnAuthenticationMethodVDerivedCredential VpnAuthenticationMethod = "DerivedCredential"
 )
 
 // VpnAuthenticationMethodPCertificate returns a pointer to VpnAuthenticationMethodVCertificate

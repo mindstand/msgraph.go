@@ -3,15 +3,15 @@
 package msgraph
 
 // WindowsDefenderTamperProtectionOptions undocumented
-type WindowsDefenderTamperProtectionOptions int
+type WindowsDefenderTamperProtectionOptions string
 
 const (
 	// WindowsDefenderTamperProtectionOptionsVNotConfigured undocumented
-	WindowsDefenderTamperProtectionOptionsVNotConfigured WindowsDefenderTamperProtectionOptions = 0
+	WindowsDefenderTamperProtectionOptionsVNotConfigured WindowsDefenderTamperProtectionOptions = "NotConfigured"
 	// WindowsDefenderTamperProtectionOptionsVEnable undocumented
-	WindowsDefenderTamperProtectionOptionsVEnable WindowsDefenderTamperProtectionOptions = 1
+	WindowsDefenderTamperProtectionOptionsVEnable WindowsDefenderTamperProtectionOptions = "Enable"
 	// WindowsDefenderTamperProtectionOptionsVDisable undocumented
-	WindowsDefenderTamperProtectionOptionsVDisable WindowsDefenderTamperProtectionOptions = 2
+	WindowsDefenderTamperProtectionOptionsVDisable WindowsDefenderTamperProtectionOptions = "Disable"
 )
 
 // WindowsDefenderTamperProtectionOptionsPNotConfigured returns a pointer to WindowsDefenderTamperProtectionOptionsVNotConfigured

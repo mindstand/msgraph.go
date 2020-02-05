@@ -3,21 +3,21 @@
 package msgraph
 
 // RecurrencePatternType undocumented
-type RecurrencePatternType int
+type RecurrencePatternType string
 
 const (
 	// RecurrencePatternTypeVDaily undocumented
-	RecurrencePatternTypeVDaily RecurrencePatternType = 0
+	RecurrencePatternTypeVDaily RecurrencePatternType = "Daily"
 	// RecurrencePatternTypeVWeekly undocumented
-	RecurrencePatternTypeVWeekly RecurrencePatternType = 1
+	RecurrencePatternTypeVWeekly RecurrencePatternType = "Weekly"
 	// RecurrencePatternTypeVAbsoluteMonthly undocumented
-	RecurrencePatternTypeVAbsoluteMonthly RecurrencePatternType = 2
+	RecurrencePatternTypeVAbsoluteMonthly RecurrencePatternType = "AbsoluteMonthly"
 	// RecurrencePatternTypeVRelativeMonthly undocumented
-	RecurrencePatternTypeVRelativeMonthly RecurrencePatternType = 3
+	RecurrencePatternTypeVRelativeMonthly RecurrencePatternType = "RelativeMonthly"
 	// RecurrencePatternTypeVAbsoluteYearly undocumented
-	RecurrencePatternTypeVAbsoluteYearly RecurrencePatternType = 4
+	RecurrencePatternTypeVAbsoluteYearly RecurrencePatternType = "AbsoluteYearly"
 	// RecurrencePatternTypeVRelativeYearly undocumented
-	RecurrencePatternTypeVRelativeYearly RecurrencePatternType = 5
+	RecurrencePatternTypeVRelativeYearly RecurrencePatternType = "RelativeYearly"
 )
 
 // RecurrencePatternTypePDaily returns a pointer to RecurrencePatternTypeVDaily

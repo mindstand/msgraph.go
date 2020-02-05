@@ -3,21 +3,21 @@
 package msgraph
 
 // AlertSeverity undocumented
-type AlertSeverity int
+type AlertSeverity string
 
 const (
 	// AlertSeverityVUnknown undocumented
-	AlertSeverityVUnknown AlertSeverity = 0
+	AlertSeverityVUnknown AlertSeverity = "Unknown"
 	// AlertSeverityVInformational undocumented
-	AlertSeverityVInformational AlertSeverity = 1
+	AlertSeverityVInformational AlertSeverity = "Informational"
 	// AlertSeverityVLow undocumented
-	AlertSeverityVLow AlertSeverity = 2
+	AlertSeverityVLow AlertSeverity = "Low"
 	// AlertSeverityVMedium undocumented
-	AlertSeverityVMedium AlertSeverity = 3
+	AlertSeverityVMedium AlertSeverity = "Medium"
 	// AlertSeverityVHigh undocumented
-	AlertSeverityVHigh AlertSeverity = 4
+	AlertSeverityVHigh AlertSeverity = "High"
 	// AlertSeverityVUnknownFutureValue undocumented
-	AlertSeverityVUnknownFutureValue AlertSeverity = 127
+	AlertSeverityVUnknownFutureValue AlertSeverity = "UnknownFutureValue"
 )
 
 // AlertSeverityPUnknown returns a pointer to AlertSeverityVUnknown

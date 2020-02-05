@@ -3,19 +3,19 @@
 package msgraph
 
 // GroupPolicyMigrationReadiness undocumented
-type GroupPolicyMigrationReadiness int
+type GroupPolicyMigrationReadiness string
 
 const (
 	// GroupPolicyMigrationReadinessVNone undocumented
-	GroupPolicyMigrationReadinessVNone GroupPolicyMigrationReadiness = 1
+	GroupPolicyMigrationReadinessVNone GroupPolicyMigrationReadiness = "None"
 	// GroupPolicyMigrationReadinessVPartial undocumented
-	GroupPolicyMigrationReadinessVPartial GroupPolicyMigrationReadiness = 2
+	GroupPolicyMigrationReadinessVPartial GroupPolicyMigrationReadiness = "Partial"
 	// GroupPolicyMigrationReadinessVComplete undocumented
-	GroupPolicyMigrationReadinessVComplete GroupPolicyMigrationReadiness = 3
+	GroupPolicyMigrationReadinessVComplete GroupPolicyMigrationReadiness = "Complete"
 	// GroupPolicyMigrationReadinessVError undocumented
-	GroupPolicyMigrationReadinessVError GroupPolicyMigrationReadiness = 4
+	GroupPolicyMigrationReadinessVError GroupPolicyMigrationReadiness = "Error"
 	// GroupPolicyMigrationReadinessVNotApplicable undocumented
-	GroupPolicyMigrationReadinessVNotApplicable GroupPolicyMigrationReadiness = 5
+	GroupPolicyMigrationReadinessVNotApplicable GroupPolicyMigrationReadiness = "NotApplicable"
 )
 
 // GroupPolicyMigrationReadinessPNone returns a pointer to GroupPolicyMigrationReadinessVNone

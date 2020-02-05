@@ -3,19 +3,19 @@
 package msgraph
 
 // EdgeKioskModeRestrictionType undocumented
-type EdgeKioskModeRestrictionType int
+type EdgeKioskModeRestrictionType string
 
 const (
 	// EdgeKioskModeRestrictionTypeVNotConfigured undocumented
-	EdgeKioskModeRestrictionTypeVNotConfigured EdgeKioskModeRestrictionType = 0
+	EdgeKioskModeRestrictionTypeVNotConfigured EdgeKioskModeRestrictionType = "NotConfigured"
 	// EdgeKioskModeRestrictionTypeVDigitalSignage undocumented
-	EdgeKioskModeRestrictionTypeVDigitalSignage EdgeKioskModeRestrictionType = 1
+	EdgeKioskModeRestrictionTypeVDigitalSignage EdgeKioskModeRestrictionType = "DigitalSignage"
 	// EdgeKioskModeRestrictionTypeVNormalMode undocumented
-	EdgeKioskModeRestrictionTypeVNormalMode EdgeKioskModeRestrictionType = 2
+	EdgeKioskModeRestrictionTypeVNormalMode EdgeKioskModeRestrictionType = "NormalMode"
 	// EdgeKioskModeRestrictionTypeVPublicBrowsingSingleApp undocumented
-	EdgeKioskModeRestrictionTypeVPublicBrowsingSingleApp EdgeKioskModeRestrictionType = 3
+	EdgeKioskModeRestrictionTypeVPublicBrowsingSingleApp EdgeKioskModeRestrictionType = "PublicBrowsingSingleApp"
 	// EdgeKioskModeRestrictionTypeVPublicBrowsingMultiApp undocumented
-	EdgeKioskModeRestrictionTypeVPublicBrowsingMultiApp EdgeKioskModeRestrictionType = 4
+	EdgeKioskModeRestrictionTypeVPublicBrowsingMultiApp EdgeKioskModeRestrictionType = "PublicBrowsingMultiApp"
 )
 
 // EdgeKioskModeRestrictionTypePNotConfigured returns a pointer to EdgeKioskModeRestrictionTypeVNotConfigured

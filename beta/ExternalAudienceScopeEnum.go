@@ -3,15 +3,15 @@
 package msgraph
 
 // ExternalAudienceScope undocumented
-type ExternalAudienceScope int
+type ExternalAudienceScope string
 
 const (
 	// ExternalAudienceScopeVNone undocumented
-	ExternalAudienceScopeVNone ExternalAudienceScope = 0
+	ExternalAudienceScopeVNone ExternalAudienceScope = "None"
 	// ExternalAudienceScopeVContactsOnly undocumented
-	ExternalAudienceScopeVContactsOnly ExternalAudienceScope = 1
+	ExternalAudienceScopeVContactsOnly ExternalAudienceScope = "ContactsOnly"
 	// ExternalAudienceScopeVAll undocumented
-	ExternalAudienceScopeVAll ExternalAudienceScope = 2
+	ExternalAudienceScopeVAll ExternalAudienceScope = "All"
 )
 
 // ExternalAudienceScopePNone returns a pointer to ExternalAudienceScopeVNone

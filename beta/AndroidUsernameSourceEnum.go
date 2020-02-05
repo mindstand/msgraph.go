@@ -3,17 +3,17 @@
 package msgraph
 
 // AndroidUsernameSource undocumented
-type AndroidUsernameSource int
+type AndroidUsernameSource string
 
 const (
 	// AndroidUsernameSourceVUsername undocumented
-	AndroidUsernameSourceVUsername AndroidUsernameSource = 0
+	AndroidUsernameSourceVUsername AndroidUsernameSource = "Username"
 	// AndroidUsernameSourceVUserPrincipalName undocumented
-	AndroidUsernameSourceVUserPrincipalName AndroidUsernameSource = 1
+	AndroidUsernameSourceVUserPrincipalName AndroidUsernameSource = "UserPrincipalName"
 	// AndroidUsernameSourceVSamAccountName undocumented
-	AndroidUsernameSourceVSamAccountName AndroidUsernameSource = 2
+	AndroidUsernameSourceVSamAccountName AndroidUsernameSource = "SamAccountName"
 	// AndroidUsernameSourceVPrimarySMTPAddress undocumented
-	AndroidUsernameSourceVPrimarySMTPAddress AndroidUsernameSource = 3
+	AndroidUsernameSourceVPrimarySMTPAddress AndroidUsernameSource = "PrimarySMTPAddress"
 )
 
 // AndroidUsernameSourcePUsername returns a pointer to AndroidUsernameSourceVUsername

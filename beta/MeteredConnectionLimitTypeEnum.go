@@ -3,15 +3,15 @@
 package msgraph
 
 // MeteredConnectionLimitType undocumented
-type MeteredConnectionLimitType int
+type MeteredConnectionLimitType string
 
 const (
 	// MeteredConnectionLimitTypeVUnrestricted undocumented
-	MeteredConnectionLimitTypeVUnrestricted MeteredConnectionLimitType = 0
+	MeteredConnectionLimitTypeVUnrestricted MeteredConnectionLimitType = "Unrestricted"
 	// MeteredConnectionLimitTypeVFixed undocumented
-	MeteredConnectionLimitTypeVFixed MeteredConnectionLimitType = 1
+	MeteredConnectionLimitTypeVFixed MeteredConnectionLimitType = "Fixed"
 	// MeteredConnectionLimitTypeVVariable undocumented
-	MeteredConnectionLimitTypeVVariable MeteredConnectionLimitType = 2
+	MeteredConnectionLimitTypeVVariable MeteredConnectionLimitType = "Variable"
 )
 
 // MeteredConnectionLimitTypePUnrestricted returns a pointer to MeteredConnectionLimitTypeVUnrestricted

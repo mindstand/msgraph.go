@@ -3,17 +3,17 @@
 package msgraph
 
 // ManagedAppDataEncryptionType undocumented
-type ManagedAppDataEncryptionType int
+type ManagedAppDataEncryptionType string
 
 const (
 	// ManagedAppDataEncryptionTypeVUseDeviceSettings undocumented
-	ManagedAppDataEncryptionTypeVUseDeviceSettings ManagedAppDataEncryptionType = 0
+	ManagedAppDataEncryptionTypeVUseDeviceSettings ManagedAppDataEncryptionType = "UseDeviceSettings"
 	// ManagedAppDataEncryptionTypeVAfterDeviceRestart undocumented
-	ManagedAppDataEncryptionTypeVAfterDeviceRestart ManagedAppDataEncryptionType = 1
+	ManagedAppDataEncryptionTypeVAfterDeviceRestart ManagedAppDataEncryptionType = "AfterDeviceRestart"
 	// ManagedAppDataEncryptionTypeVWhenDeviceLockedExceptOpenFiles undocumented
-	ManagedAppDataEncryptionTypeVWhenDeviceLockedExceptOpenFiles ManagedAppDataEncryptionType = 2
+	ManagedAppDataEncryptionTypeVWhenDeviceLockedExceptOpenFiles ManagedAppDataEncryptionType = "WhenDeviceLockedExceptOpenFiles"
 	// ManagedAppDataEncryptionTypeVWhenDeviceLocked undocumented
-	ManagedAppDataEncryptionTypeVWhenDeviceLocked ManagedAppDataEncryptionType = 3
+	ManagedAppDataEncryptionTypeVWhenDeviceLocked ManagedAppDataEncryptionType = "WhenDeviceLocked"
 )
 
 // ManagedAppDataEncryptionTypePUseDeviceSettings returns a pointer to ManagedAppDataEncryptionTypeVUseDeviceSettings

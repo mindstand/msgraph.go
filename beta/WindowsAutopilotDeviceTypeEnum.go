@@ -3,13 +3,13 @@
 package msgraph
 
 // WindowsAutopilotDeviceType undocumented
-type WindowsAutopilotDeviceType int
+type WindowsAutopilotDeviceType string
 
 const (
 	// WindowsAutopilotDeviceTypeVWindowsPc undocumented
-	WindowsAutopilotDeviceTypeVWindowsPc WindowsAutopilotDeviceType = 0
+	WindowsAutopilotDeviceTypeVWindowsPc WindowsAutopilotDeviceType = "WindowsPc"
 	// WindowsAutopilotDeviceTypeVSurfaceHub2 undocumented
-	WindowsAutopilotDeviceTypeVSurfaceHub2 WindowsAutopilotDeviceType = 1
+	WindowsAutopilotDeviceTypeVSurfaceHub2 WindowsAutopilotDeviceType = "SurfaceHub2"
 )
 
 // WindowsAutopilotDeviceTypePWindowsPc returns a pointer to WindowsAutopilotDeviceTypeVWindowsPc

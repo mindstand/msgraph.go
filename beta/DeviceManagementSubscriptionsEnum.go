@@ -3,21 +3,21 @@
 package msgraph
 
 // DeviceManagementSubscriptions undocumented
-type DeviceManagementSubscriptions int
+type DeviceManagementSubscriptions string
 
 const (
 	// DeviceManagementSubscriptionsVNone undocumented
-	DeviceManagementSubscriptionsVNone DeviceManagementSubscriptions = 0
+	DeviceManagementSubscriptionsVNone DeviceManagementSubscriptions = "None"
 	// DeviceManagementSubscriptionsVIntune undocumented
-	DeviceManagementSubscriptionsVIntune DeviceManagementSubscriptions = 1
+	DeviceManagementSubscriptionsVIntune DeviceManagementSubscriptions = "Intune"
 	// DeviceManagementSubscriptionsVOffice365 undocumented
-	DeviceManagementSubscriptionsVOffice365 DeviceManagementSubscriptions = 2
+	DeviceManagementSubscriptionsVOffice365 DeviceManagementSubscriptions = "Office365"
 	// DeviceManagementSubscriptionsVIntunePremium undocumented
-	DeviceManagementSubscriptionsVIntunePremium DeviceManagementSubscriptions = 4
+	DeviceManagementSubscriptionsVIntunePremium DeviceManagementSubscriptions = "IntunePremium"
 	// DeviceManagementSubscriptionsVIntune_EDU undocumented
-	DeviceManagementSubscriptionsVIntune_EDU DeviceManagementSubscriptions = 8
+	DeviceManagementSubscriptionsVIntune_EDU DeviceManagementSubscriptions = "Intune_EDU"
 	// DeviceManagementSubscriptionsVIntune_SMB undocumented
-	DeviceManagementSubscriptionsVIntune_SMB DeviceManagementSubscriptions = 16
+	DeviceManagementSubscriptionsVIntune_SMB DeviceManagementSubscriptions = "Intune_SMB"
 )
 
 // DeviceManagementSubscriptionsPNone returns a pointer to DeviceManagementSubscriptionsVNone

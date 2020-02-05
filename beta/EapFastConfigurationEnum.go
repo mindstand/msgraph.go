@@ -3,17 +3,17 @@
 package msgraph
 
 // EapFastConfiguration undocumented
-type EapFastConfiguration int
+type EapFastConfiguration string
 
 const (
 	// EapFastConfigurationVNoProtectedAccessCredential undocumented
-	EapFastConfigurationVNoProtectedAccessCredential EapFastConfiguration = 0
+	EapFastConfigurationVNoProtectedAccessCredential EapFastConfiguration = "NoProtectedAccessCredential"
 	// EapFastConfigurationVUseProtectedAccessCredential undocumented
-	EapFastConfigurationVUseProtectedAccessCredential EapFastConfiguration = 1
+	EapFastConfigurationVUseProtectedAccessCredential EapFastConfiguration = "UseProtectedAccessCredential"
 	// EapFastConfigurationVUseProtectedAccessCredentialAndProvision undocumented
-	EapFastConfigurationVUseProtectedAccessCredentialAndProvision EapFastConfiguration = 2
+	EapFastConfigurationVUseProtectedAccessCredentialAndProvision EapFastConfiguration = "UseProtectedAccessCredentialAndProvision"
 	// EapFastConfigurationVUseProtectedAccessCredentialAndProvisionAnonymously undocumented
-	EapFastConfigurationVUseProtectedAccessCredentialAndProvisionAnonymously EapFastConfiguration = 3
+	EapFastConfigurationVUseProtectedAccessCredentialAndProvisionAnonymously EapFastConfiguration = "UseProtectedAccessCredentialAndProvisionAnonymously"
 )
 
 // EapFastConfigurationPNoProtectedAccessCredential returns a pointer to EapFastConfigurationVNoProtectedAccessCredential

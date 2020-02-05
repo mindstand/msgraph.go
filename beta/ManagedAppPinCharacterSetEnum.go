@@ -3,13 +3,13 @@
 package msgraph
 
 // ManagedAppPinCharacterSet undocumented
-type ManagedAppPinCharacterSet int
+type ManagedAppPinCharacterSet string
 
 const (
 	// ManagedAppPinCharacterSetVNumeric undocumented
-	ManagedAppPinCharacterSetVNumeric ManagedAppPinCharacterSet = 0
+	ManagedAppPinCharacterSetVNumeric ManagedAppPinCharacterSet = "Numeric"
 	// ManagedAppPinCharacterSetVAlphanumericAndSymbol undocumented
-	ManagedAppPinCharacterSetVAlphanumericAndSymbol ManagedAppPinCharacterSet = 1
+	ManagedAppPinCharacterSetVAlphanumericAndSymbol ManagedAppPinCharacterSet = "AlphanumericAndSymbol"
 )
 
 // ManagedAppPinCharacterSetPNumeric returns a pointer to ManagedAppPinCharacterSetVNumeric

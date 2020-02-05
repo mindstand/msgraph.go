@@ -3,17 +3,17 @@
 package msgraph
 
 // OverrideOption undocumented
-type OverrideOption int
+type OverrideOption string
 
 const (
 	// OverrideOptionVNotAllowed undocumented
-	OverrideOptionVNotAllowed OverrideOption = 0
+	OverrideOptionVNotAllowed OverrideOption = "NotAllowed"
 	// OverrideOptionVAllowFalsePositiveOverride undocumented
-	OverrideOptionVAllowFalsePositiveOverride OverrideOption = 1
+	OverrideOptionVAllowFalsePositiveOverride OverrideOption = "AllowFalsePositiveOverride"
 	// OverrideOptionVAllowWithJustification undocumented
-	OverrideOptionVAllowWithJustification OverrideOption = 2
+	OverrideOptionVAllowWithJustification OverrideOption = "AllowWithJustification"
 	// OverrideOptionVAllowWithoutJustification undocumented
-	OverrideOptionVAllowWithoutJustification OverrideOption = 4
+	OverrideOptionVAllowWithoutJustification OverrideOption = "AllowWithoutJustification"
 )
 
 // OverrideOptionPNotAllowed returns a pointer to OverrideOptionVNotAllowed

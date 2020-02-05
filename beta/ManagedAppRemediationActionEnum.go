@@ -3,15 +3,15 @@
 package msgraph
 
 // ManagedAppRemediationAction undocumented
-type ManagedAppRemediationAction int
+type ManagedAppRemediationAction string
 
 const (
 	// ManagedAppRemediationActionVBlock undocumented
-	ManagedAppRemediationActionVBlock ManagedAppRemediationAction = 0
+	ManagedAppRemediationActionVBlock ManagedAppRemediationAction = "Block"
 	// ManagedAppRemediationActionVWipe undocumented
-	ManagedAppRemediationActionVWipe ManagedAppRemediationAction = 1
+	ManagedAppRemediationActionVWipe ManagedAppRemediationAction = "Wipe"
 	// ManagedAppRemediationActionVWarn undocumented
-	ManagedAppRemediationActionVWarn ManagedAppRemediationAction = 2
+	ManagedAppRemediationActionVWarn ManagedAppRemediationAction = "Warn"
 )
 
 // ManagedAppRemediationActionPBlock returns a pointer to ManagedAppRemediationActionVBlock

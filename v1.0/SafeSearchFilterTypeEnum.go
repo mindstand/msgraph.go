@@ -3,15 +3,15 @@
 package msgraph
 
 // SafeSearchFilterType undocumented
-type SafeSearchFilterType int
+type SafeSearchFilterType string
 
 const (
 	// SafeSearchFilterTypeVUserDefined undocumented
-	SafeSearchFilterTypeVUserDefined SafeSearchFilterType = 0
+	SafeSearchFilterTypeVUserDefined SafeSearchFilterType = "UserDefined"
 	// SafeSearchFilterTypeVStrict undocumented
-	SafeSearchFilterTypeVStrict SafeSearchFilterType = 1
+	SafeSearchFilterTypeVStrict SafeSearchFilterType = "Strict"
 	// SafeSearchFilterTypeVModerate undocumented
-	SafeSearchFilterTypeVModerate SafeSearchFilterType = 2
+	SafeSearchFilterTypeVModerate SafeSearchFilterType = "Moderate"
 )
 
 // SafeSearchFilterTypePUserDefined returns a pointer to SafeSearchFilterTypeVUserDefined

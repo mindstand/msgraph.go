@@ -3,17 +3,17 @@
 package msgraph
 
 // NotificationTemplateBrandingOptions undocumented
-type NotificationTemplateBrandingOptions int
+type NotificationTemplateBrandingOptions string
 
 const (
 	// NotificationTemplateBrandingOptionsVNone undocumented
-	NotificationTemplateBrandingOptionsVNone NotificationTemplateBrandingOptions = 0
+	NotificationTemplateBrandingOptionsVNone NotificationTemplateBrandingOptions = "None"
 	// NotificationTemplateBrandingOptionsVIncludeCompanyLogo undocumented
-	NotificationTemplateBrandingOptionsVIncludeCompanyLogo NotificationTemplateBrandingOptions = 1
+	NotificationTemplateBrandingOptionsVIncludeCompanyLogo NotificationTemplateBrandingOptions = "IncludeCompanyLogo"
 	// NotificationTemplateBrandingOptionsVIncludeCompanyName undocumented
-	NotificationTemplateBrandingOptionsVIncludeCompanyName NotificationTemplateBrandingOptions = 2
+	NotificationTemplateBrandingOptionsVIncludeCompanyName NotificationTemplateBrandingOptions = "IncludeCompanyName"
 	// NotificationTemplateBrandingOptionsVIncludeContactInformation undocumented
-	NotificationTemplateBrandingOptionsVIncludeContactInformation NotificationTemplateBrandingOptions = 4
+	NotificationTemplateBrandingOptionsVIncludeContactInformation NotificationTemplateBrandingOptions = "IncludeContactInformation"
 )
 
 // NotificationTemplateBrandingOptionsPNone returns a pointer to NotificationTemplateBrandingOptionsVNone

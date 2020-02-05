@@ -3,27 +3,27 @@
 package msgraph
 
 // RatingAustraliaTelevisionType undocumented
-type RatingAustraliaTelevisionType int
+type RatingAustraliaTelevisionType string
 
 const (
 	// RatingAustraliaTelevisionTypeVAllAllowed undocumented
-	RatingAustraliaTelevisionTypeVAllAllowed RatingAustraliaTelevisionType = 0
+	RatingAustraliaTelevisionTypeVAllAllowed RatingAustraliaTelevisionType = "AllAllowed"
 	// RatingAustraliaTelevisionTypeVAllBlocked undocumented
-	RatingAustraliaTelevisionTypeVAllBlocked RatingAustraliaTelevisionType = 1
+	RatingAustraliaTelevisionTypeVAllBlocked RatingAustraliaTelevisionType = "AllBlocked"
 	// RatingAustraliaTelevisionTypeVPreschoolers undocumented
-	RatingAustraliaTelevisionTypeVPreschoolers RatingAustraliaTelevisionType = 2
+	RatingAustraliaTelevisionTypeVPreschoolers RatingAustraliaTelevisionType = "Preschoolers"
 	// RatingAustraliaTelevisionTypeVChildren undocumented
-	RatingAustraliaTelevisionTypeVChildren RatingAustraliaTelevisionType = 3
+	RatingAustraliaTelevisionTypeVChildren RatingAustraliaTelevisionType = "Children"
 	// RatingAustraliaTelevisionTypeVGeneral undocumented
-	RatingAustraliaTelevisionTypeVGeneral RatingAustraliaTelevisionType = 4
+	RatingAustraliaTelevisionTypeVGeneral RatingAustraliaTelevisionType = "General"
 	// RatingAustraliaTelevisionTypeVParentalGuidance undocumented
-	RatingAustraliaTelevisionTypeVParentalGuidance RatingAustraliaTelevisionType = 5
+	RatingAustraliaTelevisionTypeVParentalGuidance RatingAustraliaTelevisionType = "ParentalGuidance"
 	// RatingAustraliaTelevisionTypeVMature undocumented
-	RatingAustraliaTelevisionTypeVMature RatingAustraliaTelevisionType = 6
+	RatingAustraliaTelevisionTypeVMature RatingAustraliaTelevisionType = "Mature"
 	// RatingAustraliaTelevisionTypeVAgesAbove15 undocumented
-	RatingAustraliaTelevisionTypeVAgesAbove15 RatingAustraliaTelevisionType = 7
+	RatingAustraliaTelevisionTypeVAgesAbove15 RatingAustraliaTelevisionType = "AgesAbove15"
 	// RatingAustraliaTelevisionTypeVAgesAbove15AdultViolence undocumented
-	RatingAustraliaTelevisionTypeVAgesAbove15AdultViolence RatingAustraliaTelevisionType = 8
+	RatingAustraliaTelevisionTypeVAgesAbove15AdultViolence RatingAustraliaTelevisionType = "AgesAbove15AdultViolence"
 )
 
 // RatingAustraliaTelevisionTypePAllAllowed returns a pointer to RatingAustraliaTelevisionTypeVAllAllowed

@@ -3,19 +3,19 @@
 package msgraph
 
 // CertificateRevocationStatus undocumented
-type CertificateRevocationStatus int
+type CertificateRevocationStatus string
 
 const (
 	// CertificateRevocationStatusVNone undocumented
-	CertificateRevocationStatusVNone CertificateRevocationStatus = 0
+	CertificateRevocationStatusVNone CertificateRevocationStatus = "None"
 	// CertificateRevocationStatusVPending undocumented
-	CertificateRevocationStatusVPending CertificateRevocationStatus = 1
+	CertificateRevocationStatusVPending CertificateRevocationStatus = "Pending"
 	// CertificateRevocationStatusVIssued undocumented
-	CertificateRevocationStatusVIssued CertificateRevocationStatus = 2
+	CertificateRevocationStatusVIssued CertificateRevocationStatus = "Issued"
 	// CertificateRevocationStatusVFailed undocumented
-	CertificateRevocationStatusVFailed CertificateRevocationStatus = 3
+	CertificateRevocationStatusVFailed CertificateRevocationStatus = "Failed"
 	// CertificateRevocationStatusVRevoked undocumented
-	CertificateRevocationStatusVRevoked CertificateRevocationStatus = 4
+	CertificateRevocationStatusVRevoked CertificateRevocationStatus = "Revoked"
 )
 
 // CertificateRevocationStatusPNone returns a pointer to CertificateRevocationStatusVNone

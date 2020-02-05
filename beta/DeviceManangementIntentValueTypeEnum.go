@@ -3,21 +3,21 @@
 package msgraph
 
 // DeviceManangementIntentValueType undocumented
-type DeviceManangementIntentValueType int
+type DeviceManangementIntentValueType string
 
 const (
 	// DeviceManangementIntentValueTypeVInteger undocumented
-	DeviceManangementIntentValueTypeVInteger DeviceManangementIntentValueType = 0
+	DeviceManangementIntentValueTypeVInteger DeviceManangementIntentValueType = "Integer"
 	// DeviceManangementIntentValueTypeVBoolean undocumented
-	DeviceManangementIntentValueTypeVBoolean DeviceManangementIntentValueType = 1
+	DeviceManangementIntentValueTypeVBoolean DeviceManangementIntentValueType = "Boolean"
 	// DeviceManangementIntentValueTypeVString undocumented
-	DeviceManangementIntentValueTypeVString DeviceManangementIntentValueType = 2
+	DeviceManangementIntentValueTypeVString DeviceManangementIntentValueType = "String"
 	// DeviceManangementIntentValueTypeVComplex undocumented
-	DeviceManangementIntentValueTypeVComplex DeviceManangementIntentValueType = 3
+	DeviceManangementIntentValueTypeVComplex DeviceManangementIntentValueType = "Complex"
 	// DeviceManangementIntentValueTypeVCollection undocumented
-	DeviceManangementIntentValueTypeVCollection DeviceManangementIntentValueType = 4
+	DeviceManangementIntentValueTypeVCollection DeviceManangementIntentValueType = "Collection"
 	// DeviceManangementIntentValueTypeVAbstractComplex undocumented
-	DeviceManangementIntentValueTypeVAbstractComplex DeviceManangementIntentValueType = 5
+	DeviceManangementIntentValueTypeVAbstractComplex DeviceManangementIntentValueType = "AbstractComplex"
 )
 
 // DeviceManangementIntentValueTypePInteger returns a pointer to DeviceManangementIntentValueTypeVInteger

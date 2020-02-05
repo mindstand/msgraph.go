@@ -3,13 +3,13 @@
 package msgraph
 
 // SelectionLikelihoodInfo undocumented
-type SelectionLikelihoodInfo int
+type SelectionLikelihoodInfo string
 
 const (
 	// SelectionLikelihoodInfoVNotSpecified undocumented
-	SelectionLikelihoodInfoVNotSpecified SelectionLikelihoodInfo = 0
+	SelectionLikelihoodInfoVNotSpecified SelectionLikelihoodInfo = "NotSpecified"
 	// SelectionLikelihoodInfoVHigh undocumented
-	SelectionLikelihoodInfoVHigh SelectionLikelihoodInfo = 1
+	SelectionLikelihoodInfoVHigh SelectionLikelihoodInfo = "High"
 )
 
 // SelectionLikelihoodInfoPNotSpecified returns a pointer to SelectionLikelihoodInfoVNotSpecified

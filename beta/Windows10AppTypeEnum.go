@@ -3,13 +3,13 @@
 package msgraph
 
 // Windows10AppType undocumented
-type Windows10AppType int
+type Windows10AppType string
 
 const (
 	// Windows10AppTypeVDesktop undocumented
-	Windows10AppTypeVDesktop Windows10AppType = 0
+	Windows10AppTypeVDesktop Windows10AppType = "Desktop"
 	// Windows10AppTypeVUniversal undocumented
-	Windows10AppTypeVUniversal Windows10AppType = 1
+	Windows10AppTypeVUniversal Windows10AppType = "Universal"
 )
 
 // Windows10AppTypePDesktop returns a pointer to Windows10AppTypeVDesktop

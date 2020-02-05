@@ -3,23 +3,23 @@
 package msgraph
 
 // ResultantAppState undocumented
-type ResultantAppState int
+type ResultantAppState string
 
 const (
 	// ResultantAppStateVInstalled undocumented
-	ResultantAppStateVInstalled ResultantAppState = 1
+	ResultantAppStateVInstalled ResultantAppState = "Installed"
 	// ResultantAppStateVFailed undocumented
-	ResultantAppStateVFailed ResultantAppState = 2
+	ResultantAppStateVFailed ResultantAppState = "Failed"
 	// ResultantAppStateVNotInstalled undocumented
-	ResultantAppStateVNotInstalled ResultantAppState = 3
+	ResultantAppStateVNotInstalled ResultantAppState = "NotInstalled"
 	// ResultantAppStateVUninstallFailed undocumented
-	ResultantAppStateVUninstallFailed ResultantAppState = 4
+	ResultantAppStateVUninstallFailed ResultantAppState = "UninstallFailed"
 	// ResultantAppStateVPendingInstall undocumented
-	ResultantAppStateVPendingInstall ResultantAppState = 5
+	ResultantAppStateVPendingInstall ResultantAppState = "PendingInstall"
 	// ResultantAppStateVUnknown undocumented
-	ResultantAppStateVUnknown ResultantAppState = 99
+	ResultantAppStateVUnknown ResultantAppState = "Unknown"
 	// ResultantAppStateVNotApplicable undocumented
-	ResultantAppStateVNotApplicable ResultantAppState = -1
+	ResultantAppStateVNotApplicable ResultantAppState = "NotApplicable"
 )
 
 // ResultantAppStatePInstalled returns a pointer to ResultantAppStateVInstalled

@@ -3,21 +3,21 @@
 package msgraph
 
 // ResponseType undocumented
-type ResponseType int
+type ResponseType string
 
 const (
 	// ResponseTypeVNone undocumented
-	ResponseTypeVNone ResponseType = 0
+	ResponseTypeVNone ResponseType = "None"
 	// ResponseTypeVOrganizer undocumented
-	ResponseTypeVOrganizer ResponseType = 1
+	ResponseTypeVOrganizer ResponseType = "Organizer"
 	// ResponseTypeVTentativelyAccepted undocumented
-	ResponseTypeVTentativelyAccepted ResponseType = 2
+	ResponseTypeVTentativelyAccepted ResponseType = "TentativelyAccepted"
 	// ResponseTypeVAccepted undocumented
-	ResponseTypeVAccepted ResponseType = 3
+	ResponseTypeVAccepted ResponseType = "Accepted"
 	// ResponseTypeVDeclined undocumented
-	ResponseTypeVDeclined ResponseType = 4
+	ResponseTypeVDeclined ResponseType = "Declined"
 	// ResponseTypeVNotResponded undocumented
-	ResponseTypeVNotResponded ResponseType = 5
+	ResponseTypeVNotResponded ResponseType = "NotResponded"
 )
 
 // ResponseTypePNone returns a pointer to ResponseTypeVNone

@@ -3,19 +3,19 @@
 package msgraph
 
 // Win32LobAppReturnCodeType undocumented
-type Win32LobAppReturnCodeType int
+type Win32LobAppReturnCodeType string
 
 const (
 	// Win32LobAppReturnCodeTypeVFailed undocumented
-	Win32LobAppReturnCodeTypeVFailed Win32LobAppReturnCodeType = 0
+	Win32LobAppReturnCodeTypeVFailed Win32LobAppReturnCodeType = "Failed"
 	// Win32LobAppReturnCodeTypeVSuccess undocumented
-	Win32LobAppReturnCodeTypeVSuccess Win32LobAppReturnCodeType = 1
+	Win32LobAppReturnCodeTypeVSuccess Win32LobAppReturnCodeType = "Success"
 	// Win32LobAppReturnCodeTypeVSoftReboot undocumented
-	Win32LobAppReturnCodeTypeVSoftReboot Win32LobAppReturnCodeType = 2
+	Win32LobAppReturnCodeTypeVSoftReboot Win32LobAppReturnCodeType = "SoftReboot"
 	// Win32LobAppReturnCodeTypeVHardReboot undocumented
-	Win32LobAppReturnCodeTypeVHardReboot Win32LobAppReturnCodeType = 3
+	Win32LobAppReturnCodeTypeVHardReboot Win32LobAppReturnCodeType = "HardReboot"
 	// Win32LobAppReturnCodeTypeVRetry undocumented
-	Win32LobAppReturnCodeTypeVRetry Win32LobAppReturnCodeType = 4
+	Win32LobAppReturnCodeTypeVRetry Win32LobAppReturnCodeType = "Retry"
 )
 
 // Win32LobAppReturnCodeTypePFailed returns a pointer to Win32LobAppReturnCodeTypeVFailed

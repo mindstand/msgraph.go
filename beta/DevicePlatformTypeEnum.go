@@ -3,27 +3,27 @@
 package msgraph
 
 // DevicePlatformType undocumented
-type DevicePlatformType int
+type DevicePlatformType string
 
 const (
 	// DevicePlatformTypeVAndroid undocumented
-	DevicePlatformTypeVAndroid DevicePlatformType = 0
+	DevicePlatformTypeVAndroid DevicePlatformType = "Android"
 	// DevicePlatformTypeVAndroidForWork undocumented
-	DevicePlatformTypeVAndroidForWork DevicePlatformType = 1
+	DevicePlatformTypeVAndroidForWork DevicePlatformType = "AndroidForWork"
 	// DevicePlatformTypeVIOS undocumented
-	DevicePlatformTypeVIOS DevicePlatformType = 2
+	DevicePlatformTypeVIOS DevicePlatformType = "IOS"
 	// DevicePlatformTypeVMacOS undocumented
-	DevicePlatformTypeVMacOS DevicePlatformType = 3
+	DevicePlatformTypeVMacOS DevicePlatformType = "MacOS"
 	// DevicePlatformTypeVWindowsPhone81 undocumented
-	DevicePlatformTypeVWindowsPhone81 DevicePlatformType = 4
+	DevicePlatformTypeVWindowsPhone81 DevicePlatformType = "WindowsPhone81"
 	// DevicePlatformTypeVWindows81AndLater undocumented
-	DevicePlatformTypeVWindows81AndLater DevicePlatformType = 5
+	DevicePlatformTypeVWindows81AndLater DevicePlatformType = "Windows81AndLater"
 	// DevicePlatformTypeVWindows10AndLater undocumented
-	DevicePlatformTypeVWindows10AndLater DevicePlatformType = 6
+	DevicePlatformTypeVWindows10AndLater DevicePlatformType = "Windows10AndLater"
 	// DevicePlatformTypeVAndroidWorkProfile undocumented
-	DevicePlatformTypeVAndroidWorkProfile DevicePlatformType = 7
+	DevicePlatformTypeVAndroidWorkProfile DevicePlatformType = "AndroidWorkProfile"
 	// DevicePlatformTypeVUnknown undocumented
-	DevicePlatformTypeVUnknown DevicePlatformType = 8
+	DevicePlatformTypeVUnknown DevicePlatformType = "Unknown"
 )
 
 // DevicePlatformTypePAndroid returns a pointer to DevicePlatformTypeVAndroid

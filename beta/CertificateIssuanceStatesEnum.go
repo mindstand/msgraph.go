@@ -3,55 +3,55 @@
 package msgraph
 
 // CertificateIssuanceStates undocumented
-type CertificateIssuanceStates int
+type CertificateIssuanceStates string
 
 const (
 	// CertificateIssuanceStatesVUnknown undocumented
-	CertificateIssuanceStatesVUnknown CertificateIssuanceStates = 0
+	CertificateIssuanceStatesVUnknown CertificateIssuanceStates = "Unknown"
 	// CertificateIssuanceStatesVChallengeIssued undocumented
-	CertificateIssuanceStatesVChallengeIssued CertificateIssuanceStates = 1
+	CertificateIssuanceStatesVChallengeIssued CertificateIssuanceStates = "ChallengeIssued"
 	// CertificateIssuanceStatesVChallengeIssueFailed undocumented
-	CertificateIssuanceStatesVChallengeIssueFailed CertificateIssuanceStates = 2
+	CertificateIssuanceStatesVChallengeIssueFailed CertificateIssuanceStates = "ChallengeIssueFailed"
 	// CertificateIssuanceStatesVRequestCreationFailed undocumented
-	CertificateIssuanceStatesVRequestCreationFailed CertificateIssuanceStates = 3
+	CertificateIssuanceStatesVRequestCreationFailed CertificateIssuanceStates = "RequestCreationFailed"
 	// CertificateIssuanceStatesVRequestSubmitFailed undocumented
-	CertificateIssuanceStatesVRequestSubmitFailed CertificateIssuanceStates = 4
+	CertificateIssuanceStatesVRequestSubmitFailed CertificateIssuanceStates = "RequestSubmitFailed"
 	// CertificateIssuanceStatesVChallengeValidationSucceeded undocumented
-	CertificateIssuanceStatesVChallengeValidationSucceeded CertificateIssuanceStates = 5
+	CertificateIssuanceStatesVChallengeValidationSucceeded CertificateIssuanceStates = "ChallengeValidationSucceeded"
 	// CertificateIssuanceStatesVChallengeValidationFailed undocumented
-	CertificateIssuanceStatesVChallengeValidationFailed CertificateIssuanceStates = 6
+	CertificateIssuanceStatesVChallengeValidationFailed CertificateIssuanceStates = "ChallengeValidationFailed"
 	// CertificateIssuanceStatesVIssueFailed undocumented
-	CertificateIssuanceStatesVIssueFailed CertificateIssuanceStates = 7
+	CertificateIssuanceStatesVIssueFailed CertificateIssuanceStates = "IssueFailed"
 	// CertificateIssuanceStatesVIssuePending undocumented
-	CertificateIssuanceStatesVIssuePending CertificateIssuanceStates = 8
+	CertificateIssuanceStatesVIssuePending CertificateIssuanceStates = "IssuePending"
 	// CertificateIssuanceStatesVIssued undocumented
-	CertificateIssuanceStatesVIssued CertificateIssuanceStates = 9
+	CertificateIssuanceStatesVIssued CertificateIssuanceStates = "Issued"
 	// CertificateIssuanceStatesVResponseProcessingFailed undocumented
-	CertificateIssuanceStatesVResponseProcessingFailed CertificateIssuanceStates = 10
+	CertificateIssuanceStatesVResponseProcessingFailed CertificateIssuanceStates = "ResponseProcessingFailed"
 	// CertificateIssuanceStatesVResponsePending undocumented
-	CertificateIssuanceStatesVResponsePending CertificateIssuanceStates = 11
+	CertificateIssuanceStatesVResponsePending CertificateIssuanceStates = "ResponsePending"
 	// CertificateIssuanceStatesVEnrollmentSucceeded undocumented
-	CertificateIssuanceStatesVEnrollmentSucceeded CertificateIssuanceStates = 12
+	CertificateIssuanceStatesVEnrollmentSucceeded CertificateIssuanceStates = "EnrollmentSucceeded"
 	// CertificateIssuanceStatesVEnrollmentNotNeeded undocumented
-	CertificateIssuanceStatesVEnrollmentNotNeeded CertificateIssuanceStates = 13
+	CertificateIssuanceStatesVEnrollmentNotNeeded CertificateIssuanceStates = "EnrollmentNotNeeded"
 	// CertificateIssuanceStatesVRevoked undocumented
-	CertificateIssuanceStatesVRevoked CertificateIssuanceStates = 14
+	CertificateIssuanceStatesVRevoked CertificateIssuanceStates = "Revoked"
 	// CertificateIssuanceStatesVRemovedFromCollection undocumented
-	CertificateIssuanceStatesVRemovedFromCollection CertificateIssuanceStates = 15
+	CertificateIssuanceStatesVRemovedFromCollection CertificateIssuanceStates = "RemovedFromCollection"
 	// CertificateIssuanceStatesVRenewVerified undocumented
-	CertificateIssuanceStatesVRenewVerified CertificateIssuanceStates = 16
+	CertificateIssuanceStatesVRenewVerified CertificateIssuanceStates = "RenewVerified"
 	// CertificateIssuanceStatesVInstallFailed undocumented
-	CertificateIssuanceStatesVInstallFailed CertificateIssuanceStates = 17
+	CertificateIssuanceStatesVInstallFailed CertificateIssuanceStates = "InstallFailed"
 	// CertificateIssuanceStatesVInstalled undocumented
-	CertificateIssuanceStatesVInstalled CertificateIssuanceStates = 18
+	CertificateIssuanceStatesVInstalled CertificateIssuanceStates = "Installed"
 	// CertificateIssuanceStatesVDeleteFailed undocumented
-	CertificateIssuanceStatesVDeleteFailed CertificateIssuanceStates = 19
+	CertificateIssuanceStatesVDeleteFailed CertificateIssuanceStates = "DeleteFailed"
 	// CertificateIssuanceStatesVDeleted undocumented
-	CertificateIssuanceStatesVDeleted CertificateIssuanceStates = 20
+	CertificateIssuanceStatesVDeleted CertificateIssuanceStates = "Deleted"
 	// CertificateIssuanceStatesVRenewalRequested undocumented
-	CertificateIssuanceStatesVRenewalRequested CertificateIssuanceStates = 21
+	CertificateIssuanceStatesVRenewalRequested CertificateIssuanceStates = "RenewalRequested"
 	// CertificateIssuanceStatesVRequested undocumented
-	CertificateIssuanceStatesVRequested CertificateIssuanceStates = 22
+	CertificateIssuanceStatesVRequested CertificateIssuanceStates = "Requested"
 )
 
 // CertificateIssuanceStatesPUnknown returns a pointer to CertificateIssuanceStatesVUnknown

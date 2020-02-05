@@ -3,25 +3,25 @@
 package msgraph
 
 // AllowedAudiences undocumented
-type AllowedAudiences int
+type AllowedAudiences string
 
 const (
 	// AllowedAudiencesVMe undocumented
-	AllowedAudiencesVMe AllowedAudiences = 0
+	AllowedAudiencesVMe AllowedAudiences = "Me"
 	// AllowedAudiencesVFamily undocumented
-	AllowedAudiencesVFamily AllowedAudiences = 1
+	AllowedAudiencesVFamily AllowedAudiences = "Family"
 	// AllowedAudiencesVContacts undocumented
-	AllowedAudiencesVContacts AllowedAudiences = 2
+	AllowedAudiencesVContacts AllowedAudiences = "Contacts"
 	// AllowedAudiencesVGroupMembers undocumented
-	AllowedAudiencesVGroupMembers AllowedAudiences = 4
+	AllowedAudiencesVGroupMembers AllowedAudiences = "GroupMembers"
 	// AllowedAudiencesVOrganization undocumented
-	AllowedAudiencesVOrganization AllowedAudiences = 8
+	AllowedAudiencesVOrganization AllowedAudiences = "Organization"
 	// AllowedAudiencesVFederatedOrganizations undocumented
-	AllowedAudiencesVFederatedOrganizations AllowedAudiences = 16
+	AllowedAudiencesVFederatedOrganizations AllowedAudiences = "FederatedOrganizations"
 	// AllowedAudiencesVEveryone undocumented
-	AllowedAudiencesVEveryone AllowedAudiences = 32
+	AllowedAudiencesVEveryone AllowedAudiences = "Everyone"
 	// AllowedAudiencesVUnknownFutureValue undocumented
-	AllowedAudiencesVUnknownFutureValue AllowedAudiences = 64
+	AllowedAudiencesVUnknownFutureValue AllowedAudiences = "UnknownFutureValue"
 )
 
 // AllowedAudiencesPMe returns a pointer to AllowedAudiencesVMe

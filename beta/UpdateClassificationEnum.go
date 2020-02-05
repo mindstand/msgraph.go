@@ -3,17 +3,17 @@
 package msgraph
 
 // UpdateClassification undocumented
-type UpdateClassification int
+type UpdateClassification string
 
 const (
 	// UpdateClassificationVUserDefined undocumented
-	UpdateClassificationVUserDefined UpdateClassification = 0
+	UpdateClassificationVUserDefined UpdateClassification = "UserDefined"
 	// UpdateClassificationVRecommendedAndImportant undocumented
-	UpdateClassificationVRecommendedAndImportant UpdateClassification = 1
+	UpdateClassificationVRecommendedAndImportant UpdateClassification = "RecommendedAndImportant"
 	// UpdateClassificationVImportant undocumented
-	UpdateClassificationVImportant UpdateClassification = 2
+	UpdateClassificationVImportant UpdateClassification = "Important"
 	// UpdateClassificationVNone undocumented
-	UpdateClassificationVNone UpdateClassification = 3
+	UpdateClassificationVNone UpdateClassification = "None"
 )
 
 // UpdateClassificationPUserDefined returns a pointer to UpdateClassificationVUserDefined

@@ -3,15 +3,15 @@
 package msgraph
 
 // ConfigurationUsage undocumented
-type ConfigurationUsage int
+type ConfigurationUsage string
 
 const (
 	// ConfigurationUsageVBlocked undocumented
-	ConfigurationUsageVBlocked ConfigurationUsage = 0
+	ConfigurationUsageVBlocked ConfigurationUsage = "Blocked"
 	// ConfigurationUsageVRequired undocumented
-	ConfigurationUsageVRequired ConfigurationUsage = 1
+	ConfigurationUsageVRequired ConfigurationUsage = "Required"
 	// ConfigurationUsageVAllowed undocumented
-	ConfigurationUsageVAllowed ConfigurationUsage = 2
+	ConfigurationUsageVAllowed ConfigurationUsage = "Allowed"
 )
 
 // ConfigurationUsagePBlocked returns a pointer to ConfigurationUsageVBlocked

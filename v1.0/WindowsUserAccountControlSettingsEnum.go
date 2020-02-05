@@ -3,19 +3,19 @@
 package msgraph
 
 // WindowsUserAccountControlSettings undocumented
-type WindowsUserAccountControlSettings int
+type WindowsUserAccountControlSettings string
 
 const (
 	// WindowsUserAccountControlSettingsVUserDefined undocumented
-	WindowsUserAccountControlSettingsVUserDefined WindowsUserAccountControlSettings = 0
+	WindowsUserAccountControlSettingsVUserDefined WindowsUserAccountControlSettings = "UserDefined"
 	// WindowsUserAccountControlSettingsVAlwaysNotify undocumented
-	WindowsUserAccountControlSettingsVAlwaysNotify WindowsUserAccountControlSettings = 1
+	WindowsUserAccountControlSettingsVAlwaysNotify WindowsUserAccountControlSettings = "AlwaysNotify"
 	// WindowsUserAccountControlSettingsVNotifyOnAppChanges undocumented
-	WindowsUserAccountControlSettingsVNotifyOnAppChanges WindowsUserAccountControlSettings = 2
+	WindowsUserAccountControlSettingsVNotifyOnAppChanges WindowsUserAccountControlSettings = "NotifyOnAppChanges"
 	// WindowsUserAccountControlSettingsVNotifyOnAppChangesWithoutDimming undocumented
-	WindowsUserAccountControlSettingsVNotifyOnAppChangesWithoutDimming WindowsUserAccountControlSettings = 3
+	WindowsUserAccountControlSettingsVNotifyOnAppChangesWithoutDimming WindowsUserAccountControlSettings = "NotifyOnAppChangesWithoutDimming"
 	// WindowsUserAccountControlSettingsVNeverNotify undocumented
-	WindowsUserAccountControlSettingsVNeverNotify WindowsUserAccountControlSettings = 4
+	WindowsUserAccountControlSettingsVNeverNotify WindowsUserAccountControlSettings = "NeverNotify"
 )
 
 // WindowsUserAccountControlSettingsPUserDefined returns a pointer to WindowsUserAccountControlSettingsVUserDefined

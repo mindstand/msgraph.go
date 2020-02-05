@@ -3,21 +3,21 @@
 package msgraph
 
 // VpnEncryptionAlgorithmType undocumented
-type VpnEncryptionAlgorithmType int
+type VpnEncryptionAlgorithmType string
 
 const (
 	// VpnEncryptionAlgorithmTypeVAes256 undocumented
-	VpnEncryptionAlgorithmTypeVAes256 VpnEncryptionAlgorithmType = 0
+	VpnEncryptionAlgorithmTypeVAes256 VpnEncryptionAlgorithmType = "Aes256"
 	// VpnEncryptionAlgorithmTypeVDes undocumented
-	VpnEncryptionAlgorithmTypeVDes VpnEncryptionAlgorithmType = 1
+	VpnEncryptionAlgorithmTypeVDes VpnEncryptionAlgorithmType = "Des"
 	// VpnEncryptionAlgorithmTypeVTripleDes undocumented
-	VpnEncryptionAlgorithmTypeVTripleDes VpnEncryptionAlgorithmType = 2
+	VpnEncryptionAlgorithmTypeVTripleDes VpnEncryptionAlgorithmType = "TripleDes"
 	// VpnEncryptionAlgorithmTypeVAes128 undocumented
-	VpnEncryptionAlgorithmTypeVAes128 VpnEncryptionAlgorithmType = 3
+	VpnEncryptionAlgorithmTypeVAes128 VpnEncryptionAlgorithmType = "Aes128"
 	// VpnEncryptionAlgorithmTypeVAes128Gcm undocumented
-	VpnEncryptionAlgorithmTypeVAes128Gcm VpnEncryptionAlgorithmType = 4
+	VpnEncryptionAlgorithmTypeVAes128Gcm VpnEncryptionAlgorithmType = "Aes128Gcm"
 	// VpnEncryptionAlgorithmTypeVAes256Gcm undocumented
-	VpnEncryptionAlgorithmTypeVAes256Gcm VpnEncryptionAlgorithmType = 5
+	VpnEncryptionAlgorithmTypeVAes256Gcm VpnEncryptionAlgorithmType = "Aes256Gcm"
 )
 
 // VpnEncryptionAlgorithmTypePAes256 returns a pointer to VpnEncryptionAlgorithmTypeVAes256

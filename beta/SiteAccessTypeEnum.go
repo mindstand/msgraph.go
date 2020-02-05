@@ -3,15 +3,15 @@
 package msgraph
 
 // SiteAccessType undocumented
-type SiteAccessType int
+type SiteAccessType string
 
 const (
 	// SiteAccessTypeVBlock undocumented
-	SiteAccessTypeVBlock SiteAccessType = 0
+	SiteAccessTypeVBlock SiteAccessType = "Block"
 	// SiteAccessTypeVFull undocumented
-	SiteAccessTypeVFull SiteAccessType = 1
+	SiteAccessTypeVFull SiteAccessType = "Full"
 	// SiteAccessTypeVLimited undocumented
-	SiteAccessTypeVLimited SiteAccessType = 2
+	SiteAccessTypeVLimited SiteAccessType = "Limited"
 )
 
 // SiteAccessTypePBlock returns a pointer to SiteAccessTypeVBlock

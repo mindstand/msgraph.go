@@ -3,25 +3,25 @@
 package msgraph
 
 // FileHashType undocumented
-type FileHashType int
+type FileHashType string
 
 const (
 	// FileHashTypeVUnknown undocumented
-	FileHashTypeVUnknown FileHashType = 0
+	FileHashTypeVUnknown FileHashType = "Unknown"
 	// FileHashTypeVSha1 undocumented
-	FileHashTypeVSha1 FileHashType = 1
+	FileHashTypeVSha1 FileHashType = "Sha1"
 	// FileHashTypeVSha256 undocumented
-	FileHashTypeVSha256 FileHashType = 2
+	FileHashTypeVSha256 FileHashType = "Sha256"
 	// FileHashTypeVMd5 undocumented
-	FileHashTypeVMd5 FileHashType = 3
+	FileHashTypeVMd5 FileHashType = "Md5"
 	// FileHashTypeVAuthenticodeHash256 undocumented
-	FileHashTypeVAuthenticodeHash256 FileHashType = 4
+	FileHashTypeVAuthenticodeHash256 FileHashType = "AuthenticodeHash256"
 	// FileHashTypeVLsHash undocumented
-	FileHashTypeVLsHash FileHashType = 5
+	FileHashTypeVLsHash FileHashType = "LsHash"
 	// FileHashTypeVCtph undocumented
-	FileHashTypeVCtph FileHashType = 6
+	FileHashTypeVCtph FileHashType = "Ctph"
 	// FileHashTypeVUnknownFutureValue undocumented
-	FileHashTypeVUnknownFutureValue FileHashType = 127
+	FileHashTypeVUnknownFutureValue FileHashType = "UnknownFutureValue"
 )
 
 // FileHashTypePUnknown returns a pointer to FileHashTypeVUnknown

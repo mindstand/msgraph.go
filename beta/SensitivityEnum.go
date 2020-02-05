@@ -3,17 +3,17 @@
 package msgraph
 
 // Sensitivity undocumented
-type Sensitivity int
+type Sensitivity string
 
 const (
 	// SensitivityVNormal undocumented
-	SensitivityVNormal Sensitivity = 0
+	SensitivityVNormal Sensitivity = "Normal"
 	// SensitivityVPersonal undocumented
-	SensitivityVPersonal Sensitivity = 1
+	SensitivityVPersonal Sensitivity = "Personal"
 	// SensitivityVPrivate undocumented
-	SensitivityVPrivate Sensitivity = 2
+	SensitivityVPrivate Sensitivity = "Private"
 	// SensitivityVConfidential undocumented
-	SensitivityVConfidential Sensitivity = 3
+	SensitivityVConfidential Sensitivity = "Confidential"
 )
 
 // SensitivityPNormal returns a pointer to SensitivityVNormal

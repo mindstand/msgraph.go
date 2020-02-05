@@ -3,21 +3,21 @@
 package msgraph
 
 // SecurityBaselineComplianceState undocumented
-type SecurityBaselineComplianceState int
+type SecurityBaselineComplianceState string
 
 const (
 	// SecurityBaselineComplianceStateVUnknown undocumented
-	SecurityBaselineComplianceStateVUnknown SecurityBaselineComplianceState = 0
+	SecurityBaselineComplianceStateVUnknown SecurityBaselineComplianceState = "Unknown"
 	// SecurityBaselineComplianceStateVSecure undocumented
-	SecurityBaselineComplianceStateVSecure SecurityBaselineComplianceState = 1
+	SecurityBaselineComplianceStateVSecure SecurityBaselineComplianceState = "Secure"
 	// SecurityBaselineComplianceStateVNotApplicable undocumented
-	SecurityBaselineComplianceStateVNotApplicable SecurityBaselineComplianceState = 2
+	SecurityBaselineComplianceStateVNotApplicable SecurityBaselineComplianceState = "NotApplicable"
 	// SecurityBaselineComplianceStateVNotSecure undocumented
-	SecurityBaselineComplianceStateVNotSecure SecurityBaselineComplianceState = 3
+	SecurityBaselineComplianceStateVNotSecure SecurityBaselineComplianceState = "NotSecure"
 	// SecurityBaselineComplianceStateVError undocumented
-	SecurityBaselineComplianceStateVError SecurityBaselineComplianceState = 4
+	SecurityBaselineComplianceStateVError SecurityBaselineComplianceState = "Error"
 	// SecurityBaselineComplianceStateVConflict undocumented
-	SecurityBaselineComplianceStateVConflict SecurityBaselineComplianceState = 5
+	SecurityBaselineComplianceStateVConflict SecurityBaselineComplianceState = "Conflict"
 )
 
 // SecurityBaselineComplianceStatePUnknown returns a pointer to SecurityBaselineComplianceStateVUnknown

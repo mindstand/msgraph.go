@@ -3,15 +3,15 @@
 package msgraph
 
 // MicrosoftEdgeChannel undocumented
-type MicrosoftEdgeChannel int
+type MicrosoftEdgeChannel string
 
 const (
 	// MicrosoftEdgeChannelVDev undocumented
-	MicrosoftEdgeChannelVDev MicrosoftEdgeChannel = 0
+	MicrosoftEdgeChannelVDev MicrosoftEdgeChannel = "Dev"
 	// MicrosoftEdgeChannelVBeta undocumented
-	MicrosoftEdgeChannelVBeta MicrosoftEdgeChannel = 1
+	MicrosoftEdgeChannelVBeta MicrosoftEdgeChannel = "Beta"
 	// MicrosoftEdgeChannelVStable undocumented
-	MicrosoftEdgeChannelVStable MicrosoftEdgeChannel = 2
+	MicrosoftEdgeChannelVStable MicrosoftEdgeChannel = "Stable"
 )
 
 // MicrosoftEdgeChannelPDev returns a pointer to MicrosoftEdgeChannelVDev

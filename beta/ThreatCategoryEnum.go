@@ -3,17 +3,17 @@
 package msgraph
 
 // ThreatCategory undocumented
-type ThreatCategory int
+type ThreatCategory string
 
 const (
 	// ThreatCategoryVSpam undocumented
-	ThreatCategoryVSpam ThreatCategory = 1
+	ThreatCategoryVSpam ThreatCategory = "Spam"
 	// ThreatCategoryVPhishing undocumented
-	ThreatCategoryVPhishing ThreatCategory = 2
+	ThreatCategoryVPhishing ThreatCategory = "Phishing"
 	// ThreatCategoryVMalware undocumented
-	ThreatCategoryVMalware ThreatCategory = 3
+	ThreatCategoryVMalware ThreatCategory = "Malware"
 	// ThreatCategoryVUnknownFutureValue undocumented
-	ThreatCategoryVUnknownFutureValue ThreatCategory = 4
+	ThreatCategoryVUnknownFutureValue ThreatCategory = "UnknownFutureValue"
 )
 
 // ThreatCategoryPSpam returns a pointer to ThreatCategoryVSpam
