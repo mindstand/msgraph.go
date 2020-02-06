@@ -14,12 +14,6 @@ func (b *MacOSVpnConfigurationRequestBuilder) Request() *MacOSVpnConfigurationRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MacOSVpnConfigurationRequestBuilder) Delta() *MacOSVpnConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MacOSVpnConfigurationRequest is request for MacOSVpnConfiguration
 type MacOSVpnConfigurationRequest struct{ BaseRequest }
 

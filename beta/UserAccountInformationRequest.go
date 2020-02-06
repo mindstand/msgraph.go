@@ -14,12 +14,6 @@ func (b *UserAccountInformationRequestBuilder) Request() *UserAccountInformation
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserAccountInformationRequestBuilder) Delta() *UserAccountInformationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserAccountInformationRequest is request for UserAccountInformation
 type UserAccountInformationRequest struct{ BaseRequest }
 

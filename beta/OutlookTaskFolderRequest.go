@@ -21,12 +21,6 @@ func (b *OutlookTaskFolderRequestBuilder) Request() *OutlookTaskFolderRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OutlookTaskFolderRequestBuilder) Delta() *OutlookTaskFolderRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OutlookTaskFolderRequest is request for OutlookTaskFolder
 type OutlookTaskFolderRequest struct{ BaseRequest }
 

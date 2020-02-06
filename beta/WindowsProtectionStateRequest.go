@@ -21,12 +21,6 @@ func (b *WindowsProtectionStateRequestBuilder) Request() *WindowsProtectionState
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsProtectionStateRequestBuilder) Delta() *WindowsProtectionStateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsProtectionStateRequest is request for WindowsProtectionState
 type WindowsProtectionStateRequest struct{ BaseRequest }
 

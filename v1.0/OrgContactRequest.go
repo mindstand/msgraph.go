@@ -21,12 +21,6 @@ func (b *OrgContactRequestBuilder) Request() *OrgContactRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OrgContactRequestBuilder) Delta() *OrgContactRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OrgContactRequest is request for OrgContact
 type OrgContactRequest struct{ BaseRequest }
 

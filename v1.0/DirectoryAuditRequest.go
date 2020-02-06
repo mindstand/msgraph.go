@@ -14,12 +14,6 @@ func (b *DirectoryAuditRequestBuilder) Request() *DirectoryAuditRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DirectoryAuditRequestBuilder) Delta() *DirectoryAuditRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DirectoryAuditRequest is request for DirectoryAudit
 type DirectoryAuditRequest struct{ BaseRequest }
 

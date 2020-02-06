@@ -14,12 +14,6 @@ func (b *WorkbookFunctionsRequestBuilder) Request() *WorkbookFunctionsRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookFunctionsRequestBuilder) Delta() *WorkbookFunctionsRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookFunctionsRequest is request for WorkbookFunctions
 type WorkbookFunctionsRequest struct{ BaseRequest }
 

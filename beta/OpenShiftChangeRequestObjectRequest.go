@@ -14,12 +14,6 @@ func (b *OpenShiftChangeRequestObjectRequestBuilder) Request() *OpenShiftChangeR
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OpenShiftChangeRequestObjectRequestBuilder) Delta() *OpenShiftChangeRequestObjectRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OpenShiftChangeRequestObjectRequest is request for OpenShiftChangeRequestObject
 type OpenShiftChangeRequestObjectRequest struct{ BaseRequest }
 

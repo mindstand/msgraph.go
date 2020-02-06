@@ -21,12 +21,6 @@ func (b *UserInstallStateSummaryRequestBuilder) Request() *UserInstallStateSumma
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserInstallStateSummaryRequestBuilder) Delta() *UserInstallStateSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserInstallStateSummaryRequest is request for UserInstallStateSummary
 type UserInstallStateSummaryRequest struct{ BaseRequest }
 

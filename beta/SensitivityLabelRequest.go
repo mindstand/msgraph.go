@@ -21,12 +21,6 @@ func (b *SensitivityLabelRequestBuilder) Request() *SensitivityLabelRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SensitivityLabelRequestBuilder) Delta() *SensitivityLabelRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SensitivityLabelRequest is request for SensitivityLabel
 type SensitivityLabelRequest struct{ BaseRequest }
 

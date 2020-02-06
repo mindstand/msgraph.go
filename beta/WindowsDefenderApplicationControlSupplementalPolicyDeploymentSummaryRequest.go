@@ -14,12 +14,6 @@ func (b *WindowsDefenderApplicationControlSupplementalPolicyDeploymentSummaryReq
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsDefenderApplicationControlSupplementalPolicyDeploymentSummaryRequestBuilder) Delta() *WindowsDefenderApplicationControlSupplementalPolicyDeploymentSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsDefenderApplicationControlSupplementalPolicyDeploymentSummaryRequest is request for WindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 type WindowsDefenderApplicationControlSupplementalPolicyDeploymentSummaryRequest struct{ BaseRequest }
 

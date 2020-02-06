@@ -14,12 +14,6 @@ func (b *TiIndicatorRequestBuilder) Request() *TiIndicatorRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TiIndicatorRequestBuilder) Delta() *TiIndicatorRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TiIndicatorRequest is request for TiIndicator
 type TiIndicatorRequest struct{ BaseRequest }
 

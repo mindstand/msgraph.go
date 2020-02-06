@@ -21,12 +21,6 @@ func (b *ContentTypeRequestBuilder) Request() *ContentTypeRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ContentTypeRequestBuilder) Delta() *ContentTypeRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ContentTypeRequest is request for ContentType
 type ContentTypeRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *ActivityHistoryItemRequestBuilder) Request() *ActivityHistoryItemReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ActivityHistoryItemRequestBuilder) Delta() *ActivityHistoryItemRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ActivityHistoryItemRequest is request for ActivityHistoryItem
 type ActivityHistoryItemRequest struct{ BaseRequest }
 

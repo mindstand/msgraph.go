@@ -21,12 +21,6 @@ func (b *WindowsInformationProtectionRequestBuilder) Request() *WindowsInformati
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsInformationProtectionRequestBuilder) Delta() *WindowsInformationProtectionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsInformationProtectionRequest is request for WindowsInformationProtection
 type WindowsInformationProtectionRequest struct{ BaseRequest }
 

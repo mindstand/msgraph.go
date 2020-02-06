@@ -21,12 +21,6 @@ func (b *DocumentRequestBuilder) Request() *DocumentRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DocumentRequestBuilder) Delta() *DocumentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DocumentRequest is request for Document
 type DocumentRequest struct{ BaseRequest }
 

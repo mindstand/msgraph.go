@@ -14,12 +14,6 @@ func (b *RemoteAssistancePartnerRequestBuilder) Request() *RemoteAssistancePartn
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RemoteAssistancePartnerRequestBuilder) Delta() *RemoteAssistancePartnerRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RemoteAssistancePartnerRequest is request for RemoteAssistancePartner
 type RemoteAssistancePartnerRequest struct{ BaseRequest }
 

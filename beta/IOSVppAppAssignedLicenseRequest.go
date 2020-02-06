@@ -14,12 +14,6 @@ func (b *IOSVppAppAssignedLicenseRequestBuilder) Request() *IOSVppAppAssignedLic
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IOSVppAppAssignedLicenseRequestBuilder) Delta() *IOSVppAppAssignedLicenseRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IOSVppAppAssignedLicenseRequest is request for IOSVppAppAssignedLicense
 type IOSVppAppAssignedLicenseRequest struct{ BaseRequest }
 

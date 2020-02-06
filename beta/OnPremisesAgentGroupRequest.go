@@ -21,12 +21,6 @@ func (b *OnPremisesAgentGroupRequestBuilder) Request() *OnPremisesAgentGroupRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OnPremisesAgentGroupRequestBuilder) Delta() *OnPremisesAgentGroupRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OnPremisesAgentGroupRequest is request for OnPremisesAgentGroup
 type OnPremisesAgentGroupRequest struct{ BaseRequest }
 

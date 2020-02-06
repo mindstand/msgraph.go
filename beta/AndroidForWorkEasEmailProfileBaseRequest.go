@@ -14,12 +14,6 @@ func (b *AndroidForWorkEasEmailProfileBaseRequestBuilder) Request() *AndroidForW
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidForWorkEasEmailProfileBaseRequestBuilder) Delta() *AndroidForWorkEasEmailProfileBaseRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidForWorkEasEmailProfileBaseRequest is request for AndroidForWorkEasEmailProfileBase
 type AndroidForWorkEasEmailProfileBaseRequest struct{ BaseRequest }
 

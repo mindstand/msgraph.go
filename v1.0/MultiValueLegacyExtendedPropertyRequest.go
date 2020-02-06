@@ -14,12 +14,6 @@ func (b *MultiValueLegacyExtendedPropertyRequestBuilder) Request() *MultiValueLe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MultiValueLegacyExtendedPropertyRequestBuilder) Delta() *MultiValueLegacyExtendedPropertyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MultiValueLegacyExtendedPropertyRequest is request for MultiValueLegacyExtendedProperty
 type MultiValueLegacyExtendedPropertyRequest struct{ BaseRequest }
 

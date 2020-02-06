@@ -14,12 +14,6 @@ func (b *DomainDNSRecordRequestBuilder) Request() *DomainDNSRecordRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DomainDNSRecordRequestBuilder) Delta() *DomainDNSRecordRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DomainDNSRecordRequest is request for DomainDNSRecord
 type DomainDNSRecordRequest struct{ BaseRequest }
 

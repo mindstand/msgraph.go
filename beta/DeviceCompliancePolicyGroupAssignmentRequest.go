@@ -14,12 +14,6 @@ func (b *DeviceCompliancePolicyGroupAssignmentRequestBuilder) Request() *DeviceC
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceCompliancePolicyGroupAssignmentRequestBuilder) Delta() *DeviceCompliancePolicyGroupAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceCompliancePolicyGroupAssignmentRequest is request for DeviceCompliancePolicyGroupAssignment
 type DeviceCompliancePolicyGroupAssignmentRequest struct{ BaseRequest }
 

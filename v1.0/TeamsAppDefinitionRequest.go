@@ -14,12 +14,6 @@ func (b *TeamsAppDefinitionRequestBuilder) Request() *TeamsAppDefinitionRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TeamsAppDefinitionRequestBuilder) Delta() *TeamsAppDefinitionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TeamsAppDefinitionRequest is request for TeamsAppDefinition
 type TeamsAppDefinitionRequest struct{ BaseRequest }
 

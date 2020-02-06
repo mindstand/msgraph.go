@@ -14,12 +14,6 @@ func (b *WorkbookChartGridlinesFormatRequestBuilder) Request() *WorkbookChartGri
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookChartGridlinesFormatRequestBuilder) Delta() *WorkbookChartGridlinesFormatRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookChartGridlinesFormatRequest is request for WorkbookChartGridlinesFormat
 type WorkbookChartGridlinesFormatRequest struct{ BaseRequest }
 

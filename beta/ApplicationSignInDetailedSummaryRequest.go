@@ -14,12 +14,6 @@ func (b *ApplicationSignInDetailedSummaryRequestBuilder) Request() *ApplicationS
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ApplicationSignInDetailedSummaryRequestBuilder) Delta() *ApplicationSignInDetailedSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ApplicationSignInDetailedSummaryRequest is request for ApplicationSignInDetailedSummary
 type ApplicationSignInDetailedSummaryRequest struct{ BaseRequest }
 

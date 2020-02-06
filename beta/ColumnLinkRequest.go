@@ -14,12 +14,6 @@ func (b *ColumnLinkRequestBuilder) Request() *ColumnLinkRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ColumnLinkRequestBuilder) Delta() *ColumnLinkRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ColumnLinkRequest is request for ColumnLink
 type ColumnLinkRequest struct{ BaseRequest }
 

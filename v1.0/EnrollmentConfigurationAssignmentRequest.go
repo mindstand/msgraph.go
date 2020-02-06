@@ -14,12 +14,6 @@ func (b *EnrollmentConfigurationAssignmentRequestBuilder) Request() *EnrollmentC
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *EnrollmentConfigurationAssignmentRequestBuilder) Delta() *EnrollmentConfigurationAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // EnrollmentConfigurationAssignmentRequest is request for EnrollmentConfigurationAssignment
 type EnrollmentConfigurationAssignmentRequest struct{ BaseRequest }
 

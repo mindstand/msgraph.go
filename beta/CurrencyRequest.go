@@ -14,12 +14,6 @@ func (b *CurrencyRequestBuilder) Request() *CurrencyRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CurrencyRequestBuilder) Delta() *CurrencyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CurrencyRequest is request for Currency
 type CurrencyRequest struct{ BaseRequest }
 

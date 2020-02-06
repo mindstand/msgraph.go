@@ -14,12 +14,6 @@ func (b *PictureRequestBuilder) Request() *PictureRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PictureRequestBuilder) Delta() *PictureRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PictureRequest is request for Picture
 type PictureRequest struct{ BaseRequest }
 

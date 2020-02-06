@@ -21,12 +21,6 @@ func (b *PrivilegedAccessRequestBuilder) Request() *PrivilegedAccessRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PrivilegedAccessRequestBuilder) Delta() *PrivilegedAccessRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PrivilegedAccessRequest is request for PrivilegedAccess
 type PrivilegedAccessRequest struct{ BaseRequest }
 

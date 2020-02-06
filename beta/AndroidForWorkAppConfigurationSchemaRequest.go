@@ -14,12 +14,6 @@ func (b *AndroidForWorkAppConfigurationSchemaRequestBuilder) Request() *AndroidF
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidForWorkAppConfigurationSchemaRequestBuilder) Delta() *AndroidForWorkAppConfigurationSchemaRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidForWorkAppConfigurationSchemaRequest is request for AndroidForWorkAppConfigurationSchema
 type AndroidForWorkAppConfigurationSchemaRequest struct{ BaseRequest }
 

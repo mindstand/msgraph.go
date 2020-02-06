@@ -14,12 +14,6 @@ func (b *PrivilegedRoleSummaryRequestBuilder) Request() *PrivilegedRoleSummaryRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PrivilegedRoleSummaryRequestBuilder) Delta() *PrivilegedRoleSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PrivilegedRoleSummaryRequest is request for PrivilegedRoleSummary
 type PrivilegedRoleSummaryRequest struct{ BaseRequest }
 

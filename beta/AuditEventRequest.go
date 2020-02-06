@@ -14,12 +14,6 @@ func (b *AuditEventRequestBuilder) Request() *AuditEventRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AuditEventRequestBuilder) Delta() *AuditEventRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AuditEventRequest is request for AuditEvent
 type AuditEventRequest struct{ BaseRequest }
 

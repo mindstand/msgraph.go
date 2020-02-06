@@ -14,12 +14,6 @@ func (b *CustomerPaymentRequestBuilder) Request() *CustomerPaymentRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CustomerPaymentRequestBuilder) Delta() *CustomerPaymentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CustomerPaymentRequest is request for CustomerPayment
 type CustomerPaymentRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *TeamsAsyncOperationRequestBuilder) Request() *TeamsAsyncOperationReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TeamsAsyncOperationRequestBuilder) Delta() *TeamsAsyncOperationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TeamsAsyncOperationRequest is request for TeamsAsyncOperation
 type TeamsAsyncOperationRequest struct{ BaseRequest }
 

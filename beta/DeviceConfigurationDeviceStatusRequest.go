@@ -14,12 +14,6 @@ func (b *DeviceConfigurationDeviceStatusRequestBuilder) Request() *DeviceConfigu
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceConfigurationDeviceStatusRequestBuilder) Delta() *DeviceConfigurationDeviceStatusRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceConfigurationDeviceStatusRequest is request for DeviceConfigurationDeviceStatus
 type DeviceConfigurationDeviceStatusRequest struct{ BaseRequest }
 

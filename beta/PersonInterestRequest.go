@@ -14,12 +14,6 @@ func (b *PersonInterestRequestBuilder) Request() *PersonInterestRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PersonInterestRequestBuilder) Delta() *PersonInterestRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PersonInterestRequest is request for PersonInterest
 type PersonInterestRequest struct{ BaseRequest }
 

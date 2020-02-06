@@ -21,12 +21,6 @@ func (b *OfficeConfigurationRequestBuilder) Request() *OfficeConfigurationReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OfficeConfigurationRequestBuilder) Delta() *OfficeConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OfficeConfigurationRequest is request for OfficeConfiguration
 type OfficeConfigurationRequest struct{ BaseRequest }
 

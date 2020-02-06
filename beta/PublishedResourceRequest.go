@@ -21,12 +21,6 @@ func (b *PublishedResourceRequestBuilder) Request() *PublishedResourceRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PublishedResourceRequestBuilder) Delta() *PublishedResourceRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PublishedResourceRequest is request for PublishedResource
 type PublishedResourceRequest struct{ BaseRequest }
 

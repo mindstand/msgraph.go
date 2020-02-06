@@ -14,12 +14,6 @@ func (b *AccessPackageAssignmentRequestObjectRequestBuilder) Request() *AccessPa
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AccessPackageAssignmentRequestObjectRequestBuilder) Delta() *AccessPackageAssignmentRequestObjectRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AccessPackageAssignmentRequestObjectRequest is request for AccessPackageAssignmentRequestObject
 type AccessPackageAssignmentRequestObjectRequest struct{ BaseRequest }
 

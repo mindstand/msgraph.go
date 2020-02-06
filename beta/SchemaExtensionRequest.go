@@ -14,12 +14,6 @@ func (b *SchemaExtensionRequestBuilder) Request() *SchemaExtensionRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SchemaExtensionRequestBuilder) Delta() *SchemaExtensionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SchemaExtensionRequest is request for SchemaExtension
 type SchemaExtensionRequest struct{ BaseRequest }
 

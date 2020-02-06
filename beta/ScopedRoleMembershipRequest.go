@@ -14,12 +14,6 @@ func (b *ScopedRoleMembershipRequestBuilder) Request() *ScopedRoleMembershipRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ScopedRoleMembershipRequestBuilder) Delta() *ScopedRoleMembershipRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ScopedRoleMembershipRequest is request for ScopedRoleMembership
 type ScopedRoleMembershipRequest struct{ BaseRequest }
 

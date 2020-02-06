@@ -14,12 +14,6 @@ func (b *TrustFrameworkPolicyRequestBuilder) Request() *TrustFrameworkPolicyRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TrustFrameworkPolicyRequestBuilder) Delta() *TrustFrameworkPolicyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TrustFrameworkPolicyRequest is request for TrustFrameworkPolicy
 type TrustFrameworkPolicyRequest struct{ BaseRequest }
 

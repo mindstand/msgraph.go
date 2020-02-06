@@ -14,12 +14,6 @@ func (b *OnPremisesConditionalAccessSettingsRequestBuilder) Request() *OnPremise
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OnPremisesConditionalAccessSettingsRequestBuilder) Delta() *OnPremisesConditionalAccessSettingsRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OnPremisesConditionalAccessSettingsRequest is request for OnPremisesConditionalAccessSettings
 type OnPremisesConditionalAccessSettingsRequest struct{ BaseRequest }
 

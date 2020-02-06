@@ -21,12 +21,6 @@ func (b *SecurityBaselineTemplateRequestBuilder) Request() *SecurityBaselineTemp
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SecurityBaselineTemplateRequestBuilder) Delta() *SecurityBaselineTemplateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SecurityBaselineTemplateRequest is request for SecurityBaselineTemplate
 type SecurityBaselineTemplateRequest struct{ BaseRequest }
 

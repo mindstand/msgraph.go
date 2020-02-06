@@ -14,12 +14,6 @@ func (b *WindowsPrivacyDataAccessControlItemRequestBuilder) Request() *WindowsPr
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsPrivacyDataAccessControlItemRequestBuilder) Delta() *WindowsPrivacyDataAccessControlItemRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsPrivacyDataAccessControlItemRequest is request for WindowsPrivacyDataAccessControlItem
 type WindowsPrivacyDataAccessControlItemRequest struct{ BaseRequest }
 

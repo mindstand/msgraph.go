@@ -14,12 +14,6 @@ func (b *RemoteActionAuditRequestBuilder) Request() *RemoteActionAuditRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RemoteActionAuditRequestBuilder) Delta() *RemoteActionAuditRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RemoteActionAuditRequest is request for RemoteActionAudit
 type RemoteActionAuditRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *ItemAttachmentRequestBuilder) Request() *ItemAttachmentRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ItemAttachmentRequestBuilder) Delta() *ItemAttachmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ItemAttachmentRequest is request for ItemAttachment
 type ItemAttachmentRequest struct{ BaseRequest }
 

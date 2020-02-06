@@ -21,12 +21,6 @@ func (b *RoleScopeTagRequestBuilder) Request() *RoleScopeTagRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RoleScopeTagRequestBuilder) Delta() *RoleScopeTagRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RoleScopeTagRequest is request for RoleScopeTag
 type RoleScopeTagRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *ExactMatchSessionRequestBuilder) Request() *ExactMatchSessionRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ExactMatchSessionRequestBuilder) Delta() *ExactMatchSessionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ExactMatchSessionRequest is request for ExactMatchSession
 type ExactMatchSessionRequest struct{ BaseRequest }
 

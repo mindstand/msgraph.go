@@ -21,12 +21,6 @@ func (b *UserRequestBuilder) Request() *UserRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserRequestBuilder) Delta() *UserRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserRequest is request for User
 type UserRequest struct{ BaseRequest }
 

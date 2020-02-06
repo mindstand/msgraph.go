@@ -14,12 +14,6 @@ func (b *WorkbookChartLegendRequestBuilder) Request() *WorkbookChartLegendReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookChartLegendRequestBuilder) Delta() *WorkbookChartLegendRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookChartLegendRequest is request for WorkbookChartLegend
 type WorkbookChartLegendRequest struct{ BaseRequest }
 

@@ -21,12 +21,6 @@ func (b *ContactFolderRequestBuilder) Request() *ContactFolderRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ContactFolderRequestBuilder) Delta() *ContactFolderRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ContactFolderRequest is request for ContactFolder
 type ContactFolderRequest struct{ BaseRequest }
 

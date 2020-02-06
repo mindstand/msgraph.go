@@ -14,12 +14,6 @@ func (b *LocalizedNotificationMessageRequestBuilder) Request() *LocalizedNotific
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *LocalizedNotificationMessageRequestBuilder) Delta() *LocalizedNotificationMessageRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // LocalizedNotificationMessageRequest is request for LocalizedNotificationMessage
 type LocalizedNotificationMessageRequest struct{ BaseRequest }
 

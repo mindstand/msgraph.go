@@ -14,12 +14,6 @@ func (b *AndroidForWorkEnterpriseWiFiConfigurationRequestBuilder) Request() *And
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidForWorkEnterpriseWiFiConfigurationRequestBuilder) Delta() *AndroidForWorkEnterpriseWiFiConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidForWorkEnterpriseWiFiConfigurationRequest is request for AndroidForWorkEnterpriseWiFiConfiguration
 type AndroidForWorkEnterpriseWiFiConfigurationRequest struct{ BaseRequest }
 

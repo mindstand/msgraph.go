@@ -21,12 +21,6 @@ func (b *WindowsManagementAppRequestBuilder) Request() *WindowsManagementAppRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsManagementAppRequestBuilder) Delta() *WindowsManagementAppRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsManagementAppRequest is request for WindowsManagementApp
 type WindowsManagementAppRequest struct{ BaseRequest }
 

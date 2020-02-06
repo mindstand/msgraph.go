@@ -14,12 +14,6 @@ func (b *DirectorySettingRequestBuilder) Request() *DirectorySettingRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DirectorySettingRequestBuilder) Delta() *DirectorySettingRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DirectorySettingRequest is request for DirectorySetting
 type DirectorySettingRequest struct{ BaseRequest }
 

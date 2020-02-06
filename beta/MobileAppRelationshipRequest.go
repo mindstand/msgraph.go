@@ -14,12 +14,6 @@ func (b *MobileAppRelationshipRequestBuilder) Request() *MobileAppRelationshipRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MobileAppRelationshipRequestBuilder) Delta() *MobileAppRelationshipRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MobileAppRelationshipRequest is request for MobileAppRelationship
 type MobileAppRelationshipRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *WorkbookChartPointRequestBuilder) Request() *WorkbookChartPointRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookChartPointRequestBuilder) Delta() *WorkbookChartPointRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookChartPointRequest is request for WorkbookChartPoint
 type WorkbookChartPointRequest struct{ BaseRequest }
 

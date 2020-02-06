@@ -14,12 +14,6 @@ func (b *ResourceSpecificPermissionGrantRequestBuilder) Request() *ResourceSpeci
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ResourceSpecificPermissionGrantRequestBuilder) Delta() *ResourceSpecificPermissionGrantRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ResourceSpecificPermissionGrantRequest is request for ResourceSpecificPermissionGrant
 type ResourceSpecificPermissionGrantRequest struct{ BaseRequest }
 

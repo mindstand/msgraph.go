@@ -14,12 +14,6 @@ func (b *AudioRoutingGroupRequestBuilder) Request() *AudioRoutingGroupRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AudioRoutingGroupRequestBuilder) Delta() *AudioRoutingGroupRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AudioRoutingGroupRequest is request for AudioRoutingGroup
 type AudioRoutingGroupRequest struct{ BaseRequest }
 

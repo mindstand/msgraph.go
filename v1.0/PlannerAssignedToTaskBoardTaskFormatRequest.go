@@ -14,12 +14,6 @@ func (b *PlannerAssignedToTaskBoardTaskFormatRequestBuilder) Request() *PlannerA
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PlannerAssignedToTaskBoardTaskFormatRequestBuilder) Delta() *PlannerAssignedToTaskBoardTaskFormatRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PlannerAssignedToTaskBoardTaskFormatRequest is request for PlannerAssignedToTaskBoardTaskFormat
 type PlannerAssignedToTaskBoardTaskFormatRequest struct{ BaseRequest }
 

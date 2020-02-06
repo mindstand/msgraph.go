@@ -14,12 +14,6 @@ func (b *AnonymousIPRiskEventRequestBuilder) Request() *AnonymousIPRiskEventRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AnonymousIPRiskEventRequestBuilder) Delta() *AnonymousIPRiskEventRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AnonymousIPRiskEventRequest is request for AnonymousIPRiskEvent
 type AnonymousIPRiskEventRequest struct{ BaseRequest }
 

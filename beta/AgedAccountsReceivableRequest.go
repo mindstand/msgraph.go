@@ -14,12 +14,6 @@ func (b *AgedAccountsReceivableRequestBuilder) Request() *AgedAccountsReceivable
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AgedAccountsReceivableRequestBuilder) Delta() *AgedAccountsReceivableRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AgedAccountsReceivableRequest is request for AgedAccountsReceivable
 type AgedAccountsReceivableRequest struct{ BaseRequest }
 

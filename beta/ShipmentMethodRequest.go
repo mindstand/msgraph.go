@@ -14,12 +14,6 @@ func (b *ShipmentMethodRequestBuilder) Request() *ShipmentMethodRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ShipmentMethodRequestBuilder) Delta() *ShipmentMethodRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ShipmentMethodRequest is request for ShipmentMethod
 type ShipmentMethodRequest struct{ BaseRequest }
 

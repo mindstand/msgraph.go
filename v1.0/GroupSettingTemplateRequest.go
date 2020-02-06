@@ -14,12 +14,6 @@ func (b *GroupSettingTemplateRequestBuilder) Request() *GroupSettingTemplateRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *GroupSettingTemplateRequestBuilder) Delta() *GroupSettingTemplateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // GroupSettingTemplateRequest is request for GroupSettingTemplate
 type GroupSettingTemplateRequest struct{ BaseRequest }
 

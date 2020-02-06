@@ -21,12 +21,6 @@ func (b *AndroidDeviceOwnerScepCertificateProfileRequestBuilder) Request() *Andr
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidDeviceOwnerScepCertificateProfileRequestBuilder) Delta() *AndroidDeviceOwnerScepCertificateProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidDeviceOwnerScepCertificateProfileRequest is request for AndroidDeviceOwnerScepCertificateProfile
 type AndroidDeviceOwnerScepCertificateProfileRequest struct{ BaseRequest }
 

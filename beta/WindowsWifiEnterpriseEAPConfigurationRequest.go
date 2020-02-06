@@ -21,12 +21,6 @@ func (b *WindowsWifiEnterpriseEAPConfigurationRequestBuilder) Request() *Windows
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsWifiEnterpriseEAPConfigurationRequestBuilder) Delta() *WindowsWifiEnterpriseEAPConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsWifiEnterpriseEAPConfigurationRequest is request for WindowsWifiEnterpriseEAPConfiguration
 type WindowsWifiEnterpriseEAPConfigurationRequest struct{ BaseRequest }
 

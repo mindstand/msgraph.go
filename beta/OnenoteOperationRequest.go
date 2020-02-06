@@ -14,12 +14,6 @@ func (b *OnenoteOperationRequestBuilder) Request() *OnenoteOperationRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OnenoteOperationRequestBuilder) Delta() *OnenoteOperationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OnenoteOperationRequest is request for OnenoteOperation
 type OnenoteOperationRequest struct{ BaseRequest }
 

@@ -21,12 +21,6 @@ func (b *IOSManagedAppProtectionRequestBuilder) Request() *IOSManagedAppProtecti
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IOSManagedAppProtectionRequestBuilder) Delta() *IOSManagedAppProtectionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IOSManagedAppProtectionRequest is request for IOSManagedAppProtection
 type IOSManagedAppProtectionRequest struct{ BaseRequest }
 

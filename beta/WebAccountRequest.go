@@ -14,12 +14,6 @@ func (b *WebAccountRequestBuilder) Request() *WebAccountRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WebAccountRequestBuilder) Delta() *WebAccountRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WebAccountRequest is request for WebAccount
 type WebAccountRequest struct{ BaseRequest }
 

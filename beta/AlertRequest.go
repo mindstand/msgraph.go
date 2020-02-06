@@ -14,12 +14,6 @@ func (b *AlertRequestBuilder) Request() *AlertRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AlertRequestBuilder) Delta() *AlertRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AlertRequest is request for Alert
 type AlertRequest struct{ BaseRequest }
 

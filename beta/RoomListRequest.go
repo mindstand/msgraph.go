@@ -21,12 +21,6 @@ func (b *RoomListRequestBuilder) Request() *RoomListRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RoomListRequestBuilder) Delta() *RoomListRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RoomListRequest is request for RoomList
 type RoomListRequest struct{ BaseRequest }
 

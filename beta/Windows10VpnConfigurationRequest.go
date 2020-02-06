@@ -14,12 +14,6 @@ func (b *Windows10VpnConfigurationRequestBuilder) Request() *Windows10VpnConfigu
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *Windows10VpnConfigurationRequestBuilder) Delta() *Windows10VpnConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // Windows10VpnConfigurationRequest is request for Windows10VpnConfiguration
 type Windows10VpnConfigurationRequest struct{ BaseRequest }
 

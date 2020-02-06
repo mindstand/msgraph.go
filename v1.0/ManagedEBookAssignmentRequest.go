@@ -14,12 +14,6 @@ func (b *ManagedEBookAssignmentRequestBuilder) Request() *ManagedEBookAssignment
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ManagedEBookAssignmentRequestBuilder) Delta() *ManagedEBookAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ManagedEBookAssignmentRequest is request for ManagedEBookAssignment
 type ManagedEBookAssignmentRequest struct{ BaseRequest }
 

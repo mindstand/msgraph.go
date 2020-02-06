@@ -21,12 +21,6 @@ func (b *CallRequestBuilder) Request() *CallRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CallRequestBuilder) Delta() *CallRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CallRequest is request for Call
 type CallRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *WorkbookFormatProtectionRequestBuilder) Request() *WorkbookFormatProtec
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookFormatProtectionRequestBuilder) Delta() *WorkbookFormatProtectionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookFormatProtectionRequest is request for WorkbookFormatProtection
 type WorkbookFormatProtectionRequest struct{ BaseRequest }
 

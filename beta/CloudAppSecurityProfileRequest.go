@@ -14,12 +14,6 @@ func (b *CloudAppSecurityProfileRequestBuilder) Request() *CloudAppSecurityProfi
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CloudAppSecurityProfileRequestBuilder) Delta() *CloudAppSecurityProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CloudAppSecurityProfileRequest is request for CloudAppSecurityProfile
 type CloudAppSecurityProfileRequest struct{ BaseRequest }
 

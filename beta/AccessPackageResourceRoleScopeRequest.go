@@ -14,12 +14,6 @@ func (b *AccessPackageResourceRoleScopeRequestBuilder) Request() *AccessPackageR
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AccessPackageResourceRoleScopeRequestBuilder) Delta() *AccessPackageResourceRoleScopeRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AccessPackageResourceRoleScopeRequest is request for AccessPackageResourceRoleScope
 type AccessPackageResourceRoleScopeRequest struct{ BaseRequest }
 

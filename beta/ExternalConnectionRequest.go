@@ -21,12 +21,6 @@ func (b *ExternalConnectionRequestBuilder) Request() *ExternalConnectionRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ExternalConnectionRequestBuilder) Delta() *ExternalConnectionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ExternalConnectionRequest is request for ExternalConnection
 type ExternalConnectionRequest struct{ BaseRequest }
 

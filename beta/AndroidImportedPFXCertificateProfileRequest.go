@@ -21,12 +21,6 @@ func (b *AndroidImportedPFXCertificateProfileRequestBuilder) Request() *AndroidI
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidImportedPFXCertificateProfileRequestBuilder) Delta() *AndroidImportedPFXCertificateProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidImportedPFXCertificateProfileRequest is request for AndroidImportedPFXCertificateProfile
 type AndroidImportedPFXCertificateProfileRequest struct{ BaseRequest }
 

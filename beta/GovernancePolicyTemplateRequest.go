@@ -14,12 +14,6 @@ func (b *GovernancePolicyTemplateRequestBuilder) Request() *GovernancePolicyTemp
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *GovernancePolicyTemplateRequestBuilder) Delta() *GovernancePolicyTemplateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // GovernancePolicyTemplateRequest is request for GovernancePolicyTemplate
 type GovernancePolicyTemplateRequest struct{ BaseRequest }
 

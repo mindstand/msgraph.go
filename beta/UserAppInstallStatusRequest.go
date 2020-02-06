@@ -21,12 +21,6 @@ func (b *UserAppInstallStatusRequestBuilder) Request() *UserAppInstallStatusRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserAppInstallStatusRequestBuilder) Delta() *UserAppInstallStatusRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserAppInstallStatusRequest is request for UserAppInstallStatus
 type UserAppInstallStatusRequest struct{ BaseRequest }
 

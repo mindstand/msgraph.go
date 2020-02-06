@@ -14,12 +14,6 @@ func (b *FileClassificationRequestObjectRequestBuilder) Request() *FileClassific
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *FileClassificationRequestObjectRequestBuilder) Delta() *FileClassificationRequestObjectRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // FileClassificationRequestObjectRequest is request for FileClassificationRequestObject
 type FileClassificationRequestObjectRequest struct{ BaseRequest }
 

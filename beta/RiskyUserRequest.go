@@ -21,12 +21,6 @@ func (b *RiskyUserRequestBuilder) Request() *RiskyUserRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RiskyUserRequestBuilder) Delta() *RiskyUserRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RiskyUserRequest is request for RiskyUser
 type RiskyUserRequest struct{ BaseRequest }
 

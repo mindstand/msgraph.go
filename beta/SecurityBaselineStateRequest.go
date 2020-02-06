@@ -21,12 +21,6 @@ func (b *SecurityBaselineStateRequestBuilder) Request() *SecurityBaselineStateRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SecurityBaselineStateRequestBuilder) Delta() *SecurityBaselineStateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SecurityBaselineStateRequest is request for SecurityBaselineState
 type SecurityBaselineStateRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *RoleManagementRequestBuilder) Request() *RoleManagementRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RoleManagementRequestBuilder) Delta() *RoleManagementRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RoleManagementRequest is request for RoleManagement
 type RoleManagementRequest struct{ BaseRequest }
 

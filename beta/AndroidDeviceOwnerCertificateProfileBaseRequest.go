@@ -14,12 +14,6 @@ func (b *AndroidDeviceOwnerCertificateProfileBaseRequestBuilder) Request() *Andr
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidDeviceOwnerCertificateProfileBaseRequestBuilder) Delta() *AndroidDeviceOwnerCertificateProfileBaseRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidDeviceOwnerCertificateProfileBaseRequest is request for AndroidDeviceOwnerCertificateProfileBase
 type AndroidDeviceOwnerCertificateProfileBaseRequest struct{ BaseRequest }
 

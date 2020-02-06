@@ -14,12 +14,6 @@ func (b *IOSEasEmailProfileConfigurationRequestBuilder) Request() *IOSEasEmailPr
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IOSEasEmailProfileConfigurationRequestBuilder) Delta() *IOSEasEmailProfileConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IOSEasEmailProfileConfigurationRequest is request for IOSEasEmailProfileConfiguration
 type IOSEasEmailProfileConfigurationRequest struct{ BaseRequest }
 

@@ -21,12 +21,6 @@ func (b *ChatMessageRequestBuilder) Request() *ChatMessageRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ChatMessageRequestBuilder) Delta() *ChatMessageRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ChatMessageRequest is request for ChatMessage
 type ChatMessageRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *UserCredentialUsageDetailsRequestBuilder) Request() *UserCredentialUsag
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserCredentialUsageDetailsRequestBuilder) Delta() *UserCredentialUsageDetailsRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserCredentialUsageDetailsRequest is request for UserCredentialUsageDetails
 type UserCredentialUsageDetailsRequest struct{ BaseRequest }
 

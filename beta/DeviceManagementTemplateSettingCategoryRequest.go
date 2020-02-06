@@ -21,12 +21,6 @@ func (b *DeviceManagementTemplateSettingCategoryRequestBuilder) Request() *Devic
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceManagementTemplateSettingCategoryRequestBuilder) Delta() *DeviceManagementTemplateSettingCategoryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceManagementTemplateSettingCategoryRequest is request for DeviceManagementTemplateSettingCategory
 type DeviceManagementTemplateSettingCategoryRequest struct{ BaseRequest }
 

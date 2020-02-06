@@ -21,12 +21,6 @@ func (b *DeviceCompliancePolicySettingStateSummaryRequestBuilder) Request() *Dev
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceCompliancePolicySettingStateSummaryRequestBuilder) Delta() *DeviceCompliancePolicySettingStateSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceCompliancePolicySettingStateSummaryRequest is request for DeviceCompliancePolicySettingStateSummary
 type DeviceCompliancePolicySettingStateSummaryRequest struct{ BaseRequest }
 

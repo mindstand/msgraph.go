@@ -14,12 +14,6 @@ func (b *TrendingRequestBuilder) Request() *TrendingRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TrendingRequestBuilder) Delta() *TrendingRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TrendingRequest is request for Trending
 type TrendingRequest struct{ BaseRequest }
 

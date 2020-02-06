@@ -14,12 +14,6 @@ func (b *UnitOfMeasureRequestBuilder) Request() *UnitOfMeasureRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UnitOfMeasureRequestBuilder) Delta() *UnitOfMeasureRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UnitOfMeasureRequest is request for UnitOfMeasure
 type UnitOfMeasureRequest struct{ BaseRequest }
 

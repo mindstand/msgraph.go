@@ -14,12 +14,6 @@ func (b *SalesCreditMemoLineRequestBuilder) Request() *SalesCreditMemoLineReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SalesCreditMemoLineRequestBuilder) Delta() *SalesCreditMemoLineRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SalesCreditMemoLineRequest is request for SalesCreditMemoLine
 type SalesCreditMemoLineRequest struct{ BaseRequest }
 

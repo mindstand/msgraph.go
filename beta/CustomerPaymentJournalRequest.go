@@ -21,12 +21,6 @@ func (b *CustomerPaymentJournalRequestBuilder) Request() *CustomerPaymentJournal
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CustomerPaymentJournalRequestBuilder) Delta() *CustomerPaymentJournalRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CustomerPaymentJournalRequest is request for CustomerPaymentJournal
 type CustomerPaymentJournalRequest struct{ BaseRequest }
 

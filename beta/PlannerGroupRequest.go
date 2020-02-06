@@ -21,12 +21,6 @@ func (b *PlannerGroupRequestBuilder) Request() *PlannerGroupRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PlannerGroupRequestBuilder) Delta() *PlannerGroupRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PlannerGroupRequest is request for PlannerGroup
 type PlannerGroupRequest struct{ BaseRequest }
 

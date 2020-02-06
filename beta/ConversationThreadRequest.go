@@ -21,12 +21,6 @@ func (b *ConversationThreadRequestBuilder) Request() *ConversationThreadRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ConversationThreadRequestBuilder) Delta() *ConversationThreadRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ConversationThreadRequest is request for ConversationThread
 type ConversationThreadRequest struct{ BaseRequest }
 

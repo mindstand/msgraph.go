@@ -21,12 +21,6 @@ func (b *PrivilegedRoleRequestBuilder) Request() *PrivilegedRoleRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PrivilegedRoleRequestBuilder) Delta() *PrivilegedRoleRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PrivilegedRoleRequest is request for PrivilegedRole
 type PrivilegedRoleRequest struct{ BaseRequest }
 

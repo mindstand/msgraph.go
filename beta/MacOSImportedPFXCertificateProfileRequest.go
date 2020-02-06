@@ -21,12 +21,6 @@ func (b *MacOSImportedPFXCertificateProfileRequestBuilder) Request() *MacOSImpor
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MacOSImportedPFXCertificateProfileRequestBuilder) Delta() *MacOSImportedPFXCertificateProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MacOSImportedPFXCertificateProfileRequest is request for MacOSImportedPFXCertificateProfile
 type MacOSImportedPFXCertificateProfileRequest struct{ BaseRequest }
 

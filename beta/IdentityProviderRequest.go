@@ -14,12 +14,6 @@ func (b *IdentityProviderRequestBuilder) Request() *IdentityProviderRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IdentityProviderRequestBuilder) Delta() *IdentityProviderRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IdentityProviderRequest is request for IdentityProvider
 type IdentityProviderRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *NotificationRequestBuilder) Request() *NotificationRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *NotificationRequestBuilder) Delta() *NotificationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // NotificationRequest is request for Notification
 type NotificationRequest struct{ BaseRequest }
 

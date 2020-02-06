@@ -14,12 +14,6 @@ func (b *RestrictedSignInRequestBuilder) Request() *RestrictedSignInRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RestrictedSignInRequestBuilder) Delta() *RestrictedSignInRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RestrictedSignInRequest is request for RestrictedSignIn
 type RestrictedSignInRequest struct{ BaseRequest }
 

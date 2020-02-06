@@ -14,12 +14,6 @@ func (b *ConditionalAccessPolicyRequestBuilder) Request() *ConditionalAccessPoli
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ConditionalAccessPolicyRequestBuilder) Delta() *ConditionalAccessPolicyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ConditionalAccessPolicyRequest is request for ConditionalAccessPolicy
 type ConditionalAccessPolicyRequest struct{ BaseRequest }
 

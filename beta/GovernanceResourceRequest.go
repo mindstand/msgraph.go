@@ -21,12 +21,6 @@ func (b *GovernanceResourceRequestBuilder) Request() *GovernanceResourceRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *GovernanceResourceRequestBuilder) Delta() *GovernanceResourceRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // GovernanceResourceRequest is request for GovernanceResource
 type GovernanceResourceRequest struct{ BaseRequest }
 

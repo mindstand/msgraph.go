@@ -14,12 +14,6 @@ func (b *OnenotePageRequestBuilder) Request() *OnenotePageRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *OnenotePageRequestBuilder) Delta() *OnenotePageRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // OnenotePageRequest is request for OnenotePage
 type OnenotePageRequest struct{ BaseRequest }
 

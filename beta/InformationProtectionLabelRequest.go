@@ -14,12 +14,6 @@ func (b *InformationProtectionLabelRequestBuilder) Request() *InformationProtect
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *InformationProtectionLabelRequestBuilder) Delta() *InformationProtectionLabelRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // InformationProtectionLabelRequest is request for InformationProtectionLabel
 type InformationProtectionLabelRequest struct{ BaseRequest }
 

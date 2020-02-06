@@ -14,12 +14,6 @@ func (b *TaxAreaRequestBuilder) Request() *TaxAreaRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TaxAreaRequestBuilder) Delta() *TaxAreaRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TaxAreaRequest is request for TaxArea
 type TaxAreaRequest struct{ BaseRequest }
 

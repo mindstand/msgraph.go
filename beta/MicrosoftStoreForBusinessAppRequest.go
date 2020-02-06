@@ -21,12 +21,6 @@ func (b *MicrosoftStoreForBusinessAppRequestBuilder) Request() *MicrosoftStoreFo
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MicrosoftStoreForBusinessAppRequestBuilder) Delta() *MicrosoftStoreForBusinessAppRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MicrosoftStoreForBusinessAppRequest is request for MicrosoftStoreForBusinessApp
 type MicrosoftStoreForBusinessAppRequest struct{ BaseRequest }
 

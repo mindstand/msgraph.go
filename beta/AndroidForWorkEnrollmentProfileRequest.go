@@ -14,12 +14,6 @@ func (b *AndroidForWorkEnrollmentProfileRequestBuilder) Request() *AndroidForWor
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidForWorkEnrollmentProfileRequestBuilder) Delta() *AndroidForWorkEnrollmentProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidForWorkEnrollmentProfileRequest is request for AndroidForWorkEnrollmentProfile
 type AndroidForWorkEnrollmentProfileRequest struct{ BaseRequest }
 

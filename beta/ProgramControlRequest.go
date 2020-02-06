@@ -14,12 +14,6 @@ func (b *ProgramControlRequestBuilder) Request() *ProgramControlRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ProgramControlRequestBuilder) Delta() *ProgramControlRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ProgramControlRequest is request for ProgramControl
 type ProgramControlRequest struct{ BaseRequest }
 

@@ -21,12 +21,6 @@ func (b *WindowsAutopilotDeploymentProfileRequestBuilder) Request() *WindowsAuto
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsAutopilotDeploymentProfileRequestBuilder) Delta() *WindowsAutopilotDeploymentProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsAutopilotDeploymentProfileRequest is request for WindowsAutopilotDeploymentProfile
 type WindowsAutopilotDeploymentProfileRequest struct{ BaseRequest }
 

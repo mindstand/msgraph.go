@@ -14,12 +14,6 @@ func (b *BusinessFlowTemplateRequestBuilder) Request() *BusinessFlowTemplateRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *BusinessFlowTemplateRequestBuilder) Delta() *BusinessFlowTemplateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // BusinessFlowTemplateRequest is request for BusinessFlowTemplate
 type BusinessFlowTemplateRequest struct{ BaseRequest }
 

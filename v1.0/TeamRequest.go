@@ -21,12 +21,6 @@ func (b *TeamRequestBuilder) Request() *TeamRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TeamRequestBuilder) Delta() *TeamRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TeamRequest is request for Team
 type TeamRequest struct{ BaseRequest }
 

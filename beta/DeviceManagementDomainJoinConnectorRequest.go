@@ -14,12 +14,6 @@ func (b *DeviceManagementDomainJoinConnectorRequestBuilder) Request() *DeviceMan
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceManagementDomainJoinConnectorRequestBuilder) Delta() *DeviceManagementDomainJoinConnectorRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceManagementDomainJoinConnectorRequest is request for DeviceManagementDomainJoinConnector
 type DeviceManagementDomainJoinConnectorRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *JournalLineRequestBuilder) Request() *JournalLineRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *JournalLineRequestBuilder) Delta() *JournalLineRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // JournalLineRequest is request for JournalLine
 type JournalLineRequest struct{ BaseRequest }
 

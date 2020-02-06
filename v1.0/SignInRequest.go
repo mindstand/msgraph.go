@@ -14,12 +14,6 @@ func (b *SignInRequestBuilder) Request() *SignInRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SignInRequestBuilder) Delta() *SignInRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SignInRequest is request for SignIn
 type SignInRequest struct{ BaseRequest }
 

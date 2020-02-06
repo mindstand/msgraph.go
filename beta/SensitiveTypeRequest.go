@@ -14,12 +14,6 @@ func (b *SensitiveTypeRequestBuilder) Request() *SensitiveTypeRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SensitiveTypeRequestBuilder) Delta() *SensitiveTypeRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SensitiveTypeRequest is request for SensitiveType
 type SensitiveTypeRequest struct{ BaseRequest }
 

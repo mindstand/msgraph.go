@@ -14,12 +14,6 @@ func (b *CalendarPermissionRequestBuilder) Request() *CalendarPermissionRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CalendarPermissionRequestBuilder) Delta() *CalendarPermissionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CalendarPermissionRequest is request for CalendarPermission
 type CalendarPermissionRequest struct{ BaseRequest }
 

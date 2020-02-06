@@ -21,12 +21,6 @@ func (b *ItemAnalyticsRequestBuilder) Request() *ItemAnalyticsRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ItemAnalyticsRequestBuilder) Delta() *ItemAnalyticsRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ItemAnalyticsRequest is request for ItemAnalytics
 type ItemAnalyticsRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *ResourceOperationRequestBuilder) Request() *ResourceOperationRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ResourceOperationRequestBuilder) Delta() *ResourceOperationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ResourceOperationRequest is request for ResourceOperation
 type ResourceOperationRequest struct{ BaseRequest }
 

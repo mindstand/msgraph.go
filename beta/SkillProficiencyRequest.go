@@ -14,12 +14,6 @@ func (b *SkillProficiencyRequestBuilder) Request() *SkillProficiencyRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SkillProficiencyRequestBuilder) Delta() *SkillProficiencyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SkillProficiencyRequest is request for SkillProficiency
 type SkillProficiencyRequest struct{ BaseRequest }
 

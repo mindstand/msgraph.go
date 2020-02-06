@@ -14,12 +14,6 @@ func (b *ColumnDefinitionRequestBuilder) Request() *ColumnDefinitionRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ColumnDefinitionRequestBuilder) Delta() *ColumnDefinitionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ColumnDefinitionRequest is request for ColumnDefinition
 type ColumnDefinitionRequest struct{ BaseRequest }
 

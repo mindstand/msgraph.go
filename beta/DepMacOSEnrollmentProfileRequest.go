@@ -14,12 +14,6 @@ func (b *DepMacOSEnrollmentProfileRequestBuilder) Request() *DepMacOSEnrollmentP
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DepMacOSEnrollmentProfileRequestBuilder) Delta() *DepMacOSEnrollmentProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DepMacOSEnrollmentProfileRequest is request for DepMacOSEnrollmentProfile
 type DepMacOSEnrollmentProfileRequest struct{ BaseRequest }
 

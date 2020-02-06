@@ -14,12 +14,6 @@ func (b *MacOSWiredNetworkConfigurationRequestBuilder) Request() *MacOSWiredNetw
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MacOSWiredNetworkConfigurationRequestBuilder) Delta() *MacOSWiredNetworkConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MacOSWiredNetworkConfigurationRequest is request for MacOSWiredNetworkConfiguration
 type MacOSWiredNetworkConfigurationRequest struct{ BaseRequest }
 

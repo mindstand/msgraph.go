@@ -14,12 +14,6 @@ func (b *PlaceRequestBuilder) Request() *PlaceRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PlaceRequestBuilder) Delta() *PlaceRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PlaceRequest is request for Place
 type PlaceRequest struct{ BaseRequest }
 

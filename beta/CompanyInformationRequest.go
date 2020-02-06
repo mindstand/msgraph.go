@@ -14,12 +14,6 @@ func (b *CompanyInformationRequestBuilder) Request() *CompanyInformationRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *CompanyInformationRequestBuilder) Delta() *CompanyInformationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // CompanyInformationRequest is request for CompanyInformation
 type CompanyInformationRequest struct{ BaseRequest }
 

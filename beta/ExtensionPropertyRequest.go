@@ -14,12 +14,6 @@ func (b *ExtensionPropertyRequestBuilder) Request() *ExtensionPropertyRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ExtensionPropertyRequestBuilder) Delta() *ExtensionPropertyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ExtensionPropertyRequest is request for ExtensionProperty
 type ExtensionPropertyRequest struct{ BaseRequest }
 

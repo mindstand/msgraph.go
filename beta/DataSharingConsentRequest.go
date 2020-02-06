@@ -14,12 +14,6 @@ func (b *DataSharingConsentRequestBuilder) Request() *DataSharingConsentRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DataSharingConsentRequestBuilder) Delta() *DataSharingConsentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DataSharingConsentRequest is request for DataSharingConsent
 type DataSharingConsentRequest struct{ BaseRequest }
 

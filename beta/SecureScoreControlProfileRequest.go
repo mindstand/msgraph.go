@@ -14,12 +14,6 @@ func (b *SecureScoreControlProfileRequestBuilder) Request() *SecureScoreControlP
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SecureScoreControlProfileRequestBuilder) Delta() *SecureScoreControlProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SecureScoreControlProfileRequest is request for SecureScoreControlProfile
 type SecureScoreControlProfileRequest struct{ BaseRequest }
 

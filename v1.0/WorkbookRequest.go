@@ -21,12 +21,6 @@ func (b *WorkbookRequestBuilder) Request() *WorkbookRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookRequestBuilder) Delta() *WorkbookRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookRequest is request for Workbook
 type WorkbookRequest struct{ BaseRequest }
 

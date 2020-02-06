@@ -21,12 +21,6 @@ func (b *DeviceManagementIntentSettingCategoryRequestBuilder) Request() *DeviceM
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceManagementIntentSettingCategoryRequestBuilder) Delta() *DeviceManagementIntentSettingCategoryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceManagementIntentSettingCategoryRequest is request for DeviceManagementIntentSettingCategory
 type DeviceManagementIntentSettingCategoryRequest struct{ BaseRequest }
 

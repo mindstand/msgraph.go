@@ -21,12 +21,6 @@ func (b *ServicePrincipalRequestBuilder) Request() *ServicePrincipalRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ServicePrincipalRequestBuilder) Delta() *ServicePrincipalRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ServicePrincipalRequest is request for ServicePrincipal
 type ServicePrincipalRequest struct{ BaseRequest }
 

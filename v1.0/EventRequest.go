@@ -21,12 +21,6 @@ func (b *EventRequestBuilder) Request() *EventRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *EventRequestBuilder) Delta() *EventRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // EventRequest is request for Event
 type EventRequest struct{ BaseRequest }
 

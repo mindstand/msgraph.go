@@ -14,12 +14,6 @@ func (b *UserExperienceAnalyticsDeviceStartupHistoryRequestBuilder) Request() *U
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserExperienceAnalyticsDeviceStartupHistoryRequestBuilder) Delta() *UserExperienceAnalyticsDeviceStartupHistoryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserExperienceAnalyticsDeviceStartupHistoryRequest is request for UserExperienceAnalyticsDeviceStartupHistory
 type UserExperienceAnalyticsDeviceStartupHistoryRequest struct{ BaseRequest }
 

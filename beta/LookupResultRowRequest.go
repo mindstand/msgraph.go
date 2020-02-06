@@ -14,12 +14,6 @@ func (b *LookupResultRowRequestBuilder) Request() *LookupResultRowRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *LookupResultRowRequestBuilder) Delta() *LookupResultRowRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // LookupResultRowRequest is request for LookupResultRow
 type LookupResultRowRequest struct{ BaseRequest }
 

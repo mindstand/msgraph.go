@@ -14,12 +14,6 @@ func (b *PrivilegedOperationEventRequestBuilder) Request() *PrivilegedOperationE
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PrivilegedOperationEventRequestBuilder) Delta() *PrivilegedOperationEventRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PrivilegedOperationEventRequest is request for PrivilegedOperationEvent
 type PrivilegedOperationEventRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *WorkbookChartFontRequestBuilder) Request() *WorkbookChartFontRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookChartFontRequestBuilder) Delta() *WorkbookChartFontRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookChartFontRequest is request for WorkbookChartFont
 type WorkbookChartFontRequest struct{ BaseRequest }
 

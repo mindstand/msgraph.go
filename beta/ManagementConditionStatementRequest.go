@@ -21,12 +21,6 @@ func (b *ManagementConditionStatementRequestBuilder) Request() *ManagementCondit
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ManagementConditionStatementRequestBuilder) Delta() *ManagementConditionStatementRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ManagementConditionStatementRequest is request for ManagementConditionStatement
 type ManagementConditionStatementRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *SharedInsightRequestBuilder) Request() *SharedInsightRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SharedInsightRequestBuilder) Delta() *SharedInsightRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SharedInsightRequest is request for SharedInsight
 type SharedInsightRequest struct{ BaseRequest }
 

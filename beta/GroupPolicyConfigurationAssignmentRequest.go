@@ -14,12 +14,6 @@ func (b *GroupPolicyConfigurationAssignmentRequestBuilder) Request() *GroupPolic
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *GroupPolicyConfigurationAssignmentRequestBuilder) Delta() *GroupPolicyConfigurationAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // GroupPolicyConfigurationAssignmentRequest is request for GroupPolicyConfigurationAssignment
 type GroupPolicyConfigurationAssignmentRequest struct{ BaseRequest }
 

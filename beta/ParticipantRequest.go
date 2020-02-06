@@ -14,12 +14,6 @@ func (b *ParticipantRequestBuilder) Request() *ParticipantRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ParticipantRequestBuilder) Delta() *ParticipantRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ParticipantRequest is request for Participant
 type ParticipantRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *WorkbookTableColumnRequestBuilder) Request() *WorkbookTableColumnReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkbookTableColumnRequestBuilder) Delta() *WorkbookTableColumnRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkbookTableColumnRequest is request for WorkbookTableColumn
 type WorkbookTableColumnRequest struct{ BaseRequest }
 

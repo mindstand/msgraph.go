@@ -21,12 +21,6 @@ func (b *ExactMatchDataStoreRequestBuilder) Request() *ExactMatchDataStoreReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ExactMatchDataStoreRequestBuilder) Delta() *ExactMatchDataStoreRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ExactMatchDataStoreRequest is request for ExactMatchDataStore
 type ExactMatchDataStoreRequest struct{ BaseRequest }
 

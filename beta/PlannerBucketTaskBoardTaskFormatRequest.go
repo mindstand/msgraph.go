@@ -14,12 +14,6 @@ func (b *PlannerBucketTaskBoardTaskFormatRequestBuilder) Request() *PlannerBucke
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *PlannerBucketTaskBoardTaskFormatRequestBuilder) Delta() *PlannerBucketTaskBoardTaskFormatRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // PlannerBucketTaskBoardTaskFormatRequest is request for PlannerBucketTaskBoardTaskFormat
 type PlannerBucketTaskBoardTaskFormatRequest struct{ BaseRequest }
 

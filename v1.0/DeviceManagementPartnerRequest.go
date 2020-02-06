@@ -14,12 +14,6 @@ func (b *DeviceManagementPartnerRequestBuilder) Request() *DeviceManagementPartn
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceManagementPartnerRequestBuilder) Delta() *DeviceManagementPartnerRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceManagementPartnerRequest is request for DeviceManagementPartner
 type DeviceManagementPartnerRequest struct{ BaseRequest }
 

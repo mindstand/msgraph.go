@@ -14,12 +14,6 @@ func (b *IOSDerivedCredentialAuthenticationConfigurationRequestBuilder) Request(
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IOSDerivedCredentialAuthenticationConfigurationRequestBuilder) Delta() *IOSDerivedCredentialAuthenticationConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IOSDerivedCredentialAuthenticationConfigurationRequest is request for IOSDerivedCredentialAuthenticationConfiguration
 type IOSDerivedCredentialAuthenticationConfigurationRequest struct{ BaseRequest }
 

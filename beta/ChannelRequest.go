@@ -21,12 +21,6 @@ func (b *ChannelRequestBuilder) Request() *ChannelRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ChannelRequestBuilder) Delta() *ChannelRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ChannelRequest is request for Channel
 type ChannelRequest struct{ BaseRequest }
 
@@ -155,6 +149,12 @@ func (r *ChannelMembersCollectionRequest) Add(ctx context.Context, reqObj *Conve
 func (b *ChannelRequestBuilder) Messages() *ChannelMessagesCollectionRequestBuilder {
 	bb := &ChannelMessagesCollectionRequestBuilder{BaseRequestBuilder: b.BaseRequestBuilder}
 	bb.baseURL += "/messages"
+	return bb
+}
+
+func (b *ChannelRequestBuilder) MessagesWithDelta() *ChannelMessagesCollectionRequestBuilder {
+	bb := &ChannelMessagesCollectionRequestBuilder{BaseRequestBuilder: b.BaseRequestBuilder}
+	bb.baseURL += "/messages/delta"
 	return bb
 }
 

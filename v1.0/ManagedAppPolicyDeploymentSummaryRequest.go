@@ -14,12 +14,6 @@ func (b *ManagedAppPolicyDeploymentSummaryRequestBuilder) Request() *ManagedAppP
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ManagedAppPolicyDeploymentSummaryRequestBuilder) Delta() *ManagedAppPolicyDeploymentSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ManagedAppPolicyDeploymentSummaryRequest is request for ManagedAppPolicyDeploymentSummary
 type ManagedAppPolicyDeploymentSummaryRequest struct{ BaseRequest }
 

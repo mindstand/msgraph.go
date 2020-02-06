@@ -14,12 +14,6 @@ func (b *FileSecurityProfileRequestBuilder) Request() *FileSecurityProfileReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *FileSecurityProfileRequestBuilder) Delta() *FileSecurityProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // FileSecurityProfileRequest is request for FileSecurityProfile
 type FileSecurityProfileRequest struct{ BaseRequest }
 

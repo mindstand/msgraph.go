@@ -14,12 +14,6 @@ func (b *ThumbnailSetRequestBuilder) Request() *ThumbnailSetRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ThumbnailSetRequestBuilder) Delta() *ThumbnailSetRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ThumbnailSetRequest is request for ThumbnailSet
 type ThumbnailSetRequest struct{ BaseRequest }
 

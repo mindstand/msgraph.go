@@ -21,12 +21,6 @@ func (b *ExactMatchLookupJobRequestBuilder) Request() *ExactMatchLookupJobReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ExactMatchLookupJobRequestBuilder) Delta() *ExactMatchLookupJobRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ExactMatchLookupJobRequest is request for ExactMatchLookupJob
 type ExactMatchLookupJobRequest struct{ BaseRequest }
 

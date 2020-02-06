@@ -14,12 +14,6 @@ func (b *FieldValueSetRequestBuilder) Request() *FieldValueSetRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *FieldValueSetRequestBuilder) Delta() *FieldValueSetRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // FieldValueSetRequest is request for FieldValueSet
 type FieldValueSetRequest struct{ BaseRequest }
 

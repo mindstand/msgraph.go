@@ -21,12 +21,6 @@ func (b *DeviceComplianceScheduledActionForRuleRequestBuilder) Request() *Device
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceComplianceScheduledActionForRuleRequestBuilder) Delta() *DeviceComplianceScheduledActionForRuleRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceComplianceScheduledActionForRuleRequest is request for DeviceComplianceScheduledActionForRule
 type DeviceComplianceScheduledActionForRuleRequest struct{ BaseRequest }
 

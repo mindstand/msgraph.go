@@ -14,12 +14,6 @@ func (b *DirectoryRoleTemplateRequestBuilder) Request() *DirectoryRoleTemplateRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DirectoryRoleTemplateRequestBuilder) Delta() *DirectoryRoleTemplateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DirectoryRoleTemplateRequest is request for DirectoryRoleTemplate
 type DirectoryRoleTemplateRequest struct{ BaseRequest }
 

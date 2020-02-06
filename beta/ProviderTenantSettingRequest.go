@@ -14,12 +14,6 @@ func (b *ProviderTenantSettingRequestBuilder) Request() *ProviderTenantSettingRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ProviderTenantSettingRequestBuilder) Delta() *ProviderTenantSettingRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ProviderTenantSettingRequest is request for ProviderTenantSetting
 type ProviderTenantSettingRequest struct{ BaseRequest }
 

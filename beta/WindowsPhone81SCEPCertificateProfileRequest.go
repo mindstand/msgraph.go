@@ -21,12 +21,6 @@ func (b *WindowsPhone81SCEPCertificateProfileRequestBuilder) Request() *WindowsP
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsPhone81SCEPCertificateProfileRequestBuilder) Delta() *WindowsPhone81SCEPCertificateProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsPhone81SCEPCertificateProfileRequest is request for WindowsPhone81SCEPCertificateProfile
 type WindowsPhone81SCEPCertificateProfileRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *IPSecurityProfileRequestBuilder) Request() *IPSecurityProfileRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IPSecurityProfileRequestBuilder) Delta() *IPSecurityProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IPSecurityProfileRequest is request for IPSecurityProfile
 type IPSecurityProfileRequest struct{ BaseRequest }
 

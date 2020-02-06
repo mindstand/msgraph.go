@@ -14,12 +14,6 @@ func (b *AndroidForWorkSettingsRequestBuilder) Request() *AndroidForWorkSettings
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *AndroidForWorkSettingsRequestBuilder) Delta() *AndroidForWorkSettingsRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // AndroidForWorkSettingsRequest is request for AndroidForWorkSettings
 type AndroidForWorkSettingsRequest struct{ BaseRequest }
 

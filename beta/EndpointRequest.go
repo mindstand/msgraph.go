@@ -14,12 +14,6 @@ func (b *EndpointRequestBuilder) Request() *EndpointRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *EndpointRequestBuilder) Delta() *EndpointRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // EndpointRequest is request for Endpoint
 type EndpointRequest struct{ BaseRequest }
 

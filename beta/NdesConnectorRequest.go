@@ -14,12 +14,6 @@ func (b *NdesConnectorRequestBuilder) Request() *NdesConnectorRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *NdesConnectorRequestBuilder) Delta() *NdesConnectorRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // NdesConnectorRequest is request for NdesConnector
 type NdesConnectorRequest struct{ BaseRequest }
 

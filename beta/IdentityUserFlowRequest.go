@@ -14,12 +14,6 @@ func (b *IdentityUserFlowRequestBuilder) Request() *IdentityUserFlowRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IdentityUserFlowRequestBuilder) Delta() *IdentityUserFlowRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IdentityUserFlowRequest is request for IdentityUserFlow
 type IdentityUserFlowRequest struct{ BaseRequest }
 

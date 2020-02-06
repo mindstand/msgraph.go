@@ -14,12 +14,6 @@ func (b *HostSecurityProfileRequestBuilder) Request() *HostSecurityProfileReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *HostSecurityProfileRequestBuilder) Delta() *HostSecurityProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // HostSecurityProfileRequest is request for HostSecurityProfile
 type HostSecurityProfileRequest struct{ BaseRequest }
 

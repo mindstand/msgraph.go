@@ -14,12 +14,6 @@ func (b *SecurityActionRequestBuilder) Request() *SecurityActionRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SecurityActionRequestBuilder) Delta() *SecurityActionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SecurityActionRequest is request for SecurityAction
 type SecurityActionRequest struct{ BaseRequest }
 

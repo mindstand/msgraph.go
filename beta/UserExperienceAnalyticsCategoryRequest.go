@@ -21,12 +21,6 @@ func (b *UserExperienceAnalyticsCategoryRequestBuilder) Request() *UserExperienc
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserExperienceAnalyticsCategoryRequestBuilder) Delta() *UserExperienceAnalyticsCategoryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserExperienceAnalyticsCategoryRequest is request for UserExperienceAnalyticsCategory
 type UserExperienceAnalyticsCategoryRequest struct{ BaseRequest }
 

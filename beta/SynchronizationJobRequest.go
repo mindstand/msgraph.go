@@ -14,12 +14,6 @@ func (b *SynchronizationJobRequestBuilder) Request() *SynchronizationJobRequest 
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SynchronizationJobRequestBuilder) Delta() *SynchronizationJobRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SynchronizationJobRequest is request for SynchronizationJob
 type SynchronizationJobRequest struct{ BaseRequest }
 

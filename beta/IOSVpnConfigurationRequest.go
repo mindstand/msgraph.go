@@ -14,12 +14,6 @@ func (b *IOSVpnConfigurationRequestBuilder) Request() *IOSVpnConfigurationReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *IOSVpnConfigurationRequestBuilder) Delta() *IOSVpnConfigurationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // IOSVpnConfigurationRequest is request for IOSVpnConfiguration
 type IOSVpnConfigurationRequest struct{ BaseRequest }
 

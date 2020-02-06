@@ -14,12 +14,6 @@ func (b *WindowsAutopilotDeviceIdentityRequestBuilder) Request() *WindowsAutopil
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsAutopilotDeviceIdentityRequestBuilder) Delta() *WindowsAutopilotDeviceIdentityRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsAutopilotDeviceIdentityRequest is request for WindowsAutopilotDeviceIdentity
 type WindowsAutopilotDeviceIdentityRequest struct{ BaseRequest }
 

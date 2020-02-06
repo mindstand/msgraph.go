@@ -21,12 +21,6 @@ func (b *WindowsUniversalAppXRequestBuilder) Request() *WindowsUniversalAppXRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsUniversalAppXRequestBuilder) Delta() *WindowsUniversalAppXRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsUniversalAppXRequest is request for WindowsUniversalAppX
 type WindowsUniversalAppXRequest struct{ BaseRequest }
 

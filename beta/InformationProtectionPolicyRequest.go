@@ -21,12 +21,6 @@ func (b *InformationProtectionPolicyRequestBuilder) Request() *InformationProtec
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *InformationProtectionPolicyRequestBuilder) Delta() *InformationProtectionPolicyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // InformationProtectionPolicyRequest is request for InformationProtectionPolicy
 type InformationProtectionPolicyRequest struct{ BaseRequest }
 

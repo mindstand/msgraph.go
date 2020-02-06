@@ -14,12 +14,6 @@ func (b *SitePageRequestBuilder) Request() *SitePageRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SitePageRequestBuilder) Delta() *SitePageRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SitePageRequest is request for SitePage
 type SitePageRequest struct{ BaseRequest }
 

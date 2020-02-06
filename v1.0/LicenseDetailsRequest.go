@@ -14,12 +14,6 @@ func (b *LicenseDetailsRequestBuilder) Request() *LicenseDetailsRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *LicenseDetailsRequestBuilder) Delta() *LicenseDetailsRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // LicenseDetailsRequest is request for LicenseDetails
 type LicenseDetailsRequest struct{ BaseRequest }
 

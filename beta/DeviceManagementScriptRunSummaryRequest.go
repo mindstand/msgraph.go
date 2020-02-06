@@ -14,12 +14,6 @@ func (b *DeviceManagementScriptRunSummaryRequestBuilder) Request() *DeviceManage
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceManagementScriptRunSummaryRequestBuilder) Delta() *DeviceManagementScriptRunSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceManagementScriptRunSummaryRequest is request for DeviceManagementScriptRunSummary
 type DeviceManagementScriptRunSummaryRequest struct{ BaseRequest }
 

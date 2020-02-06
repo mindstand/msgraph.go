@@ -14,12 +14,6 @@ func (b *ProfilePhotoRequestBuilder) Request() *ProfilePhotoRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ProfilePhotoRequestBuilder) Delta() *ProfilePhotoRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ProfilePhotoRequest is request for ProfilePhoto
 type ProfilePhotoRequest struct{ BaseRequest }
 

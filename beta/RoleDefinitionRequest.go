@@ -21,12 +21,6 @@ func (b *RoleDefinitionRequestBuilder) Request() *RoleDefinitionRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RoleDefinitionRequestBuilder) Delta() *RoleDefinitionRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RoleDefinitionRequest is request for RoleDefinition
 type RoleDefinitionRequest struct{ BaseRequest }
 

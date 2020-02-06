@@ -14,12 +14,6 @@ func (b *TermsAndConditionsGroupAssignmentRequestBuilder) Request() *TermsAndCon
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TermsAndConditionsGroupAssignmentRequestBuilder) Delta() *TermsAndConditionsGroupAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TermsAndConditionsGroupAssignmentRequest is request for TermsAndConditionsGroupAssignment
 type TermsAndConditionsGroupAssignmentRequest struct{ BaseRequest }
 

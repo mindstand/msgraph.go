@@ -14,12 +14,6 @@ func (b *GroupPolicyPresentationValueRequestBuilder) Request() *GroupPolicyPrese
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *GroupPolicyPresentationValueRequestBuilder) Delta() *GroupPolicyPresentationValueRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // GroupPolicyPresentationValueRequest is request for GroupPolicyPresentationValue
 type GroupPolicyPresentationValueRequest struct{ BaseRequest }
 

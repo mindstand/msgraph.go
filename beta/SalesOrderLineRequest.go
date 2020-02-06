@@ -14,12 +14,6 @@ func (b *SalesOrderLineRequestBuilder) Request() *SalesOrderLineRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SalesOrderLineRequestBuilder) Delta() *SalesOrderLineRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SalesOrderLineRequest is request for SalesOrderLine
 type SalesOrderLineRequest struct{ BaseRequest }
 

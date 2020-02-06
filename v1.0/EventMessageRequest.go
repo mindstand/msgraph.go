@@ -14,12 +14,6 @@ func (b *EventMessageRequestBuilder) Request() *EventMessageRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *EventMessageRequestBuilder) Delta() *EventMessageRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // EventMessageRequest is request for EventMessage
 type EventMessageRequest struct{ BaseRequest }
 

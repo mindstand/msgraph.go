@@ -14,12 +14,6 @@ func (b *DocumentCommentReplyRequestBuilder) Request() *DocumentCommentReplyRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DocumentCommentReplyRequestBuilder) Delta() *DocumentCommentReplyRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DocumentCommentReplyRequest is request for DocumentCommentReply
 type DocumentCommentReplyRequest struct{ BaseRequest }
 

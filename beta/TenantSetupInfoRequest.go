@@ -14,12 +14,6 @@ func (b *TenantSetupInfoRequestBuilder) Request() *TenantSetupInfoRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TenantSetupInfoRequestBuilder) Delta() *TenantSetupInfoRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TenantSetupInfoRequest is request for TenantSetupInfo
 type TenantSetupInfoRequest struct{ BaseRequest }
 

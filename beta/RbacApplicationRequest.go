@@ -21,12 +21,6 @@ func (b *RbacApplicationRequestBuilder) Request() *RbacApplicationRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *RbacApplicationRequestBuilder) Delta() *RbacApplicationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // RbacApplicationRequest is request for RbacApplication
 type RbacApplicationRequest struct{ BaseRequest }
 

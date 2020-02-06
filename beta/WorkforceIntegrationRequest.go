@@ -14,12 +14,6 @@ func (b *WorkforceIntegrationRequestBuilder) Request() *WorkforceIntegrationRequ
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WorkforceIntegrationRequestBuilder) Delta() *WorkforceIntegrationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WorkforceIntegrationRequest is request for WorkforceIntegration
 type WorkforceIntegrationRequest struct{ BaseRequest }
 

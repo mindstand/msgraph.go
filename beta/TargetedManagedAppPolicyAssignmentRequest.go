@@ -14,12 +14,6 @@ func (b *TargetedManagedAppPolicyAssignmentRequestBuilder) Request() *TargetedMa
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TargetedManagedAppPolicyAssignmentRequestBuilder) Delta() *TargetedManagedAppPolicyAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TargetedManagedAppPolicyAssignmentRequest is request for TargetedManagedAppPolicyAssignment
 type TargetedManagedAppPolicyAssignmentRequest struct{ BaseRequest }
 

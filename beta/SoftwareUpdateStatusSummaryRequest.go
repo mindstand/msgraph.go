@@ -14,12 +14,6 @@ func (b *SoftwareUpdateStatusSummaryRequestBuilder) Request() *SoftwareUpdateSta
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SoftwareUpdateStatusSummaryRequestBuilder) Delta() *SoftwareUpdateStatusSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SoftwareUpdateStatusSummaryRequest is request for SoftwareUpdateStatusSummary
 type SoftwareUpdateStatusSummaryRequest struct{ BaseRequest }
 

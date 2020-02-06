@@ -8,12 +8,6 @@ func (b *{{.X}}RequestBuilder) Request() *{{.X}}Request {
     }
 }
 
-// Delta appends "/delta" onto the builder
-func (b *{{.X}}RequestBuilder) Delta() *{{.X}}RequestBuilder {
-    b.baseUrl = b.baseUrl + "/delta"
-    return b
-}
-
 // {{.X}}Request is request for {{.X}}
 type {{.X}}Request struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *JobResponseBaseRequestBuilder) Request() *JobResponseBaseRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *JobResponseBaseRequestBuilder) Delta() *JobResponseBaseRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // JobResponseBaseRequest is request for JobResponseBase
 type JobResponseBaseRequest struct{ BaseRequest }
 

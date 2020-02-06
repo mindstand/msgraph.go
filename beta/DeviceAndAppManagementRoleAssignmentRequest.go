@@ -21,12 +21,6 @@ func (b *DeviceAndAppManagementRoleAssignmentRequestBuilder) Request() *DeviceAn
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *DeviceAndAppManagementRoleAssignmentRequestBuilder) Delta() *DeviceAndAppManagementRoleAssignmentRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // DeviceAndAppManagementRoleAssignmentRequest is request for DeviceAndAppManagementRoleAssignment
 type DeviceAndAppManagementRoleAssignmentRequest struct{ BaseRequest }
 

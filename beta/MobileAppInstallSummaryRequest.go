@@ -14,12 +14,6 @@ func (b *MobileAppInstallSummaryRequestBuilder) Request() *MobileAppInstallSumma
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MobileAppInstallSummaryRequestBuilder) Delta() *MobileAppInstallSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MobileAppInstallSummaryRequest is request for MobileAppInstallSummary
 type MobileAppInstallSummaryRequest struct{ BaseRequest }
 

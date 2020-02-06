@@ -14,12 +14,6 @@ func (b *EBookInstallSummaryRequestBuilder) Request() *EBookInstallSummaryReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *EBookInstallSummaryRequestBuilder) Delta() *EBookInstallSummaryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // EBookInstallSummaryRequest is request for EBookInstallSummary
 type EBookInstallSummaryRequest struct{ BaseRequest }
 

@@ -14,12 +14,6 @@ func (b *SecurityBaselineDeviceStateRequestBuilder) Request() *SecurityBaselineD
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SecurityBaselineDeviceStateRequestBuilder) Delta() *SecurityBaselineDeviceStateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SecurityBaselineDeviceStateRequest is request for SecurityBaselineDeviceState
 type SecurityBaselineDeviceStateRequest struct{ BaseRequest }
 

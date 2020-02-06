@@ -14,12 +14,6 @@ func (b *UserExperienceAnalyticsDevicePerformanceRequestBuilder) Request() *User
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *UserExperienceAnalyticsDevicePerformanceRequestBuilder) Delta() *UserExperienceAnalyticsDevicePerformanceRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // UserExperienceAnalyticsDevicePerformanceRequest is request for UserExperienceAnalyticsDevicePerformance
 type UserExperienceAnalyticsDevicePerformanceRequest struct{ BaseRequest }
 

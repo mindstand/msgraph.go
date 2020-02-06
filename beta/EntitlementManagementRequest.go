@@ -21,12 +21,6 @@ func (b *EntitlementManagementRequestBuilder) Request() *EntitlementManagementRe
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *EntitlementManagementRequestBuilder) Delta() *EntitlementManagementRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // EntitlementManagementRequest is request for EntitlementManagement
 type EntitlementManagementRequest struct{ BaseRequest }
 

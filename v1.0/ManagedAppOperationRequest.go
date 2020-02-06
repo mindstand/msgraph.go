@@ -14,12 +14,6 @@ func (b *ManagedAppOperationRequestBuilder) Request() *ManagedAppOperationReques
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ManagedAppOperationRequestBuilder) Delta() *ManagedAppOperationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ManagedAppOperationRequest is request for ManagedAppOperation
 type ManagedAppOperationRequest struct{ BaseRequest }
 

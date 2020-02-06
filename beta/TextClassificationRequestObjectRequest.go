@@ -14,12 +14,6 @@ func (b *TextClassificationRequestObjectRequestBuilder) Request() *TextClassific
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *TextClassificationRequestObjectRequestBuilder) Delta() *TextClassificationRequestObjectRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // TextClassificationRequestObjectRequest is request for TextClassificationRequestObject
 type TextClassificationRequestObjectRequest struct{ BaseRequest }
 

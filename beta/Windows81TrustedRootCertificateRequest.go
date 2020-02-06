@@ -14,12 +14,6 @@ func (b *Windows81TrustedRootCertificateRequestBuilder) Request() *Windows81Trus
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *Windows81TrustedRootCertificateRequestBuilder) Delta() *Windows81TrustedRootCertificateRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // Windows81TrustedRootCertificateRequest is request for Windows81TrustedRootCertificate
 type Windows81TrustedRootCertificateRequest struct{ BaseRequest }
 

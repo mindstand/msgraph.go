@@ -14,12 +14,6 @@ func (b *SearchRequestBuilder) Request() *SearchRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *SearchRequestBuilder) Delta() *SearchRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // SearchRequest is request for Search
 type SearchRequest struct{ BaseRequest }
 

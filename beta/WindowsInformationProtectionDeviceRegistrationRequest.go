@@ -14,12 +14,6 @@ func (b *WindowsInformationProtectionDeviceRegistrationRequestBuilder) Request()
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *WindowsInformationProtectionDeviceRegistrationRequestBuilder) Delta() *WindowsInformationProtectionDeviceRegistrationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // WindowsInformationProtectionDeviceRegistrationRequest is request for WindowsInformationProtectionDeviceRegistration
 type WindowsInformationProtectionDeviceRegistrationRequest struct{ BaseRequest }
 

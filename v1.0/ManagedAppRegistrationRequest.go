@@ -21,12 +21,6 @@ func (b *ManagedAppRegistrationRequestBuilder) Request() *ManagedAppRegistration
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ManagedAppRegistrationRequestBuilder) Delta() *ManagedAppRegistrationRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ManagedAppRegistrationRequest is request for ManagedAppRegistration
 type ManagedAppRegistrationRequest struct{ BaseRequest }
 

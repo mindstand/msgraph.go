@@ -21,12 +21,6 @@ func (b *ProfileRequestBuilder) Request() *ProfileRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ProfileRequestBuilder) Delta() *ProfileRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ProfileRequest is request for Profile
 type ProfileRequest struct{ BaseRequest }
 

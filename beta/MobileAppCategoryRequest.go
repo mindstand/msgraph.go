@@ -14,12 +14,6 @@ func (b *MobileAppCategoryRequestBuilder) Request() *MobileAppCategoryRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *MobileAppCategoryRequestBuilder) Delta() *MobileAppCategoryRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // MobileAppCategoryRequest is request for MobileAppCategory
 type MobileAppCategoryRequest struct{ BaseRequest }
 

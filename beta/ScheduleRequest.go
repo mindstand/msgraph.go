@@ -21,12 +21,6 @@ func (b *ScheduleRequestBuilder) Request() *ScheduleRequest {
 	}
 }
 
-// Delta appends "/delta" onto the builder
-func (b *ScheduleRequestBuilder) Delta() *ScheduleRequestBuilder {
-	b.baseUrl = b.baseUrl + "/delta"
-	return b
-}
-
 // ScheduleRequest is request for Schedule
 type ScheduleRequest struct{ BaseRequest }
 
